@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-21T12:02:20.921023+00:00",
+  "file": "data\\splits\\test.jsonl",
+  "sha256": "aba7961e910edb50fe1e0be0406ab596cc3a7ed4e204b0fe500b17304ab9d9aa",
+  "images": 8113,
+  "positive_images": 3334,
+  "negative_images": 4779,
+  "boxes": 8574,
+  "fire_boxes": 5290,
+  "smoke_boxes": 3284,
+  "scene_overlap_with_train_val": 0,
+  "rule": "Never train, tune thresholds, select models, or cherry-pick on this file. Report once."
+}

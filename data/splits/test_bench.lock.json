@@ -1,0 +1,9 @@
+{
+  "source_file": "test.jsonl",
+  "parent_sha256": "aba7961e910edb50fe1e0be0406ab596cc3a7ed4e204b0fe500b17304ab9d9aa",
+  "seed": 42,
+  "images": 3000,
+  "positive_images": 1233,
+  "negative_images": 1767,
+  "sha256": "40e69d04ce2976cfe8b24ab432e5e74ae520df135f0c25cea48c8efe12c12da6"
+}

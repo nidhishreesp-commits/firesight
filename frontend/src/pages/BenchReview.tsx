@@ -1,0 +1,188 @@
+import { useEffect, useMemo, useState } from "react";
+import { api } from "../api";
+import { BoxOverlay } from "../components/BoxOverlay";
+
+const CATEGORIES = [
+  "fire", "smoke", "both",
+  "sunset_sunrise", "street_head_lights", "lamps_neon_brake", "chandelier_festival",
+  "reflection_glare", "orange_clothing_ppe", "cones_machinery", "flowers_leaves",
+  "fog_mist_haze", "clouds", "steam_cooking", "exhaust_chimney", "dust_snow", "overexposed_white",
+  "candle", "match_lighter", "gas_stove", "campfire", "welding", "fireworks", "fireplace", "screen_fire",
+  "blur_noise_compression", "rain_on_lens", "infrared_night", "other_hard"
+];
+
+export default function BenchReview() {
+  const [data, setData] = useState<any>(null);
+  const [idx, setIdx] = useState(0);
+  const [reviewer, setReviewer] = useState(() => localStorage.getItem("firesight.reviewer") ?? "");
+  const [form, setForm] = useState<any>({});
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const [locking, setLocking] = useState(false);
+
+  const load = () => api.bench100().then(setData).catch((e) => setError(String(e)));
+  useEffect(() => { load(); }, []);
+  useEffect(() => { localStorage.setItem("firesight.reviewer", reviewer); }, [reviewer]);
+
+  const rows: any[] = data?.images ?? [];
+  const row = rows[idx];
+  useEffect(() => {
+    if (!row) return;
+    setForm({
+      has_fire: row.has_fire, has_smoke: row.has_smoke, category: row.category,
+      difficulty: row.difficulty, ambiguous: row.ambiguous, notes: row.notes ?? ""
+    });
+  }, [idx, row?.id]);
+
+  const reviewed = useMemo(() => rows.filter((r) => r.review_status === "reviewed").length, [rows]);
+  const comp = data?.composition ?? {};
+
+  const save = async (advance = true) => {
+    if (!row) return;
+    if (!reviewer.trim()) { setError("Enter your name before saving labels."); return; }
+    setError("");
+    try {
+      await api.benchReview({ id: row.id, ...form, reviewer });
+      setMessage(`Saved ${idx + 1}/${rows.length}`);
+      await load();
+      if (advance && idx < rows.length - 1) setIdx(idx + 1);
+    } catch (e) {
+      setError(String(e));
+    }
+  };
+
+  const lock = async () => {
+    if (!reviewer.trim()) { setError("Enter your name before locking."); return; }
+    if (!confirm("Lock the bench? Labels become immutable and a SHA-256 manifest is written.")) return;
+    setLocking(true); setError("");
+    try {
+      const res = await api.benchLock(reviewer);
+      setMessage(`LOCKED. Manifest SHA-256: ${res.manifest_sha256}`);
+      await load();
+    } catch (e) {
+      setError(String(e));
+    } finally {
+      setLocking(false);
+    }
+  };
+
+  if (!data) return <div className="text-slate-400">{error || "Loading bench…"}</div>;
+  if (rows.length !== 100) return <div className="text-red-400">Expected 100 images, found {rows.length}.</div>;
+
+  const locked = data.locked;
+
+  return (
+    <div className="space-y-4">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-semibold">Bench review — testbench100</h1>
+          <div className="text-sm text-slate-400">
+            {reviewed}/100 reviewed · fire-only {comp.fire_only}/25 · smoke-only {comp.smoke_only}/15 ·
+            both {comp.both}/10 · negatives {comp.negative}/50
+          </div>
+        </div>
+        <div className="flex items-center gap-2">
+          <input value={reviewer} onChange={(e) => setReviewer(e.target.value)} placeholder="reviewer name"
+                 className="rounded bg-slate-800 px-2 py-1 text-sm" />
+          {locked ? (
+            <a className="rounded bg-slate-700 px-3 py-1 text-sm" href="/api/bench100/export">download labels.csv</a>
+          ) : (
+            <button className="rounded bg-ember-600 px-3 py-1 text-sm disabled:opacity-40" disabled={locking}
+                    onClick={lock}>
+              {locking ? "locking…" : "lock bench"}
+            </button>
+          )}
+        </div>
+      </div>
+
+      {locked && (
+        <div className="rounded border border-emerald-700 bg-emerald-950/50 px-3 py-2 text-sm text-emerald-200">
+          Locked by {data.lock.reviewer} · manifest {data.lock.manifest_sha256}
+        </div>
+      )}
+      {message && <div className="rounded bg-slate-800 px-3 py-2 text-sm">{message}</div>}
+      {error && <div className="rounded bg-red-950/60 px-3 py-2 text-sm text-red-200">{error}</div>}
+
+      <div className="grid grid-cols-1 gap-4 xl:grid-cols-3">
+        <div className="xl:col-span-2">
+          <div className="relative overflow-hidden rounded border border-slate-800 bg-black">
+            <img src={`/api/bench100/image/${encodeURIComponent(row.id)}`} className="max-h-[70vh] w-full object-contain" alt={row.id} />
+            {row.width && row.height && (
+              <BoxOverlay width={row.width} height={row.height}
+                          detections={[]}
+                          groundTruth={[
+                            ...(row.boxes_fire ?? []).map((b: number[]) => ({ label: "fire", box: b })),
+                            ...(row.boxes_smoke ?? []).map((b: number[]) => ({ label: "smoke", box: b }))
+                          ]} />
+            )}
+          </div>
+          <div className="mt-2 grid grid-cols-1 gap-1 text-xs text-slate-400 md:grid-cols-2">
+            <div>id: <span className="text-slate-200">{row.id}</span></div>
+            <div>source: <span className="text-slate-200">{row.source}</span></div>
+            <div>licence: <span className="text-slate-200">{row.license}</span></div>
+            <div>sha256: <span className="text-slate-200">{String(row.sha256).slice(0, 20)}…</span></div>
+            <div className="md:col-span-2">origin: {row.origin}</div>
+            {row.attribution && <div className="md:col-span-2">attribution: {JSON.stringify(row.attribution)}</div>}
+            <div className="md:col-span-2">flags: {JSON.stringify(row.flags)}</div>
+          </div>
+          <div className="mt-2 flex gap-2">
+            <button className="rounded bg-slate-800 px-3 py-1 text-sm" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>previous</button>
+            <button className="rounded bg-slate-800 px-3 py-1 text-sm" disabled={idx >= rows.length - 1} onClick={() => setIdx(idx + 1)}>next</button>
+            <span className="self-center text-xs text-slate-500">
+              {row.kind === "positive" ? "provisional positive (dataset boxes in red/green)" : "provisional hard negative (no boxes)"}
+            </span>
+          </div>
+        </div>
+
+        <div className="space-y-3 rounded border border-slate-800 bg-slate-900/60 p-3">
+          <div className="flex items-center justify-between text-sm">
+            <span>Image {idx + 1} / 100</span>
+            <span className={row.review_status === "reviewed" ? "text-emerald-400" : "text-amber-400"}>{row.review_status}</span>
+          </div>
+          <label className="flex items-center gap-2 text-sm">
+            <input type="checkbox" checked={!!form.has_fire} onChange={(e) => setForm({ ...form, has_fire: e.target.checked ? 1 : 0 })} />
+            has_fire
+          </label>
+          <label className="flex items-center gap-2 text-sm">
+            <input type="checkbox" checked={!!form.has_smoke} onChange={(e) => setForm({ ...form, has_smoke: e.target.checked ? 1 : 0 })} />
+            has_smoke
+          </label>
+          <label className="block text-sm">
+            category
+            <select value={form.category} onChange={(e) => setForm({ ...form, category: e.target.value })}
+                    className="mt-1 w-full rounded bg-slate-800 px-2 py-1">
+              {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
+            </select>
+          </label>
+          <label className="block text-sm">
+            difficulty
+            <select value={form.difficulty} onChange={(e) => setForm({ ...form, difficulty: e.target.value })}
+                    className="mt-1 w-full rounded bg-slate-800 px-2 py-1">
+              <option>easy</option><option>medium</option><option>hard</option>
+            </select>
+          </label>
+          <label className="flex items-center gap-2 text-sm">
+            <input type="checkbox" checked={!!form.ambiguous} onChange={(e) => setForm({ ...form, ambiguous: e.target.checked ? 1 : 0 })} />
+            ambiguous / disputed label
+          </label>
+          <label className="block text-sm">
+            notes
+            <textarea value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })}
+                      className="mt-1 h-20 w-full rounded bg-slate-800 px-2 py-1 text-sm" />
+          </label>
+          <div className="text-xs text-slate-500">
+            Saving records your name and UTC timestamp. The bench is immutable after locking.
+          </div>
+          <button className="w-full rounded bg-ember-600 px-3 py-2 text-sm disabled:opacity-40"
+                  disabled={locked || !reviewer.trim()} onClick={() => save(true)}>
+            {locked ? "locked" : "save & next"}
+          </button>
+          <button className="w-full rounded bg-slate-800 px-3 py-2 text-sm disabled:opacity-40"
+                  disabled={locked || !reviewer.trim()} onClick={() => save(false)}>
+            save only
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,1114 @@
+{
+  "bench_images": 100,
+  "phash_threshold": 6,
+  "phash_flagged": 0,
+  "clip_reference_images": 1600,
+  "clip_threshold": 0.98,
+  "clip_flagged": 0,
+  "flagged": [],
+  "phash": [
+    {
+      "id": "dfire:test:WEB11091",
+      "phash": "80c1f43a9eadc6b9",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10528",
+      "phash": "88aa47342ba8b5bf",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10976",
+      "phash": "ece58712ea29b945",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10676",
+      "phash": "87e464cd2cd17bc2",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11742",
+      "phash": "94cae5a3cd841b37",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10478",
+      "phash": "cf63311c9a667199",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10978",
+      "phash": "b330118e3b368e7e",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10606",
+      "phash": "e3031ee7378e43c8",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10809",
+      "phash": "fb3f19c1621c23c6",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10592",
+      "phash": "d0c283d0fe3b716a",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:PublicDataset01329",
+      "phash": "c39f70318cec16e3",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10820",
+      "phash": "b6b569a56d545541",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10491",
+      "phash": "9d94666669093db6",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10040",
+      "phash": "edda01156cce9731",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10512",
+      "phash": "9138662699cd936f",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11729",
+      "phash": "919349cc4c6f327b",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10905",
+      "phash": "cd32ce649b70876c",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10516",
+      "phash": "c80c2ebea6de3c68",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10507",
+      "phash": "ae7be1b4ca4c92c1",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10825",
+      "phash": "aea6a531484e5f93",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10567",
+      "phash": "c81f6699d826f389",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10517",
+      "phash": "f80ef1071ae10ff1",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10826",
+      "phash": "99d966269353ac8d",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10847",
+      "phash": "a6ae4a4b5bd494d4",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10518",
+      "phash": "af60564aabad5456",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11230",
+      "phash": "b09fd8ac59e81ec2",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11549",
+      "phash": "b2419f272ac37cc6",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10802",
+      "phash": "cf87326a41556cae",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11233",
+      "phash": "e1c576b0e1d74da0",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11153",
+      "phash": "dcf5939291a4a5ac",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11570",
+      "phash": "d6d496724e135aa9",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11560",
+      "phash": "d2883fc235788e3d",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11248",
+      "phash": "92cba56e7c4b5464",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11696",
+      "phash": "b02f57d8a074578b",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF08212",
+      "phash": "808ee35635be94d6",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF08219",
+      "phash": "d08b5f650bb1c8dc",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF08162",
+      "phash": "a0d5af4625aac5e6",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:smoke_CV001905_jpg.rf.8b32adce5c345a313a611a5aa70f94a7",
+      "phash": "99999bcc32ce3166",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:smoke_CV001691_jpg.rf.8b7ea040421c13706402fabb1eec13a4",
+      "phash": "cece9919cc8c9999",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:smoke_CV002718_jpg.rf.183913447b543affe6a7a85fd9bb5352",
+      "phash": "cccecc31339b3664",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:bothFireAndSmoke_CV000608_jpg.rf.96793f79ac9c06ffec844238c454722a",
+      "phash": "dc971b909d93988d",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10870",
+      "phash": "cc8e1fb754c1b0ac",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10936",
+      "phash": "c2cf3e30e3c3389c",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10871",
+      "phash": "efce1a27569ca182",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:bothFireAndSmoke_CV017156_jpg.rf.10d7238b1dfd79ff0937e0c4268d4ef6",
+      "phash": "daed338c748906b9",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11223",
+      "phash": "95c0c3396e4e93b6",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:bothFireAndSmoke_CV000044_jpg.rf.f26d407d5f75d8c55e4d3eb76c4bd5aa",
+      "phash": "b6d28b9eb131c5c4",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:PublicDataset01165",
+      "phash": "e0d4410b3ffcc14f",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB11719",
+      "phash": "8f623167ca3473c6",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10602",
+      "phash": "9979a766c618c927",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10313",
+      "phash": "9bb971e6e40e8645",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10046",
+      "phash": "ccb332cc9b32cc99",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:PublicDataset01314",
+      "phash": "d8f3098c33cd66ca",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV006847_jpg.rf.30ddd904f72499b83b7664e96c1c3c43",
+      "phash": "c77c3fc3649022c7",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10219",
+      "phash": "e13df19b6a7a0a30",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV032221_jpg.rf.69f23707eed0cf401573357d280f4dc6",
+      "phash": "8d93c6c2e37cc349",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV021765_jpg.rf.e18af5bb5659a2fa8c74ad8ab95befec",
+      "phash": "91931a8d6f6be262",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV037849_jpg.rf.55ef182b5dabf8929f58e981bc851919",
+      "phash": "b4864fcbf50a0dd8",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV035081_jpg.rf.88ac4e23fd5ef6235036ae406c4f5bd5",
+      "phash": "ebd0906e3cc383bc",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10387",
+      "phash": "c6143cd9936c9b66",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV031760_jpg.rf.896a818c870eeec2cf29b5c40499d6db",
+      "phash": "97f99b9c6c98c481",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV014725_jpg.rf.3b43e6a305377a8d3f6652d443b9d9f6",
+      "phash": "b1f89142d2bc6e66",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10373",
+      "phash": "bf404add2c8ab2ad",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB09975",
+      "phash": "96710b1d7aa394ea",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10215",
+      "phash": "be0a037377da5a90",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10139",
+      "phash": "c7b72c5830acd947",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV005464_jpg.rf.c2ff2debd9faf2d4faeee9b99fd0cffa",
+      "phash": "dcb04a6b939e52cc",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV000568_jpg.rf.da28a11b17cd478c3d7934d837a8ff02",
+      "phash": "9c666239cc6cbc36",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10065",
+      "phash": "c5937ce86a0e8575",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10098",
+      "phash": "c4d33ec493b8a1b9",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07604",
+      "phash": "f7a0832365dec0b3",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07647",
+      "phash": "cf85830707bd41bb",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07445",
+      "phash": "cfc18307c79cf829",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10407",
+      "phash": "95d5a92a2a2a7ada",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV006833_jpg.rf.4910fe452ad0ccc5d13fdd2f788d64de",
+      "phash": "d3fc0172bc0231df",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:PublicDataset01310",
+      "phash": "baf68d904a4496db",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07463",
+      "phash": "a3978356143af173",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07609",
+      "phash": "df0086b8ecf86473",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07651",
+      "phash": "87ac58a3b326cd6a",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07441",
+      "phash": "87cb83c327451b2f",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07549",
+      "phash": "943ad8cd6706075f",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07547",
+      "phash": "c37bc28a8cec46ec",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10268",
+      "phash": "8f2c20bba8acbfa1",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:AoF07548",
+      "phash": "d575d9ccd68a0b21",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV030031_jpg.rf.2c01245314578a9a53c6a21b3bce939a",
+      "phash": "8787719863636576",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "dfire:test:WEB10100",
+      "phash": "9bd969b198d96123",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV035942_jpg.rf.9d632f343ec79e9820c11cc9524ebc54",
+      "phash": "de807c7c7c5aa485",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV015749_jpg.rf.d629ceedae3f3cbc85a1efe44823ef12",
+      "phash": "c439377b4c6b6113",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:2006-02-25_candle-flame_with_colour-shift_B",
+      "phash": "994d6632679c3365",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:A_Red_Candle_s_flame",
+      "phash": "d8c965227333a277",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:Blue_candle_burning_looped.gif",
+      "phash": "9935668798696376",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:Gas_lighter_flame",
+      "phash": "9b646392cd6d32c3",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:White_lighter_with_flame",
+      "phash": "db3264cc64cc939b",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_",
+      "phash": "cd33320ccec3df30",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:A_simple_campfire",
+      "phash": "cd3033c73cc932cd",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:Campfire_79586115_",
+      "phash": "db74269b21e631c3",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:A_welder_who_works_in_the_round-house_at_the_Chicago_and_Nor",
+      "phash": "cccc333319cccd47",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445",
+      "phash": "965269b5926b65f0",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:1_singapore_national_day_parade_2011_fireworks",
+      "phash": "994336acd971a696",
+      "min_hamming": 64,
+      "nearest": null
+    },
+    {
+      "id": "wikimedia:20260124_Fire_33687_",
+      "phash": "d4b42a4b813f7eb0",
+      "min_hamming": 64,
+      "nearest": null
+    }
+  ],
+  "clip_embedding": [
+    {
+      "id": "dfire:test:WEB11091",
+      "max_cosine": 0.8675,
+      "nearest": "dfire:train:WEB04983"
+    },
+    {
+      "id": "dfire:test:WEB10528",
+      "max_cosine": 0.8219,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV006164_jpg.rf.02e994106f56dc9bea438be1819e6035"
+    },
+    {
+      "id": "dfire:test:WEB10976",
+      "max_cosine": 0.8332,
+      "nearest": "dfire:val:WEB07656"
+    },
+    {
+      "id": "dfire:test:WEB10676",
+      "max_cosine": 0.8588,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV017787_jpg.rf.528fbfe60bf300eb17a46ee133284e7c"
+    },
+    {
+      "id": "dfire:test:WEB11742",
+      "max_cosine": 0.8212,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV009393_jpg.rf.30c9644a65e4449d48a1ba44a4413cbb"
+    },
+    {
+      "id": "dfire:test:WEB10478",
+      "max_cosine": 0.6235,
+      "nearest": "fasdd:val:fire_CV010927_jpg.rf.ddc02f308b0f80615198c4249cf57dc1"
+    },
+    {
+      "id": "dfire:test:WEB10978",
+      "max_cosine": 0.7456,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV009603_jpg.rf.9ec6c28e0db901c73123e8a28e57702e"
+    },
+    {
+      "id": "dfire:test:WEB10606",
+      "max_cosine": 0.6995,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV004166_jpg.rf.d90ec765ed394aef984e933faa81a7bf"
+    },
+    {
+      "id": "dfire:test:WEB10809",
+      "max_cosine": 0.7377,
+      "nearest": "dfire:val:WEB05079"
+    },
+    {
+      "id": "dfire:test:WEB10592",
+      "max_cosine": 0.8465,
+      "nearest": "dfire:val:WEB05291"
+    },
+    {
+      "id": "dfire:test:PublicDataset01329",
+      "max_cosine": 0.8327,
+      "nearest": "fasdd:train:fire_CV010591_jpg.rf.a40218ff3be7edb3755eb1e906d8813d"
+    },
+    {
+      "id": "dfire:test:WEB10820",
+      "max_cosine": 0.7442,
+      "nearest": "dfire:train:WEB05443"
+    },
+    {
+      "id": "dfire:test:WEB10491",
+      "max_cosine": 0.6742,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV007278_jpg.rf.3e04a01edabc1185e501bb239a521101"
+    },
+    {
+      "id": "dfire:test:WEB10040",
+      "max_cosine": 0.569,
+      "nearest": "dfire:train:WEB00368"
+    },
+    {
+      "id": "dfire:test:WEB10512",
+      "max_cosine": 0.7869,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV018483_jpg.rf.c02eca67131e6761deea320b838cb5f6"
+    },
+    {
+      "id": "dfire:test:WEB11729",
+      "max_cosine": 0.6939,
+      "nearest": "dfire:val:WEB09353"
+    },
+    {
+      "id": "dfire:test:WEB10905",
+      "max_cosine": 0.7151,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV015172_jpg.rf.e1a249da9f018c26e145bd459e129d3e"
+    },
+    {
+      "id": "dfire:test:WEB10516",
+      "max_cosine": 0.6377,
+      "nearest": "fasdd:train:fire_CV008583_jpg.rf.6f79d319d9b19ae90d890a6ad1454806"
+    },
+    {
+      "id": "dfire:test:WEB10507",
+      "max_cosine": 0.6388,
+      "nearest": "dfire:val:WEB03917"
+    },
+    {
+      "id": "dfire:test:WEB10825",
+      "max_cosine": 0.7042,
+      "nearest": "dfire:val:WEB05079"
+    },
+    {
+      "id": "dfire:test:WEB10567",
+      "max_cosine": 0.6981,
+      "nearest": "dfire:val:WEB04556"
+    },
+    {
+      "id": "dfire:test:WEB10517",
+      "max_cosine": 0.6004,
+      "nearest": "dfire:val:WEB05135"
+    },
+    {
+      "id": "dfire:test:WEB10826",
+      "max_cosine": 0.7623,
+      "nearest": "dfire:val:WEB05291"
+    },
+    {
+      "id": "dfire:test:WEB10847",
+      "max_cosine": 0.7698,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV018402_jpg.rf.1807f090281611135ab458e428cdd658"
+    },
+    {
+      "id": "dfire:test:WEB10518",
+      "max_cosine": 0.6363,
+      "nearest": "dfire:val:WEB04140"
+    },
+    {
+      "id": "dfire:test:WEB11230",
+      "max_cosine": 0.8517,
+      "nearest": "dfire:train:WEB05238"
+    },
+    {
+      "id": "dfire:test:WEB11549",
+      "max_cosine": 0.805,
+      "nearest": "dfire:train:WEB05296"
+    },
+    {
+      "id": "dfire:test:WEB10802",
+      "max_cosine": 0.7535,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV013874_jpg.rf.5f3709bab0a2dc0257411ba78a189ac3"
+    },
+    {
+      "id": "dfire:test:WEB11233",
+      "max_cosine": 0.8255,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV017134_jpg.rf.3a4ffcbd3841b83ef8fad319ecdeacee"
+    },
+    {
+      "id": "dfire:test:WEB11153",
+      "max_cosine": 0.8139,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV015461_jpg.rf.bb765eaabfdaa4c946803e9108656755"
+    },
+    {
+      "id": "dfire:test:WEB11570",
+      "max_cosine": 0.7725,
+      "nearest": "fasdd:train:smoke_CV006732_jpg.rf.ea14c254789065a9f710b0ecf7656390"
+    },
+    {
+      "id": "dfire:test:WEB11560",
+      "max_cosine": 0.8313,
+      "nearest": "dfire:val:WEB05339"
+    },
+    {
+      "id": "dfire:test:WEB11248",
+      "max_cosine": 0.6761,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008966_jpg.rf.09a3692ccbf7327e4a556e80b8ed795e"
+    },
+    {
+      "id": "dfire:test:WEB11696",
+      "max_cosine": 0.6312,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV014664_jpg.rf.d010b60cc39f8511af976f628eb6a4d4"
+    },
+    {
+      "id": "dfire:test:AoF08212",
+      "max_cosine": 0.7857,
+      "nearest": "dfire:train:AoF06057"
+    },
+    {
+      "id": "dfire:test:AoF08219",
+      "max_cosine": 0.8563,
+      "nearest": "dfire:train:AoF06057"
+    },
+    {
+      "id": "dfire:test:AoF08162",
+      "max_cosine": 0.8289,
+      "nearest": "dfire:train:AoF06057"
+    },
+    {
+      "id": "fasdd:test:smoke_CV001905_jpg.rf.8b32adce5c345a313a611a5aa70f94a7",
+      "max_cosine": 0.8042,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV003809_jpg.rf.05fd17c4a43d7efc16c5e34e3cbb4c0b"
+    },
+    {
+      "id": "fasdd:test:smoke_CV001691_jpg.rf.8b7ea040421c13706402fabb1eec13a4",
+      "max_cosine": 0.7444,
+      "nearest": "fasdd:train:smoke_CV001313_jpg.rf.c87b3fb431ca3d6c8ce165e9a33fe7b0"
+    },
+    {
+      "id": "fasdd:test:smoke_CV002718_jpg.rf.183913447b543affe6a7a85fd9bb5352",
+      "max_cosine": 0.8074,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV018153_jpg.rf.d2905e84371cbfd7b68b88082452a6de"
+    },
+    {
+      "id": "fasdd:test:bothFireAndSmoke_CV000608_jpg.rf.96793f79ac9c06ffec844238c454722a",
+      "max_cosine": 0.8724,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV017133_jpg.rf.501dd201414cbb79b7bdecfb9832a21e"
+    },
+    {
+      "id": "dfire:test:WEB10870",
+      "max_cosine": 0.8477,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV015461_jpg.rf.bb765eaabfdaa4c946803e9108656755"
+    },
+    {
+      "id": "dfire:test:WEB10936",
+      "max_cosine": 0.8569,
+      "nearest": "dfire:val:WEB05585"
+    },
+    {
+      "id": "dfire:test:WEB10871",
+      "max_cosine": 0.8359,
+      "nearest": "dfire:train:WEB04983"
+    },
+    {
+      "id": "fasdd:test:bothFireAndSmoke_CV017156_jpg.rf.10d7238b1dfd79ff0937e0c4268d4ef6",
+      "max_cosine": 0.8766,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV017743_jpg.rf.207596e76e23d6739aaee91720ff7461"
+    },
+    {
+      "id": "dfire:test:WEB11223",
+      "max_cosine": 0.7872,
+      "nearest": "fasdd:train:smoke_CV006193_jpg.rf.94b3dccbe084a23f40e0cffc2472dac1"
+    },
+    {
+      "id": "fasdd:test:bothFireAndSmoke_CV000044_jpg.rf.f26d407d5f75d8c55e4d3eb76c4bd5aa",
+      "max_cosine": 0.9197,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV000132_jpg.rf.3d949f58bf53b9c366784bad04b92998"
+    },
+    {
+      "id": "dfire:test:PublicDataset01165",
+      "max_cosine": 0.7827,
+      "nearest": "dfire:train:PublicDataset00370"
+    },
+    {
+      "id": "dfire:test:WEB11719",
+      "max_cosine": 0.6892,
+      "nearest": "fasdd:train:smoke_CV004365_jpg.rf.f213067af98b6f4470dafa77847e4246"
+    },
+    {
+      "id": "dfire:test:WEB10602",
+      "max_cosine": 0.8609,
+      "nearest": "dfire:train:WEB05053"
+    },
+    {
+      "id": "dfire:test:WEB10313",
+      "max_cosine": 0.8101,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV012536_jpg.rf.5e73de2b77b3c8f55a154df85b1ba668"
+    },
+    {
+      "id": "dfire:test:WEB10046",
+      "max_cosine": 0.8058,
+      "nearest": "dfire:train:WEB02287"
+    },
+    {
+      "id": "dfire:test:PublicDataset01314",
+      "max_cosine": 0.8437,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV003141_jpg.rf.4c5d5405e67bbd1bb027d50643423c27"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV006847_jpg.rf.30ddd904f72499b83b7664e96c1c3c43",
+      "max_cosine": 0.7513,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV028147_jpg.rf.86ffdc6c2c36000d037bf5908a6141f9"
+    },
+    {
+      "id": "dfire:test:WEB10219",
+      "max_cosine": 0.6662,
+      "nearest": "dfire:train:WEB02746"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV032221_jpg.rf.69f23707eed0cf401573357d280f4dc6",
+      "max_cosine": 0.6435,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV028147_jpg.rf.86ffdc6c2c36000d037bf5908a6141f9"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV021765_jpg.rf.e18af5bb5659a2fa8c74ad8ab95befec",
+      "max_cosine": 0.6138,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025805_jpg.rf.12949f32e2bf5e1f8409135efa6266b7"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV037849_jpg.rf.55ef182b5dabf8929f58e981bc851919",
+      "max_cosine": 0.6976,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025805_jpg.rf.12949f32e2bf5e1f8409135efa6266b7"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV035081_jpg.rf.88ac4e23fd5ef6235036ae406c4f5bd5",
+      "max_cosine": 0.6975,
+      "nearest": "dfire:val:WEB02221"
+    },
+    {
+      "id": "dfire:test:WEB10387",
+      "max_cosine": 0.5898,
+      "nearest": "dfire:train:WEB02727"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV031760_jpg.rf.896a818c870eeec2cf29b5c40499d6db",
+      "max_cosine": 0.7153,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV012012_jpg.rf.1cd3a8a36f5ad67577e04657c7109dc4"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV014725_jpg.rf.3b43e6a305377a8d3f6652d443b9d9f6",
+      "max_cosine": 0.5571,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV013685_jpg.rf.7fbeee725d8e0b505585cf9fc912b855"
+    },
+    {
+      "id": "dfire:test:WEB10373",
+      "max_cosine": 0.529,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011933_jpg.rf.74f2549f198c8cbea9f126b43dc98208"
+    },
+    {
+      "id": "dfire:test:WEB09975",
+      "max_cosine": 0.7107,
+      "nearest": "dfire:train:WEB02752"
+    },
+    {
+      "id": "dfire:test:WEB10215",
+      "max_cosine": 0.6969,
+      "nearest": "dfire:train:WEB01546"
+    },
+    {
+      "id": "dfire:test:WEB10139",
+      "max_cosine": 0.8372,
+      "nearest": "dfire:train:WEB02752"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV005464_jpg.rf.c2ff2debd9faf2d4faeee9b99fd0cffa",
+      "max_cosine": 0.8979,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011257_jpg.rf.626df3662e271096f93ce01f184c3b0b"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV000568_jpg.rf.da28a11b17cd478c3d7934d837a8ff02",
+      "max_cosine": 0.8957,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011257_jpg.rf.626df3662e271096f93ce01f184c3b0b"
+    },
+    {
+      "id": "dfire:test:WEB10065",
+      "max_cosine": 0.7288,
+      "nearest": "dfire:train:WEB02752"
+    },
+    {
+      "id": "dfire:test:WEB10098",
+      "max_cosine": 0.6258,
+      "nearest": "dfire:train:WEB02752"
+    },
+    {
+      "id": "dfire:test:AoF07604",
+      "max_cosine": 0.8306,
+      "nearest": "dfire:train:AoF02735"
+    },
+    {
+      "id": "dfire:test:AoF07647",
+      "max_cosine": 0.8468,
+      "nearest": "dfire:train:AoF03163"
+    },
+    {
+      "id": "dfire:test:AoF07445",
+      "max_cosine": 0.8306,
+      "nearest": "dfire:train:AoF03163"
+    },
+    {
+      "id": "dfire:test:WEB10407",
+      "max_cosine": 0.689,
+      "nearest": "dfire:train:AoF03163"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV006833_jpg.rf.4910fe452ad0ccc5d13fdd2f788d64de",
+      "max_cosine": 0.6146,
+      "nearest": "fasdd:train:smoke_CV006376_jpg.rf.22a0e14c50c0ed8287cb068b5ced94cd"
+    },
+    {
+      "id": "dfire:test:PublicDataset01310",
+      "max_cosine": 0.6448,
+      "nearest": "fasdd:train:smoke_CV007593_jpg.rf.be0dc3551b799acdc7777b1e14c8c471"
+    },
+    {
+      "id": "dfire:test:AoF07463",
+      "max_cosine": 0.7749,
+      "nearest": "dfire:train:AoF06057"
+    },
+    {
+      "id": "dfire:test:AoF07609",
+      "max_cosine": 0.7762,
+      "nearest": "dfire:val:AoF04597"
+    },
+    {
+      "id": "dfire:test:AoF07651",
+      "max_cosine": 0.6651,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037753_jpg.rf.f48fd4b5d25788b2317b4d99af1f4c43"
+    },
+    {
+      "id": "dfire:test:AoF07441",
+      "max_cosine": 0.7915,
+      "nearest": "dfire:val:AoF00009"
+    },
+    {
+      "id": "dfire:test:AoF07549",
+      "max_cosine": 0.7616,
+      "nearest": "dfire:val:AoF04597"
+    },
+    {
+      "id": "dfire:test:AoF07547",
+      "max_cosine": 0.7473,
+      "nearest": "dfire:val:AoF04597"
+    },
+    {
+      "id": "dfire:test:WEB10268",
+      "max_cosine": 0.6916,
+      "nearest": "dfire:val:AoF04597"
+    },
+    {
+      "id": "dfire:test:AoF07548",
+      "max_cosine": 0.7289,
+      "nearest": "dfire:val:AoF04597"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV030031_jpg.rf.2c01245314578a9a53c6a21b3bce939a",
+      "max_cosine": 0.6094,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV021342_jpg.rf.be010d75a990496efb3311fb27d7f4ae"
+    },
+    {
+      "id": "dfire:test:WEB10100",
+      "max_cosine": 0.676,
+      "nearest": "dfire:train:AoF04740"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV035942_jpg.rf.9d632f343ec79e9820c11cc9524ebc54",
+      "max_cosine": 0.6381,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV021342_jpg.rf.be010d75a990496efb3311fb27d7f4ae"
+    },
+    {
+      "id": "fasdd:test:neitherFireNorSmoke_CV015749_jpg.rf.d629ceedae3f3cbc85a1efe44823ef12",
+      "max_cosine": 0.702,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV028109_jpg.rf.acc292ad9136f7d299f958381958423b"
+    },
+    {
+      "id": "wikimedia:2006-02-25_candle-flame_with_colour-shift_B",
+      "max_cosine": 0.7446,
+      "nearest": "fasdd:train:fire_CV004286_jpg.rf.77a824e77015f95ac480ebfb9004401c"
+    },
+    {
+      "id": "wikimedia:A_Red_Candle_s_flame",
+      "max_cosine": 0.7257,
+      "nearest": "fasdd:train:fire_CV000592_jpg.rf.e40681e4836fa36098abde5f665568f1"
+    },
+    {
+      "id": "wikimedia:Blue_candle_burning_looped.gif",
+      "max_cosine": 0.8071,
+      "nearest": "fasdd:train:fire_CV005983_jpg.rf.f6e588f4e6c46dc0ac59427788636d6c"
+    },
+    {
+      "id": "wikimedia:Gas_lighter_flame",
+      "max_cosine": 0.7179,
+      "nearest": "fasdd:train:fire_CV004286_jpg.rf.77a824e77015f95ac480ebfb9004401c"
+    },
+    {
+      "id": "wikimedia:White_lighter_with_flame",
+      "max_cosine": 0.6677,
+      "nearest": "fasdd:train:fire_CV004286_jpg.rf.77a824e77015f95ac480ebfb9004401c"
+    },
+    {
+      "id": "wikimedia:Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_",
+      "max_cosine": 0.7051,
+      "nearest": "fasdd:train:fire_CV004286_jpg.rf.77a824e77015f95ac480ebfb9004401c"
+    },
+    {
+      "id": "wikimedia:A_simple_campfire",
+      "max_cosine": 0.8482,
+      "nearest": "fasdd:val:fire_CV010710_jpg.rf.0c8c038e6dc64f86e8bd99393f240863"
+    },
+    {
+      "id": "wikimedia:Campfire_79586115_",
+      "max_cosine": 0.7927,
+      "nearest": "fasdd:val:fire_CV010710_jpg.rf.0c8c038e6dc64f86e8bd99393f240863"
+    },
+    {
+      "id": "wikimedia:A_welder_who_works_in_the_round-house_at_the_Chicago_and_Nor",
+      "max_cosine": 0.6523,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV010409_jpg.rf.f062457d27656096dfa0b194041135d9"
+    },
+    {
+      "id": "wikimedia:Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445",
+      "max_cosine": 0.7644,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV010409_jpg.rf.f062457d27656096dfa0b194041135d9"
+    },
+    {
+      "id": "wikimedia:1_singapore_national_day_parade_2011_fireworks",
+      "max_cosine": 0.6505,
+      "nearest": "local:train:web_114369005:web_negative"
+    },
+    {
+      "id": "wikimedia:20260124_Fire_33687_",
+      "max_cosine": 0.7862,
+      "nearest": "fasdd:train:fire_CV002514_jpg.rf.39c6894f0cb664033fe066c1e72c2c36"
+    }
+  ],
+  "note": "CLIP embedding check is a sample of train/val, not an exhaustive proof. pHash is exhaustive over cached train/val phashes."
+}

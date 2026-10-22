@@ -1,0 +1,39 @@
+{
+  "seed": 20261022,
+  "images": 100,
+  "positives": 50,
+  "negatives": 50,
+  "positive_categories": {
+    "fire": 25,
+    "smoke": 15,
+    "both": 10
+  },
+  "negative_families": {
+    "camera_artifact": 12,
+    "fire_adjacent": 12,
+    "light_colour": 13,
+    "smoke_like": 13
+  },
+  "negative_subcategories": {
+    "blur_noise_compression": 4,
+    "campfire": 2,
+    "candle": 3,
+    "chandelier_festival": 1,
+    "clouds": 6,
+    "dust_snow": 2,
+    "fireplace": 1,
+    "fireworks": 1,
+    "fog_mist_haze": 5,
+    "gas_stove": 1,
+    "infrared_night": 4,
+    "lamps_neon_brake": 2,
+    "match_lighter": 2,
+    "orange_clothing_ppe": 2,
+    "rain_on_lens": 4,
+    "reflection_glare": 2,
+    "street_head_lights": 3,
+    "sunset_sunrise": 3,
+    "welding": 2
+  },
+  "review_status": "PENDING HUMAN REVIEW - not locked, not for benchmarking"
+}

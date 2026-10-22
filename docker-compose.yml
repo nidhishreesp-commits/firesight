@@ -1,0 +1,37 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    image: firesight-api:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./configs:/app/configs
+      - ./models:/app/models
+    environment:
+      FIRESIGHT__DETECTOR__MODEL_PATH: models/best_fire_v3.onnx
+      FIRESIGHT__DETECTOR__DEVICE: auto
+      FIRESIGHT__VERIFIER__ENABLED: "true"
+    restart: unless-stopped
+    # GPU: uncomment when nvidia-container-toolkit is installed
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    image: firesight-frontend:latest
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped

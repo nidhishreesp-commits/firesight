@@ -1,0 +1,16 @@
+{
+  "source_pt": "C:\\Users\\Nidhi\\My projects\\firesight\\runs\\train\\finetune_v2_1ep\\weights\\best.pt",
+  "artifact": "models\\finetune_v2_1ep.onnx",
+  "format": "onnx",
+  "sha256": "f061c64ba07fe6e38a4dfb7a774f6d408463e9e5fa0f12615eec1bda46c33822",
+  "imgsz": 512,
+  "opset": 17,
+  "device": "cpu",
+  "dynamic": false,
+  "half": false,
+  "int8": false,
+  "classes": {
+    "0": "fire",
+    "1": "smoke"
+  }
+}

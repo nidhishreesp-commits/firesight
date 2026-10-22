@@ -1,0 +1,79 @@
+app:
+  name: firesight
+  data_root: data
+  models_dir: models
+  artifacts_dir: artifacts
+  log_level: INFO
+
+server:
+  host: 0.0.0.0
+  port: 8000
+  cors_origins:
+    - http://localhost:5173
+    - http://127.0.0.1:5173
+  max_upload_mb: 512
+
+detector:
+  model_path: models/best_fire_v3.onnx
+  backend: onnx
+  imgsz: 640
+  iou: 0.45
+  max_det: 100
+  device: auto
+  class_map:
+    0: fire
+    1: smoke
+  conf:
+    fire: 0.35
+    smoke: 0.25
+
+temporal:
+  enabled: true
+  n_of_m:
+    fire: [3, 5]
+    smoke: [4, 6]
+  max_gap_s: 2.0
+  min_area_px: 400
+  smoke_growth_window: 8
+  smoke_growth_min_ratio: 0.15
+  tracker: bytetrack
+  track_iou: 0.3
+
+verifier:
+  enabled: false
+  model_path: models/verifier.onnx
+  threshold: 0.60
+  classes: [fire, lookalike, smoke]
+
+alarm:
+  min_duration_s: 1.0
+  cooldown_s: 30.0
+  escalation:
+    - level: 1
+      after_s: 0
+      action: dashboard
+    - level: 2
+      after_s: 30
+      action: webhook
+    - level: 3
+      after_s: 120
+      action: siren
+
+stream:
+  sample_fps: 5.0
+  reconnect_s: 3.0
+  jpeg_quality: 80
+  max_cameras: 9
+
+benchmark:
+  test_manifest: data/splits/test.jsonl
+  val_manifest: data/splits/val.jsonl
+  target_fpr: 0.001
+  iou_threshold: 0.5
+  frames_per_day: 86400
+  clip_labels: data/clips/clips.jsonl
+  bootstrap_samples: 500
+
+monitoring:
+  prometheus_enabled: true
+  drift_reference: artifacts/drift_reference.json

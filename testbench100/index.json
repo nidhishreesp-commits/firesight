@@ -1,0 +1,3412 @@
+[
+  {
+    "id": "dfire:test:WEB11091",
+    "file": "dfire_test_WEB11091.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        36.99999999999999,
+        4.000000000000005,
+        633.0,
+        347.00000000000006
+      ],
+      [
+        228.00000000000006,
+        233.0,
+        256.0,
+        252.00000000000003
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 360,
+    "sha256": "6e476afcbc16d73184d18d767f900ff360a5b7b63ac825473f3d4c9b87fabb7f",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.887274,
+      "brightness": 156.7
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10528",
+    "file": "dfire_test_WEB10528.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        567.0,
+        119.0,
+        639.0,
+        204.0
+      ],
+      [
+        459.00000000000006,
+        196.00000000000003,
+        545.0,
+        295.0
+      ],
+      [
+        225.0,
+        275.0,
+        267.0,
+        325.0
+      ],
+      [
+        284.0,
+        279.0,
+        384.0,
+        345.0
+      ],
+      [
+        148.00000000000003,
+        53.0,
+        175.00000000000003,
+        77.0
+      ],
+      [
+        3.999999999999986,
+        11.0,
+        563.0,
+        310.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 360,
+    "sha256": "50ae54930b17e800d90a708b0df4a9c8e2c30c29dcf4a73fc44661ecd4370304",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.725438,
+      "brightness": 111.3
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10976",
+    "file": "dfire_test_WEB10976.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        12.000000000000004,
+        11.000000000000023,
+        826.0,
+        334.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 840,
+    "height": 472,
+    "sha256": "bd73e0d40acce70729590915dbaf53e6dc1b9ee774fd8149c7da974d190486d5",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.663141,
+      "brightness": 139.7
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10676",
+    "file": "dfire_test_WEB10676.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        173.00000000000006,
+        277.0,
+        311.0,
+        298.0
+      ],
+      [
+        328.00000000000006,
+        254.99999999999997,
+        433.00000000000006,
+        286.0
+      ],
+      [
+        8.999999999999986,
+        106.00000000000003,
+        636.0,
+        297.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 352,
+    "sha256": "4eb4e655e0d1fe2e5c2a893cb883c7bacf99fd174d7b71be6eba612a0e978dd1",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.531592,
+      "brightness": 146.6
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11742",
+    "file": "dfire_test_WEB11742.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        357.99999999999994,
+        81.99999999999997,
+        927.0,
+        513.9999999999999
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1000,
+    "height": 522,
+    "sha256": "97fdbc1885af738e6de97e33ad83c2dc558dabff0f6fac8cb73372c480ed394e",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.470897,
+      "brightness": 136.8
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10478",
+    "file": "dfire_test_WEB10478.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        111.00000000000001,
+        87.00000000000003,
+        443.00000000000006,
+        639.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 640,
+    "sha256": "c9a55b9c5ff6b2987d2e6d740173dddfd356b229117d9beb4075799d5c30011d",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.447422,
+      "brightness": 60.0
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10978",
+    "file": "dfire_test_WEB10978.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        2.9999999999999893,
+        6.000000000000005,
+        513.0,
+        373.99999999999994
+      ],
+      [
+        370.0,
+        296.0,
+        494.99999999999994,
+        437.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 910,
+    "height": 480,
+    "sha256": "92b4e744016290ae22dbf3e4a3f06024bad283c505226f2225eff43a56738b7d",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.42967,
+      "brightness": 95.1
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10606",
+    "file": "dfire_test_WEB10606.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        5.999999999999998,
+        7.000000000000004,
+        308.00000000000006,
+        367.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 620,
+    "height": 413,
+    "sha256": "cd31e05d52a9eea9a9a76e3cf7df0c28d05d3593118ed564641a1586503f3972",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.424588,
+      "brightness": 101.7
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10809",
+    "file": "dfire_test_WEB10809.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        5.0,
+        0.0,
+        316.0,
+        304.00000000000006
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 360,
+    "sha256": "49f3ae3435b8e3efde733b91c405d39960b5305c10da9c882b953d9de41c2dc9",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.410347,
+      "brightness": 87.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10592",
+    "file": "dfire_test_WEB10592.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        10.000000000000021,
+        352.99999999999994,
+        569.0,
+        692.9999999999999
+      ],
+      [
+        643.9999999999999,
+        356.0,
+        1843.0,
+        818.9999999999999
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1848,
+    "height": 923,
+    "sha256": "30cdb59acfa035ace1c8781d7ab1d0255506cf0e0bfde4983b598cf7798ba379",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.325459,
+      "brightness": 89.6
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:PublicDataset01329",
+    "file": "dfire_test_PublicDataset01329.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        161.0,
+        8.00000000000001,
+        385.0,
+        336.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 360,
+    "sha256": "905e553f9b76d898316e0207b00b24bc3ce32b96185d10ed22b25ce420ce544a",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.318889,
+      "brightness": 170.3
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10820",
+    "file": "dfire_test_WEB10820.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        120.00000000000001,
+        12.999999999999993,
+        202.0,
+        292.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 202,
+    "height": 360,
+    "sha256": "1925f033fedb3e87d214e7a1752e86319cf3eafbe4ee1ae11b598a0ae7b4f343",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.314604,
+      "brightness": 75.0
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10491",
+    "file": "dfire_test_WEB10491.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        138.00000000000003,
+        302.0,
+        441.0,
+        429.0
+      ],
+      [
+        445.00000000000006,
+        28.99999999999998,
+        1284.0000000000002,
+        440.99999999999994
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1400,
+    "height": 788,
+    "sha256": "f4778b9d7ba899cea9711df3e0cc25f3382abbcd0a86225076998dc66acfa162",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.313332,
+      "brightness": 106.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10040",
+    "file": "dfire_test_WEB10040.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        1057.0,
+        428.0,
+        1162.0,
+        472.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1920,
+    "height": 1080,
+    "sha256": "31d52abe0117c3a46e5acbc0c2b5938d477f7b821050cae148fd50225b65037d",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.002228,
+      "brightness": 132.9
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10512",
+    "file": "dfire_test_WEB10512.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        638.0,
+        259.0,
+        703.0,
+        349.0
+      ],
+      [
+        709.0,
+        306.00000000000006,
+        748.0000000000001,
+        317.0
+      ],
+      [
+        765.0,
+        328.0,
+        780.0,
+        350.0
+      ],
+      [
+        787.0000000000002,
+        272.0,
+        839.0,
+        335.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "1d7a3db4055aee84a71157c4c35a8e58cb42a5c9d34f7a226f48fa6e447fa6e6",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.006348,
+      "brightness": 64.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11729",
+    "file": "dfire_test_WEB11729.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        282.0,
+        413.00000000000006,
+        380.0,
+        460.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 573,
+    "height": 1027,
+    "sha256": "c0d0d70f7e8b67253fa3a1cf560e69a75dae284faaf84b9ed7af51a6abfb9eeb",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.007827,
+      "brightness": 162.1
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10905",
+    "file": "dfire_test_WEB10905.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        305.0,
+        180.0,
+        355.0,
+        223.00000000000003
+      ],
+      [
+        226.0,
+        217.0,
+        256.0,
+        239.00000000000003
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 404,
+    "sha256": "07600402ca9f73942e6464d208b3932ff0948c99a23acfeda0bc82e0cea10efb",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.008315,
+      "brightness": 51.8
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10516",
+    "file": "dfire_test_WEB10516.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        473.00000000000006,
+        6.999999999999995,
+        561.0,
+        111.0
+      ],
+      [
+        827.0,
+        39.0,
+        891.0000000000001,
+        123.0
+      ],
+      [
+        1021.0000000000001,
+        89.0,
+        1081.0,
+        152.00000000000003
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "ff8b0b5e2da845399a50df243e7141d9b65105675e079e3405da06a7da847283",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.009931,
+      "brightness": 87.3
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10507",
+    "file": "dfire_test_WEB10507.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        452.0,
+        295.0,
+        621.0000000000001,
+        358.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "dbdd0c4d5ad17cea6ce170f6db7d5f565723172e11ef47831390b3c12e281ccd",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.011553,
+      "brightness": 113.9
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10825",
+    "file": "dfire_test_WEB10825.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        249.00000000000003,
+        135.0,
+        309.0,
+        191.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 360,
+    "sha256": "d8a7f8f3097db5ed523e8359e1a9b5b7896ef3e0fe128d1aa86cde1dd25c4c3e",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.014583,
+      "brightness": 101.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10567",
+    "file": "dfire_test_WEB10567.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        110.0,
+        94.99999999999999,
+        176.0,
+        128.99999999999997
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 275,
+    "height": 214,
+    "sha256": "0aa88701294f27504c9db6af9df36476e5555b14c44f9e4c29a123401270e53c",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.038131,
+      "brightness": 30.0
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10517",
+    "file": "dfire_test_WEB10517.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        1.999999999999993,
+        537.0,
+        429.00000000000006,
+        632.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "08dfa44dcbe74be649fe8282456c8b673368a6f66ef4d81f62f82074ac8c75be",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.044016,
+      "brightness": 26.2
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10826",
+    "file": "dfire_test_WEB10826.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        274.0,
+        72.0,
+        342.0,
+        120.0
+      ],
+      [
+        223.0,
+        200.0,
+        249.00000000000003,
+        219.00000000000003
+      ],
+      [
+        291.00000000000006,
+        175.00000000000003,
+        375.00000000000006,
+        239.00000000000003
+      ],
+      [
+        524.0,
+        199.0,
+        573.0,
+        239.00000000000003
+      ],
+      [
+        417.0,
+        210.0,
+        479.00000000000006,
+        253.00000000000003
+      ],
+      [
+        291.0,
+        127.00000000000001,
+        475.00000000000006,
+        205.0
+      ],
+      [
+        232.0,
+        228.0,
+        249.00000000000003,
+        247.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 360,
+    "sha256": "31b5e640ab15f83c016230db83f195ae88b2ca5e38ec0ad64f644b4fd46ce33f",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.062292,
+      "brightness": 46.6
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10847",
+    "file": "dfire_test_WEB10847.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        145.0,
+        38.00000000000001,
+        195.00000000000003,
+        140.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 198,
+    "height": 360,
+    "sha256": "0ae70a191fea335b6f3d612ac19b3b2952ba3d5bd5473948f0458f9963b413a7",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.071549,
+      "brightness": 39.8
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10518",
+    "file": "dfire_test_WEB10518.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "fire",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 0,
+    "boxes_fire": [
+      [
+        988.0000000000001,
+        180.0,
+        1280.0,
+        425.0
+      ]
+    ],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "eceb9652db0f3f2fcffcd8d6b8341f4067703eea9a91d247bee473c15285f4f8",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.077626,
+      "brightness": 52.1
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11230",
+    "file": "dfire_test_WEB11230.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        1.9999999999999574,
+        0.0,
+        1275.0,
+        718.0
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "7d313d07bfe1cf02e1328286757d851c84bab0437a6b4d8d63dcc88a7744dc61",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.991769,
+      "brightness": 113.0
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11549",
+    "file": "dfire_test_WEB11549.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        5.0,
+        2.9999999999999893,
+        634.0,
+        359.0
+      ]
+    ],
+    "width": 640,
+    "height": 360,
+    "sha256": "641c4be9896f873ea81b7af34ac913b0f49274c322fc985eee394e2dd78be895",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.971892,
+      "brightness": 181.8
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10802",
+    "file": "dfire_test_WEB10802.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        20.0,
+        7.000000000000015,
+        1256.0,
+        701.0000000000001
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "6fc9605252397277e1adaec575fb31896d9b7cb12c8a1647c61919ec2531a3bd",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.930755,
+      "brightness": 178.7
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11233",
+    "file": "dfire_test_WEB11233.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        3.9999999999999925,
+        6.999999999999984,
+        597.0000000000001,
+        383.0
+      ]
+    ],
+    "width": 600,
+    "height": 400,
+    "sha256": "0d9813dfbb0693fcc8aa10a734c2544bb47ea94a1bc360661d35d92ded3e2273",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.929033,
+      "brightness": 71.9
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11153",
+    "file": "dfire_test_WEB11153.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        12.999999999999972,
+        7.0000000000000036,
+        632.0,
+        345.0
+      ]
+    ],
+    "width": 640,
+    "height": 352,
+    "sha256": "2d365b5c891cbc606c6a95e15e26b2acc929ce230c73a3e09d4be33839bbb5d1",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.92872,
+      "brightness": 109.3
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11570",
+    "file": "dfire_test_WEB11570.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        6.999999999999995,
+        8.999999999999988,
+        353.0,
+        354.0
+      ]
+    ],
+    "width": 360,
+    "height": 360,
+    "sha256": "b1dcd157febf50f0329e14b45be03a3a4b13a4c3944405e1efbc418462285ab7",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.921065,
+      "brightness": 164.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11560",
+    "file": "dfire_test_WEB11560.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        8.999999999999986,
+        7.999999999999991,
+        627.0,
+        351.00000000000006
+      ]
+    ],
+    "width": 640,
+    "height": 360,
+    "sha256": "976b48bec3b67b323e44555d836df943fcfdc900f4774fcdda5afe18c7c1c60b",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.920026,
+      "brightness": 111.4
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11248",
+    "file": "dfire_test_WEB11248.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "easy",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        16.999999999999996,
+        10.000000000000021,
+        770.0,
+        520.0
+      ]
+    ],
+    "width": 793,
+    "height": 528,
+    "sha256": "915653fd4be431d7a411f83fb95108172a053162297b31d60c090f0975e27597",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.917187,
+      "brightness": 110.8
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11696",
+    "file": "dfire_test_WEB11696.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        855.0,
+        463.99999999999994,
+        888.0000000000001,
+        487.99999999999994
+      ]
+    ],
+    "width": 1353,
+    "height": 1015,
+    "sha256": "5aac6b2f761366a3825c36d8cf681cacf59b2df70381f1c44488409dc24ad96a",
+    "flags": {
+      "small_distant": true,
+      "low_light": false,
+      "max_box_ratio": 0.000577,
+      "brightness": 91.1
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF08212",
+    "file": "dfire_test_AoF08212.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        904.0,
+        289.0,
+        933.0000000000001,
+        314.0
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "5ddfb15a948cc25416d52e0025bdae8705dc963b050780934ac449c3445c9c9e",
+    "flags": {
+      "small_distant": true,
+      "low_light": false,
+      "max_box_ratio": 0.000787,
+      "brightness": 112.4
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF08219",
+    "file": "dfire_test_AoF08219.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        660.0,
+        280.0,
+        696.0,
+        301.0
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "5fff3ed583b1db153b2ac7baeca301d355c9110367a31c7610614fbd6d4b4e30",
+    "flags": {
+      "small_distant": true,
+      "low_light": false,
+      "max_box_ratio": 0.00082,
+      "brightness": 128.7
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF08162",
+    "file": "dfire_test_AoF08162.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        519.0,
+        250.0,
+        544.0,
+        283.00000000000006
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "d25dd6627c553d6bfc77b5c739f5f46e62923d3d1ca3b29055865b9318851ac6",
+    "flags": {
+      "small_distant": true,
+      "low_light": false,
+      "max_box_ratio": 0.000895,
+      "brightness": 119.9
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:smoke_CV001905_jpg.rf.8b32adce5c345a313a611a5aa70f94a7",
+    "file": "fasdd_test_smoke_CV001905_jpg.rf.8b32adce5c345a313a611a5aa70f94a7.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "medium",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        217.99999999999997,
+        0.6666666666666776,
+        349.3333333333333,
+        182.0
+      ]
+    ],
+    "width": 640,
+    "height": 360,
+    "sha256": "b25997a2cad958b751e26b1cef260bd3abc2f5972dec4ef60cea6fbfa07a4e88",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.103364,
+      "brightness": 42.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:smoke_CV001691_jpg.rf.8b7ea040421c13706402fabb1eec13a4",
+    "file": "fasdd_test_smoke_CV001691_jpg.rf.8b7ea040421c13706402fabb1eec13a4.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "medium",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        266.66666666666663,
+        15.333333333333306,
+        394.66666666666663,
+        227.33333333333331
+      ]
+    ],
+    "width": 640,
+    "height": 360,
+    "sha256": "156d1f82ee6ddc2cd46252362565062260a9c562a26fca48910e5bccdf80b7f0",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.117778,
+      "brightness": 34.9
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:smoke_CV002718_jpg.rf.183913447b543affe6a7a85fd9bb5352",
+    "file": "fasdd_test_smoke_CV002718_jpg.rf.183913447b543affe6a7a85fd9bb5352.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "positive",
+    "category": "smoke",
+    "difficulty": "medium",
+    "has_fire": 0,
+    "has_smoke": 1,
+    "boxes_fire": [],
+    "boxes_smoke": [
+      [
+        265.33333333333337,
+        0.6666666666666976,
+        420.66666666666663,
+        185.99999999999997
+      ]
+    ],
+    "width": 640,
+    "height": 360,
+    "sha256": "90df3615efbab3761922e619a99f60e31301f5e0e64695ca8451f8e9a215e25f",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.12495,
+      "brightness": 41.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:bothFireAndSmoke_CV000608_jpg.rf.96793f79ac9c06ffec844238c454722a",
+    "file": "fasdd_test_bothFireAndSmoke_CV000608_jpg.rf.96793f79ac9c06ffec844238c454722a.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        271.22676579925655,
+        190.3345724907063,
+        340.2230483271376,
+        302.1561338289963
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        2.0000000000000284,
+        2.0000000000000053,
+        640.0,
+        447.0
+      ]
+    ],
+    "width": 640,
+    "height": 447,
+    "sha256": "54fa08416a28e2df46a2585ae2ad1d173d880a8dc57b336c22b463ab26652998",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.992415,
+      "brightness": 128.4
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10870",
+    "file": "dfire_test_WEB10870.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        412.0,
+        384.00000000000006,
+        853.0,
+        634.0
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        5.0,
+        4.999999999999982,
+        1275.0,
+        714.0
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "851e1640dc80e669ea3702cf2509c513c448c65c5a6843b397d1b0fcf4c809d0",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.977029,
+      "brightness": 144.3
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10936",
+    "file": "dfire_test_WEB10936.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        141.0,
+        495.0,
+        242.00000000000003,
+        573.0
+      ],
+      [
+        267.0,
+        461.99999999999994,
+        300.0,
+        490.0
+      ],
+      [
+        364.0,
+        327.0,
+        448.00000000000006,
+        390.99999999999994
+      ],
+      [
+        495.0,
+        400.0,
+        655.0,
+        447.0
+      ],
+      [
+        679.0,
+        408.0,
+        881.0,
+        459.99999999999994
+      ],
+      [
+        880.0,
+        449.0,
+        920.0,
+        492.0
+      ],
+      [
+        1115.0,
+        541.0000000000001,
+        1133.0,
+        553.0
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        6.000000000000014,
+        4.999999999999982,
+        1273.0,
+        711.0
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "0ea5eb03d5ec8df1c4d676bc407520f9b7aa8ae838681745be69e7cdf21babbd",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.970597,
+      "brightness": 119.8
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10871",
+    "file": "dfire_test_WEB10871.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        187.00000000000003,
+        347.0,
+        912.0,
+        717.0
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        7.999999999999972,
+        4.999999999999982,
+        1266.0,
+        712.0
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "8a8713f89c7a80ed5970de68c89fa01d788c7e1f3f15a5e0c40d765321d63e18",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.965067,
+      "brightness": 145.5
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:bothFireAndSmoke_CV017156_jpg.rf.10d7238b1dfd79ff0937e0c4268d4ef6",
+    "file": "fasdd_test_bothFireAndSmoke_CV017156_jpg.rf.10d7238b1dfd79ff0937e0c4268d4ef6.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "easy",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        25.351657235246563,
+        126.75828617623284,
+        106.5804365400162,
+        204.36540016168152
+      ],
+      [
+        208.5044462409054,
+        94.68067906224739,
+        525.1414713015361,
+        299.5634599838319
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        5.173807599029914,
+        3.1042845594179145,
+        631.2045270816492,
+        299.0460792239289
+      ]
+    ],
+    "width": 640,
+    "height": 301,
+    "sha256": "9556222889e573feb751b974b357b6340a408f8fc63a4fd0a073290083a78db6",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.961735,
+      "brightness": 190.1
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11223",
+    "file": "dfire_test_WEB11223.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        659.0,
+        368.0,
+        678.0000000000001,
+        396.00000000000006
+      ],
+      [
+        707.0,
+        377.0,
+        768.9999999999999,
+        405.00000000000006
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        670.0000000000001,
+        330.0,
+        762.0,
+        382.0
+      ]
+    ],
+    "width": 1280,
+    "height": 720,
+    "sha256": "783703806219c18701d42794839c5101c0ebd172176ba22efec559e6f48a5c4e",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.005191,
+      "brightness": 100.7
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:bothFireAndSmoke_CV000044_jpg.rf.f26d407d5f75d8c55e4d3eb76c4bd5aa",
+    "file": "fasdd_test_bothFireAndSmoke_CV000044_jpg.rf.f26d407d5f75d8c55e4d3eb76c4bd5aa.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        220.0,
+        230.00000000000003,
+        247.00000000000003,
+        255.0
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        222.5,
+        180.0,
+        252.99999999999997,
+        229.49999999999997
+      ]
+    ],
+    "width": 640,
+    "height": 360,
+    "sha256": "8ae9af751d0eddde4145c53bda37875713d5536dae8f344e149d490badab1cb2",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.006553,
+      "brightness": 147.9
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:PublicDataset01165",
+    "file": "dfire_test_PublicDataset01165.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        403.0,
+        119.00000000000001,
+        466.00000000000006,
+        145.0
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        353.0,
+        122.0,
+        399.0,
+        144.0
+      ]
+    ],
+    "width": 540,
+    "height": 360,
+    "sha256": "c4a8584f8d416863b4a97b5e3d53513006a4e772686c73120c8f63a701f4171e",
+    "flags": {
+      "small_distant": false,
+      "low_light": false,
+      "max_box_ratio": 0.008426,
+      "brightness": 96.4
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB11719",
+    "file": "dfire_test_WEB11719.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        361.0,
+        378.0,
+        429.00000000000006,
+        459.99999999999994
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        230.99999999999997,
+        295.0,
+        510.0,
+        439.00000000000006
+      ]
+    ],
+    "width": 1000,
+    "height": 750,
+    "sha256": "29c60e214dad7397cfd36eec4209b39f0e77ab4f7c5c9b1671062c3c3bc761e6",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.053568,
+      "brightness": 27.1
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10602",
+    "file": "dfire_test_WEB10602.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "positive",
+    "category": "both",
+    "difficulty": "medium",
+    "has_fire": 1,
+    "has_smoke": 1,
+    "boxes_fire": [
+      [
+        399.0,
+        190.00000000000003,
+        443.99999999999994,
+        226.0
+      ]
+    ],
+    "boxes_smoke": [
+      [
+        375.0,
+        38.99999999999999,
+        556.0,
+        203.0
+      ],
+      [
+        522.0,
+        192.99999999999997,
+        598.0,
+        234.0
+      ]
+    ],
+    "width": 864,
+    "height": 480,
+    "sha256": "6eabf61ba0c41e3790df979c120eb625408c902af868d4e314fea1a2c458b857",
+    "flags": {
+      "small_distant": false,
+      "low_light": true,
+      "max_box_ratio": 0.071576,
+      "brightness": 27.2
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10313",
+    "file": "dfire_test_WEB10313.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "sunset_sunrise",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 817,
+    "height": 600,
+    "sha256": "6f650753e6c38fdd05b7df0fb84ac1e861c9557690cdfaf8f5d281928eec5161",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10046",
+    "file": "dfire_test_WEB10046.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "sunset_sunrise",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 813,
+    "height": 533,
+    "sha256": "2356ae68cd507dfb1def25892c41c5ca4c04ae789a13ec22fa9e3be6e2979a7e",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:PublicDataset01314",
+    "file": "dfire_test_PublicDataset01314.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "sunset_sunrise",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 900,
+    "height": 600,
+    "sha256": "49fbd4ce076f5200a55c0909976a77548f2728c42add6fa5ff90024d0920e487",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV006847_jpg.rf.30ddd904f72499b83b7664e96c1c3c43",
+    "file": "fasdd_test_neitherFireNorSmoke_CV006847_jpg.rf.30ddd904f72499b83b7664e96c1c3c43.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "street_head_lights",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 508,
+    "height": 640,
+    "sha256": "17dd09d7218ce8ea9f2adcf02c74e75d9edc71aaf9eb6cdae1a7f91eea61c75d",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10219",
+    "file": "dfire_test_WEB10219.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "street_head_lights",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1067,
+    "height": 677,
+    "sha256": "9f0a34904d60fc1a97a1ebbfcae2e3c7d69de359c7af24a6c57093aa787576de",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV032221_jpg.rf.69f23707eed0cf401573357d280f4dc6",
+    "file": "fasdd_test_neitherFireNorSmoke_CV032221_jpg.rf.69f23707eed0cf401573357d280f4dc6.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "street_head_lights",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 300,
+    "sha256": "492665459fcfe745805f5d87aff9fcf2b9898ee5f61117726493c2f7e235c1c4",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV021765_jpg.rf.e18af5bb5659a2fa8c74ad8ab95befec",
+    "file": "fasdd_test_neitherFireNorSmoke_CV021765_jpg.rf.e18af5bb5659a2fa8c74ad8ab95befec.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "lamps_neon_brake",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 425,
+    "sha256": "7c0f6f43ad89ca3ac8dc2fff6db47d758e3313cf1d1db1f22b713484540001db",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV037849_jpg.rf.55ef182b5dabf8929f58e981bc851919",
+    "file": "fasdd_test_neitherFireNorSmoke_CV037849_jpg.rf.55ef182b5dabf8929f58e981bc851919.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "lamps_neon_brake",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 480,
+    "height": 640,
+    "sha256": "5046469845b079680fbfc361ccba79d70657dce0d40870daeb9419019b8b5f4c",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV035081_jpg.rf.88ac4e23fd5ef6235036ae406c4f5bd5",
+    "file": "fasdd_test_neitherFireNorSmoke_CV035081_jpg.rf.88ac4e23fd5ef6235036ae406c4f5bd5.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "reflection_glare",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 640,
+    "sha256": "b9a16d10a4a29377a840f5060bbad0c618eae0587067297bdcbee2190ccebfb1",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10387",
+    "file": "dfire_test_WEB10387.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "reflection_glare",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 577,
+    "height": 777,
+    "sha256": "62b834297dfdc9422041748c094c00e75e042271443e87811cc2da6d63e89f49",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV031760_jpg.rf.896a818c870eeec2cf29b5c40499d6db",
+    "file": "fasdd_test_neitherFireNorSmoke_CV031760_jpg.rf.896a818c870eeec2cf29b5c40499d6db.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "orange_clothing_ppe",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 302,
+    "sha256": "c658126f926f2a5f867c07b1d93c5872e538750c3811714c8e526ac220c57c26",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV014725_jpg.rf.3b43e6a305377a8d3f6652d443b9d9f6",
+    "file": "fasdd_test_neitherFireNorSmoke_CV014725_jpg.rf.3b43e6a305377a8d3f6652d443b9d9f6.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "orange_clothing_ppe",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 268,
+    "sha256": "a5a2d0a5124f07555010ce15edc498e7599f8c6a56434c5667e80fff6401825f",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10373",
+    "file": "dfire_test_WEB10373.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "chandelier_festival",
+    "family": "light_colour",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 785,
+    "height": 587,
+    "sha256": "3b9e776e9945815c576c5ff02d5609d1dec1a2d0fdc2c471e9db39dfcb9902d5",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB09975",
+    "file": "dfire_test_WEB09975.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "clouds",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1024,
+    "height": 768,
+    "sha256": "b6f1d8e065dcaf93d850b5aaf5cf223da431c2bae0e02563375ddc26ce3f3bec",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10215",
+    "file": "dfire_test_WEB10215.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "clouds",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 796,
+    "height": 607,
+    "sha256": "656506cbd59e4d6c5c66a4cc9ce08902bb9f4782a708b4bc10e6c8d093addf90",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10139",
+    "file": "dfire_test_WEB10139.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "clouds",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1024,
+    "height": 768,
+    "sha256": "83e926e11a6759a157590cac95e89a0703f8ac4ae36740e3e27f868049191fc9",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV005464_jpg.rf.c2ff2debd9faf2d4faeee9b99fd0cffa",
+    "file": "fasdd_test_neitherFireNorSmoke_CV005464_jpg.rf.c2ff2debd9faf2d4faeee9b99fd0cffa.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "clouds",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 420,
+    "sha256": "c2ee98ef5732447c5e066aa00b2b8b648f24671cf9a6658be230a1c52abf72b3",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV000568_jpg.rf.da28a11b17cd478c3d7934d837a8ff02",
+    "file": "fasdd_test_neitherFireNorSmoke_CV000568_jpg.rf.da28a11b17cd478c3d7934d837a8ff02.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "clouds",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 480,
+    "sha256": "5e6970a348627705e344133979e7cac967d32a04827b2363fae706501452ffc4",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10065",
+    "file": "dfire_test_WEB10065.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "clouds",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 816,
+    "height": 544,
+    "sha256": "8d23572fec42b454f343905a9a1112036946e5a2edd6debb19d311c229559913",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10098",
+    "file": "dfire_test_WEB10098.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "fog_mist_haze",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 3648,
+    "height": 2432,
+    "sha256": "f529184cef42bd92894d86118c4c041c6b03b6944aff127bc48507a254affbe0",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07604",
+    "file": "dfire_test_AoF07604.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "fog_mist_haze",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "8c733ad8b135fa01f5cd01196cb560305877b6083774df46bf8e2a11a2c0a388",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07647",
+    "file": "dfire_test_AoF07647.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "fog_mist_haze",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "c197ad70c46d4321f2f55937e60f6500473de1556ee93d2579b3fb3dbc07c5bd",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07445",
+    "file": "dfire_test_AoF07445.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "fog_mist_haze",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "2a621b1fff57b784a28b8ca2f145730a9f2083185919c6172dd08c38c0724a44",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10407",
+    "file": "dfire_test_WEB10407.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "fog_mist_haze",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 809,
+    "height": 610,
+    "sha256": "ba88a6538b779e1df6113810891a84d4ff37b43b1886a108ab8e2a6682fcf040",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV006833_jpg.rf.4910fe452ad0ccc5d13fdd2f788d64de",
+    "file": "fasdd_test_neitherFireNorSmoke_CV006833_jpg.rf.4910fe452ad0ccc5d13fdd2f788d64de.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "dust_snow",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 347,
+    "sha256": "e98477bb5eb8f4b4aa2340721572460e2a8f9f6fdcd6178185bcda29bbeb5d97",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:PublicDataset01310",
+    "file": "dfire_test_PublicDataset01310.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "dust_snow",
+    "family": "smoke_like",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 693,
+    "height": 390,
+    "sha256": "5574860ae661ac9f6e640eb75764cb2c295960ba083742e473bd62a8abb7154f",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07463",
+    "file": "dfire_test_AoF07463.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "blur_noise_compression",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "93045af628ac0ad983fe15b571f66ef121cb307a2fb45040f3c076f1ef66b4e1",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07609",
+    "file": "dfire_test_AoF07609.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "blur_noise_compression",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "408e4ff85be3a78e83f71b81c0d9c81d486d9e265e102fd0d4cbd03aaa5e6433",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07651",
+    "file": "dfire_test_AoF07651.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "blur_noise_compression",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 768,
+    "height": 432,
+    "sha256": "0ac42e193962c47c9ad1b1258c5046fe5dcd12e796843bc28e5754766597991c",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07441",
+    "file": "dfire_test_AoF07441.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "blur_noise_compression",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "f8ce90e00836854145bce38a0e8d2bb916d8c1ecf4c0a2359b17306f80bc231e",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07549",
+    "file": "dfire_test_AoF07549.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "infrared_night",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "053b02ca26df5c19056a979c5651bba3604d511c64cb250e1078b5d148abdca0",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07547",
+    "file": "dfire_test_AoF07547.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "infrared_night",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "b05a8c633e4bb1330119b0b0c6df25f323c388fb1d4a34d62fa3e8621421dee6",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10268",
+    "file": "dfire_test_WEB10268.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "infrared_night",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 360,
+    "sha256": "24e406680d3c564ac4e6e34624bafddbd21146caf44d14812b8543cc6207bdb6",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:AoF07548",
+    "file": "dfire_test_AoF07548.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "infrared_night",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 1280,
+    "height": 720,
+    "sha256": "cf9a1b1833f415388f493707be16cde44637982a4d1887982fec2cd54a22d1a8",
+    "flags": {
+      "synthetic": false,
+      "synthetic_how": null
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV030031_jpg.rf.2c01245314578a9a53c6a21b3bce939a",
+    "file": "synth_rain_0_neitherFireNorSmoke_CV030031_jpg.rf.2c01245314578a9a53c6a21b3bce939a.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "rain_on_lens",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 640,
+    "height": 480,
+    "sha256": "4d323a7bc95db1a9340473056a85d9ce5b0b3f4675f76a2749b7032ddccf66af",
+    "flags": {
+      "synthetic": true,
+      "synthetic_how": "synthetic_rain"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "dfire:test:WEB10100",
+    "file": "synth_rain_1_WEB10100.jpg",
+    "source": "dfire",
+    "license": "D-Fire (Kaggle mirror CC0; upstream per-source terms)",
+    "origin": "kaggle:sayedgamal99/smoke-fire-detection-yolo/test",
+    "kind": "negative",
+    "category": "rain_on_lens",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 530,
+    "height": 397,
+    "sha256": "a02825a42610b32191de663fe0088bccb61938dd1ff5aa03fc9fbbfd18eb541c",
+    "flags": {
+      "synthetic": true,
+      "synthetic_how": "synthetic_rain"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV035942_jpg.rf.9d632f343ec79e9820c11cc9524ebc54",
+    "file": "synth_rain_2_neitherFireNorSmoke_CV035942_jpg.rf.9d632f343ec79e9820c11cc9524ebc54.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "rain_on_lens",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 428,
+    "height": 640,
+    "sha256": "62947fae272ff0e762ca516ed4f2fa15d5e53406bae3f69b302bd9ec97f70255",
+    "flags": {
+      "synthetic": true,
+      "synthetic_how": "synthetic_rain"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "fasdd:test:neitherFireNorSmoke_CV015749_jpg.rf.d629ceedae3f3cbc85a1efe44823ef12",
+    "file": "synth_rain_3_neitherFireNorSmoke_CV015749_jpg.rf.d629ceedae3f3cbc85a1efe44823ef12.jpg",
+    "source": "fasdd",
+    "license": "CC BY 4.0 (FASDD_CV; Wang et al. 2025)",
+    "origin": "huggingface:weslleyskah/fasdd_cv",
+    "kind": "negative",
+    "category": "rain_on_lens",
+    "family": "camera_artifact",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": 567,
+    "height": 640,
+    "sha256": "13639d15ad723d623fac8ff37af160f01888f23799b229053aadf624666691b1",
+    "flags": {
+      "synthetic": true,
+      "synthetic_how": "synthetic_rain"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:2006-02-25_candle-flame_with_colour-shift_B",
+    "file": "wm_candle_2006-02-25_candle-flame_with_colour-shift_B.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 3.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:2006-02-25_candle-flame_with_colour-shift_B.jpg",
+    "attribution": {
+      "artist": "",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "title": "File:2006-02-25 candle-flame with colour-shift B.jpg"
+    },
+    "kind": "negative",
+    "category": "candle",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "9c3dca62a764b6b8fb9eb79af6e617dc64861978a7c134bb59dea29ce78cda72",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:A_Red_Candle_s_flame",
+    "file": "wm_candle_A_Red_Candle_s_flame.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:A_Red_Candle%E2%80%99s_flame.jpg",
+    "attribution": {
+      "artist": "Slyronit",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "title": "File:A Red Candle\u2019s flame.jpg"
+    },
+    "kind": "negative",
+    "category": "candle",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "81975f3fde5a651afe7d48f4d36beb68661746a682c77493b4c5ece2b932704a",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:Blue_candle_burning_looped.gif",
+    "file": "wm_candle_Blue_candle_burning_looped.gif.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC0",
+    "origin": "https://commons.wikimedia.org/wiki/File:Blue_candle_burning_looped.gif",
+    "attribution": {
+      "artist": "Jahobr",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "title": "File:Blue candle burning looped.gif"
+    },
+    "kind": "negative",
+    "category": "candle",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "8a195a17927430982a74295199b37f0983468c6dd0deefc407f88a57a5080ef4",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:Gas_lighter_flame",
+    "file": "wm_match_lighter_Gas_lighter_flame.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 3.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:Gas_lighter_flame.jpg",
+    "attribution": {
+      "artist": "Esquilo",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "title": "File:Gas lighter flame.jpg"
+    },
+    "kind": "negative",
+    "category": "match_lighter",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "1d308778d0458400a32f2a8d30b8efcfad7eb15570e80e263f6d514a07d3bfd2",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:White_lighter_with_flame",
+    "file": "wm_match_lighter_White_lighter_with_flame.JPG",
+    "source": "wikimedia_commons",
+    "license": "Public domain",
+    "origin": "https://commons.wikimedia.org/wiki/File:White_lighter_with_flame.JPG",
+    "attribution": {
+      "artist": "Kimmo Palosaari",
+      "license_url": "",
+      "title": "File:White lighter with flame.JPG"
+    },
+    "kind": "negative",
+    "category": "match_lighter",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "4df00bc00a7e5cec58941908e6595e90316a9fbc410bacbad56dc915f84091ed",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_",
+    "file": "wm_gas_stove_Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC BY 2.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:Chile_-_Cocham%C3%B3_climbing_98_-_gas_flame_(7019918795).jpg",
+    "attribution": {
+      "artist": "McKay Savage from London, UK",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "title": "File:Chile - Cocham\u00f3 climbing 98 - gas flame (7019918795).jpg"
+    },
+    "kind": "negative",
+    "category": "gas_stove",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "b05b5ae0fee659e29ff55314a0dcce59382ed52f1c63c283e3afca6f3227dd95",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:A_simple_campfire",
+    "file": "wm_campfire_A_simple_campfire.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 2.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:A_simple_campfire.jpg",
+    "attribution": {
+      "artist": "Leon Bovenkerk",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "title": "File:A simple campfire.jpg"
+    },
+    "kind": "negative",
+    "category": "campfire",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "4be482628fe98077a7c46f50d2b4590e504fc5cda0f7f1c915f753cdd0a7abad",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:Campfire_79586115_",
+    "file": "wm_campfire_Campfire_79586115_.jpeg",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 3.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:Campfire_(79586115).jpeg",
+    "attribution": {
+      "artist": "Thibaud Furst",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "title": "File:Campfire (79586115).jpeg"
+    },
+    "kind": "negative",
+    "category": "campfire",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "afeb7fe44fd60bba5fd636d94a2e502b9d0b97d74f2e44dc934a54d4b2dc78ac",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:A_welder_who_works_in_the_round-house_at_the_Chicago_and_Nor",
+    "file": "wm_welding_A_welder_who_works_in_the_round-house_at_the_Chicago_and_Northwestern_Railway_Company_s_Proviso_yard.jpg",
+    "source": "wikimedia_commons",
+    "license": "Public domain",
+    "origin": "https://commons.wikimedia.org/wiki/File:A_welder_who_works_in_the_round-house_at_the_Chicago_and_Northwestern_Railway_Company%27s_Proviso_yard._Chicago,_Illinois,_December_1942.jpg",
+    "attribution": {
+      "artist": "Jack Delano",
+      "license_url": "",
+      "title": "File:A welder who works in the round-house at the Chicago and Northwestern Railway Company's Proviso yard. Chicago, Illinois, December 1942.jpg"
+    },
+    "kind": "negative",
+    "category": "welding",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "c1a522b26a6949371429a34869d063498d13061909f4c59d0c9416d116cb4fb6",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445",
+    "file": "wm_welding_Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445.jpg",
+    "source": "wikimedia_commons",
+    "license": "Public domain",
+    "origin": "https://commons.wikimedia.org/wiki/File:Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445.jpg",
+    "attribution": {
+      "artist": "Petty Officer 2nd Class William Parker",
+      "license_url": "",
+      "title": "File:Causing sparks aboard the USS Kearsarge DVIDS130445.jpg"
+    },
+    "kind": "negative",
+    "category": "welding",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "b8064200f651abf44fac302255276464d6fd6fed84624f38b8d3c2a753106e27",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:1_singapore_national_day_parade_2011_fireworks",
+    "file": "wm_fireworks_1_singapore_national_day_parade_2011_fireworks.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:1_singapore_national_day_parade_2011_fireworks.jpg",
+    "attribution": {
+      "artist": "chensiyuan",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "title": "File:1 singapore national day parade 2011 fireworks.jpg"
+    },
+    "kind": "negative",
+    "category": "fireworks",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "5259d6a6fde08e33af25eef3c66719cac743f38a72ab6db122be80c18fcd5530",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  },
+  {
+    "id": "wikimedia:20260124_Fire_33687_",
+    "file": "wm_fireplace_20260124_Fire_33687_.jpg",
+    "source": "wikimedia_commons",
+    "license": "CC BY 4.0",
+    "origin": "https://commons.wikimedia.org/wiki/File:20260124_Fire_(33687).jpg",
+    "attribution": {
+      "artist": "Sergey A. Demidov / Sergey A. Demidov",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "title": "File:20260124 Fire (33687).jpg"
+    },
+    "kind": "negative",
+    "category": "fireplace",
+    "family": "fire_adjacent",
+    "difficulty": "hard",
+    "has_fire": 0,
+    "has_smoke": 0,
+    "boxes_fire": [],
+    "boxes_smoke": [],
+    "width": null,
+    "height": null,
+    "sha256": "cd5e8ce2ca1d78a38e5eab118eb21ebf0eaf1b5333e602e74c640f6b51592096",
+    "flags": {
+      "policy": "controlled/non-emergency flame, not an alarm event"
+    },
+    "review_status": "pending",
+    "reviewer": "",
+    "reviewed_at": "",
+    "ambiguous": 0,
+    "notes": ""
+  }
+]

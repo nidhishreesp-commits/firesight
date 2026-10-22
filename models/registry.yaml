@@ -1,0 +1,66 @@
+models:
+  - id: ssprod_best_fire_v2
+    path: ../iSight-python-licenseclean/isight-inference/models/best_fire_v2.pt
+    backend: yolo
+    family: YOLOv12n
+    license: proprietary (SmartSight)
+    trained_on: unknown merged dataset (/data/merged); possible D-Fire/FASDD contamination
+    notes: ss-prod reference model, 2.57M params, 100 epochs, 2026-06-16
+  - id: ssprod_best_fire_v2_onnx
+    path: ../iSight-python-licenseclean/isight-inference/models/best_fire_v2.onnx
+    backend: onnx
+    family: YOLOv12n
+    license: proprietary (SmartSight)
+    trained_on: unknown merged dataset; possible D-Fire/FASDD contamination
+    notes: ONNX export of ss-prod reference
+  - id: ssprod_fire_pt
+    path: ../iSight-python-licenseclean/isight-inference/models/fire.pt
+    backend: yolo
+    family: YOLO11s
+    license: proprietary (SmartSight)
+    trained_on: /data/fire_smoke/data.yaml (unknown provenance)
+    notes: older ss-prod model; not active in production
+  - id: ssprod_best_fire_v3
+    path: ../smartsight-models/best-fire-v3/model.onnx
+    backend: onnx
+    family: YOLOv12n
+    license: proprietary (SmartSight)
+    trained_on: best_fire_v2 + mined hard negatives (Kaggle)
+    notes: hard-negative retrain round 2
+  - id: ssprod_best_fire_v4
+    path: ../smartsight-models/best-fire-v4/model.onnx
+    backend: onnx
+    family: YOLOv12n
+    license: proprietary (SmartSight)
+    trained_on: best_fire_v2 + mined hard negatives, class-balanced
+    notes: hard-negative retrain round 3
+  - id: finetune_v2_1ep
+    path: runs/train/finetune_v2_1ep/weights/best.pt
+    backend: yolo
+    family: YOLOv12n
+    license: proprietary (SmartSight base weights) + internal fine-tune
+    trained_on: 6,400-image balanced TRAIN subset, 1 epoch, imgsz 512, CPU
+    notes: smoke-test of the training pipeline; undertrained, not a production candidate
+  - id: fireviewer_rtdetrv2_r50
+    path: fireviewer/rtdetr-v2-r50-fire-smoke
+    backend: rtdetr_v2
+    family: RT-DETRv2-R50
+    license: FireViewer Model Use License v1.0 (non-redistributable weights; commercial use with attribution)
+    trained_on: FireViewer corpus (FASDD/D-Fire-derived sources) -> HIGH contamination risk on our test
+    notes: id2label smoke_visible/flame_visible; squash-768 preprocessing required (HF default path scores ~0.02 mAP); weights must NOT be redistributed
+    preprocess_mode: squash
+    threshold: 0.005
+  - id: grounding_dino_tiny_zero_shot
+    path: IDEA-Research/grounding-dino-tiny
+    backend: grounding_dino
+    family: GroundingDINO-Tiny
+    license: Apache-2.0 (model card; verify weights/data terms)
+    trained_on: zero-shot, no fire/smoke fine-tuning
+    notes: zero-shot prompt "fire. smoke."; not trained on our splits
+  - id: verifier_mobilenetv3
+    path: models/verifier.onnx
+    backend: verifier
+    family: MobileNetV3-Small
+    license: internal (trained here)
+    trained_on: TRAIN split crops only + mined train hard negatives
+    notes: second-stage crop classifier; not a detector

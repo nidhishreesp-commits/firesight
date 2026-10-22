@@ -1,0 +1,20 @@
+{
+    "name":  "best-fire-v3",
+    "arch":  "yolo",
+    "num_classes":  2,
+    "input":  {
+                  "shape":  [
+                                1,
+                                3,
+                                640,
+                                640
+                            ]
+              },
+    "labels":  [
+                   "fire",
+                   "smoke"
+               ],
+    "sha256":  "b1dede8edb36a1e39487dff031fe11db799fd9fb58d02ed32eb0e518eee5acf5",
+    "source":  "SmartSight fire/smoke hard-negative retrain (YOLOv12n, best_fire_v2 + mined negatives, Kaggle)",
+    "licence":  "proprietary (SmartSight)"
+}

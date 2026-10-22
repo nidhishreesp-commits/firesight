@@ -1,0 +1,101 @@
+{
+  "source": "artifacts/benchmark_target0001/ssprod_best_fire_v3/metrics.json",
+  "manifest": "data/splits/test_bench.jsonl",
+  "test_lock": "data/splits/TEST.lock.json",
+  "operating_point": {
+    "thresholds": {
+      "fire": 0.73,
+      "smoke": 0.79
+    },
+    "image_recall": 0.540957,
+    "image_precision": 0.99256,
+    "fpr": 0.00283,
+    "box_recall": {
+      "fire": 0.238625,
+      "smoke": 0.288509
+    },
+    "box_precision": {
+      "fire": 0.955466,
+      "smoke": 0.946524
+    },
+    "per_class": {
+      "fire": {
+        "gt_boxes": 1978,
+        "pred_boxes": 494,
+        "tp": 472,
+        "box_recall": 0.238625,
+        "box_precision": 0.955466,
+        "image_recall": 0.485101,
+        "positive_images": 839,
+        "negative_images": 2161
+      },
+      "smoke": {
+        "gt_boxes": 1227,
+        "pred_boxes": 374,
+        "tp": 354,
+        "box_recall": 0.288509,
+        "box_precision": 0.946524,
+        "image_recall": 0.345203,
+        "positive_images": 1011,
+        "negative_images": 1989
+      }
+    },
+    "counts": {
+      "tp": 826,
+      "fp": 42,
+      "fn": 2379,
+      "image_tp": 667,
+      "image_fp": 5,
+      "positives": 1233,
+      "negatives": 1767
+    },
+    "negative_images": 1767,
+    "positive_images": 1233
+  },
+  "per_class": {
+    "fire": {
+      "ap50": 0.652254,
+      "ap50_95": 0.359433,
+      "gt_boxes": 1978,
+      "gt_images": 839
+    },
+    "smoke": {
+      "ap50": 0.67821,
+      "ap50_95": 0.416083,
+      "gt_boxes": 1227,
+      "gt_images": 1011
+    }
+  },
+  "recall_at_fpr": {
+    "0.0005": {
+      "fpr": 0.000566,
+      "recall": 0.339822,
+      "threshold": 0.8264
+    },
+    "0.001": {
+      "fpr": 0.001132,
+      "recall": 0.450122,
+      "threshold": 0.7955
+    },
+    "0.005": {
+      "fpr": 0.005093,
+      "recall": 0.589619,
+      "threshold": 0.7306
+    },
+    "0.01": {
+      "fpr": 0.010187,
+      "recall": 0.624493,
+      "threshold": 0.6996
+    },
+    "0.05": {
+      "fpr": 0.050368,
+      "recall": 0.813463,
+      "threshold": 0.3675
+    },
+    "0.1": {
+      "fpr": 0.10017,
+      "recall": 0.843471,
+      "threshold": 0.2141
+    }
+  }
+}

@@ -1,0 +1,30 @@
+cameras:
+  - id: cam-01
+    name: Warehouse A
+    uri: 0
+    enabled: true
+    roi: []
+    conf:
+      fire: 0.40
+      smoke: 0.30
+    temporal:
+      n: 3
+      m: 5
+    alarm:
+      min_duration_s: 1.0
+      cooldown_s: 30.0
+  - id: cam-02
+    name: Loading Bay
+    uri: rtsp://user:pass@192.168.1.50:554/stream1
+    enabled: false
+    roi:
+      - [0.05, 0.10, 0.95, 0.95]
+    conf:
+      fire: 0.50
+      smoke: 0.40
+    temporal:
+      n: 4
+      m: 6
+    alarm:
+      min_duration_s: 2.0
+      cooldown_s: 60.0
