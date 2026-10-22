@@ -56,7 +56,8 @@ export default function BenchReview() {
     if (!reviewer.trim()) { setError("Enter your name before saving labels."); return; }
     setError("");
     try {
-      await api.benchReview({ id: row.id, ...form, reviewer, boxes_fire: boxesFire, boxes_smoke: boxesSmoke });
+      await api.benchReview({ id: row.id, ...form, reviewer, boxes_fire: boxesFire, boxes_smoke: boxesSmoke,
+                              width: dims.w || row.width, height: dims.h || row.height });
       setMessage(`Saved ${idx + 1}/${rows.length}`);
       await load();
       if (advance && idx < rows.length - 1) setIdx(idx + 1);

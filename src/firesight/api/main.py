@@ -61,6 +61,8 @@ class BenchReviewIn(BaseModel):
     reviewer: str
     boxes_fire: list[list[float]] | None = None
     boxes_smoke: list[list[float]] | None = None
+    width: int | None = None
+    height: int | None = None
 
 
 BENCH_DIR = PROJECT_ROOT / "testbench100"
@@ -92,7 +94,8 @@ def _bench_rows() -> list[dict]:
         review = reviews.get(row["id"])
         if review:
             row.update({k: review[k] for k in ("has_fire", "has_smoke", "category", "difficulty",
-                                               "ambiguous", "notes", "reviewer", "reviewed_at", "review_status")})
+                                               "ambiguous", "notes", "reviewer", "reviewed_at", "review_status",
+                                               "boxes_fire", "boxes_smoke", "width", "height") if k in review})
     return rows
 
 
@@ -127,17 +130,23 @@ def _write_bench_labels(rows: list[dict], reviewer: str, composition_override: b
                              json.dumps(row.get("boxes_smoke", [])), row.get("ambiguous", 0), row.get("reviewer", ""),
                              row.get("reviewed_at", ""), "reviewed", row.get("notes", "")])
     yolo_dir = BENCH_DIR / "labels"
+    from PIL import Image
     for row in rows:
         lines = []
+        w, h = row.get("width"), row.get("height")
+        if (not w or not h):
+            try:
+                with Image.open(BENCH_DIR / "images" / row["file"]) as im:
+                    w, h = im.size
+            except Exception:
+                w, h = 1, 1
         if row["has_fire"]:
             for box in row.get("boxes_fire", []):
                 x1, y1, x2, y2 = box
-                w, h = row.get("width") or 1, row.get("height") or 1
                 lines.append(f"0 {(x1 + x2) / 2 / w:.6f} {(y1 + y2) / 2 / h:.6f} {(x2 - x1) / w:.6f} {(y2 - y1) / h:.6f}")
         if row["has_smoke"]:
             for box in row.get("boxes_smoke", []):
                 x1, y1, x2, y2 = box
-                w, h = row.get("width") or 1, row.get("height") or 1
                 lines.append(f"1 {(x1 + x2) / 2 / w:.6f} {(y1 + y2) / 2 / h:.6f} {(x2 - x1) / w:.6f} {(y2 - y1) / h:.6f}")
         (yolo_dir / (Path(row["file"]).stem + ".txt")).write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
     image_hashes = sorted(f"{row['sha256']}  images/{row['file']}" for row in rows)
@@ -326,6 +335,8 @@ def create_app(config_path: str | None = None) -> FastAPI:
             "review_status": "reviewed",
             "boxes_fire": payload.boxes_fire if payload.boxes_fire is not None else existing.get("boxes_fire", []),
             "boxes_smoke": payload.boxes_smoke if payload.boxes_smoke is not None else existing.get("boxes_smoke", []),
+            "width": payload.width or existing.get("width"),
+            "height": payload.height or existing.get("height"),
         }
         BENCH_REVIEWS.write_text(json.dumps(reviews, indent=2), encoding="utf-8")
         return {"saved": payload.id, "reviewed": len(reviews), "total": len(rows)}
