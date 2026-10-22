@@ -29,7 +29,7 @@ def clean(value: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Collect CC-licensed controlled-flame validation images (NOT testbench100).")
-    parser.add_argument("--out", default="hard_negatives/sources/val_flames")
+    parser.add_argument("--out", default="flame_positives/sources/val_flames")
     parser.add_argument("--per-query", type=int, default=3)
     parser.add_argument("--max", type=int, default=36)
     args = parser.parse_args()

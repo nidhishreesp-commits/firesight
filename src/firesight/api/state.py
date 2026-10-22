@@ -14,6 +14,7 @@ from ..config import Config, load_config
 from ..detectors.base import BaseDetector, load_detector
 from ..temporal import AlarmManager, TemporalConfirmer, draw_detections
 from ..verifier import CropVerifier
+from ..flame_type import FireTypePolicy, FlameTypeClassifier
 
 log = logging.getLogger(__name__)
 
@@ -38,13 +39,17 @@ class CameraState:
 
 class CameraWorker(threading.Thread):
     def __init__(self, state: CameraState, detector: BaseDetector, cfg: Config,
-                 verifier: CropVerifier | None = None, inference_lock: threading.Lock | None = None):
+                 verifier: CropVerifier | None = None, inference_lock: threading.Lock | None = None,
+                 fire_type_policy: FireTypePolicy | None = None,
+                 flame_type_classifier: FlameTypeClassifier | None = None):
         super().__init__(daemon=True)
         self.state = state
         self.detector = detector
         self.cfg = cfg
         self.verifier = verifier
         self.inference_lock = inference_lock or threading.Lock()
+        self.fire_type_policy = fire_type_policy
+        self.flame_type_classifier = flame_type_classifier
         self._stop = threading.Event()
         self._lock = threading.Lock()
         self.confirmer = TemporalConfirmer(cfg.temporal)
@@ -98,6 +103,12 @@ class CameraWorker(threading.Thread):
                 if self.verifier is not None and dets:
                     with self.inference_lock:
                         dets, _ = self.verifier.verify(frame, dets)
+                if self.flame_type_classifier is not None and dets:
+                    dets = self.flame_type_classifier.annotate(frame, dets)
+                displayed = list(dets)
+                if self.fire_type_policy is not None:
+                    dets, suppressed = self.fire_type_policy.partition(dets)
+                    displayed = dets + suppressed
                 temp = self.confirmer.update(processed, ts, dets, size=(h, w))
                 alarm_state = self.alarm.update(self.state.camera_id, ts, temp.confirmed)
                 annotated = draw_detections(frame, temp.detections, roi=self.state.roi)
@@ -105,7 +116,7 @@ class CameraWorker(threading.Thread):
                 with self._lock:
                     if ok_jpg:
                         self.state.last_frame_jpeg = buf.tobytes()
-                    self.state.last_detections = [d.to_dict() for d in temp.detections]
+                    self.state.last_detections = [d.to_dict() for d in displayed]
                     self.state.alarm = alarm_state
                     self.state.frames = processed
                 processed += 1
@@ -142,6 +153,9 @@ class AppState:
         self.feedback_path.parent.mkdir(parents=True, exist_ok=True)
         self.started_at = time.time()
         self.inference_lock = threading.Lock()
+        self.fire_type_policy = FireTypePolicy(self.config.alarm.fire_type_include,
+                                               self.config.alarm.fire_type_exclude)
+        self.flame_type_classifier = FlameTypeClassifier(self.config.path("models/flame_type.onnx"))
 
     def load_cameras(self, path: str | Path = "configs/cameras.yaml") -> None:
         import yaml
@@ -161,7 +175,10 @@ class AppState:
         state = self.cameras[camera_id]
         if camera_id in self.workers and self.workers[camera_id].is_alive():
             return {"status": "already_running"}
-        worker = CameraWorker(state, self.detector, self.config, self.verifier, inference_lock=self.inference_lock)
+        worker = CameraWorker(state, self.detector, self.config, self.verifier,
+                              inference_lock=self.inference_lock,
+                              fire_type_policy=self.fire_type_policy,
+                              flame_type_classifier=self.flame_type_classifier)
         self.workers[camera_id] = worker
         worker.start()
         return {"status": "started", "camera_id": camera_id}

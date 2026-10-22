@@ -6,15 +6,26 @@ export default function LiveView() {
   const [cameras, setCameras] = useState<CameraInfo[]>([]);
   const [alarm, setAlarm] = useState<string | null>(null);
   const [detections, setDetections] = useState<Record<string, any[]>>({});
+  const [policy, setPolicy] = useState<{ include: string[]; exclude: string[] }>({ include: [], exclude: [] });
   const sockets = useRef<Record<string, WebSocket>>({});
+  const FIRE_TYPES = ["uncontrolled", "controlled", "spark", "screen", "unknown"];
 
   const refresh = () => api.cameras().then((r) => setCameras(r.cameras)).catch(() => undefined);
 
   useEffect(() => {
     refresh();
+    api.firePolicy().then(setPolicy).catch(() => undefined);
     const timer = setInterval(refresh, 3000);
     return () => clearInterval(timer);
   }, []);
+
+  const toggleType = async (ftype: string) => {
+    const allowed = policy.include.includes(ftype) && !policy.exclude.includes(ftype);
+    const include = allowed ? policy.include.filter((x) => x !== ftype) : Array.from(new Set([...policy.include, ftype]));
+    const exclude = allowed ? Array.from(new Set([...policy.exclude, ftype])) : policy.exclude.filter((x) => x !== ftype);
+    setPolicy({ include, exclude });
+    await api.setFirePolicy(include, exclude);
+  };
 
   const connect = (id: string) => {
     if (sockets.current[id]) return;
@@ -39,6 +50,24 @@ export default function LiveView() {
         <button className="rounded bg-slate-800 px-3 py-1 text-sm" onClick={refresh}>
           Refresh
         </button>
+      </div>
+      <div className="rounded border border-slate-800 bg-slate-900/60 p-3 text-sm">
+        <div className="mb-1 font-medium">Alarm fire-type policy</div>
+        <div className="mb-2 text-xs text-slate-400">
+          Toggle which flame types may raise an alarm. Applied at runtime; no retraining.
+          Until the flame-type classifier is trained, detections are <code>unknown</code>.
+        </div>
+        <div className="flex flex-wrap gap-3">
+          {FIRE_TYPES.map((ftype) => {
+            const allowed = policy.include.includes(ftype) && !policy.exclude.includes(ftype);
+            return (
+              <label key={ftype} className="flex items-center gap-1 text-xs">
+                <input type="checkbox" checked={allowed} onChange={() => toggleType(ftype)} />
+                {ftype}
+              </label>
+            );
+          })}
+        </div>
       </div>
       {alarm && (
         <div className="flex items-center justify-between rounded border border-red-500 bg-red-950/60 px-4 py-2 text-red-200">

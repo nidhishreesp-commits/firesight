@@ -798,6 +798,68 @@
         "accuracy": 1.0
       }
     },
+    "by_flame_type": {
+      "controlled": {
+        "n": 9,
+        "detected": 4,
+        "recall": 0.444444,
+        "recall_95ci": [
+          0.188775429471914,
+          0.7333526542559703
+        ]
+      },
+      "smoke_only": {
+        "n": 19,
+        "detected": 13,
+        "recall": 0.684211,
+        "recall_95ci": [
+          0.4601001017506463,
+          0.846358289955714
+        ]
+      },
+      "spark": {
+        "n": 3,
+        "detected": 1,
+        "recall": 0.333333,
+        "recall_95ci": [
+          0.0614903152761605,
+          0.7923450448735121
+        ]
+      },
+      "uncontrolled": {
+        "n": 31,
+        "detected": 30,
+        "recall": 0.967742,
+        "recall_95ci": [
+          0.8380554282383037,
+          0.9942829259130554
+        ]
+      }
+    },
+    "policy_uncontrolled_plus_smoke": {
+      "n": 88,
+      "tp": 44,
+      "fp": 1,
+      "tn": 37,
+      "fn": 6,
+      "accuracy": 0.920455,
+      "accuracy_95ci": [
+        0.8447994519714657,
+        0.9609356397516751
+      ],
+      "recall": 0.88,
+      "recall_95ci": [
+        0.7619492111337642,
+        0.9438247628937535
+      ],
+      "specificity": 0.973684,
+      "specificity_95ci": [
+        0.8650482156319974,
+        0.9953395324464698
+      ],
+      "suppressed_controlled_or_spark": 12,
+      "suppressed_images_that_alarmed": 6
+    },
     "threshold_sweep": [
       {
         "threshold": 0.05,
@@ -985,7 +1047,7 @@
           }
         ],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_WEB11729.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_WEB11729.jpg"
         ]
       },
       {
@@ -1025,7 +1087,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_WEB10516.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_WEB10516.jpg"
         ]
       },
       {
@@ -1047,7 +1109,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_WEB11696.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_WEB11696.jpg"
         ]
       },
       {
@@ -1082,7 +1144,7 @@
           }
         ],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_AoF08212.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_AoF08212.jpg"
         ]
       },
       {
@@ -1104,7 +1166,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_AoF08219.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_AoF08219.jpg"
         ]
       },
       {
@@ -1139,7 +1201,7 @@
           }
         ],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_AoF08162.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\dfire_test_AoF08162.jpg"
         ]
       },
       {
@@ -1188,7 +1250,7 @@
           }
         ],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_positive\\fasdd_test_neitherFireNorSmoke_CV021765_jpg.rf.e18af5bb5659a2fa8c74ad8ab95befec.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_positive\\fasdd_test_neitherFireNorSmoke_CV021765_jpg.rf.e18af5bb5659a2fa8c74ad8ab95befec.jpg"
         ]
       },
       {
@@ -1210,7 +1272,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_2006-02-25_candle-flame_with_colour-shift_B.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_2006-02-25_candle-flame_with_colour-shift_B.jpg"
         ]
       },
       {
@@ -1232,7 +1294,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Blue_candle_burning_looped.gif.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Blue_candle_burning_looped.gif.jpg"
         ]
       },
       {
@@ -1254,7 +1316,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Gas_lighter_flame.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Gas_lighter_flame.jpg"
         ]
       },
       {
@@ -1276,7 +1338,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_.jpg"
         ]
       },
       {
@@ -1298,7 +1360,7 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_A_simple_campfire.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_A_simple_campfire.jpg"
         ]
       },
       {
@@ -1320,13 +1382,13 @@
         ],
         "predictions": [],
         "files": [
-          "bench_results\\20261022_163219_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445.jpg"
+          "bench_results\\20261022_171502_ensemble_v3_v4_union\\errors\\false_negative\\wikimedia_Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445.jpg"
         ]
       }
     ],
-    "run_id": "20261022_163219_ensemble_v3_v4_union",
-    "run_dir": "bench_results\\20261022_163219_ensemble_v3_v4_union",
-    "generated_utc": "2026-10-22T11:02:19Z",
+    "run_id": "20261022_171502_ensemble_v3_v4_union",
+    "run_dir": "bench_results\\20261022_171502_ensemble_v3_v4_union",
+    "generated_utc": "2026-10-22T11:45:03Z",
     "notes": {
       "threshold_policy": "thresholds selected on val_mini + val_flames only; bench was not used for tuning",
       "composition_override": true,

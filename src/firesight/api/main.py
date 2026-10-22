@@ -52,6 +52,11 @@ class FeedbackIn(BaseModel):
     label: str | None = None
 
 
+class FireTypePolicyIn(BaseModel):
+    include: list[str]
+    exclude: list[str]
+
+
 class BenchReviewIn(BaseModel):
     id: str
     has_fire: int
@@ -218,6 +223,18 @@ def create_app(config_path: str | None = None) -> FastAPI:
         payload, content_type = metrics_payload()
         return Response(content=payload, media_type=content_type)
 
+    @app.get("/api/policy/fire-types")
+    def get_fire_type_policy() -> dict:
+        return state.fire_type_policy.to_dict()
+
+    @app.post("/api/policy/fire-types")
+    def set_fire_type_policy(payload: FireTypePolicyIn) -> dict:
+        state.fire_type_policy.include = set(payload.include)
+        state.fire_type_policy.exclude = set(payload.exclude)
+        for worker in state.workers.values():
+            worker.fire_type_policy = state.fire_type_policy
+        return state.fire_type_policy.to_dict()
+
     @app.get("/api/config")
     def get_config() -> dict:
         return {
@@ -250,15 +267,19 @@ def create_app(config_path: str | None = None) -> FastAPI:
         if state.verifier is not None and dets:
             with state.inference_lock:
                 dets, _ = state.verifier.verify(frame, dets)
+        dets = state.flame_type_classifier.annotate(frame, dets)
+        kept, suppressed = state.fire_type_policy.partition(dets)
+        displayed = kept + suppressed
         latency = (time.perf_counter() - t0) * 1000
         INFERENCE_LATENCY.labels(model=Path(cfg.detector.model_path).stem).observe(latency)
-        for d in dets:
+        for d in displayed:
             DETECTIONS_TOTAL.labels(camera="upload", label=d.label).inc()
         response: dict[str, Any] = {
-            "detections": [d.to_dict() for d in dets],
-            "count": len(dets),
+            "detections": [d.to_dict() for d in displayed],
+            "count": len(displayed),
             "latency_ms": round(latency, 2),
-            "alarm": any(d.meta.get("verifier_kept", True) for d in dets),
+            "alarm": bool(kept),
+            "fire_type_policy": state.fire_type_policy.to_dict(),
         }
         if annotate:
             annotated = draw_detections(frame, dets)
@@ -283,7 +304,9 @@ def create_app(config_path: str | None = None) -> FastAPI:
         try:
             result = run_video(state.detector, tmp_path, cfg.detector, cfg.temporal, cfg.alarm,
                                sample_fps=sample_fps, max_seconds=max_seconds, camera_id="upload",
-                               collect_frames=True, verifier=state.verifier)
+                               collect_frames=True, verifier=state.verifier,
+                               fire_type_policy=state.fire_type_policy,
+                               flame_type_classifier=state.flame_type_classifier)
             payload = result.to_dict()
             payload["frames"] = result.frames[:2000]
             payload["upload_name"] = file.filename

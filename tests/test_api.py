@@ -49,6 +49,18 @@ def test_metrics(client):
     assert client.get("/metrics").status_code == 200
 
 
+def test_fire_type_policy_roundtrip(client):
+    r = client.get("/api/policy/fire-types")
+    assert r.status_code == 200
+    old = r.json()
+    new = {"include": ["uncontrolled", "controlled", "unknown"], "exclude": ["spark", "screen"]}
+    assert client.post("/api/policy/fire-types", json=new).status_code == 200
+    current = client.get("/api/policy/fire-types").json()
+    assert set(current["include"]) == set(new["include"])
+    assert set(current["exclude"]) == set(new["exclude"])
+    client.post("/api/policy/fire-types", json=old)
+
+
 def test_bench100_has_100_images_and_lock_is_guarded(client):
     r = client.get("/api/bench100")
     assert r.status_code == 200

@@ -5,7 +5,7 @@ Locked bench: 100 images, composition override 62 positives / 38 negatives. Thre
 | Model | Val target FPR | Accuracy (95% CI) | Recall | Specificity | F1 | Fire R | Smoke R | Run |
 |---|---:|---|---:|---:|---:|---:|---:|---|
 | cascade_union_v3_firept | 0.05 | 0.870 (0.790 to 0.922) | 0.823 | 0.947 | 0.887 | 0.814 | 0.450 | `20261022_165035_cascade_union_v3_firept` |
-| ensemble_v3_v4_union | 0.05 | 0.870 (0.790 to 0.922) | 0.806 | 0.974 | 0.885 | 0.814 | 0.575 | `20261022_163219_ensemble_v3_v4_union` |
+| ensemble_v3_v4_union | 0.05 | 0.870 (0.790 to 0.922) | 0.806 | 0.974 | 0.885 | 0.814 | 0.575 | `20261022_171502_ensemble_v3_v4_union` |
 | ensemble_v3_v4_union | 0.1 | 0.870 (0.790 to 0.922) | 0.855 | 0.895 | 0.891 | 0.814 | 0.725 | `20261022_163308_ensemble_v3_v4_union` |
 | v3 | 0.1 | 0.870 (0.790 to 0.922) | 0.839 | 0.921 | 0.889 | 0.791 | 0.725 | `20261022_163305_v3` |
 | ensemble_v3_v4_intersection | 0.01 | 0.860 (0.779 to 0.915) | 0.806 | 0.947 | 0.877 | 0.791 | 0.675 | `20261022_161150_ensemble_v3_v4_intersection` |

@@ -44,6 +44,7 @@ class Detection:
     track_id: int | None = None
     source: str = "model"
     meta: dict[str, Any] = field(default_factory=dict)
+    flame_type: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
         data = {
@@ -53,6 +54,8 @@ class Detection:
             "track_id": self.track_id,
             "source": self.source,
         }
+        if self.flame_type:
+            data["flame_type"] = self.flame_type
         if self.meta:
             data["meta"] = self.meta
         return data
@@ -62,9 +65,13 @@ class Detection:
 class GroundTruth:
     label: str
     box: Box
+    flame_type: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
-        return {"label": self.label, "box": self.box.to_list()}
+        data = {"label": self.label, "box": self.box.to_list()}
+        if self.flame_type:
+            data["flame_type"] = self.flame_type
+        return data
 
 
 @dataclass
@@ -104,7 +111,8 @@ class ImageRecord:
             source=data.get("source", "unknown"),
             scene=data.get("scene", "unknown"),
             split=data.get("split", "unspecified"),
-            labels=[GroundTruth(label=l["label"], box=Box(*l["box"])) for l in data.get("labels", [])],
+            labels=[GroundTruth(label=l["label"], box=Box(*l["box"]), flame_type=l.get("flame_type"))
+                    for l in data.get("labels", [])],
             category=data.get("category", "none"),
             phash=data.get("phash"),
             origin=data.get("origin"),

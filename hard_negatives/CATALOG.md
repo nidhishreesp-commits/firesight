@@ -4,28 +4,37 @@ Goal: every plausible fire/smoke lookalike, with source and licence, so the
 detector and verifier can be trained against them **without touching the frozen
 test bench**.
 
-## Policy decisions (explicit)
+## Policy decisions (updated 2026-10-22)
 
-1. **Controlled flames are hard negatives for the alarm task.** Candles, lighters,
-   gas stoves, campfires/BBQ, fireplaces, fireworks, welding/grinding sparks and
-   TV/movie fire are labelled `has_fire=0` / `has_smoke=0` in `testbench100`
-   because the product alarm means an *uncontrolled* fire. They remain real
-   flames and must be shown in the review UI so the reviewer can mark them
-   `ambiguous` if they disagree.
-2. **No copyrighted scraping.** Only own captures, open datasets and
-   CC0 / Public Domain / CC BY / CC BY-SA Wikimedia Commons files are used.
-   Per-image attribution is stored in
-   `hard_negatives/sources/wikimedia/attribution.jsonl` and copied into
-   `testbench100/index.json` (`license`, `origin`, `attribution`).
-3. **D-Fire/FASDD labels are not automatically trusted.** The source datasets
-   contain label noise (e.g. candles labelled fire, sunset frames with tiny
-   fire boxes). Phase 2 rejects tiny/dark fire boxes and restricts "clear fire"
-   candidates to D-Fire; every remaining label still requires human review.
-4. **Bench images must not be in any training set.** They are drawn from the
-   official D-Fire/FASDD **test** splits (already scene-isolated by pHash in
-   `data/splits/test.jsonl`, 0 scene overlap with train/val), plus Wikimedia
-   images and synthetic rain variants of test negatives. A separate leakage
-   check is run before locking.
+1. **Controlled flames are POSITIVE for the fire class.** Candles, lighters,
+   matches, gas stoves/burners, tandoors, fireplaces, campfires, BBQ, diyas,
+   incense, welding/grinding sparks, fireworks, flame lamps and TV/movie fire are
+   annotated as fire with a flame_type:
+   - controlled — candle, lighter, stove, fireplace, campfire, BBQ, diya, incense, flame lamp
+   - spark — welding, grinding, fireworks
+   - screen — TV/movie fire
+   - uncontrolled — ordinary fire
+   - unknown — not yet classified
+2. **Default runtime alarm policy:** include uncontrolled + unknown; exclude
+   controlled, spark, screen. This is a config/API flag
+   (alarm.fire_type_include/exclude, /api/policy/fire-types), so the decision
+   can change without retraining. It requires the flame-type classifier trained in
+   Phase B/D; until then all fire detections are unknown and included.
+3. **Reason:** the locked bench shows the detector is strong on uncontrolled fire
+   (96.8% recall) but weak on controlled flames (44.4%) and sparks (33.3%).
+   Treating all flames as alarms gives 87% accuracy; excluding controlled/spark
+   by policy gives 92.0% on the 88 evaluable images. That is a policy choice, not
+   a free accuracy gain, and the bench has been used for model selection
+   (see bench_results/BENCH_USAGE.md).
+4. **Hard negatives remain:** B5 list — sunsets/orange sky, lamps/neon/brake/
+   headlights/streetlights/chandeliers/stage lights/screens (non-fire), orange
+   PPE/cones/clothing, flowers/leaves, reflections/lens flare/glare, clouds, fog,
+   steam, exhaust, dust (including construction/plaster dust), snow/haze, and
+   camera artifacts.
+5. **No copyrighted scraping.** Only own captures, open datasets and CC0/PD/
+   CC BY/CC BY-SA Commons files. Per-image attribution is recorded.
+6. **Reviewer override:** the locked bench is 62 positives / 38 negatives; there
+   are no fire-adjacent hard negatives. This is recorded in LOCKED.json.
 
 ## Inventory (CLIP-assisted, 1,500 TEST negatives)
 
@@ -49,14 +58,14 @@ in the bench. Full rows: `hard_negatives/clip_inventory.json`.
 | smoke_like | steam_cooking | 8 | 0 | CLIP candidates were food/objects, not steam | — |
 | smoke_like | exhaust_chimney | 35 | 0 | CLIP candidates included car grilles, not exhaust | — |
 | smoke_like | overexposed_white | 14 | 0 | candidates were easy flower fields | — |
-| fire_adjacent | candle | 19 CLIP + 3 Wikimedia | 3 | Wikimedia Commons | CC0 / CC BY-SA |
-| fire_adjacent | match_lighter | 2 Wikimedia | 2 | Wikimedia Commons | CC BY-SA / PD |
-| fire_adjacent | gas_stove | 2 Wikimedia | 1 | Wikimedia Commons | CC BY / CC0 |
-| fire_adjacent | campfire | 6 CLIP + 2 Wikimedia | 2 | Wikimedia Commons | CC BY-SA |
-| fire_adjacent | welding_grinding | 6 CLIP + 2 Wikimedia | 2 | Wikimedia Commons | PD |
-| fire_adjacent | fireworks | 5 CLIP + 2 Wikimedia | 1 | Wikimedia Commons | CC BY-SA |
-| fire_adjacent | fireplace | 2 Wikimedia | 1 | Wikimedia Commons | CC BY-SA |
-| fire_adjacent | screen_fire | 6 CLIP | 0 | CLIP candidates were cinema seats, not fire | — |
+| **controlled_flame_positive** | candle | 19 CLIP + 3 Wikimedia | 3 | Wikimedia Commons | CC0 / CC BY-SA |
+| **controlled_flame_positive** | match_lighter | 2 Wikimedia | 2 | Wikimedia Commons | CC BY-SA / PD |
+| **controlled_flame_positive** | gas_stove | 2 Wikimedia | 1 | Wikimedia Commons | CC BY / CC0 |
+| **controlled_flame_positive** | campfire | 6 CLIP + 2 Wikimedia | 2 | Wikimedia Commons | CC BY-SA |
+| **controlled_flame_positive** | welding_grinding | 6 CLIP + 2 Wikimedia | 2 | Wikimedia Commons | PD |
+| **controlled_flame_positive** | fireworks | 5 CLIP + 2 Wikimedia | 1 | Wikimedia Commons | CC BY-SA |
+| **controlled_flame_positive** | fireplace | 2 Wikimedia | 1 | Wikimedia Commons | CC BY-SA |
+| **controlled_flame_positive** | screen_fire | 6 CLIP | 0 | CLIP candidates were cinema seats, not fire | — |
 | camera_artifact | blur_noise_compression | 235 | 4 | D-Fire/FASDD test negatives | CC0 / CC BY 4.0 |
 | camera_artifact | infrared_night | 67 | 4 | D-Fire/FASDD test negatives | CC0 / CC BY 4.0 |
 | camera_artifact | rain_on_lens | 5 CLIP + 4 synthetic | 4 | synthetic rain over TEST negatives | inherited (CC0/CC BY) |
@@ -88,9 +97,12 @@ bench (still useful for verifier training).
 - P snow / white overexposed walls
 - P camera lens dirt/fogging (partly covered by synthetic rain)
 
-### Fire-adjacent (policy: not an alarm event; must be reviewed)
+### Controlled flames (POSITIVE for fire; default excluded from alarm)
+
+These are **not hard negatives**. They are annotated fire with flame_type
+controlled, spark or screen; the runtime policy decides whether they alarm.
 - B candles, lighters, gas stove, campfire/BBQ, welding/grinding sparks,
-  fireworks, fireplace
+  fireworks, fireplace — now positives with flame_type
 - P lit cigarettes, incense, matches (real flame images; Wikimedia match query
   returned book scans and was rejected)
 - P tandoors / cooking flames / diyas
@@ -125,9 +137,9 @@ bench (still useful for verifier training).
 | Category | Count | Source | Licence | Notes |
 |---|---:|---|---|---|
 | construction_site_dust_plaster | 16 frames | local Sample_videos/ppe_1..4 | proprietary internal | hard_negatives/sources/construction_dust/images |
-| controlled-flame validation set | 18 images | Wikimedia Commons | CC0 / PD / CC BY / CC BY-SA | hard_negatives/sources/val_flames; used only for threshold calibration, never training or bench |
+| controlled-flame validation set | 18 images | Wikimedia Commons | CC0 / PD / CC BY / CC BY-SA | flame_positives/sources/val_flames; used only for threshold calibration, never training or bench |
 
-Confirmed false alarm: est_fire_v3 fired smoke 0.48 on
+Confirmed false alarm: best_fire_v3 fired smoke 0.48 on
 ppe_2_3s.jpg (workers + sand/plaster pile); 15/16 construction frames were
 clean. This is now an explicit hard-negative family for retraining and is
 included in the calibration negatives (data/splits/val_flames.jsonl).
@@ -135,5 +147,5 @@ included in the calibration negatives (data/splits/val_flames.jsonl).
 **Reviewer note:** the locked bench uses an explicit composition override
 62 positives / 38 negatives because the reviewer reclassified the 12
 controlled-flame images as positives. The bench therefore has **no
-fire-adjacent hard negatives**. That is recorded in 	estbench100/LOCKED.json
+fire-adjacent hard negatives**. That is recorded in testbench100/LOCKED.json
 and must be considered when reading the 87% accuracy.

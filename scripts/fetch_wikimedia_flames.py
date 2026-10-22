@@ -29,8 +29,8 @@ def clean(value: str) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Download CC-licensed fire-adjacent hard-negative images from Wikimedia Commons.")
-    parser.add_argument("--out", default="hard_negatives/sources/wikimedia")
+    parser = argparse.ArgumentParser(description="Download CC-licensed controlled-flame POSITIVE images from Wikimedia Commons.")
+    parser.add_argument("--out", default="flame_positives/sources/wikimedia")
     parser.add_argument("--per-query", type=int, default=2)
     parser.add_argument("--max", type=int, default=24)
     args = parser.parse_args()

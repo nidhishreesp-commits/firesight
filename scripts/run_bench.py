@@ -72,6 +72,12 @@ def load_bench() -> list[ImageRecord]:
     if not BENCH_LOCK.exists():
         raise SystemExit("testbench100 is not locked; refusing to benchmark")
     index = {r["id"]: r for r in json.loads((BENCH_DIR / "index.json").read_text(encoding="utf-8"))}
+    attr_path = PROJECT_ROOT / "bench_attributes.csv"
+    flame_types = defaultdict(set)
+    if attr_path.exists():
+        with attr_path.open("r", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                flame_types[row["image_id"]].add(row["flame_type"])
     records = []
     with (BENCH_DIR / "labels.csv").open("r", encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
@@ -92,7 +98,8 @@ def load_bench() -> list[ImageRecord]:
                 labels=labels, category=row["category"],
                 meta={"family": meta.get("family"), "difficulty": row["difficulty"],
                       "has_fire": int(row["has_fire"]), "has_smoke": int(row["has_smoke"]),
-                      "ambiguous": int(row["ambiguous"]), "license": row["license"]},
+                      "ambiguous": int(row["ambiguous"]), "license": row["license"],
+                      "flame_types": sorted(flame_types.get(row["image_id"], {"unknown"})) if int(row["has_fire"]) else []},
             ))
     return records
 
@@ -339,6 +346,59 @@ def threshold_sweep(records: list[ImageRecord], preds: dict) -> list[dict]:
     return rows
 
 
+def by_flame_type(records: list[ImageRecord], preds: dict, thresholds: dict[str, float]) -> dict:
+    groups = defaultdict(lambda: {"n": 0, "detected": 0})
+    for rec in records:
+        hf = bool(rec.meta.get("has_fire"))
+        hs = bool(rec.meta.get("has_smoke"))
+        if hf:
+            types = rec.meta.get("flame_types") or ["unknown"]
+            for ftype in types:
+                groups[ftype]["n"] += 1
+                groups[ftype]["detected"] += int(decision(rec, preds.get(rec.id, []), thresholds, "fire"))
+        elif hs:
+            groups["smoke_only"]["n"] += 1
+            groups["smoke_only"]["detected"] += int(decision(rec, preds.get(rec.id, []), thresholds, "smoke"))
+    out = {}
+    for key, value in sorted(groups.items()):
+        out[key] = {**value, "recall": round(value["detected"] / value["n"], 6) if value["n"] else None,
+                    "recall_95ci": wilson(value["detected"], value["n"])}
+    return out
+
+
+def policy_metrics(records: list[ImageRecord], preds: dict, thresholds: dict[str, float],
+                   excluded_types=("controlled", "spark", "screen")) -> dict:
+    tp = fp = tn = fn = suppressed = suppressed_alarm = 0
+    for rec in records:
+        hf = bool(rec.meta.get("has_fire"))
+        hs = bool(rec.meta.get("has_smoke"))
+        types = set(rec.meta.get("flame_types") or [])
+        if hf and not hs and types and types.issubset(set(excluded_types)):
+            suppressed += 1
+            suppressed_alarm += int(decision(rec, preds.get(rec.id, []), thresholds))
+            continue
+        positive = hf or hs
+        alarm = decision(rec, preds.get(rec.id, []), thresholds)
+        if positive and alarm:
+            tp += 1
+        elif positive:
+            fn += 1
+        elif alarm:
+            fp += 1
+        else:
+            tn += 1
+    n = tp + fp + tn + fn
+    return {"n": n, "tp": tp, "fp": fp, "tn": tn, "fn": fn,
+            "accuracy": round((tp + tn) / n, 6) if n else None,
+            "accuracy_95ci": wilson(tp + tn, n),
+            "recall": round(tp / (tp + fn), 6) if tp + fn else None,
+            "recall_95ci": wilson(tp, tp + fn),
+            "specificity": round(tn / (tn + fp), 6) if tn + fp else None,
+            "specificity_95ci": wilson(tn, tn + fp),
+            "suppressed_controlled_or_spark": suppressed,
+            "suppressed_images_that_alarmed": suppressed_alarm}
+
+
 def group_metrics(records: list[ImageRecord], preds: dict, thresholds: dict[str, float]) -> dict:
     out = defaultdict(lambda: {"n": 0, "correct": 0})
     for rec in records:
@@ -423,6 +483,8 @@ def main() -> int:
         "mean_iou": {"fire": mean_iou(bench, bench_preds, "fire", thresholds.get("fire", 1)),
                      "smoke": mean_iou(bench, bench_preds, "smoke", thresholds.get("smoke", 1))},
         "by_group": group_metrics(bench, bench_preds, thresholds),
+        "by_flame_type": by_flame_type(bench, bench_preds, thresholds),
+        "policy_uncontrolled_plus_smoke": policy_metrics(bench, bench_preds, thresholds),
         "threshold_sweep": threshold_sweep(bench, bench_preds),
         "errors": [],
     }

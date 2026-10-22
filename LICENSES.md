@@ -13,7 +13,7 @@ restricted weights or data to a public repository.** Files under `data/raw/`,
 | MS-FSDB (arXiv 2410.16631) | `XiaoyiHan6/MS-FSDB` | Code MIT; dataset download link (Google Drive) was **not retrievable** without a Google account at build time | Not used | See `REPORT.md` limitations. |
 | Local seed (`fire_dataset`, `fire_hardneg`, `fire-assets*`) | Internal / SmartSight | Proprietary | Training + hard negatives + video | Internal only. |
 | Simuletic CCTV Fire/Smoke Emergency Dataset | HF `Simuletic/CCTV-Smoke-Fire-Emergency-Detection-Dataset` | **CC BY-NC 4.0 (non-commercial)** | External evaluation only | Not redistributed. Used only to measure generalization. |
-| Wikimedia Commons hard negatives (14+2 images) | Commons API, `hard_negatives/sources/wikimedia/` | CC0 / Public Domain / CC BY / CC BY-SA per image | testbench100 fire-adjacent negatives | Per-image author, licence and source URL in `attribution.jsonl` and `testbench100/index.json`. |
+| Wikimedia Commons hard negatives (14+2 images) | Commons API, `flame_positives/sources/wikimedia/` | CC0 / Public Domain / CC BY / CC BY-SA per image | testbench100 fire-adjacent negatives | Per-image author, licence and source URL in `attribution.jsonl` and `testbench100/index.json`. |
 | FireViewer fire-smoke-detection-corpus-v1 | HF `fireviewer/fire-smoke-detection-corpus-v1` | "other" (rights matrix in repo) | Not downloaded | Reference only. |
 
 ## Models

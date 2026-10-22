@@ -33,6 +33,9 @@ export const api = {
     request<any>("/api/bench100/review", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }),
   benchLock: (reviewer: string, allowOverride = false) =>
     request<any>(`/api/bench100/lock?reviewer=${encodeURIComponent(reviewer)}&allow_composition_override=${allowOverride}`, { method: "POST" }),
+  firePolicy: () => request<any>("/api/policy/fire-types"),
+  setFirePolicy: (include: string[], exclude: string[]) =>
+    request<any>("/api/policy/fire-types", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ include, exclude }) }),
   detectVideo: async (file: File, maxSeconds = 60, sampleFps = 5) => {
     const form = new FormData();
     form.append("file", file);

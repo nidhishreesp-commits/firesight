@@ -183,7 +183,7 @@ def main() -> int:
         rec.meta["bench_family"] = "camera_artifact"
         negatives.append(rec)
 
-    wm_meta = PROJECT_ROOT / "hard_negatives/sources/wikimedia/attribution.jsonl"
+    wm_meta = PROJECT_ROOT / "flame_positives/sources/wikimedia/attribution.jsonl"
     wm_rows = [json.loads(line) for line in wm_meta.read_text(encoding="utf-8").splitlines() if line.strip()] if wm_meta.exists() else []
     take = {"candle": 3, "match_lighter": 2, "gas_stove": 1, "campfire": 2, "welding": 2, "fireworks": 1, "fireplace": 1}
     wm_selected = []

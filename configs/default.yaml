@@ -48,6 +48,10 @@ verifier:
 alarm:
   min_duration_s: 1.0
   cooldown_s: 30.0
+  # Runtime policy; requires a trained flame-type classifier to distinguish these.
+  # Until Phase B/D trains it, all fire detections are `unknown` and are included.
+  fire_type_include: [uncontrolled, unknown]
+  fire_type_exclude: [controlled, spark, screen]
   escalation:
     - level: 1
       after_s: 0

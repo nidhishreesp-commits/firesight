@@ -22,7 +22,7 @@ def main() -> int:
     parser.add_argument("--seed", type=int, default=31)
     args = parser.parse_args()
     rows = []
-    meta_path = PROJECT_ROOT / "hard_negatives/sources/val_flames/attribution.jsonl"
+    meta_path = PROJECT_ROOT / "flame_positives/sources/val_flames/attribution.jsonl"
     for line in meta_path.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue

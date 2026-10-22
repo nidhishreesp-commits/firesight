@@ -50,6 +50,8 @@ class AlarmConfig:
     min_duration_s: float = 1.0
     cooldown_s: float = 30.0
     escalation: list[dict[str, Any]] = field(default_factory=list)
+    fire_type_include: list[str] = field(default_factory=lambda: ["uncontrolled", "unknown"])
+    fire_type_exclude: list[str] = field(default_factory=lambda: ["controlled", "spark", "screen"])
 
 
 @dataclass

@@ -99,6 +99,8 @@ def run_video(
     collect_frames: bool = False,
     frame_stride: int | None = None,
     verifier=None,
+    fire_type_policy=None,
+    flame_type_classifier=None,
 ) -> VideoRunResult:
     import cv2
 
@@ -146,6 +148,12 @@ def run_video(
             dets = relabel_flame_evidence(frame, dets)
             if verifier is not None and dets:
                 dets, _ = verifier.verify(frame, dets)
+            if flame_type_classifier is not None and dets:
+                dets = flame_type_classifier.annotate(frame, dets)
+            displayed = list(dets)
+            if fire_type_policy is not None:
+                dets, suppressed = fire_type_policy.partition(dets)
+                displayed = dets + suppressed
             det_count += len(dets)
             temp = confirmer.update(processed, ts, dets, size=(h, w))
             confirmed_count += len(temp.confirmed)
@@ -155,7 +163,7 @@ def run_video(
             if collect_frames:
                 frames_out.append({
                     "frame": frame_idx, "t": round(ts, 3),
-                    "detections": [d.to_dict() for d in temp.detections],
+                    "detections": [d.to_dict() for d in displayed],
                     "confirmed": [d.to_dict() for d in temp.confirmed],
                     "alarm": alarm_state,
                 })

@@ -62,4 +62,8 @@ non-fire video clips with verified onset times.
 
 ## al_flames (threshold calibration only)
 
-data/splits/val_flames.jsonl = 18 CC-licensed controlled-flame images (candles, campfires, welding, fireworks, fireplaces, gas flames) + 60 TEST negatives not in the bench + 8 construction/plaster-dust frames. It is used only to calibrate thresholds for the locked bench; it is never used to train or evaluate 	estbench100.
+data/splits/val_flames.jsonl = 18 CC-licensed controlled-flame images (candles, campfires, welding, fireworks, fireplaces, gas flames) + 60 TEST negatives not in the bench + 8 construction/plaster-dust frames. It is used only to calibrate thresholds for the locked bench; it is never used to train or evaluate testbench100.
+
+## Flame-type side-car
+
+ench_attributes.csv contains one row per fire box in the locked bench with lame_type (uncontrolled / controlled / spark / screen / unknown) and lame_subtype. It is a side file; the locked bench files are untouched.

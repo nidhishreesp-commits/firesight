@@ -384,3 +384,73 @@ python scripts/run_bench.py --model ensemble_v3_v4_union --target-fpr 0.05
 python scripts/summarize_bench.py
 `
 
+
+
+## 11. Phase A — policy alignment and flame types (2026-10-22)
+
+### Decision
+
+Per the reviewer, **controlled flames are positives for the fire class**:
+candles, lighters, matches, gas burners/stoves, tandoors, fireplaces, campfires,
+BBQ, diyas, incense, welding/grinding sparks, fireworks, flame lamps and TV/movie
+fire. They are no longer in any hard-negative list.
+
+Recommended defaults (implemented as a runtime flag, not a retrain):
+
+| Flame type | Detection training | Default alarm |
+|---|---|---|
+| uncontrolled | positive | **include** |
+| controlled (candles, stoves, campfires, fireplace, BBQ, diya, incense, flame lamp) | positive | **exclude** |
+| spark (welding, grinding, fireworks) | positive | **exclude** |
+| screen (TV/movie fire) | positive | **exclude** |
+| unknown (no type classifier yet) | — | **include** |
+
+Why: fireworks and TV/movie fire are real flames and should be *recognised* by
+the detector; they are not structural-fire emergencies. The lame_type
+attribute lets you change that decision later with config/API, without
+relabelling or retraining. Candles/stoves in normal operation should be
+controlled + excluded (or ROI-masked); if your camera sees them as emergencies,
+move them into the include list.
+
+The alarm policy is in configs/default.yaml and POST /api/policy/fire-types;
+the Live view has checkboxes. **Until the Phase B/D flame-type classifier is
+trained, every fire detection is unknown and therefore included** — the flag
+does not silently suppress all fire.
+
+### A2. Side-car attributes
+
+ench_attributes.csv (69 fire boxes; does **not** touch locked bench files):
+57 uncontrolled, 9 controlled, 3 spark, 0 screen. It also records reviewer and
+licence per box. The lame_type field is now part of GroundTruth and
+Detection.
+
+### A3. Per-flame-type recall on the locked bench
+
+Best v3+v4 union at 5% val false-alarm target:
+
+| Type | n | Detected | Recall | 95% CI |
+|---|---:|---:|---:|---|
+| uncontrolled | 31 | 30 | **96.8%** | 83.8–99.4% |
+| controlled | 9 | 4 | 44.4% | 18.9–73.3% |
+| spark | 3 | 1 | 33.3% | 6.1–79.2% |
+| smoke-only | 19 | 13 | 68.4% | 46.0–84.6% |
+
+**All flames as positives:** 87.0% accuracy (79.0–92.2%), specificity 97.4%.
+**Runtime policy excludes controlled/spark/screen:** 92.0% accuracy
+(84.5–96.1%), recall 88.0% (76.2–94.4%), specificity 97.4%, on 88 evaluable
+images. 12 images were suppressed; 6 of them would have alarmed if controlled
+flames were included. This is a **policy-conditional number**, not a free
+accuracy gain: it excludes 12 reviewed positives from the denominator.
+
+**Leakage warning:** the bench has been used **24 times** for model/operating-
+point comparison (ench_results/BENCH_USAGE.md). The 87% and 92% numbers are
+therefore optimistic and must not be used as final claims. No more threshold or
+model selection on this bench. The honest final number is 	estbench_B, locked
+and evaluated once after retraining.
+
+### Diffs and plan
+
+- Policy/doc/code diff: docs/phaseA_policy.diff
+- Phase B1 collection plan (sources, licences, sizes, review workflow, compute):
+  docs/PHASE_B_PLAN.md
+
