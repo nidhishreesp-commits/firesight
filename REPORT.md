@@ -356,6 +356,12 @@ negatives and the catalog; they must be included in the next verifier/retrain.
    falls to 89.5%.
 6. Adding fire.pt to the union did not help (83%), because its controlled-flame
    wins came with too many false positives.
+7. Retrained the crop verifier with 9 controlled-flame positives + construction
+   dust lookalikes (val accuracy 90.5% -> 91.9%) and applied it to a
+   v3+fire.pt union cascade. Result: 87% accuracy, 82.3% recall, **94.7%**
+   specificity, 96.2% precision. Fire-class accuracy rose to 91%, but two cloud
+   false positives and five missed controlled flames kept the combined accuracy
+   at 87%. It did not beat the simpler v3+v4 union (87%, 97.4% specificity).
 
 **Next root-cause fix (not done):** retrain the verifier with controlled flames
 as fire positives and construction dust as lookalike, then re-run the cascade;

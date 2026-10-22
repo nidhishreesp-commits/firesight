@@ -1,5 +1,643 @@
 [
   {
+    "model": "cascade_union_v3_firept",
+    "family": "v3+fire.pt union + verifier + flame",
+    "license": "proprietary (SmartSight)",
+    "bench_locked_sha256": "b20915b0e21cb12fd60c7a063dd422774b2b7dcbef0156393d97ba82f4a7366d",
+    "calibrated_on": "data/splits/val_mini.jsonl + data/splits/val_flames.jsonl",
+    "target_fpr": 0.05,
+    "thresholds": {
+      "fire": 0.45,
+      "smoke": 0.39
+    },
+    "bench_size": 100,
+    "fire": {
+      "n": 100,
+      "tp": 35,
+      "fp": 1,
+      "tn": 56,
+      "fn": 8,
+      "accuracy": 0.91,
+      "accuracy_95ci": [
+        0.8377362530335634,
+        0.9519280048361151
+      ],
+      "precision": 0.972222,
+      "precision_95ci": [
+        0.8582996626496918,
+        0.9950797197044302
+      ],
+      "recall": 0.813953,
+      "recall_95ci": [
+        0.6738270676469403,
+        0.9025836441989402
+      ],
+      "specificity": 0.982456,
+      "specificity_95ci": [
+        0.9070903306173727,
+        0.9968964152933198
+      ],
+      "f1": 0.886076,
+      "zero_event_upper_95": null
+    },
+    "smoke": {
+      "n": 100,
+      "tp": 18,
+      "fp": 3,
+      "tn": 57,
+      "fn": 22,
+      "accuracy": 0.75,
+      "accuracy_95ci": [
+        0.6569535362992417,
+        0.8245490599627573
+      ],
+      "precision": 0.857143,
+      "precision_95ci": [
+        0.6536350585077049,
+        0.950190782017865
+      ],
+      "recall": 0.45,
+      "recall_95ci": [
+        0.30705075280944694,
+        0.6017117011155924
+      ],
+      "specificity": 0.95,
+      "specificity_95ci": [
+        0.8629926537490016,
+        0.9828508088208587
+      ],
+      "f1": 0.590164,
+      "zero_event_upper_95": null
+    },
+    "combined": {
+      "n": 100,
+      "tp": 51,
+      "fp": 2,
+      "tn": 36,
+      "fn": 11,
+      "accuracy": 0.87,
+      "accuracy_95ci": [
+        0.7901947810519012,
+        0.9224290614158575
+      ],
+      "precision": 0.962264,
+      "precision_95ci": [
+        0.8724547684904087,
+        0.9895899311661807
+      ],
+      "recall": 0.822581,
+      "recall_95ci": [
+        0.7095819851661977,
+        0.8979366656563825
+      ],
+      "specificity": 0.947368,
+      "specificity_95ci": [
+        0.8271423311893115,
+        0.9854460975514631
+      ],
+      "f1": 0.886957,
+      "zero_event_upper_95": null
+    },
+    "box_ap": {
+      "fire": {
+        "gt_boxes": 69,
+        "ap50": 0.516709,
+        "ap75": 0.312444,
+        "ap50_95": 0.281868
+      },
+      "smoke": {
+        "gt_boxes": 43,
+        "ap50": 0.48778,
+        "ap75": 0.429145,
+        "ap50_95": 0.361328
+      }
+    },
+    "mean_iou": {
+      "fire": {
+        "gt_boxes": 69,
+        "matched_iou50": 35,
+        "recall_iou50": 0.507246,
+        "mean_iou_all_gt": 0.445885,
+        "mean_iou_matched": 0.792431
+      },
+      "smoke": {
+        "gt_boxes": 43,
+        "matched_iou50": 16,
+        "recall_iou50": 0.372093,
+        "mean_iou_all_gt": 0.342109,
+        "mean_iou_matched": 0.888115
+      }
+    },
+    "by_group": {
+      "camera_artifact": {
+        "n": 12,
+        "correct": 12,
+        "accuracy": 1.0
+      },
+      "light_colour": {
+        "n": 13,
+        "correct": 13,
+        "accuracy": 1.0
+      },
+      "positive:easy": {
+        "n": 25,
+        "correct": 25,
+        "accuracy": 1.0
+      },
+      "positive:hard": {
+        "n": 16,
+        "correct": 7,
+        "accuracy": 0.4375
+      },
+      "positive:medium": {
+        "n": 21,
+        "correct": 19,
+        "accuracy": 0.904762
+      },
+      "smoke_like": {
+        "n": 13,
+        "correct": 11,
+        "accuracy": 0.846154
+      }
+    },
+    "threshold_sweep": [
+      {
+        "threshold": 0.05,
+        "combined_accuracy": 0.79,
+        "combined_recall": 0.967742,
+        "combined_fpr": 0.19,
+        "fire_recall": 0.953488,
+        "smoke_recall": 0.775
+      },
+      {
+        "threshold": 0.1,
+        "combined_accuracy": 0.85,
+        "combined_recall": 0.951613,
+        "combined_fpr": 0.12,
+        "fire_recall": 0.930233,
+        "smoke_recall": 0.675
+      },
+      {
+        "threshold": 0.15,
+        "combined_accuracy": 0.87,
+        "combined_recall": 0.919355,
+        "combined_fpr": 0.08,
+        "fire_recall": 0.930233,
+        "smoke_recall": 0.55
+      },
+      {
+        "threshold": 0.2,
+        "combined_accuracy": 0.88,
+        "combined_recall": 0.919355,
+        "combined_fpr": 0.07,
+        "fire_recall": 0.930233,
+        "smoke_recall": 0.525
+      },
+      {
+        "threshold": 0.25,
+        "combined_accuracy": 0.87,
+        "combined_recall": 0.870968,
+        "combined_fpr": 0.05,
+        "fire_recall": 0.883721,
+        "smoke_recall": 0.5
+      },
+      {
+        "threshold": 0.3,
+        "combined_accuracy": 0.87,
+        "combined_recall": 0.83871,
+        "combined_fpr": 0.03,
+        "fire_recall": 0.860465,
+        "smoke_recall": 0.475
+      },
+      {
+        "threshold": 0.35,
+        "combined_accuracy": 0.87,
+        "combined_recall": 0.83871,
+        "combined_fpr": 0.03,
+        "fire_recall": 0.860465,
+        "smoke_recall": 0.475
+      },
+      {
+        "threshold": 0.4,
+        "combined_accuracy": 0.87,
+        "combined_recall": 0.822581,
+        "combined_fpr": 0.02,
+        "fire_recall": 0.837209,
+        "smoke_recall": 0.45
+      },
+      {
+        "threshold": 0.45,
+        "combined_accuracy": 0.88,
+        "combined_recall": 0.822581,
+        "combined_fpr": 0.01,
+        "fire_recall": 0.813953,
+        "smoke_recall": 0.45
+      },
+      {
+        "threshold": 0.5,
+        "combined_accuracy": 0.85,
+        "combined_recall": 0.774194,
+        "combined_fpr": 0.01,
+        "fire_recall": 0.744186,
+        "smoke_recall": 0.45
+      },
+      {
+        "threshold": 0.55,
+        "combined_accuracy": 0.83,
+        "combined_recall": 0.741935,
+        "combined_fpr": 0.01,
+        "fire_recall": 0.697674,
+        "smoke_recall": 0.45
+      },
+      {
+        "threshold": 0.6,
+        "combined_accuracy": 0.82,
+        "combined_recall": 0.725806,
+        "combined_fpr": 0.01,
+        "fire_recall": 0.674419,
+        "smoke_recall": 0.45
+      },
+      {
+        "threshold": 0.65,
+        "combined_accuracy": 0.74,
+        "combined_recall": 0.596774,
+        "combined_fpr": 0.01,
+        "fire_recall": 0.488372,
+        "smoke_recall": 0.425
+      },
+      {
+        "threshold": 0.7,
+        "combined_accuracy": 0.68,
+        "combined_recall": 0.5,
+        "combined_fpr": 0.01,
+        "fire_recall": 0.395349,
+        "smoke_recall": 0.375
+      },
+      {
+        "threshold": 0.75,
+        "combined_accuracy": 0.64,
+        "combined_recall": 0.419355,
+        "combined_fpr": 0.0,
+        "fire_recall": 0.255814,
+        "smoke_recall": 0.375
+      },
+      {
+        "threshold": 0.8,
+        "combined_accuracy": 0.56,
+        "combined_recall": 0.290323,
+        "combined_fpr": 0.0,
+        "fire_recall": 0.093023,
+        "smoke_recall": 0.325
+      },
+      {
+        "threshold": 0.85,
+        "combined_accuracy": 0.47,
+        "combined_recall": 0.145161,
+        "combined_fpr": 0.0,
+        "fire_recall": 0.0,
+        "smoke_recall": 0.2
+      },
+      {
+        "threshold": 0.9,
+        "combined_accuracy": 0.39,
+        "combined_recall": 0.016129,
+        "combined_fpr": 0.0,
+        "fire_recall": 0.0,
+        "smoke_recall": 0.025
+      },
+      {
+        "threshold": 0.95,
+        "combined_accuracy": 0.38,
+        "combined_recall": 0.0,
+        "combined_fpr": 0.0,
+        "fire_recall": 0.0,
+        "smoke_recall": 0.0
+      }
+    ],
+    "errors": [
+      {
+        "kind": "false_negative",
+        "id": "dfire:test:WEB10040",
+        "family": null,
+        "category": "sunset_sunrise",
+        "difficulty": "medium",
+        "ground_truth": [
+          {
+            "label": "smoke",
+            "box": [
+              1061.9405473856834,
+              406.52462428149175,
+              1218.5125297266297,
+              496.41068219738094
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\dfire_test_WEB10040.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "dfire:test:WEB11729",
+        "family": null,
+        "category": "other_hard",
+        "difficulty": "medium",
+        "ground_truth": [
+          {
+            "label": "smoke",
+            "box": [
+              295.20811378114087,
+              403.54636806731884,
+              402.7425577671638,
+              494.53817705323087
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\dfire_test_WEB11729.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "dfire:test:WEB11696",
+        "family": null,
+        "category": "smoke",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "smoke",
+            "box": [
+              855.0,
+              463.99999999999994,
+              888.0000000000001,
+              487.99999999999994
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\dfire_test_WEB11696.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "dfire:test:AoF08212",
+        "family": null,
+        "category": "smoke",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "smoke",
+            "box": [
+              904.0,
+              289.0,
+              933.0000000000001,
+              314.0
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\dfire_test_AoF08212.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "dfire:test:AoF08219",
+        "family": null,
+        "category": "smoke",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "smoke",
+            "box": [
+              660.0,
+              280.0,
+              696.0,
+              301.0
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\dfire_test_AoF08219.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "dfire:test:AoF08162",
+        "family": null,
+        "category": "smoke",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "smoke",
+            "box": [
+              519.0,
+              250.0,
+              544.0,
+              283.00000000000006
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\dfire_test_AoF08162.jpg"
+        ]
+      },
+      {
+        "kind": "false_positive",
+        "id": "dfire:test:WEB10139",
+        "family": "smoke_like",
+        "category": "clouds",
+        "difficulty": "hard",
+        "ground_truth": [],
+        "predictions": [
+          {
+            "label": "smoke",
+            "confidence": 0.7271,
+            "box": [
+              32.9,
+              87.73,
+              880.54,
+              743.28
+            ],
+            "track_id": null,
+            "source": "model",
+            "meta": {
+              "verifier": {
+                "fire": 0.0003,
+                "lookalike": 0.4775,
+                "smoke": 0.5222
+              },
+              "verifier_kept": true
+            }
+          }
+        ],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_positive\\dfire_test_WEB10139.jpg"
+        ]
+      },
+      {
+        "kind": "false_positive",
+        "id": "dfire:test:WEB10065",
+        "family": "smoke_like",
+        "category": "clouds",
+        "difficulty": "hard",
+        "ground_truth": [],
+        "predictions": [
+          {
+            "label": "smoke",
+            "confidence": 0.4341,
+            "box": [
+              60.78,
+              39.45,
+              775.1,
+              428.77
+            ],
+            "track_id": null,
+            "source": "model",
+            "meta": {
+              "verifier": {
+                "fire": 0.0024,
+                "lookalike": 0.3552,
+                "smoke": 0.6424
+              },
+              "verifier_kept": true
+            }
+          }
+        ],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_positive\\dfire_test_WEB10065.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "wikimedia:Gas_lighter_flame",
+        "family": "fire_adjacent",
+        "category": "match_lighter",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "fire",
+            "box": [
+              586.2837961855471,
+              226.78486160102278,
+              787.3154469187698,
+              685.558146447712
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\wikimedia_Gas_lighter_flame.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "wikimedia:Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_",
+        "family": "fire_adjacent",
+        "category": "gas_stove",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "fire",
+            "box": [
+              113.63955559836126,
+              241.13360636839468,
+              1098.361813309991,
+              671.6738629879785
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\wikimedia_Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "wikimedia:A_simple_campfire",
+        "family": "fire_adjacent",
+        "category": "campfire",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "fire",
+            "box": [
+              141.76767149876977,
+              123.402340061751,
+              1068.3556342481345,
+              785.9173561844559
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\wikimedia_A_simple_campfire.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "wikimedia:A_welder_who_works_in_the_round-house_at_the_Chicago_and_Nor",
+        "family": "fire_adjacent",
+        "category": "welding",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "fire",
+            "box": [
+              38.45111800390651,
+              53.87233649276518,
+              724.6609128825287,
+              612.5190190237759
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\wikimedia_A_welder_who_works_in_the_round-house_at_the_Chicago_and_Nor.jpg"
+        ]
+      },
+      {
+        "kind": "false_negative",
+        "id": "wikimedia:Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445",
+        "family": "fire_adjacent",
+        "category": "welding",
+        "difficulty": "hard",
+        "ground_truth": [
+          {
+            "label": "fire",
+            "box": [
+              82.08035573924764,
+              822.3885880892739,
+              1277.1586646160833,
+              1893.3133119844697
+            ]
+          }
+        ],
+        "predictions": [],
+        "files": [
+          "bench_results\\20261022_165035_cascade_union_v3_firept\\errors\\false_negative\\wikimedia_Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445.jpg"
+        ]
+      }
+    ],
+    "run_id": "20261022_165035_cascade_union_v3_firept",
+    "run_dir": "bench_results\\20261022_165035_cascade_union_v3_firept",
+    "generated_utc": "2026-10-22T11:20:35Z",
+    "notes": {
+      "threshold_policy": "thresholds selected on val_mini + val_flames only; bench was not used for tuning",
+      "composition_override": true,
+      "external_models": {
+        "pyronear_temporal": "sequence model; not applicable to single-image bench; evaluate on video clips",
+        "select_ai_fire_smoke": "no public weights found",
+        "e1250_safety_detection": "no declared licence; not downloaded without approval"
+      }
+    }
+  },
+  {
     "model": "ensemble_v3_v4_union",
     "family": "v3+v4 union",
     "license": "proprietary (SmartSight)",

@@ -46,6 +46,9 @@ MODELS = {
                             "family": "RT-DETRv2-R50"},
     "cascade_v3": {"kind": "cascade", "base": "v3", "verifier": "models/verifier.onnx", "flame": True,
                    "license": "proprietary (SmartSight)", "family": "v3 + verifier + flame"},
+    "cascade_union_v3_firept": {"kind": "cascade", "base_members": ["v3", "fire_pt"], "verifier": "models/verifier.onnx",
+                                "flame": True, "license": "proprietary (SmartSight)",
+                                "family": "v3+fire.pt union + verifier + flame"},
     "ensemble_v3_v4_union": {"kind": "ensemble", "members": ["v3", "v4"], "mode": "union",
                              "license": "proprietary (SmartSight)", "family": "v3+v4 union"},
     "ensemble_v3_v4_intersection": {"kind": "ensemble", "members": ["v3", "v4"], "mode": "intersection",
@@ -167,8 +170,16 @@ def base_predictions(model_id: str, records: list[ImageRecord], split: str, cfg,
 
 
 def cascade_predictions(model_id: str, records: list[ImageRecord], split: str, cfg, overwrite: bool = False):
-    base_id = MODELS[model_id]["base"]
-    base = base_predictions(base_id, records, split, cfg, overwrite=overwrite)
+    base_ids = MODELS[model_id].get("base_members") or [MODELS[model_id]["base"]]
+    bases = [base_predictions(b, records, split, cfg, overwrite=overwrite) for b in base_ids]
+    base = {}
+    for rec in records:
+        dets = []
+        for b in bases:
+            for d in b.get(rec.id, []):
+                if not any(d.label == x.label and box_iou(d.box, x.box) >= 0.5 for x in dets):
+                    dets.append(d)
+        base[rec.id] = dets
     cache = RUNS / "predictions" / f"{model_id}_{split}.jsonl"
     if cache.exists() and not overwrite:
         preds, _ = load_predictions(cache)
