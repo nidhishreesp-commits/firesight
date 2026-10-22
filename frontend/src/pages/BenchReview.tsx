@@ -105,16 +105,18 @@ export default function BenchReview() {
 
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-3">
         <div className="xl:col-span-2">
-          <div className="relative overflow-hidden rounded border border-slate-800 bg-black">
-            <img src={`/api/bench100/image/${encodeURIComponent(row.id)}`} className="max-h-[70vh] w-full object-contain" alt={row.id} />
-            {row.width && row.height && (
-              <BoxOverlay width={row.width} height={row.height}
-                          detections={[]}
-                          groundTruth={[
-                            ...(row.boxes_fire ?? []).map((b: number[]) => ({ label: "fire", box: b })),
-                            ...(row.boxes_smoke ?? []).map((b: number[]) => ({ label: "smoke", box: b }))
-                          ]} />
-            )}
+          <div className="flex justify-center overflow-hidden rounded border border-slate-800 bg-black">
+            <div className="relative inline-block max-w-full">
+              <img src={`/api/bench100/image/${encodeURIComponent(row.id)}`} className="block max-h-[70vh] max-w-full" alt={row.id} />
+              {row.width && row.height && (
+                <BoxOverlay width={row.width} height={row.height}
+                            detections={[]}
+                            groundTruth={[
+                              ...(row.boxes_fire ?? []).map((b: number[]) => ({ label: "fire", box: b })),
+                              ...(row.boxes_smoke ?? []).map((b: number[]) => ({ label: "smoke", box: b }))
+                            ]} />
+              )}
+            </div>
           </div>
           <div className="mt-2 grid grid-cols-1 gap-1 text-xs text-slate-400 md:grid-cols-2">
             <div>id: <span className="text-slate-200">{row.id}</span></div>

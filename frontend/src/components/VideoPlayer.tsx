@@ -86,13 +86,14 @@ export function VideoPlayer({
   }
 
   return (
-    <div className="relative overflow-hidden rounded border border-slate-800 bg-black">
+    <div className="relative overflow-hidden rounded border border-slate-800 bg-black"
+         style={{ aspectRatio: dims.w && dims.h ? `${dims.w} / ${dims.h}` : "16 / 9" }}>
       <video
         ref={videoRef}
         src={src}
         controls
         playsInline
-        className="block aspect-video w-full bg-black"
+        className="block h-full w-full bg-black object-contain"
         onLoadedMetadata={(e) => {
           const v = e.currentTarget;
           setDims({ w: v.videoWidth, h: v.videoHeight });
