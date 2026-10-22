@@ -68,6 +68,20 @@ BENCH_INDEX = BENCH_DIR / "index.json"
 BENCH_REVIEWS = BENCH_DIR / "reviews.json"
 BENCH_LOCK = BENCH_DIR / "LOCKED.json"
 
+CATEGORY_FAMILY = {
+    "sunset_sunrise": "light_colour", "street_head_lights": "light_colour",
+    "lamps_neon_brake": "light_colour", "chandelier_festival": "light_colour",
+    "reflection_glare": "light_colour", "orange_clothing_ppe": "light_colour",
+    "cones_machinery": "light_colour", "flowers_leaves": "light_colour",
+    "fog_mist_haze": "smoke_like", "clouds": "smoke_like", "steam_cooking": "smoke_like",
+    "exhaust_chimney": "smoke_like", "dust_snow": "smoke_like", "overexposed_white": "smoke_like",
+    "candle": "fire_adjacent", "match_lighter": "fire_adjacent", "gas_stove": "fire_adjacent",
+    "campfire": "fire_adjacent", "welding": "fire_adjacent", "fireworks": "fire_adjacent",
+    "fireplace": "fire_adjacent", "screen_fire": "fire_adjacent",
+    "blur_noise_compression": "camera_artifact", "rain_on_lens": "camera_artifact",
+    "infrared_night": "camera_artifact",
+}
+
 
 def _bench_rows() -> list[dict]:
     if not BENCH_INDEX.exists():
@@ -90,12 +104,14 @@ def _bench_composition(rows: list[dict]) -> dict:
     fam = {}
     for r in rows:
         if not r["has_fire"] and not r["has_smoke"]:
-            fam[r.get("family", "other")] = fam.get(r.get("family", "other"), 0) + 1
+            family = r.get("family") or CATEGORY_FAMILY.get(r.get("category", ""), "other")
+            fam[family] = fam.get(family, 0) + 1
     return {"fire_only": fire, "smoke_only": smoke, "both": both, "negative": neg,
             "negative_families": fam, "reviewed": sum(1 for r in rows if r["review_status"] == "reviewed")}
 
 
-def _write_bench_labels(rows: list[dict], reviewer: str) -> dict:
+def _write_bench_labels(rows: list[dict], reviewer: str, composition_override: bool = False,
+                        expected_composition: dict | None = None) -> dict:
     import csv
     import hashlib
     from datetime import datetime, timezone
@@ -129,6 +145,8 @@ def _write_bench_labels(rows: list[dict], reviewer: str) -> dict:
     (BENCH_DIR / "MANIFEST.sha256").write_text("\n".join(image_hashes) + "\n", encoding="utf-8")
     lock = {"locked": True, "reviewer": reviewer, "locked_at": reviewed_at, "manifest_sha256": manifest_hash,
             "images": len(rows), "composition": _bench_composition(rows),
+            "composition_override": composition_override,
+            "expected_composition": expected_composition,
             "labels_csv_sha256": hashlib.sha256(labels_csv.read_bytes()).hexdigest()}
     BENCH_LOCK.write_text(json.dumps(lock, indent=2), encoding="utf-8")
     return lock
@@ -320,7 +338,7 @@ def create_app(config_path: str | None = None) -> FastAPI:
         return FileResponse(p, filename="testbench100_labels.csv")
 
     @app.post("/api/bench100/lock")
-    def bench100_lock(reviewer: str = Query(...)) -> dict:
+    def bench100_lock(reviewer: str = Query(...), allow_composition_override: bool = Query(False)) -> dict:
         if BENCH_LOCK.exists():
             raise HTTPException(409, "bench already locked")
         rows = _bench_rows()
@@ -329,13 +347,34 @@ def create_app(config_path: str | None = None) -> FastAPI:
         unreviewed = [r["id"] for r in rows if r.get("review_status") != "reviewed"]
         if unreviewed:
             raise HTTPException(422, f"{len(unreviewed)} images still pending review")
+        missing_boxes = [
+            r["id"] for r in rows
+            if not r.get("ambiguous") and (
+                (r["has_fire"] and not r.get("boxes_fire")) or (r["has_smoke"] and not r.get("boxes_smoke"))
+            )
+        ]
+        if missing_boxes:
+            raise HTTPException(422, {
+                "message": "Some positives have no boxes. Draw boxes in Bench review, or mark them ambiguous.",
+                "missing_boxes": missing_boxes[:20],
+                "missing_boxes_count": len(missing_boxes),
+            })
         comp = _bench_composition(rows)
         expected = {"fire_only": 25, "smoke_only": 15, "both": 10, "negative": 50}
-        if any(comp[k] != v for k, v in expected.items()):
-            raise HTTPException(422, f"composition mismatch: {comp}; expected {expected}")
-        if any(comp["negative_families"].get(f, 0) < 3 for f in ("light_colour", "smoke_like", "fire_adjacent", "camera_artifact")):
-            raise HTTPException(422, f"negative family coverage below 3: {comp['negative_families']}")
-        return _write_bench_labels(rows, reviewer)
+        mismatch = {k: {"actual": comp[k], "expected": v} for k, v in expected.items() if comp[k] != v}
+        family_short = {f: comp["negative_families"].get(f, 0) for f in
+                        ("light_colour", "smoke_like", "fire_adjacent", "camera_artifact")
+                        if comp["negative_families"].get(f, 0) < 3}
+        if (mismatch or family_short) and not allow_composition_override:
+            raise HTTPException(422, {
+                "message": "Reviewed labels no longer match the frozen composition. Lock as reviewed to record an explicit override, or edit the labels back.",
+                "composition": comp,
+                "mismatch": mismatch,
+                "family_short": family_short,
+                "can_override": True,
+            })
+        return _write_bench_labels(rows, reviewer, composition_override=bool(mismatch or family_short),
+                                   expected_composition=expected)
 
     @app.get("/api/testsets")
     def testsets() -> dict:
