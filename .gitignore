@@ -34,3 +34,6 @@ data/yolo_retrain/
 
 bench_results/predictions/
 bench_results/*/errors/
+
+bench_R/candidates/
+bench_R/images/

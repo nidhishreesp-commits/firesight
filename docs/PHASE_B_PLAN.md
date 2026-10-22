@@ -84,3 +84,15 @@ camera artifacts (blur, noise, compression, IR, rain/fogged lens).
 - dedupe report vs testbench100/B
 - updated `CATALOG.md` and `data/README.md`
 - no training or bench-B evaluation until you approve the data
+
+## Download status (2026-10-22)
+
+- **Downloaded:** Pyronear `pyro-sdis` (Apache-2.0, 12,378 images, 1.32 GB) to
+  `data/raw/pyro-sdis`. It is **not** used in bench_R because the Pyronear
+  detector was trained on it.
+- **Downloaded:** 1,302 Wikimedia candidates for bench_R; 1,000 selected, 59
+  removed by pHash overlap. Images are local/git-ignored; metadata and hashes are
+  committed.
+- **Not downloaded:** HF 40K (no licence), FireViewer corpus (“other”),
+  Simuletic (CC BY-NC), e1250 (no licence).
+- **Roboflow:** awaiting your API key and a licence review of the project list.

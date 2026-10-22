@@ -454,3 +454,49 @@ and evaluated once after retraining.
 - Phase B1 collection plan (sources, licences, sizes, review workflow, compute):
   docs/PHASE_B_PLAN.md
 
+
+
+## 12. bench_R reference bench — collection status (2026-10-22)
+
+ench_R/ now contains **1,000 fresh Wikimedia Commons candidates** with the
+requested composition (pending human review; **no model has been run**):
+
+| Group | Count |
+|---|---:|
+| uncontrolled fire | 200 |
+| controlled flame | 80 |
+| spark / screen | 40 |
+| smoke-only | 100 |
+| fire+smoke | 80 |
+| hard negatives | 500 (18 families, every family ≥15) |
+
+- Sources: Wikimedia Commons only (CC0 / PD / CC BY / CC BY-SA), per-image
+  attribution and SHA-256 in ench_R/index.json.
+- **59 candidates removed** by pHash Hamming ≤6 against train/val/testbench100;
+  **0 flagged** by CLIP at cosine ≥0.98 against 1,800 train/val references
+  (ench_R/LEAKAGE_CHECK.json).
+- Scene cap: max 3 near-identical frames per pHash scene.
+- Boxes are intentionally empty; the reviewer must draw them. labels.csv is
+  provisional and not a label file until locked.
+- The **Reference bench** dashboard page provides keyboard shortcuts
+  (←/→, F, S, N, A, Enter), resume, progress, a random 10% second-pass
+  spot check with agreement rate, and a lock endpoint that enforces composition
+  and writes MANIFEST.sha256/LOCKED.json. Locking also writes the stratified
+  **DEV 300 / SEALED 700** split.
+- ench_R images are local and git-ignored; metadata, URLs, hashes and the
+  manifest are committed. This is deliberate (≈450 MB) and does not expose the
+  proprietary construction footage.
+
+**Phase C goal:** this 1,000-image fresh bench exceeds the planned 150–250
+bench_B and satisfies the size/diversity intent **after you review and lock it**.
+It is not yet a usable final bench, and no 90/95 claim is made.
+
+**Fireworks / TV/movie fire:** included as positives for detection with
+lame_type=spark / screen; default alarm policy excludes them. Change via
+larm.fire_type_include/exclude or the Live-view policy panel without retraining.
+
+**Still missing:** human boxes (500 positives), human review of query-based
+categories, flame-type classifier, Phase B positive set (pyro-sdis downloaded;
+3,000 Wikimedia positives not yet collected), GPU training, and the final
+DEV/SEALED evaluation.
+

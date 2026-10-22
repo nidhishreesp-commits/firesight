@@ -1,0 +1,5010 @@
+{
+  "bench_images": 1000,
+  "clip_reference_images": 1800,
+  "clip_threshold": 0.98,
+  "clip_flagged": 0,
+  "flagged": [],
+  "pHash_note": "59 candidate images were removed during collection by pHash Hamming<=6 against train/val/testbench100.",
+  "clip_rows": [
+    {
+      "id": "benchR:1908-04-25_Blanco_y_Negro_Madrid_a_vista_de_p_jaro_Un_incendio_formida",
+      "max_cosine": 0.5337,
+      "nearest": "fasdd:train:fire_CV001755_jpg.rf.e71658a4726e9e10ff972da282901b48"
+    },
+    {
+      "id": "benchR:WildfireKolm_rden2021-3",
+      "max_cosine": 0.5108,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Hibiscus_rosa-sinensis_Night_Fire_0zz",
+      "max_cosine": 0.6232,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022229_jpg.rf.681ab5f2cf5a4b5dc602e86f22d3008c"
+    },
+    {
+      "id": "benchR:Vehicle_on_fire_outside_the_Brisbane_Airport_Domestic_Terminal",
+      "max_cosine": 0.6598,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV014374_jpg.rf.eaebf4a25fd8d5df3e563ad16a425b72"
+    },
+    {
+      "id": "benchR:Basin_Fire_2024_01",
+      "max_cosine": 0.8301,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_01",
+      "max_cosine": 0.646,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV008340_jpg.rf.54b5481a442cf788e38ef3ac70cc61cc"
+    },
+    {
+      "id": "benchR:Apartment_Fire_High_Point_NC_Feb28_2022_Rear",
+      "max_cosine": 0.7651,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008145_jpg.rf.c4fd94c6aa9d9f6ff45847453b90c394"
+    },
+    {
+      "id": "benchR:Singapore_SG_Central_Fire_Station_--_2019_--_220324",
+      "max_cosine": 0.4582,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035399_jpg.rf.ea6d4563b2101cb840c749bba1499621"
+    },
+    {
+      "id": "benchR:Wildfire_track",
+      "max_cosine": 0.5427,
+      "nearest": "dfire:train:WEB00060"
+    },
+    {
+      "id": "benchR:Firefighters_during_fire_training_on_Andersen_Air_Force_Base_Guam_Feb.",
+      "max_cosine": 0.7389,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV000681_jpg.rf.4dee0e11b77a98377df54b63f705c2c0"
+    },
+    {
+      "id": "benchR:PMG-1_fire_engine_based_on_GAZ-AA",
+      "max_cosine": 0.4625,
+      "nearest": "fasdd:train:fire_CV002780_jpg.rf.bf91c324d60eafd2cd26662405499020"
+    },
+    {
+      "id": "benchR:Central_Fire_Station_Singapore_at_night_-_20140926",
+      "max_cosine": 0.5737,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV038236_jpg.rf.95cebdfba7f342f1fa46bbd4105d3a02"
+    },
+    {
+      "id": "benchR:Firefighters_working_on_the_North_Complex_Fire_2020",
+      "max_cosine": 0.7558,
+      "nearest": "fasdd:train:smoke_CV004517_jpg.rf.e458632f33e022d6bb4c54937e815672"
+    },
+    {
+      "id": "benchR:Central_Fire_Station_Car_Park_-_geograph.org.uk_-_7453682",
+      "max_cosine": 0.5748,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV036170_jpg.rf.634073bfd3e2ef74950aba39ce862a51"
+    },
+    {
+      "id": "benchR:Northern_Cyprus_fire_vehicle_Chevrolet_Suburban",
+      "max_cosine": 0.3722,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV019915_jpg.rf.cd35c3ab79fcdf37eb5c003a08a07147"
+    },
+    {
+      "id": "benchR:Wildfire_in_India",
+      "max_cosine": 0.7611,
+      "nearest": "dfire:val:WEB04800"
+    },
+    {
+      "id": "benchR:Burned_down_house_in_Wolf_Point-_front_door",
+      "max_cosine": 0.5955,
+      "nearest": "dfire:train:WEB02923"
+    },
+    {
+      "id": "benchR:Sir_Gerald_Bruce_Senior_Regional_Commissioner_for_the_Fire_Service_mee",
+      "max_cosine": 0.415,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035802_jpg.rf.a4ec982492f7cf5c07097ae977f6d89b"
+    },
+    {
+      "id": "benchR:Jones_Farm_Fire_Station_at_night_bays_angle_-_Hillsboro_Oregon",
+      "max_cosine": 0.5718,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV019074_jpg.rf.437fb0e399a53de8e506987f52cb773a"
+    },
+    {
+      "id": "benchR:Wang_Fuk_Court_fire_2025_night_view_am370_",
+      "max_cosine": 0.7714,
+      "nearest": "dfire:val:WEB05120"
+    },
+    {
+      "id": "benchR:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_Yorkshire_",
+      "max_cosine": 0.5551,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Rescue_workers_near_the_semi-collapsed_ten-story_Uranus_Building_on_Xu",
+      "max_cosine": 0.6372,
+      "nearest": "fasdd:train:smoke_CV008515_jpg.rf.a39b0e24213be3ba17e18b252e5bb70b"
+    },
+    {
+      "id": "benchR:Roadside_forest_fire_JEG7882",
+      "max_cosine": 0.7075,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Forest_fire_in_Zamboanga_City",
+      "max_cosine": 0.7289,
+      "nearest": "fasdd:train:smoke_CV009287_jpg.rf.dd5c0fb59270f015ef0f4c49d1fcd0fb"
+    },
+    {
+      "id": "benchR:Incarcerated_firefighters_clear_a_fire_line",
+      "max_cosine": 0.6354,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010747_jpg.rf.9171aca5c0ad0bf170c362c6f710b91a"
+    },
+    {
+      "id": "benchR:Man_Playing_with_Fire_in_Dubai_Desert_Night_shows",
+      "max_cosine": 0.5711,
+      "nearest": "fasdd:train:fire_CV010812_jpg.rf.163c5c50d10f9fbebd55bef6a14d848e"
+    },
+    {
+      "id": "benchR:Burning_of_the_Delaware_20106802_",
+      "max_cosine": 0.6482,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Guard_rail_damage_along_Forest_263_Rd_as_a_result_of_the_from_the_Calf",
+      "max_cosine": 0.5652,
+      "nearest": "dfire:val:WEB05513"
+    },
+    {
+      "id": "benchR:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070731",
+      "max_cosine": 0.5629,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV013726_jpg.rf.3e8b09545cd2b9a8f138b817d01e1cf2"
+    },
+    {
+      "id": "benchR:The_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland_June_2026",
+      "max_cosine": 0.671,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV007860_jpg.rf.ff428805a5bcd6a65b4f195f3c9049d0"
+    },
+    {
+      "id": "benchR:Structure_Fire_in_Union_Mississippi_02",
+      "max_cosine": 0.68,
+      "nearest": "fasdd:train:fire_CV009586_jpg.rf.f5abdda37f1ebdfe34449b4bb8a9a2ee"
+    },
+    {
+      "id": "benchR:WildfireKolm_rden2020",
+      "max_cosine": 0.5084,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015041_jpg.rf.56e8cd8e9367cd386c76213a994ecfdb"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_15",
+      "max_cosine": 0.6818,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV019688_jpg.rf.fef622750a3781384c5e67a408dc85c6"
+    },
+    {
+      "id": "benchR:Coffee_Pot_fire_in_Sequoia_NP_01",
+      "max_cosine": 0.6726,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Hope_Valley_fire_brigade_vehicle_near_Henderson_Cliffs_lookout_May_202",
+      "max_cosine": 0.5534,
+      "nearest": "local:train:web_154228848:web_negative"
+    },
+    {
+      "id": "benchR:2022_Downtown_West_Allis_Classic_Car_Show_055_West_Allis_Fire_Departme",
+      "max_cosine": 0.5335,
+      "nearest": "fasdd:train:fire_CV002780_jpg.rf.bf91c324d60eafd2cd26662405499020"
+    },
+    {
+      "id": "benchR:Fire_truck_attending_to_a_single-vehicle_accident_Fairfield_Queensland",
+      "max_cosine": 0.6014,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV011394_jpg.rf.474dc7297eec036d69eddb974caebb37"
+    },
+    {
+      "id": "benchR:Bideford_fire_station_vehicles_02",
+      "max_cosine": 0.5777,
+      "nearest": "local:train:web_154228848:web_negative"
+    },
+    {
+      "id": "benchR:MPOTY_2015_No_More_-_car_on_fire",
+      "max_cosine": 0.7051,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV013373_jpg.rf.3ada4cc43b6149e5480c3ca536e53f63"
+    },
+    {
+      "id": "benchR:Jones_Farm_Fire_Station_at_night_ladder_truck_-_Hillsboro_Oregon",
+      "max_cosine": 0.5892,
+      "nearest": "dfire:train:WEB04145"
+    },
+    {
+      "id": "benchR:Firefighter_dousing_Dumpster_Fire_in_Phoenix",
+      "max_cosine": 0.6715,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV004462_jpg.rf.3b30b104f68bc93451e472fb70324e9e"
+    },
+    {
+      "id": "benchR:Palestinian_car_set_on_fire_by_Israeli_settlers_April_2024",
+      "max_cosine": 0.7841,
+      "nearest": "fasdd:train:fire_CV002712_jpg.rf.53267e84dd75af3da338286c53002a1e"
+    },
+    {
+      "id": "benchR:Joseph_Vernet-Carpentras-Incendie",
+      "max_cosine": 0.4868,
+      "nearest": "fasdd:train:fire_CV011295_jpg.rf.8f6d0de286606ba96f718d6be7676d67"
+    },
+    {
+      "id": "benchR:Structure_Fire_in_Union_Mississippi_01",
+      "max_cosine": 0.679,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV005091_jpg.rf.9be03c42b0b346b81be1bc2ed16f41ad"
+    },
+    {
+      "id": "benchR:Workers_fighting_a_fire_in_Griffith_Park_Los_Angeles_1933",
+      "max_cosine": 0.6099,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_12",
+      "max_cosine": 0.5647,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV008340_jpg.rf.54b5481a442cf788e38ef3ac70cc61cc"
+    },
+    {
+      "id": "benchR:Fairview_Fire_hotspot",
+      "max_cosine": 0.7657,
+      "nearest": "fasdd:train:smoke_CV004865_jpg.rf.9e42ff0d45cdaee8fe01edb24297d9f1"
+    },
+    {
+      "id": "benchR:Forest_fire_near_Knaziy_Tribe_on_29_October_2009",
+      "max_cosine": 0.6605,
+      "nearest": "dfire:val:AoF03173"
+    },
+    {
+      "id": "benchR:Edmonia_Lewis_by_Henry_Rocher",
+      "max_cosine": 0.4665,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018068_jpg.rf.56b70b7a7ee82552881cf45d62491d22"
+    },
+    {
+      "id": "benchR:Firefighting_for_vehicle_fire_in_Seoul_at_early_2000s",
+      "max_cosine": 0.7688,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV002206_jpg.rf.7678748c58bceda6cb50b1a6d02cc90d"
+    },
+    {
+      "id": "benchR:Northern_Cyprus_fire_vehicle_Renault_Symbol",
+      "max_cosine": 0.3531,
+      "nearest": "dfire:train:WEB03370"
+    },
+    {
+      "id": "benchR:Wildfire_in_Yellowstone_National_Park_produces_Pyrocumulus_clouds1",
+      "max_cosine": 0.6403,
+      "nearest": "dfire:val:PublicDataset00305"
+    },
+    {
+      "id": "benchR:Bideford_fire_station_vehicles_08",
+      "max_cosine": 0.4881,
+      "nearest": "dfire:train:WEB03370"
+    },
+    {
+      "id": "benchR:A_group_of_Cal_Fire_wildland_firefighters_at_the_western_flank_of_the_",
+      "max_cosine": 0.7347,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Auxiliary_Fire_Service_Vehicle_on_Gorton_Road_geograph_4478193_",
+      "max_cosine": 0.4772,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV007659_jpg.rf.0b07e8d15e7948bc07fc12161e6d54a1"
+    },
+    {
+      "id": "benchR:Wildfire_mini_car",
+      "max_cosine": 0.4309,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV013124_jpg.rf.6be22508b21914609e8ee8aee62c25f1"
+    },
+    {
+      "id": "benchR:Wildfire_in_Kyiv",
+      "max_cosine": 0.7587,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016619_jpg.rf.10b2955ea49c6188d27427c7cd0c2351"
+    },
+    {
+      "id": "benchR:Car_fire_aftermath",
+      "max_cosine": 0.6003,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV014169_jpg.rf.dc6d89a0188996ca181f784b0f5f08c3"
+    },
+    {
+      "id": "benchR:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070732",
+      "max_cosine": 0.6837,
+      "nearest": "local:val:pos_fire_2_001728:pos"
+    },
+    {
+      "id": "benchR:1887-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Incendio_del_alc_zar_de",
+      "max_cosine": 0.564,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV007642_jpg.rf.f5817ff11d8358d2e448148d0ca9dc9f"
+    },
+    {
+      "id": "benchR:Man_Playing_with_Fire_in_Dubai_Desert_Night_show",
+      "max_cosine": 0.6066,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV019177_jpg.rf.a3bfc4b2dd1fb50b3aa8bc250a74ae10"
+    },
+    {
+      "id": "benchR:Car_on_Fire",
+      "max_cosine": 0.7083,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV014169_jpg.rf.dc6d89a0188996ca181f784b0f5f08c3"
+    },
+    {
+      "id": "benchR:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_Yorkshire_",
+      "max_cosine": 0.6674,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV006757_jpg.rf.30550bd6c18463bde6230fa4412c0928"
+    },
+    {
+      "id": "benchR:Hibiscus_rosa-sinensis_Night_Fire_4zz",
+      "max_cosine": 0.6784,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022229_jpg.rf.681ab5f2cf5a4b5dc602e86f22d3008c"
+    },
+    {
+      "id": "benchR:Auto_fire_Vallejo_1",
+      "max_cosine": 0.6846,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV014169_jpg.rf.dc6d89a0188996ca181f784b0f5f08c3"
+    },
+    {
+      "id": "benchR:Structure_Fire_in_Union_Mississippi_03",
+      "max_cosine": 0.7254,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV009302_jpg.rf.9a79c5042bc0e9f34b9371e00326b6a8"
+    },
+    {
+      "id": "benchR:Aircraft_Rescue_Firefighting_training",
+      "max_cosine": 0.8505,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV013414_jpg.rf.9df7d70c345aa6f6920b0407e1a27420"
+    },
+    {
+      "id": "benchR:Hibiscus_rosa-sinensis_Night_Fire_1zz",
+      "max_cosine": 0.6648,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031553_jpg.rf.2f4a33e50b5d27711390469fd57bd421"
+    },
+    {
+      "id": "benchR:Baltimore_Inner_Harbor_Skyline_Night_Panorama",
+      "max_cosine": 0.5586,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV038236_jpg.rf.95cebdfba7f342f1fa46bbd4105d3a02"
+    },
+    {
+      "id": "benchR:Kibbutz_Be_eri_after_the_massacre_the_remains_of_a_vehicle_of_Hamas_te",
+      "max_cosine": 0.6427,
+      "nearest": "dfire:val:WEB05051"
+    },
+    {
+      "id": "benchR:Luton_Airport_Terminal_Car_Park_2_after_the_fire_-_geograph.org.uk_-_7",
+      "max_cosine": 0.6065,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025694_jpg.rf.456580f7301ca90c3cbc11ec3da91839"
+    },
+    {
+      "id": "benchR:1872-02-16_La_Ilustraci_n_Espa_ola_y_Americana_Barcelona_Tumulto_popul",
+      "max_cosine": 0.5348,
+      "nearest": "dfire:val:PublicDataset01018"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_04",
+      "max_cosine": 0.6307,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV008340_jpg.rf.54b5481a442cf788e38ef3ac70cc61cc"
+    },
+    {
+      "id": "benchR:Wildfire_zone_in_winter",
+      "max_cosine": 0.6094,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016494_jpg.rf.fb032669b794e1f0e6d822b3a424a2ed"
+    },
+    {
+      "id": "benchR:Windsong_fire",
+      "max_cosine": 0.5609,
+      "nearest": "dfire:val:PublicDataset00858"
+    },
+    {
+      "id": "benchR:Visitors_at_the_2024_Easter_fire_in_Rottorf_2024_03_30",
+      "max_cosine": 0.7491,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV019783_jpg.rf.7abeb20ba9c2746ee2750fba1fb2c257"
+    },
+    {
+      "id": "benchR:Firefighter_standing_in_billowing_smoke_from_dumpster_fire",
+      "max_cosine": 0.606,
+      "nearest": "fasdd:val:smoke_CV003017_jpg.rf.1c5a0d354f9fae7f82b32e4d8812b003"
+    },
+    {
+      "id": "benchR:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070729",
+      "max_cosine": 0.5601,
+      "nearest": "dfire:train:AoF06241"
+    },
+    {
+      "id": "benchR:Pompiers_ste-anne-de-beaupr_2012",
+      "max_cosine": 0.7264,
+      "nearest": "fasdd:train:smoke_CV001067_jpg.rf.5fbfa8fe429e7a593f0e572a1beeb135"
+    },
+    {
+      "id": "benchR:Louisiana_National_Guard_-_Wildfire_response_August_2023_01",
+      "max_cosine": 0.7796,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Veoki_p_leng_Tartu_maanteel_2021._aasta_juunis",
+      "max_cosine": 0.8272,
+      "nearest": "local:val:pos_fire_2_001152:pos"
+    },
+    {
+      "id": "benchR:Lick_Fire_on_the_Umatilla_National_Forest_burning_at_night",
+      "max_cosine": 0.8061,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV001478_jpg.rf.43741935361ea3e5e74c27cef5e3a67f"
+    },
+    {
+      "id": "benchR:California_Brush_Fire_night",
+      "max_cosine": 0.8502,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016976_jpg.rf.22d1d752cac8a3b6126f9dc6d77dc58f"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_07",
+      "max_cosine": 0.5103,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008836_jpg.rf.baa5f64a17dc56eec473f4ab5ebba474"
+    },
+    {
+      "id": "benchR:Hibiscus_rosa-sinensis_Night_Fire_3zz",
+      "max_cosine": 0.6921,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Wildfire_on_fields_by_road",
+      "max_cosine": 0.7944,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV017905_jpg.rf.d3b343072a8ebebcc774885ecf41a5f7"
+    },
+    {
+      "id": "benchR:Destroyed_car_from_Israel_Fire_and_Rescue_Services",
+      "max_cosine": 0.6,
+      "nearest": "dfire:val:WEB05051"
+    },
+    {
+      "id": "benchR:1875-08-30_La_Ilustraci_n_Espa_ola_y_Americana_Incendio_en_la_calle_de",
+      "max_cosine": 0.5415,
+      "nearest": "fasdd:train:fire_CV011295_jpg.rf.8f6d0de286606ba96f718d6be7676d67"
+    },
+    {
+      "id": "benchR:Roadside_forest_fire_and_long_parapet_wall_JEG7890",
+      "max_cosine": 0.6612,
+      "nearest": "dfire:train:WEB02464"
+    },
+    {
+      "id": "benchR:Forest_Fire_Junga",
+      "max_cosine": 0.8286,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:June_2026_Wildfire_Smoke_in_Salt_Lake",
+      "max_cosine": 0.6573,
+      "nearest": "dfire:val:AoF05123"
+    },
+    {
+      "id": "benchR:Silver_King_Wildfire_Utah_-_July_2024",
+      "max_cosine": 0.7718,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Smoke_jumper_equipment",
+      "max_cosine": 0.4906,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011288_jpg.rf.ca34d72e9b4d06237ff11a55e462e8d3"
+    },
+    {
+      "id": "benchR:Firefighters_of_the_Paris_Fire_Brigade_Montrouge_July_2026_1_",
+      "max_cosine": 0.6062,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018342_jpg.rf.21ed4c87793eac089a8bc26ecad624bd"
+    },
+    {
+      "id": "benchR:Braunton_Devon_UK_Fire_Station_--_2013_--_00156",
+      "max_cosine": 0.5267,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002782_jpg.rf.efa5b54eeb41bece3473ced8402b45d4"
+    },
+    {
+      "id": "benchR:Fire_hydrant_at_night_at_library_-_Hillsboro_Oregon",
+      "max_cosine": 0.5433,
+      "nearest": "fasdd:train:fire_CV001641_jpg.rf.a90ee2a36603da151de845beeb6aa02b"
+    },
+    {
+      "id": "benchR:Burned_down_house_in_Wolf_Point_Montana",
+      "max_cosine": 0.719,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV006638_jpg.rf.11d9e14231e8facd7fa77670c89603e6"
+    },
+    {
+      "id": "benchR:Louisiana_National_Guard_-_Wildfire_response_August_2023_03",
+      "max_cosine": 0.7256,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV015766_jpg.rf.c84993c9df2bf9d20a1c7f59aa1b1fa2"
+    },
+    {
+      "id": "benchR:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070735",
+      "max_cosine": 0.5862,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:Firefighter_Ashton_Bay_March_2017",
+      "max_cosine": 0.7154,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV019783_jpg.rf.7abeb20ba9c2746ee2750fba1fb2c257"
+    },
+    {
+      "id": "benchR:Incendi_del_palau_de_Moss_n_Sorell_1878_dibuixat_per_Asenjo",
+      "max_cosine": 0.5255,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Fire_behavior_during_the_night_shift_on_the_Mangum_Fire",
+      "max_cosine": 0.8421,
+      "nearest": "fasdd:train:fire_CV010947_jpg.rf.2414e329117a1618d684c8bc50b28e11"
+    },
+    {
+      "id": "benchR:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070733",
+      "max_cosine": 0.6476,
+      "nearest": "fasdd:val:smoke_CV007708_jpg.rf.1db482b153869c79fc8694c9953b537c"
+    },
+    {
+      "id": "benchR:WildfireKolm_rden2021-2",
+      "max_cosine": 0.5674,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015041_jpg.rf.56e8cd8e9367cd386c76213a994ecfdb"
+    },
+    {
+      "id": "benchR:Firefighter_fighting_fire_03",
+      "max_cosine": 0.7837,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV019783_jpg.rf.7abeb20ba9c2746ee2750fba1fb2c257"
+    },
+    {
+      "id": "benchR:Forest_Fire_in_Solan_Hills_Himachal_Pradesh_May_2024_",
+      "max_cosine": 0.8757,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Fire_vehicle_at_the_CMP_Post_Office",
+      "max_cosine": 0.3824,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV007536_jpg.rf.f68536de8c86d41b0c14bf9f730815d2"
+    },
+    {
+      "id": "benchR:Firefighters_2020_El_Dorado_Fire_Sep10",
+      "max_cosine": 0.6944,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV009756_jpg.rf.9a6f60f626d1fcc903310c509486dfa9"
+    },
+    {
+      "id": "benchR:Wildfire_From_The_Air",
+      "max_cosine": 0.8943,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Singapore_Civil_Defence_Force_Light_Fire_Attack_Vehicle_Red_Rhino_221",
+      "max_cosine": 0.4329,
+      "nearest": "fasdd:train:fire_CV009586_jpg.rf.f5abdda37f1ebdfe34449b4bb8a9a2ee"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_13",
+      "max_cosine": 0.6015,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016731_jpg.rf.500633559203e2e6b821618abc359f09"
+    },
+    {
+      "id": "benchR:Photography_of_forest_fire",
+      "max_cosine": 0.7918,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Pontefract_Fire_station_at_night_geograph_5703284_",
+      "max_cosine": 0.5941,
+      "nearest": "dfire:val:WEB03397"
+    },
+    {
+      "id": "benchR:Edmonia_Lewis_by_Henry_Rocher_cropped_",
+      "max_cosine": 0.5296,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018068_jpg.rf.56b70b7a7ee82552881cf45d62491d22"
+    },
+    {
+      "id": "benchR:Fire_Hydrant_-_Flickr_-_Night_Photo",
+      "max_cosine": 0.5624,
+      "nearest": "dfire:val:WEB03397"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_08",
+      "max_cosine": 0.642,
+      "nearest": "fasdd:train:fire_CV011607_jpg.rf.9f0f7d10d362a31d7d1d3493810c2e6c"
+    },
+    {
+      "id": "benchR:Building_burning_in_Homs_city",
+      "max_cosine": 0.8098,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008370_jpg.rf.d66992bc9ea45eee46744ba77b531633"
+    },
+    {
+      "id": "benchR:Ca_da_de_rayo_en_tronco_provoca_incendio_forestal",
+      "max_cosine": 0.6955,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016494_jpg.rf.fb032669b794e1f0e6d822b3a424a2ed"
+    },
+    {
+      "id": "benchR:Fire_breathing_2026_Kupala_Night_in_Ustka_Poland_June_2026",
+      "max_cosine": 0.6766,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV007860_jpg.rf.ff428805a5bcd6a65b4f195f3c9049d0"
+    },
+    {
+      "id": "benchR:Burning_automobile_02",
+      "max_cosine": 0.7539,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV001919_jpg.rf.05421da899a19e7155f9a25dcc2ae26c"
+    },
+    {
+      "id": "benchR:Sculptress_Supreme_Edmonia_Lewis_49868214211_",
+      "max_cosine": 0.4395,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018068_jpg.rf.56b70b7a7ee82552881cf45d62491d22"
+    },
+    {
+      "id": "benchR:FEMA_-_42314_-_Firefighters_at_the_Puerto_Rico_Gas_Fire",
+      "max_cosine": 0.5252,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018342_jpg.rf.21ed4c87793eac089a8bc26ecad624bd"
+    },
+    {
+      "id": "benchR:Firefighters_of_the_Paris_Fire_Brigade_Montrouge_July_2026_3_",
+      "max_cosine": 0.5631,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018342_jpg.rf.21ed4c87793eac089a8bc26ecad624bd"
+    },
+    {
+      "id": "benchR:Grouse_Mountain_Wildfire_report_44673262442_",
+      "max_cosine": 0.5749,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Vehicle_of_Voluntary_Fire_Service_in_Warka_Poland",
+      "max_cosine": 0.4618,
+      "nearest": "dfire:train:WEB03370"
+    },
+    {
+      "id": "benchR:Firefighters_of_the_Paris_Fire_Brigade_Montrouge_July_2026_2_",
+      "max_cosine": 0.6233,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018342_jpg.rf.21ed4c87793eac089a8bc26ecad624bd"
+    },
+    {
+      "id": "benchR:District_of_Vanderhoof_Volunteer_Firefighter_alongside_Fire_Engine_12",
+      "max_cosine": 0.6259,
+      "nearest": "fasdd:train:smoke_CV001067_jpg.rf.5fbfa8fe429e7a593f0e572a1beeb135"
+    },
+    {
+      "id": "benchR:Daewoo_Nubira_II_fire_car_front",
+      "max_cosine": 0.4739,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV001328_jpg.rf.1850456796936a793b9468b399a91589"
+    },
+    {
+      "id": "benchR:Bear_River_Lake_Resort_lodge_after_2023_fire",
+      "max_cosine": 0.6673,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV032403_jpg.rf.d4da60bd164dccf1704411223cfd4ead"
+    },
+    {
+      "id": "benchR:Exploring_wildfire_ecology",
+      "max_cosine": 0.5077,
+      "nearest": "dfire:val:WEB04800"
+    },
+    {
+      "id": "benchR:Smoke_742018",
+      "max_cosine": 0.7993,
+      "nearest": "dfire:train:PublicDataset00653"
+    },
+    {
+      "id": "benchR:1880-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Granada_Incendio_de_la_",
+      "max_cosine": 0.4422,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Firefighters_during_service_in_Botevgrad_Bulgaria_02",
+      "max_cosine": 0.64,
+      "nearest": "fasdd:train:smoke_CV007518_jpg.rf.7fff2333834db835d0f1a075622ada13"
+    },
+    {
+      "id": "benchR:Car_park_at_Leominster_fire_station_-_geograph.org.uk_-_6737237",
+      "max_cosine": 0.5056,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Shedhorn_Fire_at_night_51974557572_",
+      "max_cosine": 0.8043,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Photograph_-_Fire_in_Schenkers_Shipping_And_Forwarding_Agents_London_p",
+      "max_cosine": 0.6267,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV007642_jpg.rf.f5817ff11d8358d2e448148d0ca9dc9f"
+    },
+    {
+      "id": "benchR:Hope_Valley_fire_brigade_vehicle_near_Henderson_Cliffs_lookout_May_202",
+      "max_cosine": 0.5149,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018342_jpg.rf.21ed4c87793eac089a8bc26ecad624bd"
+    },
+    {
+      "id": "benchR:NOAA_photo_collage_heat_wave_drought_hurricane_wildfire_glacial_ice_lo",
+      "max_cosine": 0.657,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:PMG-1_fire_engine",
+      "max_cosine": 0.4555,
+      "nearest": "fasdd:train:fire_CV002780_jpg.rf.bf91c324d60eafd2cd26662405499020"
+    },
+    {
+      "id": "benchR:WildfireKolm_rden2017",
+      "max_cosine": 0.5829,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015041_jpg.rf.56e8cd8e9367cd386c76213a994ecfdb"
+    },
+    {
+      "id": "benchR:Central_Fire_Station_Singapore_at_night_-_20090723",
+      "max_cosine": 0.4979,
+      "nearest": "dfire:val:WEB02851"
+    },
+    {
+      "id": "benchR:Jones_Farm_Fire_Station_at_night_engine_-_Hillsboro_Oregon",
+      "max_cosine": 0.5371,
+      "nearest": "fasdd:train:smoke_CV008515_jpg.rf.a39b0e24213be3ba17e18b252e5bb70b"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_03",
+      "max_cosine": 0.6461,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV010804_jpg.rf.54ebdc5e6f88791c637e5c4105880c26"
+    },
+    {
+      "id": "benchR:1872-07-24_La_Ilustraci_n_Espa_ola_y_Americana_Madrid_Incendio_del_pal",
+      "max_cosine": 0.5368,
+      "nearest": "fasdd:train:smoke_CV007166_jpg.rf.7f2e4722c48032372c357415fb51e3bf"
+    },
+    {
+      "id": "benchR:Firefighting_exercise",
+      "max_cosine": 0.7545,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV013414_jpg.rf.9df7d70c345aa6f6920b0407e1a27420"
+    },
+    {
+      "id": "benchR:Wildfire-Kolm_rden",
+      "max_cosine": 0.6149,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015041_jpg.rf.56e8cd8e9367cd386c76213a994ecfdb"
+    },
+    {
+      "id": "benchR:Louisiana_National_Guard_-_Wildfire_response_August_2023_04",
+      "max_cosine": 0.7751,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Northern_Cyprus_fire_vehicle_SsangYong_Rexton",
+      "max_cosine": 0.4893,
+      "nearest": "dfire:train:WEB03370"
+    },
+    {
+      "id": "benchR:The_Black_Fire_in_the_Gila_National_Forest_viewed_at_sunset_from_NM_51",
+      "max_cosine": 0.6856,
+      "nearest": "dfire:val:PublicDataset00305"
+    },
+    {
+      "id": "benchR:Forest_landscape_after_wildfire",
+      "max_cosine": 0.7427,
+      "nearest": "dfire:train:AoF01789"
+    },
+    {
+      "id": "benchR:Great_Fire_London",
+      "max_cosine": 0.6391,
+      "nearest": "fasdd:train:fire_CV011295_jpg.rf.8f6d0de286606ba96f718d6be7676d67"
+    },
+    {
+      "id": "benchR:Charles_Brooking_-_Ship_on_fire_at_night_-_Google_Art_Project",
+      "max_cosine": 0.5062,
+      "nearest": "fasdd:train:fire_CV011295_jpg.rf.8f6d0de286606ba96f718d6be7676d67"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_14",
+      "max_cosine": 0.6317,
+      "nearest": "dfire:val:WEB05051"
+    },
+    {
+      "id": "benchR:1887-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Incendio_del_alc_zar_de",
+      "max_cosine": 0.5003,
+      "nearest": "fasdd:train:smoke_CV007166_jpg.rf.7f2e4722c48032372c357415fb51e3bf"
+    },
+    {
+      "id": "benchR:Wildfire_near_Ob_in_Bystroistokskiy_district",
+      "max_cosine": 0.6777,
+      "nearest": "dfire:train:WEB02087"
+    },
+    {
+      "id": "benchR:1919_Chalmers_Street_fire_-_Lincoln_Motor_Car_Co_-_A-00036925",
+      "max_cosine": 0.5226,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV018205_jpg.rf.12cc0d900bb776b322185cddab8086fe"
+    },
+    {
+      "id": "benchR:Louisiana_National_Guard_-_Wildfire_response_August_2023_05",
+      "max_cosine": 0.5905,
+      "nearest": "dfire:val:WEB07659"
+    },
+    {
+      "id": "benchR:Naval_Base_Ventura_County_Point_Mugu_wildfires_Image_12_of_17_87156381",
+      "max_cosine": 0.545,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV013414_jpg.rf.9df7d70c345aa6f6920b0407e1a27420"
+    },
+    {
+      "id": "benchR:Fire_hydrant_at_evacuation_stairwell_in_Multi-storey_car_park_at_Skyga",
+      "max_cosine": 0.682,
+      "nearest": "local:train:web_154228848:web_negative"
+    },
+    {
+      "id": "benchR:USFWS_Prescribed_Fire_Used_as_a_Tool_16786166092_",
+      "max_cosine": 0.7857,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV015766_jpg.rf.c84993c9df2bf9d20a1c7f59aa1b1fa2"
+    },
+    {
+      "id": "benchR:2010s_Jeep_Patriot_Fire_Prevention_vehicle_of_Jersey_City_Fire_Departm",
+      "max_cosine": 0.4074,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV007536_jpg.rf.f68536de8c86d41b0c14bf9f730815d2"
+    },
+    {
+      "id": "benchR:Fire_department_vehicle_of_Cape_May_Point",
+      "max_cosine": 0.4734,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV009302_jpg.rf.9a79c5042bc0e9f34b9371e00326b6a8"
+    },
+    {
+      "id": "benchR:Staged_car_fire_4",
+      "max_cosine": 0.6922,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV014169_jpg.rf.dc6d89a0188996ca181f784b0f5f08c3"
+    },
+    {
+      "id": "benchR:Heavy_smoke_from_several_wildfires_over_Alaska_west_of_Fairbanks_Alask",
+      "max_cosine": 0.7335,
+      "nearest": "dfire:val:WEB08614"
+    },
+    {
+      "id": "benchR:MAN_TGM_fire_engine_at_night_Warsaw_Poland",
+      "max_cosine": 0.5057,
+      "nearest": "dfire:train:WEB04908"
+    },
+    {
+      "id": "benchR:Lava_wildfire_at_hawaii",
+      "max_cosine": 0.6864,
+      "nearest": "fasdd:train:fire_CV008894_jpg.rf.3b6265ab7485d02b53f892eaa8226453"
+    },
+    {
+      "id": "benchR:Forest_Fire_8045036104_",
+      "max_cosine": 0.8043,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Forest_fire_in_uttarkhashi_JEG8058",
+      "max_cosine": 0.806,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Hughes_Fire_burning_on_22_January_2025_and_firefighters_with_United_St",
+      "max_cosine": 0.7632,
+      "nearest": "dfire:val:PublicDataset00488"
+    },
+    {
+      "id": "benchR:Bosque_Encantado_Parque_nacional_de_Garajonay_La_Gomera_Espa_a_2012-12",
+      "max_cosine": 0.7267,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV014840_jpg.rf.c1e371d649f250de4bbed9ce99f23609"
+    },
+    {
+      "id": "benchR:Fire_Show_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland_June_2026",
+      "max_cosine": 0.6773,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV007860_jpg.rf.ff428805a5bcd6a65b4f195f3c9049d0"
+    },
+    {
+      "id": "benchR:A_wildland_firefighter_at_the_head_of_the_Gann_Fire_seen_on_August_4_2",
+      "max_cosine": 0.7366,
+      "nearest": "fasdd:train:smoke_CV004865_jpg.rf.9e42ff0d45cdaee8fe01edb24297d9f1"
+    },
+    {
+      "id": "benchR:Apartment_Fire_High_Point_NC_Feb28_2022",
+      "max_cosine": 0.7812,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV014756_jpg.rf.ce74d5ab6cbdc4cf8893f2a804a2322c"
+    },
+    {
+      "id": "benchR:The_burning_of_Columbia_South_Carolina_February_17_1865",
+      "max_cosine": 0.463,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070734",
+      "max_cosine": 0.5706,
+      "nearest": "dfire:train:AoF06241"
+    },
+    {
+      "id": "benchR:Forth_Night_Fire_-_Fire_6118004227_",
+      "max_cosine": 0.8039,
+      "nearest": "fasdd:train:fire_CV011010_jpg.rf.a8d419d053ab24fe6e60b7a9d0c3e7b7"
+    },
+    {
+      "id": "benchR:Central_Fire_Station_Singapore_at_night_2026",
+      "max_cosine": 0.4251,
+      "nearest": "dfire:val:WEB03397"
+    },
+    {
+      "id": "benchR:Santa_Catalina_mountains_1",
+      "max_cosine": 0.603,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016494_jpg.rf.fb032669b794e1f0e6d822b3a424a2ed"
+    },
+    {
+      "id": "benchR:Wildfire_in_Whitireia_Park_Porirua_New_Zealand_in_2010",
+      "max_cosine": 0.7451,
+      "nearest": "dfire:train:WEB04457"
+    },
+    {
+      "id": "benchR:A_large_fire_in_tropical_forest_trees_in_the_fire",
+      "max_cosine": 0.7307,
+      "nearest": "dfire:val:WEB04168"
+    },
+    {
+      "id": "benchR:Stand_burned_by_crown_fire_-_DPLA_-_434853282acf2356bcd72567a91e4181",
+      "max_cosine": 0.7605,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Bideford_fire_station_vehicles_03",
+      "max_cosine": 0.6064,
+      "nearest": "local:train:web_154228848:web_negative"
+    },
+    {
+      "id": "benchR:Hampshire_Fire_and_Rescue_Service_tackles_a_car_fire",
+      "max_cosine": 0.5878,
+      "nearest": "fasdd:train:smoke_CV006852_jpg.rf.ac5adc3e29712ba589022ca606dfd849"
+    },
+    {
+      "id": "benchR:Fire_Hydrants_of_Minquan_Car_Park_20150724",
+      "max_cosine": 0.5551,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034428_jpg.rf.fed50f566db5880a75967eb2ac368fc6"
+    },
+    {
+      "id": "benchR:Ausgebrannte_Autowracks_F_rstenried_West_Munich_05",
+      "max_cosine": 0.6381,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV014756_jpg.rf.ce74d5ab6cbdc4cf8893f2a804a2322c"
+    },
+    {
+      "id": "benchR:2020-04-10_04_08_54_House_and_car_on_fire_at_night_along_Coates_Lane_i",
+      "max_cosine": 0.7931,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV011089_jpg.rf.6fe134c767e11ce87f107a1ee6a3b1a2"
+    },
+    {
+      "id": "benchR:Phoenix_Fire_Show_Night_Festival_2014",
+      "max_cosine": 0.5328,
+      "nearest": "fasdd:train:fire_CV010812_jpg.rf.163c5c50d10f9fbebd55bef6a14d848e"
+    },
+    {
+      "id": "benchR:Firefighters_Walking_Away_from_Smoking_Dumpster_Fire",
+      "max_cosine": 0.6588,
+      "nearest": "fasdd:train:smoke_CV003207_jpg.rf.653cf89a982390bc10da9c5406324d81"
+    },
+    {
+      "id": "benchR:Firefighters_during_service_in_Botevgrad_Bulgaria_01",
+      "max_cosine": 0.5333,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV008659_jpg.rf.c712b1dd224b3c89fe255732bbdda4a8"
+    },
+    {
+      "id": "benchR:Air_Force_Fire_Training",
+      "max_cosine": 0.7186,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV013414_jpg.rf.9df7d70c345aa6f6920b0407e1a27420"
+    },
+    {
+      "id": "benchR:Firefighter_stirring_doused_dumpster_fire_as_unhoused_community_member",
+      "max_cosine": 0.6656,
+      "nearest": "fasdd:train:smoke_CV005597_jpg.rf.d0435cc2a924a7d98895b9fdb96bec80"
+    },
+    {
+      "id": "benchR:Kaz_grala_fire_50950359817_",
+      "max_cosine": 0.5722,
+      "nearest": "fasdd:train:smoke_CV001761_jpg.rf.f2e394225d23e28e62c7097fa36fe1d7"
+    },
+    {
+      "id": "benchR:Firefighters_from_the_628th_Air_Base_Wing_conduct_a_live_fire_demonstr",
+      "max_cosine": 0.7309,
+      "nearest": "dfire:val:PublicDataset01018"
+    },
+    {
+      "id": "benchR:Auto_fire_Vallejo_3",
+      "max_cosine": 0.6188,
+      "nearest": "dfire:train:WEB09038"
+    },
+    {
+      "id": "benchR:Amsterdam_fire_department_at_Amsterdam_Pride_parade",
+      "max_cosine": 0.4205,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV013998_jpg.rf.3341e08f48a6c7ac0fc1c35481cf4927"
+    },
+    {
+      "id": "benchR:El_Nido_Fire_at_night_on_the_beach_Palawan_Island_Philippines",
+      "max_cosine": 0.868,
+      "nearest": "fasdd:train:fire_CV011010_jpg.rf.a8d419d053ab24fe6e60b7a9d0c3e7b7"
+    },
+    {
+      "id": "benchR:Silver_King_Wildfire_-_July_2024",
+      "max_cosine": 0.801,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Gatelys_building_fire_612019",
+      "max_cosine": 0.5305,
+      "nearest": "dfire:train:WEB09212"
+    },
+    {
+      "id": "benchR:Brandschaden_Fahrzeugbrand_Drygalski-Allee_Munich_06",
+      "max_cosine": 0.6064,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV013640_jpg.rf.6485701031c8aa13d67361f03252c6c7"
+    },
+    {
+      "id": "benchR:House_Fire_in_Hickory_Mississippi",
+      "max_cosine": 0.7182,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV011089_jpg.rf.6fe134c767e11ce87f107a1ee6a3b1a2"
+    },
+    {
+      "id": "benchR:Match_Lighter",
+      "max_cosine": 0.5056,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV028882_jpg.rf.60265e59317e696b9118275f67cb96fa"
+    },
+    {
+      "id": "benchR:Candle_flame_in_concave_mirror_with_interference_rings",
+      "max_cosine": 0.7733,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Butane_lighter_1_",
+      "max_cosine": 0.7189,
+      "nearest": "fasdd:train:fire_CV008142_jpg.rf.62fb91e16211de72eed119d12eae4b01"
+    },
+    {
+      "id": "benchR:1960s_or_1970s_Zenith_flip_top_windproof_petrol_lighter",
+      "max_cosine": 0.5354,
+      "nearest": "fasdd:train:fire_CV006598_jpg.rf.9a169e4e7f67cb7f0bc567dfa202e010"
+    },
+    {
+      "id": "benchR:Lit_paschal_candle-front",
+      "max_cosine": 0.6592,
+      "nearest": "fasdd:train:fire_CV006940_jpg.rf.376a31ba8d075ec1885ed3ee3c9515ba"
+    },
+    {
+      "id": "benchR:Pourquoi._Lit_candle._22590133777_",
+      "max_cosine": 0.9026,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:A_Pair_of_Candle_Flames_1793613381_",
+      "max_cosine": 0.7455,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Candle-lit_shrine_-_geograph.org.uk_-_3458471",
+      "max_cosine": 0.5505,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_54848900696_",
+      "max_cosine": 0.5197,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:_2023_01",
+      "max_cosine": 0.4639,
+      "nearest": "dfire:train:AoF00021"
+    },
+    {
+      "id": "benchR:Candle_Lit_Vigil_23137130700_",
+      "max_cosine": 0.4616,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV018410_jpg.rf.57a23d96493389a86f90e533167073ec"
+    },
+    {
+      "id": "benchR:Cozy_Atmosphere_with_Lit_Brown_Candle",
+      "max_cosine": 0.5934,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Lead_heated_in_a_candle_flame",
+      "max_cosine": 0.7498,
+      "nearest": "fasdd:train:fire_CV004477_jpg.rf.ea6c4abe111e65a24817531cbe001d6f"
+    },
+    {
+      "id": "benchR:PikiWiki_Israel_32267_The_candle_monument_in_Ashdod",
+      "max_cosine": 0.5156,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Butane_lighter_2_",
+      "max_cosine": 0.6418,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV010451_jpg.rf.f7b1787d5c41d214a808a27a17bf58fe"
+    },
+    {
+      "id": "benchR:Candle_-_Vela_-_01",
+      "max_cosine": 0.809,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Candle-flame-1062513_1920",
+      "max_cosine": 0.771,
+      "nearest": "fasdd:train:fire_CV005938_jpg.rf.7b915be5b6e335da33f3384292d00238"
+    },
+    {
+      "id": "benchR:Candles_lit_in_Chichester_Cathedral",
+      "max_cosine": 0.7482,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:1960s_or_1970s_Dutch_Poppell_butane_lighter_with_replaceable_gas_conta",
+      "max_cosine": 0.5384,
+      "nearest": "fasdd:val:fire_CV004168_jpg.rf.1791d3682dd7a41c3fbf94682821948b"
+    },
+    {
+      "id": "benchR:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on_December_",
+      "max_cosine": 0.3942,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029230_jpg.rf.e9694b2e56c7f990ed41326f6085211e"
+    },
+    {
+      "id": "benchR:Candle_wick_and_flame_closeup",
+      "max_cosine": 0.7233,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Candle_lit_sedilia_at_the_Glencairn_Aisle_St_Maurs-Glencairn_Kilmaurs",
+      "max_cosine": 0.6118,
+      "nearest": "fasdd:train:fire_CV008110_jpg.rf.918988e8449ff852419098ae855a327d"
+    },
+    {
+      "id": "benchR:Candles_Lit_at_the_Holy_Trinity_Church_of_Shashiani",
+      "max_cosine": 0.5826,
+      "nearest": "fasdd:train:fire_CV011010_jpg.rf.a8d419d053ab24fe6e60b7a9d0c3e7b7"
+    },
+    {
+      "id": "benchR:Flameless_candle_lit",
+      "max_cosine": 0.7457,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:30_grams_of_cannabis_buds_and_green_lighter",
+      "max_cosine": 0.6265,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035831_jpg.rf.ce455cd358c411e1555b1f56774a73a1"
+    },
+    {
+      "id": "benchR:Candle_never_lit_40979805374_",
+      "max_cosine": 0.6006,
+      "nearest": "fasdd:val:fire_CV004168_jpg.rf.1791d3682dd7a41c3fbf94682821948b"
+    },
+    {
+      "id": "benchR:Candle_flame_1_",
+      "max_cosine": 0.8857,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on_December_",
+      "max_cosine": 0.3964,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026503_jpg.rf.c7d6ed2558f3367f5e996418ffd3220d"
+    },
+    {
+      "id": "benchR:Candle-flame-and-reflection",
+      "max_cosine": 0.8988,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Lit_white_candle",
+      "max_cosine": 0.842,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Butane_lighter_4_",
+      "max_cosine": 0.5756,
+      "nearest": "fasdd:train:fire_CV008454_jpg.rf.977288d3b4c7c21d56daffd0f0e6de26"
+    },
+    {
+      "id": "benchR:Vintage_Aluminum_Cigarette_Lighter_Not_Marked_Lighter_Fluid_Model_1476",
+      "max_cosine": 0.5801,
+      "nearest": "fasdd:train:fire_CV006598_jpg.rf.9a169e4e7f67cb7f0bc567dfa202e010"
+    },
+    {
+      "id": "benchR:Disassembled_butane_lighter_5_",
+      "max_cosine": 0.5084,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031174_jpg.rf.1b7dc4f4c13b5fea3288eeca3c749df9"
+    },
+    {
+      "id": "benchR:Candle-lit_framed_Socorro_Cavite_Antes_Left_and_Federico_Abdon_Antes_J",
+      "max_cosine": 0.4716,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Vintage_Adjust-A-Flame_Butane_Cigarette_Lighter_Made_In_Japan_Base_Mea",
+      "max_cosine": 0.5923,
+      "nearest": "fasdd:train:fire_CV006598_jpg.rf.9a169e4e7f67cb7f0bc567dfa202e010"
+    },
+    {
+      "id": "benchR:Candle_flame_closeup",
+      "max_cosine": 0.8417,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Ikea_halogen_candle-flame_light_bulb_with_E14_Edison_screw-9656",
+      "max_cosine": 0.6185,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031174_jpg.rf.1b7dc4f4c13b5fea3288eeca3c749df9"
+    },
+    {
+      "id": "benchR:Circa_1980_metal_piezo_lighter_marked_Goetaverken_Aangteknik_and_Tokyo",
+      "max_cosine": 0.4662,
+      "nearest": "dfire:train:WEB03329"
+    },
+    {
+      "id": "benchR:Candle_lit_parvise_during_lent",
+      "max_cosine": 0.5321,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000672_jpg.rf.0d2dc57892ff8f4bc6066ed44c21468b"
+    },
+    {
+      "id": "benchR:Fire-candle-flame-hearts_24029345460_",
+      "max_cosine": 0.6273,
+      "nearest": "fasdd:train:fire_CV011370_jpg.rf.c1cfec2d0466a4e24fe4d297a57a3e91"
+    },
+    {
+      "id": "benchR:Candle_flame_-_Macro_photography",
+      "max_cosine": 0.6879,
+      "nearest": "fasdd:train:fire_CV006343_jpg.rf.1afd83db2c568b4917161b173a503267"
+    },
+    {
+      "id": "benchR:Lighter_-_Flickr_-_pyntofmyld",
+      "max_cosine": 0.6778,
+      "nearest": "fasdd:train:fire_CV011655_jpg.rf.5b5c669df0bfc5d6ddf64097f3eea79d"
+    },
+    {
+      "id": "benchR:Vintage_Bakelite_Cigarette_Lighter_Not_Marked_15021365061_",
+      "max_cosine": 0.5238,
+      "nearest": "fasdd:train:fire_CV006598_jpg.rf.9a169e4e7f67cb7f0bc567dfa202e010"
+    },
+    {
+      "id": "benchR:2006-02-25_candle-flame_with_colour-shift_A",
+      "max_cosine": 0.7409,
+      "nearest": "fasdd:val:fire_CV005025_jpg.rf.b766b9f4020ca2f1f3b6238a4328e0a4"
+    },
+    {
+      "id": "benchR:Candle_lit_Cunningham_Monument_at_the_Glencairn_Aisle_St_Maurs-Glencai",
+      "max_cosine": 0.572,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035719_jpg.rf.ea97b48224aa81bdd405aaea23d6f9d7"
+    },
+    {
+      "id": "benchR:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_54849213620_",
+      "max_cosine": 0.4494,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Buddha_Lighter_From_Japan",
+      "max_cosine": 0.6104,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV014825_jpg.rf.4f880b6fc01577399b9d439cc0a206ac"
+    },
+    {
+      "id": "benchR:Candle-lit_framed_Socorro_Cavite_Antes_Left_and_Federico_Abdon_Antes_J",
+      "max_cosine": 0.5308,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV024618_jpg.rf.1d1d84b8b7c76b42fed79a68e4c145a0"
+    },
+    {
+      "id": "benchR:On_fire_3056183075_",
+      "max_cosine": 0.6278,
+      "nearest": "fasdd:train:fire_CV007390_jpg.rf.5224a136a12b45e78f110607b27f0fdd"
+    },
+    {
+      "id": "benchR:Red_candle_flame",
+      "max_cosine": 0.8396,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Vintage_Firebird_Flipper_Butane_Cigarette_Lighter_By_Division_Of_Colib",
+      "max_cosine": 0.4048,
+      "nearest": "fasdd:train:fire_CV006448_jpg.rf.ad0d87d063fcea958c07726030a54194"
+    },
+    {
+      "id": "benchR:Candle-flame-no-reflection",
+      "max_cosine": 0.8932,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:The_colour_lit_candles",
+      "max_cosine": 0.4739,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029312_jpg.rf.1d00d04ae01a33b39eee184dceb548cd"
+    },
+    {
+      "id": "benchR:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on_December_",
+      "max_cosine": 0.3513,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV005024_jpg.rf.dacaef5a7f75063a584b716dcac22fe5"
+    },
+    {
+      "id": "benchR:Candle_17023053629_",
+      "max_cosine": 0.7416,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Small_candle_flame",
+      "max_cosine": 0.8667,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Second_candle_of_Hanukkah",
+      "max_cosine": 0.6725,
+      "nearest": "fasdd:val:fire_CV005221_jpg.rf.45cdfa80a363bdc2ad263f5eb5ccc568"
+    },
+    {
+      "id": "benchR:Playboy_lighter",
+      "max_cosine": 0.3732,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV019992_jpg.rf.83d2e1024991c9f6a98ea3d4d748a64c"
+    },
+    {
+      "id": "benchR:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on_December_",
+      "max_cosine": 0.4241,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029230_jpg.rf.e9694b2e56c7f990ed41326f6085211e"
+    },
+    {
+      "id": "benchR:Circa_1990_Orflam_Plast_SA_camouflage_patterned_gas_lighter_made_in_Fr",
+      "max_cosine": 0.5137,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV025600_jpg.rf.f8d430e6ad73f55289d673752bc5967f"
+    },
+    {
+      "id": "benchR:5_grams_of_cannabis_buds_and_green_lighter",
+      "max_cosine": 0.6384,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035831_jpg.rf.ce455cd358c411e1555b1f56774a73a1"
+    },
+    {
+      "id": "benchR:Candle_Flames",
+      "max_cosine": 0.8462,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Lit_Hanukiah",
+      "max_cosine": 0.6628,
+      "nearest": "fasdd:val:fire_CV005221_jpg.rf.45cdfa80a363bdc2ad263f5eb5ccc568"
+    },
+    {
+      "id": "benchR:Candle_light_projected_through_a_glass_orb",
+      "max_cosine": 0.5611,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Candle_Burning",
+      "max_cosine": 0.7374,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Butane_lighter_piezo_3_",
+      "max_cosine": 0.4678,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031174_jpg.rf.1b7dc4f4c13b5fea3288eeca3c749df9"
+    },
+    {
+      "id": "benchR:Oregonia_lighter_Unsplash_",
+      "max_cosine": 0.7584,
+      "nearest": "fasdd:train:fire_CV008142_jpg.rf.62fb91e16211de72eed119d12eae4b01"
+    },
+    {
+      "id": "benchR:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_54848900616_",
+      "max_cosine": 0.5502,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_54849213960_",
+      "max_cosine": 0.4873,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:_2023_02",
+      "max_cosine": 0.5503,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035719_jpg.rf.ea97b48224aa81bdd405aaea23d6f9d7"
+    },
+    {
+      "id": "benchR:Produktsicherheitslabel",
+      "max_cosine": 0.4912,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV025600_jpg.rf.f8d430e6ad73f55289d673752bc5967f"
+    },
+    {
+      "id": "benchR:Candle_House_lit_up_-_geograph.org.uk_-_7699674",
+      "max_cosine": 0.608,
+      "nearest": "dfire:train:WEB02586"
+    },
+    {
+      "id": "benchR:Candle_being_lit",
+      "max_cosine": 0.5954,
+      "nearest": "fasdd:train:fire_CV008142_jpg.rf.62fb91e16211de72eed119d12eae4b01"
+    },
+    {
+      "id": "benchR:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on_December_",
+      "max_cosine": 0.365,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV017777_jpg.rf.db5ae5b89a5a1d92a3b19945910737c0"
+    },
+    {
+      "id": "benchR:Candle-lit_framed_Socorro_Cavite_Antes_Left_and_Federico_Abdon_Antes_J",
+      "max_cosine": 0.4912,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_54849157033_",
+      "max_cosine": 0.5293,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037518_jpg.rf.7d6496d8fc57d62d88a6fc062dbad62f"
+    },
+    {
+      "id": "benchR:Candle_Flames_5261895585_",
+      "max_cosine": 0.6065,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Like_a_candle_flame_233107630_",
+      "max_cosine": 0.8373,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Candle-lit_Carols_-_geograph.org.uk_-_8218639",
+      "max_cosine": 0.5139,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Candle_Flame_21733_",
+      "max_cosine": 0.7287,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Defense.gov_News_Photo_101220-N-8040H-059_-_U.S._Navy_Seaman_Anthony_F",
+      "max_cosine": 0.5119,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Bulk_Chemical_Storag",
+      "max_cosine": 0.5992,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029885_jpg.rf.f3f3e595a133f4506911d91452e8a9ab"
+    },
+    {
+      "id": "benchR:Making_sparks_for_parts_8625882_",
+      "max_cosine": 0.4932,
+      "nearest": "fasdd:val:fire_CV009867_jpg.rf.2357db65b090528cfe55f539cb508202"
+    },
+    {
+      "id": "benchR:Making_sparks_for_parts_8625884_",
+      "max_cosine": 0.6226,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006004_jpg.rf.b2197006056792f952d083eb44e6145b"
+    },
+    {
+      "id": "benchR:Sparks_110718-N-LL945-105",
+      "max_cosine": 0.5481,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:130926-N-JO908-044_10155529675_",
+      "max_cosine": 0.6336,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:Blast_Off_-_liber",
+      "max_cosine": 0.5087,
+      "nearest": "fasdd:train:fire_CV001951_jpg.rf.7ec2252e9884048ee9450409751dd77c"
+    },
+    {
+      "id": "benchR:Magnificent_manual_labour_2",
+      "max_cosine": 0.5829,
+      "nearest": "fasdd:train:fire_CV011010_jpg.rf.a8d419d053ab24fe6e60b7a9d0c3e7b7"
+    },
+    {
+      "id": "benchR:US_Navy_090206-N-6597H-070_Hull_Maintenance_Technician_3rd_Class_James",
+      "max_cosine": 0.6658,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:US_Navy_040225-N-8213G-058_Hull_Technician_3rd_Class_Casey_Caudill_of_",
+      "max_cosine": 0.6486,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Magnificent_manual_labour",
+      "max_cosine": 0.6226,
+      "nearest": "fasdd:train:fire_CV011010_jpg.rf.a8d419d053ab24fe6e60b7a9d0c3e7b7"
+    },
+    {
+      "id": "benchR:Grinding_With_Angle_Grinder",
+      "max_cosine": 0.564,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV019210_jpg.rf.a33aad196b4f04149bd41bac9be0ccc5"
+    },
+    {
+      "id": "benchR:A_song_of_fire_and_metal",
+      "max_cosine": 0.6509,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006004_jpg.rf.b2197006056792f952d083eb44e6145b"
+    },
+    {
+      "id": "benchR:US_Navy_071209-N-2838W-117_Damage_Controlman_3rd_Class_Kiel_Durant_a_m",
+      "max_cosine": 0.6631,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:Members_of_the_Women_s_Royal_Naval_Service_WRNS_practice_welding_at_a_",
+      "max_cosine": 0.5952,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035802_jpg.rf.a4ec982492f7cf5c07097ae977f6d89b"
+    },
+    {
+      "id": "benchR:Grinding_the_sparks",
+      "max_cosine": 0.6242,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:US_Navy_120209-N-SK590-014_ull_Maintenance_Technician_2nd_Class_Ben_Vi",
+      "max_cosine": 0.6529,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:Halbrohrschlange",
+      "max_cosine": 0.674,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Flickr_-_DVIDSHUB_-_USS_John_C._Stennis_conducts_maritime_security_ope",
+      "max_cosine": 0.6282,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Sparks_fly_140528-A-CA521-020",
+      "max_cosine": 0.617,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Lost_a_wheel_but_what_the_heck..._4956685273_",
+      "max_cosine": 0.5017,
+      "nearest": "fasdd:train:smoke_CV001761_jpg.rf.f2e394225d23e28e62c7097fa36fe1d7"
+    },
+    {
+      "id": "benchR:Sparks_will_fly_130117-F-RB551-110",
+      "max_cosine": 0.6486,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Man_Welding_a_Metal_Gate",
+      "max_cosine": 0.6047,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV023154_jpg.rf.ce98daacf6f7d5381e0b476f7f11757a"
+    },
+    {
+      "id": "benchR:US_Navy_070125-N-1625W-003_Steelworker_1st_Class_Brian_Hunt_of_Bremert",
+      "max_cosine": 0.654,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Throwing_sparks_DVIDS205814",
+      "max_cosine": 0.6374,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV018087_jpg.rf.2669e152108694e9d3ba4e409fc031cf"
+    },
+    {
+      "id": "benchR:Ceiling_in_old_disused_mechanical_workshop",
+      "max_cosine": 0.61,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV019375_jpg.rf.77a51980c8af77637fac018371b5348f"
+    },
+    {
+      "id": "benchR:AngleGrinder_Hydraulophone_EndCap0",
+      "max_cosine": 0.5983,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:Welding_Sparks_3843951412_",
+      "max_cosine": 0.5534,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV019833_jpg.rf.26821105deb4ed7df681c607d1eb3845"
+    },
+    {
+      "id": "benchR:Flickr_-_DVIDSHUB_-_Sparks_fly_in_19th_Civil_Engineer_Squadron_Image_8",
+      "max_cosine": 0.6644,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Shower_of_sparks_110524-N-TC501-018",
+      "max_cosine": 0.7026,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_Class_Nelly",
+      "max_cosine": 0.6247,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:500px_photo_68194077_.jpeg",
+      "max_cosine": 0.6365,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:US_Navy_101210-N-7422B-128_Aviation_Structural_Mechanic_2nd_Class_Dieg",
+      "max_cosine": 0.6586,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:US_Navy_101006-N-6427M-078_Hull_Maintenance_Technician_Fireman_Ruben_T",
+      "max_cosine": 0.6518,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:Let_the_sparks_fly_13313009905_",
+      "max_cosine": 0.6409,
+      "nearest": "local:val:neg_ppe_4_000450:hard_negative_video"
+    },
+    {
+      "id": "benchR:220328-F-EM877-1068M",
+      "max_cosine": 0.6007,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV008080_jpg.rf.03a892f0d07a1d82e3681bea4f236ba0"
+    },
+    {
+      "id": "benchR:LOC_Precision_8564855807_",
+      "max_cosine": 0.5663,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV018224_jpg.rf.06241d2f46f2c01083ff7e2a9709b5f4"
+    },
+    {
+      "id": "benchR:FEMA_-_4108_-_Photograph_by_Michael_Rieger_taken_on_09-21-2001_in_New_",
+      "max_cosine": 0.5861,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV008428_jpg.rf.64ae34f552d30b6b3458a9e70a1d0d51"
+    },
+    {
+      "id": "benchR:US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd_Class_Rya",
+      "max_cosine": 0.5614,
+      "nearest": "fasdd:train:fire_CV001951_jpg.rf.7ec2252e9884048ee9450409751dd77c"
+    },
+    {
+      "id": "benchR:Defense.gov_News_Photo_071114-N-7367K-005",
+      "max_cosine": 0.6599,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029885_jpg.rf.f3f3e595a133f4506911d91452e8a9ab"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_-_52958896589",
+      "max_cosine": 0.561,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Smoke_from_chimney_in_sunset_Ringerike",
+      "max_cosine": 0.8273,
+      "nearest": "fasdd:train:smoke_CV006621_jpg.rf.b2c2bf62d3ce69012145f8c053178f34"
+    },
+    {
+      "id": "benchR:Wildfires_Scorch_Quebec_MODIS_",
+      "max_cosine": 0.6104,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:Smoke_plume_from_SoCal_wildfire_October_2007",
+      "max_cosine": 0.789,
+      "nearest": "dfire:val:WEB05513"
+    },
+    {
+      "id": "benchR:Canada_wildfire_smoke_on_June_7_2023_on_Pleasant_Hill_Road_in_Flanders",
+      "max_cosine": 0.6937,
+      "nearest": "dfire:val:WEB05810"
+    },
+    {
+      "id": "benchR:Airport_Fire_smoke_plume_1",
+      "max_cosine": 0.7652,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV018781_jpg.rf.d36cade71b2006d314dea7b165d391f7"
+    },
+    {
+      "id": "benchR:Elongated_smoke_plume_from_the_oil_refinary_crossing_clouds_at_sunset_",
+      "max_cosine": 0.7764,
+      "nearest": "dfire:train:WEB03446"
+    },
+    {
+      "id": "benchR:Smoke_plume_Lateral_West_Fire_6044720607_",
+      "max_cosine": 0.7253,
+      "nearest": "fasdd:train:smoke_CV005844_jpg.rf.bdc4e0a07f23acfaa078feddb7d490fd"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52958907994_",
+      "max_cosine": 0.5674,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:The_smoke_goes_up_the_chimney_just_the_same_NYPL_Hades-1943297-2013052",
+      "max_cosine": 0.3137,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029610_jpg.rf.7a6617b6c40bc8967dfedd9f6a8ea64e"
+    },
+    {
+      "id": "benchR:Blasting_of_a_chimney_at_the_former_Henninger_Brewery_in_Frankfurt_am_",
+      "max_cosine": 0.588,
+      "nearest": "fasdd:train:smoke_CV007159_jpg.rf.8c75986c2a774c0b7b97153d7e2b94e6"
+    },
+    {
+      "id": "benchR:Mechanism_of_Carcinogenesis_of_Tobacco-Specific_Nitrosamines_NNK_NNN_N",
+      "max_cosine": 0.4701,
+      "nearest": "fasdd:val:smoke_CV000410_jpg.rf.251ee329946752df13cd2a6e94a32fd3"
+    },
+    {
+      "id": "benchR:Multiple_Canadian_Wildfires_Produce_Thick_Smoke_CIRA_2026-07-15_",
+      "max_cosine": 0.6168,
+      "nearest": "dfire:val:WEB08614"
+    },
+    {
+      "id": "benchR:The_smoke_goes_up_the_chimney_just_the_same_NYPL_Hades-1943297-2013054",
+      "max_cosine": 0.4336,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029610_jpg.rf.7a6617b6c40bc8967dfedd9f6a8ea64e"
+    },
+    {
+      "id": "benchR:Smoke_from_wildfire_on_Angel_Island_blankets_San_Franciscon",
+      "max_cosine": 0.6649,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV003745_jpg.rf.4e6cd1bc00e33ce1d3ed42cb3ba025d2"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52958129007_",
+      "max_cosine": 0.5855,
+      "nearest": "dfire:val:WEB08250"
+    },
+    {
+      "id": "benchR:Smoke_1166374_.jpeg",
+      "max_cosine": 0.7863,
+      "nearest": "fasdd:train:smoke_CV003207_jpg.rf.653cf89a982390bc10da9c5406324d81"
+    },
+    {
+      "id": "benchR:Little_Giant_fire_smoke_plume_visible_in_Leavenworth_95015_",
+      "max_cosine": 0.5624,
+      "nearest": "dfire:val:WEB06152"
+    },
+    {
+      "id": "benchR:Chimney_Rock_Trail_Point_Reyes_December_2016_panorama_1",
+      "max_cosine": 0.5012,
+      "nearest": "dfire:train:WEB03237"
+    },
+    {
+      "id": "benchR:Silver_VLAT_dropping_low_in_thick_smoke_9062801348_",
+      "max_cosine": 0.6961,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Smoke_Outlet_The_world-famous_InterContinental_Hotel_on_Park_Lane_in_L",
+      "max_cosine": 0.3849,
+      "nearest": "fasdd:train:fire_CV002662_jpg.rf.4a0a80aede385a7e9a0b2f428e40eb34"
+    },
+    {
+      "id": "benchR:Fryar_Fieldhouse_opens_new_opportunities_for_year-round_training_at_Fo",
+      "max_cosine": 0.4178,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031205_jpg.rf.f221867d428819ff722bcea988dc1fb1"
+    },
+    {
+      "id": "benchR:6060_smoke_plume_3767722804_",
+      "max_cosine": 0.6664,
+      "nearest": "fasdd:train:smoke_CV006711_jpg.rf.da97a2858439a699d9b33210c38eca1b"
+    },
+    {
+      "id": "benchR:Dark_light_from_thick_smoke_BW-1_26701815270_",
+      "max_cosine": 0.5105,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV033866_jpg.rf.5e7b9a602e890ef1f9707ffbe8da87b8"
+    },
+    {
+      "id": "benchR:East_Canyon_Fire_June_15_smoke_plume_active_fire",
+      "max_cosine": 0.8727,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Chimney_under_construction_wltm_lonely_house_for_a_smoke_-_geograph.or",
+      "max_cosine": 0.5988,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011618_jpg.rf.5d270e646cb8f4c0ce99014a82071ccc"
+    },
+    {
+      "id": "benchR:Smokescreen_Project_-_Exploring_Indoor_Air_Pollution_Through_Art_in_Ne",
+      "max_cosine": 0.5583,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV012330_jpg.rf.0d4d803ef3e95f4a65d2fc0a54c5261e"
+    },
+    {
+      "id": "benchR:Lone_House",
+      "max_cosine": 0.6077,
+      "nearest": "dfire:train:WEB02923"
+    },
+    {
+      "id": "benchR:House_chimney_with_dark_smoke_pollution_-_This_photo_has_been_released",
+      "max_cosine": 0.7079,
+      "nearest": "fasdd:train:smoke_CV001791_jpg.rf.a51d9ebf02fefaf0a0f9f2bc120ebfb8"
+    },
+    {
+      "id": "benchR:Elongated_smoke_plume_from_the_oil_refinary_crossing_clouds_at_sunset_",
+      "max_cosine": 0.6974,
+      "nearest": "dfire:train:WEB03446"
+    },
+    {
+      "id": "benchR:Nustar_Fire_smoke_plume_from_San_Francisco",
+      "max_cosine": 0.5725,
+      "nearest": "dfire:val:PublicDataset00858"
+    },
+    {
+      "id": "benchR:Chimney_Smoke_Stack",
+      "max_cosine": 0.6149,
+      "nearest": "dfire:val:WEB03214"
+    },
+    {
+      "id": "benchR:_jpest_Market_07",
+      "max_cosine": 0.4773,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035399_jpg.rf.ea6d4563b2101cb840c749bba1499621"
+    },
+    {
+      "id": "benchR:Balhennie_s_ghostly_chimney_smoke_A_wispy_contrail_adds_to_the_mystery",
+      "max_cosine": 0.5259,
+      "nearest": "dfire:train:WEB03269"
+    },
+    {
+      "id": "benchR:Lake_Louise_obscured_by_wildfire_smoke_Banff_National_Park_Alberta_Can",
+      "max_cosine": 0.5212,
+      "nearest": "dfire:train:PublicDataset00934"
+    },
+    {
+      "id": "benchR:A_pigeon_on_the_coast_with_a_background_obscured_by_wildfire_smoke",
+      "max_cosine": 0.4973,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020088_jpg.rf.b530e72007f6229b4ff2e8bb5069bce8"
+    },
+    {
+      "id": "benchR:Sunset_in_Thick_Smoke_Reno_Nevada_50425355538_",
+      "max_cosine": 0.7356,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_-_52959112245",
+      "max_cosine": 0.6193,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Wildfire_smoke_in_Saskatoon",
+      "max_cosine": 0.6655,
+      "nearest": "dfire:train:WEB02087"
+    },
+    {
+      "id": "benchR:Smoke_plume_19162389836_",
+      "max_cosine": 0.8218,
+      "nearest": "fasdd:train:smoke_CV008420_jpg.rf.3878de0f11540ed90b660764a2d3047e"
+    },
+    {
+      "id": "benchR:Smoke_from_a_small_chimney_in_fog",
+      "max_cosine": 0.6611,
+      "nearest": "fasdd:train:smoke_CV006686_jpg.rf.5b44d06a6200ea174fdfd4c0a4a66b6f"
+    },
+    {
+      "id": "benchR:Chimney_smoke_rising_over_the_village_of_Deiniolen_at_a_February_night",
+      "max_cosine": 0.6652,
+      "nearest": "dfire:train:AoF02108"
+    },
+    {
+      "id": "benchR:July_2026_Canadian_Wildfire_Smoke_in_Massachusetts",
+      "max_cosine": 0.6931,
+      "nearest": "dfire:val:WEB02614"
+    },
+    {
+      "id": "benchR:Smoke-free_laws",
+      "max_cosine": 0.3843,
+      "nearest": "fasdd:train:smoke_CV007661_jpg.rf.3700f5e993d51f4049e25383bbae2965"
+    },
+    {
+      "id": "benchR:Adams_Fire_Smoke_Plume_2024_04",
+      "max_cosine": 0.7992,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:The_smoke_goes_up_the_chimney_just_the_same_NYPL_Hades-1943297-2013050",
+      "max_cosine": 0.2563,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026179_jpg.rf.9aaffb1cb7b156612ad135e0780acac8"
+    },
+    {
+      "id": "benchR:Factory_Chimney_Smoke_Unsplash_",
+      "max_cosine": 0.86,
+      "nearest": "fasdd:train:smoke_CV006621_jpg.rf.b2c2bf62d3ce69012145f8c053178f34"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52958907984_",
+      "max_cosine": 0.5487,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006157_jpg.rf.9d02da34c90edc1b8ee8c52e2705a173"
+    },
+    {
+      "id": "benchR:Pulp_mill_steam_plume",
+      "max_cosine": 0.6706,
+      "nearest": "fasdd:train:smoke_CV003207_jpg.rf.653cf89a982390bc10da9c5406324d81"
+    },
+    {
+      "id": "benchR:House_chimney_with_smoke_-_This_photo_has_been_released_into_the_publi",
+      "max_cosine": 0.6657,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Wildfire_smoke_in_rural_Indiana_2023",
+      "max_cosine": 0.6422,
+      "nearest": "dfire:train:WEB03581"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke",
+      "max_cosine": 0.6527,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Brooklyn_coastline_obscured_by_smoke_from_a_Canadian_wildfire",
+      "max_cosine": 0.6458,
+      "nearest": "dfire:val:PublicDataset00858"
+    },
+    {
+      "id": "benchR:Chimney_Smoke_Duck_Drake_-_geograph.org.uk_-_2738141",
+      "max_cosine": 0.5275,
+      "nearest": "fasdd:train:smoke_CV008515_jpg.rf.a39b0e24213be3ba17e18b252e5bb70b"
+    },
+    {
+      "id": "benchR:Lightening_smoke_plume_at_July_21_2018_Cape_Town_train_fire",
+      "max_cosine": 0.7492,
+      "nearest": "dfire:val:WEB06021"
+    },
+    {
+      "id": "benchR:Another_Round_of_Extremely_Thick_Smoke_Pushes_Across_Northeast_U_S_CIR",
+      "max_cosine": 0.5293,
+      "nearest": "dfire:val:WEB08614"
+    },
+    {
+      "id": "benchR:The_Verrazano-Narrows_bridge_barely_visible_through_heavy_wildfire_smo",
+      "max_cosine": 0.6073,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV013762_jpg.rf.67a411f883206dee594c4468bbc20c28"
+    },
+    {
+      "id": "benchR:Sunset_in_Thick_Smoke_Reno_Nevada_50426050971_",
+      "max_cosine": 0.7437,
+      "nearest": "dfire:train:WEB02087"
+    },
+    {
+      "id": "benchR:Poor_Air_Quality_Plagues_Midwest_as_Thick_Wildfire_Smoke_Dives_South_C",
+      "max_cosine": 0.6014,
+      "nearest": "dfire:val:WEB08614"
+    },
+    {
+      "id": "benchR:Canadian_wildfire_smoke_seen_in_Western_Europe",
+      "max_cosine": 0.6688,
+      "nearest": "dfire:train:WEB04715"
+    },
+    {
+      "id": "benchR:Indoor_Sports_-_Talking_About_the_New_Buyer_Who_On_His_First_Trip_Out_",
+      "max_cosine": 0.3553,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV002757_jpg.rf.0d72f6fcd8039d39b2430145fa5f94a9"
+    },
+    {
+      "id": "benchR:Chemical_Transformations_Involved_in_the_Generation_of_Third-Hand_Smok",
+      "max_cosine": 0.4427,
+      "nearest": "fasdd:train:smoke_CV006621_jpg.rf.b2c2bf62d3ce69012145f8c053178f34"
+    },
+    {
+      "id": "benchR:2026_Iran_war_collage",
+      "max_cosine": 0.6294,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV018453_jpg.rf.d5de6db5d038680edc3f151dcd177014"
+    },
+    {
+      "id": "benchR:Park_Fire_smoke_plume_at_sunset",
+      "max_cosine": 0.8243,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Smoke_from_the_2020_California_wildfires_tinting_the_sunset_red_on_the",
+      "max_cosine": 0.6761,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV032885_jpg.rf.c8f5c9a8474a1ca72965b2fbe453253c"
+    },
+    {
+      "id": "benchR:Thick_Smoke_Reno_Nevada_50426222702_",
+      "max_cosine": 0.6845,
+      "nearest": "dfire:train:WEB00060"
+    },
+    {
+      "id": "benchR:Smoke_from_Dava_Wildfire",
+      "max_cosine": 0.6818,
+      "nearest": "fasdd:train:smoke_CV005844_jpg.rf.bdc4e0a07f23acfaa078feddb7d490fd"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52959146030_",
+      "max_cosine": 0.705,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV013762_jpg.rf.67a411f883206dee594c4468bbc20c28"
+    },
+    {
+      "id": "benchR:Haze_from_Wildfire_smoke_Vancouver_2021_51379645320_",
+      "max_cosine": 0.6409,
+      "nearest": "dfire:train:WEB02087"
+    },
+    {
+      "id": "benchR:Adams_Fire_Smoke_Plume_2024_03",
+      "max_cosine": 0.7841,
+      "nearest": "dfire:val:WEB05513"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52958128922_",
+      "max_cosine": 0.514,
+      "nearest": "dfire:val:WEB03397"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_-_52958128937",
+      "max_cosine": 0.4951,
+      "nearest": "dfire:val:WEB03214"
+    },
+    {
+      "id": "benchR:Wolayta_Man._in_explore_-_Flickr_-_Rod_Waddington",
+      "max_cosine": 0.5404,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029656_jpg.rf.f1c54b160d24c0d15741f1c753c89358"
+    },
+    {
+      "id": "benchR:Abgasrohr_DU-Nord",
+      "max_cosine": 0.486,
+      "nearest": "dfire:val:WEB03214"
+    },
+    {
+      "id": "benchR:Plume_arc",
+      "max_cosine": 0.372,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV038328_jpg.rf.0610e8446f3197ac6117f624b76c29b6"
+    },
+    {
+      "id": "benchR:Effects_of_Wildfire_Smoke_on_Air_Quality",
+      "max_cosine": 0.6701,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Kalimantan_Borneo_under_thick_smoke_haze_August_2026",
+      "max_cosine": 0.6873,
+      "nearest": "dfire:val:WEB02204"
+    },
+    {
+      "id": "benchR:The_sun_obscured_by_clouds_and_filtered_by_smoke_from_a_wildfire",
+      "max_cosine": 0.7169,
+      "nearest": "fasdd:train:fire_CV006343_jpg.rf.1afd83db2c568b4917161b173a503267"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_as_viewed_from_GOES-16_2023-06-07_1206Z",
+      "max_cosine": 0.5813,
+      "nearest": "dfire:val:WEB03573"
+    },
+    {
+      "id": "benchR:Smoke_from_a_chimney_in_Hima_town_in_Kasese_district",
+      "max_cosine": 0.6664,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Thick_black_smoke_over_Sydney_and_NSW_due_to_bushfires_December_2019",
+      "max_cosine": 0.6607,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV013536_jpg.rf.5942f4045ac095e16502e09b10927e1f"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52959214403_",
+      "max_cosine": 0.5113,
+      "nearest": "fasdd:train:smoke_CV005387_jpg.rf.02d5acf36f950cdf96859d547642cb9b"
+    },
+    {
+      "id": "benchR:White_smoke_from_Oji_Paper_Tomakomai_Mill_chimney",
+      "max_cosine": 0.7494,
+      "nearest": "fasdd:train:smoke_CV007159_jpg.rf.8c75986c2a774c0b7b97153d7e2b94e6"
+    },
+    {
+      "id": "benchR:Smoke_over_Twin_Lakes_Mono_County_California_24_January_2022",
+      "max_cosine": 0.6031,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020681_jpg.rf.13b4f8d4b393db9f2ffa84142c2b2637"
+    },
+    {
+      "id": "benchR:Smoke_plume_-_geograph.org.uk_-_6725947",
+      "max_cosine": 0.6239,
+      "nearest": "dfire:val:WEB06680"
+    },
+    {
+      "id": "benchR:Nikiszowiec_courtyard_with_chimneys_2024-08-09",
+      "max_cosine": 0.6466,
+      "nearest": "fasdd:train:smoke_CV003207_jpg.rf.653cf89a982390bc10da9c5406324d81"
+    },
+    {
+      "id": "benchR:EPA_wildfire_smoke_respirator_guide",
+      "max_cosine": 0.4361,
+      "nearest": "local:train:web_154228848:web_negative"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_-_52958907889",
+      "max_cosine": 0.6838,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Smoke_on_the_Chimney_because_of_Persephone",
+      "max_cosine": 0.5364,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016960_jpg.rf.9b2c2b3d10ebb6fdd249b8eae0c25efa"
+    },
+    {
+      "id": "benchR:Energy-Ladder-1",
+      "max_cosine": 0.4019,
+      "nearest": "fasdd:train:smoke_CV000472_jpg.rf.7f1aca62b98206e3dafd7b7b2cd7bae3"
+    },
+    {
+      "id": "benchR:Chimney_on_the_roof_of_a_wooden_house2",
+      "max_cosine": 0.6394,
+      "nearest": "fasdd:train:smoke_CV001791_jpg.rf.a51d9ebf02fefaf0a0f9f2bc120ebfb8"
+    },
+    {
+      "id": "benchR:Toronto_wildfire_smoke_July_15_2026",
+      "max_cosine": 0.5604,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV021620_jpg.rf.ac8f3d8f0b4ca8973d172335bcedc9e3"
+    },
+    {
+      "id": "benchR:Howell_Avenue_Clifton_Cincinnati_OH_45927375445_",
+      "max_cosine": 0.5378,
+      "nearest": "fasdd:train:smoke_CV000747_jpg.rf.5264d830380fae8dd716abaa5a7db29b"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_-_52958758206",
+      "max_cosine": 0.6144,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52958907879_",
+      "max_cosine": 0.5407,
+      "nearest": "dfire:val:WEB03489"
+    },
+    {
+      "id": "benchR:Haze_from_Wildfire_smoke_Vancouver_2021_51378633336_",
+      "max_cosine": 0.5405,
+      "nearest": "fasdd:train:smoke_CV004197_jpg.rf.8a0fefaf0b1d921cab958eab7767b019"
+    },
+    {
+      "id": "benchR:Adams_Fire_Smoke_Plume_2024_01",
+      "max_cosine": 0.7912,
+      "nearest": "dfire:train:PublicDataset00653"
+    },
+    {
+      "id": "benchR:Toronto_wildfire_smoke_July_15_2026_18599_",
+      "max_cosine": 0.5122,
+      "nearest": "dfire:val:WEB03642"
+    },
+    {
+      "id": "benchR:Smoke_plume_from_the_Gifford_Fire_on_August_7_2025",
+      "max_cosine": 0.6865,
+      "nearest": "dfire:val:PublicDataset00305"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_52958907979_",
+      "max_cosine": 0.5791,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015447_jpg.rf.baf207a5e37203ee4b9f3372a8c5e9cd"
+    },
+    {
+      "id": "benchR:Smoke_from_the_Bear_Fire_along_Highway_70_southbound_outside_Oroville_",
+      "max_cosine": 0.6388,
+      "nearest": "dfire:train:WEB03458"
+    },
+    {
+      "id": "benchR:Hayes_Fire_Flames_and_Smoke_Olympic_-_2016_32275dd6-5c88-4fa0-b4d3-54b",
+      "max_cosine": 0.8983,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Big_dark_smoke_rising_from_fire_flames_in_forest",
+      "max_cosine": 0.8109,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV017060_jpg.rf.40a4739c16411bdbd5137b5020c20b46"
+    },
+    {
+      "id": "benchR:Wildfire_Smoke_Blankets_East_Coast_MODIS_",
+      "max_cosine": 0.6817,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:ConchasFire_flame_smoke_across_upper_Frijoles_IMG_0740_cda",
+      "max_cosine": 0.7962,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:River_Road_East_Fire-_Smoke_Column_53796692377_",
+      "max_cosine": 0.833,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Flames_and_smoke_from_the_Pickett_Fire_seen_on_August_22_2025",
+      "max_cosine": 0.7672,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Borneo_fires_and_smoke_2002",
+      "max_cosine": 0.6318,
+      "nearest": "dfire:val:WEB08614"
+    },
+    {
+      "id": "benchR:Forest_Fire_Smoke_22663469594_",
+      "max_cosine": 0.5327,
+      "nearest": "dfire:train:WEB03672"
+    },
+    {
+      "id": "benchR:Brand_Rh_nsprudel_1",
+      "max_cosine": 0.6771,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV004462_jpg.rf.3b30b104f68bc93451e472fb70324e9e"
+    },
+    {
+      "id": "benchR:California_Brush_Fire_day",
+      "max_cosine": 0.7632,
+      "nearest": "dfire:train:WEB05857"
+    },
+    {
+      "id": "benchR:Siberia_Shrouded_in_Smoke_MODIS_2022-07-31_",
+      "max_cosine": 0.7039,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Forest_Fire_Smoke_Column_Tillamook_Fire_1933_22501438995_",
+      "max_cosine": 0.5109,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Smoke_rises_above_homes_after_MOVE_bombing",
+      "max_cosine": 0.6671,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_05",
+      "max_cosine": 0.6899,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:McEwen_fire_-_Car_sheds_on_fire_LCCN2012646418",
+      "max_cosine": 0.6724,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Forest_fire_smoke_-_panoramio",
+      "max_cosine": 0.732,
+      "nearest": "dfire:val:PublicDataset00858"
+    },
+    {
+      "id": "benchR:Paris_riots_17_October_2026_-_Black_smoke_over_the_boulevard_-_JJxFile",
+      "max_cosine": 0.617,
+      "nearest": "fasdd:train:fire_CV011822_jpg.rf.d6b817cbaf170da7287310f4233340af"
+    },
+    {
+      "id": "benchR:Satellite_image_of_bushfire_smoke_over_Eastern_Australia_December_2019",
+      "max_cosine": 0.6042,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:Smoke_from_July_21_2018_Cape_Town_train_fire_with_Table_Mountain",
+      "max_cosine": 0.6807,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV017678_jpg.rf.7261239d4660960b8cecd9a64d1147e1"
+    },
+    {
+      "id": "benchR:Metal_Recycling_Plant_burning",
+      "max_cosine": 0.6989,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:Orange_Solar_Disk_Descending_Into_Forest_Fire_Smoke",
+      "max_cosine": 0.7148,
+      "nearest": "dfire:val:WEB02204"
+    },
+    {
+      "id": "benchR:Videocon_Warehouse_Burning_Smoke_00339",
+      "max_cosine": 0.8073,
+      "nearest": "fasdd:train:smoke_CV001331_jpg.rf.9d63be2c541a4ef3f7eb23d7faf7df0e"
+    },
+    {
+      "id": "benchR:Wildfire_in_Alaska_Swan_Lake_Fire_MODIS_2019-09-01_",
+      "max_cosine": 0.619,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Burning_oil_fields",
+      "max_cosine": 0.5072,
+      "nearest": "dfire:train:WEB01525"
+    },
+    {
+      "id": "benchR:House_fire_with_smoke",
+      "max_cosine": 0.7537,
+      "nearest": "fasdd:train:smoke_CV005597_jpg.rf.d0435cc2a924a7d98895b9fdb96bec80"
+    },
+    {
+      "id": "benchR:Forest_fire_smoke_cloud",
+      "max_cosine": 0.7716,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010125_jpg.rf.bacb895daa0251cee5b64529e8773257"
+    },
+    {
+      "id": "benchR:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_car_-_JJxF",
+      "max_cosine": 0.6588,
+      "nearest": "fasdd:train:fire_CV010941_jpg.rf.b6aab50e5e0f83e1050b1d13222d526f"
+    },
+    {
+      "id": "benchR:Firefighters2",
+      "max_cosine": 0.7503,
+      "nearest": "fasdd:train:smoke_CV001968_jpg.rf.b674347a346e0c47c2214bcfbd025311"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_03",
+      "max_cosine": 0.7793,
+      "nearest": "dfire:val:WEB09085"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_07",
+      "max_cosine": 0.6925,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV013387_jpg.rf.fdce98acc501df2a6316b46b04436229"
+    },
+    {
+      "id": "benchR:Smoke_on_the_water_ESA388242",
+      "max_cosine": 0.605,
+      "nearest": "fasdd:train:smoke_CV008420_jpg.rf.3878de0f11540ed90b660764a2d3047e"
+    },
+    {
+      "id": "benchR:East_Attica_Wildfire_Greece_MODIS_2024-08-15_",
+      "max_cosine": 0.474,
+      "nearest": "dfire:val:WEB07604"
+    },
+    {
+      "id": "benchR:Burning_truck_bishkek_protests",
+      "max_cosine": 0.7302,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV006821_jpg.rf.9b8742c7b60a1664da46c37431fe87b0"
+    },
+    {
+      "id": "benchR:July_21_2018_train_fire_from_Cape_Town_station_upper_deck",
+      "max_cosine": 0.6732,
+      "nearest": "fasdd:val:smoke_CV000871_jpg.rf.939d7611d355bd876037de9f418aef6b"
+    },
+    {
+      "id": "benchR:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_car_-_JJxF",
+      "max_cosine": 0.6448,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV019197_jpg.rf.63060de34a7fba0cbcd0fe445243d418"
+    },
+    {
+      "id": "benchR:Kushiro_on_Hokkaido_burning_after_carrier_raid",
+      "max_cosine": 0.7364,
+      "nearest": "fasdd:train:smoke_CV007166_jpg.rf.7f2e4722c48032372c357415fb51e3bf"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_09",
+      "max_cosine": 0.7179,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_no_smoke",
+      "max_cosine": 0.6577,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV004942_jpg.rf.254a1169c5809aab15b7f8d8888dc0b1"
+    },
+    {
+      "id": "benchR:The_Holy_Fire_s_smoke",
+      "max_cosine": 0.6949,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Orange_Solar_Disk_Descending_Into_Forest_Fire_Smoke_-_50332466916",
+      "max_cosine": 0.6711,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Forest_fire_smoke_in_the_sunset_tonight",
+      "max_cosine": 0.6959,
+      "nearest": "dfire:val:WEB03214"
+    },
+    {
+      "id": "benchR:Smoke_plume_rising_from_Cape_Town_station_during_July_21_2018_train_fi",
+      "max_cosine": 0.7383,
+      "nearest": "fasdd:train:smoke_CV005597_jpg.rf.d0435cc2a924a7d98895b9fdb96bec80"
+    },
+    {
+      "id": "benchR:Smoke_from_California_wildfires_MODIS_2017-12-12_",
+      "max_cosine": 0.6399,
+      "nearest": "fasdd:train:smoke_CV008420_jpg.rf.3878de0f11540ed90b660764a2d3047e"
+    },
+    {
+      "id": "benchR:Smoke_from_the_Bear_Fire_along_Highway_70_southbound_outside_Oroville_",
+      "max_cosine": 0.7367,
+      "nearest": "dfire:val:WEB05513"
+    },
+    {
+      "id": "benchR:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_car_-_JJxF",
+      "max_cosine": 0.6492,
+      "nearest": "fasdd:train:fire_CV010941_jpg.rf.b6aab50e5e0f83e1050b1d13222d526f"
+    },
+    {
+      "id": "benchR:Black_Forest_fire_near_8pm_Tuesday",
+      "max_cosine": 0.7225,
+      "nearest": "dfire:val:PublicDataset00211"
+    },
+    {
+      "id": "benchR:2020_East_Troublesome_Fire_smoke_plume",
+      "max_cosine": 0.7316,
+      "nearest": "dfire:val:WEB03573"
+    },
+    {
+      "id": "benchR:Fires_and_Smoke_over_Siberia_MODIS_2022-06-26_",
+      "max_cosine": 0.741,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Forest_fire_Kasol",
+      "max_cosine": 0.7928,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016494_jpg.rf.fb032669b794e1f0e6d822b3a424a2ed"
+    },
+    {
+      "id": "benchR:California_Street_cable_car_shuttle_buses_November_2018",
+      "max_cosine": 0.4801,
+      "nearest": "fasdd:train:smoke_CV007277_jpg.rf.1bc7678f9938ef46114f852807243b3d"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_08",
+      "max_cosine": 0.6953,
+      "nearest": "fasdd:train:fire_CV011607_jpg.rf.9f0f7d10d362a31d7d1d3493810c2e6c"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_12",
+      "max_cosine": 0.6512,
+      "nearest": "dfire:val:WEB09264"
+    },
+    {
+      "id": "benchR:Gran_Canaria_wildfire_48590670831_",
+      "max_cosine": 0.5704,
+      "nearest": "dfire:val:WEB07544"
+    },
+    {
+      "id": "benchR:Smoke_Rises_From_Burning_Flames_of_the_Park_Fire_CIRA_2024-07-25_",
+      "max_cosine": 0.7499,
+      "nearest": "dfire:val:WEB08614"
+    },
+    {
+      "id": "benchR:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_car_-_JJxF",
+      "max_cosine": 0.6121,
+      "nearest": "fasdd:train:fire_CV010941_jpg.rf.b6aab50e5e0f83e1050b1d13222d526f"
+    },
+    {
+      "id": "benchR:Brand_Rh_nsprudel_2",
+      "max_cosine": 0.73,
+      "nearest": "fasdd:train:smoke_CV005597_jpg.rf.d0435cc2a924a7d98895b9fdb96bec80"
+    },
+    {
+      "id": "benchR:Euromaidan_in_Kiev_2014-02-19_12-06",
+      "max_cosine": 0.6809,
+      "nearest": "dfire:val:WEB09085"
+    },
+    {
+      "id": "benchR:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_car_-_JJxF",
+      "max_cosine": 0.6806,
+      "nearest": "fasdd:train:fire_CV010941_jpg.rf.b6aab50e5e0f83e1050b1d13222d526f"
+    },
+    {
+      "id": "benchR:D_024854_new",
+      "max_cosine": 0.6856,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV003924_jpg.rf.6669d7476e6db577b3bf0a9d3e2a3916"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_13",
+      "max_cosine": 0.6596,
+      "nearest": "dfire:val:WEB09085"
+    },
+    {
+      "id": "benchR:Jenners_fire_jan_23rd_2023",
+      "max_cosine": 0.4855,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV007642_jpg.rf.f5817ff11d8358d2e448148d0ca9dc9f"
+    },
+    {
+      "id": "benchR:Fire_Toronto_April_2010",
+      "max_cosine": 0.6862,
+      "nearest": "fasdd:val:smoke_CV002691_jpg.rf.482ad3b057de73ceb9406df264550a9b"
+    },
+    {
+      "id": "benchR:Smoke_Shrouds_the_Sawtooth_Range_and_Salmon_River_Mountains_MODIS_2022",
+      "max_cosine": 0.7067,
+      "nearest": "dfire:val:WEB06108"
+    },
+    {
+      "id": "benchR:Orange_Solar_Disk_Descending_Into_Forest_Fire_Smoke_-_50332643222",
+      "max_cosine": 0.6482,
+      "nearest": "fasdd:train:fire_CV012432_jpg.rf.8e57431a71574c19760697c0582b9b15"
+    },
+    {
+      "id": "benchR:Lyle_Hill_viewpoint_car_park_view_south_to_hills_and_IRH",
+      "max_cosine": 0.6369,
+      "nearest": "dfire:train:WEB02464"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_10",
+      "max_cosine": 0.5516,
+      "nearest": "local:train:web_154228848:web_negative"
+    },
+    {
+      "id": "benchR:Jamacha_fire_flames_and_smoke_behind_the_commercial_development",
+      "max_cosine": 0.7137,
+      "nearest": "dfire:val:WEB05513"
+    },
+    {
+      "id": "benchR:Smoke_from_Siberian_Wildfires_MODIS_2021-08-07_",
+      "max_cosine": 0.5847,
+      "nearest": "dfire:val:WEB08614"
+    },
+    {
+      "id": "benchR:Park_Fire_Burn_Scar_MODIS_2024-08-02_",
+      "max_cosine": 0.5639,
+      "nearest": "fasdd:train:smoke_CV007661_jpg.rf.3700f5e993d51f4049e25383bbae2965"
+    },
+    {
+      "id": "benchR:Durkee_Fire_smoke_seen_from_Bald_Mountain.jpeg",
+      "max_cosine": 0.8011,
+      "nearest": "dfire:val:WEB05810"
+    },
+    {
+      "id": "benchR:HH_Blaze_Cotterell",
+      "max_cosine": 0.7292,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV002835_jpg.rf.9e879cb1beccb5672cdad7ea6ac2b315"
+    },
+    {
+      "id": "benchR:Two_fire_fighters_looking_into_car_while_another_New_York_City_fire_fi",
+      "max_cosine": 0.665,
+      "nearest": "fasdd:train:smoke_CV002479_jpg.rf.f1e013987238e68d1285acb918e75b2b"
+    },
+    {
+      "id": "benchR:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_car_-_JJxF",
+      "max_cosine": 0.616,
+      "nearest": "fasdd:train:fire_CV010941_jpg.rf.b6aab50e5e0f83e1050b1d13222d526f"
+    },
+    {
+      "id": "benchR:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_prop_smoke",
+      "max_cosine": 0.6729,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV004942_jpg.rf.254a1169c5809aab15b7f8d8888dc0b1"
+    },
+    {
+      "id": "benchR:Wildfire_in_Sinthonia_Greece_MODIS_2018-11-01_",
+      "max_cosine": 0.5514,
+      "nearest": "dfire:val:PublicDataset00858"
+    },
+    {
+      "id": "benchR:Red_fire_flames_in_dark_smoke_of_forest_fire",
+      "max_cosine": 0.7634,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV017905_jpg.rf.d3b343072a8ebebcc774885ecf41a5f7"
+    },
+    {
+      "id": "benchR:Santa_Monica_San_Simon_Pampanga_11",
+      "max_cosine": 0.659,
+      "nearest": "dfire:val:WEB09085"
+    },
+    {
+      "id": "benchR:Smoke_From_New_South_Wales_Fires_MODIS_2019-11-15_",
+      "max_cosine": 0.6381,
+      "nearest": "fasdd:train:smoke_CV007661_jpg.rf.3700f5e993d51f4049e25383bbae2965"
+    },
+    {
+      "id": "benchR:The_spectre_of_Death_in_the_form_of_a_large_skeleton_rises_with_the_sm",
+      "max_cosine": 0.5621,
+      "nearest": "fasdd:train:smoke_CV007166_jpg.rf.7f2e4722c48032372c357415fb51e3bf"
+    },
+    {
+      "id": "benchR:Clouds_over_the_Xe_Don_River_with_boats_at_sunset_in_Pakse_Laos",
+      "max_cosine": 0.5722,
+      "nearest": "dfire:val:WEB03352"
+    },
+    {
+      "id": "benchR:Grand_Canyon_South_Rim_at_Sunset",
+      "max_cosine": 0.562,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV019838_jpg.rf.37843ad91a2939cdb4c0169eb1dcf453"
+    },
+    {
+      "id": "benchR:2018_-_Nyhavn_on_sunset",
+      "max_cosine": 0.5353,
+      "nearest": "dfire:val:PublicDataset00916"
+    },
+    {
+      "id": "benchR:093_Wild_Mute_swan_at_Lake_Geneva_during_sunset_Photo_by_Giles_Laurent",
+      "max_cosine": 0.5369,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV027081_jpg.rf.287e739f25c6bbe004d85f76d191288e"
+    },
+    {
+      "id": "benchR:Three_golden_statues_of_the_Buddha_at_Wat_Mai_with_colorful_clouds_at_",
+      "max_cosine": 0.5606,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016960_jpg.rf.9b2c2b3d10ebb6fdd249b8eae0c25efa"
+    },
+    {
+      "id": "benchR:Sunset_on_the_Aresquiers_beach",
+      "max_cosine": 0.6406,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV007240_jpg.rf.789a5d3118b8ce5be0b98eabccb18e8e"
+    },
+    {
+      "id": "benchR:Sunset_over_the_Tumuli_Park_in_Gyeongju_Historic_Site_Wolseong_Distric",
+      "max_cosine": 0.5467,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV036480_jpg.rf.68e344f42c684b34a7362d0b3706b43c"
+    },
+    {
+      "id": "benchR:Sunset_at_Dorum_with_Obereversand_lighthouse",
+      "max_cosine": 0.5751,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV003308_jpg.rf.6c755182d83f5a5be6bbe587a1ea0277"
+    },
+    {
+      "id": "benchR:Tad_Hang_waterfalls_at_sunset_Tad_Lo_village_Bolaven_Plateau_Laos",
+      "max_cosine": 0.5512,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Red_Salvia_and_Celosia_in_the_flower_garden_of_the_Tumuli_Park_at_suns",
+      "max_cosine": 0.615,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV036443_jpg.rf.ed5a9e8a793d8ddc782dfc09f1ff344e"
+    },
+    {
+      "id": "benchR:092_Wild_Mute_swan_in_flight_at_Lake_Geneva_during_golden_hour_of_suns",
+      "max_cosine": 0.6168,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV012635_jpg.rf.dea29586cf0917ebe0111f0d4f1fd4a4"
+    },
+    {
+      "id": "benchR:Honeymoon_Bay_Sunset_2",
+      "max_cosine": 0.5899,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV032885_jpg.rf.c8f5c9a8474a1ca72965b2fbe453253c"
+    },
+    {
+      "id": "benchR:Sunset-cartagena-tower-dewired",
+      "max_cosine": 0.5211,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV007240_jpg.rf.789a5d3118b8ce5be0b98eabccb18e8e"
+    },
+    {
+      "id": "benchR:Peter_iredale_sunset_edited1",
+      "max_cosine": 0.5972,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000457_jpg.rf.1bb54824abae03f93d5ff489c35d7aea"
+    },
+    {
+      "id": "benchR:Bangkok_skytrain_sunset",
+      "max_cosine": 0.5818,
+      "nearest": "dfire:train:WEB01525"
+    },
+    {
+      "id": "benchR:Marmolada_Sunset",
+      "max_cosine": 0.6506,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009516_jpg.rf.7f82a3050b4d8a324e3bd5fc8aa50c30"
+    },
+    {
+      "id": "benchR:Rapanui_Rock_during_sunset_Sumner_Christchurch_New_Zealand",
+      "max_cosine": 0.5117,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000457_jpg.rf.1bb54824abae03f93d5ff489c35d7aea"
+    },
+    {
+      "id": "benchR:Sunset_-_Port_Launey_Road_-_Port_Glaud_-_Mahe_-_Seychelles_-_2",
+      "max_cosine": 0.6458,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV032885_jpg.rf.c8f5c9a8474a1ca72965b2fbe453253c"
+    },
+    {
+      "id": "benchR:Southern_side_of_Woljeonggyo_Bridge_illuminated_at_sunset_in_Gyeongju_",
+      "max_cosine": 0.54,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018389_jpg.rf.31591f1c0bf79e5c8ad333e22dcbb10f"
+    },
+    {
+      "id": "benchR:Sunset_Kuta_Bali_Indonesia_20220825_1755_0879",
+      "max_cosine": 0.6803,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000457_jpg.rf.1bb54824abae03f93d5ff489c35d7aea"
+    },
+    {
+      "id": "benchR:Blackbird-sunset-03",
+      "max_cosine": 0.6437,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV024250_jpg.rf.e83577d99166b84aa4be8c4bfb9e6bac"
+    },
+    {
+      "id": "benchR:Sunset_at_Noronhas_beach",
+      "max_cosine": 0.7239,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000457_jpg.rf.1bb54824abae03f93d5ff489c35d7aea"
+    },
+    {
+      "id": "benchR:View_of_sunset_over_Eyjafj_r_ur_in_Svalbar_sstrandarhreppur_commune_Ic",
+      "max_cosine": 0.602,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV032885_jpg.rf.c8f5c9a8474a1ca72965b2fbe453253c"
+    },
+    {
+      "id": "benchR:Sunset_in_the_Himalayas",
+      "max_cosine": 0.6013,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Lamas_in_the_sunset_San_Pedro_de_Atacama_Chile_Luca_Galuzzi_2006",
+      "max_cosine": 0.559,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026136_jpg.rf.da4e9ea8e3b6376c10db049604458294"
+    },
+    {
+      "id": "benchR:Juan_Griego_Sunset",
+      "max_cosine": 0.6261,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000457_jpg.rf.1bb54824abae03f93d5ff489c35d7aea"
+    },
+    {
+      "id": "benchR:Cheetah_at_Sunset",
+      "max_cosine": 0.6755,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV006872_jpg.rf.5ffbe6a98b1e1c11f39b770c9461a726"
+    },
+    {
+      "id": "benchR:Sunset_in_The_Trossachs_Scotland",
+      "max_cosine": 0.5894,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV036480_jpg.rf.68e344f42c684b34a7362d0b3706b43c"
+    },
+    {
+      "id": "benchR:Pirogue_running_on_the_Mekong_at_sunset_with_pink_clouds_in_Don_Det_La",
+      "max_cosine": 0.6158,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:P_ij_nne_and_p_ij_tsalo",
+      "max_cosine": 0.7968,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV032885_jpg.rf.c8f5c9a8474a1ca72965b2fbe453253c"
+    },
+    {
+      "id": "benchR:Neon_sign_at_entrance_of_Grundy_Art_Gallery_-_geograph.org.uk_-_330236",
+      "max_cosine": 0.4904,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Dotonbori_Neon_Sign_Osaka_20190415_1",
+      "max_cosine": 0.5043,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018389_jpg.rf.31591f1c0bf79e5c8ad333e22dcbb10f"
+    },
+    {
+      "id": "benchR:24_hours_neon_Sign_7436556656_",
+      "max_cosine": 0.4577,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Dwyer_s_Cafe_-_Neon_sign_-_Lafayette_Louisiana",
+      "max_cosine": 0.3751,
+      "nearest": "dfire:train:WEB03599"
+    },
+    {
+      "id": "benchR:M_nster_Schlossplatz_Fr_hjahrssend_--_2019_--_4208",
+      "max_cosine": 0.5225,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015041_jpg.rf.56e8cd8e9367cd386c76213a994ecfdb"
+    },
+    {
+      "id": "benchR:Neon_Sign_Sushi",
+      "max_cosine": 0.4543,
+      "nearest": "fasdd:val:fire_CV000663_jpg.rf.7af4f8ef429fd7bc50a4f8834c779964"
+    },
+    {
+      "id": "benchR:Crescent_Palms_Motel_neon_sign_at_night_New_Orleans",
+      "max_cosine": 0.5081,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV038236_jpg.rf.95cebdfba7f342f1fa46bbd4105d3a02"
+    },
+    {
+      "id": "benchR:NEON_in_Wroc_aw_Breslau_",
+      "max_cosine": 0.4777,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV027936_jpg.rf.fcefd18637b072da96528b9670cb7a12"
+    },
+    {
+      "id": "benchR:Colorful_illuminated_facades_of_buildings_at_night_with_green_blue_and",
+      "max_cosine": 0.4854,
+      "nearest": "dfire:train:WEB00283"
+    },
+    {
+      "id": "benchR:Neon_sunset_sign_hanging_over_a_river_in_Katowice",
+      "max_cosine": 0.4443,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006117_jpg.rf.b7a698ad9974fac3e03d67516e9f8e0d"
+    },
+    {
+      "id": "benchR:Neon_sign_CHANGE_",
+      "max_cosine": 0.4595,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026227_jpg.rf.8d6713fded3484f463ff0f133edd1f91"
+    },
+    {
+      "id": "benchR:Jerry_s_Nugget_sign_-_Neon_Museum",
+      "max_cosine": 0.3962,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025974_jpg.rf.819ae2ceb48c49d3cf7198e50cafda69"
+    },
+    {
+      "id": "benchR:Illuminated_street_corner_at_blue_hour_-_facade_of_the_building_Fujiya",
+      "max_cosine": 0.3991,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015005_jpg.rf.4e365045fa5a86c1aaf7e4b7644819be"
+    },
+    {
+      "id": "benchR:The_Carlyle_neon_sign_Miami_Beach_east_view_up_2018-08-21",
+      "max_cosine": 0.4163,
+      "nearest": "dfire:val:WEB03214"
+    },
+    {
+      "id": "benchR:Golden_Nugget_sign_at_the_Neon_Boneyard_-_Jesse_James",
+      "max_cosine": 0.4011,
+      "nearest": "fasdd:train:fire_CV001755_jpg.rf.e71658a4726e9e10ff972da282901b48"
+    },
+    {
+      "id": "benchR:Neon_sign_from_La_Fonda_Mexican_restaurant_Glendale_California_",
+      "max_cosine": 0.4918,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002475_jpg.rf.920fff5abe06336aae5b4e298be8afbb"
+    },
+    {
+      "id": "benchR:Edmonton_neon_sign_museum_east",
+      "max_cosine": 0.5731,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008929_jpg.rf.b68c0d2df22f5dc0800a656c78ba71ca"
+    },
+    {
+      "id": "benchR:Neon_love_sign_Unsplash_",
+      "max_cosine": 0.5449,
+      "nearest": "fasdd:val:fire_CV003660_jpg.rf.64abedc0e1bb2e149245a2d9e5e565ed"
+    },
+    {
+      "id": "benchR:Neon_Sign_of_Bar_in_Cote_Saint_Paul_Montreal",
+      "max_cosine": 0.4945,
+      "nearest": "fasdd:train:fire_CV003096_jpg.rf.b5bd09ba298653ad7b0ebcef31958922"
+    },
+    {
+      "id": "benchR:Neon_sign_from_Midtowne_Spa_Los_Angeles_California_",
+      "max_cosine": 0.3999,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Neon_Sign_at_Rynek_13_Katowice",
+      "max_cosine": 0.4652,
+      "nearest": "dfire:val:WEB08877"
+    },
+    {
+      "id": "benchR:Neon_sign_fully_licenced_brothel",
+      "max_cosine": 0.3265,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV032877_jpg.rf.dba5b1f53e72d0322f512a8aee047c25"
+    },
+    {
+      "id": "benchR:Lobster_and_Crab_Neon_Sign_at_Kennedy_Square_in_Markham_Ontario",
+      "max_cosine": 0.4607,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034177_jpg.rf.d8a4ffab3779a4543a57f7e2c9b2e1bf"
+    },
+    {
+      "id": "benchR:Red_neon_coin_sign_Unsplash_",
+      "max_cosine": 0.423,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025974_jpg.rf.819ae2ceb48c49d3cf7198e50cafda69"
+    },
+    {
+      "id": "benchR:Teatro_Eslava_neon_sign_September_2022",
+      "max_cosine": 0.3626,
+      "nearest": "dfire:train:WEB08985"
+    },
+    {
+      "id": "benchR:Neon_Sign_inside_the_Flamingo_Las_Vegas",
+      "max_cosine": 0.4999,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006117_jpg.rf.b7a698ad9974fac3e03d67516e9f8e0d"
+    },
+    {
+      "id": "benchR:Animated_neon_sign_from_Body_Builders_Gym_Los_Angeles_California_",
+      "max_cosine": 0.5928,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV025600_jpg.rf.f8d430e6ad73f55289d673752bc5967f"
+    },
+    {
+      "id": "benchR:Maximilien_Restaurant_Sign_in_Pike_Place_Market_Seattle_Washington_202",
+      "max_cosine": 0.3292,
+      "nearest": "dfire:train:WEB02923"
+    },
+    {
+      "id": "benchR:Hello_Gorgeous_neon_sign_in_a_caf_Brisbane_2023",
+      "max_cosine": 0.3667,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018523_jpg.rf.b8f09003f41e61bc4727a27cf11fa169"
+    },
+    {
+      "id": "benchR:Night_in_Shinjuku_3",
+      "max_cosine": 0.5373,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015005_jpg.rf.4e365045fa5a86c1aaf7e4b7644819be"
+    },
+    {
+      "id": "benchR:DFC_4550_Night_traffic_outside_Terminal_21_Pattaya_lights_and_signs_gl",
+      "max_cosine": 0.5325,
+      "nearest": "dfire:val:WEB08877"
+    },
+    {
+      "id": "benchR:Lexus_night_vision_HUD_full",
+      "max_cosine": 0.6462,
+      "nearest": "dfire:train:WEB01303"
+    },
+    {
+      "id": "benchR:Vroom_-_Flickr_-_melissa_rae_dale",
+      "max_cosine": 0.6282,
+      "nearest": "dfire:train:WEB03581"
+    },
+    {
+      "id": "benchR:Headlight.._15231656888_",
+      "max_cosine": 0.5664,
+      "nearest": "fasdd:val:fire_CV007153_jpg.rf.6cf83d7367318eeca068db33500c55de"
+    },
+    {
+      "id": "benchR:Soothing_Lights_199918569_.jpeg",
+      "max_cosine": 0.5957,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006117_jpg.rf.b7a698ad9974fac3e03d67516e9f8e0d"
+    },
+    {
+      "id": "benchR:Front_of_the_Tesla_Cybercab",
+      "max_cosine": 0.4871,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV038538_jpg.rf.c9189a90a22e9430ce2583bb1f8c9d2d"
+    },
+    {
+      "id": "benchR:039_Northern_lights_over_M_vatn_Iceland_Photo_by_Giles_Laurent",
+      "max_cosine": 0.7864,
+      "nearest": "dfire:train:PublicDataset00934"
+    },
+    {
+      "id": "benchR:DSCF0599_A_small_lighthouse_monument_brightly_lit_at_dusk_stands_in_th",
+      "max_cosine": 0.5319,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV021620_jpg.rf.ac8f3d8f0b4ca8973d172335bcedc9e3"
+    },
+    {
+      "id": "benchR:Trees_around_Brastad_soccer_arena_in_fog_11_",
+      "max_cosine": 0.6703,
+      "nearest": "dfire:train:WEB02087"
+    },
+    {
+      "id": "benchR:Night_spectre_of_the_brocken",
+      "max_cosine": 0.7256,
+      "nearest": "fasdd:train:fire_CV006343_jpg.rf.1afd83db2c568b4917161b173a503267"
+    },
+    {
+      "id": "benchR:California_Lighthouse_x_Star_filled_sky",
+      "max_cosine": 0.5707,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV035372_jpg.rf.fcf22861c016e09e302b6c5dbe6d8c48"
+    },
+    {
+      "id": "benchR:Speeding_on_the_Expressway_Unsplash_",
+      "max_cosine": 0.6372,
+      "nearest": "dfire:val:WEB03397"
+    },
+    {
+      "id": "benchR:D_lmen_Parkplatz_BMW_Mini_--_2018_--_1622-8",
+      "max_cosine": 0.4249,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011125_jpg.rf.e9e3a78308839ff72d9f9442158dec5d"
+    },
+    {
+      "id": "benchR:DSCF1058_Nighttime_long-exposure_captures_streaking_headlights_as_cars",
+      "max_cosine": 0.6511,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV013726_jpg.rf.3e8b09545cd2b9a8f138b817d01e1cf2"
+    },
+    {
+      "id": "benchR:Big_Dipper_over_Sandvik_-_in_headlights",
+      "max_cosine": 0.6968,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:DSC_8388_A_quiet_street_at_night_with_neon-lit_storefronts_casting_pin",
+      "max_cosine": 0.5894,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV021620_jpg.rf.ac8f3d8f0b4ca8973d172335bcedc9e3"
+    },
+    {
+      "id": "benchR:D_lmen_Parkplatz_BMW_Mini_--_2018_--_1567-71",
+      "max_cosine": 0.3806,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011125_jpg.rf.e9e3a78308839ff72d9f9442158dec5d"
+    },
+    {
+      "id": "benchR:D_lmen_Parkplatz_BMW_Mini_--_2018_--_1593-9",
+      "max_cosine": 0.3661,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011125_jpg.rf.e9e3a78308839ff72d9f9442158dec5d"
+    },
+    {
+      "id": "benchR:Streetlight_glare_on_a_wet_Main_Street_Buffalo_New_York_-_20211206",
+      "max_cosine": 0.5845,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV021620_jpg.rf.ac8f3d8f0b4ca8973d172335bcedc9e3"
+    },
+    {
+      "id": "benchR:Side_car_motorbike_Ural_47562824862_",
+      "max_cosine": 0.4099,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV032020_jpg.rf.d9d0cc1a6d3444e4735319f579e1a946"
+    },
+    {
+      "id": "benchR:DFC_4554_Night_street_scene_in_Nong_Pla_Lai_Pattaya_-_a_scooter_rider_",
+      "max_cosine": 0.5845,
+      "nearest": "dfire:val:WEB08877"
+    },
+    {
+      "id": "benchR:Excelsior_Geyser_at_night_Yellowstone",
+      "max_cosine": 0.641,
+      "nearest": "local:train:web_91848953:web_negative"
+    },
+    {
+      "id": "benchR:Headlights_and_Tail_Lights_Unsplash_",
+      "max_cosine": 0.6775,
+      "nearest": "dfire:val:WEB03397"
+    },
+    {
+      "id": "benchR:DFC_1214_A_plush_red_bench_sits_on_a_sidewalk_at_night_as_a_scooter_ri",
+      "max_cosine": 0.5371,
+      "nearest": "dfire:val:WEB08877"
+    },
+    {
+      "id": "benchR:D_lmen_Kirchspiel_B_rnste_BMW_Mini_--_2019_--_7180-4",
+      "max_cosine": 0.4356,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011125_jpg.rf.e9e3a78308839ff72d9f9442158dec5d"
+    },
+    {
+      "id": "benchR:D_lmen_Kirchspiel_B_rnste_BMW_Mini_--_2019_--_7207-13_cinematic_",
+      "max_cosine": 0.4854,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011125_jpg.rf.e9e3a78308839ff72d9f9442158dec5d"
+    },
+    {
+      "id": "benchR:JAYS_GRAVE_DARTMOOR_AT_NIGHT",
+      "max_cosine": 0.6111,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035719_jpg.rf.ea97b48224aa81bdd405aaea23d6f9d7"
+    },
+    {
+      "id": "benchR:DFC_2474_Busy_night_scene_outside_a_brightly_lit_corner_restaurant_wit",
+      "max_cosine": 0.5214,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016960_jpg.rf.9b2c2b3d10ebb6fdd249b8eae0c25efa"
+    },
+    {
+      "id": "benchR:J_kuls_rl_n_myrkri_3172843656_",
+      "max_cosine": 0.6707,
+      "nearest": "fasdd:train:fire_CV001166_jpg.rf.7e30d1969d61087b96640b7efbe30668"
+    },
+    {
+      "id": "benchR:Skyscrapers_busy_road_night_Unsplash_",
+      "max_cosine": 0.5236,
+      "nearest": "dfire:val:WEB02851"
+    },
+    {
+      "id": "benchR:Innenraumdekorationen_003_2022_09_24",
+      "max_cosine": 0.5962,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011923_jpg.rf.efd612a55af2124fbb1939ec2c7b158b"
+    },
+    {
+      "id": "benchR:Christmas_table_Serbian_cuisine_",
+      "max_cosine": 0.4853,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV005589_jpg.rf.32bcd424e61d5061e327b08d4efd960b"
+    },
+    {
+      "id": "benchR:Interior_of_the_library_at_Amantaka_luxury_Resort_Hotel_in_Luang_Praba",
+      "max_cosine": 0.5436,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV026326_jpg.rf.1d801474568a2aef6459d2b6c179dac5"
+    },
+    {
+      "id": "benchR:Escalier_monumental_Neue_Burg_Vienne",
+      "max_cosine": 0.5061,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009740_jpg.rf.6e41f0fff365c830462210e9fe025120"
+    },
+    {
+      "id": "benchR:0119_GER_Kiel_St_Nikolai_church_chandelier_underneath",
+      "max_cosine": 0.517,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015946_jpg.rf.883e9e8f1c9f90161eb1eb375fddb79b"
+    },
+    {
+      "id": "benchR:Catedral_Presbiteriana_do_Rio_de_Janeiro",
+      "max_cosine": 0.6248,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Chandelier_in_Rathaus_Stralsund_01",
+      "max_cosine": 0.5487,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016960_jpg.rf.9b2c2b3d10ebb6fdd249b8eae0c25efa"
+    },
+    {
+      "id": "benchR:Chandelier_captured_in_Madhapur_Hyderabad_12",
+      "max_cosine": 0.6627,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022481_jpg.rf.c80fd62d9b6ddeaa9ee6290c28193300"
+    },
+    {
+      "id": "benchR:Balliol_College_Dining_Hall_Oxford_-_Diliff",
+      "max_cosine": 0.5468,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV008009_jpg.rf.b5d307b7523a2c16bb725dc88c1ecef5"
+    },
+    {
+      "id": "benchR:Chandelier_at_Bellagio",
+      "max_cosine": 0.6248,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022481_jpg.rf.c80fd62d9b6ddeaa9ee6290c28193300"
+    },
+    {
+      "id": "benchR:NYC_Public_Library_Research_Room_Jan_2006-1-_3",
+      "max_cosine": 0.4845,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV008009_jpg.rf.b5d307b7523a2c16bb725dc88c1ecef5"
+    },
+    {
+      "id": "benchR:Chandelier_in_L_wenscher_Saal_01",
+      "max_cosine": 0.6197,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015946_jpg.rf.883e9e8f1c9f90161eb1eb375fddb79b"
+    },
+    {
+      "id": "benchR:Chandelier_in_Rathaus_Stralsund_02",
+      "max_cosine": 0.5642,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015946_jpg.rf.883e9e8f1c9f90161eb1eb375fddb79b"
+    },
+    {
+      "id": "benchR:Mari_Geburt_H_chberg_Nave_and_Organ_20150812_4",
+      "max_cosine": 0.6262,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Museo_de_la_Catedral_de_Quito_Quito_Ecuador_2015-07-22_DD_94-96_HDR",
+      "max_cosine": 0.5389,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:KroonluchterEsnogaAmsterdam",
+      "max_cosine": 0.6265,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011923_jpg.rf.efd612a55af2124fbb1939ec2c7b158b"
+    },
+    {
+      "id": "benchR:Parkhotel_Schoenbrunn_Ballsaal_DSC_5115w",
+      "max_cosine": 0.5036,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037097_jpg.rf.79711871d38a4670e7e45cd74cdebc22"
+    },
+    {
+      "id": "benchR:Corpus_Christi_College_Chapel_1_Cambridge_UK_-_Diliff",
+      "max_cosine": 0.5995,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Chandelier_1030220_",
+      "max_cosine": 0.5898,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV011923_jpg.rf.efd612a55af2124fbb1939ec2c7b158b"
+    },
+    {
+      "id": "benchR:Glasgow_City_Chambers_-_Banqueting_Hall_-_3",
+      "max_cosine": 0.4836,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Bad_Kissingen_Regentenbau_Foyer_0417RM0625_-HDR",
+      "max_cosine": 0.5252,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037097_jpg.rf.79711871d38a4670e7e45cd74cdebc22"
+    },
+    {
+      "id": "benchR:Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodimonte_Napol",
+      "max_cosine": 0.4598,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV030939_jpg.rf.b997d6ee1600e7062be580880578f6f1"
+    },
+    {
+      "id": "benchR:Chandelier_in_Rathaus_Stralsund_03",
+      "max_cosine": 0.581,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015946_jpg.rf.883e9e8f1c9f90161eb1eb375fddb79b"
+    },
+    {
+      "id": "benchR:Church_of_Saint-Fran_ois-Xavier_Interior_Paris_France_-_Diliff",
+      "max_cosine": 0.523,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:06047_FIN_Helsinki_Uspenski_cathedral_chandelier_V-P",
+      "max_cosine": 0.4893,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25447246742",
+      "max_cosine": 0.5099,
+      "nearest": "dfire:train:WEB03535"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25447249242",
+      "max_cosine": 0.4248,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026136_jpg.rf.da4e9ea8e3b6376c10db049604458294"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_24343236212_",
+      "max_cosine": 0.6206,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25198249119",
+      "max_cosine": 0.5976,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031553_jpg.rf.2f4a33e50b5d27711390469fd57bd421"
+    },
+    {
+      "id": "benchR:IndiAustraphotoDonThomson",
+      "max_cosine": 0.4944,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_23823349114_",
+      "max_cosine": 0.6985,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25473076471",
+      "max_cosine": 0.5086,
+      "nearest": "dfire:train:WEB02782"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_23823356304_",
+      "max_cosine": 0.6168,
+      "nearest": "dfire:val:WEB00672"
+    },
+    {
+      "id": "benchR:Alley_Sunshower_134116969_.jpeg",
+      "max_cosine": 0.6355,
+      "nearest": "dfire:train:WEB03599"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25473082031",
+      "max_cosine": 0.5436,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV033866_jpg.rf.5e7b9a602e890ef1f9707ffbe8da87b8"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25473070771",
+      "max_cosine": 0.4778,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV005972_jpg.rf.0e2a7fb7c9cf3145c594aea7b3e6cab0"
+    },
+    {
+      "id": "benchR:Brixham_Harbour_Sunset_19-9-2025",
+      "max_cosine": 0.6336,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV030321_jpg.rf.2acd7101e8fc4595f16d6004cc2cf7c4"
+    },
+    {
+      "id": "benchR:Great_Blue_Heron_8545782031_",
+      "max_cosine": 0.5498,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV012635_jpg.rf.dea29586cf0917ebe0111f0d4f1fd4a4"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25198249849",
+      "max_cosine": 0.5783,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_23824722953_",
+      "max_cosine": 0.6045,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25565801725",
+      "max_cosine": 0.6357,
+      "nearest": "dfire:train:WEB02684"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25565805255",
+      "max_cosine": 0.6315,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV033866_jpg.rf.5e7b9a602e890ef1f9707ffbe8da87b8"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25539666096",
+      "max_cosine": 0.5038,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV010929_jpg.rf.7a3251f855d3f480684431fb0430275d"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_24935314294",
+      "max_cosine": 0.4419,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016380_jpg.rf.6079b232064c9a097eccb8ecb9afbe95"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_25198255249",
+      "max_cosine": 0.4497,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025143_jpg.rf.277ad91ce79c69205ba799b7c7b8cddc"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_-_24939106163",
+      "max_cosine": 0.4681,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV027081_jpg.rf.287e739f25c6bbe004d85f76d191288e"
+    },
+    {
+      "id": "benchR:Ocean_Floor_V_33712023355_",
+      "max_cosine": 0.5625,
+      "nearest": "dfire:val:PublicDataset00858"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_23823330954_",
+      "max_cosine": 0.6128,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009747_jpg.rf.7e35248fb5234e9dc1e5d112277e97ed"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_24369074171_",
+      "max_cosine": 0.5825,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:-TravelTuesday_with_My_Public_Lands_24083755839_",
+      "max_cosine": 0.6646,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:DSC_9020_A_motorbike_rider_in_an_orange_safety_vest_relaxes_on_his_par",
+      "max_cosine": 0.4686,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006157_jpg.rf.9d02da34c90edc1b8ee8c52e2705a173"
+    },
+    {
+      "id": "benchR:Cobham_Drive_Hillcrest_Hamilton_Traffic_Light_Construction_2",
+      "max_cosine": 0.651,
+      "nearest": "dfire:val:WEB03397"
+    },
+    {
+      "id": "benchR:FMCSA_FHWA_41395854671_",
+      "max_cosine": 0.5133,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV001365_jpg.rf.bed24a167e5cb3c8f653169df04d5e50"
+    },
+    {
+      "id": "benchR:The_Denali-Susitna_Exploration_Camp_is_a_chance_for_youth_living_south",
+      "max_cosine": 0.4923,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV001365_jpg.rf.bed24a167e5cb3c8f653169df04d5e50"
+    },
+    {
+      "id": "benchR:Capital_Guardians_put_marksmanship_skills_to_the_test_160227-Z-KX274-2",
+      "max_cosine": 0.4905,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031205_jpg.rf.f221867d428819ff722bcea988dc1fb1"
+    },
+    {
+      "id": "benchR:FMCSA_FHWA2_27525532158_",
+      "max_cosine": 0.4461,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV001365_jpg.rf.bed24a167e5cb3c8f653169df04d5e50"
+    },
+    {
+      "id": "benchR:Chicago_Strategic_Cones_Reserve",
+      "max_cosine": 0.4646,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV017639_jpg.rf.1866c4481e17ff9dd2650fcfb2cccfbb"
+    },
+    {
+      "id": "benchR:Night-time_road_resurfacing_operation_during_Chatham_Waterfront_Bus_St",
+      "max_cosine": 0.4792,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020558_jpg.rf.297bb13cd0910680dea571da61a33c96"
+    },
+    {
+      "id": "benchR:Rotary_Plow_2013_Spring_Road_Opening_38204348-1dd8-b71c-0716-8fe26ea42",
+      "max_cosine": 0.511,
+      "nearest": "local:train:web_91848953:web_negative"
+    },
+    {
+      "id": "benchR:DFC_0516_Late-night_street_stall_lined_with_bottles_of_liquor_motorbik",
+      "max_cosine": 0.533,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034177_jpg.rf.d8a4ffab3779a4543a57f7e2c9b2e1bf"
+    },
+    {
+      "id": "benchR:Bright_orange_cone_on_the_campus_of_George_Washington_University",
+      "max_cosine": 0.4628,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029176_jpg.rf.8e0ec5edd5f18207ad6ed9e68fbb76ad"
+    },
+    {
+      "id": "benchR:DFC_5876_A_weathered_military_loudspeaker_mounted_on_equipment_in_a_mu",
+      "max_cosine": 0.4302,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV020043_jpg.rf.232d163eb4c92f74d54c1c5b6b1176ba"
+    },
+    {
+      "id": "benchR:Thrill_of_the_hunt_121011-F-FM358-006",
+      "max_cosine": 0.4757,
+      "nearest": "fasdd:val:bothFireAndSmoke_CV010932_jpg.rf.56e57ab832e768300d935bbec8c70a5c"
+    },
+    {
+      "id": "benchR:Employee_on_white_sand_beach_near_vegetation_speaking_to_visitor_in_or",
+      "max_cosine": 0.4509,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Orange_safety_vest_31899931724_",
+      "max_cosine": 0.6636,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022229_jpg.rf.681ab5f2cf5a4b5dc602e86f22d3008c"
+    },
+    {
+      "id": "benchR:Orange_safety_vest_31899942864_",
+      "max_cosine": 0.6501,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022229_jpg.rf.681ab5f2cf5a4b5dc602e86f22d3008c"
+    },
+    {
+      "id": "benchR:NASA_Partners_Prepare_EXCITE_for_Antarctic_Flight_SVS15098_-_Palestine",
+      "max_cosine": 0.5742,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV033596_jpg.rf.9a3b5aee8f576b4f498f43ccf0d44134"
+    },
+    {
+      "id": "benchR:Four_men_at_night",
+      "max_cosine": 0.4916,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV034361_jpg.rf.a6fce7a4780e7465b322652009ffae94"
+    },
+    {
+      "id": "benchR:EXCITE_2024-_Payload_Prep_SVS14725_-_EXCITE_Launch_Preparation00011_",
+      "max_cosine": 0.5516,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV033596_jpg.rf.9a3b5aee8f576b4f498f43ccf0d44134"
+    },
+    {
+      "id": "benchR:Trackmobile_with_gondola_car_1666_4657110928_",
+      "max_cosine": 0.5353,
+      "nearest": "fasdd:train:fire_CV005212_jpg.rf.c432dae83a8fa8557c09765a133f5fb9"
+    },
+    {
+      "id": "benchR:A_toppled_orange_traffic_cone_at_Huntington_station",
+      "max_cosine": 0.5329,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037162_jpg.rf.f8c835f4fed46ae95df1d8a79727cf7f"
+    },
+    {
+      "id": "benchR:2023_WWII_Weekend_Parking_Crew_34c55ce6-4a35-4d1e-8504-54a233b43f02_",
+      "max_cosine": 0.5392,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV001365_jpg.rf.bed24a167e5cb3c8f653169df04d5e50"
+    },
+    {
+      "id": "benchR:DZ6_2892_Two_soldiers_in_reflective_vests_take_a_quiet_moment_checking",
+      "max_cosine": 0.56,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV013675_jpg.rf.c7976e697e3d8869a04702b8d52e16a7"
+    },
+    {
+      "id": "benchR:Lassen_Trail_Crew_members_prepare_load_of_the_recycled_lumber_for_heli",
+      "max_cosine": 0.5652,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV005943_jpg.rf.5e8bdf00a3132c22ac013fec9febe1da"
+    },
+    {
+      "id": "benchR:Chip_seal_operation_members_52260675302_",
+      "max_cosine": 0.5869,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV017443_jpg.rf.8571820fbefd4c3a7077c2d885ddf3c1"
+    },
+    {
+      "id": "benchR:Pueblo_Chemical_Agent-Destruction_Pilot_Plant_Voluntary_Protection_Pro",
+      "max_cosine": 0.5977,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV021303_jpg.rf.a3ffb383933570f92712b12b15490885"
+    },
+    {
+      "id": "benchR:Night-time_road_resurfacing_works_during_Chatham_Waterfront_Bus_Statio",
+      "max_cosine": 0.5227,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV019579_jpg.rf.1953f1fe5a8f862ce14351a62475ce18"
+    },
+    {
+      "id": "benchR:DFC_4393_A_traffic_officer_in_reflective_gear_directs_vehicles_along_a",
+      "max_cosine": 0.5019,
+      "nearest": "dfire:val:WEB07219"
+    },
+    {
+      "id": "benchR:NASA_Partners_Prepare_EXCITE_for_Antarctic_Flight_SVS15098_-_Palestine",
+      "max_cosine": 0.5021,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV033596_jpg.rf.9a3b5aee8f576b4f498f43ccf0d44134"
+    },
+    {
+      "id": "benchR:Weed_Warriors_Habitat_Restoration_volunteers_remove_overgrowth_4f85b34",
+      "max_cosine": 0.514,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV030424_jpg.rf.46cbe55187164aafca699ba1efde5694"
+    },
+    {
+      "id": "benchR:Hemerocallis_fulva_2012_G1",
+      "max_cosine": 0.6862,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025143_jpg.rf.277ad91ce79c69205ba799b7c7b8cddc"
+    },
+    {
+      "id": "benchR:La_Sabina_La_Palma_PR-LP_16.1_orange_flowers_against_wall",
+      "max_cosine": 0.5921,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV032591_jpg.rf.70fb3ddf35eddaa32c98ab28e67e6b08"
+    },
+    {
+      "id": "benchR:Flower_flowers_orange_yellow",
+      "max_cosine": 0.649,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV023786_jpg.rf.28266361cffe1334d465f67046018cf6"
+    },
+    {
+      "id": "benchR:Orange_color_flower",
+      "max_cosine": 0.6508,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Orange_flowers_-_Portakal_i_ekleri_04",
+      "max_cosine": 0.6202,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025143_jpg.rf.277ad91ce79c69205ba799b7c7b8cddc"
+    },
+    {
+      "id": "benchR:Inside_an_orange_flower",
+      "max_cosine": 0.6127,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025143_jpg.rf.277ad91ce79c69205ba799b7c7b8cddc"
+    },
+    {
+      "id": "benchR:Orange_flowers_052708",
+      "max_cosine": 0.6971,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031553_jpg.rf.2f4a33e50b5d27711390469fd57bd421"
+    },
+    {
+      "id": "benchR:Los_Lomadas_orange_flowers_against_sea_Faro_de_Punta_Cumplida",
+      "max_cosine": 0.5549,
+      "nearest": "dfire:train:WEB02745"
+    },
+    {
+      "id": "benchR:Orange_daylily_Hemerocallis_fulva_",
+      "max_cosine": 0.6089,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV023786_jpg.rf.28266361cffe1334d465f67046018cf6"
+    },
+    {
+      "id": "benchR:Orange_flower_in_blue_pot",
+      "max_cosine": 0.6667,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Iceland_Poppy_Papaver_nudicaule_Champagne_Bubbles_Orange_Center",
+      "max_cosine": 0.694,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Orange_flowers_2014",
+      "max_cosine": 0.6839,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV005972_jpg.rf.0e2a7fb7c9cf3145c594aea7b3e6cab0"
+    },
+    {
+      "id": "benchR:Orange_flower_at_Bacabal_Cathedral",
+      "max_cosine": 0.714,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV023786_jpg.rf.28266361cffe1334d465f67046018cf6"
+    },
+    {
+      "id": "benchR:Orange_flowers_1359256859_",
+      "max_cosine": 0.7044,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031553_jpg.rf.2f4a33e50b5d27711390469fd57bd421"
+    },
+    {
+      "id": "benchR:An_orange_flower_in_Amsterdam",
+      "max_cosine": 0.6451,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Orange_Cosmos_flower",
+      "max_cosine": 0.6879,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022229_jpg.rf.681ab5f2cf5a4b5dc602e86f22d3008c"
+    },
+    {
+      "id": "benchR:Flowers_in_snow_2022_G5",
+      "max_cosine": 0.5378,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV024461_jpg.rf.1152d657099a4b36b3ea75ff1782fc57"
+    },
+    {
+      "id": "benchR:Fly-on-Orange-Flower",
+      "max_cosine": 0.6207,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022229_jpg.rf.681ab5f2cf5a4b5dc602e86f22d3008c"
+    },
+    {
+      "id": "benchR:Orange_daisylike_flowers",
+      "max_cosine": 0.6664,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Orange_flower_in_Washington_D.C",
+      "max_cosine": 0.7056,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Daylily_Hemerocallis_fulva_v2",
+      "max_cosine": 0.6404,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025143_jpg.rf.277ad91ce79c69205ba799b7c7b8cddc"
+    },
+    {
+      "id": "benchR:Hanging-plant-with-orange-yellow-flowers",
+      "max_cosine": 0.5727,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009784_jpg.rf.fb89e71d955968f7b3fe88d96f89dca6"
+    },
+    {
+      "id": "benchR:Orange_Gerbera_flower",
+      "max_cosine": 0.6444,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:Orange_Flowers_66803269_.jpeg",
+      "max_cosine": 0.6633,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025143_jpg.rf.277ad91ce79c69205ba799b7c7b8cddc"
+    },
+    {
+      "id": "benchR:Orange_Marigold_Flowers",
+      "max_cosine": 0.6969,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031553_jpg.rf.2f4a33e50b5d27711390469fd57bd421"
+    },
+    {
+      "id": "benchR:Clouds_and_blue_sky_in_Russia._IMG_109",
+      "max_cosine": 0.9088,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020417_jpg.rf.87f992b9606de4d5bcdcaa33e3194a2c"
+    },
+    {
+      "id": "benchR:Pirogue_moored_to_the_Mekong_bank_with_bamboo_stakes_under_clearing_of",
+      "max_cosine": 0.485,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Bridge_to_Don_Khon_seen_from_Don_Det_with_water_reflection_of_stringy_",
+      "max_cosine": 0.6722,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Square_plot_of_a_green_paddy_field_hut_and_karst_mountains_under_color",
+      "max_cosine": 0.5074,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Karst_mountains_colorful_clouds_and_mist_at_sunrise_from_the_top_of_Mo",
+      "max_cosine": 0.6584,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Clouds_and_blue_sky_in_Russia._IMG_026",
+      "max_cosine": 0.908,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Mekong_bank_with_stilt_dwellings_and_clouds_at_golden_hour_in_Don_Det_",
+      "max_cosine": 0.6011,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Partial_solar_eclipse_with_some_clouds_in_Tuntorp_43",
+      "max_cosine": 0.6917,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Clouds_and_blue_sky_in_Russia._IMG_115",
+      "max_cosine": 0.9037,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Red_clouds_over_Mekong_banks_with_dwellings_and_pirogues_at_sunrise_in",
+      "max_cosine": 0.6574,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Cirrus_uncinus_clouds_in_the_morning_sky",
+      "max_cosine": 0.7751,
+      "nearest": "dfire:train:WEB02782"
+    },
+    {
+      "id": "benchR:Colorful_sky_with_pink_and_blue_clouds_reflecting_in_the_water_of_a_pa",
+      "max_cosine": 0.6015,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Colorful_sky_with_orange_and_pink_clouds_reflecting_in_the_water_of_a_",
+      "max_cosine": 0.6692,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Clouds_and_blue_sky_in_Russia._IMG_013",
+      "max_cosine": 0.9111,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Clouds_and_blue_sky_in_Russia._IMG_024",
+      "max_cosine": 0.912,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Karst_peaks_and_green_paddy_fields_under_a_stormy_sky_South_view_from_",
+      "max_cosine": 0.5681,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Colorful_clouds_and_blue_sky_with_water_reflection_of_an_island_hostin",
+      "max_cosine": 0.6565,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Blue_and_orange_clouds_over_the_Mekong_with_a_pirogue_running_in_the_w",
+      "max_cosine": 0.641,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Lightning_cloud_to_cloud_aka_",
+      "max_cosine": 0.7267,
+      "nearest": "dfire:val:WEB00831"
+    },
+    {
+      "id": "benchR:Samanea_saman_on_an_island_with_orange_clouds_and_blue_sky_at_sunrise_",
+      "max_cosine": 0.6409,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Clouds_and_blue_sky_in_Russia._IMG_100",
+      "max_cosine": 0.9021,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Green_and_luminous_paddy_fields_under_dark_clouds_in_Don_Det",
+      "max_cosine": 0.7005,
+      "nearest": "dfire:val:WEB02614"
+    },
+    {
+      "id": "benchR:Karst_peaks_mist_and_colorful_clouds_at_sunrise_seen_from_Mount_Nam_Xa",
+      "max_cosine": 0.602,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Vat_Pa_Phai_temple_with_a_Buddhist_monk_orange_marigold_clouds_and_blu",
+      "max_cosine": 0.5816,
+      "nearest": "dfire:train:WEB02641"
+    },
+    {
+      "id": "benchR:Li_Phi_falls_at_sunrise_with_white_and_grey_clouds_in_Don_Khon_Laos",
+      "max_cosine": 0.5606,
+      "nearest": "dfire:val:AoF05754"
+    },
+    {
+      "id": "benchR:Field_corn_Liechtenstein_Mountains_Alps_Vaduz_sky_clouds_landscape",
+      "max_cosine": 0.5805,
+      "nearest": "dfire:train:WEB02745"
+    },
+    {
+      "id": "benchR:Linden_trees_and_the_sky_in_Planina_Postojna_Slovenia",
+      "max_cosine": 0.6946,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Blue_stormy_clouds_at_sunset_with_water_reflection_and_a_pirogue_moore",
+      "max_cosine": 0.6666,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026635_jpg.rf.032b8fdbe5404125fe6ccb68c8df1745"
+    },
+    {
+      "id": "benchR:Water_reflection_of_a_green_island_at_sunrise_with_blue_sky_and_pirogu",
+      "max_cosine": 0.5854,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015843_jpg.rf.fff70890f7802c8c990ac0da3af537a1"
+    },
+    {
+      "id": "benchR:Namdae_stream_water_reflection_of_colorful_clouds_from_Wolhwagyo_bridg",
+      "max_cosine": 0.592,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV033866_jpg.rf.5e7b9a602e890ef1f9707ffbe8da87b8"
+    },
+    {
+      "id": "benchR:Ella_Valley_Sri_Lanka_Forest_in_clouds",
+      "max_cosine": 0.7781,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Distribution_of_tropical_cloud_forests",
+      "max_cosine": 0.3467,
+      "nearest": "dfire:train:AoF02170"
+    },
+    {
+      "id": "benchR:Singapore_Flower-Dome-and-Cloud-Forest-in-The-Gardens-01",
+      "max_cosine": 0.5287,
+      "nearest": "dfire:val:WEB03495"
+    },
+    {
+      "id": "benchR:Ella_Valley_Sri_Lanka_Cloud_forest_in_the_mountains",
+      "max_cosine": 0.6738,
+      "nearest": "dfire:val:WEB02614"
+    },
+    {
+      "id": "benchR:Foggy_Fanal_forest_in_Seixal_Porto_Moniz_Madeira_2023_May",
+      "max_cosine": 0.6179,
+      "nearest": "dfire:val:WEB02614"
+    },
+    {
+      "id": "benchR:Fog_in_forest_and_creek_at_Kent_Washington",
+      "max_cosine": 0.6476,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025621_jpg.rf.6e5f1f903e21dc5ac25301efc218ed8a"
+    },
+    {
+      "id": "benchR:Cloud_forest_undergrowth",
+      "max_cosine": 0.6355,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Forest_Gate_stn_building",
+      "max_cosine": 0.525,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Forest_in_the_Xitou_Forest_Recreational_Area_10",
+      "max_cosine": 0.6487,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV029562_jpg.rf.9a779d49b67b0e3b7ea97b59ab7b39d0"
+    },
+    {
+      "id": "benchR:Fog_over_the_forest_in_Tuntorp_-_bw",
+      "max_cosine": 0.6204,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV029562_jpg.rf.9a779d49b67b0e3b7ea97b59ab7b39d0"
+    },
+    {
+      "id": "benchR:Fog_in_forest_at_Kent_Washington_-_2",
+      "max_cosine": 0.6249,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Forest_in_the_Xitou_Forest_Recreational_Area_02",
+      "max_cosine": 0.7127,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Rwenzori_tropical_montane_forest",
+      "max_cosine": 0.7114,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Forest_in_the_Xitou_Forest_Recreational_Area_01",
+      "max_cosine": 0.6895,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016494_jpg.rf.fb032669b794e1f0e6d822b3a424a2ed"
+    },
+    {
+      "id": "benchR:Ella_Valley_Sri_Lanka_Cloud_forest_on_the_slopes_in_clouds",
+      "max_cosine": 0.7728,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Cloud_forest_mount_kinabalu",
+      "max_cosine": 0.6493,
+      "nearest": "dfire:val:WEB08478"
+    },
+    {
+      "id": "benchR:Forest_in_the_Xitou_Forest_Recreational_Area_09",
+      "max_cosine": 0.64,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Boquete_Cloud_Forest_2",
+      "max_cosine": 0.7668,
+      "nearest": "dfire:val:AoF03173"
+    },
+    {
+      "id": "benchR:Cerro_Chato_volcano_path_through_the_lush_cloud_forest_Fortuna_Costa_R",
+      "max_cosine": 0.6368,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Snow_and_fog_in_Jinlanshan_National_Forest_Park",
+      "max_cosine": 0.6072,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV020806_jpg.rf.796ff736029a64412b871f4c762a616b"
+    },
+    {
+      "id": "benchR:Cloud_forest_canopy_in_hakgala_1",
+      "max_cosine": 0.65,
+      "nearest": "fasdd:val:smoke_CV008840_jpg.rf.6e40aadb3ecbff3c12945539d547b3bf"
+    },
+    {
+      "id": "benchR:Forest_in_the_Xitou_Forest_Recreational_Area_03",
+      "max_cosine": 0.665,
+      "nearest": "dfire:val:WEB08478"
+    },
+    {
+      "id": "benchR:Forest_in_the_Xitou_Forest_Recreational_Area_07",
+      "max_cosine": 0.6739,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV029562_jpg.rf.9a779d49b67b0e3b7ea97b59ab7b39d0"
+    },
+    {
+      "id": "benchR:Cloud_Forest_I_",
+      "max_cosine": 0.508,
+      "nearest": "dfire:val:WEB03495"
+    },
+    {
+      "id": "benchR:Ella_Valley_Sri_Lanka_Cloud_forest_in_fog",
+      "max_cosine": 0.7066,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Cloud_forest_die_back",
+      "max_cosine": 0.7409,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Beech_forest_in_fog_Ehrenbach",
+      "max_cosine": 0.6373,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV038922_jpg.rf.6310c3dc36d26a3dc628332b062c14da"
+    },
+    {
+      "id": "benchR:Forest_in_the_Xitou_Forest_Recreational_Area_06",
+      "max_cosine": 0.6791,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Forested_hills_in_Lysekil_in_fog_-_wide_-_B_W",
+      "max_cosine": 0.6714,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV016494_jpg.rf.fb032669b794e1f0e6d822b3a424a2ed"
+    },
+    {
+      "id": "benchR:Cloud_forest_canopy_in_hakgala_2",
+      "max_cosine": 0.7242,
+      "nearest": "dfire:train:AoF01786"
+    },
+    {
+      "id": "benchR:Steam-Cooking_Apparatus._-_DPLA_-_49b76fd73012d9434b08066e979f2c9e_pag",
+      "max_cosine": 0.4039,
+      "nearest": "fasdd:val:fire_CV002559_jpg.rf.00965cd3667c8e9b63cf4b46a9b96394"
+    },
+    {
+      "id": "benchR:Fremantle_Prison_1909_The_gaol_kitchen_showing_steam_cooking_apparatus",
+      "max_cosine": 0.5645,
+      "nearest": "fasdd:train:smoke_CV007159_jpg.rf.8c75986c2a774c0b7b97153d7e2b94e6"
+    },
+    {
+      "id": "benchR:Steam-Cooking_Apparatus._-_DPLA_-_49b76fd73012d9434b08066e979f2c9e_pag",
+      "max_cosine": 0.4057,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029610_jpg.rf.7a6617b6c40bc8967dfedd9f6a8ea64e"
+    },
+    {
+      "id": "benchR:Matooke_cooking_in_Uganda",
+      "max_cosine": 0.6044,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV000404_jpg.rf.970157ae5cb8b4b134d3c1f7edcc190a"
+    },
+    {
+      "id": "benchR:Steam_cooker",
+      "max_cosine": 0.5015,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV025600_jpg.rf.f8d430e6ad73f55289d673752bc5967f"
+    },
+    {
+      "id": "benchR:DCNorris_Jet_Cook_Steam_Infusion_",
+      "max_cosine": 0.4623,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV023717_jpg.rf.41898aa226bb654d16af4a858946f2dd"
+    },
+    {
+      "id": "benchR:Steam_cooker_catchment",
+      "max_cosine": 0.5647,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV025600_jpg.rf.f8d430e6ad73f55289d673752bc5967f"
+    },
+    {
+      "id": "benchR:Silvana_Franco_-_steam_cooking_demonstration_03",
+      "max_cosine": 0.472,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV023760_jpg.rf.42505bd7b6560f845e8e2b9b4c3d8f50"
+    },
+    {
+      "id": "benchR:Silvana_Franco_-_steam_cooking_demonstration_01",
+      "max_cosine": 0.4478,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV023760_jpg.rf.42505bd7b6560f845e8e2b9b4c3d8f50"
+    },
+    {
+      "id": "benchR:Liat_Portal_for_Foodie_Disorder_-_Lamb_chops_cooking_with_pineapple_ga",
+      "max_cosine": 0.5738,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025939_jpg.rf.cd8417a24afc82cdee0f3a22ff2a7ceb"
+    },
+    {
+      "id": "benchR:Pyzy2",
+      "max_cosine": 0.5352,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031567_jpg.rf.c168ce21e4f0d2bb3add9f28c7d63ce5"
+    },
+    {
+      "id": "benchR:John_Morris_s_steam_vessel_for_cooking_-_DPLA_-_50b4231bafd155e810bd6d",
+      "max_cosine": 0.5138,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:Steamed_Rice_How_to_07",
+      "max_cosine": 0.5897,
+      "nearest": "fasdd:train:fire_CV003879_jpg.rf.8034815f415afa2e7385e0f4df9fa23b"
+    },
+    {
+      "id": "benchR:Silvana_Franco_-_steam_cooking_demonstration_04",
+      "max_cosine": 0.4762,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV023690_jpg.rf.8ecc1bd8b8a3c383172fb633f04c73c2"
+    },
+    {
+      "id": "benchR:Lahori_Charga_during_steam_cooking",
+      "max_cosine": 0.5977,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV000404_jpg.rf.970157ae5cb8b4b134d3c1f7edcc190a"
+    },
+    {
+      "id": "benchR:Steamed_Rice_How_to_04",
+      "max_cosine": 0.5765,
+      "nearest": "fasdd:train:fire_CV007931_jpg.rf.48842b6f601f4aec125abb2e699af7b9"
+    },
+    {
+      "id": "benchR:Chinese_way_of_cooking_Japanese_Spanish_mackerel_7th",
+      "max_cosine": 0.5855,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006157_jpg.rf.9d02da34c90edc1b8ee8c52e2705a173"
+    },
+    {
+      "id": "benchR:Bolu_Keju_Kukus",
+      "max_cosine": 0.5324,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV032871_jpg.rf.d2231fb5496780feb1003d14e2629e6b"
+    },
+    {
+      "id": "benchR:Steamed_Rice_How_to_03",
+      "max_cosine": 0.5685,
+      "nearest": "fasdd:train:fire_CV000735_jpg.rf.e90388fe45beb3792aa237a2865775f3"
+    },
+    {
+      "id": "benchR:Cooking_red_beans_in_the_steam-jacketed_kombi_kettle",
+      "max_cosine": 0.5349,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000897_jpg.rf.4130bfd64cbb408538b0f8b2370a6557"
+    },
+    {
+      "id": "benchR:Steam_cooker_working",
+      "max_cosine": 0.581,
+      "nearest": "fasdd:train:fire_CV000735_jpg.rf.e90388fe45beb3792aa237a2865775f3"
+    },
+    {
+      "id": "benchR:African_Fish_Drying_Process_2_",
+      "max_cosine": 0.6353,
+      "nearest": "fasdd:val:fire_CV010708_jpg.rf.d55d7fbfab7b9ea03f1d781ded538017"
+    },
+    {
+      "id": "benchR:John_Morris_s_steam_vessel_for_cooking_-_DPLA_-_50b4231bafd155e810bd6d",
+      "max_cosine": 0.4503,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV029610_jpg.rf.7a6617b6c40bc8967dfedd9f6a8ea64e"
+    },
+    {
+      "id": "benchR:Steamed_Rice_How_to_06",
+      "max_cosine": 0.6062,
+      "nearest": "fasdd:train:fire_CV000735_jpg.rf.e90388fe45beb3792aa237a2865775f3"
+    },
+    {
+      "id": "benchR:Pampuchy",
+      "max_cosine": 0.5792,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015400_jpg.rf.1c6a4c2146666d4772e847e66fa05979"
+    },
+    {
+      "id": "benchR:Black_smoke_emissions_from_a_vehicle_s_exhaust_are_a_key_contributing_",
+      "max_cosine": 0.5779,
+      "nearest": "fasdd:train:smoke_CV000681_jpg.rf.df8b3079621363c2df21bb2235ab0700"
+    },
+    {
+      "id": "benchR:Dredge_ship_Obskaya-103",
+      "max_cosine": 0.5399,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015843_jpg.rf.fff70890f7802c8c990ac0da3af537a1"
+    },
+    {
+      "id": "benchR:Indicator_Exhaust_Gas_Temperature_Japanese_Army_-_DPLA_-_135b4e5b59be6",
+      "max_cosine": 0.4067,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV005744_jpg.rf.deae6a1d1f24654ab20e0179a39fcd4d"
+    },
+    {
+      "id": "benchR:Moscow_bus_11165_2007-01_1169655401_Bus_terminus_Metro_Vodnyi_Stadion_",
+      "max_cosine": 0.6581,
+      "nearest": "fasdd:val:smoke_CV001075_jpg.rf.7e631079b2d9a5d4ae9bd493f9524b51"
+    },
+    {
+      "id": "benchR:Abgase_Dieselgenerator_in_Addis_Abeba_thiopien",
+      "max_cosine": 0.5922,
+      "nearest": "fasdd:train:smoke_CV007518_jpg.rf.7fff2333834db835d0f1a075622ada13"
+    },
+    {
+      "id": "benchR:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f372a3e244f",
+      "max_cosine": 0.5036,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031174_jpg.rf.1b7dc4f4c13b5fea3288eeca3c749df9"
+    },
+    {
+      "id": "benchR:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f372a3e244f",
+      "max_cosine": 0.5121,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031174_jpg.rf.1b7dc4f4c13b5fea3288eeca3c749df9"
+    },
+    {
+      "id": "benchR:2012-03-26_Nordlandfahrt_TRANSTIMBER_Auslaufen_Port_of_Oulu_359",
+      "max_cosine": 0.4965,
+      "nearest": "dfire:val:WEB07519"
+    },
+    {
+      "id": "benchR:Exhaust_emissions_1",
+      "max_cosine": 0.6651,
+      "nearest": "dfire:train:WEB09038"
+    },
+    {
+      "id": "benchR:ITTM_2014_Teuchern_508_4_",
+      "max_cosine": 0.5124,
+      "nearest": "dfire:val:WEB01320"
+    },
+    {
+      "id": "benchR:Power_plant_Burshtyn_TES_Ukraine-6058a",
+      "max_cosine": 0.7271,
+      "nearest": "fasdd:val:smoke_CV000410_jpg.rf.251ee329946752df13cd2a6e94a32fd3"
+    },
+    {
+      "id": "benchR:ITTM_2014_Teuchern_508_6_",
+      "max_cosine": 0.5287,
+      "nearest": "fasdd:train:smoke_CV006711_jpg.rf.da97a2858439a699d9b33210c38eca1b"
+    },
+    {
+      "id": "benchR:Excalibur_Exhaust_Pipes_4572943977_",
+      "max_cosine": 0.4632,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018248_jpg.rf.bc6e20c20eee6b5257fd6e326bbff702"
+    },
+    {
+      "id": "benchR:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f372a3e244f",
+      "max_cosine": 0.4691,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002934_jpg.rf.9ad74cbfef259163823daf7ab6f3a15b"
+    },
+    {
+      "id": "benchR:20181208_Mitsubishi_F-15J_takeoff_Naha_Air_Show_2018-4",
+      "max_cosine": 0.4855,
+      "nearest": "dfire:train:WEB02452"
+    },
+    {
+      "id": "benchR:Modified_car_exhaust_at_4th_International_Auto_Show_Bangalore_2025_",
+      "max_cosine": 0.5218,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006157_jpg.rf.9d02da34c90edc1b8ee8c52e2705a173"
+    },
+    {
+      "id": "benchR:Exhaust_gas_measurement",
+      "max_cosine": 0.5282,
+      "nearest": "fasdd:train:smoke_CV006621_jpg.rf.b2c2bf62d3ce69012145f8c053178f34"
+    },
+    {
+      "id": "benchR:Old_vehicle_exhaust_and_other_rubbish_escaping_from_the_Biffa_Landfill",
+      "max_cosine": 0.615,
+      "nearest": "fasdd:train:fire_CV012369_jpg.rf.99d6fa35bf4cd61d1558ccc543d8b3a5"
+    },
+    {
+      "id": "benchR:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f372a3e244f",
+      "max_cosine": 0.4122,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031174_jpg.rf.1b7dc4f4c13b5fea3288eeca3c749df9"
+    },
+    {
+      "id": "benchR:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f372a3e244f",
+      "max_cosine": 0.532,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031174_jpg.rf.1b7dc4f4c13b5fea3288eeca3c749df9"
+    },
+    {
+      "id": "benchR:Cloud_of_emissions_from_passenger_ship_Midnatsol",
+      "max_cosine": 0.6579,
+      "nearest": "fasdd:val:smoke_CV000410_jpg.rf.251ee329946752df13cd2a6e94a32fd3"
+    },
+    {
+      "id": "benchR:Centre_Of_Attention_-_Flickr_-_ARG_Flickr",
+      "max_cosine": 0.5197,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035642_jpg.rf.57d14b396484bdd46cc70c2e1b29175e"
+    },
+    {
+      "id": "benchR:Automobile_exhaust_gas",
+      "max_cosine": 0.6765,
+      "nearest": "fasdd:train:smoke_CV000681_jpg.rf.df8b3079621363c2df21bb2235ab0700"
+    },
+    {
+      "id": "benchR:Power_plant_Burshtyn_TES_Ukraine-6057a",
+      "max_cosine": 0.7962,
+      "nearest": "fasdd:train:smoke_CV000472_jpg.rf.7f1aca62b98206e3dafd7b7b2cd7bae3"
+    },
+    {
+      "id": "benchR:Car_exhaust_pipe_is_visible_on_a_vehicle_in_a_junkyard",
+      "max_cosine": 0.5291,
+      "nearest": "fasdd:train:fire_CV011655_jpg.rf.5b5c669df0bfc5d6ddf64097f3eea79d"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-26_071",
+      "max_cosine": 0.644,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011618_jpg.rf.5d270e646cb8f4c0ce99014a82071ccc"
+    },
+    {
+      "id": "benchR:Dust_to_Dust_-_geograph.org.uk_-_6125554",
+      "max_cosine": 0.5498,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV017443_jpg.rf.8571820fbefd4c3a7077c2d885ddf3c1"
+    },
+    {
+      "id": "benchR:Europa_Clipper_s_Dust_Analyzer_2",
+      "max_cosine": 0.5037,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002677_jpg.rf.2b91d22b0ad625a98b62971be3583745"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2026-03-16_007",
+      "max_cosine": 0.6555,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008006_jpg.rf.19aed83a7d52ce48f32255f1e9f439ca"
+    },
+    {
+      "id": "benchR:Roadwork_with_no_dust_control_03",
+      "max_cosine": 0.5833,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034177_jpg.rf.d8a4ffab3779a4543a57f7e2c9b2e1bf"
+    },
+    {
+      "id": "benchR:Paint_dust_03",
+      "max_cosine": 0.5747,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002282_jpg.rf.c14d69b857d515258c78c0a2f884472e"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-27_004",
+      "max_cosine": 0.6306,
+      "nearest": "dfire:train:AoF05362"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-27_008",
+      "max_cosine": 0.6842,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011618_jpg.rf.5d270e646cb8f4c0ce99014a82071ccc"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-26_048",
+      "max_cosine": 0.6021,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009131_jpg.rf.a022f868ac7be345f45fcb5c44ff5fc5"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-27_007",
+      "max_cosine": 0.6515,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011618_jpg.rf.5d270e646cb8f4c0ce99014a82071ccc"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-10-13_015",
+      "max_cosine": 0.5812,
+      "nearest": "fasdd:val:smoke_CV006817_jpg.rf.34c5bb53c40fbdfe8679c2c10cdf52a9"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-27_003",
+      "max_cosine": 0.6352,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009131_jpg.rf.a022f868ac7be345f45fcb5c44ff5fc5"
+    },
+    {
+      "id": "benchR:Emerald_Bay_under_construction_in_June_2019",
+      "max_cosine": 0.6713,
+      "nearest": "dfire:train:WEB08985"
+    },
+    {
+      "id": "benchR:Dust_to_dust_-_geograph.org.uk_-_5581860",
+      "max_cosine": 0.5978,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV014032_jpg.rf.4e94e5bc85f5ebc215d53164752e8147"
+    },
+    {
+      "id": "benchR:Beware_falling_dust_Brixham_-_geograph.org.uk_-_4903683",
+      "max_cosine": 0.5718,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008006_jpg.rf.19aed83a7d52ce48f32255f1e9f439ca"
+    },
+    {
+      "id": "benchR:US_Navy_101123-N-6436W-010_A_Seabee_assigned_to_Naval_Mobile_Construct",
+      "max_cosine": 0.5279,
+      "nearest": "fasdd:train:smoke_CV007283_jpg.rf.5db31316251d0e6d9dde4e98231e066f"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-26_025",
+      "max_cosine": 0.6235,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV001403_jpg.rf.a973b5c5827a4a1168154e7978dd8f23"
+    },
+    {
+      "id": "benchR:Chun_Yeung_Shopping_Centre_under_construction_in_October_2018",
+      "max_cosine": 0.6146,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016648_jpg.rf.a3cbd1b0fbaec3608379e6870e96c522"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-27_001",
+      "max_cosine": 0.5825,
+      "nearest": "dfire:val:AoF02604"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-10-13_014",
+      "max_cosine": 0.593,
+      "nearest": "dfire:train:WEB02464"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-27_002",
+      "max_cosine": 0.6801,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011618_jpg.rf.5d270e646cb8f4c0ce99014a82071ccc"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2026-03-16_006",
+      "max_cosine": 0.6502,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008006_jpg.rf.19aed83a7d52ce48f32255f1e9f439ca"
+    },
+    {
+      "id": "benchR:MPR_T5_Construction_2025-08-26_045",
+      "max_cosine": 0.6004,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011618_jpg.rf.5d270e646cb8f4c0ce99014a82071ccc"
+    },
+    {
+      "id": "benchR:Oma_Oma_under_construction_in_April_2020",
+      "max_cosine": 0.6433,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016648_jpg.rf.a3cbd1b0fbaec3608379e6870e96c522"
+    },
+    {
+      "id": "benchR:Shasta_dam_under_construction_new_edit",
+      "max_cosine": 0.5813,
+      "nearest": "dfire:val:WEB00039"
+    },
+    {
+      "id": "benchR:Baspa_Valley_under_snow_pano_Himachal_Pradesh_India",
+      "max_cosine": 0.6174,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020681_jpg.rf.13b4f8d4b393db9f2ffa84142c2b2637"
+    },
+    {
+      "id": "benchR:Iceland_s_Mid-Atlantic_Ridge_during_snow",
+      "max_cosine": 0.628,
+      "nearest": "dfire:train:PublicDataset00934"
+    },
+    {
+      "id": "benchR:Landscape_with_snow_2021",
+      "max_cosine": 0.5981,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuringia_Germa",
+      "max_cosine": 0.6234,
+      "nearest": "fasdd:train:fire_CV012369_jpg.rf.99d6fa35bf4cd61d1558ccc543d8b3a5"
+    },
+    {
+      "id": "benchR:Landscape_mountains_snow_Phaistos",
+      "max_cosine": 0.6124,
+      "nearest": "dfire:train:AoF06642"
+    },
+    {
+      "id": "benchR:002_Wild_Alpine_Ibex_Swiss_Alps_and_Creux_du_Van_Photo_by_Giles_Lauren",
+      "max_cosine": 0.5218,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV006872_jpg.rf.5ffbe6a98b1e1c11f39b770c9461a726"
+    },
+    {
+      "id": "benchR:Baspa_Valley_under_snow_Kinnaur_Himachal_Pradesh_India",
+      "max_cosine": 0.593,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020681_jpg.rf.13b4f8d4b393db9f2ffa84142c2b2637"
+    },
+    {
+      "id": "benchR:BrockenSnowedTreesInSun",
+      "max_cosine": 0.5613,
+      "nearest": "dfire:train:PublicDataset00934"
+    },
+    {
+      "id": "benchR:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuringia_Germa",
+      "max_cosine": 0.6585,
+      "nearest": "fasdd:train:fire_CV012369_jpg.rf.99d6fa35bf4cd61d1558ccc543d8b3a5"
+    },
+    {
+      "id": "benchR:Cold-snow-landscape-nature_23956950429_",
+      "max_cosine": 0.5683,
+      "nearest": "dfire:val:WEB02614"
+    },
+    {
+      "id": "benchR:Hashimoto_Gah_-_Snow_Landscape_-_14.76.61.40_-_Metropolitan_Museum_of_",
+      "max_cosine": 0.5454,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV023906_jpg.rf.11625f8bf528e85108a219dff60ee96b"
+    },
+    {
+      "id": "benchR:After_the_Snow_Landscape_Circleville_UT",
+      "max_cosine": 0.6228,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020681_jpg.rf.13b4f8d4b393db9f2ffa84142c2b2637"
+    },
+    {
+      "id": "benchR:Snow_in_the_Landscape_-_geograph.org.uk_-_1655896",
+      "max_cosine": 0.6944,
+      "nearest": "dfire:train:WEB02087"
+    },
+    {
+      "id": "benchR:Landscape_in_the_snow_-_geograph.org.uk_-_2607162",
+      "max_cosine": 0.6313,
+      "nearest": "dfire:val:WEB02614"
+    },
+    {
+      "id": "benchR:Gustaf_Fj_stad_-_Winter_road_in_a_snow-laden_landscape_1896",
+      "max_cosine": 0.4967,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV003141_jpg.rf.4c5d5405e67bbd1bb027d50643423c27"
+    },
+    {
+      "id": "benchR:Musea_Brugge_HUB_2014_GRO0766_III",
+      "max_cosine": 0.4624,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Kolomenskoe_in_white_-_Dec12_-_03_snow",
+      "max_cosine": 0.5736,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:D_livannet_-_Landscape_with_snow_2984492540_",
+      "max_cosine": 0.5977,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025621_jpg.rf.6e5f1f903e21dc5ac25301efc218ed8a"
+    },
+    {
+      "id": "benchR:_08_-_ITALY_-_Predappio_under_snow_-_suggestive_winter_landscape_of_ci",
+      "max_cosine": 0.5319,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV020681_jpg.rf.13b4f8d4b393db9f2ffa84142c2b2637"
+    },
+    {
+      "id": "benchR:Malmbanan_snow_and_ice_landscape_June_1993",
+      "max_cosine": 0.6524,
+      "nearest": "dfire:train:AoF02170"
+    },
+    {
+      "id": "benchR:Nova_Gorica_0720069_71",
+      "max_cosine": 0.5445,
+      "nearest": "dfire:val:WEB02351"
+    },
+    {
+      "id": "benchR:Baufortschritt_Sana_Klinikum_Hof_20231015_HOF00784-HDR_RAW-Export",
+      "max_cosine": 0.565,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008006_jpg.rf.19aed83a7d52ce48f32255f1e9f439ca"
+    },
+    {
+      "id": "benchR:Ignorance_2879471624_",
+      "max_cosine": 0.6382,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV009550_jpg.rf.ed9544016e9a1832d46890ab2e3169be"
+    },
+    {
+      "id": "benchR:Lactarius_indigo_48568_edit",
+      "max_cosine": 0.5745,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016380_jpg.rf.6079b232064c9a097eccb8ecb9afbe95"
+    },
+    {
+      "id": "benchR:AST-04-228_-_Apollo_Soyuz_Test_Project_-_Apollo_Soyuz_Test_Project_Ove",
+      "max_cosine": 0.6945,
+      "nearest": "dfire:train:WEB02584"
+    },
+    {
+      "id": "benchR:48305_leaving_Rothley",
+      "max_cosine": 0.4878,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035642_jpg.rf.57d14b396484bdd46cc70c2e1b29175e"
+    },
+    {
+      "id": "benchR:Jarrad_Seng",
+      "max_cosine": 0.4321,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002699_jpg.rf.87c6554d8e39a83d109fe8133eaadf88"
+    },
+    {
+      "id": "benchR:Field_with_horses_-_HDR_off",
+      "max_cosine": 0.6531,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Acadia_National_Park_from_Gorham_Mountain",
+      "max_cosine": 0.5566,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV025158_jpg.rf.eba1c9cc6d2747b504607dcd46d3c66d"
+    },
+    {
+      "id": "benchR:5593_with_overexposed_sky",
+      "max_cosine": 0.4246,
+      "nearest": "fasdd:val:smoke_CV007708_jpg.rf.1db482b153869c79fc8694c9953b537c"
+    },
+    {
+      "id": "benchR:Hortus_Haren._Bloemenzuil_02",
+      "max_cosine": 0.526,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037860_jpg.rf.903ddb86e00daf53c5699a48bb4b13f2"
+    },
+    {
+      "id": "benchR:Jarrad_Seng_cropped_",
+      "max_cosine": 0.4445,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV001836_jpg.rf.116351f0b957a0dbfcf18fd71b0d1195"
+    },
+    {
+      "id": "benchR:Nepal_-_Sagamartha_Trek_-_023_500758629_",
+      "max_cosine": 0.597,
+      "nearest": "fasdd:train:smoke_CV009731_jpg.rf.d9158a0a2d2f167f38aabf784283f44d"
+    },
+    {
+      "id": "benchR:Coaster_lift_hill_with_purple_supports_hazy_overexposed_sky_Chang_July",
+      "max_cosine": 0.5133,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015041_jpg.rf.56e8cd8e9367cd386c76213a994ecfdb"
+    },
+    {
+      "id": "benchR:Lake_Wakatipu_northwest_end",
+      "max_cosine": 0.581,
+      "nearest": "dfire:train:PublicDataset00934"
+    },
+    {
+      "id": "benchR:Bright_25071464774_",
+      "max_cosine": 0.5945,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008657_jpg.rf.ed6c65b04000fe6a55a07d8fcc5a8a77"
+    },
+    {
+      "id": "benchR:GrayGradientFilterEffect",
+      "max_cosine": 0.5432,
+      "nearest": "dfire:val:WEB03352"
+    },
+    {
+      "id": "benchR:Cathedral_de_Barcelona_-_Plaza_3396166769_",
+      "max_cosine": 0.5136,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV021187_jpg.rf.498c73b2847c3d3ebe394f2fef0782b0"
+    },
+    {
+      "id": "benchR:Forest_gap_-_HDR_off",
+      "max_cosine": 0.7229,
+      "nearest": "dfire:train:WEB02662"
+    },
+    {
+      "id": "benchR:Forest_playground_-_HDR_off",
+      "max_cosine": 0.5738,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035642_jpg.rf.57d14b396484bdd46cc70c2e1b29175e"
+    },
+    {
+      "id": "benchR:Blurry_signage_-_geograph.org.uk_-_5871458",
+      "max_cosine": 0.5124,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Blurry_35114794974_",
+      "max_cosine": 0.5668,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV007240_jpg.rf.789a5d3118b8ce5be0b98eabccb18e8e"
+    },
+    {
+      "id": "benchR:Blurry_broms_449372028_",
+      "max_cosine": 0.443,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV001526_jpg.rf.d1cb566bd3e4834deca9644f906371bd"
+    },
+    {
+      "id": "benchR:Blurry_photo_of_rain_on_a_window_India_20170101",
+      "max_cosine": 0.6228,
+      "nearest": "dfire:val:WEB02204"
+    },
+    {
+      "id": "benchR:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_2",
+      "max_cosine": 0.6408,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Black_and_white_photo_of_flowers_in_a_garden_with_houses_in_a_blurry_b",
+      "max_cosine": 0.5443,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV032601_jpg.rf.c571dce35945e9fd587fe118ce1e3862"
+    },
+    {
+      "id": "benchR:Some_blurry_lines",
+      "max_cosine": 0.6751,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV029562_jpg.rf.9a779d49b67b0e3b7ea97b59ab7b39d0"
+    },
+    {
+      "id": "benchR:Arr_t_Bus_Petit_Noisy_Avenue_Gallieni_-_Noisy-le-Sec_FR93_-_2023-03-11",
+      "max_cosine": 0.3195,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:A_blurry_thingy_from_space_-_panoramio",
+      "max_cosine": 0.5844,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV012635_jpg.rf.dea29586cf0917ebe0111f0d4f1fd4a4"
+    },
+    {
+      "id": "benchR:Blurry_Boston_28630221_.jpeg",
+      "max_cosine": 0.5554,
+      "nearest": "dfire:val:PublicDataset00916"
+    },
+    {
+      "id": "benchR:Blurry_drumsticks_-_Flickr_-_jnewland",
+      "max_cosine": 0.5553,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037731_jpg.rf.b9e1ec198a6b33b4f033e4342e4e4be4"
+    },
+    {
+      "id": "benchR:Blurry_Road_233819653_.jpeg",
+      "max_cosine": 0.6351,
+      "nearest": "dfire:train:WEB00988"
+    },
+    {
+      "id": "benchR:Blurry_1346977172_",
+      "max_cosine": 0.4845,
+      "nearest": "dfire:train:WEB02923"
+    },
+    {
+      "id": "benchR:Blurry_01_29117228814_",
+      "max_cosine": 0.6614,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022229_jpg.rf.681ab5f2cf5a4b5dc602e86f22d3008c"
+    },
+    {
+      "id": "benchR:Blurry_vegetation_46421130954_",
+      "max_cosine": 0.7165,
+      "nearest": "dfire:train:WEB02782"
+    },
+    {
+      "id": "benchR:Acc_s_Gare_Noisy_Grand_Mont_Est_Esplanade_Commune_Paris_-_Noisy-le-Gra",
+      "max_cosine": 0.5168,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009945_jpg.rf.bb3c83fcb6d7d8d6db2128724ccb5f0f"
+    },
+    {
+      "id": "benchR:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_5",
+      "max_cosine": 0.5616,
+      "nearest": "dfire:val:WEB02204"
+    },
+    {
+      "id": "benchR:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_4",
+      "max_cosine": 0.5802,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016648_jpg.rf.a3cbd1b0fbaec3608379e6870e96c522"
+    },
+    {
+      "id": "benchR:Blurry_eye_chart",
+      "max_cosine": 0.4787,
+      "nearest": "fasdd:train:fire_CV007390_jpg.rf.5224a136a12b45e78f110607b27f0fdd"
+    },
+    {
+      "id": "benchR:All_e_Petit_Noisy_-_Noisy-le-Sec_FR93_-_2021-04-21_-_2",
+      "max_cosine": 0.6489,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Blurry_Boss_3577755487_",
+      "max_cosine": 0.5031,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009740_jpg.rf.6e41f0fff365c830462210e9fe025120"
+    },
+    {
+      "id": "benchR:Blurry_George_3302259167_",
+      "max_cosine": 0.4388,
+      "nearest": "dfire:train:WEB01262"
+    },
+    {
+      "id": "benchR:Blurry_buses",
+      "max_cosine": 0.6278,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006117_jpg.rf.b7a698ad9974fac3e03d67516e9f8e0d"
+    },
+    {
+      "id": "benchR:Blurry-view_262073545_",
+      "max_cosine": 0.6247,
+      "nearest": "dfire:train:WEB01262"
+    },
+    {
+      "id": "benchR:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_1",
+      "max_cosine": 0.572,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016648_jpg.rf.a3cbd1b0fbaec3608379e6870e96c522"
+    },
+    {
+      "id": "benchR:Flying_squirrel_--_blurry_9642152296_",
+      "max_cosine": 0.6287,
+      "nearest": "dfire:train:WEB01303"
+    },
+    {
+      "id": "benchR:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_6",
+      "max_cosine": 0.6443,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016648_jpg.rf.a3cbd1b0fbaec3608379e6870e96c522"
+    },
+    {
+      "id": "benchR:Blurry_Image_of_Lalla_Setti",
+      "max_cosine": 0.6377,
+      "nearest": "dfire:train:WEB03370"
+    },
+    {
+      "id": "benchR:WELCOME_TO_THE_BLURRY_PACIFIC._-_panoramio",
+      "max_cosine": 0.5278,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035719_jpg.rf.ea97b48224aa81bdd405aaea23d6f9d7"
+    },
+    {
+      "id": "benchR:Blurry_photo",
+      "max_cosine": 0.6523,
+      "nearest": "dfire:train:WEB01525"
+    },
+    {
+      "id": "benchR:Blurry_Vegetable_Life",
+      "max_cosine": 0.6003,
+      "nearest": "dfire:train:WEB03599"
+    },
+    {
+      "id": "benchR:Blurry_background_43085048652_",
+      "max_cosine": 0.5283,
+      "nearest": "dfire:train:WEB03535"
+    },
+    {
+      "id": "benchR:Blurry_Dreams_202455315_.jpeg",
+      "max_cosine": 0.7422,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV000457_jpg.rf.1bb54824abae03f93d5ff489c35d7aea"
+    },
+    {
+      "id": "benchR:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_7",
+      "max_cosine": 0.6286,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016648_jpg.rf.a3cbd1b0fbaec3608379e6870e96c522"
+    },
+    {
+      "id": "benchR:Blurry_33884866842_",
+      "max_cosine": 0.5611,
+      "nearest": "fasdd:train:smoke_CV008515_jpg.rf.a39b0e24213be3ba17e18b252e5bb70b"
+    },
+    {
+      "id": "benchR:Blurry_photo_of_a_kerameikos_funerary_inscription",
+      "max_cosine": 0.5596,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034428_jpg.rf.fed50f566db5880a75967eb2ac368fc6"
+    },
+    {
+      "id": "benchR:All_e_Petit_Noisy_-_Noisy-le-Sec_FR93_-_2021-04-21_-_1",
+      "max_cosine": 0.6434,
+      "nearest": "dfire:train:WEB03498"
+    },
+    {
+      "id": "benchR:Blurry-lincoln-second-inauguration",
+      "max_cosine": 0.5115,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Christine_boylan_photo_w_bg_blurry_flowers",
+      "max_cosine": 0.5546,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009011_jpg.rf.a1c349956819c5edee8b28775103c4ed"
+    },
+    {
+      "id": "benchR:Blurry_33238647538_",
+      "max_cosine": 0.4208,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV003531_jpg.rf.61e362c27b731fe4efa6f623102e07df"
+    },
+    {
+      "id": "benchR:Photographs_of_Hvittr_sk_s_Interior_-_Living_Room",
+      "max_cosine": 0.5184,
+      "nearest": "dfire:val:PublicDataset00875"
+    },
+    {
+      "id": "benchR:IKEA_store_Interior_design_Living_room_Rostov-on-Don_Russia",
+      "max_cosine": 0.5371,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002329_jpg.rf.6ab1b53081d98008d47eb950e18fce96"
+    },
+    {
+      "id": "benchR:Living_Room_with_Pooja_Niche_Interior_Design_in_Kolkata_by_Estate_Look",
+      "max_cosine": 0.5655,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022481_jpg.rf.c80fd62d9b6ddeaa9ee6290c28193300"
+    },
+    {
+      "id": "benchR:Hester_Diamond_Living_Room_2_by_Rachel_Kaminsky.9.2020_03",
+      "max_cosine": 0.5102,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026503_jpg.rf.c7d6ed2558f3367f5e996418ffd3220d"
+    },
+    {
+      "id": "benchR:Living_Room_Interior_of_Joglo_Suyadi",
+      "max_cosine": 0.5888,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015946_jpg.rf.883e9e8f1c9f90161eb1eb375fddb79b"
+    },
+    {
+      "id": "benchR:19th_century_Victorian_living_room_Auckland_-_0846",
+      "max_cosine": 0.5307,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Castle_Ward_Interior_-_Basement_-_Kitchen_-_geograph.org.uk_-_3968600",
+      "max_cosine": 0.5299,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV027518_jpg.rf.b1d75870810c3af61638a17bb02fca2b"
+    },
+    {
+      "id": "benchR:Living_Room_Mid-City_New_Orleans",
+      "max_cosine": 0.5603,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034826_jpg.rf.e9dc3d9d7c89eabda9c8891b6e9e81bb"
+    },
+    {
+      "id": "benchR:Aleksander_Kotsis_-_Kitchen_interior_-_MP_4670_MNW_-_National_Museum_i",
+      "max_cosine": 0.4673,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018068_jpg.rf.56b70b7a7ee82552881cf45d62491d22"
+    },
+    {
+      "id": "benchR:Living_Room_2",
+      "max_cosine": 0.5571,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002329_jpg.rf.6ab1b53081d98008d47eb950e18fce96"
+    },
+    {
+      "id": "benchR:Carlton_Kitchen_interior_with_woman_and_three_children_._State_Library",
+      "max_cosine": 0.4893,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV035802_jpg.rf.a4ec982492f7cf5c07097ae977f6d89b"
+    },
+    {
+      "id": "benchR:Den_Haag_-_Mauritshuis_-_David_Teniers_the_Younger_1610-1690_-_Kitchen",
+      "max_cosine": 0.3979,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV002757_jpg.rf.0d72f6fcd8039d39b2430145fa5f94a9"
+    },
+    {
+      "id": "benchR:Coughton_Court_living_room_2",
+      "max_cosine": 0.5216,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:19th_century_Victorian_living_room_Auckland_-_0825",
+      "max_cosine": 0.492,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:MGM_Grand_Detroit_Hotel_Living_Room_Christmas",
+      "max_cosine": 0.6071,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV034003_jpg.rf.15380889dc05dceba06c4d783de85784"
+    },
+    {
+      "id": "benchR:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_a_living_r",
+      "max_cosine": 0.5077,
+      "nearest": "dfire:train:WEB02684"
+    },
+    {
+      "id": "benchR:Interior_of_living_room_01",
+      "max_cosine": 0.5322,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV037097_jpg.rf.79711871d38a4670e7e45cd74cdebc22"
+    },
+    {
+      "id": "benchR:Living_room_in_apartment_of_Condom_nio_do_Edif_cio_Zaher_Le_Blond_Rio_",
+      "max_cosine": 0.5278,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV026326_jpg.rf.1d801474568a2aef6459d2b6c179dac5"
+    },
+    {
+      "id": "benchR:Jan_Stobbaerts_-_Living_Room_Interior_-_1923-AM_-_Museum_of_Fine_Arts_",
+      "max_cosine": 0.4152,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV001650_jpg.rf.a1761c53e1907af3f6c0e0f1eee2c8d8"
+    },
+    {
+      "id": "benchR:Church_Of_The_Transfiguration_Interior_-_Kitchener_ON",
+      "max_cosine": 0.6324,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Luxury_Living_Room_Interior_Design_in_Kolkata_by_Estate_Lookup_Interio",
+      "max_cosine": 0.6508,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016516_jpg.rf.9a2f79ccee852e08c0d1cd306c7d0828"
+    },
+    {
+      "id": "benchR:Carrollton_New_Orleans_Living_Room_-_Dana_Corner",
+      "max_cosine": 0.6159,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034826_jpg.rf.e9dc3d9d7c89eabda9c8891b6e9e81bb"
+    },
+    {
+      "id": "benchR:Spacious_Living_Room_Interior_Design_in_Kolkata_by_Estate_Lookup_Inter",
+      "max_cosine": 0.5872,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016516_jpg.rf.9a2f79ccee852e08c0d1cd306c7d0828"
+    },
+    {
+      "id": "benchR:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_a_living_r",
+      "max_cosine": 0.5696,
+      "nearest": "fasdd:train:fire_CV000735_jpg.rf.e90388fe45beb3792aa237a2865775f3"
+    },
+    {
+      "id": "benchR:Living_Room_Interior_of_Joglo_Singodikoro",
+      "max_cosine": 0.5952,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016074_jpg.rf.e19ce197b06c6f37037c05402c5a1aa5"
+    },
+    {
+      "id": "benchR:Modern_luxury_living_room_with_kitchen_interior",
+      "max_cosine": 0.5283,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002329_jpg.rf.6ab1b53081d98008d47eb950e18fce96"
+    },
+    {
+      "id": "benchR:Hester_Diamond_Living_Room_by_Rachel_Kaminsky.9.2020_01",
+      "max_cosine": 0.577,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV016074_jpg.rf.e19ce197b06c6f37037c05402c5a1aa5"
+    },
+    {
+      "id": "benchR:Moqueur_Lane_Living_Room_New_Orleans_2016",
+      "max_cosine": 0.5265,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034826_jpg.rf.e9dc3d9d7c89eabda9c8891b6e9e81bb"
+    },
+    {
+      "id": "benchR:Living_room_of_a_typical_rural_house_in_northeast_Brazil",
+      "max_cosine": 0.4315,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV018368_jpg.rf.6b3a1d4bedec40a796b796ad82fdaa5e"
+    },
+    {
+      "id": "benchR:LVG_House_Living_Room_1956",
+      "max_cosine": 0.5407,
+      "nearest": "fasdd:val:fire_CV012531_jpg.rf.3b54779b74f5810f799852f7074340b1"
+    },
+    {
+      "id": "benchR:Interior_Albert_D._German_Warehouse_Church_Street_and_Haseltine_Street",
+      "max_cosine": 0.5867,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV005240_jpg.rf.43e55ca256efbeeed09167eaf19a0199"
+    },
+    {
+      "id": "benchR:Interior_of_the_Hsinchu_City_Art_Site_of_Railway_Warehouse_04",
+      "max_cosine": 0.6147,
+      "nearest": "dfire:val:PublicDataset00875"
+    },
+    {
+      "id": "benchR:Warehouse_Interior_Storing_Batteries_in_Indonesia",
+      "max_cosine": 0.6263,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009945_jpg.rf.bb3c83fcb6d7d8d6db2128724ccb5f0f"
+    },
+    {
+      "id": "benchR:Interior_of_a_warehouse_in_Riga",
+      "max_cosine": 0.5452,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009945_jpg.rf.bb3c83fcb6d7d8d6db2128724ccb5f0f"
+    },
+    {
+      "id": "benchR:IKEA_Anderlecht_self-serve_warehouse_DSCF3734_",
+      "max_cosine": 0.5674,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009945_jpg.rf.bb3c83fcb6d7d8d6db2128724ccb5f0f"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_15_ceiling",
+      "max_cosine": 0.578,
+      "nearest": "local:train:web_154228848:web_negative"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_02_aisles",
+      "max_cosine": 0.5066,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_16_ceiling",
+      "max_cosine": 0.53,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002440_jpg.rf.8a451e376414002116d663e0fa0ae0b3"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_03_aisles",
+      "max_cosine": 0.5144,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Warehouse_interior_Galle_Fort_0716",
+      "max_cosine": 0.6041,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV007855_jpg.rf.c418d6b23d82890abbe59fff8b166e44"
+    },
+    {
+      "id": "benchR:VR_Warehouse_interior_in_Helsinki_Finland_1999",
+      "max_cosine": 0.5772,
+      "nearest": "dfire:train:WEB04145"
+    },
+    {
+      "id": "benchR:23_0066309_Convair_Negative_Image_-_Warehouse_interior_54157633606_",
+      "max_cosine": 0.6953,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV034826_jpg.rf.e9dc3d9d7c89eabda9c8891b6e9e81bb"
+    },
+    {
+      "id": "benchR:-Street_Scene_Natchez_Mississippi-_Two_Women_Walking_along_Sidewalk_be",
+      "max_cosine": 0.4523,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_08",
+      "max_cosine": 0.5262,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_06",
+      "max_cosine": 0.5182,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Watts_Warehouse_interior",
+      "max_cosine": 0.563,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV015946_jpg.rf.883e9e8f1c9f90161eb1eb375fddb79b"
+    },
+    {
+      "id": "benchR:2022-03-26_Iran_Shiraz_Qalat_DSC_0837_DxO_1",
+      "max_cosine": 0.4228,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV032135_jpg.rf.8688d4f245c19c09dfaf8a28e5b0b0d3"
+    },
+    {
+      "id": "benchR:Balloon_Street_Manchester_An_Interior_View_of_the_Drapery_Warehouse",
+      "max_cosine": 0.4523,
+      "nearest": "fasdd:train:smoke_CV007159_jpg.rf.8c75986c2a774c0b7b97153d7e2b94e6"
+    },
+    {
+      "id": "benchR:Interior_of_converted_warehouse_-_geograph.org.uk_-_7186753",
+      "max_cosine": 0.5188,
+      "nearest": "dfire:val:PublicDataset00875"
+    },
+    {
+      "id": "benchR:02026_0100_Easter_Sunday_at_a_traditional_wooden_P_czkarnia_in_Zakopan",
+      "max_cosine": 0.4764,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031893_jpg.rf.6ee47f8c9f8e66d016d43a6489ac2ecc"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_04_aisles",
+      "max_cosine": 0.4677,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Interior_of_an_Warehouses",
+      "max_cosine": 0.5633,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009945_jpg.rf.bb3c83fcb6d7d8d6db2128724ccb5f0f"
+    },
+    {
+      "id": "benchR:Interior_of_the_Hsinchu_City_Art_Site_of_Railway_Warehouse_01",
+      "max_cosine": 0.5731,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV026503_jpg.rf.c7d6ed2558f3367f5e996418ffd3220d"
+    },
+    {
+      "id": "benchR:Interieur_van_een_pakhuis_van_de_Tanjong_Pagar_Dock_Co._Ltd._in_Singap",
+      "max_cosine": 0.4924,
+      "nearest": "dfire:train:WEB02923"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_13",
+      "max_cosine": 0.5271,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Chittenden_Locks_-_warehouse_interior_01",
+      "max_cosine": 0.5991,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002440_jpg.rf.8a451e376414002116d663e0fa0ae0b3"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_05",
+      "max_cosine": 0.5169,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_11",
+      "max_cosine": 0.5592,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Warehouse_interior_showcasing_organized_shelving_and_packages",
+      "max_cosine": 0.6235,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV008006_jpg.rf.19aed83a7d52ce48f32255f1e9f439ca"
+    },
+    {
+      "id": "benchR:Interior_of_The_Warehouse_01_aisles",
+      "max_cosine": 0.4935,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV009706_jpg.rf.d998ef8bdef35d4b56a93ed3f1ea4c8b"
+    },
+    {
+      "id": "benchR:Happy_the_Water_Tower_Scorched_Landscape_from_Fire_50867574701_",
+      "max_cosine": 0.6491,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV036585_jpg.rf.eb10e6b10c09e61ed63a0b7196291270"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_8",
+      "max_cosine": 0.626,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:Birdwatching_tower_in_the_Deimanivskyi_Landscape_Reserve_after_a_fire_",
+      "max_cosine": 0.677,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV015766_jpg.rf.c84993c9df2bf9d20a1c7f59aa1b1fa2"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_3",
+      "max_cosine": 0.644,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:Border_Fire_Burned_Landscape",
+      "max_cosine": 0.7,
+      "nearest": "dfire:train:PublicDataset00456"
+    },
+    {
+      "id": "benchR:Bles_Landscape_with_Sodom_on_fire",
+      "max_cosine": 0.6441,
+      "nearest": "fasdd:train:fire_CV011295_jpg.rf.8f6d0de286606ba96f718d6be7676d67"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_5",
+      "max_cosine": 0.7097,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:Bay_of_Fires_Tasmania_landscape_",
+      "max_cosine": 0.5919,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV032885_jpg.rf.c8f5c9a8474a1ca72965b2fbe453253c"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_1",
+      "max_cosine": 0.6156,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:Bles_Landscape_with_Sodom_on_fire_detail_",
+      "max_cosine": 0.5587,
+      "nearest": "fasdd:train:fire_CV011295_jpg.rf.8f6d0de286606ba96f718d6be7676d67"
+    },
+    {
+      "id": "benchR:Kerstiaen_de_Keuninck_-_Figures_around_a_fire_before_an_extensive_rive",
+      "max_cosine": 0.3796,
+      "nearest": "dfire:train:AoF06642"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_7",
+      "max_cosine": 0.6219,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_4",
+      "max_cosine": 0.6209,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV028450_jpg.rf.f2fe257798a49978e1aa9843c7c36df8"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_2",
+      "max_cosine": 0.634,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV022071_jpg.rf.2c534ecca826269abd74b30a7c435787"
+    },
+    {
+      "id": "benchR:Consequences_of_a_meadow_fire_in_the_Deimanivskyi_Landscape_Reserve_20",
+      "max_cosine": 0.748,
+      "nearest": "fasdd:train:bothFireAndSmoke_CV003892_jpg.rf.73a66e0c17189520f72c3bef032e7428"
+    },
+    {
+      "id": "benchR:Fire_Canyon_at_Valley_Of_Fire_in_NV_6",
+      "max_cosine": 0.6743,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV031917_jpg.rf.a75af7feb0a01bb9fe573947d7dc0753"
+    },
+    {
+      "id": "benchR:Bles_Landscape_with_Sodom_on_fire_01",
+      "max_cosine": 0.5539,
+      "nearest": "fasdd:train:fire_CV011295_jpg.rf.8f6d0de286606ba96f718d6be7676d67"
+    },
+    {
+      "id": "benchR:Balkan_Fires_Earth_from_Aqua_EOS_PM-1_2007-07-25_",
+      "max_cosine": 0.5225,
+      "nearest": "dfire:train:WEB06343"
+    },
+    {
+      "id": "benchR:Landscape_After_Fire_151649559_.jpeg",
+      "max_cosine": 0.6414,
+      "nearest": "dfire:val:WEB02461"
+    },
+    {
+      "id": "benchR:Interior_of_warehouse_showing_workers_at_lunch_7750025594_",
+      "max_cosine": 0.3939,
+      "nearest": "fasdd:train:smoke_CV007489_jpg.rf.bfe5117f3fe8caa1e8c44111abc2debc"
+    },
+    {
+      "id": "benchR:Robert_Street_Living_Room_New_Orleans_Feb_2008",
+      "max_cosine": 0.5911,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV006284_jpg.rf.fb7e845a60f1cc443fc60e1adac576f5"
+    },
+    {
+      "id": "benchR:Living_room_of_34988_Crows_Nest_Drive_Sea_Ranch-1397",
+      "max_cosine": 0.4744,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV026326_jpg.rf.1d801474568a2aef6459d2b6c179dac5"
+    },
+    {
+      "id": "benchR:Waterbeds_n_Stuff_Corporate_Office_Furniture_Warehouse_Interior_Grove_",
+      "max_cosine": 0.578,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002440_jpg.rf.8a451e376414002116d663e0fa0ae0b3"
+    },
+    {
+      "id": "benchR:Interior_Albert_D._German_Warehouse_Church_Street_and_Haseltine_Street",
+      "max_cosine": 0.6142,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV007855_jpg.rf.c418d6b23d82890abbe59fff8b166e44"
+    },
+    {
+      "id": "benchR:Dirck_de_Vries_-_Kitchen_Interior_-_Walters_372651",
+      "max_cosine": 0.3652,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV008009_jpg.rf.b5d307b7523a2c16bb725dc88c1ecef5"
+    },
+    {
+      "id": "benchR:Mid-City_New_Orleans_living_room_May_2018",
+      "max_cosine": 0.6163,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV023450_jpg.rf.342fa466aa9d27116744f75c125c799a"
+    },
+    {
+      "id": "benchR:_Barcelona_Dining_Room_by_Pere_Torn_Esquius_-_Museu_Nacional_d_Art_de_",
+      "max_cosine": 0.4874,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV002757_jpg.rf.0d72f6fcd8039d39b2430145fa5f94a9"
+    },
+    {
+      "id": "benchR:Living_Room_Sauer_Beckmann_Farm_Texas_2023",
+      "max_cosine": 0.5975,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV011830_jpg.rf.63c576b73ed870ed677ec51b5882b859"
+    },
+    {
+      "id": "benchR:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_a_living_r",
+      "max_cosine": 0.5451,
+      "nearest": "fasdd:val:neitherFireNorSmoke_CV023450_jpg.rf.342fa466aa9d27116744f75c125c799a"
+    },
+    {
+      "id": "benchR:The_living_room_that_needs_houseplants",
+      "max_cosine": 0.6081,
+      "nearest": "fasdd:train:neitherFireNorSmoke_CV002329_jpg.rf.6ab1b53081d98008d47eb950e18fce96"
+    }
+  ]
+}

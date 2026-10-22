@@ -34,3 +34,7 @@ All rows below are evaluations that have already happened, including the Phase 3
 ## Policy diagnostic (not a new evaluation)
 
 The 92.0% policy-filtered figure is a **re-scoring of the same 2026-10-22 17:15 run** with controlled/spark/screen images suppressed and excluded from the denominator. It is not a separate model evaluation. 12 images were suppressed; 6 of them would have alarmed if controlled flames were included.
+
+## bench_R
+
+No model has been run on bench_R. It is **pending human review and lock**. Once locked, only the DEV split may be used for error analysis between iterations; SEALED runs must be logged here with date, model and reason.

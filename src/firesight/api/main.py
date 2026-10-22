@@ -7,6 +7,7 @@ import json
 import logging
 import tempfile
 import time
+from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -57,6 +58,31 @@ class FireTypePolicyIn(BaseModel):
     exclude: list[str]
 
 
+class BenchRReviewIn(BaseModel):
+    id: str
+    has_fire: int
+    has_smoke: int
+    flame_type: str | None = None
+    category: str
+    difficulty: str
+    ambiguous: int = 0
+    notes: str = ""
+    reviewer: str
+    boxes_fire: list[list[float]] | None = None
+    boxes_smoke: list[list[float]] | None = None
+    width: int | None = None
+    height: int | None = None
+
+
+class BenchRSpotIn(BaseModel):
+    id: str
+    has_fire: int
+    has_smoke: int
+    flame_type: str | None = None
+    reviewer: str
+    notes: str = ""
+
+
 class BenchReviewIn(BaseModel):
     id: str
     has_fire: int
@@ -76,6 +102,117 @@ BENCH_DIR = PROJECT_ROOT / "testbench100"
 BENCH_INDEX = BENCH_DIR / "index.json"
 BENCH_REVIEWS = BENCH_DIR / "reviews.json"
 BENCH_LOCK = BENCH_DIR / "LOCKED.json"
+
+BENCHR_DIR = PROJECT_ROOT / "bench_R"
+BENCHR_INDEX = BENCHR_DIR / "index.json"
+BENCHR_REVIEWS = BENCHR_DIR / "reviews.json"
+BENCHR_SPOT = BENCHR_DIR / "spot_checks.json"
+BENCHR_LOCK = BENCHR_DIR / "LOCKED.json"
+
+
+def _benchR_rows() -> list[dict]:
+    if not BENCHR_INDEX.exists():
+        return []
+    rows = json.loads(BENCHR_INDEX.read_text(encoding="utf-8"))
+    reviews = json.loads(BENCHR_REVIEWS.read_text(encoding="utf-8")) if BENCHR_REVIEWS.exists() else {}
+    for row in rows:
+        review = reviews.get(row["id"])
+        if review:
+            row.update({k: review[k] for k in ("has_fire", "has_smoke", "flame_type", "category",
+                                               "difficulty", "ambiguous", "notes", "reviewer", "reviewed_at",
+                                               "review_status", "boxes_fire", "boxes_smoke", "width", "height")
+                        if k in review})
+    return rows
+
+
+def _benchR_comp(rows: list[dict]) -> dict:
+    fire_only = [r for r in rows if r["has_fire"] and not r["has_smoke"]]
+    smoke_only = [r for r in rows if r["has_smoke"] and not r["has_fire"]]
+    both = [r for r in rows if r["has_fire"] and r["has_smoke"]]
+    negatives = [r for r in rows if not r["has_fire"] and not r["has_smoke"]]
+    types = Counter(r.get("flame_type") or "unknown" for r in fire_only)
+    families = Counter(r.get("family", "other") for r in negatives)
+    return {"fire_only": len(fire_only), "smoke_only": len(smoke_only), "both": len(both),
+            "negative": len(negatives), "fire_only_types": dict(types), "negative_families": dict(families),
+            "reviewed": sum(1 for r in rows if r.get("review_status") == "reviewed")}
+
+
+def _write_benchR_labels(rows: list[dict], reviewer: str) -> dict:
+    import csv
+    import hashlib
+    from datetime import datetime, timezone
+    reviewed_at = datetime.now(timezone.utc).isoformat()
+    labels_csv = BENCHR_DIR / "labels.csv"
+    with labels_csv.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh)
+        writer.writerow(["image_id", "file", "has_fire", "has_smoke", "flame_type", "category", "difficulty",
+                         "source", "license", "boxes_fire", "boxes_smoke", "ambiguous", "reviewer",
+                         "reviewed_at", "review_status", "notes"])
+        for row in rows:
+            writer.writerow([row["id"], row["file"], row["has_fire"], row["has_smoke"], row.get("flame_type") or "",
+                             row.get("category", row.get("family")), row.get("difficulty", "medium"), row["source"],
+                             row["license"], json.dumps(row.get("boxes_fire", [])), json.dumps(row.get("boxes_smoke", [])),
+                             row.get("ambiguous", 0), row.get("reviewer", ""), row.get("reviewed_at", ""),
+                             "reviewed", row.get("notes", "")])
+    yolo_dir = BENCHR_DIR / "labels"
+    from PIL import Image
+    for row in rows:
+        w, h = row.get("width"), row.get("height")
+        if not w or not h:
+            try:
+                with Image.open(PROJECT_ROOT / row["file"]) as im:
+                    w, h = im.size
+            except Exception:
+                w, h = 1, 1
+        lines = []
+        if row["has_fire"]:
+            for box in row.get("boxes_fire", []):
+                x1, y1, x2, y2 = box
+                lines.append(f"0 {(x1+x2)/2/w:.6f} {(y1+y2)/2/h:.6f} {(x2-x1)/w:.6f} {(y2-y1)/h:.6f}")
+        if row["has_smoke"]:
+            for box in row.get("boxes_smoke", []):
+                x1, y1, x2, y2 = box
+                lines.append(f"1 {(x1+x2)/2/w:.6f} {(y1+y2)/2/h:.6f} {(x2-x1)/w:.6f} {(y2-y1)/h:.6f}")
+        (yolo_dir / (Path(row["file"]).stem + ".txt")).write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
+    image_hashes = sorted(f"{row['sha256']}  images/{row['file']}" for row in rows)
+    manifest_hash = hashlib.sha256("\n".join(image_hashes).encode("utf-8")).hexdigest()
+    (BENCHR_DIR / "MANIFEST.sha256").write_text("\n".join(image_hashes) + "\n", encoding="utf-8")
+    lock = {"locked": True, "reviewer": reviewer, "locked_at": reviewed_at, "manifest_sha256": manifest_hash,
+            "images": len(rows), "composition": _benchR_comp(rows),
+            "labels_csv_sha256": hashlib.sha256(labels_csv.read_bytes()).hexdigest()}
+    BENCHR_LOCK.write_text(json.dumps(lock, indent=2), encoding="utf-8")
+    # Stratified DEV/SEALED split, 300/700, after lock.
+    import random
+    rng = random.Random(20261022)
+    groups = defaultdict(list)
+    for row in rows:
+        if row["has_fire"] and not row["has_smoke"]:
+            key = f"fire:{row.get('flame_type') or 'unknown'}"
+        elif row["has_smoke"] and not row["has_fire"]:
+            key = "smoke_only"
+        elif row["has_fire"] and row["has_smoke"]:
+            key = "both"
+        else:
+            key = f"negative:{row.get('family', 'other')}"
+        groups[key].append(row)
+    dev, sealed = [], []
+    for key, members in groups.items():
+        rng.shuffle(members)
+        n_dev = max(1, round(300 * len(members) / len(rows)))
+        dev += members[:n_dev]
+        sealed += members[n_dev:]
+    # correct size exactly 300/700
+    rng.shuffle(dev)
+    while len(dev) > 300:
+        sealed.append(dev.pop())
+    while len(dev) < 300:
+        sealed.sort(key=lambda r: r["id"])
+        dev.append(sealed.pop(0))
+    (BENCHR_DIR / "DEV.jsonl").write_text("\n".join(json.dumps(r) for r in dev) + "\n", encoding="utf-8")
+    (BENCHR_DIR / "SEALED.jsonl").write_text("\n".join(json.dumps(r) for r in sealed) + "\n", encoding="utf-8")
+    (BENCHR_DIR / "SPLIT.lock.json").write_text(json.dumps({"dev": len(dev), "sealed": len(sealed),
+                                                             "seed": 20261022, "rule": "stratified random after lock"}, indent=2), encoding="utf-8")
+    return lock
 
 CATEGORY_FAMILY = {
     "sunset_sunrise": "light_colour", "street_head_lights": "light_colour",
@@ -411,6 +548,119 @@ def create_app(config_path: str | None = None) -> FastAPI:
             })
         return _write_bench_labels(rows, reviewer, composition_override=bool(mismatch or family_short),
                                    expected_composition=expected)
+
+    @app.get("/api/benchR")
+    def benchR() -> dict:
+        rows = _benchR_rows()
+        locked = json.loads(BENCHR_LOCK.read_text(encoding="utf-8")) if BENCHR_LOCK.exists() else {"locked": False}
+        spot = json.loads(BENCHR_SPOT.read_text(encoding="utf-8")) if BENCHR_SPOT.exists() else {}
+        agree = sum(1 for v in spot.values() if v.get("agrees"))
+        return {"locked": locked.get("locked", False), "lock": locked, "composition": _benchR_comp(rows),
+                "spot_check": {"reviewed": len(spot), "required": 100,
+                               "agreement_rate": round(agree / len(spot), 4) if spot else None},
+                "images": rows}
+
+    @app.get("/api/benchR/image/{image_id}")
+    def benchR_image(image_id: str) -> FileResponse:
+        for row in _benchR_rows():
+            if row["id"] == image_id:
+                p = PROJECT_ROOT / row["file"]
+                if p.exists():
+                    return FileResponse(p)
+        raise HTTPException(404, "bench_R image not found")
+
+    @app.post("/api/benchR/review")
+    def benchR_review(payload: BenchRReviewIn) -> dict:
+        if BENCHR_LOCK.exists():
+            raise HTTPException(409, "bench_R is locked")
+        rows = _benchR_rows()
+        existing = next((r for r in rows if r["id"] == payload.id), None)
+        if existing is None:
+            raise HTTPException(404, "unknown bench_R image")
+        if not payload.reviewer.strip():
+            raise HTTPException(422, "reviewer name is required")
+        reviews = json.loads(BENCHR_REVIEWS.read_text(encoding="utf-8")) if BENCHR_REVIEWS.exists() else {}
+        from datetime import datetime, timezone
+        reviews[payload.id] = {
+            "has_fire": int(payload.has_fire), "has_smoke": int(payload.has_smoke),
+            "flame_type": payload.flame_type, "category": payload.category, "difficulty": payload.difficulty,
+            "ambiguous": int(payload.ambiguous), "notes": payload.notes,
+            "reviewer": payload.reviewer.strip(), "reviewed_at": datetime.now(timezone.utc).isoformat(),
+            "review_status": "reviewed",
+            "boxes_fire": payload.boxes_fire if payload.boxes_fire is not None else existing.get("boxes_fire", []),
+            "boxes_smoke": payload.boxes_smoke if payload.boxes_smoke is not None else existing.get("boxes_smoke", []),
+            "width": payload.width or existing.get("width"), "height": payload.height or existing.get("height"),
+        }
+        BENCHR_REVIEWS.write_text(json.dumps(reviews, indent=2), encoding="utf-8")
+        return {"saved": payload.id, "reviewed": len(reviews), "total": len(rows)}
+
+    @app.get("/api/benchR/spotcheck")
+    def benchR_spotcheck() -> dict:
+        rows = _benchR_rows()
+        if any(r.get("review_status") != "reviewed" for r in rows):
+            raise HTTPException(422, "review all 1000 images before spot-checking")
+        import random
+        rng = random.Random(20261022)
+        sample = rng.sample(rows, 100)
+        spot = json.loads(BENCHR_SPOT.read_text(encoding="utf-8")) if BENCHR_SPOT.exists() else {}
+        return {"required": 100, "reviewed": len(spot), "items": [{**r, "spot_done": r["id"] in spot} for r in sample]}
+
+    @app.post("/api/benchR/spotcheck")
+    def benchR_spotcheck_save(payload: BenchRSpotIn) -> dict:
+        if BENCHR_LOCK.exists():
+            raise HTTPException(409, "bench_R is locked")
+        if not payload.reviewer.strip():
+            raise HTTPException(422, "reviewer name is required")
+        reviews = json.loads(BENCHR_REVIEWS.read_text(encoding="utf-8")) if BENCHR_REVIEWS.exists() else {}
+        first = reviews.get(payload.id)
+        if not first:
+            raise HTTPException(422, "first-pass review missing")
+        from datetime import datetime, timezone
+        spot = json.loads(BENCHR_SPOT.read_text(encoding="utf-8")) if BENCHR_SPOT.exists() else {}
+        agrees = (int(payload.has_fire) == int(first["has_fire"]) and int(payload.has_smoke) == int(first["has_smoke"])
+                  and (payload.flame_type or "unknown") == (first.get("flame_type") or "unknown"))
+        spot[payload.id] = {"has_fire": int(payload.has_fire), "has_smoke": int(payload.has_smoke),
+                            "flame_type": payload.flame_type, "reviewer": payload.reviewer.strip(),
+                            "reviewed_at": datetime.now(timezone.utc).isoformat(),
+                            "first_pass": {k: first.get(k) for k in ("has_fire", "has_smoke", "flame_type")},
+                            "agrees": agrees, "notes": payload.notes}
+        BENCHR_SPOT.write_text(json.dumps(spot, indent=2), encoding="utf-8")
+        agree = sum(1 for v in spot.values() if v.get("agrees"))
+        return {"saved": payload.id, "spot_reviewed": len(spot), "required": 100,
+                "agreement_rate": round(agree / len(spot), 4)}
+
+    @app.get("/api/benchR/export")
+    def benchR_export() -> FileResponse:
+        p = BENCHR_DIR / "labels.csv"
+        if not p.exists():
+            raise HTTPException(404, "bench_R not locked yet")
+        return FileResponse(p, filename="bench_R_labels.csv")
+
+    @app.post("/api/benchR/lock")
+    def benchR_lock(reviewer: str = Query(...)) -> dict:
+        if BENCHR_LOCK.exists():
+            raise HTTPException(409, "bench_R already locked")
+        rows = _benchR_rows()
+        if len(rows) != 1000:
+            raise HTTPException(422, f"expected 1000 images, found {len(rows)}")
+        unreviewed = [r["id"] for r in rows if r.get("review_status") != "reviewed"]
+        if unreviewed:
+            raise HTTPException(422, f"{len(unreviewed)} images still pending review")
+        spot = json.loads(BENCHR_SPOT.read_text(encoding="utf-8")) if BENCHR_SPOT.exists() else {}
+        if len(spot) < 100:
+            raise HTTPException(422, f"second-pass spot check incomplete ({len(spot)}/100)")
+        comp = _benchR_comp(rows)
+        expected = {"fire_only": 320, "smoke_only": 100, "both": 80, "negative": 500}
+        if any(comp[k] != v for k, v in expected.items()):
+            raise HTTPException(422, f"composition mismatch: {comp}; expected {expected}")
+        types = comp["fire_only_types"]
+        if types.get("uncontrolled", 0) != 200 or types.get("controlled", 0) != 80 or \
+           types.get("spark", 0) + types.get("screen", 0) != 40 or types.get("unknown", 0) != 0:
+            raise HTTPException(422, f"fire_only flame_type composition mismatch: {types}; expected 200 uncontrolled, 80 controlled, 40 spark/screen, 0 unknown")
+        short = {k: v for k, v in comp["negative_families"].items() if v < 15}
+        if short or sum(comp["negative_families"].values()) != 500:
+            raise HTTPException(422, f"negative family coverage invalid: {comp['negative_families']}")
+        return _write_benchR_labels(rows, reviewer)
 
     @app.get("/api/testsets")
     def testsets() -> dict:

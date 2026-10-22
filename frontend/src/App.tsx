@@ -3,6 +3,7 @@ import { VideoSessionProvider } from "./VideoSession";
 import LiveView from "./pages/LiveView";
 import TestBench from "./pages/TestBench";
 import BenchReview from "./pages/BenchReview";
+import BenchRReview from "./pages/BenchRReview";
 import Benchmark from "./pages/Benchmark";
 import VideoTest from "./pages/VideoTest";
 import ReviewQueue from "./pages/ReviewQueue";
@@ -12,6 +13,7 @@ const links = [
   { to: "/", label: "Live view" },
   { to: "/testbench", label: "Test bench" },
   { to: "/bench-review", label: "Bench review" },
+  { to: "/bench-R-review", label: "Reference bench" },
   { to: "/benchmark", label: "Run benchmark" },
   { to: "/video", label: "Video test" },
   { to: "/review", label: "Review queue" },
@@ -50,6 +52,7 @@ export default function App() {
           <Route path="/" element={<LiveView />} />
           <Route path="/testbench" element={<TestBench />} />
           <Route path="/bench-review" element={<BenchReview />} />
+          <Route path="/bench-R-review" element={<BenchRReview />} />
           <Route path="/benchmark" element={<Benchmark />} />
           <Route path="/video" element={<VideoTest />} />
           <Route path="/review" element={<ReviewQueue />} />

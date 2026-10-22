@@ -33,6 +33,14 @@ export const api = {
     request<any>("/api/bench100/review", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }),
   benchLock: (reviewer: string, allowOverride = false) =>
     request<any>(`/api/bench100/lock?reviewer=${encodeURIComponent(reviewer)}&allow_composition_override=${allowOverride}`, { method: "POST" }),
+  benchR: () => request<any>("/api/benchR"),
+  benchRReview: (payload: Record<string, unknown>) =>
+    request<any>("/api/benchR/review", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }),
+  benchRSpotcheck: () => request<any>("/api/benchR/spotcheck"),
+  benchRSpotSave: (payload: Record<string, unknown>) =>
+    request<any>("/api/benchR/spotcheck", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }),
+  benchRLock: (reviewer: string) =>
+    request<any>(`/api/benchR/lock?reviewer=${encodeURIComponent(reviewer)}`, { method: "POST" }),
   firePolicy: () => request<any>("/api/policy/fire-types"),
   setFirePolicy: (include: string[], exclude: string[]) =>
     request<any>("/api/policy/fire-types", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ include, exclude }) }),

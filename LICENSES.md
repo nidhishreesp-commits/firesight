@@ -34,3 +34,6 @@ Ultralytics (AGPL-3.0 by default — **check your Ultralytics license for commer
 deployment**), PyTorch (BSD-3), ONNX Runtime (MIT), OpenCV (Apache-2.0),
 FastAPI (MIT), React (MIT), Tailwind CSS (MIT), ByteTrack implementation via
 Ultralytics.
+
+| Pyronear pyro-sdis | HF pyronear/pyro-sdis | Apache-2.0 | Phase B smoke positives / validation | 12,378 images, 1.32 GB; **not used in bench_R** to avoid Pyronear-model training overlap. |
+| bench_R candidates | Wikimedia Commons API | CC0 / PD / CC BY / CC BY-SA per image | bench_R reference images | Per-image title/author/URL in ench_R/index.json; images are local and git-ignored. |
