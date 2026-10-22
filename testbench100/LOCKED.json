@@ -1,0 +1,27 @@
+{
+  "locked": true,
+  "reviewer": "Nidhishree S P",
+  "locked_at": "2026-10-22T10:11:21.534877+00:00",
+  "manifest_sha256": "b20915b0e21cb12fd60c7a063dd422774b2b7dcbef0156393d97ba82f4a7366d",
+  "images": 100,
+  "composition": {
+    "fire_only": 22,
+    "smoke_only": 19,
+    "both": 21,
+    "negative": 38,
+    "negative_families": {
+      "light_colour": 13,
+      "smoke_like": 13,
+      "camera_artifact": 12
+    },
+    "reviewed": 100
+  },
+  "composition_override": true,
+  "expected_composition": {
+    "fire_only": 25,
+    "smoke_only": 15,
+    "both": 10,
+    "negative": 50
+  },
+  "labels_csv_sha256": "4b36c7e249643efbc1c98f13fb54ef1e5f96e5210928fc5a68ef00d4eed6c0fd"
+}
