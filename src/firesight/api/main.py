@@ -34,11 +34,13 @@ MANIFESTS = {
     "test_mini": "data/splits/test_mini.jsonl",
     "val_bench": "data/splits/val_bench.jsonl",
     "external_cctv_nc": "data/splits/external_cctv_nc.jsonl",
+    "testbench100": "testbench100/manifest.jsonl",
 }
 PREDICTION_CACHES = {
     "test_bench": "artifacts/benchmark_stage1/predictions/ssprod_best_fire_v3_test.jsonl",
     "test_mini": "artifacts/benchmark_mini/predictions/ssprod_best_fire_v3_test.jsonl",
     "external_cctv_nc": "artifacts/external_cctv_nc/predictions/ssprod_best_fire_v3.jsonl",
+    "testbench100": "bench_results/predictions/v3_bench.jsonl",
 }
 
 

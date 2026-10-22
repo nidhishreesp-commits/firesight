@@ -278,3 +278,103 @@ This system is a **supplement**, not a replacement, for certified fire alarm
 systems. It must run in shadow mode alongside existing alarms before it is
 trusted; operators review alerts; no automated suppression or siren actuation
 without human confirmation. See `README.md` §Production readiness.
+
+
+## 10. Phase 3 — locked testbench100 (2026-10-22)
+
+The 100-image bench is locked (	estbench100/LOCKED.json, reviewer
+Nidhishree S P, SHA-256 20915b0…). The reviewer changed the composition to
+**62 positives / 38 negatives** (22 fire-only, 19 smoke-only, 21 both), mainly
+by reclassifying the 12 controlled-flame images as positives. The lock records
+composition_override: true; there are **no fire-adjacent hard negatives** in
+the locked bench. This is a material limitation when reading the numbers.
+
+Thresholds were calibrated on al_mini + val_flames only: 240 ordinary
+val images + 18 CC-licensed controlled flames + 60 TEST negatives + 8
+construction-dust frames. The bench was never used for tuning. The table below
+is the history; ench_results/SUMMARY.md has all runs.
+
+| Model | Val target FPR | Accuracy (95% Wilson CI) | Recall | Specificity | F1 |
+|---|---:|---|---:|---:|---:|
+| **ensemble v3+v4 union** | 5% | **0.870 (0.790–0.922)** | 0.806 | **0.974** | 0.885 |
+| v3 | 5% | 0.850 (0.767–0.907) | 0.790 | 0.947 | 0.867 |
+| v4 | 5% | 0.830 (0.745–0.891) | 0.790 | 0.895 | 0.852 |
+| cascade v3 + verifier | 1% | 0.850 (0.767–0.907) | 0.774 | 0.974 | 0.865 |
+| FireViewer RT-DETRv2-R50 | 1% | 0.650 (0.553–0.736) | 0.435 | 1.000 | 0.607 |
+| Pyronear yolo11s sensitive | 1% | 0.360 (0.273–0.458) | 0.016 | 0.921 | 0.030 |
+| fire.pt (YOLO11s) | 5% | 0.550 (0.452–0.644) | 0.355 | 0.868 | 0.494 |
+
+**Best measured configuration:** v3+v4 union, calibrated at 5% val image-level
+false-alarm rate:
+
+- accuracy **87.0%** (95% CI 79.0–92.2%)
+- recall **80.6%** (95% CI 69.1–88.6%)
+- precision **98.0%**
+- specificity **97.4%** (95% CI 86.5–99.5%)
+- per class: fire recall 81.4%, smoke recall 57.5%
+- box AP50: fire 0.598, smoke 0.643; mIoU (matched) fire 0.778, smoke 0.886
+- runtime: CPU, ONNX v3+v4 union
+
+**90% and 95% image-level accuracy were not reached.** Even the lower bound of
+the best 95% CI is 79.0%, far below the requested 90% lower bound. The
+hard-negative specificity gate (≥95%) *is* met by this configuration (97.4%),
+but accuracy is not.
+
+### Remaining errors (13)
+
+ench_results/20261022_163219_ensemble_v3_v4_union/false_positives.jpg and
+alse_negatives.jpg; machine-readable list in the run JSON.
+
+- **10 hard positives missed:** candles, lighters, gas flame, campfires,
+  welding/grinding sparks, one welding frame and one fireplace. The models were
+  not trained to treat these controlled flames as positives; v3/v4 often emit no
+  box even at confidence 0.01.
+- **3 smoke misses:** one sunset frame, one other_hard smoke frame, one small
+  distant smoke (WEB11696 / AoF08219 thresholds).
+- **1 false positive:** orange PPE (traffic-worker clothing) classified as
+  smoke at 0.41 on the light/colour family.
+- Accuracy by difficulty: easy 25/25, medium 19/21, **hard 6/16**.
+  Camera-artifact and smoke-like negatives were 100% clean in this sample.
+
+### Construction / plaster dust (user-requested)
+
+Added hard_negatives/sources/construction_dust/images (16 frames from local
+construction footage, proprietary internal). v3 false-alarmed on **1/16**
+frames: ppe_2_3s.jpg → smoke 0.48. These frames are now in the calibration
+negatives and the catalog; they must be included in the next verifier/retrain.
+
+### Iteration log / why gains stopped
+
+1. v3 at 1% val FPR: 81% accuracy; lowering to 5% gave 85%.
+2. v4: 84% at 1%, 83% at 5% — more fire recall, more FPs.
+3. Cascade with verifier: 85%; the verifier *drops* controlled flames because it
+   was trained with candles/campfires as lookalikes, so it is counter-productive
+   for the reviewer's current policy.
+4. RT-DETRv2/Pyronear: not competitive on this mixed indoor/outdoor bench
+   (RT-DETR 65%, Pyronear 36%).
+5. v3+v4 union: 87% at 5% FPR; 87% at 10% FPR with more recall but specificity
+   falls to 89.5%.
+6. Adding fire.pt to the union did not help (83%), because its controlled-flame
+   wins came with too many false positives.
+
+**Next root-cause fix (not done):** retrain the verifier with controlled flames
+as fire positives and construction dust as lookalike, then re-run the cascade;
+and/or fine-tune a detector with candle/campfire/welding positives that are
+**not** in the bench. This needs a GPU and new labelled positives; the current
+CPU-only threshold/ensemble lever has stopped yielding gains.
+
+### External models
+
+- select-ai/fire-smoke-detection: no public weights found. Not evaluated.
+- e1250/safety_detection: no declared licence; not downloaded without approval.
+- pyronear/temporal-model: sequence model; not applicable to the single-image
+  bench. It remains a candidate for the 30+ video clips.
+
+### Repro
+
+`powershell
+python scripts/build_val_flames.py
+python scripts/run_bench.py --model ensemble_v3_v4_union --target-fpr 0.05
+python scripts/summarize_bench.py
+`
+

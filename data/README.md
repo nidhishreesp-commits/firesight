@@ -59,3 +59,7 @@ Input 117,325 → kept 75,637 (39,393 exact-duplicate drops, 2,295 test drops,
 crops mined **only from TRAIN non-fire images and non-fire video**. TEST images
 are never used for mining. `data/clips/clips.jsonl` defines the fire/smoke and
 non-fire video clips with verified onset times.
+
+## al_flames (threshold calibration only)
+
+data/splits/val_flames.jsonl = 18 CC-licensed controlled-flame images (candles, campfires, welding, fireworks, fireplaces, gas flames) + 60 TEST negatives not in the bench + 8 construction/plaster-dust frames. It is used only to calibrate thresholds for the locked bench; it is never used to train or evaluate 	estbench100.

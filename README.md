@@ -87,6 +87,28 @@ Wikimedia attribution: `hard_negatives/sources/wikimedia/attribution.jsonl`.
 The leakage check is exhaustive for pHash over train/val and sampled for CLIP
 embeddings; results are in `testbench100/LEAKAGE_CHECK.json`.
 
+## Locked bench results (Phase 3)
+
+The bench is locked with reviewer **Nidhishree S P** and a composition override
+of **62 positives / 38 negatives** (the reviewer reclassified controlled flames
+as positives). Thresholds were calibrated on al_mini + val_flames only.
+
+Best measured configuration so far: **v3+v4 union at a 5% val false-alarm
+target** — accuracy **87.0% (95% CI 79.0–92.2%)**, recall 80.6%, precision
+98.0%, specificity 97.4%. **90%/95% were not reached.** Full history:
+ench_results/SUMMARY.md, galleries in
+ench_results/<run>/false_positives.jpg / alse_negatives.jpg.
+
+`powershell
+python scripts/build_val_flames.py
+python scripts/run_bench.py --model ensemble_v3_v4_union --target-fpr 0.05
+python scripts/summarize_bench.py
+`
+
+Construction/plaster dust is now an explicit hard-negative family
+(hard_negatives/sources/construction_dust); v3 false-alarmed on 1/16 frames
+(ppe_2_3s.jpg, smoke 0.48).
+
 ## False-alarm reduction
 
 1. **Hard-negative mining** — `scripts/mine_hard_negatives.py` (TRAIN non-fire

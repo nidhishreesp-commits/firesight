@@ -119,3 +119,21 @@ bench (still useful for verifier training).
 - The CLIP inventory is noisy; counts are for sourcing only.
 - The bench is 100 images, so 95% accuracy has a wide Wilson interval. Phase 5
   grows it to 500+.
+
+### Construction / plaster dust (added after review)
+
+| Category | Count | Source | Licence | Notes |
+|---|---:|---|---|---|
+| construction_site_dust_plaster | 16 frames | local Sample_videos/ppe_1..4 | proprietary internal | hard_negatives/sources/construction_dust/images |
+| controlled-flame validation set | 18 images | Wikimedia Commons | CC0 / PD / CC BY / CC BY-SA | hard_negatives/sources/val_flames; used only for threshold calibration, never training or bench |
+
+Confirmed false alarm: est_fire_v3 fired smoke 0.48 on
+ppe_2_3s.jpg (workers + sand/plaster pile); 15/16 construction frames were
+clean. This is now an explicit hard-negative family for retraining and is
+included in the calibration negatives (data/splits/val_flames.jsonl).
+
+**Reviewer note:** the locked bench uses an explicit composition override
+62 positives / 38 negatives because the reviewer reclassified the 12
+controlled-flame images as positives. The bench therefore has **no
+fire-adjacent hard negatives**. That is recorded in 	estbench100/LOCKED.json
+and must be considered when reading the 87% accuracy.

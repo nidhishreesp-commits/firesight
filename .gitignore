@@ -31,3 +31,6 @@ data/verifier/
 
 data/yolo/
 data/yolo_retrain/
+
+bench_results/predictions/
+bench_results/*/errors/

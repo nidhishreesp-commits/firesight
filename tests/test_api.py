@@ -54,6 +54,8 @@ def test_bench100_has_100_images_and_lock_is_guarded(client):
     assert r.status_code == 200
     body = r.json()
     assert len(body["images"]) == 100
-    assert body["locked"] is False
-    lock = client.post("/api/bench100/lock?reviewer=pytest")
-    assert lock.status_code in (409, 422)
+    if body["locked"]:
+        assert body["lock"]["manifest_sha256"]
+    else:
+        lock = client.post("/api/bench100/lock?reviewer=pytest")
+        assert lock.status_code in (409, 422)

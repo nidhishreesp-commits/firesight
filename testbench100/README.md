@@ -62,3 +62,10 @@ D-Fire (CC0 Kaggle mirror / upstream per-source terms), FASDD_CV (CC BY 4.0),
 Wikimedia Commons (CC0 / Public Domain / CC BY / CC BY-SA; per-image author and
 URL in ../hard_negatives/sources/wikimedia/attribution.jsonl and in index.json).
 Synthetic rain images are derived from TEST negatives and inherit their licence.
+
+## Lock status
+
+LOCKED by Nidhishree S P on 2026-10-22 (SHA-256 20915b0e21c…).
+Composition override: **62 positives / 38 negatives** (22 fire-only, 19 smoke-only,
+21 both) because the reviewer reclassified controlled flames as positives.
+There are no fire-adjacent hard negatives. See LOCKED.json.

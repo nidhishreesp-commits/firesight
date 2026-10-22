@@ -1,0 +1,1775 @@
+{
+  "model": "fire_pt",
+  "family": "YOLO11s",
+  "license": "proprietary (SmartSight)",
+  "bench_locked_sha256": "b20915b0e21cb12fd60c7a063dd422774b2b7dcbef0156393d97ba82f4a7366d",
+  "calibrated_on": "data/splits/val_mini.jsonl",
+  "target_fpr": 0.01,
+  "thresholds": {
+    "fire": 0.61,
+    "smoke": 0.55
+  },
+  "bench_size": 100,
+  "fire": {
+    "n": 100,
+    "tp": 11,
+    "fp": 0,
+    "tn": 57,
+    "fn": 32,
+    "accuracy": 0.68,
+    "accuracy_95ci": [
+      0.5833719774632081,
+      0.7633098918454312
+    ],
+    "precision": 1.0,
+    "precision_95ci": [
+      0.7411599827511859,
+      1.0
+    ],
+    "recall": 0.255814,
+    "recall_95ci": [
+      0.14929365877065542,
+      0.40238689868254857
+    ],
+    "specificity": 1.0,
+    "specificity_95ci": [
+      0.936858991216536,
+      0.9999999999999999
+    ],
+    "f1": 0.407407,
+    "zero_event_upper_95": 0.05263157894736842
+  },
+  "smoke": {
+    "n": 100,
+    "tp": 6,
+    "fp": 2,
+    "tn": 58,
+    "fn": 34,
+    "accuracy": 0.64,
+    "accuracy_95ci": [
+      0.542352199811621,
+      0.7272892540950986
+    ],
+    "precision": 0.75,
+    "precision_95ci": [
+      0.40926987910258916,
+      0.9285223111419724
+    ],
+    "recall": 0.15,
+    "recall_95ci": [
+      0.07061091708507435,
+      0.2907262603902003
+    ],
+    "specificity": 0.966667,
+    "specificity_95ci": [
+      0.8863601247107462,
+      0.9908108735098498
+    ],
+    "f1": 0.25,
+    "zero_event_upper_95": null
+  },
+  "combined": {
+    "n": 100,
+    "tp": 17,
+    "fp": 2,
+    "tn": 36,
+    "fn": 45,
+    "accuracy": 0.53,
+    "accuracy_95ci": [
+      0.4328868313724773,
+      0.6248934801789626
+    ],
+    "precision": 0.894737,
+    "precision_95ci": [
+      0.686054495051583,
+      0.9706420586049034
+    ],
+    "recall": 0.274194,
+    "recall_95ci": [
+      0.17880918599092133,
+      0.39592775843327255
+    ],
+    "specificity": 0.947368,
+    "specificity_95ci": [
+      0.8271423311893115,
+      0.9854460975514631
+    ],
+    "f1": 0.419753,
+    "zero_event_upper_95": null
+  },
+  "box_ap": {
+    "fire": {
+      "gt_boxes": 69,
+      "ap50": 0.295767,
+      "ap75": 0.065568,
+      "ap50_95": 0.116606
+    },
+    "smoke": {
+      "gt_boxes": 43,
+      "ap50": 0.252435,
+      "ap75": 0.126746,
+      "ap50_95": 0.131864
+    }
+  },
+  "mean_iou": {
+    "fire": {
+      "gt_boxes": 69,
+      "matched_iou50": 5,
+      "recall_iou50": 0.072464,
+      "mean_iou_all_gt": 0.084166,
+      "mean_iou_matched": 0.814627
+    },
+    "smoke": {
+      "gt_boxes": 43,
+      "matched_iou50": 5,
+      "recall_iou50": 0.116279,
+      "mean_iou_all_gt": 0.094663,
+      "mean_iou_matched": 0.81181
+    }
+  },
+  "by_group": {
+    "camera_artifact": {
+      "n": 12,
+      "correct": 12,
+      "accuracy": 1.0
+    },
+    "light_colour": {
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "positive:easy": {
+      "n": 25,
+      "correct": 6,
+      "accuracy": 0.24
+    },
+    "positive:hard": {
+      "n": 16,
+      "correct": 7,
+      "accuracy": 0.4375
+    },
+    "positive:medium": {
+      "n": 21,
+      "correct": 4,
+      "accuracy": 0.190476
+    },
+    "smoke_like": {
+      "n": 13,
+      "correct": 11,
+      "accuracy": 0.846154
+    }
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "combined_accuracy": 0.67,
+      "combined_recall": 0.935484,
+      "combined_fpr": 0.29,
+      "fire_recall": 0.930233,
+      "smoke_recall": 0.65
+    },
+    {
+      "threshold": 0.1,
+      "combined_accuracy": 0.73,
+      "combined_recall": 0.935484,
+      "combined_fpr": 0.23,
+      "fire_recall": 0.906977,
+      "smoke_recall": 0.6
+    },
+    {
+      "threshold": 0.15,
+      "combined_accuracy": 0.74,
+      "combined_recall": 0.870968,
+      "combined_fpr": 0.18,
+      "fire_recall": 0.860465,
+      "smoke_recall": 0.525
+    },
+    {
+      "threshold": 0.2,
+      "combined_accuracy": 0.78,
+      "combined_recall": 0.83871,
+      "combined_fpr": 0.12,
+      "fire_recall": 0.837209,
+      "smoke_recall": 0.475
+    },
+    {
+      "threshold": 0.25,
+      "combined_accuracy": 0.77,
+      "combined_recall": 0.774194,
+      "combined_fpr": 0.09,
+      "fire_recall": 0.744186,
+      "smoke_recall": 0.4
+    },
+    {
+      "threshold": 0.3,
+      "combined_accuracy": 0.73,
+      "combined_recall": 0.66129,
+      "combined_fpr": 0.06,
+      "fire_recall": 0.581395,
+      "smoke_recall": 0.375
+    },
+    {
+      "threshold": 0.35,
+      "combined_accuracy": 0.69,
+      "combined_recall": 0.596774,
+      "combined_fpr": 0.06,
+      "fire_recall": 0.534884,
+      "smoke_recall": 0.35
+    },
+    {
+      "threshold": 0.4,
+      "combined_accuracy": 0.63,
+      "combined_recall": 0.5,
+      "combined_fpr": 0.06,
+      "fire_recall": 0.465116,
+      "smoke_recall": 0.25
+    },
+    {
+      "threshold": 0.45,
+      "combined_accuracy": 0.62,
+      "combined_recall": 0.467742,
+      "combined_fpr": 0.05,
+      "fire_recall": 0.395349,
+      "smoke_recall": 0.25
+    },
+    {
+      "threshold": 0.5,
+      "combined_accuracy": 0.58,
+      "combined_recall": 0.370968,
+      "combined_fpr": 0.03,
+      "fire_recall": 0.27907,
+      "smoke_recall": 0.225
+    },
+    {
+      "threshold": 0.55,
+      "combined_accuracy": 0.53,
+      "combined_recall": 0.274194,
+      "combined_fpr": 0.02,
+      "fire_recall": 0.255814,
+      "smoke_recall": 0.15
+    },
+    {
+      "threshold": 0.6,
+      "combined_accuracy": 0.53,
+      "combined_recall": 0.258065,
+      "combined_fpr": 0.01,
+      "fire_recall": 0.255814,
+      "smoke_recall": 0.125
+    },
+    {
+      "threshold": 0.65,
+      "combined_accuracy": 0.46,
+      "combined_recall": 0.145161,
+      "combined_fpr": 0.01,
+      "fire_recall": 0.139535,
+      "smoke_recall": 0.075
+    },
+    {
+      "threshold": 0.7,
+      "combined_accuracy": 0.43,
+      "combined_recall": 0.096774,
+      "combined_fpr": 0.01,
+      "fire_recall": 0.093023,
+      "smoke_recall": 0.05
+    },
+    {
+      "threshold": 0.75,
+      "combined_accuracy": 0.4,
+      "combined_recall": 0.032258,
+      "combined_fpr": 0.0,
+      "fire_recall": 0.023256,
+      "smoke_recall": 0.025
+    },
+    {
+      "threshold": 0.8,
+      "combined_accuracy": 0.38,
+      "combined_recall": 0.0,
+      "combined_fpr": 0.0,
+      "fire_recall": 0.0,
+      "smoke_recall": 0.0
+    },
+    {
+      "threshold": 0.85,
+      "combined_accuracy": 0.38,
+      "combined_recall": 0.0,
+      "combined_fpr": 0.0,
+      "fire_recall": 0.0,
+      "smoke_recall": 0.0
+    },
+    {
+      "threshold": 0.9,
+      "combined_accuracy": 0.38,
+      "combined_recall": 0.0,
+      "combined_fpr": 0.0,
+      "fire_recall": 0.0,
+      "smoke_recall": 0.0
+    },
+    {
+      "threshold": 0.95,
+      "combined_accuracy": 0.38,
+      "combined_recall": 0.0,
+      "combined_fpr": 0.0,
+      "fire_recall": 0.0,
+      "smoke_recall": 0.0
+    }
+  ],
+  "errors": [
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11091",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            217.15346309218057,
+            215.03032599812198,
+            280.1534691003293,
+            271.0303307453012
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            27.153444972366806,
+            5.484852302114893,
+            639.1535033372405,
+            326.4848795136243
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11091.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10528",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            8.153443160385432,
+            231.50571115330263,
+            606.153500190115,
+            339.5057203085768
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            502.15349027190115,
+            6.505692079814663,
+            637.1535031465056,
+            179.50570674520762
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            123.15345412764111,
+            45.50569538588591,
+            192.15346070799453,
+            89.50569911581243
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            2.153442588180789,
+            5.384476164455513,
+            487.15348884138956,
+            222.384494559775
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10528.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10676",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            173.00000000000006,
+            277.0,
+            311.0,
+            298.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            328.00000000000006,
+            254.99999999999997,
+            433.00000000000006,
+            286.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            8.999999999999986,
+            106.00000000000003,
+            636.0,
+            297.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            8.153563685983183,
+            4.172486767991193,
+            639.1629514141484,
+            216.17934269426735
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10676.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11742",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            334.8471932540106,
+            85.68747959877258,
+            964.0860181391186,
+            521.5382088156572
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11742.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10478",
+      "family": null,
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            111.00000000000001,
+            87.00000000000003,
+            443.00000000000006,
+            639.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            136.41539248954095,
+            253.02894385209112,
+            404.4558750310005,
+            586.3613388074959
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10478.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10592",
+      "family": null,
+      "category": "fire",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            10.000000000000021,
+            352.99999999999994,
+            569.0,
+            692.9999999999999
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            643.9999999999999,
+            356.0,
+            1843.0,
+            818.9999999999999
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10592.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:PublicDataset01329",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            161.0,
+            8.00000000000001,
+            385.0,
+            336.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            6.153442969650552,
+            9.081444556464687,
+            427.15348311934315,
+            344.08147295476897
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_PublicDataset01329.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10820",
+      "family": null,
+      "category": "fire",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            120.00000000000001,
+            12.999999999999993,
+            202.0,
+            292.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10820.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10491",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            138.00000000000003,
+            302.0,
+            441.0,
+            429.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            445.00000000000006,
+            28.99999999999998,
+            1284.0000000000002,
+            440.99999999999994
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            296.2514861933777,
+            19.40501524438704,
+            823.0275374304911,
+            421.3685932362311
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10491.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10040",
+      "family": null,
+      "category": "sunset_sunrise",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            1061.9405473856834,
+            406.52462428149175,
+            1218.5125297266297,
+            496.41068219738094
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10040.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10512",
+      "family": null,
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            638.0,
+            259.0,
+            703.0,
+            349.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            709.0,
+            306.00000000000006,
+            748.0000000000001,
+            317.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            765.0,
+            328.0,
+            780.0,
+            350.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            787.0000000000002,
+            272.0,
+            839.0,
+            335.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            278.83715406341753,
+            213.25972532246226,
+            398.6823751145122,
+            296.3801659758652
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            578.4502066911543,
+            205.52759130819226,
+            951.5167818985944,
+            404.6300421756459
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            876.1302718825832,
+            35.420642994251274,
+            1048.1661537139935,
+            354.3711710828906
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10512.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11729",
+      "family": null,
+      "category": "other_hard",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            295.20811378114087,
+            403.54636806731884,
+            402.7425577671638,
+            494.53817705323087
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11729.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10905",
+      "family": null,
+      "category": "fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            305.0,
+            180.0,
+            355.0,
+            223.00000000000003
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            226.0,
+            217.0,
+            256.0,
+            239.00000000000003
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10905.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10516",
+      "family": null,
+      "category": "fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            473.00000000000006,
+            6.999999999999995,
+            561.0,
+            111.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            827.0,
+            39.0,
+            891.0000000000001,
+            123.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            1021.0000000000001,
+            89.0,
+            1081.0,
+            152.00000000000003
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10516.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10507",
+      "family": null,
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            452.0,
+            295.0,
+            621.0000000000001,
+            358.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            406.4143248597441,
+            218.00444861463376,
+            628.7078800351618,
+            314.65612379300933
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10507.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10825",
+      "family": null,
+      "category": "fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            249.00000000000003,
+            135.0,
+            309.0,
+            191.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10825.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10567",
+      "family": null,
+      "category": "fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            110.0,
+            94.99999999999999,
+            176.0,
+            128.99999999999997
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10567.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10826",
+      "family": null,
+      "category": "fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            274.0,
+            72.0,
+            342.0,
+            120.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            223.0,
+            200.0,
+            249.00000000000003,
+            219.00000000000003
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            291.00000000000006,
+            175.00000000000003,
+            375.00000000000006,
+            239.00000000000003
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            524.0,
+            199.0,
+            573.0,
+            239.00000000000003
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            417.0,
+            210.0,
+            479.00000000000006,
+            253.00000000000003
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            291.0,
+            127.00000000000001,
+            475.00000000000006,
+            205.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            232.0,
+            228.0,
+            249.00000000000003,
+            247.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10826.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10847",
+      "family": null,
+      "category": "fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            145.0,
+            38.00000000000001,
+            195.00000000000003,
+            140.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10847.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11230",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            1.9999999999999574,
+            0.0,
+            1275.0,
+            718.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11230.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10802",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            20.0,
+            7.000000000000015,
+            1256.0,
+            701.0000000000001
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10802.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11233",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            3.9999999999999925,
+            6.999999999999984,
+            597.0000000000001,
+            383.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11233.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11570",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            6.999999999999995,
+            8.999999999999988,
+            353.0,
+            354.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11570.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11560",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            8.999999999999986,
+            7.999999999999991,
+            627.0,
+            351.00000000000006
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11560.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11248",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            16.999999999999996,
+            10.000000000000021,
+            770.0,
+            520.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11248.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11696",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            855.0,
+            463.99999999999994,
+            888.0000000000001,
+            487.99999999999994
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11696.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:AoF08212",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            904.0,
+            289.0,
+            933.0000000000001,
+            314.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_AoF08212.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:AoF08219",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            660.0,
+            280.0,
+            696.0,
+            301.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_AoF08219.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:AoF08162",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            519.0,
+            250.0,
+            544.0,
+            283.00000000000006
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_AoF08162.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "fasdd:test:smoke_CV001905_jpg.rf.8b32adce5c345a313a611a5aa70f94a7",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            217.99999999999997,
+            0.6666666666666776,
+            349.3333333333333,
+            182.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\fasdd_test_smoke_CV001905_jpg.rf.8b32adce5c345a313a611a5aa70f94a7.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "fasdd:test:smoke_CV002718_jpg.rf.183913447b543affe6a7a85fd9bb5352",
+      "family": null,
+      "category": "smoke",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            265.33333333333337,
+            0.6666666666666976,
+            420.66666666666663,
+            185.99999999999997
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\fasdd_test_smoke_CV002718_jpg.rf.183913447b543affe6a7a85fd9bb5352.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "fasdd:test:bothFireAndSmoke_CV000608_jpg.rf.96793f79ac9c06ffec844238c454722a",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            271.22676579925655,
+            190.3345724907063,
+            340.2230483271376,
+            302.1561338289963
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            2.0000000000000284,
+            2.0000000000000053,
+            640.0,
+            447.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\fasdd_test_bothFireAndSmoke_CV000608_jpg.rf.96793f79ac9c06ffec844238c454722a.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10870",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            412.0,
+            384.00000000000006,
+            853.0,
+            634.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            5.0,
+            4.999999999999982,
+            1275.0,
+            714.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10870.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10936",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            141.0,
+            495.0,
+            242.00000000000003,
+            573.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            267.0,
+            461.99999999999994,
+            300.0,
+            490.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            364.0,
+            327.0,
+            448.00000000000006,
+            390.99999999999994
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            495.0,
+            400.0,
+            655.0,
+            447.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            679.0,
+            408.0,
+            881.0,
+            459.99999999999994
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            880.0,
+            449.0,
+            920.0,
+            492.0
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            1115.0,
+            541.0000000000001,
+            1133.0,
+            553.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            6.000000000000014,
+            4.999999999999982,
+            1273.0,
+            711.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10936.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10871",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            187.00000000000003,
+            347.0,
+            912.0,
+            717.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            7.999999999999972,
+            4.999999999999982,
+            1266.0,
+            712.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10871.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "fasdd:test:bothFireAndSmoke_CV017156_jpg.rf.10d7238b1dfd79ff0937e0c4268d4ef6",
+      "family": null,
+      "category": "both",
+      "difficulty": "easy",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            25.351657235246563,
+            126.75828617623284,
+            106.5804365400162,
+            204.36540016168152
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            208.5044462409054,
+            94.68067906224739,
+            525.1414713015361,
+            299.5634599838319
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            5.173807599029914,
+            3.1042845594179145,
+            631.2045270816492,
+            299.0460792239289
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\fasdd_test_bothFireAndSmoke_CV017156_jpg.rf.10d7238b1dfd79ff0937e0c4268d4ef6.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "fasdd:test:bothFireAndSmoke_CV000044_jpg.rf.f26d407d5f75d8c55e4d3eb76c4bd5aa",
+      "family": null,
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            220.0,
+            230.00000000000003,
+            247.00000000000003,
+            255.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            222.5,
+            180.0,
+            252.99999999999997,
+            229.49999999999997
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\fasdd_test_bothFireAndSmoke_CV000044_jpg.rf.f26d407d5f75d8c55e4d3eb76c4bd5aa.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:PublicDataset01165",
+      "family": null,
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            403.0,
+            119.00000000000001,
+            466.00000000000006,
+            145.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            353.0,
+            122.0,
+            399.0,
+            144.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_PublicDataset01165.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB11719",
+      "family": null,
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            361.0,
+            378.0,
+            429.00000000000006,
+            459.99999999999994
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            230.99999999999997,
+            295.0,
+            510.0,
+            439.00000000000006
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB11719.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "dfire:test:WEB10602",
+      "family": null,
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            399.0,
+            190.00000000000003,
+            443.99999999999994,
+            226.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            375.0,
+            38.99999999999999,
+            556.0,
+            203.0
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            522.0,
+            192.99999999999997,
+            598.0,
+            234.0
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\dfire_test_WEB10602.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "dfire:test:WEB10139",
+      "family": "smoke_like",
+      "category": "clouds",
+      "difficulty": "hard",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.7271,
+          "box": [
+            32.9,
+            87.73,
+            880.54,
+            743.28
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_positive\\dfire_test_WEB10139.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "fasdd:test:neitherFireNorSmoke_CV006833_jpg.rf.4910fe452ad0ccc5d13fdd2f788d64de",
+      "family": "smoke_like",
+      "category": "dust_snow",
+      "difficulty": "hard",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.5987,
+          "box": [
+            0.46,
+            0.0,
+            629.73,
+            347.0
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_positive\\fasdd_test_neitherFireNorSmoke_CV006833_jpg.rf.4910fe452ad0ccc5d13fdd2f788d64de.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "wikimedia:Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_",
+      "family": "fire_adjacent",
+      "category": "gas_stove",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            113.63955559836126,
+            241.13360636839468,
+            1098.361813309991,
+            671.6738629879785
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\wikimedia_Chile_-_Cocham_climbing_98_-_gas_flame_7019918795_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "wikimedia:Campfire_79586115_",
+      "family": "fire_adjacent",
+      "category": "campfire",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            43.993669012906466,
+            203.44837638388327,
+            1206.4614078032682,
+            1817.4320154188215
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\wikimedia_Campfire_79586115_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "wikimedia:A_welder_who_works_in_the_round-house_at_the_Chicago_and_Nor",
+      "family": "fire_adjacent",
+      "category": "welding",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            38.45111800390651,
+            53.87233649276518,
+            724.6609128825287,
+            612.5190190237759
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\wikimedia_A_welder_who_works_in_the_round-house_at_the_Chicago_and_Nor.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "wikimedia:Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445",
+      "family": "fire_adjacent",
+      "category": "welding",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            82.08035573924764,
+            822.3885880892739,
+            1277.1586646160833,
+            1893.3133119844697
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\wikimedia_Causing_sparks_aboard_the_USS_Kearsarge_DVIDS130445.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "wikimedia:1_singapore_national_day_parade_2011_fireworks",
+      "family": "fire_adjacent",
+      "category": "fireworks",
+      "difficulty": "hard",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            519.1307853262434,
+            77.05759651583085,
+            907.9849848958942,
+            635.1888034458902
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\20261022_162023_fire_pt\\errors\\false_negative\\wikimedia_1_singapore_national_day_parade_2011_fireworks.jpg"
+      ]
+    }
+  ],
+  "run_id": "20261022_162023_fire_pt",
+  "run_dir": "bench_results\\20261022_162023_fire_pt",
+  "generated_utc": "2026-10-22T10:50:24Z",
+  "notes": {
+    "threshold_policy": "thresholds selected on val_mini only; bench was not used for tuning",
+    "composition_override": true,
+    "external_models": {
+      "pyronear_temporal": "sequence model; not applicable to single-image bench; evaluate on video clips",
+      "select_ai_fire_smoke": "no public weights found",
+      "e1250_safety_detection": "no declared licence; not downloaded without approval"
+    }
+  }
+}

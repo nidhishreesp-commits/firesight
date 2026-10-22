@@ -31,7 +31,7 @@ export default function TestBench() {
       <div className="flex flex-wrap items-center gap-3">
         <h1 className="text-2xl font-semibold">Test bench</h1>
         <select className="rounded bg-slate-800 px-2 py-1 text-sm" value={testset} onChange={(e) => setTestset(e.target.value)}>
-          {["test_bench", "test_mini", "val_bench", "external_cctv_nc"].map((n) => (
+          {["test_bench", "test_mini", "val_bench", "external_cctv_nc", "testbench100"].map((n) => (
             <option key={n}>{n}</option>
           ))}
         </select>
