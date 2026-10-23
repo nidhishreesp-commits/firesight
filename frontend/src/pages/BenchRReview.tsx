@@ -27,7 +27,7 @@ export default function BenchRReview() {
   const [spot, setSpot] = useState<any>(null);
   const [spotIdx, setSpotIdx] = useState(0);
   const [proposals, setProposals] = useState<any>(null);
-  const [minProposalScore, setMinProposalScore] = useState(0.02);
+  const [minProposalScore, setMinProposalScore] = useState(0.0);
   const [proposed, setProposed] = useState(false);
   const [blind, setBlind] = useState(false);
   const startedAt = useRef<number>(Date.now());
