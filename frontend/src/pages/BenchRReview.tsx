@@ -256,6 +256,9 @@ export default function BenchRReview() {
                    onLoad={(e) => setDims({ w: e.currentTarget.naturalWidth, h: e.currentTarget.naturalHeight })} />
               {dims.w > 0 && dims.h > 0 && (
                 <BoxOverlay width={dims.w} height={dims.h} detections={[]}
+                            gtPrefix={proposed ? "PROPOSED " : "GT "}
+                            gtBorder={proposed ? "border-amber-400" : "border-emerald-400"}
+                            gtBadge={proposed ? "bg-amber-400" : "bg-emerald-500"}
                             groundTruth={[...boxesFire.map((b) => ({ label: "fire", box: b as [number, number, number, number] })),
                                           ...boxesSmoke.map((b) => ({ label: "smoke", box: b as [number, number, number, number] }))]} />
               )}

@@ -4,12 +4,18 @@ export function BoxOverlay({
   width,
   height,
   detections,
-  groundTruth
+  groundTruth,
+  gtPrefix = "GT ",
+  gtBorder = "border-emerald-400",
+  gtBadge = "bg-emerald-500"
 }: {
   width: number;
   height: number;
   detections: Detection[];
   groundTruth: GroundTruth[];
+  gtPrefix?: string;
+  gtBorder?: string;
+  gtBadge?: string;
 }) {
   return (
     <div className="pointer-events-none absolute inset-0">
@@ -18,7 +24,7 @@ export function BoxOverlay({
         return (
           <div
             key={`gt-${i}`}
-            className="absolute border-2 border-emerald-400"
+            className={`absolute border-2 ${gtBorder}`}
             style={{
               left: `${(x1 / width) * 100}%`,
               top: `${(y1 / height) * 100}%`,
@@ -26,7 +32,7 @@ export function BoxOverlay({
               height: `${((y2 - y1) / height) * 100}%`
             }}
           >
-            <span className="absolute -top-5 left-0 bg-emerald-500 px-1 text-[10px] text-black">GT {gt.label}</span>
+            <span className={`absolute -top-5 left-0 px-1 text-[10px] text-black ${gtBadge}`}>{gtPrefix}{gt.label}</span>
           </div>
         );
       })}
