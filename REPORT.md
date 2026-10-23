@@ -500,3 +500,35 @@ categories, flame-type classifier, Phase B positive set (pyro-sdis downloaded;
 3,000 Wikimedia positives not yet collected), GPU training, and the final
 DEV/SEALED evaluation.
 
+
+
+## 13. bench_R pre-annotation (human-reviewed labels remain ground truth)
+
+Independent proposers only; **no evaluated detector was used**:
+
+| Proposer | Licence | Images | Runtime |
+|---|---|---|---:|
+| google/owlv2-base-patch16-ensemble | Apache-2.0 | 498 | 76.2 min CPU |
+| IDEA-Research/grounding-dino-tiny | Apache-2.0 | 100 (stratified) | 15.3 min CPU |
+
+Prompts: fire, flame, candle flame, smoke, sparks. Proposals at low threshold
+0.01, merged per class with weighted box fusion (IoU ≥0.5). Suggested image-level
+labels use 0.05. Coverage of seeded positives: uncontrolled 199/200 (99.5%),
+controlled 80/80, spark/screen 40/40, smoke-only 100/100, both 79/80 (98.8%).
+Negatives were not proposed; they need single-key confirmation.
+
+Bias control: **100 images (60 positives, 40 negatives) are blind** — the UI hides
+proposals and the reviewer labels them from scratch. The separate 100-image
+second-pass spot check excludes blind images. ench_R/PREANNOTATION_REPORT.md
+contains the coverage/runtime table. Correction rate per proposer/category will be
+computed after review and lock; ccepted_as_proposed, edits_made and
+	ime_spent_s are stored per image.
+
+The review UI now pre-fills proposals for non-blind images, marks them
+PROPOSED, supports box drawing/editing, X delete-last-box, score slider, a
+no-proposal counter/jump, and blind badges. Proposals are stored separately in
+ench_R/proposals.json; they are never written into labels.csv until the
+reviewer saves an image.
+
+No evaluated model has been run on bench_R. The 92% / 87% testbench100 numbers
+remain DEV-only, optimistic, and not final.

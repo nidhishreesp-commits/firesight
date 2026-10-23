@@ -37,3 +37,6 @@ Ultralytics.
 
 | Pyronear pyro-sdis | HF pyronear/pyro-sdis | Apache-2.0 | Phase B smoke positives / validation | 12,378 images, 1.32 GB; **not used in bench_R** to avoid Pyronear-model training overlap. |
 | bench_R candidates | Wikimedia Commons API | CC0 / PD / CC BY / CC BY-SA per image | bench_R reference images | Per-image title/author/URL in ench_R/index.json; images are local and git-ignored. |
+
+| OWLv2 (google/owlv2-base-patch16-ensemble) | Hugging Face | Apache-2.0 | bench_R pre-annotation proposals | Not an evaluated detector; proposals only. |
+| Grounding DINO Tiny | Hugging Face | Apache-2.0 | bench_R pre-annotation proposals | Proposals only; not an evaluated detector in R5. |

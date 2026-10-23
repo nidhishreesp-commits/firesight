@@ -39,3 +39,11 @@ bench_R/candidates/
 bench_R/images/
 
 frontend/tsconfig.tsbuildinfo
+
+bench_R/proposals_raw/
+bench_R/reviews.json
+bench_R/spot_checks.json
+
+weights/
+yolov8s-worldv2.pt
+*.pt

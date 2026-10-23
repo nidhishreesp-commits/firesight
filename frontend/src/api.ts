@@ -36,6 +36,7 @@ export const api = {
   benchR: () => request<any>("/api/benchR"),
   benchRReview: (payload: Record<string, unknown>) =>
     request<any>("/api/benchR/review", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }),
+  benchRProposals: () => request<any>("/api/benchR/proposals"),
   benchRSpotcheck: () => request<any>("/api/benchR/spotcheck"),
   benchRSpotSave: (payload: Record<string, unknown>) =>
     request<any>("/api/benchR/spotcheck", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }),

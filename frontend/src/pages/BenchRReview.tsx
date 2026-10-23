@@ -26,27 +26,50 @@ export default function BenchRReview() {
   const [spotMode, setSpotMode] = useState(false);
   const [spot, setSpot] = useState<any>(null);
   const [spotIdx, setSpotIdx] = useState(0);
+  const [proposals, setProposals] = useState<any>(null);
+  const [minProposalScore, setMinProposalScore] = useState(0.02);
+  const [proposed, setProposed] = useState(false);
+  const [blind, setBlind] = useState(false);
+  const startedAt = useRef<number>(Date.now());
   const canvasRef = useRef<HTMLDivElement | null>(null);
 
   const load = () => api.benchR().then(setData).catch((e) => setError(String(e)));
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); api.benchRProposals().then(setProposals).catch(() => undefined); }, []);
   useEffect(() => { localStorage.setItem("firesight.reviewer", reviewer); }, [reviewer]);
 
   const rows: any[] = data?.images ?? [];
   const row = rows[idx];
   useEffect(() => {
     if (!row) return;
-    setForm({
-      has_fire: row.has_fire, has_smoke: row.has_smoke, flame_type: row.flame_type ?? "unknown",
-      category: row.category ?? row.family, difficulty: row.difficulty ?? "medium",
-      ambiguous: row.ambiguous ?? 0, notes: row.notes ?? ""
-    });
-    setBoxesFire(row.boxes_fire ?? []);
-    setBoxesSmoke(row.boxes_smoke ?? []);
+    const prop = proposals?.images?.[row.id];
+    const isBlind = Boolean(prop?.blind);
+    const useProposal = row.review_status !== "reviewed" && Boolean(prop) && !isBlind;
+    setProposed(useProposal);
+    setBlind(isBlind);
+    if (useProposal) {
+      setForm({
+        has_fire: prop.suggested_has_fire ?? 0, has_smoke: prop.suggested_has_smoke ?? 0,
+        flame_type: prop.suggested_flame_type ?? "unknown", category: row.family,
+        difficulty: row.difficulty ?? "medium", ambiguous: 0, notes: ""
+      });
+      const pf = (prop.proposals ?? []).filter((p: any) => p.label === "fire" && p.score >= minProposalScore).map((p: any) => p.box);
+      const ps = (prop.proposals ?? []).filter((p: any) => p.label === "smoke" && p.score >= minProposalScore).map((p: any) => p.box);
+      setBoxesFire(pf);
+      setBoxesSmoke(ps);
+    } else {
+      setForm({
+        has_fire: row.has_fire ?? 0, has_smoke: row.has_smoke ?? 0, flame_type: row.flame_type ?? "unknown",
+        category: row.category ?? row.family, difficulty: row.difficulty ?? "medium",
+        ambiguous: row.ambiguous ?? 0, notes: row.notes ?? ""
+      });
+      setBoxesFire(row.boxes_fire ?? []);
+      setBoxesSmoke(row.boxes_smoke ?? []);
+    }
     setDims({ w: row.width ?? 0, h: row.height ?? 0 });
     setDrawMode(null);
     setDrag(null);
-  }, [idx, row?.id]);
+    startedAt.current = Date.now();
+  }, [idx, row?.id, proposals, minProposalScore]);
 
   const reviewed = useMemo(() => rows.filter((r) => r.review_status === "reviewed").length, [rows]);
   const comp = data?.composition ?? {};
@@ -74,9 +97,24 @@ export default function BenchRReview() {
     if (!row) return;
     if (!reviewer.trim()) { setError("Enter your name."); return; }
     setError("");
+    const prop = proposals?.images?.[row.id];
+    const pFire = (prop?.proposals ?? []).filter((p: any) => p.label === "fire" && p.score >= minProposalScore).map((p: any) => p.box);
+    const pSmoke = (prop?.proposals ?? []).filter((p: any) => p.label === "smoke" && p.score >= minProposalScore).map((p: any) => p.box);
+    const same = (a: number[][], b: number[][]) =>
+      a.length === b.length && a.every((box, i) => b[i] && box.every((v, j) => Math.abs(v - b[i][j]) <= 2));
+    const editFire = !same(boxesFire, pFire);
+    const editSmoke = !same(boxesSmoke, pSmoke);
+    const editLabels = Number(form.has_fire) !== Number(prop?.suggested_has_fire ?? 0)
+      || Number(form.has_smoke) !== Number(prop?.suggested_has_smoke ?? 0)
+      || (form.flame_type ?? "unknown") !== (prop?.suggested_flame_type ?? "unknown");
+    const editsMade = Number(editFire) + Number(editSmoke) + Number(editLabels);
     try {
       await api.benchRReview({ id: row.id, ...form, reviewer, boxes_fire: boxesFire, boxes_smoke: boxesSmoke,
-                               width: dims.w || row.width, height: dims.h || row.height });
+                               width: dims.w || row.width, height: dims.h || row.height,
+                               accepted_as_proposed: !blind && !!prop && editsMade === 0,
+                               edits_made: editsMade,
+                               time_spent_s: Math.round((Date.now() - startedAt.current) / 1000),
+                               blind });
       setMessage(`Saved ${reviewed + 1}/1000`);
       await load();
       if (advance && idx < rows.length - 1) setIdx(idx + 1);
@@ -127,6 +165,7 @@ export default function BenchRReview() {
       else if (e.key.toLowerCase() === "s") setForm((f: any) => ({ ...f, has_smoke: f.has_smoke ? 0 : 1 }));
       else if (e.key.toLowerCase() === "n") setForm((f: any) => ({ ...f, has_fire: 0, has_smoke: 0, flame_type: null }));
       else if (e.key.toLowerCase() === "a") setForm((f: any) => ({ ...f, ambiguous: f.ambiguous ? 0 : 1 }));
+      else if (e.key.toLowerCase() === "x") { if (boxesFire.length) setBoxesFire(boxesFire.slice(0, -1)); else setBoxesSmoke(boxesSmoke.slice(0, -1)); }
       else if (e.key === "Enter") save(true);
     };
     window.addEventListener("keydown", onKey);
@@ -193,7 +232,21 @@ export default function BenchRReview() {
       {locked && <div className="rounded border border-emerald-700 bg-emerald-950/50 px-3 py-2 text-sm">LOCKED · manifest {data.lock.manifest_sha256}</div>}
       {message && <div className="rounded bg-slate-800 px-3 py-2 text-sm">{message}</div>}
       {error && <div className="rounded bg-red-950/60 px-3 py-2 text-sm text-red-200">{error}</div>}
-      <div className="text-xs text-slate-500">Keys: ←/→ navigate · F fire · S smoke · N neither · A ambiguous · Enter save & next</div>
+      <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+        <span>Keys: Arrows navigate, F fire, S smoke, N neither, A ambiguous, X delete last box, Enter save & next</span>
+        {proposed && <span className="rounded bg-amber-900/60 px-2 py-1 text-amber-200">PROPOSED boxes/labels — approve, edit or delete</span>}
+        {blind && <span className="rounded bg-blue-900/60 px-2 py-1 text-blue-200">BLIND REVIEW — proposals hidden</span>}
+        <label className="flex items-center gap-2">proposal score &gt;=
+          <input type="range" min={0} max={0.5} step={0.01} value={minProposalScore} onChange={(e) => setMinProposalScore(Number(e.target.value))} />
+          {minProposalScore.toFixed(2)}
+        </label>
+        <button className="rounded bg-slate-800 px-2 py-1" onClick={() => {
+          const p = proposals?.images ?? {};
+          const next = rows.findIndex((r, i) => i > idx && !(p[r.id]?.proposals?.length));
+          if (next >= 0) setIdx(next);
+        }}>next no-proposal</button>
+        <span>no-proposal images: {Object.values(proposals?.images ?? {}).filter((p:any) => !(p.proposals ?? []).length).length}</span>
+      </div>
 
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-3">
         <div className="xl:col-span-2">

@@ -37,4 +37,4 @@ The 92.0% policy-filtered figure is a **re-scoring of the same 2026-10-22 17:15 
 
 ## bench_R
 
-No model has been run on bench_R. It is **pending human review and lock**. Once locked, only the DEV split may be used for error analysis between iterations; SEALED runs must be logged here with date, model and reason.
+No **evaluated detector** has been run on bench_R. Independent proposers (OWLv2, Grounding DINO) generated proposals only; proposals are not labels. bench_R is **pending human review and lock**. Once locked, only the DEV split may be used for error analysis between iterations; SEALED runs must be logged here with date, model and reason.

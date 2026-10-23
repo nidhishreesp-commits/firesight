@@ -90,3 +90,7 @@ Sources: Wikimedia Commons (CC0/PD/CC BY/CC BY-SA) only. Boxes are intentionally
 - Scene cap: max 3 near-duplicate frames per pHash scene (0 additional drops in the final selection).
 
 **Status: PENDING HUMAN REVIEW.** Boxes are empty; use the Reference bench page. No model has been run on bench_R. The images are local (Wikimedia source URLs in index.json) and are git-ignored; the metadata/manifest are committed.
+
+## Pre-annotation
+
+Independent proposers only: OWLv2 (Apache-2.0) on 500 positives, Grounding DINO tiny (Apache-2.0) on a stratified 100-positive subset. No evaluated detector (v3/v4/verifier/Pyronear/RT-DETR) was used. Proposals are not labels; human review is the ground truth. Coverage: 100% controlled/spark/smoke, 99.5% uncontrolled, 98.8% both. Runtime: OWLv2 76.2 min, DINO 15.3 min. Blind 10% (100 images) has proposals hidden; the separate 100-image second-pass spot check excludes blind images. See PREANNOTATION_REPORT.md.

@@ -72,6 +72,10 @@ class BenchRReviewIn(BaseModel):
     boxes_smoke: list[list[float]] | None = None
     width: int | None = None
     height: int | None = None
+    accepted_as_proposed: bool = False
+    edits_made: int = 0
+    time_spent_s: float | None = None
+    blind: bool = False
 
 
 class BenchRSpotIn(BaseModel):
@@ -590,9 +594,28 @@ def create_app(config_path: str | None = None) -> FastAPI:
             "boxes_fire": payload.boxes_fire if payload.boxes_fire is not None else existing.get("boxes_fire", []),
             "boxes_smoke": payload.boxes_smoke if payload.boxes_smoke is not None else existing.get("boxes_smoke", []),
             "width": payload.width or existing.get("width"), "height": payload.height or existing.get("height"),
+            "accepted_as_proposed": bool(payload.accepted_as_proposed),
+            "edits_made": int(payload.edits_made), "time_spent_s": payload.time_spent_s,
+            "blind": bool(payload.blind),
         }
         BENCHR_REVIEWS.write_text(json.dumps(reviews, indent=2), encoding="utf-8")
         return {"saved": payload.id, "reviewed": len(reviews), "total": len(rows)}
+
+    @app.get("/api/benchR/proposals")
+    def benchR_proposals() -> dict:
+        p = BENCHR_DIR / "proposals.json"
+        if not p.exists():
+            raise HTTPException(404, "no proposals yet")
+        data = json.loads(p.read_text(encoding="utf-8"))
+        blind = set(data.get("meta", {}).get("blind_ids", []))
+        for image_id, row in data.get("images", {}).items():
+            if image_id in blind:
+                row["blind"] = True
+                row["proposals"] = []
+                row["suggested_has_fire"] = 0
+                row["suggested_has_smoke"] = 0
+                row["suggested_flame_type"] = None
+        return data
 
     @app.get("/api/benchR/spotcheck")
     def benchR_spotcheck() -> dict:
@@ -601,7 +624,12 @@ def create_app(config_path: str | None = None) -> FastAPI:
             raise HTTPException(422, "review all 1000 images before spot-checking")
         import random
         rng = random.Random(20261022)
-        sample = rng.sample(rows, 100)
+        prop_path = BENCHR_DIR / "proposals.json"
+        blind = set()
+        if prop_path.exists():
+            blind = set(json.loads(prop_path.read_text(encoding="utf-8")).get("meta", {}).get("blind_ids", []))
+        pool = [r for r in rows if r["id"] not in blind]
+        sample = rng.sample(pool, 100)
         spot = json.loads(BENCHR_SPOT.read_text(encoding="utf-8")) if BENCHR_SPOT.exists() else {}
         return {"required": 100, "reviewed": len(spot), "items": [{**r, "spot_done": r["id"] in spot} for r in sample]}
 
