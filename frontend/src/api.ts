@@ -21,6 +21,7 @@ export const api = {
   testImages: (name: string, filter: string, offset: number, limit = 24, threshold = 0.5) =>
     request<any>(`/api/testsets/${name}/images?filter=${filter}&offset=${offset}&limit=${limit}&threshold=${threshold}`),
   benchmark: () => request<any>("/api/benchmark/latest"),
+  benchRResults: () => request<any>("/api/benchmark/benchR"),
   models: () => request<any>("/api/models"),
   cameras: () => request<any>("/api/live/cameras"),
   startCamera: (id: string) => request<any>(`/api/live/${id}/start`, { method: "POST" }),

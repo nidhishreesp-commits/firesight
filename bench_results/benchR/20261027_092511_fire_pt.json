@@ -1,0 +1,1428 @@
+{
+  "bench": "bench_R",
+  "model": "fire_pt",
+  "family": "YOLO11s",
+  "license": "proprietary (SmartSight)",
+  "bench_locked_sha256": "9001fbc827a606168867ccf2151694f390ee3df34de16e1da2ee7a585d07993c",
+  "bench_split_rule": "DEV 300 / SEALED 700, stratified random seed 20261022",
+  "calibrated_on": "data/splits/val_mini.jsonl + data/splits/val_flames.jsonl",
+  "target_fpr": 0.01,
+  "thresholds": {
+    "fire": 0.61,
+    "smoke": 0.59
+  },
+  "splits": {
+    "dev": {
+      "split": "dev",
+      "n": 300,
+      "positives": 85,
+      "fire": {
+        "n": 300,
+        "tp": 11,
+        "fp": 1,
+        "tn": 245,
+        "fn": 43,
+        "accuracy": 0.853333,
+        "accuracy_95ci": [
+          0.8088365903800316,
+          0.888895385754902
+        ],
+        "precision": 0.916667,
+        "precision_95ci": [
+          0.6461140782014047,
+          0.9851352905492264
+        ],
+        "recall": 0.203704,
+        "recall_95ci": [
+          0.1177393408658538,
+          0.32902561722659174
+        ],
+        "specificity": 0.995935,
+        "specificity_95ci": [
+          0.977336707453484,
+          0.9992820782091121
+        ],
+        "f1": 0.333333,
+        "zero_event_upper_95": null
+      },
+      "smoke": {
+        "n": 300,
+        "tp": 5,
+        "fp": 0,
+        "tn": 244,
+        "fn": 51,
+        "accuracy": 0.83,
+        "accuracy_95ci": [
+          0.7833848085580865,
+          0.8682705276434078
+        ],
+        "precision": 1.0,
+        "precision_95ci": [
+          0.5655085052479191,
+          1.0
+        ],
+        "recall": 0.089286,
+        "recall_95ci": [
+          0.03874157726308829,
+          0.19256239856643498
+        ],
+        "specificity": 1.0,
+        "specificity_95ci": [
+          0.9844997772770996,
+          1.0
+        ],
+        "f1": 0.163934,
+        "zero_event_upper_95": 0.012295081967213115
+      },
+      "combined": {
+        "n": 300,
+        "tp": 16,
+        "fp": 1,
+        "tn": 214,
+        "fn": 69,
+        "accuracy": 0.766667,
+        "accuracy_95ci": [
+          0.7156176619060444,
+          0.81097250876183
+        ],
+        "precision": 0.941176,
+        "precision_95ci": [
+          0.730174547964372,
+          0.9895398693548358
+        ],
+        "recall": 0.188235,
+        "recall_95ci": [
+          0.11932042110303412,
+          0.2841122050540815
+        ],
+        "specificity": 0.995349,
+        "specificity_95ci": [
+          0.9741282161586808,
+          0.9991785043185957
+        ],
+        "f1": 0.313725,
+        "zero_event_upper_95": null
+      },
+      "box_ap": {
+        "fire": {
+          "gt_boxes": 317,
+          "ap50": 0.060165,
+          "ap75": 0.01665,
+          "ap50_95": 0.022157
+        },
+        "smoke": {
+          "gt_boxes": 117,
+          "ap50": 0.117431,
+          "ap75": 0.053794,
+          "ap50_95": 0.055209
+        }
+      },
+      "mean_iou": {
+        "fire": {
+          "gt_boxes": 317,
+          "matched_iou50": 8,
+          "recall_iou50": 0.025237,
+          "mean_iou_all_gt": 0.020809,
+          "mean_iou_matched": 0.727243
+        },
+        "smoke": {
+          "gt_boxes": 117,
+          "matched_iou50": 3,
+          "recall_iou50": 0.025641,
+          "mean_iou_all_gt": 0.029017,
+          "mean_iou_matched": 0.874099
+        }
+      },
+      "by_group": {
+        "both": {
+          "n": 8,
+          "correct": 8,
+          "accuracy": 1.0
+        },
+        "camera_artifacts": {
+          "n": 11,
+          "correct": 11,
+          "accuracy": 1.0
+        },
+        "chandelier_stage_lights": {
+          "n": 8,
+          "correct": 7,
+          "accuracy": 0.875
+        },
+        "clouds": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "controlled_fire": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "dust_construction_plaster": {
+          "n": 8,
+          "correct": 8,
+          "accuracy": 1.0
+        },
+        "exhaust": {
+          "n": 4,
+          "correct": 4,
+          "accuracy": 1.0
+        },
+        "flowers_autumn_leaves": {
+          "n": 8,
+          "correct": 8,
+          "accuracy": 1.0
+        },
+        "fog_haze_mist": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "orange_ppe_vests_cones": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "ordinary_indoor": {
+          "n": 11,
+          "correct": 11,
+          "accuracy": 1.0
+        },
+        "ordinary_other": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0
+        },
+        "ordinary_streets_warehouses_offices": {
+          "n": 10,
+          "correct": 10,
+          "accuracy": 1.0
+        },
+        "overexposed_white": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0
+        },
+        "positive:medium": {
+          "n": 85,
+          "correct": 16,
+          "accuracy": 0.188235
+        },
+        "red_orange_neon_lights": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "reflections_lens_flare_glare": {
+          "n": 7,
+          "correct": 7,
+          "accuracy": 1.0
+        },
+        "smoke_only": {
+          "n": 21,
+          "correct": 21,
+          "accuracy": 1.0
+        },
+        "snow": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0
+        },
+        "spark_screen": {
+          "n": 1,
+          "correct": 1,
+          "accuracy": 1.0
+        },
+        "steam": {
+          "n": 7,
+          "correct": 7,
+          "accuracy": 1.0
+        },
+        "sunset_orange_sky": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "uncontrolled_fire": {
+          "n": 30,
+          "correct": 30,
+          "accuracy": 1.0
+        },
+        "vehicle_lights_streetlights": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        }
+      },
+      "by_flame_type": {
+        "controlled": {
+          "n": 16,
+          "detected": 7,
+          "recall": 0.4375,
+          "recall_95ci": [
+            0.2309836333518552,
+            0.6682180439322347
+          ]
+        },
+        "smoke_only": {
+          "n": 31,
+          "detected": 3,
+          "recall": 0.096774,
+          "recall_95ci": [
+            0.033464036094644004,
+            0.2490028999817704
+          ]
+        },
+        "spark": {
+          "n": 10,
+          "detected": 1,
+          "recall": 0.1,
+          "recall_95ci": [
+            0.01787574951572113,
+            0.4041563854975721
+          ]
+        },
+        "uncontrolled": {
+          "n": 27,
+          "detected": 3,
+          "recall": 0.111111,
+          "recall_95ci": [
+            0.03851964789498727,
+            0.2805818254397294
+          ]
+        },
+        "unknown": {
+          "n": 1,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.7934567085261071
+          ]
+        }
+      },
+      "policy_uncontrolled_plus_smoke": {
+        "n": 276,
+        "tp": 8,
+        "fp": 1,
+        "tn": 214,
+        "fn": 53,
+        "accuracy": 0.804348,
+        "accuracy_95ci": [
+          0.753502613017158,
+          0.8468370076825522
+        ],
+        "recall": 0.131148,
+        "recall_95ci": [
+          0.06797996145868099,
+          0.23802112426406494
+        ],
+        "specificity": 0.995349,
+        "specificity_95ci": [
+          0.9741282161586808,
+          0.9991785043185957
+        ],
+        "suppressed_controlled_or_spark": 24,
+        "suppressed_images_that_alarmed": 8
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.05,
+          "combined_accuracy": 0.533333,
+          "combined_recall": 0.929412,
+          "combined_fpr": 0.446667,
+          "fire_recall": 0.888889,
+          "smoke_recall": 0.875
+        },
+        {
+          "threshold": 0.1,
+          "combined_accuracy": 0.603333,
+          "combined_recall": 0.823529,
+          "combined_fpr": 0.346667,
+          "fire_recall": 0.722222,
+          "smoke_recall": 0.732143
+        },
+        {
+          "threshold": 0.15,
+          "combined_accuracy": 0.683333,
+          "combined_recall": 0.764706,
+          "combined_fpr": 0.25,
+          "fire_recall": 0.685185,
+          "smoke_recall": 0.625
+        },
+        {
+          "threshold": 0.2,
+          "combined_accuracy": 0.72,
+          "combined_recall": 0.705882,
+          "combined_fpr": 0.196667,
+          "fire_recall": 0.648148,
+          "smoke_recall": 0.589286
+        },
+        {
+          "threshold": 0.25,
+          "combined_accuracy": 0.75,
+          "combined_recall": 0.647059,
+          "combined_fpr": 0.15,
+          "fire_recall": 0.574074,
+          "smoke_recall": 0.553571
+        },
+        {
+          "threshold": 0.3,
+          "combined_accuracy": 0.75,
+          "combined_recall": 0.6,
+          "combined_fpr": 0.136667,
+          "fire_recall": 0.537037,
+          "smoke_recall": 0.5
+        },
+        {
+          "threshold": 0.35,
+          "combined_accuracy": 0.753333,
+          "combined_recall": 0.494118,
+          "combined_fpr": 0.103333,
+          "fire_recall": 0.5,
+          "smoke_recall": 0.357143
+        },
+        {
+          "threshold": 0.4,
+          "combined_accuracy": 0.77,
+          "combined_recall": 0.447059,
+          "combined_fpr": 0.073333,
+          "fire_recall": 0.425926,
+          "smoke_recall": 0.339286
+        },
+        {
+          "threshold": 0.45,
+          "combined_accuracy": 0.776667,
+          "combined_recall": 0.388235,
+          "combined_fpr": 0.05,
+          "fire_recall": 0.37037,
+          "smoke_recall": 0.267857
+        },
+        {
+          "threshold": 0.5,
+          "combined_accuracy": 0.766667,
+          "combined_recall": 0.270588,
+          "combined_fpr": 0.026667,
+          "fire_recall": 0.314815,
+          "smoke_recall": 0.107143
+        },
+        {
+          "threshold": 0.55,
+          "combined_accuracy": 0.766667,
+          "combined_recall": 0.247059,
+          "combined_fpr": 0.02,
+          "fire_recall": 0.277778,
+          "smoke_recall": 0.107143
+        },
+        {
+          "threshold": 0.6,
+          "combined_accuracy": 0.763333,
+          "combined_recall": 0.188235,
+          "combined_fpr": 0.006667,
+          "fire_recall": 0.203704,
+          "smoke_recall": 0.089286
+        },
+        {
+          "threshold": 0.65,
+          "combined_accuracy": 0.756667,
+          "combined_recall": 0.152941,
+          "combined_fpr": 0.003333,
+          "fire_recall": 0.203704,
+          "smoke_recall": 0.035714
+        },
+        {
+          "threshold": 0.7,
+          "combined_accuracy": 0.736667,
+          "combined_recall": 0.082353,
+          "combined_fpr": 0.003333,
+          "fire_recall": 0.111111,
+          "smoke_recall": 0.017857
+        },
+        {
+          "threshold": 0.75,
+          "combined_accuracy": 0.726667,
+          "combined_recall": 0.047059,
+          "combined_fpr": 0.003333,
+          "fire_recall": 0.074074,
+          "smoke_recall": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "combined_accuracy": 0.72,
+          "combined_recall": 0.011765,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.018519,
+          "smoke_recall": 0.0
+        },
+        {
+          "threshold": 0.85,
+          "combined_accuracy": 0.716667,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        },
+        {
+          "threshold": 0.9,
+          "combined_accuracy": 0.716667,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        },
+        {
+          "threshold": 0.95,
+          "combined_accuracy": 0.716667,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        }
+      ]
+    },
+    "sealed": {
+      "split": "sealed",
+      "n": 700,
+      "positives": 199,
+      "fire": {
+        "n": 700,
+        "tp": 21,
+        "fp": 7,
+        "tn": 569,
+        "fn": 103,
+        "accuracy": 0.842857,
+        "accuracy_95ci": [
+          0.8140337342842777,
+          0.8679378911496268
+        ],
+        "precision": 0.75,
+        "precision_95ci": [
+          0.566439747592954,
+          0.8732366505779922
+        ],
+        "recall": 0.169355,
+        "recall_95ci": [
+          0.11351887518815744,
+          0.24506236910165113
+        ],
+        "specificity": 0.987847,
+        "specificity_95ci": [
+          0.9751291528679458,
+          0.9941010644879666
+        ],
+        "f1": 0.276316,
+        "zero_event_upper_95": null
+      },
+      "smoke": {
+        "n": 700,
+        "tp": 21,
+        "fp": 13,
+        "tn": 555,
+        "fn": 111,
+        "accuracy": 0.822857,
+        "accuracy_95ci": [
+          0.792833907087229,
+          0.8493560401963645
+        ],
+        "precision": 0.617647,
+        "precision_95ci": [
+          0.4504071999938267,
+          0.7610003514839122
+        ],
+        "recall": 0.159091,
+        "recall_95ci": [
+          0.1064720940297223,
+          0.23099154008530576
+        ],
+        "specificity": 0.977113,
+        "specificity_95ci": [
+          0.961238200804302,
+          0.9865767185719728
+        ],
+        "f1": 0.253012,
+        "zero_event_upper_95": null
+      },
+      "combined": {
+        "n": 700,
+        "tp": 41,
+        "fp": 20,
+        "tn": 481,
+        "fn": 158,
+        "accuracy": 0.745714,
+        "accuracy_95ci": [
+          0.7121741310645029,
+          0.7765722004964619
+        ],
+        "precision": 0.672131,
+        "precision_95ci": [
+          0.5472157118133126,
+          0.7766504481827393
+        ],
+        "recall": 0.20603,
+        "recall_95ci": [
+          0.1556596436819513,
+          0.2675355983196894
+        ],
+        "specificity": 0.96008,
+        "specificity_95ci": [
+          0.9391460331467388,
+          0.9740116781036811
+        ],
+        "f1": 0.315385,
+        "zero_event_upper_95": null
+      },
+      "box_ap": {
+        "fire": {
+          "gt_boxes": 210,
+          "ap50": 0.195276,
+          "ap75": 0.02486,
+          "ap50_95": 0.057313
+        },
+        "smoke": {
+          "gt_boxes": 177,
+          "ap50": 0.174026,
+          "ap75": 0.062723,
+          "ap50_95": 0.079013
+        }
+      },
+      "mean_iou": {
+        "fire": {
+          "gt_boxes": 210,
+          "matched_iou50": 29,
+          "recall_iou50": 0.138095,
+          "mean_iou_all_gt": 0.103713,
+          "mean_iou_matched": 0.658072
+        },
+        "smoke": {
+          "gt_boxes": 177,
+          "matched_iou50": 17,
+          "recall_iou50": 0.096045,
+          "mean_iou_all_gt": 0.092494,
+          "mean_iou_matched": 0.794542
+        }
+      },
+      "by_group": {
+        "both": {
+          "n": 18,
+          "correct": 17,
+          "accuracy": 0.944444
+        },
+        "camera_artifacts": {
+          "n": 29,
+          "correct": 28,
+          "accuracy": 0.965517
+        },
+        "chandelier_stage_lights": {
+          "n": 17,
+          "correct": 17,
+          "accuracy": 1.0
+        },
+        "clouds": {
+          "n": 21,
+          "correct": 20,
+          "accuracy": 0.952381
+        },
+        "controlled_fire": {
+          "n": 22,
+          "correct": 22,
+          "accuracy": 1.0
+        },
+        "dust_construction_plaster": {
+          "n": 17,
+          "correct": 17,
+          "accuracy": 1.0
+        },
+        "exhaust": {
+          "n": 10,
+          "correct": 10,
+          "accuracy": 1.0
+        },
+        "flowers_autumn_leaves": {
+          "n": 17,
+          "correct": 16,
+          "accuracy": 0.941176
+        },
+        "fog_haze_mist": {
+          "n": 21,
+          "correct": 19,
+          "accuracy": 0.904762
+        },
+        "orange_ppe_vests_cones": {
+          "n": 21,
+          "correct": 20,
+          "accuracy": 0.952381
+        },
+        "ordinary_indoor": {
+          "n": 26,
+          "correct": 25,
+          "accuracy": 0.961538
+        },
+        "ordinary_other": {
+          "n": 13,
+          "correct": 13,
+          "accuracy": 1.0
+        },
+        "ordinary_streets_warehouses_offices": {
+          "n": 23,
+          "correct": 22,
+          "accuracy": 0.956522
+        },
+        "overexposed_white": {
+          "n": 13,
+          "correct": 13,
+          "accuracy": 1.0
+        },
+        "positive:medium": {
+          "n": 199,
+          "correct": 41,
+          "accuracy": 0.20603
+        },
+        "red_orange_neon_lights": {
+          "n": 21,
+          "correct": 19,
+          "accuracy": 0.904762
+        },
+        "reflections_lens_flare_glare": {
+          "n": 18,
+          "correct": 17,
+          "accuracy": 0.944444
+        },
+        "smoke_only": {
+          "n": 51,
+          "correct": 47,
+          "accuracy": 0.921569
+        },
+        "snow": {
+          "n": 14,
+          "correct": 14,
+          "accuracy": 1.0
+        },
+        "spark_screen": {
+          "n": 2,
+          "correct": 2,
+          "accuracy": 1.0
+        },
+        "steam": {
+          "n": 16,
+          "correct": 16,
+          "accuracy": 1.0
+        },
+        "sunset_orange_sky": {
+          "n": 21,
+          "correct": 19,
+          "accuracy": 0.904762
+        },
+        "uncontrolled_fire": {
+          "n": 69,
+          "correct": 67,
+          "accuracy": 0.971014
+        },
+        "vehicle_lights_streetlights": {
+          "n": 21,
+          "correct": 21,
+          "accuracy": 1.0
+        }
+      },
+      "by_flame_type": {
+        "controlled": {
+          "n": 42,
+          "detected": 18,
+          "recall": 0.428571,
+          "recall_95ci": [
+            0.2911742951914822,
+            0.5779402208812553
+          ]
+        },
+        "smoke_only": {
+          "n": 75,
+          "detected": 15,
+          "recall": 0.2,
+          "recall_95ci": [
+            0.12512038203120296,
+            0.3041149455116171
+          ]
+        },
+        "spark": {
+          "n": 27,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.12455903714463581
+          ]
+        },
+        "uncontrolled": {
+          "n": 54,
+          "detected": 3,
+          "recall": 0.055556,
+          "recall_95ci": [
+            0.019072922503838907,
+            0.15107451463482943
+          ]
+        },
+        "unknown": {
+          "n": 1,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.7934567085261071
+          ]
+        }
+      },
+      "policy_uncontrolled_plus_smoke": {
+        "n": 641,
+        "tp": 23,
+        "fp": 20,
+        "tn": 481,
+        "fn": 117,
+        "accuracy": 0.786271,
+        "accuracy_95ci": [
+          0.7528793077417033,
+          0.816252708555012
+        ],
+        "recall": 0.164286,
+        "recall_95ci": [
+          0.11203753808504885,
+          0.23446583785070274
+        ],
+        "specificity": 0.96008,
+        "specificity_95ci": [
+          0.9391460331467388,
+          0.9740116781036811
+        ],
+        "suppressed_controlled_or_spark": 59,
+        "suppressed_images_that_alarmed": 18
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.05,
+          "combined_accuracy": 0.505714,
+          "combined_recall": 0.904523,
+          "combined_fpr": 0.467143,
+          "fire_recall": 0.83871,
+          "smoke_recall": 0.772727
+        },
+        {
+          "threshold": 0.1,
+          "combined_accuracy": 0.588571,
+          "combined_recall": 0.849246,
+          "combined_fpr": 0.368571,
+          "fire_recall": 0.790323,
+          "smoke_recall": 0.704545
+        },
+        {
+          "threshold": 0.15,
+          "combined_accuracy": 0.651429,
+          "combined_recall": 0.80402,
+          "combined_fpr": 0.292857,
+          "fire_recall": 0.733871,
+          "smoke_recall": 0.651515
+        },
+        {
+          "threshold": 0.2,
+          "combined_accuracy": 0.692857,
+          "combined_recall": 0.718593,
+          "combined_fpr": 0.227143,
+          "fire_recall": 0.66129,
+          "smoke_recall": 0.545455
+        },
+        {
+          "threshold": 0.25,
+          "combined_accuracy": 0.721429,
+          "combined_recall": 0.668342,
+          "combined_fpr": 0.184286,
+          "fire_recall": 0.604839,
+          "smoke_recall": 0.492424
+        },
+        {
+          "threshold": 0.3,
+          "combined_accuracy": 0.73,
+          "combined_recall": 0.592965,
+          "combined_fpr": 0.154286,
+          "fire_recall": 0.524194,
+          "smoke_recall": 0.431818
+        },
+        {
+          "threshold": 0.35,
+          "combined_accuracy": 0.738571,
+          "combined_recall": 0.537688,
+          "combined_fpr": 0.13,
+          "fire_recall": 0.491935,
+          "smoke_recall": 0.363636
+        },
+        {
+          "threshold": 0.4,
+          "combined_accuracy": 0.752857,
+          "combined_recall": 0.467337,
+          "combined_fpr": 0.095714,
+          "fire_recall": 0.419355,
+          "smoke_recall": 0.333333
+        },
+        {
+          "threshold": 0.45,
+          "combined_accuracy": 0.765714,
+          "combined_recall": 0.396985,
+          "combined_fpr": 0.062857,
+          "fire_recall": 0.330645,
+          "smoke_recall": 0.295455
+        },
+        {
+          "threshold": 0.5,
+          "combined_accuracy": 0.765714,
+          "combined_recall": 0.326633,
+          "combined_fpr": 0.042857,
+          "fire_recall": 0.274194,
+          "smoke_recall": 0.234848
+        },
+        {
+          "threshold": 0.55,
+          "combined_accuracy": 0.76,
+          "combined_recall": 0.271357,
+          "combined_fpr": 0.032857,
+          "fire_recall": 0.241935,
+          "smoke_recall": 0.19697
+        },
+        {
+          "threshold": 0.6,
+          "combined_accuracy": 0.752857,
+          "combined_recall": 0.21608,
+          "combined_fpr": 0.024286,
+          "fire_recall": 0.185484,
+          "smoke_recall": 0.159091
+        },
+        {
+          "threshold": 0.65,
+          "combined_accuracy": 0.748571,
+          "combined_recall": 0.170854,
+          "combined_fpr": 0.015714,
+          "fire_recall": 0.145161,
+          "smoke_recall": 0.128788
+        },
+        {
+          "threshold": 0.7,
+          "combined_accuracy": 0.738571,
+          "combined_recall": 0.110553,
+          "combined_fpr": 0.008571,
+          "fire_recall": 0.072581,
+          "smoke_recall": 0.098485
+        },
+        {
+          "threshold": 0.75,
+          "combined_accuracy": 0.734286,
+          "combined_recall": 0.075377,
+          "combined_fpr": 0.002857,
+          "fire_recall": 0.040323,
+          "smoke_recall": 0.075758
+        },
+        {
+          "threshold": 0.8,
+          "combined_accuracy": 0.725714,
+          "combined_recall": 0.040201,
+          "combined_fpr": 0.001429,
+          "fire_recall": 0.016129,
+          "smoke_recall": 0.045455
+        },
+        {
+          "threshold": 0.85,
+          "combined_accuracy": 0.72,
+          "combined_recall": 0.015075,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.022727
+        },
+        {
+          "threshold": 0.9,
+          "combined_accuracy": 0.717143,
+          "combined_recall": 0.005025,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.007576
+        },
+        {
+          "threshold": 0.95,
+          "combined_accuracy": 0.715714,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        }
+      ]
+    },
+    "all": {
+      "split": "all",
+      "n": 1000,
+      "positives": 284,
+      "fire": {
+        "n": 1000,
+        "tp": 32,
+        "fp": 8,
+        "tn": 814,
+        "fn": 146,
+        "accuracy": 0.846,
+        "accuracy_95ci": [
+          0.8223076809446219,
+          0.8670441052335958
+        ],
+        "precision": 0.8,
+        "precision_95ci": [
+          0.6524239261814333,
+          0.8950013502683314
+        ],
+        "recall": 0.179775,
+        "recall_95ci": [
+          0.1303181688259782,
+          0.24276257837378246
+        ],
+        "specificity": 0.990268,
+        "specificity_95ci": [
+          0.9809136472611477,
+          0.995060437841855
+        ],
+        "f1": 0.293578,
+        "zero_event_upper_95": null
+      },
+      "smoke": {
+        "n": 1000,
+        "tp": 26,
+        "fp": 13,
+        "tn": 799,
+        "fn": 162,
+        "accuracy": 0.825,
+        "accuracy_95ci": [
+          0.8002178770109885,
+          0.8472946389078577
+        ],
+        "precision": 0.666667,
+        "precision_95ci": [
+          0.5097710432024052,
+          0.7936723389308484
+        ],
+        "recall": 0.138298,
+        "recall_95ci": [
+          0.09615614170851133,
+          0.19492566745071171
+        ],
+        "specificity": 0.98399,
+        "specificity_95ci": [
+          0.9728019814994712,
+          0.9906203298903867
+        ],
+        "f1": 0.229075,
+        "zero_event_upper_95": null
+      },
+      "combined": {
+        "n": 1000,
+        "tp": 57,
+        "fp": 21,
+        "tn": 695,
+        "fn": 227,
+        "accuracy": 0.752,
+        "accuracy_95ci": [
+          0.7243030327449996,
+          0.7777682103674596
+        ],
+        "precision": 0.730769,
+        "precision_95ci": [
+          0.6232289037742832,
+          0.8166451944838152
+        ],
+        "recall": 0.200704,
+        "recall_95ci": [
+          0.15825534157091337,
+          0.25114204921624184
+        ],
+        "specificity": 0.97067,
+        "specificity_95ci": [
+          0.9555790932470828,
+          0.9807380076262203
+        ],
+        "f1": 0.314917,
+        "zero_event_upper_95": null
+      },
+      "box_ap": {
+        "fire": {
+          "gt_boxes": 527,
+          "ap50": 0.112621,
+          "ap75": 0.018869,
+          "ap50_95": 0.036128
+        },
+        "smoke": {
+          "gt_boxes": 294,
+          "ap50": 0.149458,
+          "ap75": 0.053829,
+          "ap50_95": 0.067249
+        }
+      },
+      "mean_iou": {
+        "fire": {
+          "gt_boxes": 527,
+          "matched_iou50": 37,
+          "recall_iou50": 0.070209,
+          "mean_iou_all_gt": 0.053844,
+          "mean_iou_matched": 0.673028
+        },
+        "smoke": {
+          "gt_boxes": 294,
+          "matched_iou50": 20,
+          "recall_iou50": 0.068027,
+          "mean_iou_all_gt": 0.067233,
+          "mean_iou_matched": 0.806476
+        }
+      },
+      "by_group": {
+        "both": {
+          "n": 26,
+          "correct": 25,
+          "accuracy": 0.961538
+        },
+        "camera_artifacts": {
+          "n": 40,
+          "correct": 39,
+          "accuracy": 0.975
+        },
+        "chandelier_stage_lights": {
+          "n": 25,
+          "correct": 24,
+          "accuracy": 0.96
+        },
+        "clouds": {
+          "n": 30,
+          "correct": 29,
+          "accuracy": 0.966667
+        },
+        "controlled_fire": {
+          "n": 31,
+          "correct": 31,
+          "accuracy": 1.0
+        },
+        "dust_construction_plaster": {
+          "n": 25,
+          "correct": 25,
+          "accuracy": 1.0
+        },
+        "exhaust": {
+          "n": 14,
+          "correct": 14,
+          "accuracy": 1.0
+        },
+        "flowers_autumn_leaves": {
+          "n": 25,
+          "correct": 24,
+          "accuracy": 0.96
+        },
+        "fog_haze_mist": {
+          "n": 30,
+          "correct": 28,
+          "accuracy": 0.933333
+        },
+        "orange_ppe_vests_cones": {
+          "n": 30,
+          "correct": 29,
+          "accuracy": 0.966667
+        },
+        "ordinary_indoor": {
+          "n": 37,
+          "correct": 36,
+          "accuracy": 0.972973
+        },
+        "ordinary_other": {
+          "n": 19,
+          "correct": 19,
+          "accuracy": 1.0
+        },
+        "ordinary_streets_warehouses_offices": {
+          "n": 33,
+          "correct": 32,
+          "accuracy": 0.969697
+        },
+        "overexposed_white": {
+          "n": 19,
+          "correct": 19,
+          "accuracy": 1.0
+        },
+        "positive:medium": {
+          "n": 284,
+          "correct": 57,
+          "accuracy": 0.200704
+        },
+        "red_orange_neon_lights": {
+          "n": 30,
+          "correct": 28,
+          "accuracy": 0.933333
+        },
+        "reflections_lens_flare_glare": {
+          "n": 25,
+          "correct": 24,
+          "accuracy": 0.96
+        },
+        "smoke_only": {
+          "n": 72,
+          "correct": 68,
+          "accuracy": 0.944444
+        },
+        "snow": {
+          "n": 20,
+          "correct": 20,
+          "accuracy": 1.0
+        },
+        "spark_screen": {
+          "n": 3,
+          "correct": 3,
+          "accuracy": 1.0
+        },
+        "steam": {
+          "n": 23,
+          "correct": 23,
+          "accuracy": 1.0
+        },
+        "sunset_orange_sky": {
+          "n": 30,
+          "correct": 28,
+          "accuracy": 0.933333
+        },
+        "uncontrolled_fire": {
+          "n": 99,
+          "correct": 97,
+          "accuracy": 0.979798
+        },
+        "vehicle_lights_streetlights": {
+          "n": 30,
+          "correct": 30,
+          "accuracy": 1.0
+        }
+      },
+      "by_flame_type": {
+        "controlled": {
+          "n": 58,
+          "detected": 25,
+          "recall": 0.431034,
+          "recall_95ci": [
+            0.3118160080083492,
+            0.5588212329427257
+          ]
+        },
+        "smoke_only": {
+          "n": 106,
+          "detected": 18,
+          "recall": 0.169811,
+          "recall_95ci": [
+            0.110198735828486,
+            0.25251994270496575
+          ]
+        },
+        "spark": {
+          "n": 37,
+          "detected": 1,
+          "recall": 0.027027,
+          "recall_95ci": [
+            0.00478685105490774,
+            0.13824378437563367
+          ]
+        },
+        "uncontrolled": {
+          "n": 81,
+          "detected": 6,
+          "recall": 0.074074,
+          "recall_95ci": [
+            0.03438916189352608,
+            0.15233056050680582
+          ]
+        },
+        "unknown": {
+          "n": 2,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.6576280471103807
+          ]
+        }
+      },
+      "policy_uncontrolled_plus_smoke": {
+        "n": 917,
+        "tp": 31,
+        "fp": 21,
+        "tn": 695,
+        "fn": 170,
+        "accuracy": 0.791712,
+        "accuracy_95ci": [
+          0.764238061147719,
+          0.816752198197645
+        ],
+        "recall": 0.154229,
+        "recall_95ci": [
+          0.11082992909236608,
+          0.21059696856904644
+        ],
+        "specificity": 0.97067,
+        "specificity_95ci": [
+          0.9555790932470828,
+          0.9807380076262203
+        ],
+        "suppressed_controlled_or_spark": 83,
+        "suppressed_images_that_alarmed": 26
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.05,
+          "combined_accuracy": 0.514,
+          "combined_recall": 0.911972,
+          "combined_fpr": 0.461,
+          "fire_recall": 0.853933,
+          "smoke_recall": 0.803191
+        },
+        {
+          "threshold": 0.1,
+          "combined_accuracy": 0.593,
+          "combined_recall": 0.841549,
+          "combined_fpr": 0.362,
+          "fire_recall": 0.769663,
+          "smoke_recall": 0.712766
+        },
+        {
+          "threshold": 0.15,
+          "combined_accuracy": 0.661,
+          "combined_recall": 0.792254,
+          "combined_fpr": 0.28,
+          "fire_recall": 0.719101,
+          "smoke_recall": 0.643617
+        },
+        {
+          "threshold": 0.2,
+          "combined_accuracy": 0.701,
+          "combined_recall": 0.714789,
+          "combined_fpr": 0.218,
+          "fire_recall": 0.657303,
+          "smoke_recall": 0.558511
+        },
+        {
+          "threshold": 0.25,
+          "combined_accuracy": 0.73,
+          "combined_recall": 0.661972,
+          "combined_fpr": 0.174,
+          "fire_recall": 0.595506,
+          "smoke_recall": 0.510638
+        },
+        {
+          "threshold": 0.3,
+          "combined_accuracy": 0.736,
+          "combined_recall": 0.59507,
+          "combined_fpr": 0.149,
+          "fire_recall": 0.52809,
+          "smoke_recall": 0.452128
+        },
+        {
+          "threshold": 0.35,
+          "combined_accuracy": 0.743,
+          "combined_recall": 0.524648,
+          "combined_fpr": 0.122,
+          "fire_recall": 0.494382,
+          "smoke_recall": 0.361702
+        },
+        {
+          "threshold": 0.4,
+          "combined_accuracy": 0.758,
+          "combined_recall": 0.461268,
+          "combined_fpr": 0.089,
+          "fire_recall": 0.421348,
+          "smoke_recall": 0.335106
+        },
+        {
+          "threshold": 0.45,
+          "combined_accuracy": 0.769,
+          "combined_recall": 0.394366,
+          "combined_fpr": 0.059,
+          "fire_recall": 0.342697,
+          "smoke_recall": 0.287234
+        },
+        {
+          "threshold": 0.5,
+          "combined_accuracy": 0.766,
+          "combined_recall": 0.309859,
+          "combined_fpr": 0.038,
+          "fire_recall": 0.286517,
+          "smoke_recall": 0.196809
+        },
+        {
+          "threshold": 0.55,
+          "combined_accuracy": 0.762,
+          "combined_recall": 0.264085,
+          "combined_fpr": 0.029,
+          "fire_recall": 0.252809,
+          "smoke_recall": 0.170213
+        },
+        {
+          "threshold": 0.6,
+          "combined_accuracy": 0.756,
+          "combined_recall": 0.207746,
+          "combined_fpr": 0.019,
+          "fire_recall": 0.191011,
+          "smoke_recall": 0.138298
+        },
+        {
+          "threshold": 0.65,
+          "combined_accuracy": 0.751,
+          "combined_recall": 0.165493,
+          "combined_fpr": 0.012,
+          "fire_recall": 0.162921,
+          "smoke_recall": 0.101064
+        },
+        {
+          "threshold": 0.7,
+          "combined_accuracy": 0.738,
+          "combined_recall": 0.102113,
+          "combined_fpr": 0.007,
+          "fire_recall": 0.08427,
+          "smoke_recall": 0.074468
+        },
+        {
+          "threshold": 0.75,
+          "combined_accuracy": 0.732,
+          "combined_recall": 0.066901,
+          "combined_fpr": 0.003,
+          "fire_recall": 0.050562,
+          "smoke_recall": 0.053191
+        },
+        {
+          "threshold": 0.8,
+          "combined_accuracy": 0.724,
+          "combined_recall": 0.03169,
+          "combined_fpr": 0.001,
+          "fire_recall": 0.016854,
+          "smoke_recall": 0.031915
+        },
+        {
+          "threshold": 0.85,
+          "combined_accuracy": 0.719,
+          "combined_recall": 0.010563,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.015957
+        },
+        {
+          "threshold": 0.9,
+          "combined_accuracy": 0.717,
+          "combined_recall": 0.003521,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.005319
+        },
+        {
+          "threshold": 0.95,
+          "combined_accuracy": 0.716,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        }
+      ]
+    }
+  },
+  "generated_utc": "2026-10-27T03:55:10Z",
+  "notes": {
+    "threshold_policy": "thresholds selected on val_mini + val_flames only; bench_R was not used for tuning",
+    "sealed_warning": "SEALED metrics are reported for transparency; do not tune against them"
+  }
+}

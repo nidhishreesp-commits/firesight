@@ -759,6 +759,42 @@ def create_app(config_path: str | None = None) -> FastAPI:
                 out[tag] = {f.stem: json.loads(f.read_text(encoding="utf-8")) for f in p.glob("*_video_metrics.json")}
         return out
 
+    @app.get("/api/benchmark/benchR")
+    def benchmark_benchR() -> dict:
+        latest: dict[str, dict] = {}
+        failures: dict = {}
+        results_dir = PROJECT_ROOT / "bench_results" / "benchR"
+        for p in sorted(results_dir.glob("*.json")):
+            d = json.loads(p.read_text(encoding="utf-8"))
+            if d.get("bench") == "bench_R" and "splits" in d:
+                latest[d["model"]] = d
+            elif p.name == "failures.json":
+                failures = d
+        models = []
+        for model_id, d in sorted(latest.items()):
+            splits = {}
+            for name, s in d["splits"].items():
+                splits[name] = {
+                    "n": s["n"], "positives": s["positives"], "combined": s["combined"],
+                    "fire": s["fire"], "smoke": s["smoke"],
+                    "box_ap": s["box_ap"], "by_flame_type": s["by_flame_type"],
+                    "policy_uncontrolled_plus_smoke": s.get("policy_uncontrolled_plus_smoke"),
+                }
+            models.append({
+                "model": model_id, "family": d.get("family"), "license": d.get("license"),
+                "thresholds": d.get("thresholds"), "target_fpr": d.get("target_fpr"),
+                "bench_locked_sha256": d.get("bench_locked_sha256"),
+                "generated_utc": d.get("generated_utc"), "splits": splits,
+            })
+        return {
+            "bench": "bench_R",
+            "bench_locked_sha256": json.loads((PROJECT_ROOT / "bench_R" / "LOCKED.json").read_text(encoding="utf-8"))["manifest_sha256"],
+            "splits": {"dev": 300, "sealed": 700, "all": 1000},
+            "calibrated_on": "data/splits/val_mini.jsonl + data/splits/val_flames.jsonl",
+            "models": models,
+            "not_run": failures,
+        }
+
     @app.get("/api/artifacts/{rel:path}")
     def artifact(rel: str) -> JSONResponse:
         p = (PROJECT_ROOT / "artifacts" / rel).resolve()
