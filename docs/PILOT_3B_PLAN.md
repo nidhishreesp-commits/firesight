@@ -80,8 +80,8 @@ Pinned versions (`build/kaggle_dataset/requirements-pinned.txt`): `ultralytics==
 `.kaggle/`, `kaggle.json` and `build/` are git-ignored. If a token is ever pasted into a chat or
 notebook, rotate it in Kaggle immediately.
 
-**One GPU notebook at a time:** the notebook preflight asserts `torch.cuda.device_count() == 1`;
-stop any other session first (quota ~30 h/week). Checkpointing every epoch to `/kaggle/working`
+**One GPU notebook at a time:** Kaggle may expose **2x T4 in one session**; the preflight requires
+at least one GPU and training is pinned to `device 0`. Stop any other session first (quota ~30 h/week). Checkpointing every epoch to `/kaggle/working`
 makes an interrupted session resumable, not lost.
 
 **Compute:** free Kaggle GPU only (T4 class, ~12 h/session, ~30 h/week). **No paid compute
