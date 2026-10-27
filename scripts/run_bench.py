@@ -99,7 +99,7 @@ def load_bench() -> list[ImageRecord]:
                 meta={"family": meta.get("family"), "difficulty": row["difficulty"],
                       "has_fire": int(row["has_fire"]), "has_smoke": int(row["has_smoke"]),
                       "ambiguous": int(row["ambiguous"]), "license": row["license"],
-                      "flame_types": sorted(flame_types.get(row["image_id"], {"unknown"})) if int(row["has_fire"]) else []},
+                      "flame_types": sorted(flame_types.get(row["image_id"], {"unknown"}))},
             ))
     return records
 
@@ -347,18 +347,28 @@ def threshold_sweep(records: list[ImageRecord], preds: dict) -> list[dict]:
 
 
 def by_flame_type(records: list[ImageRecord], preds: dict, thresholds: dict[str, float]) -> dict:
+    """Image-level alert recall per ground-truth flame type, fire AND smoke alike.
+
+    Alert-level decision (any class over its own threshold), so these numbers are
+    directly comparable to `policy_strict`: an image whose flame_type is
+    `uncontrolled` counts here exactly as it does in the strict policy view.
+    Every positive image contributes to each of its `flame_type` buckets;
+    smoke-only images additionally keep the historical `smoke_only` bucket.
+    """
     groups = defaultdict(lambda: {"n": 0, "detected": 0})
     for rec in records:
         hf = bool(rec.meta.get("has_fire"))
         hs = bool(rec.meta.get("has_smoke"))
-        if hf:
-            types = rec.meta.get("flame_types") or ["unknown"]
-            for ftype in types:
-                groups[ftype]["n"] += 1
-                groups[ftype]["detected"] += int(decision(rec, preds.get(rec.id, []), thresholds, "fire"))
-        elif hs:
+        if not (hf or hs):
+            continue
+        types = rec.meta.get("flame_types") or ["unknown"]
+        detected = int(decision(rec, preds.get(rec.id, []), thresholds))
+        for ftype in types:
+            groups[ftype]["n"] += 1
+            groups[ftype]["detected"] += detected
+        if hs and not hf:
             groups["smoke_only"]["n"] += 1
-            groups["smoke_only"]["detected"] += int(decision(rec, preds.get(rec.id, []), thresholds, "smoke"))
+            groups["smoke_only"]["detected"] += detected
     out = {}
     for key, value in sorted(groups.items()):
         out[key] = {**value, "recall": round(value["detected"] / value["n"], 6) if value["n"] else None,
@@ -366,18 +376,26 @@ def by_flame_type(records: list[ImageRecord], preds: dict, thresholds: dict[str,
     return out
 
 
-def policy_metrics(records: list[ImageRecord], preds: dict, thresholds: dict[str, float],
-                   excluded_types=("controlled", "spark", "screen")) -> dict:
+EXCLUDED_TYPES = ("controlled", "spark", "screen")
+
+
+def _policy_view(records: list[ImageRecord], preds: dict, thresholds: dict[str, float],
+                 expected, suppressed_key: str) -> dict:
+    """Confusion matrix under a ground-truth-driven alarm policy.
+
+    `expected(types)` returns True when an image is expected to alarm under the
+    policy and False when the policy suppresses it. Suppressed positives leave the
+    confusion matrix entirely (the policy is behaving correctly by staying quiet),
+    and are reported separately so the suppression is never invisible.
+    """
     tp = fp = tn = fn = suppressed = suppressed_alarm = 0
     for rec in records:
-        hf = bool(rec.meta.get("has_fire"))
-        hs = bool(rec.meta.get("has_smoke"))
+        positive = bool(rec.meta.get("has_fire") or rec.meta.get("has_smoke"))
         types = set(rec.meta.get("flame_types") or [])
-        if hf and not hs and types and types.issubset(set(excluded_types)):
+        if positive and not expected(types):
             suppressed += 1
             suppressed_alarm += int(decision(rec, preds.get(rec.id, []), thresholds))
             continue
-        positive = hf or hs
         alarm = decision(rec, preds.get(rec.id, []), thresholds)
         if positive and alarm:
             tp += 1
@@ -395,8 +413,32 @@ def policy_metrics(records: list[ImageRecord], preds: dict, thresholds: dict[str
             "recall_95ci": wilson(tp, tp + fn),
             "specificity": round(tn / (tn + fp), 6) if tn + fp else None,
             "specificity_95ci": wilson(tn, tn + fp),
-            "suppressed_controlled_or_spark": suppressed,
+            suppressed_key: suppressed,
             "suppressed_images_that_alarmed": suppressed_alarm}
+
+
+def policy_metrics(records: list[ImageRecord], preds: dict, thresholds: dict[str, float],
+                   excluded_types=EXCLUDED_TYPES) -> dict:
+    """Policy view A: alarm unless every ground-truth flame type is excluded.
+
+    Historical key `policy_uncontrolled_plus_smoke`. The exclusion now applies to
+    smoke-only images too — smoke no longer bypasses the policy.
+    """
+    excluded = set(excluded_types)
+    return _policy_view(records, preds, thresholds,
+                        lambda types: not (bool(types) and types.issubset(excluded)),
+                        suppressed_key="suppressed_controlled_or_spark")
+
+
+def policy_strict_metrics(records: list[ImageRecord], preds: dict, thresholds: dict[str, float]) -> dict:
+    """Policy view B: alarm iff ground-truth flame_type == 'uncontrolled'.
+
+    Applies to fire AND smoke: uncontrolled smoke alarms, controlled smoke /
+    spark / screen / unknown do not.
+    """
+    return _policy_view(records, preds, thresholds,
+                        lambda types: "uncontrolled" in types,
+                        suppressed_key="suppressed_non_uncontrolled")
 
 
 def group_metrics(records: list[ImageRecord], preds: dict, thresholds: dict[str, float]) -> dict:
@@ -485,6 +527,7 @@ def main() -> int:
         "by_group": group_metrics(bench, bench_preds, thresholds),
         "by_flame_type": by_flame_type(bench, bench_preds, thresholds),
         "policy_uncontrolled_plus_smoke": policy_metrics(bench, bench_preds, thresholds),
+        "policy_strict": policy_strict_metrics(bench, bench_preds, thresholds),
         "threshold_sweep": threshold_sweep(bench, bench_preds),
         "errors": [],
     }

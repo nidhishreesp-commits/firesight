@@ -15,7 +15,7 @@ from firesight.types import Box, GroundTruth, ImageRecord
 from run_bench import (  # noqa: E402  (needs scripts/ on sys.path)
     MODELS, RUNS, by_flame_type, binary_metrics, box_ap, calibrate_image_level,
     contact_sheet, decision, draw_error, get_predictions, group_metrics, load_val,
-    mean_iou, policy_metrics, threshold_sweep,
+    mean_iou, policy_metrics, policy_strict_metrics, threshold_sweep,
 )
 
 BENCHR_DIR = PROJECT_ROOT / "bench_R"
@@ -61,7 +61,7 @@ def load_benchR() -> tuple[list[ImageRecord], dict[str, str]]:
                     "has_fire": has_fire, "has_smoke": has_smoke,
                     "ambiguous": int(r.get("ambiguous") or 0),
                     "license": r.get("license") or "",
-                    "flame_types": [ftype] if has_fire else [],
+                    "flame_types": [ftype],
                     "bench_split": split_name,
                 },
             ))
@@ -93,6 +93,7 @@ def evaluate(name: str, records: list[ImageRecord], preds: dict, thresholds: dic
         "by_group": group_metrics(records, preds, thresholds),
         "by_flame_type": by_flame_type(records, preds, thresholds),
         "policy_uncontrolled_plus_smoke": policy_metrics(records, preds, thresholds),
+        "policy_strict": policy_strict_metrics(records, preds, thresholds),
         "threshold_sweep": threshold_sweep(records, preds),
     }
 

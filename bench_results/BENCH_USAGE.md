@@ -1,8 +1,12 @@
 # Frozen-bench usage log
 
+## testbench100 (demoted — no longer an exam)
+
 `testbench100` is frozen. **Recorded uses: 24.**
 
-All rows below are evaluations that have already happened, including the Phase 3/4 model-and-operating-point comparison. That comparison used the bench for model selection, so the 87% all-flame and 92% policy-filtered numbers are **optimistic**, not clean generalization estimates. Going forward: evaluate only once per major retrain, and use `testbench_B` for final claims.
+All rows below are evaluations that have already happened, including the Phase 3/4 model-and-operating-point comparison. That comparison used the bench for model selection, so the 87% all-flame and 92% policy-filtered numbers are **optimistic**, not clean generalization estimates.
+
+**Status now:** testbench100 is *contaminated* (24 logged uses, several for model selection) and is kept only as a smoke test. **`bench_R` is the only exam** — there is deliberately no `testbench_B` / `bench_S` (per 2026-10-27 decision: no new test bench).
 
 | UTC | run_id | model | val target FPR | accuracy | specificity | note |
 |---|---|---|---:|---:|---:|---|
@@ -35,6 +39,16 @@ All rows below are evaluations that have already happened, including the Phase 3
 
 The 92.0% policy-filtered figure is a **re-scoring of the same 2026-10-22 17:15 run** with controlled/spark/screen images suppressed and excluded from the denominator. It is not a separate model evaluation. 12 images were suppressed; 6 of them would have alarmed if controlled flames were included.
 
-## bench_R
+## bench_R (the exam)
 
-No **evaluated detector** has been run on bench_R. Independent proposers (OWLv2, Grounding DINO) generated proposals only; proposals are not labels. bench_R is **pending human review and lock**. Once locked, only the DEV split may be used for error analysis between iterations; SEALED runs must be logged here with date, model and reason.
+**Locked** 2026-10-27T02:44:04Z by Nidhishree S P — 1,000 images, manifest `9001fbc827a606168867ccf2151694f390ee3df34de16e1da2ee7a585d07993c`, composition 96 fire-only / 106 smoke-only / 82 both / 716 negative. Split: **DEV 300 / SEALED 700**, stratified random seed 20261022.
+
+**Rules:** DEV may be used only for error analysis and hard-negative mining. SEALED is touched **once per milestone** and logged below. Thresholds are calibrated on `val_mini` + `val_flames`, never on bench_R. Models are selected on `data/splits/val.jsonl`, never on `val_bench`.
+
+| UTC | milestone | what happened | SEALED? |
+|---|---|---|---|
+| 2026-10-27T09:20–11:17Z | **M0 baseline** | 11 models evaluated once (DEV + SEALED reported separately). `fireviewer_rtdetrv2` not run (HF download blocked → `failures.json`). Baseline: cascade_v3 acc 0.830, recall 0.479, FPR 0.022, strict-policy recall 0.6795. | yes (one-shot baseline) |
+| 2026-10-27T12:18Z | **M1 metric recompute** | Policy/metric fixes re-scored from **cached predictions** (no new inference, no model change): smoke no longer bypasses the policy in `policy_metrics`; new `policy_strict` view; `by_flame_type` now alert-level and covers smoke-only images. | yes (re-read only, same predictions) |
+| 2026-10-27 | **label cleanup** | 8 negative rows (no fire, no smoke) carried a `flame_type`; reset to `unknown` in `labels.csv`, `DEV.jsonl`, `SEALED.jsonl`, and `reviews.json` (note appended). Composition and all 96 fire-only types unchanged (12 uncontrolled / 52 controlled / 31 spark / 1 unknown). `labels_csv_sha256`: `977d45d9…` → `2d3fd83e…`; `manifest_sha256` unchanged (images untouched). | n/a (labels only) |
+
+**Known provenance caveat:** `labels_csv_sha256` and `manifest_sha256` are hashes of the *local working-copy bytes*. Git normalises CRLF→LF on commit, so a fresh clone's raw bytes hash differently (this was already true at lock time). Nothing verifies these at runtime — they are provenance tokens only. Fix: normalise to LF before hashing (deferred; would invalidate previously recorded tokens).

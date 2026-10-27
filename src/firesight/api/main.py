@@ -22,6 +22,7 @@ from ..config import PROJECT_ROOT, load_config
 from ..data.manifest import load_manifest, manifest_stats
 from ..eval.metrics import _greedy_match
 from ..eval.runner import load_predictions
+from ..flame_type import POLICY_FILE
 from ..logging_utils import setup_logging
 from ..monitoring import ACTIVE_ALARMS, ALARMS_TOTAL, DETECTIONS_TOTAL, FEEDBACK_TOTAL, INFERENCE_LATENCY, metrics_payload
 from ..temporal import draw_detections
@@ -375,6 +376,7 @@ def create_app(config_path: str | None = None) -> FastAPI:
         state.fire_type_policy.exclude = set(payload.exclude)
         for worker in state.workers.values():
             worker.fire_type_policy = state.fire_type_policy
+        state.fire_type_policy.save(state.config.path(POLICY_FILE))
         return state.fire_type_policy.to_dict()
 
     @app.get("/api/config")
@@ -779,6 +781,7 @@ def create_app(config_path: str | None = None) -> FastAPI:
                     "fire": s["fire"], "smoke": s["smoke"],
                     "box_ap": s["box_ap"], "by_flame_type": s["by_flame_type"],
                     "policy_uncontrolled_plus_smoke": s.get("policy_uncontrolled_plus_smoke"),
+                    "policy_strict": s.get("policy_strict"),
                 }
             models.append({
                 "model": model_id, "family": d.get("family"), "license": d.get("license"),

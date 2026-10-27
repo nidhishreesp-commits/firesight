@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import logging
 from pathlib import Path
 from typing import Sequence
@@ -10,23 +11,46 @@ log = logging.getLogger(__name__)
 
 FLAME_TYPES = ("uncontrolled", "controlled", "spark", "screen", "unknown")
 
+DEFAULT_INCLUDE = ("uncontrolled", "unknown")
+DEFAULT_EXCLUDE = ("controlled", "spark", "screen")
+POLICY_FILE = "configs/fire_type_policy.json"
+
 
 class FireTypePolicy:
     """Runtime include/exclude policy, independent of detector retraining.
 
+    The policy applies to fire AND smoke detections alike: an uncontrolled-fire
+    plume must alarm, while controlled smoke (cooking, exhaust, steam) must not.
+
     Detections without a trained flame-type classifier are `unknown`. The default
-    includes `uncontrolled` + `unknown` and excludes controlled flames/sparks/
-    screen fire, but `unknown` inclusion means nothing is silently dropped until
-    the Phase B/D classifier exists.
+    includes `unknown` and excludes controlled/spark/screen, but `unknown`
+    inclusion means nothing is silently dropped until the Phase 4 classifier
+    exists. The policy is persisted to `configs/fire_type_policy.json` so a
+    restart does not revert it to the yaml defaults.
     """
 
     def __init__(self, include: Sequence[str] | None = None, exclude: Sequence[str] | None = None):
-        self.include = set(include or ("uncontrolled", "unknown"))
-        self.exclude = set(exclude or ("controlled", "spark", "screen"))
+        self.include = set(DEFAULT_INCLUDE if include is None else include)
+        self.exclude = set(DEFAULT_EXCLUDE if exclude is None else exclude)
+
+    @classmethod
+    def load(cls, path: str | Path, default_include: Sequence[str] | None = None,
+             default_exclude: Sequence[str] | None = None) -> "FireTypePolicy":
+        p = Path(path)
+        if p.is_file():
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+                return cls(data.get("include"), data.get("exclude"))
+            except Exception as exc:
+                log.warning("fire-type policy at %s unreadable, using defaults: %s", p, exc)
+        return cls(default_include, default_exclude)
+
+    def save(self, path: str | Path) -> None:
+        p = Path(path)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(json.dumps(self.to_dict(), indent=2) + "\n", encoding="utf-8")
 
     def allows(self, detection: Detection) -> bool:
-        if detection.label != "fire":
-            return True
         ftype = detection.flame_type or detection.meta.get("flame_type") or "unknown"
         return ftype in self.include and ftype not in self.exclude
 

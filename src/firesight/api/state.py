@@ -14,7 +14,7 @@ from ..config import Config, load_config
 from ..detectors.base import BaseDetector, load_detector
 from ..temporal import AlarmManager, TemporalConfirmer, draw_detections
 from ..verifier import CropVerifier
-from ..flame_type import FireTypePolicy, FlameTypeClassifier
+from ..flame_type import POLICY_FILE, FireTypePolicy, FlameTypeClassifier
 
 log = logging.getLogger(__name__)
 
@@ -153,8 +153,10 @@ class AppState:
         self.feedback_path.parent.mkdir(parents=True, exist_ok=True)
         self.started_at = time.time()
         self.inference_lock = threading.Lock()
-        self.fire_type_policy = FireTypePolicy(self.config.alarm.fire_type_include,
-                                               self.config.alarm.fire_type_exclude)
+        self.fire_type_policy = FireTypePolicy.load(
+            self.config.path(POLICY_FILE),
+            default_include=self.config.alarm.fire_type_include,
+            default_exclude=self.config.alarm.fire_type_exclude)
         self.flame_type_classifier = FlameTypeClassifier(self.config.path("models/flame_type.onnx"))
 
     def load_cameras(self, path: str | Path = "configs/cameras.yaml") -> None:

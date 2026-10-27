@@ -1,0 +1,11 @@
+{
+  "include": [
+    "uncontrolled",
+    "unknown"
+  ],
+  "exclude": [
+    "controlled",
+    "screen",
+    "spark"
+  ]
+}

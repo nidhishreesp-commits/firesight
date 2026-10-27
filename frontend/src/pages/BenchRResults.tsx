@@ -76,6 +76,7 @@ export default function BenchRResults() {
         const c = s.combined ?? {};
         const ap = s.box_ap ?? {};
         const pol = s.policy_uncontrolled_plus_smoke ?? {};
+        const strict = s.policy_strict ?? {};
         return [
           m.model,
           String(s.n ?? "-"),
@@ -87,6 +88,7 @@ export default function BenchRResults() {
           pct(c.f1),
           pct(ap.fire),
           pct(ap.smoke),
+          pct(strict.recall),
           pct(pol.recall),
         ];
       }),
@@ -146,7 +148,7 @@ export default function BenchRResults() {
         <Table
           head={[
             "model", "n", "accuracy", "recall", "specificity", "fpr", "precision", "f1",
-            "fire AP50", "smoke AP50", "policy recall",
+            "fire AP50", "smoke AP50", "strict policy", "legacy policy",
           ]}
           rows={mainRows}
           highlight={bestIdx}
@@ -162,9 +164,14 @@ export default function BenchRResults() {
 
       {!!models.length && (
         <div className="rounded border border-slate-800 px-3 py-2 text-[11px] leading-relaxed text-slate-500">
-          bench_R is negative-heavy ({data?.splits ? `${data.splits.all} images, 716 negative / 284 positive` : "-"}), so
-          accuracy flatters weak models; recall is the metric that matters. Box AP rests on only 181 fire boxes.
-          {!Object.keys(data?.not_run ?? {}).length ? "" : ` Not run: ${Object.keys(data.not_run).join(", ")}.`}
+          <b className="text-slate-400">strict policy</b> = alarm iff the ground-truth flame type is
+          <i> uncontrolled</i>, for fire <b>and</b> smoke (controlled / spark / screen / unknown are suppressed and leave the
+          denominator). <b className="text-slate-400">legacy policy</b> = alarm unless controlled/spark/screen, so
+          <i> unknown</i> still alarms. Policy rows are not comparable to plain accuracy because suppressed positives are
+          excluded from n. &nbsp;·&nbsp; bench_R is negative-heavy (1000 images, 716 negative / 284 positive), so plain
+          accuracy flatters weak models; recall is the metric that matters. Box AP rests on 527 fire boxes across 178 fire
+          images. &nbsp;·&nbsp;
+          {!Object.keys(data?.not_run ?? {}).length ? "" : `Not run: ${Object.keys(data.not_run).join(", ")}.`}
         </div>
       )}
     </div>

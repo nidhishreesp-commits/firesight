@@ -42,5 +42,11 @@
     },
     "reviewed": 1000
   },
-  "labels_csv_sha256": "977d45d9163039b04c9f27818af2d4972f19e8f4cfb1bbdf7179c1f81b6e7cb8"
+  "labels_csv_sha256": "2d3fd83e63309fad4b9cf641d75906473807c412529b4231e6e8cb681ca6ed54",
+  "label_cleanup": {
+    "utc": "2026-10-27",
+    "reason": "negatives must not carry a flame_type; 8 negative rows reset to unknown",
+    "rows": 8,
+    "previous_labels_csv_sha256": "977d45d9163039b04c9f27818af2d4972f19e8f4cfb1bbdf7179c1f81b6e7cb8"
+  }
 }
