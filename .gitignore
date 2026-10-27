@@ -47,3 +47,9 @@ bench_R/spot_checks.json
 weights/
 yolov8s-worldv2.pt
 *.pt
+
+# Kaggle credentials and local packaging artifacts (never commit)
+.kaggle/
+kaggle.json
+kaggle/*.ipynb_checkpoints/
+build/

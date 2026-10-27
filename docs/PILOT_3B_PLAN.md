@@ -24,18 +24,29 @@ report root cause instead of burning quota (Phase 3e stop-loss).
 
 ## 3. Fractions and runs
 
-| run | fraction | images (≈) | epochs | est. GPU time ≈ |
-|---|---:|---:|---:|---:|
-| P10 | 10% | 5,927 | 15 | ~0.8 h |
-| P25 | 25% | 14,818 | 15 | ~2.0 h |
-| P50 | 50% | 29,636 | 15 | ~4.0 h |
-| P10n | 10% with `yolo11n` | 5,927 | 15 | ~0.5 h (pipeline sanity check) |
+Fractions are taken from the **uploadable pool only** (58,985 images: D-Fire + FASDD; the 287
+proprietary/own-capture images are excluded from the Kaggle dataset, see §9), stratified so the
+class ratio is identical at every fraction.
 
-≈ estimates: **to be measured**, not assumed. Full run ≈ 2× P50 (59,272 imgs, 30–60 epochs) →
-roughly 8–20 h depending on what the pilot measures; that number is recomputed from real
-`images/s` after the pilot.
+| run | fraction | images | epochs | est. @60 img/s | est. @100 img/s |
+|---|---|---:|---:|---:|---:|
+| P10 | 10% | 5,898 | 15 | 0.5 h | 0.3 h |
+| P25 | 25% | 14,747 | 15 | 1.1 h | 0.7 h |
+| P50 | 50% | 29,493 | 15 | 2.2 h | 1.4 h |
+| **pilot total** | | | | **≈3.8 h** | **≈2.4 h** |
+| P10n (optional) | 10% with `yolo11n` | 5,898 | 15 | ≈0.3 h | ≈0.2 h |
 
-Preceding all runs: **baseline arm** — current `best_fire_v3.onnx` scored on the same metric (✅ measured before any training, so "did we beat today's model" is never an estimate).
+≈ T4 throughput band is **estimated** (60-100 img/s for yolo11s @640, batch 64, AMP) and is
+replaced by the measured `images/s` the pilot itself logs. **Measured** on this machine for
+calibration: yolo11n @320, batch 8, CPU = **12.35 images/s, 16.2 s/epoch** on 200 images
+(dry run, §10) - a CPU floor, not a GPU prediction.
+
+Full run ≈ 58,985 images x 40 epochs: **≈11 h @60 img/s, ≈6.6 h @100 img/s** at 640, roughly
+double at 960. That fits 1-2 sessions of the ~12 h / ~30 h-per-week free quota; recompute from
+measured `images/s` before approving.
+
+Preceding all runs: **baseline arm** - current `best_fire_v3.onnx` scored on the same metric and
+the same val slices, so "did we beat today's model" is never an estimate.
 
 ## 4. Metrics recorded per run
 
@@ -48,13 +59,32 @@ Preceding all runs: **baseline arm** — current `best_fire_v3.onnx` scored on t
 
 ## 5. Infrastructure (3a deliverables)
 
-- `kaggle/` notebook + local `scripts/kaggle_train.py`: dataset packaging, pinned versions
-  (`ultralytics`, `torch`, `opencv-python`, `onnx`, `numpy`), checkpoint to `/kaggle/working`
-  **every epoch**, `--resume` across 12 h sessions, quota tracker, one GPU notebook at a time.
-- Data upload: pack `images + labels + data.yaml` into a Kaggle dataset; creating/uploading it needs
-  your Kaggle credentials or your click — **I will not download large external datasets without asking.**
-- Compute: free Kaggle GPU only (T4 class, ~12 h/session, ~30 h/week). **No paid compute without approval.**
-- Version pinning file committed so a rerun is reproducible.
+Everything below exists locally and is committed; **nothing has been uploaded**.
+
+| file | role |
+|---|---|
+| `kaggle/pilot_firesight.ipynb` | the notebook to upload (preflight, train, score, summary, export) |
+| `kaggle/pilot_train.py` | one learning-curve point: stratified fraction, checkpoint **every epoch**, `--resume`, measured throughput, ONNX export |
+| `kaggle/pilot_eval.py` | val.jsonl scoring: calibrate on `val_cal`, report recall@FPR≤2%/negative + Wilson CI on `val_report`, bench_R-format JSON |
+| `scripts/kaggle_package.py` | builds the PRIVATE dataset package, MANIFEST.csv, counts per source/licence, LEAKAGE_REPORT.json, CHECKLIST.md |
+| `kaggle/kernel-metadata.json` | kernel spec (private, GPU, dataset source) - replace the username |
+| `code/` inside the dataset | the exact `run_bench.py` + `firesight` package used for bench_R, so pilot metrics are computed identically |
+
+Pinned versions (`build/kaggle_dataset/requirements-pinned.txt`): `ultralytics==8.4.147`,
+`onnx==1.22.0`, `onnxruntime==1.30.0`. `torch` stays as provided by the Kaggle GPU image
+(CUDA-matched); dry-run versions are recorded in `versions-reference.json`.
+
+**Credentials:** the Kaggle token is read from `~/.kaggle/kaggle.json` or `KAGGLE_USERNAME` /
+`KAGGLE_KEY` only. It is never written to the repo, the notebook, logs or the dataset;
+`.kaggle/`, `kaggle.json` and `build/` are git-ignored. If a token is ever pasted into a chat or
+notebook, rotate it in Kaggle immediately.
+
+**One GPU notebook at a time:** the notebook preflight asserts `torch.cuda.device_count() == 1`;
+stop any other session first (quota ~30 h/week). Checkpointing every epoch to `/kaggle/working`
+makes an interrupted session resumable, not lost.
+
+**Compute:** free Kaggle GPU only (T4 class, ~12 h/session, ~30 h/week). **No paid compute
+without approval.**
 
 ## 6. Decision gate (before the full run)
 
@@ -81,3 +111,97 @@ rounds from bench_R DEV FPs).
 - Pilot decisions use `val.jsonl` only. bench_R **DEV** is used later for *error analysis and
   hard-negative mining* of an already-chosen model; **SEALED** is read once at the milestone end and logged in `BENCH_USAGE.md`.
 - Differences under 2 pp at n≈8,252 are within CI noise; the curve is judged by the confidence intervals, not the point estimates.
+
+## 9. Upload package (built locally, NOT uploaded)
+
+`python scripts/kaggle_package.py` writes `build/kaggle_dataset/` (manifest-only by default;
+`--materialize` hardlinks images, `--zip` builds the archive to upload). Measured output:
+
+| item | value |
+|---|---|
+| train pool (allowed) | **58,985** (D-Fire 4,829 + FASDD 54,156 of train.jsonl) |
+| val slices (from `val.jsonl`) | early-stop 1,000 / threshold-calibration 2,000 / report 5,119 |
+| total images in package | **67,104** |
+| excluded sources | `local_seed` 19 (own captures), `local_negative` 268 (unclear-rights web images) |
+| by source | FASDD 60,698 / D-Fire 6,406 |
+| by licence | CC BY 4.0 (FASDD) 60,698 / CC0-1.0 (D-Fire) 6,406 |
+| estimated size | ≈7.6 GB (mean 111 KB/image) |
+
+**Leakage proof** (`LEAKAGE_REPORT.json`, verdict **PASS**): id overlap 0 vs bench_R,
+testbench100 and TEST; path overlap 0 vs TEST and bench_R; pHash near-duplicates
+(Hamming <= 2) 0 against all three; proprietary-path hits 0. This is in addition to the
+scene isolation already done by `prepare_data.py`.
+
+### Upload checklist (stop here until approved)
+
+- [ ] `LEAKAGE_REPORT.json` verdict is PASS
+- [ ] `dataset-metadata.json`: `isPrivate: true`, `id` set to your Kaggle username
+- [ ] `MANIFEST.csv` present (16.8 MB; source + licence per image)
+- [ ] `kaggle/kernel-metadata.json`: username replaced, `enable_gpu: true`, `dataset_sources` set
+- [ ] Credentials only via env / `~/.kaggle/kaggle.json`; token rotated if ever exposed
+- [ ] Upload command (only after go-ahead):
+      `kaggle datasets create -p build/kaggle_dataset --dir-mode zip`
+      then `kaggle kernels push -p kaggle/`
+- [ ] Start **one** GPU session; re-run the train cell after any restart (it resumes)
+
+## 10. Local dry run (measured, CPU)
+
+`build/dry_run/`: 200 train / 50 val images, `yolo11n.yaml` built from scratch (no download),
+320 px, batch 8, CPU, 2 epochs.
+
+| step | result |
+|---|---|
+| training | 2 epochs, 200 images, **16.2 s/epoch**, **12.35 images/s** |
+| checkpointing | `last.pt`, `best.pt`, `epoch0.pt` written each epoch (21.2 MB each) |
+| interrupt + resume | stopped after epoch 1; `--resume` logged `Resuming training ... from epoch 2 to 2`, `resumed: true`, 2 rows in `results.csv` |
+| ONNX export | `best.onnx`, 10.0 MB, opset 17, 0.6 s |
+| scoring | `pilot_eval.py` on the same Kaggle `code/` layout: recall 0.0 [0, 0.176] @ FPR 0.0 [0, 0.243] (untrained model, expected) |
+
+The dry run proves the training, per-epoch checkpoint, cross-session resume, ONNX export and
+bench_R-format scoring paths. It is a pipeline test, not a result.
+
+## 11. electrical_arc has zero examples
+
+`electrical_arc` is a **configurable class** in the 6-class taxonomy, but there are **0**
+`electrical_arc` images in bench_R and 0 in the training pool. It is therefore reported as
+**unmeasured**, never as zero-risk. The warning tier exists and is unit-tested, but no metric on
+it is meaningful yet.
+
+Proposed sourcing (needs approval before any download):
+1. Own captures of switchgear/arc-flash test footage, if available.
+2. Public arc-flash demonstration videos from manufacturer/standards bodies (licence review per clip).
+3. Electrical-panel/breaker thermal-camera datasets with arc events (check licence).
+4. Label welding arcs as `spark_benign` and **only** true fault arcs as `electrical_arc`
+   (the rubric already distinguishes them).
+Target: 50-100 images before claiming any electrical_arc metric; until then the class stays in the
+schema and out of the results table.
+
+## 12. Decision rules (explicit)
+
+Let `r10`, `r25`, `r50` be val recall @ FPR <= 2% per negative image (Wilson CI), and `b` the
+current `best_fire_v3` scored on the same slices and calibration.
+
+| decision | condition | next step |
+|---|---|---|
+| **GO** | `r50 - r10 >= 5 pp` **and** CIs of r10/r50 do not overlap **and** `r50 > b` at equal FPR | approve full run (all 58,985 + new positives, 30-60 epochs, 640 and 960), recompute hours from measured img/s |
+| **TRIM** | curve rises but projected full run > ~20 GPU h or > remaining weekly quota | cut epochs / use 25-50% / yolo11n, re-approve |
+| **STOP** | `r50 - r10` inside CI noise (flat curve) **or** no run beats `b` at equal FPR | stop; diagnose label noise, task mismatch, augmentation, class balance before more training |
+
+Any leakage or benchmark contamination found in the pilot data halts the run and is fixed first.
+Pilot numbers are **measured**; GPU-hour projections are **estimated** until the pilot logs
+`images/s`.
+
+## 13. How to run (after approval only)
+
+```bash
+# 1) build + inspect the package locally (no network)
+python scripts/kaggle_package.py --materialize
+python -c "import json;print(json.load(open('build/kaggle_dataset/LEAKAGE_REPORT.json'))['verdict'])"
+
+# 2) set the username in both metadata files, then upload (needs your credentials)
+kaggle datasets create -p build/kaggle_dataset --dir-mode zip
+kaggle kernels push -p kaggle/
+
+# 3) in the notebook: preflight -> install -> train -> score -> summary
+#    after a session restart, re-run the train cell; it resumes from last.pt
+```
