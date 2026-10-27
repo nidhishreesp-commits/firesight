@@ -1,5 +1,5 @@
 {
-  "id": "REPLACE_WITH_YOUR_KAGGLE_USERNAME/firesight-pilot-3b",
+  "id": "nidhishreesp/firesight-pilot-3b",
   "title": "firesight pilot 3b",
   "code_file": "pilot_firesight.ipynb",
   "language": "python",
@@ -8,7 +8,7 @@
   "enable_gpu": true,
   "enable_internet": true,
   "dataset_sources": [
-    "REPLACE_WITH_YOUR_KAGGLE_USERNAME/firesight-pilot"
+    "nidhishreesp/firesight-pilot"
   ],
   "competition_sources": [],
   "kernel_sources": []

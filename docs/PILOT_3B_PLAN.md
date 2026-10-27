@@ -14,6 +14,7 @@ report root cause instead of burning quota (Phase 3e stop-loss).
 | item | value | why |
 |---|---|---|
 | base weights | `yolo11s.pt` (plus one `yolo11n` sanity arm) | matches the intended full-run model, CPU-runnable for smoke tests |
+| weights licence | **AGPL-3.0** (Ultralytics default) | downloaded at runtime from `github.com/ultralytics/assets`; commercial distribution may require an Ultralytics Enterprise Licence - flag before shipping |
 | input size | 640 | 960 is evaluated in 3c, not here |
 | epochs | 15, early-stop patience 5 on val loss | fixed epoch budget so the curve measures *data*, not schedule |
 | batch / precision | 64, `amp=True` | T4-friendly |
@@ -74,8 +75,8 @@ Pinned versions (`build/kaggle_dataset/requirements-pinned.txt`): `ultralytics==
 `onnx==1.22.0`, `onnxruntime==1.30.0`. `torch` stays as provided by the Kaggle GPU image
 (CUDA-matched); dry-run versions are recorded in `versions-reference.json`.
 
-**Credentials:** the Kaggle token is read from `~/.kaggle/kaggle.json` or `KAGGLE_USERNAME` /
-`KAGGLE_KEY` only. It is never written to the repo, the notebook, logs or the dataset;
+**Credentials:** the Kaggle token is read from `~/.kaggle/access_token` (or `~/.kaggle/kaggle.json`,
+`KAGGLE_USERNAME` / `KAGGLE_KEY`) only; the CLI is invoked as `python -m kaggle` (no `kaggle` on PATH). It is never written to the repo, the notebook, logs or the dataset;
 `.kaggle/`, `kaggle.json` and `build/` are git-ignored. If a token is ever pasted into a chat or
 notebook, rotate it in Kaggle immediately.
 
@@ -140,8 +141,8 @@ scene isolation already done by `prepare_data.py`.
 - [ ] `kaggle/kernel-metadata.json`: username replaced, `enable_gpu: true`, `dataset_sources` set
 - [ ] Credentials only via env / `~/.kaggle/kaggle.json`; token rotated if ever exposed
 - [ ] Upload command (only after go-ahead):
-      `kaggle datasets create -p build/kaggle_dataset --dir-mode zip`
-      then `kaggle kernels push -p kaggle/`
+      `python -m kaggle datasets create -p build/kaggle_dataset --dir-mode zip`
+      then `python -m kaggle kernels push -p kaggle/`
 - [ ] Start **one** GPU session; re-run the train cell after any restart (it resumes)
 
 ## 10. Local dry run (measured, CPU)
@@ -183,9 +184,16 @@ current `best_fire_v3` scored on the same slices and calibration.
 
 | decision | condition | next step |
 |---|---|---|
-| **GO** | `r50 - r10 >= 5 pp` **and** CIs of r10/r50 do not overlap **and** `r50 > b` at equal FPR | approve full run (all 58,985 + new positives, 30-60 epochs, 640 and 960), recompute hours from measured img/s |
+| **GO** | `r50 - r10 >= 5 pp` **and** CIs of r10/r50 do not overlap **and** `r50 > b` at equal FPR **and** a single **bench_R DEV-only** confirmation run per checkpoint (300 images) reproduces the ordering (`r50 > b`, no reversal) | approve full run (all 58,985 + new positives, 30-60 epochs, 640 and 960), recompute hours from measured img/s |
 | **TRIM** | curve rises but projected full run > ~20 GPU h or > remaining weekly quota | cut epochs / use 25-50% / yolo11n, re-approve |
 | **STOP** | `r50 - r10` inside CI noise (flat curve) **or** no run beats `b` at equal FPR | stop; diagnose label noise, task mismatch, augmentation, class balance before more training |
+
+**bench_R DEV condition (GO gate):** after the pilot, each checkpoint gets **exactly one** scoring
+run on bench_R **DEV** (300 images) - never SEALED. DEV is used only for this confirmation and
+error analysis; thresholds stay calibrated on `val_mini` + `val_flames`, and the run is logged in
+`bench_results/BENCH_USAGE.md` as DEV-only. If the DEV ordering contradicts val.jsonl (P50 does not
+beat the baseline, or P25/P50 reverse), the result is **STOP / diagnose**, not GO. SEALED remains
+untouched until the milestone end.
 
 Any leakage or benchmark contamination found in the pilot data halts the run and is fixed first.
 Pilot numbers are **measured**; GPU-hour projections are **estimated** until the pilot logs
@@ -199,8 +207,8 @@ python scripts/kaggle_package.py --materialize
 python -c "import json;print(json.load(open('build/kaggle_dataset/LEAKAGE_REPORT.json'))['verdict'])"
 
 # 2) set the username in both metadata files, then upload (needs your credentials)
-kaggle datasets create -p build/kaggle_dataset --dir-mode zip
-kaggle kernels push -p kaggle/
+python -m kaggle datasets create -p build/kaggle_dataset --dir-mode zip
+python -m kaggle kernels push -p kaggle/
 
 # 3) in the notebook: preflight -> install -> train -> score -> summary
 #    after a session restart, re-run the train cell; it resumes from last.pt
