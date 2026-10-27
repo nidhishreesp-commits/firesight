@@ -213,3 +213,41 @@ python -m kaggle kernels push -p kaggle/
 # 3) in the notebook: preflight -> install -> train -> score -> summary
 #    after a session restart, re-run the train cell; it resumes from last.pt
 ```
+
+## 14. Execution log (2026-10-27) - stopped before any training completed
+
+What shipped and was verified:
+
+- Private dataset `nidhishreesp/firesight-pilot` (**ready**, `isPrivate=true`): 67,104 images,
+  manifest-verified, leakage PASS. Kaggle auto-extracts the uploaded directory zips, so the
+  mount contains `images/ labels/ lists/ code/ data.yaml`.
+- Private code+weights dataset `nidhishreesp/firesight-pilot-code` (`isPrivate=true`), including
+  `yolo11s.pt` (AGPL-3.0) so training needs no network.
+- Kernel `nidhishreesp/firesight-pilot-3b` (`is_private=true`, GPU, both datasets attached).
+
+Environment findings (each fixed in the notebook, v10):
+
+1. Kaggle exposes **2x T4 in one session**; preflight now requires >=1 GPU and pins `device 0`.
+2. Ultralytics is **not** in the Kaggle base image; install with `--no-deps` and set
+   `YOLO_AUTOINSTALL=False`. Its import-time auto-installer/online checks were the first stall.
+3. `YOLO_OFFLINE=True` + weights shipped in the dataset removes all network from the training path.
+4. Kaggle's log forwarder drains stdout; the training child is run with `stderr=STDOUT`,
+   `PYTHONUNBUFFERED=1` and a hard `timeout 10800`.
+
+**Unresolved:** the training subprocess reaches `model.train()` and then produces no output
+before the first epoch (no Ultralytics banner, no TQDM). Prime suspect: the first-time label
+scan over the read-only `/kaggle/input` FUSE mount (TQDM `\r` updates are not forwarded), plus
+the label cache being unwritable. **No `images/s` was measured**, so the 5 h gate was never
+evaluable.
+
+**Quota reality:** this account's GPU allowance is **21,600 s (6 h) total**, not 30 h/week.
+At stop time `timeUsed` was 22,871 s (106% of allowance) with two stuck sessions still running.
+No further GPU run is possible until the quota refresh (`2026-10-31T00:00Z`).
+
+Next session, before any full pilot:
+
+1. Cancel stuck sessions; confirm `timeUsed` resets after the refresh.
+2. Smoke test first: 200 images, 1 epoch, `workers=0`, `amp=False`, writable labels copy under
+   `/kaggle/working` (copy `labels/` + `lists/`, symlink `images/`), hard 15 min timeout.
+   Only if that prints a real `images/s` do we start P10.
+3. Given the 6 h allowance, run **P10 only** first (≈0.5 h measured), report, then decide on P25/P50.
