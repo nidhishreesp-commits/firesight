@@ -6,6 +6,9 @@
   "exclude": [
     "controlled",
     "screen",
-    "spark"
+    "spark_benign"
+  ],
+  "warning": [
+    "electrical_arc"
   ]
 }

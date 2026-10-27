@@ -51,7 +51,8 @@ alarm:
   # Runtime policy; requires a trained flame-type classifier to distinguish these.
   # Until Phase B/D trains it, all fire detections are `unknown` and are included.
   fire_type_include: [uncontrolled, unknown]
-  fire_type_exclude: [controlled, spark, screen]
+  fire_type_exclude: [controlled, spark_benign, screen]
+  fire_type_warning: [electrical_arc]
   escalation:
     - level: 1
       after_s: 0

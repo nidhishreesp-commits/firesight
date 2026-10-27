@@ -21,6 +21,7 @@ from firesight.detectors.base import load_detector
 from firesight.eval.metrics import box_iou, compute_ap
 from firesight.eval.runner import cache_predictions, load_predictions
 from firesight.flame import relabel_flame_evidence
+from firesight.flame_type import canonical_flame_type
 from firesight.types import Box, Detection, GroundTruth, ImageRecord
 
 BENCH_DIR = PROJECT_ROOT / "testbench100"
@@ -77,7 +78,7 @@ def load_bench() -> list[ImageRecord]:
     if attr_path.exists():
         with attr_path.open("r", encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
-                flame_types[row["image_id"]].add(row["flame_type"])
+                flame_types[row["image_id"]].add(canonical_flame_type(row["flame_type"]))
     records = []
     with (BENCH_DIR / "labels.csv").open("r", encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
@@ -376,7 +377,7 @@ def by_flame_type(records: list[ImageRecord], preds: dict, thresholds: dict[str,
     return out
 
 
-EXCLUDED_TYPES = ("controlled", "spark", "screen")
+EXCLUDED_TYPES = ("controlled", "spark_benign", "electrical_arc", "screen", "spark")
 
 
 def _policy_view(records: list[ImageRecord], preds: dict, thresholds: dict[str, float],
@@ -434,7 +435,7 @@ def policy_strict_metrics(records: list[ImageRecord], preds: dict, thresholds: d
     """Policy view B: alarm iff ground-truth flame_type == 'uncontrolled'.
 
     Applies to fire AND smoke: uncontrolled smoke alarms, controlled smoke /
-    spark / screen / unknown do not.
+    spark_benign / electrical_arc / screen / unknown do not.
     """
     return _policy_view(records, preds, thresholds,
                         lambda types: "uncontrolled" in types,

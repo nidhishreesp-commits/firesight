@@ -53,11 +53,13 @@ def test_fire_type_policy_roundtrip(client):
     r = client.get("/api/policy/fire-types")
     assert r.status_code == 200
     old = r.json()
-    new = {"include": ["uncontrolled", "controlled", "unknown"], "exclude": ["spark", "screen"]}
+    new = {"include": ["uncontrolled", "controlled", "unknown"], "exclude": ["spark", "screen"],
+           "warning": ["electrical_arc"]}
     assert client.post("/api/policy/fire-types", json=new).status_code == 200
     current = client.get("/api/policy/fire-types").json()
     assert set(current["include"]) == set(new["include"])
-    assert set(current["exclude"]) == set(new["exclude"])
+    assert set(current["exclude"]) == {"spark_benign", "screen"}
+    assert set(current["warning"]) == {"electrical_arc"}
     client.post("/api/policy/fire-types", json=old)
 
 

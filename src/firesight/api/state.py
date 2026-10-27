@@ -156,7 +156,8 @@ class AppState:
         self.fire_type_policy = FireTypePolicy.load(
             self.config.path(POLICY_FILE),
             default_include=self.config.alarm.fire_type_include,
-            default_exclude=self.config.alarm.fire_type_exclude)
+            default_exclude=self.config.alarm.fire_type_exclude,
+            default_warning=self.config.alarm.fire_type_warning)
         self.flame_type_classifier = FlameTypeClassifier(self.config.path("models/flame_type.onnx"))
 
     def load_cameras(self, path: str | Path = "configs/cameras.yaml") -> None:

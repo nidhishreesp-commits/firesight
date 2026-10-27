@@ -9,7 +9,7 @@ const CATEGORIES = [
   "steam", "exhaust", "dust_construction_plaster", "snow", "overexposed_white", "camera_artifacts",
   "ordinary_indoor", "ordinary_streets_warehouses_offices", "ordinary_other"
 ];
-const FLAME_TYPES = ["uncontrolled", "controlled", "spark", "screen", "unknown"];
+const FLAME_TYPES = ["uncontrolled", "controlled", "spark_benign", "electrical_arc", "screen", "unknown"];
 
 export default function BenchRReview() {
   const [data, setData] = useState<any>(null);
@@ -217,7 +217,7 @@ export default function BenchRReview() {
           <h1 className="text-2xl font-semibold">Reference bench — bench_R</h1>
           <div className="text-sm text-slate-400">
             {reviewed}/1000 reviewed · fire-only total {comp.fire_only}/96 · controlled {comp.fire_only_types?.controlled ?? 0}/52 ·
-            sparks {((comp.fire_only_types?.spark ?? 0) + (comp.fire_only_types?.screen ?? 0))}/31 ·
+            sparks {((comp.fire_only_types?.spark_benign ?? 0) + (comp.fire_only_types?.spark ?? 0) + (comp.fire_only_types?.screen ?? 0))}/31 ·
             smoke-only {comp.smoke_only}/106 · both {comp.both}/82 · negatives {comp.negative}/716
           </div>
         </div>

@@ -257,12 +257,12 @@
       },
       "by_flame_type": {
         "controlled": {
-          "n": 16,
-          "detected": 7,
-          "recall": 0.4375,
+          "n": 28,
+          "detected": 8,
+          "recall": 0.285714,
           "recall_95ci": [
-            0.2309836333518552,
-            0.6682180439322347
+            0.15253815848329969,
+            0.470596357370175
           ]
         },
         "smoke_only": {
@@ -274,7 +274,7 @@
             0.2490028999817704
           ]
         },
-        "spark": {
+        "spark_benign": {
           "n": 10,
           "detected": 1,
           "recall": 0.1,
@@ -284,12 +284,12 @@
           ]
         },
         "uncontrolled": {
-          "n": 27,
-          "detected": 3,
-          "recall": 0.111111,
+          "n": 46,
+          "detected": 7,
+          "recall": 0.152174,
           "recall_95ci": [
-            0.03851964789498727,
-            0.2805818254397294
+            0.07572186234017478,
+            0.28224417406315094
           ]
         },
         "unknown": {
@@ -303,28 +303,52 @@
         }
       },
       "policy_uncontrolled_plus_smoke": {
-        "n": 276,
-        "tp": 8,
+        "n": 262,
+        "tp": 7,
         "fp": 1,
         "tn": 214,
-        "fn": 53,
-        "accuracy": 0.804348,
+        "fn": 40,
+        "accuracy": 0.843511,
         "accuracy_95ci": [
-          0.753502613017158,
-          0.8468370076825522
+          0.7945914282311082,
+          0.8825035034876296
         ],
-        "recall": 0.131148,
+        "recall": 0.148936,
         "recall_95ci": [
-          0.06797996145868099,
-          0.23802112426406494
+          0.07406626087497505,
+          0.2768589657111277
         ],
         "specificity": 0.995349,
         "specificity_95ci": [
           0.9741282161586808,
           0.9991785043185957
         ],
-        "suppressed_controlled_or_spark": 24,
-        "suppressed_images_that_alarmed": 8
+        "suppressed_controlled_or_spark": 38,
+        "suppressed_images_that_alarmed": 9
+      },
+      "policy_strict": {
+        "n": 261,
+        "tp": 7,
+        "fp": 1,
+        "tn": 214,
+        "fn": 39,
+        "accuracy": 0.846743,
+        "accuracy_95ci": [
+          0.7980372288836335,
+          0.8853901480843354
+        ],
+        "recall": 0.152174,
+        "recall_95ci": [
+          0.07572186234017478,
+          0.28224417406315094
+        ],
+        "specificity": 0.995349,
+        "specificity_95ci": [
+          0.9741282161586808,
+          0.9991785043185957
+        ],
+        "suppressed_non_uncontrolled": 39,
+        "suppressed_images_that_alarmed": 9
       },
       "threshold_sweep": [
         {
@@ -726,12 +750,12 @@
       },
       "by_flame_type": {
         "controlled": {
-          "n": 42,
-          "detected": 18,
-          "recall": 0.428571,
+          "n": 57,
+          "detected": 19,
+          "recall": 0.333333,
           "recall_95ci": [
-            0.2911742951914822,
-            0.5779402208812553
+            0.22493635982226273,
+            0.46277730977222514
           ]
         },
         "smoke_only": {
@@ -743,7 +767,7 @@
             0.3041149455116171
           ]
         },
-        "spark": {
+        "spark_benign": {
           "n": 27,
           "detected": 0,
           "recall": 0.0,
@@ -753,47 +777,71 @@
           ]
         },
         "uncontrolled": {
-          "n": 54,
-          "detected": 3,
-          "recall": 0.055556,
+          "n": 110,
+          "detected": 21,
+          "recall": 0.190909,
           "recall_95ci": [
-            0.019072922503838907,
-            0.15107451463482943
+            0.12839312602494252,
+            0.27428568383015445
           ]
         },
         "unknown": {
-          "n": 1,
-          "detected": 0,
-          "recall": 0.0,
+          "n": 5,
+          "detected": 1,
+          "recall": 0.2,
           "recall_95ci": [
-            0.0,
-            0.7934567085261071
+            0.03622316096978745,
+            0.6244717358814613
           ]
         }
       },
       "policy_uncontrolled_plus_smoke": {
-        "n": 641,
-        "tp": 23,
+        "n": 616,
+        "tp": 22,
         "fp": 20,
         "tn": 481,
-        "fn": 117,
-        "accuracy": 0.786271,
+        "fn": 93,
+        "accuracy": 0.816558,
         "accuracy_95ci": [
-          0.7528793077417033,
-          0.816252708555012
+          0.7840644019565871,
+          0.8451286047728742
         ],
-        "recall": 0.164286,
+        "recall": 0.191304,
         "recall_95ci": [
-          0.11203753808504885,
-          0.23446583785070274
+          0.12986500788825311,
+          0.27270109691006666
         ],
         "specificity": 0.96008,
         "specificity_95ci": [
           0.9391460331467388,
           0.9740116781036811
         ],
-        "suppressed_controlled_or_spark": 59,
-        "suppressed_images_that_alarmed": 18
+        "suppressed_controlled_or_spark": 84,
+        "suppressed_images_that_alarmed": 19
+      },
+      "policy_strict": {
+        "n": 611,
+        "tp": 21,
+        "fp": 20,
+        "tn": 481,
+        "fn": 89,
+        "accuracy": 0.821604,
+        "accuracy_95ci": [
+          0.7892658201635312,
+          0.8499232002280623
+        ],
+        "recall": 0.190909,
+        "recall_95ci": [
+          0.12839312602494252,
+          0.27428568383015445
+        ],
+        "specificity": 0.96008,
+        "specificity_95ci": [
+          0.9391460331467388,
+          0.9740116781036811
+        ],
+        "suppressed_non_uncontrolled": 89,
+        "suppressed_images_that_alarmed": 20
       },
       "threshold_sweep": [
         {
@@ -1195,12 +1243,12 @@
       },
       "by_flame_type": {
         "controlled": {
-          "n": 58,
-          "detected": 25,
-          "recall": 0.431034,
+          "n": 85,
+          "detected": 27,
+          "recall": 0.317647,
           "recall_95ci": [
-            0.3118160080083492,
-            0.5588212329427257
+            0.228400568126656,
+            0.42266379811618515
           ]
         },
         "smoke_only": {
@@ -1212,7 +1260,7 @@
             0.25251994270496575
           ]
         },
-        "spark": {
+        "spark_benign": {
           "n": 37,
           "detected": 1,
           "recall": 0.027027,
@@ -1222,47 +1270,71 @@
           ]
         },
         "uncontrolled": {
-          "n": 81,
-          "detected": 6,
-          "recall": 0.074074,
+          "n": 156,
+          "detected": 28,
+          "recall": 0.179487,
           "recall_95ci": [
-            0.03438916189352608,
-            0.15233056050680582
+            0.12720005313332733,
+            0.2471805836971348
           ]
         },
         "unknown": {
-          "n": 2,
-          "detected": 0,
-          "recall": 0.0,
+          "n": 6,
+          "detected": 1,
+          "recall": 0.166667,
           "recall_95ci": [
-            0.0,
-            0.6576280471103807
+            0.03005258587173032,
+            0.563509436563646
           ]
         }
       },
       "policy_uncontrolled_plus_smoke": {
-        "n": 917,
-        "tp": 31,
+        "n": 878,
+        "tp": 29,
         "fp": 21,
         "tn": 695,
-        "fn": 170,
-        "accuracy": 0.791712,
+        "fn": 133,
+        "accuracy": 0.824601,
         "accuracy_95ci": [
-          0.764238061147719,
-          0.816752198197645
+          0.7980462120679154,
+          0.8483283749327432
         ],
-        "recall": 0.154229,
+        "recall": 0.179012,
         "recall_95ci": [
-          0.11082992909236608,
-          0.21059696856904644
+          0.12762885071134883,
+          0.2452667315792224
         ],
         "specificity": 0.97067,
         "specificity_95ci": [
           0.9555790932470828,
           0.9807380076262203
         ],
-        "suppressed_controlled_or_spark": 83,
-        "suppressed_images_that_alarmed": 26
+        "suppressed_controlled_or_spark": 122,
+        "suppressed_images_that_alarmed": 28
+      },
+      "policy_strict": {
+        "n": 872,
+        "tp": 28,
+        "fp": 21,
+        "tn": 695,
+        "fn": 128,
+        "accuracy": 0.829128,
+        "accuracy_95ci": [
+          0.8027149628987502,
+          0.8526546838501596
+        ],
+        "recall": 0.179487,
+        "recall_95ci": [
+          0.12720005313332733,
+          0.2471805836971348
+        ],
+        "specificity": 0.97067,
+        "specificity_95ci": [
+          0.9555790932470828,
+          0.9807380076262203
+        ],
+        "suppressed_non_uncontrolled": 128,
+        "suppressed_images_that_alarmed": 29
       },
       "threshold_sweep": [
         {
@@ -1420,7 +1492,7 @@
       ]
     }
   },
-  "generated_utc": "2026-10-27T03:55:10Z",
+  "generated_utc": "2026-10-27T07:35:30Z",
   "notes": {
     "threshold_policy": "thresholds selected on val_mini + val_flames only; bench_R was not used for tuning",
     "sealed_warning": "SEALED metrics are reported for transparency; do not tune against them"

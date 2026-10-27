@@ -556,7 +556,7 @@ Recall by ground-truth flame type (alert-level, cascade_v3, n=1000):
 |---|---:|---|
 | uncontrolled (fire **or** smoke) | 156 | 67.95% [60.27%, 74.76%] |
 | controlled | 85 | 31.76% [22.84%, 42.27%] |
-| spark | 37 | 5.41% [1.50%, 17.70%] (2 hit only by a *smoke* detection; 0 by the fire class) |
+| spark_benign (bench label spark) | 37 | 5.41% [1.50%, 17.70%] (2 hit only by a *smoke* detection; 0 by the fire class) |
 | smoke-only | 106 | 46.23% [37.03%, 55.68%] |
 | unknown | 6 | 16.67% [3.01%, 56.35%] |
 
@@ -597,6 +597,22 @@ rows were reviewed in total plus 2 keyword rows spot-checked, none showing an eq
 arc). Therefore **electrical_arc is unmeasured on bench_R** (too few examples to score), and the
 `WARNING` tier for it cannot be validated here. Locked bench files are not edited — the side
 file is additive and is a *proposal* for the 6-class taxonomy, not a change of bench truth.
+
+### Taxonomy + alarm tiers (plan patch)
+
+- **Six classes:** `FLAME_TYPES = (uncontrolled, controlled, spark_benign, electrical_arc,
+  screen, unknown)`. The locked bench still says `spark`; `canonical_flame_type()` aliases it to
+  `spark_benign`, so bench truth was **not edited** and no metric moved (verified: strict 67.95%,
+  legacy 66.05%, accuracy 83.00% unchanged - only the `by_flame_type` bucket name changed).
+- **Three runtime tiers:** `alarm` (uncontrolled, unknown), `warning` (electrical_arc - surfaced,
+  never alarms), `log` (controlled, spark_benign, screen). Precedence is exclude > include >
+  warning > log, so an operator can promote electrical_arc to alarm or demote it to log without
+  retraining. Persisted in `configs/fire_type_policy.json` with a new `warning` key; a pre-tier
+  policy file (no `warning`) loads with the default warning tier, and legacy `spark` in yaml or
+  config normalises to `spark_benign`.
+- **Unmeasured by construction:** bench_R has 0 `electrical_arc` and 0 `screen` images, so the
+  warning tier is implemented and unit-tested but **not validated on the bench**. It is reported
+  as unmeasured, never as zero-risk.
 
 Written for the next stage: `docs/LABELING_RUBRIC.md` (6-class rubric) and
 `docs/PILOT_3B_PLAN.md` (Kaggle learning-curve pilot, gated on approval).

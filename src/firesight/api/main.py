@@ -57,6 +57,7 @@ class FeedbackIn(BaseModel):
 class FireTypePolicyIn(BaseModel):
     include: list[str]
     exclude: list[str]
+    warning: list[str] | None = None
 
 
 class BenchRReviewIn(BaseModel):
@@ -372,8 +373,11 @@ def create_app(config_path: str | None = None) -> FastAPI:
 
     @app.post("/api/policy/fire-types")
     def set_fire_type_policy(payload: FireTypePolicyIn) -> dict:
-        state.fire_type_policy.include = set(payload.include)
-        state.fire_type_policy.exclude = set(payload.exclude)
+        from ..flame_type import canonical_flame_type
+        state.fire_type_policy.include = {canonical_flame_type(t) for t in payload.include}
+        state.fire_type_policy.exclude = {canonical_flame_type(t) for t in payload.exclude}
+        if payload.warning is not None:
+            state.fire_type_policy.warning = {canonical_flame_type(t) for t in payload.warning}
         for worker in state.workers.values():
             worker.fire_type_policy = state.fire_type_policy
         state.fire_type_policy.save(state.config.path(POLICY_FILE))
@@ -686,7 +690,8 @@ def create_app(config_path: str | None = None) -> FastAPI:
             raise HTTPException(422, f"composition mismatch: {comp}; expected {expected}")
         types = comp["fire_only_types"]
         if types.get("uncontrolled", 0) != 12 or types.get("controlled", 0) != 52 or \
-           types.get("spark", 0) + types.get("screen", 0) != 31 or types.get("unknown", 0) != 1:
+           types.get("spark", 0) + types.get("spark_benign", 0) + types.get("screen", 0) != 31 or \
+           types.get("unknown", 0) != 1:
             raise HTTPException(422, f"fire_only flame_type composition mismatch: {types}; expected 12 uncontrolled, 52 controlled, 31 spark/screen, 1 unknown")
         short = {k: v for k, v in comp["negative_families"].items() if v < 3}
         if short or sum(comp["negative_families"].values()) != 716:

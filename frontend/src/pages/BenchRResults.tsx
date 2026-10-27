@@ -3,7 +3,7 @@ import { api } from "../api";
 
 type Split = "dev" | "sealed" | "all";
 
-const FLAME_KEYS = ["uncontrolled", "controlled", "spark", "screen", "unknown", "smoke_only"];
+const FLAME_KEYS = ["uncontrolled", "controlled", "spark_benign", "electrical_arc", "screen", "unknown", "smoke_only"];
 
 const pct = (v?: number | null) => (typeof v === "number" ? `${(v * 100).toFixed(2)}%` : "-");
 
@@ -157,7 +157,7 @@ export default function BenchRResults() {
 
       <div>
         <div className="mb-2 text-sm text-slate-300">
-          Recall by flame type (uncontrolled / controlled / spark / screen / unknown / smoke-only) — split: {split}
+          Recall by flame type (uncontrolled / controlled / spark_benign / electrical_arc / screen / unknown / smoke-only) — split: {split}
         </div>
         <Table head={["model", ...flameKeys]} rows={flameRows} />
       </div>
@@ -165,8 +165,8 @@ export default function BenchRResults() {
       {!!models.length && (
         <div className="rounded border border-slate-800 px-3 py-2 text-[11px] leading-relaxed text-slate-500">
           <b className="text-slate-400">strict policy</b> = alarm iff the ground-truth flame type is
-          <i> uncontrolled</i>, for fire <b>and</b> smoke (controlled / spark / screen / unknown are suppressed and leave the
-          denominator). <b className="text-slate-400">legacy policy</b> = alarm unless controlled/spark/screen, so
+          <i> uncontrolled</i>, for fire <b>and</b> smoke (controlled / spark_benign / electrical_arc / screen / unknown are suppressed and leave the
+          denominator). <b className="text-slate-400">legacy policy</b> = alarm unless controlled/spark_benign/electrical_arc/screen, so
           <i> unknown</i> still alarms. Policy rows are not comparable to plain accuracy because suppressed positives are
           excluded from n. &nbsp;·&nbsp; bench_R is negative-heavy (1000 images, 716 negative / 284 positive), so plain
           accuracy flatters weak models; recall is the metric that matters. Box AP rests on 527 fire boxes across 178 fire

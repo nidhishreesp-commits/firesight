@@ -10,6 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from firesight.config import PROJECT_ROOT, load_config
+from firesight.flame_type import canonical_flame_type
 from firesight.types import Box, GroundTruth, ImageRecord
 
 from run_bench import (  # noqa: E402  (needs scripts/ on sys.path)
@@ -48,7 +49,7 @@ def load_benchR() -> tuple[list[ImageRecord], dict[str, str]]:
             labels += [GroundTruth("smoke", Box(*b)) for b in boxes_smoke]
             has_fire = int(r.get("has_fire") or 0)
             has_smoke = int(r.get("has_smoke") or 0)
-            ftype = r.get("flame_type") or "unknown"
+            ftype = canonical_flame_type(r.get("flame_type"))
             category = r.get("category") or r.get("family") or "none"
             records.append(ImageRecord(
                 id=r["id"], path=str(PROJECT_ROOT / r["file"]),

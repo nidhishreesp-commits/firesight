@@ -6,9 +6,17 @@ export default function LiveView() {
   const [cameras, setCameras] = useState<CameraInfo[]>([]);
   const [alarm, setAlarm] = useState<string | null>(null);
   const [detections, setDetections] = useState<Record<string, any[]>>({});
-  const [policy, setPolicy] = useState<{ include: string[]; exclude: string[] }>({ include: [], exclude: [] });
+  const [policy, setPolicy] = useState<{ include: string[]; exclude: string[]; warning?: string[] }>({ include: [], exclude: [], warning: [] });
   const sockets = useRef<Record<string, WebSocket>>({});
-  const FIRE_TYPES = ["uncontrolled", "controlled", "spark", "screen", "unknown"];
+  const FIRE_TYPES = ["uncontrolled", "controlled", "spark_benign", "electrical_arc", "screen", "unknown"];
+  const TIERS = ["alarm", "warning", "log"] as const;
+
+  const tierOf = (ftype: string): string => {
+    if (policy.exclude.includes(ftype)) return "log";
+    if (policy.include.includes(ftype)) return "alarm";
+    if ((policy.warning ?? []).includes(ftype)) return "warning";
+    return "log";
+  };
 
   const refresh = () => api.cameras().then((r) => setCameras(r.cameras)).catch(() => undefined);
 
@@ -19,12 +27,16 @@ export default function LiveView() {
     return () => clearInterval(timer);
   }, []);
 
-  const toggleType = async (ftype: string) => {
-    const allowed = policy.include.includes(ftype) && !policy.exclude.includes(ftype);
-    const include = allowed ? policy.include.filter((x) => x !== ftype) : Array.from(new Set([...policy.include, ftype]));
-    const exclude = allowed ? Array.from(new Set([...policy.exclude, ftype])) : policy.exclude.filter((x) => x !== ftype);
-    setPolicy({ include, exclude });
-    await api.setFirePolicy(include, exclude);
+  const setTier = async (ftype: string, tier: string) => {
+    const include = policy.include.filter((x) => x !== ftype);
+    const exclude = policy.exclude.filter((x) => x !== ftype);
+    const warning = (policy.warning ?? []).filter((x) => x !== ftype);
+    if (tier === "alarm") include.push(ftype);
+    else if (tier === "warning") warning.push(ftype);
+    else exclude.push(ftype);
+    const next = { include, exclude, warning };
+    setPolicy(next);
+    await api.setFirePolicy(include, exclude, warning);
   };
 
   const connect = (id: string) => {
@@ -54,19 +66,25 @@ export default function LiveView() {
       <div className="rounded border border-slate-800 bg-slate-900/60 p-3 text-sm">
         <div className="mb-1 font-medium">Alarm fire-type policy</div>
         <div className="mb-2 text-xs text-slate-400">
-          Toggle which flame types may raise an alarm. Applied at runtime; no retraining.
-          Until the flame-type classifier is trained, detections are <code>unknown</code>.
+          Each flame type is <code>alarm</code> (page/notify), <code>warning</code> (surface only, never
+          alarms) or <code>log</code> (record only). Applied at runtime; no retraining. Until the
+          flame-type classifier is trained, detections are <code>unknown</code>.
         </div>
-        <div className="flex flex-wrap gap-3">
-          {FIRE_TYPES.map((ftype) => {
-            const allowed = policy.include.includes(ftype) && !policy.exclude.includes(ftype);
-            return (
-              <label key={ftype} className="flex items-center gap-1 text-xs">
-                <input type="checkbox" checked={allowed} onChange={() => toggleType(ftype)} />
-                {ftype}
-              </label>
-            );
-          })}
+        <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
+          {FIRE_TYPES.map((ftype) => (
+            <label key={ftype} className="flex items-center justify-between gap-2 text-xs">
+              <span>{ftype}</span>
+              <select
+                className="rounded bg-slate-800 px-1 py-0.5 text-xs"
+                value={tierOf(ftype)}
+                onChange={(e) => setTier(ftype, e.target.value)}
+              >
+                {TIERS.map((tier) => (
+                  <option key={tier} value={tier}>{tier}</option>
+                ))}
+              </select>
+            </label>
+          ))}
         </div>
       </div>
       {alarm && (

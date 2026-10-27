@@ -44,8 +44,8 @@ export const api = {
   benchRLock: (reviewer: string) =>
     request<any>(`/api/benchR/lock?reviewer=${encodeURIComponent(reviewer)}`, { method: "POST" }),
   firePolicy: () => request<any>("/api/policy/fire-types"),
-  setFirePolicy: (include: string[], exclude: string[]) =>
-    request<any>("/api/policy/fire-types", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ include, exclude }) }),
+  setFirePolicy: (include: string[], exclude: string[], warning: string[] = []) =>
+    request<any>("/api/policy/fire-types", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ include, exclude, warning }) }),
   detectVideo: async (file: File, maxSeconds = 60, sampleFps = 5) => {
     const form = new FormData();
     form.append("file", file);

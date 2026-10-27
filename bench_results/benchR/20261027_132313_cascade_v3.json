@@ -274,7 +274,7 @@
             0.5617619885886803
           ]
         },
-        "spark": {
+        "spark_benign": {
           "n": 10,
           "detected": 1,
           "recall": 0.1,
@@ -767,7 +767,7 @@
             0.6040181558778673
           ]
         },
-        "spark": {
+        "spark_benign": {
           "n": 27,
           "detected": 1,
           "recall": 0.037037,
@@ -1260,7 +1260,7 @@
             0.5568332609864725
           ]
         },
-        "spark": {
+        "spark_benign": {
           "n": 37,
           "detected": 2,
           "recall": 0.054054,
@@ -1492,7 +1492,7 @@
       ]
     }
   },
-  "generated_utc": "2026-10-27T06:48:13Z",
+  "generated_utc": "2026-10-27T07:53:13Z",
   "notes": {
     "threshold_policy": "thresholds selected on val_mini + val_flames only; bench_R was not used for tuning",
     "sealed_warning": "SEALED metrics are reported for transparency; do not tune against them"
