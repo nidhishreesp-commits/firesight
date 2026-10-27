@@ -1,0 +1,6 @@
+{
+  "dev": 300,
+  "sealed": 700,
+  "seed": 20261022,
+  "rule": "stratified random after lock"
+}

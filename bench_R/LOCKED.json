@@ -1,0 +1,46 @@
+{
+  "locked": true,
+  "reviewer": "Nidhishree S P",
+  "locked_at": "2026-10-27T02:44:04.351759+00:00",
+  "manifest_sha256": "9001fbc827a606168867ccf2151694f390ee3df34de16e1da2ee7a585d07993c",
+  "images": 1000,
+  "composition": {
+    "fire_only": 96,
+    "smoke_only": 106,
+    "both": 82,
+    "negative": 716,
+    "fire_only_types": {
+      "uncontrolled": 12,
+      "controlled": 52,
+      "spark": 31,
+      "unknown": 1
+    },
+    "negative_families": {
+      "uncontrolled_fire": 99,
+      "controlled_fire": 31,
+      "spark_screen": 3,
+      "smoke_only": 72,
+      "both": 26,
+      "sunset_orange_sky": 30,
+      "red_orange_neon_lights": 30,
+      "vehicle_lights_streetlights": 30,
+      "chandelier_stage_lights": 25,
+      "reflections_lens_flare_glare": 25,
+      "orange_ppe_vests_cones": 30,
+      "flowers_autumn_leaves": 25,
+      "clouds": 30,
+      "fog_haze_mist": 30,
+      "steam": 23,
+      "exhaust": 14,
+      "dust_construction_plaster": 25,
+      "snow": 20,
+      "overexposed_white": 19,
+      "camera_artifacts": 40,
+      "ordinary_indoor": 37,
+      "ordinary_streets_warehouses_offices": 33,
+      "ordinary_other": 19
+    },
+    "reviewed": 1000
+  },
+  "labels_csv_sha256": "977d45d9163039b04c9f27818af2d4972f19e8f4cfb1bbdf7179c1f81b6e7cb8"
+}

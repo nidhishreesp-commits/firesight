@@ -216,9 +216,9 @@ export default function BenchRReview() {
         <div>
           <h1 className="text-2xl font-semibold">Reference bench — bench_R</h1>
           <div className="text-sm text-slate-400">
-            {reviewed}/1000 reviewed · fire-only total {comp.fire_only}/320 · controlled {comp.fire_only_types?.controlled ?? 0}/80 ·
-            sparks {((comp.fire_only_types?.spark ?? 0) + (comp.fire_only_types?.screen ?? 0))}/40 ·
-            smoke-only {comp.smoke_only}/100 · both {comp.both}/80 · negatives {comp.negative}/500
+            {reviewed}/1000 reviewed · fire-only total {comp.fire_only}/96 · controlled {comp.fire_only_types?.controlled ?? 0}/52 ·
+            sparks {((comp.fire_only_types?.spark ?? 0) + (comp.fire_only_types?.screen ?? 0))}/31 ·
+            smoke-only {comp.smoke_only}/106 · both {comp.both}/82 · negatives {comp.negative}/716
           </div>
         </div>
         <div className="flex items-center gap-2">

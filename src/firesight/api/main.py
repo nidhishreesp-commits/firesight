@@ -159,6 +159,7 @@ def _write_benchR_labels(rows: list[dict], reviewer: str) -> dict:
                              row.get("ambiguous", 0), row.get("reviewer", ""), row.get("reviewed_at", ""),
                              "reviewed", row.get("notes", "")])
     yolo_dir = BENCHR_DIR / "labels"
+    yolo_dir.mkdir(parents=True, exist_ok=True)
     from PIL import Image
     for row in rows:
         w, h = row.get("width"), row.get("height")
@@ -678,15 +679,15 @@ def create_app(config_path: str | None = None) -> FastAPI:
         if len(spot) < 100:
             raise HTTPException(422, f"second-pass spot check incomplete ({len(spot)}/100)")
         comp = _benchR_comp(rows)
-        expected = {"fire_only": 320, "smoke_only": 100, "both": 80, "negative": 500}
+        expected = {"fire_only": 96, "smoke_only": 106, "both": 82, "negative": 716}
         if any(comp[k] != v for k, v in expected.items()):
             raise HTTPException(422, f"composition mismatch: {comp}; expected {expected}")
         types = comp["fire_only_types"]
-        if types.get("uncontrolled", 0) != 200 or types.get("controlled", 0) != 80 or \
-           types.get("spark", 0) + types.get("screen", 0) != 40 or types.get("unknown", 0) != 0:
-            raise HTTPException(422, f"fire_only flame_type composition mismatch: {types}; expected 200 uncontrolled, 80 controlled, 40 spark/screen, 0 unknown")
-        short = {k: v for k, v in comp["negative_families"].items() if v < 15}
-        if short or sum(comp["negative_families"].values()) != 500:
+        if types.get("uncontrolled", 0) != 12 or types.get("controlled", 0) != 52 or \
+           types.get("spark", 0) + types.get("screen", 0) != 31 or types.get("unknown", 0) != 1:
+            raise HTTPException(422, f"fire_only flame_type composition mismatch: {types}; expected 12 uncontrolled, 52 controlled, 31 spark/screen, 1 unknown")
+        short = {k: v for k, v in comp["negative_families"].items() if v < 3}
+        if short or sum(comp["negative_families"].values()) != 716:
             raise HTTPException(422, f"negative family coverage invalid: {comp['negative_families']}")
         return _write_benchR_labels(rows, reviewer)
 

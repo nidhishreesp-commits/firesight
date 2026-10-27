@@ -73,10 +73,14 @@ def test_bench100_has_100_images_and_lock_is_guarded(client):
         assert lock.status_code in (409, 422)
 
 
-def test_benchR_candidates_exist_and_are_not_locked(client):
+def test_benchR_is_locked_with_manifest(client):
     r = client.get("/api/benchR")
     assert r.status_code == 200
     body = r.json()
     assert len(body["images"]) == 1000
-    assert body["locked"] is False
-    assert body["composition"]["reviewed"] >= 0
+    assert body["locked"] is True
+    assert body["lock"]["manifest_sha256"]
+    assert body["lock"]["images"] == 1000
+    assert body["composition"]["reviewed"] == 1000
+    lock = client.post("/api/benchR/lock?reviewer=pytest")
+    assert lock.status_code == 409
