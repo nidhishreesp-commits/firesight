@@ -12,6 +12,7 @@ from typing import Callable, Iterable, Sequence
 import numpy as np
 
 from .config import TemporalConfig, AlarmConfig
+from .flame_type import canonical_flame_type
 from .types import Box, Detection
 
 log = logging.getLogger(__name__)
@@ -134,6 +135,10 @@ class TemporalConfirmer:
         diagnostics: dict = {}
         for det in tracked:
             if det.track_id is None:
+                if canonical_flame_type(det.flame_type or det.meta.get("flame_type")) == "unknown" \
+                        and det.confidence < self.cfg.unknown_high_conf:
+                    det.meta["review_queue"] = True
+                    det.meta["review_untracked"] = True
                 continue
             m = self.cfg.n_of_m.get(det.label, [3, 5])
             n, window = int(m[0]), int(m[1])
@@ -155,6 +160,21 @@ class TemporalConfirmer:
                     if growth < self.cfg.smoke_growth_min_ratio and det.confidence < 0.60:
                         continue
                     reason += f", growth={growth:.2f}"
+            ftype = canonical_flame_type(det.flame_type or det.meta.get("flame_type"))
+            if ftype == "unknown":
+                if det.confidence >= self.cfg.unknown_high_conf:
+                    det.meta["unknown_severity"] = "reduced"
+                    det.meta["max_level"] = 1
+                    reason += f", unknown conf>={self.cfg.unknown_high_conf:.2f} (reduced severity)"
+                else:
+                    persisted = timestamp - state[0]["ts"]
+                    det.meta["review_queue"] = True
+                    det.meta["review_persisted_s"] = round(persisted, 2)
+                    diagnostics[int(det.track_id)]["review_persisted_s"] = round(persisted, 2)
+                    if persisted < self.cfg.unknown_auto_alarm_s:
+                        continue
+                    det.meta["unknown_severity"] = "auto_alarm"
+                    reason += f", unknown low-conf auto-alarm after {persisted:.0f}s"
             det.meta["confirmed"] = True
             det.meta["confirm_reason"] = reason
             confirmed.append(det)
@@ -214,7 +234,8 @@ class AlarmManager:
             state["last_seen"] = timestamp
             state["event"].peak_confidence = max(state["event"].peak_confidence, max(d.confidence for d in confirmed))
             duration = timestamp - state["event"].started_at
-            state["event"].level = self._level(duration)
+            cap = min((int(d.meta.get("max_level", 99)) for d in confirmed), default=99)
+            state["event"].level = min(self._level(duration), cap)
             return {
                 "active": True, "labels": labels, "duration_s": round(duration, 2),
                 "level": state["event"].level, "event_id": state["event"].id,

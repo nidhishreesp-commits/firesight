@@ -36,6 +36,10 @@ temporal:
   min_area_px: 400
   smoke_growth_window: 8
   smoke_growth_min_ratio: 0.15
+  # unknown-tier escalation: high-confidence unknown alarms at reduced severity;
+  # low-confidence unknown sits in the review queue and auto-alarms after N seconds.
+  unknown_high_conf: 0.60
+  unknown_auto_alarm_s: 60
   tracker: bytetrack
   track_iou: 0.3
 

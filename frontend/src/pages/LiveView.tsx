@@ -125,8 +125,11 @@ export default function LiveView() {
               )}
               <div className="absolute bottom-1 left-1 max-h-24 overflow-auto rounded bg-black/60 p-1 text-[10px]">
                 {(detections[cam.id] ?? []).map((d, i) => (
-                  <div key={i} className={d.meta?.confirmed ? "text-red-400" : "text-amber-300"}>
+                  <div key={i} className={d.meta?.confirmed ? "text-red-400" : d.meta?.review_queue ? "text-sky-300" : "text-amber-300"}>
                     {d.label} {Number(d.confidence).toFixed(2)} {d.track_id ? `#${d.track_id}` : ""}
+                    {d.meta?.review_queue ? " · review" : ""}
+                    {d.meta?.unknown_severity === "reduced" ? " · reduced" : ""}
+                    {d.meta?.policy_tier ? ` · ${d.meta.policy_tier}` : ""}
                   </div>
                 ))}
               </div>

@@ -33,6 +33,8 @@ class TemporalConfig:
     min_area_px: int = 400
     smoke_growth_window: int = 8
     smoke_growth_min_ratio: float = 0.15
+    unknown_high_conf: float = 0.60
+    unknown_auto_alarm_s: float = 60.0
     tracker: str = "bytetrack"
     track_iou: float = 0.3
 
