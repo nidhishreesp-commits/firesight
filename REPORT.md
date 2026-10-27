@@ -614,5 +614,12 @@ file is additive and is a *proposal* for the 6-class taxonomy, not a change of b
   warning tier is implemented and unit-tested but **not validated on the bench**. It is reported
   as unmeasured, never as zero-risk.
 
+**False-alarm budget (proposal, needs sign-off):** `docs/FALSE_ALARM_BUDGET.md` fixes the FPR
+definition (per **negative image**, 3.07% [2.04, 4.61] for cascade_v3 - the 2.20% all-image figure
+is secondary) and proposes event ceilings of **<= 1.0 false-alarm events/camera-week** for
+dashboard-only alarms and **<= 0.1/camera-week** for dispatch-triggering alarms. Image-level FPR
+cannot be converted into event rates (persistent false positives repeat across frames), so the
+event rate stays **unmeasured** until a 10-camera x 48 h continuous capture is scored end-to-end.
+
 Written for the next stage: `docs/LABELING_RUBRIC.md` (6-class rubric) and
 `docs/PILOT_3B_PLAN.md` (Kaggle learning-curve pilot, gated on approval).
