@@ -60,6 +60,16 @@ class FireTypePolicyIn(BaseModel):
     warning: list[str] | None = None
 
 
+class CameraConfigIn(BaseModel):
+    actor: str
+    roi: list[list[float]] | None = None
+    conf: dict[str, float] | None = None
+    temporal_n: int | None = None
+    temporal_m: int | None = None
+    alarm_min_duration_s: float | None = None
+    alarm_cooldown_s: float | None = None
+
+
 class BenchRReviewIn(BaseModel):
     id: str
     has_fire: int
@@ -820,6 +830,25 @@ def create_app(config_path: str | None = None) -> FastAPI:
              "fps": round(c.fps, 2), "frames": c.frames, "alarm": c.alarm}
             for c in state.cameras.values()
         ]}
+
+    @app.get("/api/cameras/{camera_id}/config")
+    def get_camera_config(camera_id: str) -> dict:
+        try:
+            return state.camera_config(camera_id)
+        except KeyError:
+            raise HTTPException(404, "unknown camera")
+
+    @app.post("/api/cameras/{camera_id}/config")
+    def set_camera_config(camera_id: str, payload: CameraConfigIn) -> dict:
+        updates = {k: v for k, v in payload.model_dump().items() if k != "actor" and v is not None}
+        if not updates:
+            raise HTTPException(422, "no fields to update")
+        try:
+            return state.update_camera_config(camera_id, updates, actor=payload.actor)
+        except KeyError:
+            raise HTTPException(404, "unknown camera")
+        except ValueError as exc:
+            raise HTTPException(422, str(exc))
 
     @app.post("/api/live/{camera_id}/start")
     def start_camera(camera_id: str) -> dict:

@@ -86,3 +86,13 @@ def test_benchR_is_locked_with_manifest(client):
     assert body["composition"]["reviewed"] == 1000
     lock = client.post("/api/benchR/lock?reviewer=pytest")
     assert lock.status_code == 409
+
+
+def test_camera_config_endpoints(client):
+    r = client.get("/api/cameras/cam-01/config")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["id"] == "cam-01"
+    assert set(body["temporal"]) == {"n", "m"}
+    assert set(body["alarm"]) == {"min_duration_s", "cooldown_s"}
+    assert client.get("/api/cameras/nope/config").status_code == 404
