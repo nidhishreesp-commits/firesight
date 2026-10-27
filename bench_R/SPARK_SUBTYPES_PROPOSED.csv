@@ -1,0 +1,38 @@
+image_id,file,gt_flame_type,proposed_flame_type,subtype,review_method,split,has_fire,has_smoke,source,license
+benchR:04f79375:Shower_of_sparks_110524-N-TC501-018,Shower_of_sparks_110524-N-TC501-018.jpg,spark,spark_benign,grinding_sparks,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:0bbe6255:US_Navy_120209-N-SK590-014_ull_Maintenance_Technician_2nd_Cl,US_Navy_120209-N-SK590-014_ull_Maintenance_Technician_2nd_Class_Ben_Vigness_welds_scrap_me.jpg,spark,spark_benign,welding,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:156a12b7:Man_Welding_a_Metal_Gate,Man_Welding_a_Metal_Gate.jpg,spark,spark_benign,welding,filename_keyword,sealed,1,0,wikimedia_commons,CC BY-SA 4.0
+benchR:17c4e484:Let_the_sparks_fly_13313009905_,Let_the_sparks_fly_13313009905_.jpg,spark,spark_benign,grinding_sparks,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:1d9534bb:US_Navy_101006-N-6427M-078_Hull_Maintenance_Technician_Firem,US_Navy_101006-N-6427M-078_Hull_Maintenance_Technician_Fireman_Ruben_Torres_of_Bloomington.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:1ec10f6b:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Bulk_Chemi,Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Bulk_Chemical_Storage_Tank_6377565825_.j.jpg,spark,spark_benign,unspecified_benign,visual_review,sealed,1,0,wikimedia_commons,CC BY 2.0
+benchR:255ef4e5:Halbrohrschlange,Halbrohrschlange.JPG,spark,spark_benign,unspecified_benign,visual_review,sealed,1,1,wikimedia_commons,CC BY-SA 3.0 de
+benchR:25763c78:Grinding_With_Angle_Grinder,Grinding_With_Angle_Grinder.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,0,wikimedia_commons,CC BY-SA 3.0
+benchR:29e726a7:Welding_Sparks_3843951412_,Welding_Sparks_3843951412_.jpg,spark,spark_benign,welding,filename_keyword,dev,1,0,wikimedia_commons,CC BY 2.0
+benchR:2d86c91a:Sparks_110718-N-LL945-105,Sparks_110718-N-LL945-105.jpg,spark,spark_benign,grinding_sparks,filename_keyword,dev,1,0,wikimedia_commons,Public domain
+benchR:2f08098e:US_Navy_040225-N-8213G-058_Hull_Technician_3rd_Class_Casey_C,US_Navy_040225-N-8213G-058_Hull_Technician_3rd_Class_Casey_Caudill_of_Priest_River_Idaho_p.jpg,spark,spark_benign,welding,filename_keyword,sealed,1,1,wikimedia_commons,Public domain
+benchR:2f15f038:US_Navy_070125-N-1625W-003_Steelworker_1st_Class_Brian_Hunt_,US_Navy_070125-N-1625W-003_Steelworker_1st_Class_Brian_Hunt_of_Bremerton_Wash._welds_toget.jpg,spark,spark_benign,welding,filename_keyword,sealed,1,1,wikimedia_commons,Public domain
+benchR:3436c211:Throwing_sparks_DVIDS205814,Throwing_sparks_DVIDS205814.jpg,spark,spark_benign,grinding_sparks,filename_keyword,sealed,1,1,wikimedia_commons,Public domain
+benchR:3c32348b:Defense.gov_News_Photo_101220-N-8040H-059_-_U.S._Navy_Seaman,Defense.gov_News_Photo_101220-N-8040H-059_-_U.S._Navy_Seaman_Anthony_Fleeman_grinds_off_sa.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:3cd5c8ff:Sparks_will_fly_130117-F-RB551-110,Sparks_will_fly_130117-F-RB551-110.jpg,spark,spark_benign,grinding_sparks,filename_keyword,dev,1,0,wikimedia_commons,Public domain
+benchR:3d91a34e:FEMA_-_4108_-_Photograph_by_Michael_Rieger_taken_on_09-21-20,FEMA_-_4108_-_Photograph_by_Michael_Rieger_taken_on_09-21-2001_in_New_York.jpg,spark,spark_benign,torch_cutting,filename_keyword,dev,1,0,wikimedia_commons,Public domain
+benchR:49c0ed1a:Magnificent_manual_labour_2,Magnificent_manual_labour_2.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,0,wikimedia_commons,CC BY-SA 4.0
+benchR:4e012c1c:A_song_of_fire_and_metal,A_song_of_fire_and_metal.jpg,spark,spark_benign,metalworking,filename_keyword,sealed,1,0,wikimedia_commons,CC BY 4.0
+benchR:62394644:Flickr_-_DVIDSHUB_-_USS_John_C._Stennis_conducts_maritime_se,Flickr_-_DVIDSHUB_-_USS_John_C._Stennis_conducts_maritime_security_operations_and_support_.jpg,spark,spark_benign,unspecified_benign,visual_review,sealed,1,0,wikimedia_commons,CC BY 2.0
+benchR:6c7bce70:Members_of_the_Women_s_Royal_Naval_Service_WRNS_practice_wel,Members_of_the_Women_s_Royal_Naval_Service_WRNS_practice_welding_at_a_Government_Training_.jpg,spark,spark_benign,welding,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:6cf12414:US_Navy_090206-N-6597H-070_Hull_Maintenance_Technician_3rd_C,US_Navy_090206-N-6597H-070_Hull_Maintenance_Technician_3rd_Class_James_Engling_from_Seattl.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:72a28c84:US_Navy_101210-N-7422B-128_Aviation_Structural_Mechanic_2nd_,US_Navy_101210-N-7422B-128_Aviation_Structural_Mechanic_2nd_Class_Diego_Cortes_assigned_to.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,1,wikimedia_commons,Public domain
+benchR:7c2c3d9d:US_Navy_071209-N-2838W-117_Damage_Controlman_3rd_Class_Kiel_,US_Navy_071209-N-2838W-117_Damage_Controlman_3rd_Class_Kiel_Durant_a_member_of_guided-miss.jpg,spark,spark_benign,welding,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:8f8be60c:Blast_Off_-_liber,Blast_Off_-_liber.jpg,spark,spark_benign,unspecified_benign,visual_review,sealed,1,0,wikimedia_commons,CC BY-SA 2.0
+benchR:91578399:LOC_Precision_8564855807_,LOC_Precision_8564855807_.jpg,spark,spark_benign,unspecified_benign,visual_review,dev,1,1,wikimedia_commons,CC BY 2.0
+benchR:94984bef:Magnificent_manual_labour,Magnificent_manual_labour.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,0,wikimedia_commons,CC BY-SA 4.0
+benchR:98e7c157:Making_sparks_for_parts_8625884_,Making_sparks_for_parts_8625884_.jpg,spark,spark_benign,grinding_sparks,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:ac6aa5f3:Sparks_fly_140528-A-CA521-020,Sparks_fly_140528-A-CA521-020.jpg,spark,spark_benign,grinding_sparks,filename_keyword,sealed,1,0,wikimedia_commons,Public domain
+benchR:af18a0ae:Grinding_the_sparks,Grinding_the_sparks.jpg,spark,spark_benign,grinding,filename_keyword,dev,1,0,wikimedia_commons,Public domain
+benchR:b0cf947b:130926-N-JO908-044_10155529675_,130926-N-JO908-044_10155529675_.jpg,spark,spark_benign,unspecified_benign,visual_review,dev,1,0,wikimedia_commons,Public domain
+benchR:c0fc1dce:Defense.gov_News_Photo_071114-N-7367K-005,Defense.gov_News_Photo_071114-N-7367K-005.jpg,spark,spark_benign,unspecified_benign,visual_review,sealed,1,0,wikimedia_commons,Public domain
+benchR:cff275e1:US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd,US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd_Class_Ryan_Rousseau_of_St._Ch.jpg,spark,spark_benign,grinding_sparks,filename_keyword,dev,1,0,wikimedia_commons,Public domain
+benchR:d2c2d5a8:US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_C,US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_Class_Nelly_Martinez_grinds_a_T.jpg,spark,spark_benign,grinding,filename_keyword,dev,1,0,wikimedia_commons,Public domain
+benchR:d9dc9f47:220328-F-EM877-1068M,220328-F-EM877-1068M.JPG,spark,spark_benign,unspecified_benign,visual_review,sealed,1,0,wikimedia_commons,Public domain
+benchR:da3623ec:500px_photo_68194077_.jpeg,500px_photo_68194077_.jpeg.jpg,spark,spark_benign,unspecified_benign,visual_review,dev,1,0,wikimedia_commons,CC BY-SA 3.0
+benchR:f0365ea7:Flickr_-_DVIDSHUB_-_Sparks_fly_in_19th_Civil_Engineer_Squadr,Flickr_-_DVIDSHUB_-_Sparks_fly_in_19th_Civil_Engineer_Squadron_Image_8_of_12_.jpg,spark,spark_benign,grinding_sparks,filename_keyword,sealed,1,0,wikimedia_commons,CC BY 2.0
+benchR:f9e1535a:AngleGrinder_Hydraulophone_EndCap0,AngleGrinder_Hydraulophone_EndCap0.jpg,spark,spark_benign,grinding,filename_keyword,sealed,1,0,wikimedia_commons,CC BY-SA 3.0

@@ -588,8 +588,15 @@ smoke-only), 85 controlled (58 fire + 27 smoke-only), 37 spark, 6 unknown; the o
 128 positives are suppressed by design. **`screen` has 0 images in bench_R** (the 37
 `spark_screen`-category images all reviewed as `spark`), so screen behaviour is
 **unmeasured** on the bench — it will be reported as unmeasured, never as zero-risk.
-The spark_benign / electrical_arc split (plan patch) goes in a **side file**; locked
-bench files are not edited.
+
+**Spark subtype split (plan patch) — done, in a side file:** `bench_R/SPARK_SUBTYPES_PROPOSED.csv`
+maps all 37 `spark` rows → **`spark_benign`**, **0 → `electrical_arc`** (28 classified from
+filenames with explicit welding/grinding/cutting vocabulary; the 9 remaining were inspected
+image-by-image — grinding, weld arcs, torch cutting, chop-saw, model-rocket sparks; 15 ambiguous
+rows were reviewed in total plus 2 keyword rows spot-checked, none showing an equipment fault
+arc). Therefore **electrical_arc is unmeasured on bench_R** (too few examples to score), and the
+`WARNING` tier for it cannot be validated here. Locked bench files are not edited — the side
+file is additive and is a *proposal* for the 6-class taxonomy, not a change of bench truth.
 
 Written for the next stage: `docs/LABELING_RUBRIC.md` (6-class rubric) and
 `docs/PILOT_3B_PLAN.md` (Kaggle learning-curve pilot, gated on approval).
