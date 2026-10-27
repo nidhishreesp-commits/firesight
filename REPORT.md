@@ -530,5 +530,66 @@ no-proposal counter/jump, and blind badges. Proposals are stored separately in
 ench_R/proposals.json; they are never written into labels.csv until the
 reviewer saves an image.
 
-No evaluated model has been run on bench_R. The 92% / 87% testbench100 numbers
-remain DEV-only, optimistic, and not final.
+## 14. bench_R locked — Phase 0 baseline (2026-10-27)
+
+bench_R was locked at the reviewed composition: 1,000 images (96 fire-only / 106
+smoke-only / 82 both / 716 negative), manifest `9001fbc8…`, reviewer Nidhishree S P,
+split **DEV 300 / SEALED 700** (seed 20261022). Thresholds calibrated on val_mini +
+val_flames only. `fireviewer_rtdetrv2` was not run (HF download blocked).
+
+**Headline (cascade_v3, n=1000, Wilson 95% CI):**
+
+| view | value |
+|---|---|
+| accuracy | 83.00% [80.55%, 85.20%] |
+| recall (any fire/smoke) | 47.89% [42.14%, 53.69%] |
+| false alarms | 22 FP / 716 negatives = 3.07% [2.04%, 4.61%] (2.20% of all images) |
+| **strict-policy recall** (alarm iff `uncontrolled`) | **67.95% [60.27%, 74.76%]**, n=156 |
+| strict-policy accuracy | 91.74% [89.73%, 93.39%] (128 positives suppressed, 30 of them would have alarmed) |
+| DEV strict recall | 65.22% [50.77%, 77.32%], n=46 |
+| SEALED strict recall | 69.09% [59.93%, 76.96%], n=611 |
+| fire box AP50 / smoke box AP50 | 0.089 (527 GT boxes) / 0.353 (294 GT boxes) |
+
+Recall by ground-truth flame type (alert-level, cascade_v3, n=1000):
+
+| type | n | recall [95% CI] |
+|---|---:|---|
+| uncontrolled (fire **or** smoke) | 156 | 67.95% [60.27%, 74.76%] |
+| controlled | 85 | 31.76% [22.84%, 42.27%] |
+| spark | 37 | 5.41% [1.50%, 17.70%] (2 hit only by a *smoke* detection; 0 by the fire class) |
+| smoke-only | 106 | 46.23% [37.03%, 55.68%] |
+| unknown | 6 | 16.67% [3.01%, 56.35%] |
+
+Ranking on accuracy: cascade_v3 0.830 > cascade_union_v3_firept 0.822 > v4 0.819 >
+ensemble_v3_v4_intersection 0.817 > ensemble_v3_firept_union 0.809 ≈
+ensemble_v3_v4_firept_union 0.809 > v3 0.807 > ensemble_v3_v4_union 0.806 >
+finetune_v2_1ep 0.789 > fire_pt 0.752 > pyronear_sensitive 0.717. Differences under
+2 pp at n=1000 are noise; cascade_v3's accuracy CI alone spans 4.7 pp.
+
+### Phase 0 fixes (measured effect)
+
+- **Smoke no longer bypasses the policy.** `FireTypePolicy.allows()` applied to
+  `label != "fire"` only, so every smoke detection survived regardless of type.
+  Smoke-only images were also excluded from `flame_types` in both metric loaders.
+- **Policy persisted** to `configs/fire_type_policy.json` (POST writes it, AppState
+  loads it, yaml is the fallback) — a restart no longer reverts a policy change.
+- **New `policy_strict`** view = alarm iff GT `flame_type == uncontrolled`, fire *and*
+  smoke; legacy `policy_uncontrolled_plus_smoke` kept and now applies its exclusions to
+  smoke too (66.05% vs 67.95% recall — the difference is the 6 `unknown` positives,
+  which strict suppresses and legacy lets alarm).
+- **`by_flame_type` is alert-level** and covers smoke-only images, so it reconciles
+  exactly with `policy_strict` (uncontrolled 106/156 = strict tp/(tp+fn)).
+- **Label cleanup:** 8 negative rows carried a `flame_type`; reset to `unknown` in
+  labels.csv / DEV / SEALED / reviews. Composition and all 96 fire-only types unchanged;
+  `labels_csv_sha256` 977d45d9… → 2d3fd83e…; images untouched (`manifest_sha256` stable).
+
+Composition facts used by the strict policy: positives = 156 uncontrolled (81 fire + 75
+smoke-only), 85 controlled (58 fire + 27 smoke-only), 37 spark, 6 unknown; the other
+128 positives are suppressed by design. **`screen` has 0 images in bench_R** (the 37
+`spark_screen`-category images all reviewed as `spark`), so screen behaviour is
+**unmeasured** on the bench — it will be reported as unmeasured, never as zero-risk.
+The spark_benign / electrical_arc split (plan patch) goes in a **side file**; locked
+bench files are not edited.
+
+Written for the next stage: `docs/LABELING_RUBRIC.md` (6-class rubric) and
+`docs/PILOT_3B_PLAN.md` (Kaggle learning-curve pilot, gated on approval).
