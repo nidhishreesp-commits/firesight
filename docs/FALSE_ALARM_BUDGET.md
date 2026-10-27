@@ -1,8 +1,7 @@
 # False-alarm budget and FPR definition (proposal — needs sign-off)
 
-Status: **proposal, not yet agreed**. Two decisions are needed before the next
-milestone: (1) which FPR definition is the target, (2) what event-level false-alarm
-ceiling we commit to per camera.
+Status: **agreed 2026-10-27** (project owner). The FPR target is per **negative image**,
+and the event-level ceilings below are adopted as operational budgets.
 
 ## 1. Which FPR definition
 
@@ -30,7 +29,7 @@ Image-level FPR does **not** convert into an event rate. A persistent false posi
 arithmetic badly over-counts, while a single-frame spike under-counts. Do not
 extrapolate image FPR to camera-weeks; it is not identifiable from bench_R.
 
-**Proposed ceilings** (to be confirmed):
+**Agreed ceilings:**
 
 | alarm routing | ceiling | rationale |
 |---|---|---|
