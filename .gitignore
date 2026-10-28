@@ -53,3 +53,5 @@ yolov8s-worldv2.pt
 kaggle.json
 kaggle/*.ipynb_checkpoints/
 build/
+
+data/hard_negatives*/
