@@ -38,6 +38,9 @@ CATEGORIES: dict[str, str] = {
     "ordinary_indoor": "a normal indoor office, warehouse or hallway with no fire",
     "ordinary_streets_warehouses_offices": "a normal street, warehouse or office exterior with no fire",
     "ordinary_other": "a normal landscape or park with no fire",
+    "screen_fire": "a television, monitor or phone screen showing fire or orange graphics",
+    "cave_warm_rock": "a cave interior or red/orange rock formation lit warmly",
+    "person_portrait": "a close-up portrait of a person's face or skin",
 }
 
 QUERIES: dict[str, list[str]] = {
@@ -59,12 +62,16 @@ QUERIES: dict[str, list[str]] = {
     "ordinary_indoor": ["office interior", "warehouse interior", "indoor hallway"],
     "ordinary_streets_warehouses_offices": ["street scene", "warehouse exterior", "office building"],
     "ordinary_other": ["landscape", "park"],
+    "screen_fire": ["television screen", "computer monitor", "video game screenshot", "movie poster fire"],
+    "cave_warm_rock": ["cave interior", "red rock canyon", "slot canyon", "sandstone formation"],
+    "person_portrait": ["portrait photograph", "selfie", "close-up face"],
 }
 
 TIERS = {
     1: ["clouds", "fog_haze_mist", "dust_construction_plaster", "reflections_lens_flare_glare", "sunset_orange_sky"],
     2: ["vehicle_lights_streetlights", "red_orange_neon_lights", "orange_ppe_vests_cones", "exhaust",
-        "snow", "overexposed_white", "steam", "chandelier_stage_lights", "flowers_autumn_leaves"],
+        "snow", "overexposed_white", "steam", "chandelier_stage_lights", "flowers_autumn_leaves",
+        "screen_fire", "cave_warm_rock", "person_portrait"],
     3: ["camera_artifacts", "ordinary_indoor", "ordinary_streets_warehouses_offices", "ordinary_other"],
 }
 
