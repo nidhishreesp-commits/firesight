@@ -656,3 +656,18 @@ Findings:
   measured 70.7 img/s), not 100% (≈9.3 h at 640), and spend the saved quota on epochs/960/hard
   negatives. Formal GO conditions are met (P10->P50 >= 5 pp, disjoint CIs, P50 > baseline at equal
   FPR, DEV ordering consistent), but the plateau makes 100% poor value.
+
+### External models checked (2026-10-28)
+
+| model | licence | val recall@FPR2% | val FPR/neg | val mAP50 f/s | bench_R DEV recall (FPR) | verdict |
+|---|---|---:|---:|---|---|---|
+| **ours P50** | AGPL-3.0 (weights) | **0.9297** [0.919, 0.939] | 3.14% | 0.633 / 0.679 | **56.5%** (2.33%) | reference |
+| ours BASE (`best_fire_v3`) | proprietary | 0.8012 | 2.34% | 0.522 / 0.616 | 40.0% (3.72%) | reference |
+| [SalahALHaismawi/yolov26-fire-detection](https://huggingface.co/SalahALHaismawi/yolov26-fire-detection) | MIT | 0.7515 [0.734, 0.768] | 3.37% | 0.374 / 0.316 | 55.3% (4.65%) | **worse** - not adopted |
+| [TommyNgx/YOLOv10-Fire-and-Smoke-Detection](https://huggingface.co/TommyNgx/YOLOv10-Fire-and-Smoke-Detection) | Apache-2.0 | not evaluated | - | - | - | gated repo (HF token required); base model is Ultralytics/YOLO11, claimed mAP 0.85 unverified |
+
+The YOLO26 card claims mAP50 94.9 / recall 88.8 on its own "custom" dataset; on our val.jsonl slice
+it measures mAP50 **0.374** and recall **75.2%**, i.e. the claim does not transfer to this domain.
+It also has 3 classes (`fire`/`other`/`smoke`), so `other` was excluded from scoring. On bench_R DEV it
+ties P50 on recall within CI (55.3% vs 56.5%) but at ~2x the false-alarm rate (4.65% vs 2.33%), so it
+is not an improvement. Both remain in the comparison table as evidence; neither replaces the current model.

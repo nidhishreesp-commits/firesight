@@ -27,6 +27,9 @@ def main() -> int:
     ap.add_argument("--fractions", default="P10,P25,P50")
     ap.add_argument("--imgsz", type=int, default=640)
     ap.add_argument("--batch", type=int, default=8)
+    ap.add_argument("--fire-class", type=int, default=0)
+    ap.add_argument("--smoke-class", type=int, default=1)
+    ap.add_argument("--label", default=None, help="label override (defaults to the fraction name)")
     args = ap.parse_args()
 
     os.environ["YOLO_AUTOINSTALL"] = "False"
@@ -54,16 +57,21 @@ def main() -> int:
         list_file.write_text("\n".join(str(p) for p in paths) + "\n", encoding="utf-8")
         for res in model.predict(str(list_file), imgsz=args.imgsz, conf=0.01,
                                  batch=args.batch, device="cpu", verbose=False, stream=True):
-            dets = [{"label": "fire" if int(b.cls.item()) == 0 else "smoke",
-                     "confidence": round(float(b.conf.item()), 6),
-                     "box": [float(v) for v in b.xyxy[0].tolist()]} for b in res.boxes]
+            dets = []
+            for b in res.boxes:
+                c = int(b.cls.item())
+                if c not in (args.fire_class, args.smoke_class):
+                    continue  # e.g. the model's "other" class
+                dets.append({"label": "fire" if c == args.fire_class else "smoke",
+                             "confidence": round(float(b.conf.item()), 6),
+                             "box": [float(v) for v in b.xyxy[0].tolist()]})
             rows.append({"id": Path(res.path).stem, "detections": dets})
         preds = out / f"preds_{frac}.jsonl"
         preds.write_text("\n".join(json.dumps(r) for r in rows) + "\n", encoding="utf-8")
         print(frac, "preds", len(rows), "in", round(time.time() - t0, 1), "s",
               "->", round(len(rows) / max(time.time() - t0, 1e-6), 1), "img/s", flush=True)
         subprocess.run([sys.executable, str(PROJECT_ROOT / "kaggle/pilot_eval.py"),
-                        "--dataset", str(dataset), "--preds", str(preds), "--model", frac,
+                        "--dataset", str(dataset), "--preds", str(preds), "--model", args.label or frac,
                         "--target-fpr", "0.02", "--out", str(out / f"metrics_{frac}.json")], check=True)
     return 0
 

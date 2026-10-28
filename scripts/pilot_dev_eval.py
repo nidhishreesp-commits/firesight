@@ -18,14 +18,15 @@ from run_benchR import load_benchR
 from firesight.config import PROJECT_ROOT
 
 MODELS = {
-    "P10": ("build/kaggle_weights/runs/P10/weights/best.onnx", 8),
-    "P25": ("build/kaggle_weights/runs/P25/weights/best.onnx", 8),
-    "P50": ("build/kaggle_weights/runs/P50/weights/best.onnx", 8),
-    "BASE": ("models/best_fire_v3.onnx", 1),
+    "P10": ("build/kaggle_weights/runs/P10/weights/best.onnx", 8, 0, 1),
+    "P25": ("build/kaggle_weights/runs/P25/weights/best.onnx", 8, 0, 1),
+    "P50": ("build/kaggle_weights/runs/P50/weights/best.onnx", 8, 0, 1),
+    "BASE": ("models/best_fire_v3.onnx", 1, 0, 1),
+    "Y26": ("build/external_models/yolov26/weights/best.onnx", 8, 0, 2),
 }
 
 
-def predict(onnx: Path, records, batch: int, tmp: Path) -> dict:
+def predict(onnx: Path, records, batch: int, tmp: Path, fire_class: int = 0, smoke_class: int = 1) -> dict:
     from ultralytics import YOLO
     lst = tmp / f"paths_{onnx.stem}_{len(records)}.txt"
     lst.write_text("\n".join(str(PROJECT_ROOT / r.path) for r in records) + "\n", encoding="utf-8")
@@ -36,9 +37,13 @@ def predict(onnx: Path, records, batch: int, tmp: Path) -> dict:
     for res in model.predict(str(lst), imgsz=640, conf=0.01, batch=batch, device="cpu",
                              verbose=False, stream=True):
         from firesight.types import Box, Detection
-        dets = [Detection("fire" if int(b.cls.item()) == 0 else "smoke",
-                          float(b.conf.item()), Box(*[float(v) for v in b.xyxy[0].tolist()]))
-                for b in res.boxes]
+        dets = []
+        for b in res.boxes:
+            c = int(b.cls.item())
+            if c not in (fire_class, smoke_class):
+                continue
+            dets.append(Detection("fire" if c == fire_class else "smoke",
+                                  float(b.conf.item()), Box(*[float(v) for v in b.xyxy[0].tolist()])))
         out[path_to_id.get(str(Path(res.path).resolve()), Path(res.path).stem)] = dets
     return out
 
@@ -57,12 +62,12 @@ def main() -> int:
     print("dev", len(dev), "cal", len(cal), flush=True)
 
     results = {}
-    for name, (onnx, batch) in MODELS.items():
+    for name, (onnx, batch, fc, sc) in MODELS.items():
         if not (PROJECT_ROOT / onnx).exists():
             print("missing", onnx); continue
-        cal_preds = predict(Path(onnx), cal, batch, tmp)
+        cal_preds = predict(Path(onnx), cal, batch, tmp, fc, sc)
         thresholds = calibrate_image_level(cal, cal_preds, target_fpr=args.target_fpr)
-        dev_preds = predict(Path(onnx), dev, batch, tmp)
+        dev_preds = predict(Path(onnx), dev, batch, tmp, fc, sc)
         combined = binary_metrics(dev, dev_preds, thresholds, None)
         negatives = sum(1 for r in dev if not (r.meta.get("has_fire") or r.meta.get("has_smoke")))
         fp = sum(1 for r in dev if not (r.meta.get("has_fire") or r.meta.get("has_smoke"))
