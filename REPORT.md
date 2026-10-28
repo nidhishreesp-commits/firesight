@@ -623,3 +623,36 @@ event rate stays **unmeasured** until a 10-camera x 48 h continuous capture is s
 
 Written for the next stage: `docs/LABELING_RUBRIC.md` (6-class rubric) and
 `docs/PILOT_3B_PLAN.md` (Kaggle learning-curve pilot, gated on approval).
+
+## 15. Phase 3b pilot (measured) - data saturates at ~25%
+
+Kaggle T4, yolo11s @640, batch 64, AMP, 15 epochs, stratified fractions of the 58,985-image
+uploadable pool. Selection on `data/splits/val.jsonl` (cal 2,000 / report 5,119), thresholds
+calibrated on `val_cal` at FPR <= 2% per negative image; evaluation via ONNX on CPU (the Kaggle
+eval cell hit an unrelated OOM caused by passing a Python list to `predict`, which stacks all
+7,119 images into one 8.15 GiB array).
+
+| run | images | img/s | s/epoch | recall @FPR<=2% (cal) | 95% CI | FPR/neg (report) | mAP50 fire/smoke |
+|---|---:|---:|---:|---:|---|---:|---|
+| P10 | 5,898 | 67.8 | 87.0 | 0.8283 | [0.813, 0.843] | 2.57% | 0.544 / 0.577 |
+| P25 | 14,747 | 71.7 | 205.7 | 0.9253 | [0.914, 0.935] | 3.25% | 0.579 / 0.643 |
+| P50 | 29,493 | 70.7 | 417.4 | 0.9297 | [0.919, 0.939] | 3.14% | 0.633 / 0.679 |
+
+Equal-FPR comparison at the baseline's achieved 2.34% (thresholds re-selected on the report slice,
+symmetric across models, for comparison only): BASE 80.4% [78.8, 81.9], P10 82.3% [80.7, 83.7],
+P25 91.6% [90.4, 92.6], P50 92.3% [91.2, 93.3].
+
+**bench_R DEV confirmation** (one run per checkpoint, 300 images, SEALED untouched): P50 56.5%
+[45.9, 66.5] > P25 50.6% > P10 48.2% > BASE 40.0% [30.2, 50.6]; DEV FPR P50 2.33% vs BASE 3.72%.
+Ordering is consistent (no reversal); DEV n=85 positives, so the CIs are wide by construction.
+
+Findings:
+- **10% -> 25%: +9.3 pp at equal FPR** (disjoint CIs) - real gain.
+- **25% -> 50%: +0.7 pp** (overlapping CIs) - **flat**. mAP50 still rises (0.579 -> 0.633) but that
+  does not convert into FPR-constrained recall.
+- The calibrated 2% target does not transfer to the held-out report slice (2.6-3.3%); calibrate at
+  ~1.5% or pool calibration data before quoting "recall @ FPR<=2%".
+- Recommendation: **TRIM** - run the full pipeline at 25-50% of the data (≈2.3-4.7 h per 15 epochs at
+  measured 70.7 img/s), not 100% (≈9.3 h at 640), and spend the saved quota on epochs/960/hard
+  negatives. Formal GO conditions are met (P10->P50 >= 5 pp, disjoint CIs, P50 > baseline at equal
+  FPR, DEV ordering consistent), but the plateau makes 100% poor value.

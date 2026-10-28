@@ -8,9 +8,9 @@
   "enable_gpu": true,
   "enable_internet": true,
   "dataset_sources": [
-    "nidhishreesp/firesight-pilot",
-    "nidhishreesp/firesight-pilot-code"
+    "nidhishreesp/firesight-pilot"
   ],
   "competition_sources": [],
   "kernel_sources": []
 }
+

@@ -242,9 +242,11 @@ args and `predict()` tried to allocate 8.15 GiB on an already-8.3 GiB-occupied T
 `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`; evaluation now runs as its own kernel
 (`firesight-pilot-eval`) so it can never kill a training session.
 
-**Measured pilot (all 45/45 epochs, val_early):** P10 67.8 img/s / 86.95 s/epoch / mAP50 0.536;
-P25 71.7 / 205.67 / 0.592; P50 70.7 / 417.41 / 0.650. Rising curve (+11.4 pp mAP50 P10->P50).
-The FPR-constrained recall and the bench_R DEV confirmation are pending the eval kernel.
+**Measured pilot (all 45/45 epochs):** P10 67.8 img/s / 86.95 s/epoch / recall@FPR2% 0.8283;
+P25 71.7 / 205.67 / 0.9253; P50 70.7 / 417.41 / 0.9297. Equal-FPR (2.34%) vs baseline:
+P50 92.3% vs BASE 80.4%. **bench_R DEV** (one run/checkpoint, SEALED untouched):
+P50 56.5% > P25 50.6% > P10 48.2% > BASE 40.0%. Decision: **TRIM** - 25-50% of the data
+suffices; the curve is flat from 25% to 50%. See REPORT.md section 15.
 
 **Original note (now resolved):** the training subprocess reaches `model.train()` and then produces no output
 before the first epoch (no Ultralytics banner, no TQDM). Prime suspect: the first-time label
