@@ -671,3 +671,18 @@ it measures mAP50 **0.374** and recall **75.2%**, i.e. the claim does not transf
 It also has 3 classes (`fire`/`other`/`smoke`), so `other` was excluded from scoring. On bench_R DEV it
 ties P50 on recall within CI (55.3% vs 56.5%) but at ~2x the false-alarm rate (4.65% vs 2.33%), so it
 is not an improvement. Both remain in the comparison table as evidence; neither replaces the current model.
+
+### Option B - fine-tune P50 at 25% data: did NOT help (keep P50)
+
+P50 `best.pt` -> 25 more epochs on 14,747 images, 640, batch 64, AMP. Early stopping fired after
+**6 epochs** (patience 5 on val loss): a fresh cosine schedule starting from a converged model
+disturbed the weights instead of improving them.
+
+| model | val recall @FPR2% | val FPR/neg | val mAP50 f/s | DEV recall (FPR) |
+|---|---:|---:|---|---|
+| **P50 (kept)** | **0.9297** [0.919, 0.939] | 3.14% | 0.633 / 0.679 | **56.5%** (2.33%) |
+| FT25 (B) | 0.8727 [0.859, 0.885] | 2.95% | 0.603 / 0.623 | 54.1% (3.26%) |
+| FT25 @1.5% calib. | 0.8323 [0.817, 0.847] | 1.93% | 0.603 / 0.623 | - |
+
+Conclusion: **do not ship FT25**. P50 remains the best checkpoint. Further gains must come from
+data composition (controlled flames / sparks / hard negatives), not from more epochs on the same data.

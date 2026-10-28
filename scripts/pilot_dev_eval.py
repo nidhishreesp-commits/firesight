@@ -23,6 +23,7 @@ MODELS = {
     "P50": ("build/kaggle_weights/runs/P50/weights/best.onnx", 8, 0, 1),
     "BASE": ("models/best_fire_v3.onnx", 1, 0, 1),
     "Y26": ("build/external_models/yolov26/weights/best.onnx", 8, 0, 2),
+    "FT25": ("build/finetune_weights/FT25/weights/best.onnx", 8, 0, 1),
 }
 
 
@@ -52,6 +53,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="build/pilot_dev/dev_metrics.json")
     ap.add_argument("--target-fpr", type=float, default=0.02)
+    ap.add_argument("--models", default=None, help="comma-separated subset")
     args = ap.parse_args()
     tmp = PROJECT_ROOT / "build/pilot_dev"; tmp.mkdir(parents=True, exist_ok=True)
 
@@ -62,7 +64,10 @@ def main() -> int:
     print("dev", len(dev), "cal", len(cal), flush=True)
 
     results = {}
+    wanted = [m.strip() for m in args.models.split(",")] if args.models else None
     for name, (onnx, batch, fc, sc) in MODELS.items():
+        if wanted and name not in wanted:
+            continue
         if not (PROJECT_ROOT / onnx).exists():
             print("missing", onnx); continue
         cal_preds = predict(Path(onnx), cal, batch, tmp, fc, sc)
