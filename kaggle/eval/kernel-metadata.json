@@ -1,0 +1,17 @@
+{
+  "id": "nidhishreesp/firesight-pilot-eval",
+  "title": "firesight pilot eval",
+  "code_file": "pilot_eval_only.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nidhishreesp/firesight-pilot",
+    "nidhishreesp/firesight-pilot-code",
+    "nidhishreesp/firesight-pilot-weights"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

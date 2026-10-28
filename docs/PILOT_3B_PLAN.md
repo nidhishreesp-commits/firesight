@@ -234,7 +234,19 @@ Environment findings (each fixed in the notebook, v10):
 4. Kaggle's log forwarder drains stdout; the training child is run with `stderr=STDOUT`,
    `PYTHONUNBUFFERED=1` and a hard `timeout 10800`.
 
-**Unresolved:** the training subprocess reaches `model.train()` and then produces no output
+**Resolved:** training completed; the stall was the slow first-time label scan over `/kaggle/input`
+(no output until the first epoch). **OOM follow-up:** the training run itself succeeded; the
+*evaluation* cell then hit CUDA OOM because `YOLO(best.pt)` inherits `batch=64` from the training
+args and `predict()` tried to allocate 8.15 GiB on an already-8.3 GiB-occupied T4. Fix: explicit
+`batch=8, half=True`, `torch.cuda.empty_cache()` between models, and
+`PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`; evaluation now runs as its own kernel
+(`firesight-pilot-eval`) so it can never kill a training session.
+
+**Measured pilot (all 45/45 epochs, val_early):** P10 67.8 img/s / 86.95 s/epoch / mAP50 0.536;
+P25 71.7 / 205.67 / 0.592; P50 70.7 / 417.41 / 0.650. Rising curve (+11.4 pp mAP50 P10->P50).
+The FPR-constrained recall and the bench_R DEV confirmation are pending the eval kernel.
+
+**Original note (now resolved):** the training subprocess reaches `model.train()` and then produces no output
 before the first epoch (no Ultralytics banner, no TQDM). Prime suspect: the first-time label
 scan over the read-only `/kaggle/input` FUSE mount (TQDM `\r` updates are not forwarded), plus
 the label cache being unwritable. **No `images/s` was measured**, so the 5 h gate was never
