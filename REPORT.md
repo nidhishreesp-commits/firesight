@@ -686,3 +686,24 @@ disturbed the weights instead of improving them.
 
 Conclusion: **do not ship FT25**. P50 remains the best checkpoint. Further gains must come from
 data composition (controlled flames / sparks / hard negatives), not from more epochs on the same data.
+
+### Hard-negative fine-tune v1 (2026-10-28): did NOT help (keep P50)
+
+Pool: FP-taxonomy-driven (88 measured FPs -> dust/plaster, warm lights, sunset, haze/cloud,
+screens, PPE, reflections, camera artifacts). 2,000 licensed negatives (D-Fire/FASDD mined,
+CC0/CC BY) added to 14,747 positives = **18.8% negatives**; fine-tuned from P50 with **lr0=1e-3**,
+15 epochs. Early-stopped after 6 epochs.
+
+| model | val recall @FPR2% | val FPR/neg | val mAP50 f/s | DEV recall (FPR) |
+|---|---:|---:|---|---|
+| **P50 (kept)** | **0.9297** [0.919, 0.939] | 3.14% | 0.633 / 0.679 | **56.5%** (2.33%) |
+| FT_HN | 0.8703 [0.856, 0.883] | 2.72% | 0.598 / 0.610 | 49.4% (3.26%) |
+| FT25 (B, no negatives) | 0.8727 | 2.95% | 0.603 / 0.623 | 54.1% (3.26%) |
+
+Hard negatives did lower the false-alarm rate slightly (2.72% vs 3.14%) but cost **5.9 pp recall**
+on val and **7.1 pp on bench_R DEV**. Two independent fine-tunes from P50 both degrade, so the
+problem is the fine-tune schedule/early-stopping on a converged model, not the negatives themselves.
+Next attempt (not done): fresh training at 5-10% negatives with patience on mAP, or freeze the
+backbone and train the head only. P50 remains the best checkpoint.
+
+Also checked (rejected): HF YOLO26-fire (MIT) 75.2% / mAP 0.374; HF YOLOv10-fire (gated, not evaluated).

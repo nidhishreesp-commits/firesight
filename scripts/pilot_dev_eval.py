@@ -24,6 +24,7 @@ MODELS = {
     "BASE": ("models/best_fire_v3.onnx", 1, 0, 1),
     "Y26": ("build/external_models/yolov26/weights/best.onnx", 8, 0, 2),
     "FT25": ("build/finetune_weights/FT25/weights/best.onnx", 8, 0, 1),
+    "FT_HN": ("build/hardneg_weights/FT_HN/weights/best.onnx", 8, 0, 1),
 }
 
 
