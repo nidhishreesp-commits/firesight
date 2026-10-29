@@ -125,7 +125,8 @@ def main() -> int:
     names = list(CAUSES)
     txt = cp(text=[CAUSES[n] for n in names], return_tensors="pt", padding=True)
     with torch.no_grad():
-        tfeat = cm.get_text_features(**txt); tfeat = tfeat/tfeat.norm(dim=-1, keepdim=True)
+        tout = cm.text_model(input_ids=txt["input_ids"], attention_mask=txt.get("attention_mask"))
+        tfeat = cm.text_projection(tout.pooler_output); tfeat = tfeat/tfeat.norm(dim=-1, keepdim=True)
     for start in range(0, len(kept), 32):
         batch = kept[start:start+32]
         imgs = []
@@ -134,7 +135,8 @@ def main() -> int:
             except Exception: imgs.append(Image.new("RGB",(224,224)))
         inp = cp(images=imgs, return_tensors="pt")
         with torch.no_grad():
-            f = cm.get_image_features(**inp); f = f/f.norm(dim=-1, keepdim=True)
+            vout = cm.vision_model(pixel_values=inp["pixel_values"])
+            f = cm.visual_projection(vout.pooler_output); f = f/f.norm(dim=-1, keepdim=True)
         sims = (f @ tfeat.T)
         for r, s in zip(batch, sims):
             r["cause"] = names[int(s.argmax())]

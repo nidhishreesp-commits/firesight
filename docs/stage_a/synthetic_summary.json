@@ -1,0 +1,25 @@
+{
+  "base_images": 300,
+  "generated": 1200,
+  "kept_hard": 43,
+  "effects": [
+    "sun_glare",
+    "sunset_grade",
+    "bright_sky",
+    "haze"
+  ],
+  "by_effect": {
+    "haze": 12,
+    "sun_glare": 14,
+    "sunset_grade": 10,
+    "bright_sky": 7
+  },
+  "by_cause": {
+    "haze_cloud_fog_mist": 15,
+    "skin_person": 10,
+    "stage_chandelier": 18
+  },
+  "hard_min": 0.05,
+  "measured": "P50 ONNX CPU inference on generated variants",
+  "rule": "training-only; mine_stage_a.py caps synthetic at 20% of hard negatives and excludes it from evaluation"
+}

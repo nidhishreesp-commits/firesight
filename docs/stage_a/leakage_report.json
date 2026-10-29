@@ -1,0 +1,189 @@
+{
+  "candidates": 10168,
+  "kept": 9924,
+  "rejected": {
+    "duplicate_phash": 56,
+    "exact_sha_leak": 166,
+    "phash_leak_le2": 22
+  },
+  "removed_leaks": {
+    "exact_sha": 166,
+    "phash_le_2": 22,
+    "id_or_path": 0
+  },
+  "reference_sets": {
+    "all_reference_rows": 53828,
+    "reference_phashes": 53462
+  },
+  "exact_sha_matches_removed": 166,
+  "exact_sha_examples": [
+    {
+      "ref_id": "benchR:2ba12cda:Clouds_over_the_Xe_Don_River_with_boats_at_sunset_in_Pakse_L",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/Clouds_over_the_Xe_Don_River_with_boats_at_sunset_in_Pakse_Laos.jpg",
+      "sha256": "2ba12cda5759af582052a72a135c0d20ad974ae59070d53478728057fd23fd7e"
+    },
+    {
+      "ref_id": "benchR:071ad304:Grand_Canyon_South_Rim_at_Sunset",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/Grand_Canyon_South_Rim_at_Sunset.jpg",
+      "sha256": "071ad3041b2d1e1aa34a822fd600b4e6f9453d1737a7b4b896afc6e2cfadf0eb"
+    },
+    {
+      "ref_id": "benchR:b122b208:2018_-_Nyhavn_on_sunset",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/2018_-_Nyhavn_on_sunset.jpg",
+      "sha256": "b122b208c607c88ef3513e693f55e5c1213cbab0352b98046077328f7aedb6a5"
+    },
+    {
+      "ref_id": "benchR:68e1878a:093_Wild_Mute_swan_at_Lake_Geneva_during_sunset_Photo_by_Gil",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/093_Wild_Mute_swan_at_Lake_Geneva_during_sunset_Photo_by_Giles_Laurent.jpg",
+      "sha256": "68e1878a2337763bc8eb912f904f2b6a852ec2e5d095622d513f12cc92bfd56e"
+    },
+    {
+      "ref_id": "benchR:df08345e:Sunset_on_the_Aresquiers_beach",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/Sunset_on_the_Aresquiers_beach.jpg",
+      "sha256": "df08345e2c84fb6f7401da0aad7e6bed1a88cdf361c74adafc4a6dc6bf195aaf"
+    },
+    {
+      "ref_id": "benchR:b79b370a:Sunset_over_the_Tumuli_Park_in_Gyeongju_Historic_Site_Wolseo",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/Sunset_over_the_Tumuli_Park_in_Gyeongju_Historic_Site_Wolseong_District_South_Korea.jpg",
+      "sha256": "b79b370ae09d1807c3ae7b6aa98b54fb5eb76d5520fe251e775891b2887b34d2"
+    },
+    {
+      "ref_id": "benchR:779b7606:Sunset_at_Dorum_with_Obereversand_lighthouse",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/Sunset_at_Dorum_with_Obereversand_lighthouse.jpg",
+      "sha256": "779b7606e6c00c89afb65ea9a81e927949990b6a02655b42cef1361519eb061d"
+    },
+    {
+      "ref_id": "benchR:9aaeb0c4:Tad_Hang_waterfalls_at_sunset_Tad_Lo_village_Bolaven_Plateau",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/Tad_Hang_waterfalls_at_sunset_Tad_Lo_village_Bolaven_Plateau_Laos.jpg",
+      "sha256": "9aaeb0c4acc5dd5bf51542e47c2b2c4885891a06356ed1d907499ea135cf479c"
+    },
+    {
+      "ref_id": "benchR:5ec34029:Red_Salvia_and_Celosia_in_the_flower_garden_of_the_Tumuli_Pa",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/Red_Salvia_and_Celosia_in_the_flower_garden_of_the_Tumuli_Park_at_sunset_in_Gyeongju_South.jpg",
+      "sha256": "5ec34029034354101a5998e1f73ab181ace626119046fe5c18a3448dc64bdb2d"
+    },
+    {
+      "ref_id": "benchR:79cd73b4:092_Wild_Mute_swan_in_flight_at_Lake_Geneva_during_golden_ho",
+      "ref_path": "C:/Users/Nidhi/My projects/firesight/bench_R/candidates/sunset_orange_sky/092_Wild_Mute_swan_in_flight_at_Lake_Geneva_during_golden_hour_of_sunset_Photo_by_Giles_La.jpg",
+      "sha256": "79cd73b41902babc85d725db4f655bc7b0601813c8be47e691183a9bc4965fe9"
+    }
+  ],
+  "leakage_examples_removed": [
+    {
+      "id": "commons:cfe5afcfee1ddebd",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\stage_chandelier\\cfe5afcfee1ddebd.jpg"
+    },
+    {
+      "id": "commons:3373a8c9d6a049fb",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\stage_chandelier\\3373a8c9d6a049fb.jpg"
+    },
+    {
+      "id": "commons:78ed10192cc5f37e",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\stage_chandelier\\78ed10192cc5f37e.jpg"
+    },
+    {
+      "id": "commons:3a07f133ebea309d",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\stage_chandelier\\3a07f133ebea309d.jpg"
+    },
+    {
+      "id": "commons:4fb50b208b0f1a7a",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\4fb50b208b0f1a7a.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:c123bbff00c3c32b",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\c123bbff00c3c32b.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:dc7610ca59f97d62",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\dc7610ca59f97d62.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:7786303d6afde24b",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\7786303d6afde24b.jpg"
+    },
+    {
+      "id": "commons:2ba12cda5759af58",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\2ba12cda5759af58.jpg"
+    },
+    {
+      "id": "commons:cabd3edad0f68ffa",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\cabd3edad0f68ffa.jpg"
+    },
+    {
+      "id": "commons:22f8a9aaf3bbdaf2",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\22f8a9aaf3bbdaf2.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:db42144f07247c0f",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\db42144f07247c0f.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:c02c09875638b403",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\stage_chandelier\\c02c09875638b403.jpg"
+    },
+    {
+      "id": "commons:ca20875c523a0498",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\ca20875c523a0498.jpg"
+    },
+    {
+      "id": "commons:ca8112a5b469a10c",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\ca8112a5b469a10c.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:ad4e314ddc2e1152",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\ad4e314ddc2e1152.jpg"
+    },
+    {
+      "id": "commons:191c9c93ee3df534",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\191c9c93ee3df534.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:c7970a6c0bac0de8",
+      "reason": "exact_sha",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\c7970a6c0bac0de8.jpg"
+    },
+    {
+      "id": "commons:81b057674aa63d1c",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\stage_chandelier\\81b057674aa63d1c.jpg",
+      "distance": 0
+    },
+    {
+      "id": "commons:e921dbe032e850af",
+      "reason": "phash_le2",
+      "path": "data\\mined_pools\\wikimedia_stage_a\\images\\haze_cloud_fog_mist\\e921dbe032e850af.jpg",
+      "distance": 0
+    }
+  ],
+  "final_pool_leaks": {
+    "exact_sha": 0,
+    "id_or_path": 0,
+    "phash_le_2": 0
+  },
+  "verdict": "PASS",
+  "measured": "SHA-256 exact + pHash Hamming<=2 + id/path against train_50, all val/test frozen splits, bench_R and testbench100; leaks are removed before selection"
+}
