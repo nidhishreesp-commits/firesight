@@ -167,7 +167,7 @@ By source (hard / easy / quarantine):
 
 | source | licence | hard | easy | quarantine |
 |---|---|---:|---:|---:|
-| Wikimedia Commons | CC0 / PD / CC BY / CC BY-SA (per image) | 204 | 1,304 | 117 |
+| Wikimedia Commons | CC0 / PD / CC BY / CC BY-SA (per image) | 204 | 1,348 | 117 |
 | Open Images V7 validation (**held-out source**) | CC BY 2.0 image listing; annotations CC BY 4.0 | 209 | 4,373 | 192 |
 | D-Fire out-of-sample train negatives | CC0-1.0 | 227 | 163 | 43 |
 | FASDD out-of-sample train negatives | CC BY 4.0 | 592 | 1,825 | 223 |
