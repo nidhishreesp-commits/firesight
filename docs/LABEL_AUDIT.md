@@ -52,3 +52,45 @@ another reason); everything else is accepted.
 If ~5/205 (2.4%) of high-confidence negative detections are genuinely fire/smoke, then part of
 the measured FPR is label noise rather than model error. That must be quantified before any
 further training or before quoting an FPR target.
+
+---
+
+## Symmetric audit (added 2026-10-28)
+
+To avoid only fixing the model's mistakes, two more sets were built with
+`scripts/symmetric_audit.py` (green = ground-truth box, red = P50 detection):
+
+| group | images | source | sheets |
+|---|---:|---|---|
+| (A) random val negatives P50 did **not** flag | 200 of 2,561 | `build/audit_symmetric/sheets_negatives/` (7 sheets) | |
+| (B) val positives P50 **missed** | **174 (all of them)** | `build/audit_symmetric/sheets_missed/` (6 sheets) | |
+
+Missed-positive composition: **smoke-only 125, fire-only 33, fire+smoke 16**. Of the 174,
+17 have no detection at all (max_conf = 0), 36 are below 0.10, 42 are 0.10-0.20, 79 are
+0.20-threshold. Most are **small/distant smoke** from aerial or high-vantage cameras.
+
+### Provisional label-noise rates (keyword pass over Florence-2 captions)
+
+| group | keyword fire/smoke | share | interpretation |
+|---|---:|---:|---|
+| flagged FPs (205) | 17 | 8.3% | upper bound; manual triage suggests ~4-6 real cases (~2.4%) |
+| random unflagged negatives (200) | 2 | **1.0%** | base-rate label noise among negatives is low |
+| missed positives (174) | 104 | 59.8% | sanity check, not label noise: captions confirm fire/smoke in 60%; the rest are likely caption misses on tiny/distant smoke |
+
+### Effect on the headline numbers (sensitivity, val_report)
+
+| assumption | mislabelled FPs | FPR (was 3.14%) |
+|---|---:|---:|
+| all 17/205 keyword hits are positives (upper bound) | ~6.9 | **2.88%** |
+| plausible 5/205 | ~2.0 | **3.06%** |
+| random-negative base rate 2/200 | ~0.8 | **3.11%** |
+
+Recall would move only slightly upward (each missed positive that is actually a negative is
+removed from the denominator): a 10% label-noise rate among the 174 missed positives would take
+recall from **92.97% to ~93.66%**; a 20% rate to ~94.35%.
+
+**Conclusion so far:** label noise is real but small among negatives (1-3% of the FPs), so the
+measured FPR is mostly genuine model error, not annotation error. The dominant recall loss is
+**small/distant smoke**, not mislabelling. The reviewer's ids will replace these provisional
+estimates; every metric will then be reported with original and corrected labels via
+`scripts/label_corrections.py` (side file `label_corrections.csv`, no label files edited).
