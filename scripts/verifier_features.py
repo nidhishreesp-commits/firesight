@@ -60,6 +60,9 @@ def main() -> int:
     ap.add_argument("--out", required=True)
     ap.add_argument("--max-fp-ratio", type=float, default=2.0)
     ap.add_argument("--keep-all", action="store_true", help="eval mode: keep ambiguous detections (y=-1)")
+    ap.add_argument("--iou-tp", type=float, default=0.5)
+    ap.add_argument("--class-agnostic", action="store_true")
+    ap.add_argument("--no-balance", action="store_true")
     ap.add_argument("--batch", type=int, default=64)
     args = ap.parse_args()
     rows = json.loads((PROJECT_ROOT/args.sample).read_text(encoding="utf-8"))
@@ -75,7 +78,8 @@ def main() -> int:
     names = list(CAUSES)
     with torch.no_grad():
         t = proc(text=[CAUSES[n] for n in names], return_tensors="pt", padding=True)
-        tfeat = model.get_text_features(**t); tfeat = tfeat/tfeat.norm(dim=-1, keepdim=True)
+        tout = model.text_model(input_ids=t["input_ids"], attention_mask=t.get("attention_mask"))
+        tfeat = model.text_projection(tout.pooler_output); tfeat = tfeat/tfeat.norm(dim=-1, keepdim=True)
 
     items = []
     for row in dets:
@@ -84,11 +88,11 @@ def main() -> int:
         W, H = row.get("w") or 0, row.get("h") or 0
         for d in row["detections"]:
             box = d["box"]
-            same = [g for g in labels if g["label"] == d["label"]]
+            same = labels if args.class_agnostic else [g for g in labels if g["label"] == d["label"]]
             ious = [iou(box, g["box"]) for g in same]
             best = max(ious, default=0.0)
             any_gt = [iou(box, g["box"]) for g in labels]
-            if best >= 0.5: y = 1
+            if best >= args.iou_tp: y = 1
             elif max(any_gt, default=0.0) < 0.1: y = 0
             elif args.keep_all: y = -1
             else: continue
@@ -106,10 +110,9 @@ def main() -> int:
     import random
     rng = random.Random(20261028)
     rng.shuffle(fp)
-    if not args.keep_all:
+    if not args.keep_all and not args.no_balance:
         fp = fp[: int(len(tp)*args.max_fp_ratio)]
-        if fp and len(tp) > 2*len(fp):
-            rng.shuffle(tp); tp = tp[: 2*len(fp)]
+        # Keep all TP crops (the brief requires >=3,000); only cap FP at max_fp_ratio*TP.
         items = tp + fp
     print("after balance:", len(items), "TP", len(tp), "FP", len(fp), "unknown", len(unk), flush=True)
 
@@ -134,12 +137,14 @@ def main() -> int:
             batch = crops[s:s+args.batch]
             inp = proc(images=batch, return_tensors="pt")
             with torch.no_grad():
-                f = model.get_image_features(**inp); f = f/f.norm(dim=-1, keepdim=True)
+                vout = model.vision_model(pixel_values=inp["pixel_values"])
+                f = model.visual_projection(vout.pooler_output); f = f/f.norm(dim=-1, keepdim=True)
             embs.append(f)
         E = torch.cat(embs) if embs else torch.zeros((0, 512))
         inp = proc(images=[full], return_tensors="pt")
         with torch.no_grad():
-            ff = model.get_image_features(**inp); ff = ff/ff.norm(dim=-1, keepdim=True)
+            vout = model.vision_model(pixel_values=inp["pixel_values"])
+            ff = model.visual_projection(vout.pooler_output); ff = ff/ff.norm(dim=-1, keepdim=True)
         # causes from context embeddings
         ctx = E[1::2]
         sims = ctx @ tfeat.T

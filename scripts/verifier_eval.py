@@ -72,25 +72,50 @@ def main() -> int:
 
     targets = [float(x) for x in args.targets.split(",")]
     results = {}
-    for target in targets:
+
+    def calibrate(target):
+        """Search every P50 confidence and every verifier score; max recall at FPR<=target."""
+        meta = splits["val_cal"]["meta"]
+        vs = splits["val_cal"]["scores"]
+        pos_ids, neg_ids = splits["val_cal"]["pos"], splits["val_cal"]["neg"]
+        npos, nneg = len(pos_ids), len(neg_ids)
+        p50_thresholds = sorted({m["conf"] for m in meta}, reverse=True)
         best = None
-        for t in (0.10, 0.15):
-            table = image_table(splits["val_cal"]["meta"], splits["val_cal"]["scores"], t)
-            vs = np.unique(np.round(splits["val_cal"]["scores"], 4))
-            for v in np.quantile(vs, np.linspace(0.0, 1.0, 101)):
-                tp, fp = metrics(table, splits["val_cal"]["pos"], splits["val_cal"]["neg"], t, v)
-                fpr = fp/max(len(splits["val_cal"]["neg"]), 1)
-                if fpr > target: continue
-                rec = tp/max(len(splits["val_cal"]["pos"]), 1)
-                if best is None or rec > best[0]:
-                    best = (rec, t, float(v), fpr)
+        for t in p50_thresholds:
+            table = image_table(meta, vs, t)
+            items = []
+            for rid in pos_ids | neg_ids:
+                s = max((sv for _, sv, _, _ in table.get(rid, [])), default=-1.0)
+                if s >= 0:
+                    items.append((s, 1 if rid in pos_ids else 0))
+            if not items:
+                continue
+            items.sort(key=lambda x: -x[0])
+            tp = fp = 0
+            for i, (score, y) in enumerate(items):
+                if y: tp += 1
+                else: fp += 1
+                if i + 1 < len(items) and items[i + 1][0] == score:
+                    continue
+                fpr = fp / nneg
+                rec = tp / npos
+                if fpr <= target and (best is None or rec > best[0]
+                                      or (rec == best[0] and fpr < best[1])):
+                    best = (rec, fpr, float(t), float(score), tp, fp)
+        return best
+
+    for target in targets:
+        best = calibrate(target)
         if best is None:
-            results[target] = {"error": "no operating point"}; continue
-        rec_cal, t, v, fpr_cal = best
+            results[target] = {"error": "no operating point"}
+            continue
+        rec_cal, fpr_cal, t, v, tp_cal, fp_cal = best
         table = image_table(splits["val_report"]["meta"], splits["val_report"]["scores"], t)
         tp, fp = metrics(table, splits["val_report"]["pos"], splits["val_report"]["neg"], t, v)
         npos, nneg = len(splits["val_report"]["pos"]), len(splits["val_report"]["neg"])
-        results[target] = {"p50_threshold": t, "verifier_threshold": v, "val_cal_fpr": fpr_cal,
+        results[target] = {"p50_threshold": t, "verifier_threshold": v,
+                           "val_cal_fpr": fpr_cal, "val_cal_recall": rec_cal,
+                           "val_cal_tp": tp_cal, "val_cal_fp": fp_cal,
                            "recall": tp/npos, "recall_95ci": wilson(tp, npos),
                            "fpr": fp/nneg, "fpr_95ci": wilson(fp, nneg),
                            "accuracy": (tp + (nneg-fp))/(npos+nneg), "tp": tp, "fp": fp,

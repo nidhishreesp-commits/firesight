@@ -180,12 +180,16 @@ licence ledger is `docs/stage_a/source_licence.csv`; the dominant Wikimedia lice
 hard+easy rows are CC BY-SA 4.0 (785), CC0 (178), public domain (128), CC BY-SA 2.0 (116),
 CC BY 2.0 (111), CC BY-SA 3.0 (100) and CC BY 4.0 (77). No NC/ND image was accepted.
 
-**Gate status: FAIL on composition.** 1,245 hard negatives is below the 3,000 target, and only
-`dust_plaster`, `haze_cloud_fog_mist` and `camera_artifacts` exceed 100 hard. The named FP drivers
-from `docs/FP_TAXONOMY.md` are underfilled: `warm_artificial_light` 18, `traffic_light` 7,
-`vehicle_lights` 26, `screen_fire` 7, `orange_ppe` 27, `reflection_lens_flare` 73. This is the
-same distribution trap as v1: free mining reproduces dust/camera artefacts, not the user-facing
-lookalikes. **No training is started.**
+**Gate status (corrected 2026-10-29):** the 3,000-hard target applies to the **full 100% run**,
+not to the 25% E0/E1 experiment. For E0/E1, 5-10% of the 14,747-image list is 740-1,500 added
+negatives, and the current pool (865 hard train + 2,797 easy train) is sufficient. Stage A is
+therefore accepted for E0/E1.
+
+For the **full run**, 1,245 hard is still below 3,000, and the balance is still wrong: only
+`dust_plaster`, `haze_cloud_fog_mist` and `camera_artifacts` exceed 100 hard, while
+`warm_artificial_light` 18, `traffic_light` 7, `vehicle_lights` 26, `screen_fire` 7,
+`orange_ppe` 27 and `reflection_lens_flare` 73 are underfilled. Targeted collection for the full
+run is planned separately and is **not** used in E1.
 
 ---
 

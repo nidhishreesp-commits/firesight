@@ -1,0 +1,26 @@
+{
+  "base_images": 14747,
+  "base_positives": 6532,
+  "base_negatives": 8215,
+  "added_hard": 865,
+  "added_easy": 462,
+  "added_total": 1327,
+  "e1_images": 16074,
+  "added_share_of_base": 0.09,
+  "e1_negative_share_total": 0.5936,
+  "leakage_verdict": "PASS",
+  "gpu_estimate_hours": {
+    "measured_basis": "72.1 images/s, 251.9 s/epoch for 18,154 images (FT_HN Kaggle run)",
+    "epochs": 20,
+    "E0_images": 14747,
+    "E0_gpu_hours_no_overhead": 1.136,
+    "E1_images": 16074,
+    "E1_gpu_hours_no_overhead": 1.239,
+    "E0_E1_total_no_overhead": 2.375,
+    "E0_E1_total_plus_25pct_overhead": 2.969,
+    "note": "ESTIMATE from measured throughput; the E0/E1 runs themselves are not measured."
+  },
+  "neg_package": "build\\kaggle_stage_a_negatives",
+  "neg_package_images": 1327,
+  "measured": "counts and leakage; GPU hours are an ESTIMATE"
+}
