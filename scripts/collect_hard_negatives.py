@@ -583,7 +583,16 @@ def main() -> int:
             reverse=True,
         )
 
-    final_rows: list[dict] = list(scored)
+    # keep previously selected rows from other sources (the manifest is cumulative)
+    previous = []
+    if manifest_path.exists():
+        for line in manifest_path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            prev = json.loads(line)
+            if prev.get("id") not in {r.get("id") for r in scored}:
+                previous.append(prev)
+    final_rows: list[dict] = previous + list(scored)
     kept: dict[str, int] = Counter()
     final_hashes: list[int] = list(existing)
     for category in categories:

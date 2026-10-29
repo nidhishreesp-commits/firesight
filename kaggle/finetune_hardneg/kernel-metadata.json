@@ -1,0 +1,17 @@
+{
+  "id": "nidhishreesp/firesight-ft-hardneg",
+  "title": "firesight ft hardneg",
+  "code_file": "pilot_ft_hardneg.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nidhishreesp/firesight-pilot",
+    "nidhishreesp/firesight-pilot-code",
+    "nidhishreesp/firesight-pilot-weights"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

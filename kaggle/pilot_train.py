@@ -104,6 +104,9 @@ def main() -> int:
     parser.add_argument("--device", default="0")
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--patience", type=int, default=5)
+    parser.add_argument("--lr0", type=float, default=0.01, help="initial LR (use ~0.001 for fine-tunes)")
+    parser.add_argument("--data-yaml", default=None, help="use an existing data.yaml (custom positives+negatives)")
+    parser.add_argument("--n-train", type=int, default=0)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--amp", action="store_true", help="enable AMP (GPU); leave off for CPU dry runs")
     parser.add_argument("--out", required=True, help="run directory (persist this under /kaggle/working)")
@@ -119,8 +122,20 @@ def main() -> int:
     out.mkdir(parents=True, exist_ok=True)
     last = out / "weights" / "last.pt"
     best = out / "weights" / "best.pt"
-    data_yaml = build_data_yaml(dataset, args.fraction, out)
-    n_train = count_images(out / "lists" / f"train_{args.fraction}.txt")
+    if args.data_yaml:
+        data_yaml = Path(args.data_yaml)
+        cfg = yaml.safe_load(data_yaml.read_text(encoding="utf-8"))
+        n_train = args.n_train
+        if not n_train:
+            train_ref = cfg.get("train")
+            tp = Path(train_ref) if train_ref else None
+            if tp is not None:
+                if not tp.is_absolute():
+                    tp = Path(cfg.get("path") or data_yaml.parent) / tp
+                n_train = count_images(tp)
+    else:
+        data_yaml = build_data_yaml(dataset, args.fraction, out)
+        n_train = count_images(out / "lists" / f"train_{args.fraction}.txt")
 
     from ultralytics import YOLO
 
@@ -150,6 +165,7 @@ def main() -> int:
             device=args.device,
             workers=args.workers,
             patience=args.patience,
+            lr0=args.lr0,
             seed=args.seed,
             deterministic=True,
             amp=args.amp,
