@@ -154,7 +154,9 @@ It trained, ran the recall-at-FPR selection callback, and saved `weights/best_re
   fixed to use batch 1.
 - `firesight-stage-a-negatives` and `firesight-stage-b-eval-negatives` (5,301 images, 1.527 GB)
   private datasets uploaded.
-- **E1 kernel `nidhishreesp/firesight-stage-b-e1` launched** after E0 training completed.
+- **E1 kernel completed** (20 epochs, 25% list + 1,327 added negatives). Training wall time
+  **8,846.6 s (2.46 h)**, measured **65.62 img/s**, best epoch 19. E1 evaluation also OOM'd on
+  the GPU prediction step; predictions were produced locally on CPU with batch 1.
 
 ### 2.6c E0 result and P25 reproduction (measured)
 
@@ -175,6 +177,63 @@ recall. The difference from P25 is within calibration-transfer noise (CIs overla
 **reproduces P25**, with a small operating-point shift explained by: 20 epochs instead of 15,
 custom recall-at-FPR checkpoint selection instead of the old schedule, and recalibrating the
 fire/smoke thresholds on val_cal. No material regression is established.
+
+### 2.6d E1 result and GATE 1 (measured)
+
+E1 selection on val_cal: **91.93% recall @ 1.84% FPR** (epoch 19) vs E0 **89.66% @ 1.94%**
+(+2.27 pp recall at slightly lower FPR).
+
+Gate 1 is evaluated at **matched recall**: E0's 1.5%-target operating point, recall **84.85%**
+on val_report, applied as the same recall target to E1. Thresholds are image-level global
+confidence calibrated on val_cal only; identical images are paired.
+
+| set / metric | E0 | E1 | relative change | McNemar |
+|---|---:|---:|---:|---|
+| val_report FPR at 84.85% recall | 1.551% [1.15, 2.10] | **0.908% [0.61, 1.35]** | **-41.5%** | p=**0.0046** |
+| independent-negative FPR at 84.85% recall | 0.491% [0.33, 0.72] | **0.208% [0.12, 0.37]** | **-57.7%** | p=**0.0026** |
+| val_report recall | 84.85% | 84.85% | 0 | matched |
+| independent n | 5,301 | 5,301 | - | - |
+
+**GATE 1: PASS.** Both required sets show a >=25% relative FPR reduction at matched recall with
+p<0.05 and no recall loss. The effect is not borderline; no second seed is needed for Gate 1.
+
+At a matched-FPR 2.0% target, E1 also has higher val_report recall (90.34% vs 88.12%) with lower
+val_report FPR (1.85% vs 2.08%); on the independent negatives E1 FPR is 0.811% vs 0.679% (not a
+win). The matched-recall result is the Gate 1 evidence.
+
+Per-cause independent FPR at matched recall (denominators; `too_few` = n<30):
+
+| cause | n | E0 FPR | E1 FPR | too few |
+|---|---:|---:|---:|---:|
+| camera_artifacts | 1615 | 0.37% | **0.06%** | no |
+| dust_plaster | 941 | 0.32% | **0.11%** | no |
+| exhaust | 527 | 0.19% | 0.19% | no |
+| sun_glare_sky (held out) | 323 | 0.62% | 0.62% | no |
+| skin_person (held out) | 303 | 0.33% | 0.33% | no |
+| stage_chandelier | 278 | 0.00% | 0.36% | no |
+| orange_vegetation | 259 | 0.00% | 0.00% | no |
+| reflection_lens_flare | 167 | 1.20% | **0.00%** | no |
+| cave_warm_rock | 124 | 0.81% | **0.00%** | no |
+| snow_white_overexposed | 121 | 1.65% | **0.00%** | no |
+| ordinary_outdoor | 98 | 1.02% | 1.02% | no |
+| traffic_light (held out) | 92 | 2.17% | **0.00%** | no |
+| vehicle_lights | 73 | 1.37% | 1.37% | no |
+| smoke_steam_nonfire | 67 | 1.49% | 1.49% | no |
+| orange_ppe | 60 | 0.00% | 0.00% | no |
+| haze_cloud_fog_mist | 54 | 3.70% | **0.00%** | no |
+| ordinary_indoor | 52 | 0.00% | 0.00% | no |
+| neon_lights | 51 | 0.00% | 0.00% | no |
+| sunset_sunrise | 49 | 2.04% | 2.04% | no |
+| screen_fire | 31 | 0.00% | 0.00% | no |
+| warm_artificial_light | 16 | 0.00% | 0.00% | **yes** |
+
+**GATE 2: NOT PASSED for the named held-out causes.** The overall independent set improves, but
+`sun_glare_sky` (323; 67 hard) and `skin_person` (303; 26 hard) are unchanged at the matched-recall
+point. `traffic_light` (92; only 7 hard) is **too few to measure** and is not used as a gate.
+So the fix is **partly general** (overall independent FPR falls significantly) but **not
+demonstrated as general on the named held-out causes**; do not claim cause-general improvement.
+
+E1/E0 artifacts: `docs/stage_b/e1/`, `docs/stage_b/gate1.json`.
 
 ### 2.7 Evaluation protocol (identical images, paired)
 
@@ -260,7 +319,11 @@ One compact sheet contains only the 226 images with P50 conf >= 0.50 or CLIP fir
 
 ---
 
-## 4. Stage E: full run (only after Gates 1 and 2 and explicit approval)
+## 4. Stage E: full run (BLOCKED: Gate 2 not passed)
+
+**Status: STOP before Stage E.** Gate 1 passed (matched-recall FPR reduction on both val_report
+and overall independent negatives). Gate 2 did **not** pass on the named held-out causes
+(`sun_glare_sky`, `skin_person` unchanged; `traffic_light` too few). Stage E is not started.
 
 - 50-100% positives, 30-40 epochs, same recipe and selection rule.
 - GPU-hour estimate (E, from 72.1 img/s): 50% positives + 5-10% negatives ~31-32k images:
@@ -293,8 +356,10 @@ One compact sheet contains only the 226 images with P50 conf >= 0.50 or CLIP fir
 |---|---|
 | Stage A source/licence/composition/leakage | **M** (see `HARDNEG_ENGINE.md`) |
 | P50 free-pool false detections | **M** |
-| E0/E1 effect | **not measured** (prepared + CPU smoke-tested) |
-| E0/E1 GPU hours | **E**: 2.37 h raw, 2.97 h with 25% overhead |
+| E0/E1 effect | **M**: E1 selection 91.93%/1.84% vs E0 89.66%/1.94% on val_cal |
+| E0/E1 GPU hours | **M**: E0 2.30 h, E1 2.46 h = 4.76 h wall (not the 2.37 h estimate) |
 | Verifier fallback effect | **M** on val_report (see 3.1) |
+| Gate 1 | **M: PASS** (matched recall 84.85%; FPR -41.5% report p=0.0046, -57.7% independent p=0.0026) |
+| Gate 2 | **M: NOT PASSED** on named held-out causes (sun_glare/skin unchanged; traffic too few) |
 | Pilot false alarms per camera-hour | **not measured** |
 | Unseen-camera behaviour | **not claimed** |

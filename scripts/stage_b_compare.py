@@ -102,7 +102,7 @@ def main() -> int:
     e1i = load_preds(PROJECT_ROOT / args.e1_indep)
     indep_labels = {i: 0 for i in e0i}
     pool = [json.loads(l) for l in (PROJECT_ROOT / "data/hard_negatives_v3/manifest.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
-    cause = {r["id"]: r.get("cause", "other") for r in pool if r.get("id")}
+    cause = {Path(r["path"]).stem: r.get("cause", "other") for r in pool if r.get("path")}
 
     results = {"targets": [float(t) for t in args.targets.split(",")], "matched_fpr": {}, "matched_recall": {}}
     for target in results["targets"]:

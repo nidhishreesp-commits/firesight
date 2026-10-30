@@ -1,0 +1,31 @@
+{
+  "n_train": 16074,
+  "n_val": 1000,
+  "n_val_cal": 2000,
+  "val_cal_positives": 967,
+  "model": "/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/yolo11s.pt",
+  "epochs_requested": 20,
+  "patience": 10,
+  "lr0": 0.01,
+  "lrf": 0.01,
+  "cos_lr": true,
+  "warmup_epochs": 3.0,
+  "seed": 0,
+  "imgsz": 640,
+  "batch": 64,
+  "amp": true,
+  "selection": "max recall at FPR<=2% on val_cal (image-level)",
+  "best": {
+    "recall": 0.919338,
+    "fpr": 0.018393,
+    "epoch": 19,
+    "threshold": 0.24939
+  },
+  "wall_time_s": 8846.6,
+  "throughput": {
+    "epochs_recorded": 20,
+    "median_s_per_epoch": 244.94,
+    "images_per_s": 65.62
+  },
+  "best_recall_pt": "/kaggle/working/runs/E1/weights/best_recall.pt"
+}
