@@ -23,6 +23,7 @@ def main() -> int:
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--device", default="0")
     ap.add_argument("--half", action="store_true")
+    ap.add_argument("--chunk", type=int, default=32)
     args = ap.parse_args()
 
     paths = [l.strip().lstrip('\ufeff') for l in Path(args.list).read_text(encoding="utf-8").splitlines() if l.strip().lstrip('\ufeff')]
@@ -32,15 +33,17 @@ def main() -> int:
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", encoding="utf-8") as fh:
-        for result in model.predict(paths, imgsz=args.imgsz, conf=args.conf, batch=args.batch,
-                                    device=args.device, half=args.half, verbose=False, stream=True):
-            dets = [{"label": "fire" if int(b.cls.item()) == 0 else "smoke",
-                     "confidence": round(float(b.conf.item()), 6),
-                     "box": [float(v) for v in b.xyxy[0].tolist()]} for b in result.boxes]
-            fh.write(json.dumps({"id": Path(result.path).stem, "detections": dets}) + "\n")
-            n += 1
-            if n % 1000 == 0:
-                print(n, "/", len(paths), round(n / max(time.time() - t0, 1e-6), 2), "img/s", flush=True)
+        for start in range(0, len(paths), args.chunk):
+            chunk = paths[start:start + args.chunk]
+            for result in model.predict(chunk, imgsz=args.imgsz, conf=args.conf, batch=args.batch,
+                                        device=args.device, half=args.half, verbose=False, stream=True):
+                dets = [{"label": "fire" if int(b.cls.item()) == 0 else "smoke",
+                         "confidence": round(float(b.conf.item()), 6),
+                         "box": [float(v) for v in b.xyxy[0].tolist()]} for b in result.boxes]
+                fh.write(json.dumps({"id": Path(result.path).stem, "detections": dets}) + "\n")
+                n += 1
+                if n % 1000 == 0:
+                    print(n, "/", len(paths), round(n / max(time.time() - t0, 1e-6), 2), "img/s", flush=True)
     print(json.dumps({"images": n, "seconds": round(time.time() - t0, 1), "out": str(out)}))
     return 0
 

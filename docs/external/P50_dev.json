@@ -1,0 +1,33 @@
+{
+  "model": "P50",
+  "path": "build\\kaggle_weights\\runs\\P50\\weights\\best.onnx",
+  "class_map": {
+    "0": "fire",
+    "1": "smoke"
+  },
+  "calibrated_on": "val_cal (2,000), image-level max confidence",
+  "target_val_cal_fpr": 0.02,
+  "threshold": 0.34558340907096863,
+  "val_cal": {
+    "recall": 0.9234746639089969,
+    "fpr": 0.01936108422071636
+  },
+  "bench_R_DEV": {
+    "tp": 51,
+    "fp": 6,
+    "n_pos": 85,
+    "n_neg": 215,
+    "recall": 0.6,
+    "recall_95ci": [
+      0.4937,
+      0.6976
+    ],
+    "fpr": 0.027906976744186046,
+    "fpr_95ci": [
+      0.0129,
+      0.0595
+    ]
+  },
+  "bench_R_DEV_n": 300,
+  "note": "DEV only; SEALED not read. One DEV run per candidate."
+}
