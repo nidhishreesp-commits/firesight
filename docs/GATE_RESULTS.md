@@ -150,8 +150,9 @@ It trained, ran the recall-at-FPR selection callback, and saved `weights/best_re
 - `firesight-stage-b-code` private dataset uploaded.
 - **E0 kernel `nidhishreesp/firesight-stage-b-e0` launched** (20 epochs, 25% list, no added
   negatives). Result pending at the time of writing.
-- `firesight-stage-a-negatives` private dataset uploaded; E1 kernel is prepared in
-  `kaggle/stage_b_e1/` but **not pushed** until E0 is reported.
+- `firesight-stage-a-negatives` and `firesight-stage-b-eval-negatives` (5,301 images, 1.527 GB)
+  private datasets uploaded.
+- E1 kernel is prepared in `kaggle/stage_b_e1/` but **not pushed** until E0 is reported.
 
 ### 2.7 Evaluation protocol (identical images, paired)
 
