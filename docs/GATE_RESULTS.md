@@ -157,6 +157,12 @@ It trained, ran the recall-at-FPR selection callback, and saved `weights/best_re
 - **E1 kernel completed** (20 epochs, 25% list + 1,327 added negatives). Training wall time
   **8,846.6 s (2.46 h)**, measured **65.62 img/s**, best epoch 19. E1 evaluation also OOM'd on
   the GPU prediction step; predictions were produced locally on CPU with batch 1.
+- **Known evaluation bug:** `stage_b_predict.py` OOMs on one large val_report image on the T4
+  even at batch 1 (11.72 GiB allocation inside `im.half()`). It does not affect training; the
+  evaluation was completed locally with CPU batch-1 inference. Fix before reusing this cell.
+- **Targeted collection Phase 1 is approved but not downloaded yet.** The verifier cascade and
+  E0/E1 were completed first per the approved priority. The plan/size cap is in
+  `docs/TARGETED_COLLECTION_PLAN.md`; no Phase 1 image bytes have been spent.
 
 ### 2.6c E0 result and P25 reproduction (measured)
 
