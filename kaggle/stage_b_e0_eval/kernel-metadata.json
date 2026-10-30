@@ -1,0 +1,19 @@
+{
+  "id": "nidhishreesp/firesight-stage-b-e0-eval",
+  "title": "firesight stage b E0 eval",
+  "code_file": "pilot_e0_eval.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nidhishreesp/firesight-pilot",
+    "nidhishreesp/firesight-stage-b-code",
+    "nidhishreesp/firesight-stage-b-eval-negatives"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "nidhishreesp/firesight-stage-b-e0"
+  ]
+}
