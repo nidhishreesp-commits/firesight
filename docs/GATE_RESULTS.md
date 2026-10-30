@@ -145,6 +145,14 @@ E0/E1 runs themselves are not measured yet.
 It trained, ran the recall-at-FPR selection callback, and saved `weights/best_recall.pt`
 (tiny-set recall 0.30 at FPR 0.00). The full pipeline is exercised; this is not an accuracy result.
 
+### 2.6b Execution status
+
+- `firesight-stage-b-code` private dataset uploaded.
+- **E0 kernel `nidhishreesp/firesight-stage-b-e0` launched** (20 epochs, 25% list, no added
+  negatives). Result pending at the time of writing.
+- `firesight-stage-a-negatives` private dataset uploaded; E1 kernel is prepared in
+  `kaggle/stage_b_e1/` but **not pushed** until E0 is reported.
+
 ### 2.7 Evaluation protocol (identical images, paired)
 
 1. Score `val_report` (5,119: 2,475 positive / 2,644 negative) and the independent negative set
@@ -188,22 +196,38 @@ Use the same paired tests and Wilson CIs. If E1 only improves on seen causes, th
 
 ---
 
-## 3.1 Verifier fallback (CPU, measured)
+## 3.1 Verifier fallback (CPU, measured — v4 final)
 
-The verifier was retrained with **5,736 TP / 3,028 FP crops** using class-agnostic matching at
-IoU>=0.3, and the calibration search was fixed to sweep every P50 threshold and every verifier
-score (the old 101-quantile grid made 1.5% and 2.0% collapse to the same point).
+The v3 verifier was **invalidated by leakage**: 149 of its training negatives were also in the
+independent evaluation set. Those 149 source images were removed and the verifier was retrained
+as **v4** (4,942 source images; 5,736 TP / 2,703 FP; CV AUC 0.9738). Leakage is now **PASS**
+against val, TEST, bench_R DEV, independent negatives and 104 Sample_videos frames.
 
-| model | val_report recall | val_report FPR | notes |
+| model / set | recall | FPR | McNemar vs P50 calibrated |
 |---|---:|---:|---|
-| P50 calibrated | 0.9297 | 3.14% | baseline |
-| verifier v3 @1.5% target | **0.9766** | **1.74%** | McNemar pos p=1.1e-31, neg p=1.7e-5 |
-| verifier v3 @2.0% target | **0.9770** | **2.19%** | McNemar pos p=5.6e-33, neg p=0.0035 |
+| P50 calibrated, val_report | 92.97% | 3.14% | reference |
+| v4 cascade @1.5% val_cal, val_report | **97.58%** | **1.85%** | pos p=3.4e-30, neg p=4.5e-5 |
+| v4 cascade @2.0% val_cal, val_report | **97.70%** | **2.34%** | pos p=5.6e-33, neg p=0.014 |
+| P50 calibrated, bench_R DEV (89/211) | 60.67% | 2.84% | reference |
+| v4 cascade, bench_R DEV | 69.66% | 4.27% | improves recall, worsens FPR |
+| P50 calibrated, independent 5,301 | - | 0.585% | reference |
+| v4 cascade, independent 5,301 | - | **0.528%** | p=0.771 (not significant) |
 
-This is a **fallback**, not the primary fix; it was not shipped into the detector path. The model
-is `build/verifier/model_v3.joblib`, features `features_train_v3.npz`, eval `eval_v3_mixed.json`.
-The val_cal features were rebuilt with the fixed CLIP API and matched the old feature results to
-within 1 FP, which is the compatibility check for the reused val_report features.
+Held-out independent negatives: `sun_glare_sky` 2.79% -> **1.86%** (n=323, 67 hard),
+`skin_person` 0.33% -> **0.00%** (n=303, 26 hard), `traffic_light` 1.09% -> **0.00%**
+(n=92, 7 hard; **too few hard images for a gate**). Per-cause table:
+`docs/stage_b/verifier_v4_cascade.json`.
+
+One authorized Sample_videos pass (2 fire / 9 nonfire): P50 calibrated gave 1 nonfire layer alarm
+over 2.9 min; v4 cascade gave **0**, with 2/2 fire clips detected after onset (same first alarms
+45.67 s and 10.2 s). Video coverage is too short to call a camera-hour rate.
+
+Latency on CPU: P50 82.9 ms/frame + verifier 174.8 ms/frame = **257.7 ms/frame**; RSS peak
+1.39 GB. This is a fallback, not a production latency claim.
+
+Pilot-candidate configuration (not shipped): **P50@0.10 -> verifier v4 (v=0.011936, calibrated
+on val_cal) -> temporal N-of-M -> video layer.** Still unmeasured: camera-hours, night/IR, rain,
+cross-site generalisation, reviewer workload, and the full-run detector retrain.
 
 ## 3.2 Quarantine review (measured)
 
@@ -231,8 +255,8 @@ One compact sheet contains only the 226 images with P50 conf >= 0.50 or CLIP fir
 
 | item | status |
 |---|---|
-| Verifier retrained with >= 3,000 TP crops, class-agnostic IoU >= 0.3, 0.10-0.30 band | **DONE (M): 5,736 TP / 3,028 FP, CV AUC 0.977** |
-| Calibration bug (1.5%/2.0% both returned 0.91%) | **FIXED (M): full threshold sweep; 1.5% and 2.0% now select distinct points** |
+| Verifier retrained with >= 3,000 TP crops, class-agnostic IoU >= 0.3, 0.10-0.30 band | **DONE (M): v4 5,736 TP / 2,703 FP, CV AUC 0.9738; 149 leaked negatives removed** |
+| Calibration bug (1.5%/2.0% both returned 0.91%) | **FIXED (M): full threshold sweep; v4 1.5% and 2.0% select distinct points** |
 | Video layer unit tests | existing 4/4 pass in `tests/test_video_filter.py` |
 | Video layer measured on public clips | not measured in Stage A |
 | Video layer on `Sample_videos` | only at the end, once, as held-out check |

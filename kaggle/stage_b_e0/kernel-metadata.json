@@ -1,0 +1,16 @@
+{
+  "id": "nidhishreesp/firesight-stage-b-e0",
+  "title": "firesight stage b E0",
+  "code_file": "pilot_e0.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nidhishreesp/firesight-pilot",
+    "nidhishreesp/firesight-stage-b-code"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
