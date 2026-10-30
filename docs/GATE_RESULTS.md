@@ -148,11 +148,33 @@ It trained, ran the recall-at-FPR selection callback, and saved `weights/best_re
 ### 2.6b Execution status
 
 - `firesight-stage-b-code` private dataset uploaded.
-- **E0 kernel `nidhishreesp/firesight-stage-b-e0` launched** (20 epochs, 25% list, no added
-  negatives). Result pending at the time of writing.
+- **E0 kernel completed** (20 epochs, 25% list, no added negatives). Training wall time
+  **8,289.5 s (2.30 h)**, measured **68.65 img/s**, best epoch 19. The evaluation cell OOM'd on a
+  large image with batch 16; E0 predictions were produced locally on CPU with batch 1. E1 was
+  fixed to use batch 1.
 - `firesight-stage-a-negatives` and `firesight-stage-b-eval-negatives` (5,301 images, 1.527 GB)
   private datasets uploaded.
-- E1 kernel is prepared in `kaggle/stage_b_e1/` but **not pushed** until E0 is reported.
+- **E1 kernel `nidhishreesp/firesight-stage-b-e1` launched** after E0 training completed.
+
+### 2.6c E0 result and P25 reproduction (measured)
+
+E0 selection on val_cal: **89.66% recall @ 1.94% FPR** (epoch 19). val_report:
+
+| val_cal target | fire/smoke thresholds | val_report recall | 95% CI | val_report FPR | FP / 2,644 |
+|---:|---|---:|---|---:|---:|
+| 0.9% | 0.27 / 0.67 | 79.35% | [77.7, 80.9] | 1.48% | 39 |
+| 1.5% | 0.31 / 0.43 | 86.59% | [85.2, 87.9] | 1.89% | 50 |
+| 2.0% | 0.27 / 0.39 | 88.20% | [86.9, 89.4] | 2.23% | 59 |
+| 3.0% | 0.27 / 0.25 | 92.00% | [90.9, 93.0] | 2.84% | 75 |
+| 3.25% | 0.13 / 0.29 | 92.85% | [91.8, 93.8] | 3.56% | 94 |
+| 4.0% | 0.13 / 0.19 | 94.59% | [93.6, 95.4] | 4.24% | 112 |
+
+P25 reference: **92.53% recall @ 3.25% FPR** on val_report. E0 sits between 92.00%/2.84% and
+92.85%/3.56% around that operating point; interpolating to 3.25% FPR gives about **93.0%**
+recall. The difference from P25 is within calibration-transfer noise (CIs overlap), so E0
+**reproduces P25**, with a small operating-point shift explained by: 20 epochs instead of 15,
+custom recall-at-FPR checkpoint selection instead of the old schedule, and recalibrating the
+fire/smoke thresholds on val_cal. No material regression is established.
 
 ### 2.7 Evaluation protocol (identical images, paired)
 

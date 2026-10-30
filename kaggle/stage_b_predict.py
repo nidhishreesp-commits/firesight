@@ -25,7 +25,7 @@ def main() -> int:
     ap.add_argument("--half", action="store_true")
     args = ap.parse_args()
 
-    paths = [l.strip() for l in Path(args.list).read_text(encoding="utf-8").splitlines() if l.strip()]
+    paths = [l.strip().lstrip('\ufeff') for l in Path(args.list).read_text(encoding="utf-8").splitlines() if l.strip().lstrip('\ufeff')]
     model = YOLO(args.model, task="detect")
     t0 = time.time()
     n = 0

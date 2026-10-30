@@ -41,7 +41,7 @@ def resolve(line: str, dataset: Path) -> Path:
 
 
 def resolve_list(src: Path, dataset: Path, dst: Path) -> list[Path]:
-    paths = [resolve(l, dataset) for l in src.read_text(encoding="utf-8").splitlines() if l.strip()]
+    paths = [resolve(l, dataset) for l in src.read_text(encoding="utf-8").splitlines() if l.strip().lstrip('\ufeff')]
     missing = [str(p) for p in paths if not p.exists()]
     if missing:
         raise SystemExit(f"{len(missing)} images missing from {src}; first: {missing[:3]}")
