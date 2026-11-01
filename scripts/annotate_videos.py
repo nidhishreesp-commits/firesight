@@ -13,19 +13,29 @@ def main():
     ap.add_argument('--conf',type=float,default=0.05)
     ap.add_argument('--draw-conf',type=float,default=0.10)
     ap.add_argument('--sample-fps',type=float,default=5.0)
+    ap.add_argument('--only',default=None,help='comma-separated video names')
     args=ap.parse_args()
     src=Path(args.input); out=Path(args.out)/args.name; out.mkdir(parents=True,exist_ok=True)
     model=YOLO(args.model,task='detect')
     names={int(k):str(v).lower() for k,v in (model.names or {}).items()}
     fire_thr=0.29; smoke_thr=0.33
     files=[p for p in sorted(src.iterdir()) if p.suffix.lower() in ('.mp4','.mov','.avi','.mkv')]
+    if args.only:
+        want={x.strip() for x in args.only.split(',') if x.strip()}
+        files=[p for p in files if p.name in want]
     summary={}
+    sp=out/'summary.json'
+    if sp.exists():
+        try: summary=json.loads(sp.read_text(encoding='utf-8'))
+        except Exception: summary={}
     for p in files:
+        dest=out/f'{p.stem}_annotated.mp4'
+        if dest.exists() and dest.stat().st_size>100000 and p.name in summary:
+            print('skip',p.name,flush=True); continue
         cap=cv2.VideoCapture(str(p)); fps=cap.get(cv2.CAP_PROP_FPS) or 25
         w=int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)); h=int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         n=int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0); dur=n/max(fps,1)
         stride=max(1,round(fps/args.sample_fps)); out_fps=min(args.sample_fps,fps)
-        dest=out/f'{p.stem}_annotated.mp4'
         writer=cv2.VideoWriter(str(dest),cv2.VideoWriter_fourcc(*'mp4v'),out_fps,(w,h))
         maxc={'fire':0.0,'smoke':0.0}; frames={'fire':0,'smoke':0}; first={'fire':None,'smoke':None}; fd=0
         idx=sampled=0
@@ -64,6 +74,7 @@ def main():
                          'first_fire_s':first['fire'],'first_smoke_s':first['smoke'],
                          'p50_alert_fire_or_smoke':alert}
         print(p.name,json.dumps(summary[p.name]),flush=True)
+        sp.write_text(json.dumps(summary,indent=2),encoding='utf-8')
     (out/'summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     print('\nwrote',out/'summary.json')
 
