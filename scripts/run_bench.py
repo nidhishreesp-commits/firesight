@@ -31,6 +31,9 @@ VAL_FLAMES = PROJECT_ROOT / "data/splits/val_flames.jsonl"
 RUNS = PROJECT_ROOT / "bench_results"
 
 MODELS = {
+    "P50": {"kind": "yolo", "path": "build/kaggle_weights/runs/P50/weights/best.onnx",
+            "imgsz": 640, "iou": 0.45, "license": "AGPL-3.0 (Ultralytics YOLO11s)",
+            "family": "YOLO11s"},
     "v3": {"kind": "yolo", "path": "models/best_fire_v3.onnx", "imgsz": 640, "iou": 0.45,
            "license": "proprietary (SmartSight)", "family": "YOLOv12n"},
     "v4": {"kind": "yolo", "path": "../smartsight-models/best-fire-v4/model.onnx", "imgsz": 640, "iou": 0.45,

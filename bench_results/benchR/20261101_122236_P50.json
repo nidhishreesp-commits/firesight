@@ -1,0 +1,6007 @@
+{
+  "bench": "bench_R",
+  "model": "P50",
+  "family": "YOLO11s",
+  "license": "AGPL-3.0 (Ultralytics YOLO11s)",
+  "bench_locked_sha256": "9001fbc827a606168867ccf2151694f390ee3df34de16e1da2ee7a585d07993c",
+  "bench_split_rule": "DEV 300 / SEALED 700, stratified random seed 20261022",
+  "calibrated_on": "data/splits/val_mini.jsonl + data/splits/val_flames.jsonl",
+  "target_fpr": 0.02,
+  "thresholds": {
+    "fire": 0.13,
+    "smoke": 0.39
+  },
+  "splits": {
+    "dev": {
+      "split": "dev",
+      "n": 300,
+      "positives": 85,
+      "fire": {
+        "n": 300,
+        "tp": 36,
+        "fp": 7,
+        "tn": 239,
+        "fn": 18,
+        "accuracy": 0.916667,
+        "accuracy_95ci": [
+          0.8798776190248736,
+          0.94291952264368
+        ],
+        "precision": 0.837209,
+        "precision_95ci": [
+          0.7002730466408176,
+          0.9188347549714246
+        ],
+        "recall": 0.666667,
+        "recall_95ci": [
+          0.5336071462745029,
+          0.7775875647984964
+        ],
+        "specificity": 0.971545,
+        "specificity_95ci": [
+          0.9424389095985937,
+          0.9861494439822354
+        ],
+        "f1": 0.742268,
+        "zero_event_upper_95": null
+      },
+      "smoke": {
+        "n": 300,
+        "tp": 25,
+        "fp": 3,
+        "tn": 241,
+        "fn": 31,
+        "accuracy": 0.886667,
+        "accuracy_95ci": [
+          0.8457997619361538,
+          0.917755985532264
+        ],
+        "precision": 0.892857,
+        "precision_95ci": [
+          0.7280377463234293,
+          0.9628823079452005
+        ],
+        "recall": 0.446429,
+        "recall_95ci": [
+          0.3238651625129941,
+          0.5758701386821612
+        ],
+        "specificity": 0.987705,
+        "specificity_95ci": [
+          0.964480775867004,
+          0.9958099904934459
+        ],
+        "f1": 0.595238,
+        "zero_event_upper_95": null
+      },
+      "combined": {
+        "n": 300,
+        "tp": 50,
+        "fp": 6,
+        "tn": 209,
+        "fn": 35,
+        "accuracy": 0.863333,
+        "accuracy_95ci": [
+          0.8198437047874653,
+          0.8976354027475134
+        ],
+        "precision": 0.892857,
+        "precision_95ci": [
+          0.7853131324833861,
+          0.9499613254188092
+        ],
+        "recall": 0.588235,
+        "recall_95ci": [
+          0.48200820902440994,
+          0.6868316137613121
+        ],
+        "specificity": 0.972093,
+        "specificity_95ci": [
+          0.9404628389731454,
+          0.987148730308015
+        ],
+        "f1": 0.70922,
+        "zero_event_upper_95": null
+      },
+      "box_ap": {
+        "fire": {
+          "gt_boxes": 317,
+          "ap50": 0.105463,
+          "ap75": 0.049831,
+          "ap50_95": 0.053208
+        },
+        "smoke": {
+          "gt_boxes": 117,
+          "ap50": 0.289051,
+          "ap75": 0.112316,
+          "ap50_95": 0.145195
+        }
+      },
+      "mean_iou": {
+        "fire": {
+          "gt_boxes": 317,
+          "matched_iou50": 22,
+          "recall_iou50": 0.069401,
+          "mean_iou_all_gt": 0.0644,
+          "mean_iou_matched": 0.708196
+        },
+        "smoke": {
+          "gt_boxes": 117,
+          "matched_iou50": 17,
+          "recall_iou50": 0.145299,
+          "mean_iou_all_gt": 0.150734,
+          "mean_iou_matched": 0.741823
+        }
+      },
+      "by_group": {
+        "both": {
+          "n": 8,
+          "correct": 8,
+          "accuracy": 1.0
+        },
+        "camera_artifacts": {
+          "n": 11,
+          "correct": 11,
+          "accuracy": 1.0
+        },
+        "chandelier_stage_lights": {
+          "n": 8,
+          "correct": 7,
+          "accuracy": 0.875
+        },
+        "clouds": {
+          "n": 9,
+          "correct": 8,
+          "accuracy": 0.888889
+        },
+        "controlled_fire": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "dust_construction_plaster": {
+          "n": 8,
+          "correct": 7,
+          "accuracy": 0.875
+        },
+        "exhaust": {
+          "n": 4,
+          "correct": 4,
+          "accuracy": 1.0
+        },
+        "flowers_autumn_leaves": {
+          "n": 8,
+          "correct": 8,
+          "accuracy": 1.0
+        },
+        "fog_haze_mist": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "orange_ppe_vests_cones": {
+          "n": 9,
+          "correct": 8,
+          "accuracy": 0.888889
+        },
+        "ordinary_indoor": {
+          "n": 11,
+          "correct": 10,
+          "accuracy": 0.909091
+        },
+        "ordinary_other": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0
+        },
+        "ordinary_streets_warehouses_offices": {
+          "n": 10,
+          "correct": 10,
+          "accuracy": 1.0
+        },
+        "overexposed_white": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0
+        },
+        "positive:medium": {
+          "n": 85,
+          "correct": 50,
+          "accuracy": 0.588235
+        },
+        "red_orange_neon_lights": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "reflections_lens_flare_glare": {
+          "n": 7,
+          "correct": 7,
+          "accuracy": 1.0
+        },
+        "smoke_only": {
+          "n": 21,
+          "correct": 20,
+          "accuracy": 0.952381
+        },
+        "snow": {
+          "n": 6,
+          "correct": 6,
+          "accuracy": 1.0
+        },
+        "spark_screen": {
+          "n": 1,
+          "correct": 1,
+          "accuracy": 1.0
+        },
+        "steam": {
+          "n": 7,
+          "correct": 7,
+          "accuracy": 1.0
+        },
+        "sunset_orange_sky": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        },
+        "uncontrolled_fire": {
+          "n": 30,
+          "correct": 30,
+          "accuracy": 1.0
+        },
+        "vehicle_lights_streetlights": {
+          "n": 9,
+          "correct": 9,
+          "accuracy": 1.0
+        }
+      },
+      "by_flame_type": {
+        "controlled": {
+          "n": 28,
+          "detected": 17,
+          "recall": 0.607143,
+          "recall_95ci": [
+            0.42408726034906297,
+            0.7643454817241996
+          ]
+        },
+        "smoke_only": {
+          "n": 31,
+          "detected": 11,
+          "recall": 0.354839,
+          "recall_95ci": [
+            0.21116447741565816,
+            0.530523619571851
+          ]
+        },
+        "spark_benign": {
+          "n": 10,
+          "detected": 2,
+          "recall": 0.2,
+          "recall_95ci": [
+            0.05668094798069326,
+            0.5098431532792767
+          ]
+        },
+        "uncontrolled": {
+          "n": 46,
+          "detected": 31,
+          "recall": 0.673913,
+          "recall_95ci": [
+            0.5296746274432707,
+            0.7913423543550664
+          ]
+        },
+        "unknown": {
+          "n": 1,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.7934567085261071
+          ]
+        }
+      },
+      "policy_uncontrolled_plus_smoke": {
+        "n": 262,
+        "tp": 31,
+        "fp": 6,
+        "tn": 209,
+        "fn": 16,
+        "accuracy": 0.916031,
+        "accuracy_95ci": [
+          0.8761412935588435,
+          0.9438959015227388
+        ],
+        "recall": 0.659574,
+        "recall_95ci": [
+          0.5167065950530297,
+          0.7783273928623781
+        ],
+        "specificity": 0.972093,
+        "specificity_95ci": [
+          0.9404628389731454,
+          0.987148730308015
+        ],
+        "suppressed_controlled_or_spark": 38,
+        "suppressed_images_that_alarmed": 19
+      },
+      "policy_strict": {
+        "n": 261,
+        "tp": 31,
+        "fp": 6,
+        "tn": 209,
+        "fn": 15,
+        "accuracy": 0.91954,
+        "accuracy_95ci": [
+          0.8801347046460796,
+          0.9467746630665456
+        ],
+        "recall": 0.673913,
+        "recall_95ci": [
+          0.5296746274432707,
+          0.7913423543550664
+        ],
+        "specificity": 0.972093,
+        "specificity_95ci": [
+          0.9404628389731454,
+          0.987148730308015
+        ],
+        "suppressed_non_uncontrolled": 39,
+        "suppressed_images_that_alarmed": 19
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.05,
+          "combined_accuracy": 0.873333,
+          "combined_recall": 0.717647,
+          "combined_fpr": 0.046667,
+          "fire_recall": 0.703704,
+          "smoke_recall": 0.785714
+        },
+        {
+          "threshold": 0.1,
+          "combined_accuracy": 0.873333,
+          "combined_recall": 0.670588,
+          "combined_fpr": 0.033333,
+          "fire_recall": 0.666667,
+          "smoke_recall": 0.732143
+        },
+        {
+          "threshold": 0.15,
+          "combined_accuracy": 0.88,
+          "combined_recall": 0.658824,
+          "combined_fpr": 0.023333,
+          "fire_recall": 0.666667,
+          "smoke_recall": 0.696429
+        },
+        {
+          "threshold": 0.2,
+          "combined_accuracy": 0.873333,
+          "combined_recall": 0.623529,
+          "combined_fpr": 0.02,
+          "fire_recall": 0.611111,
+          "smoke_recall": 0.660714
+        },
+        {
+          "threshold": 0.25,
+          "combined_accuracy": 0.866667,
+          "combined_recall": 0.588235,
+          "combined_fpr": 0.016667,
+          "fire_recall": 0.574074,
+          "smoke_recall": 0.625
+        },
+        {
+          "threshold": 0.3,
+          "combined_accuracy": 0.86,
+          "combined_recall": 0.564706,
+          "combined_fpr": 0.016667,
+          "fire_recall": 0.555556,
+          "smoke_recall": 0.535714
+        },
+        {
+          "threshold": 0.35,
+          "combined_accuracy": 0.856667,
+          "combined_recall": 0.552941,
+          "combined_fpr": 0.016667,
+          "fire_recall": 0.537037,
+          "smoke_recall": 0.5
+        },
+        {
+          "threshold": 0.4,
+          "combined_accuracy": 0.843333,
+          "combined_recall": 0.505882,
+          "combined_fpr": 0.016667,
+          "fire_recall": 0.5,
+          "smoke_recall": 0.428571
+        },
+        {
+          "threshold": 0.45,
+          "combined_accuracy": 0.846667,
+          "combined_recall": 0.494118,
+          "combined_fpr": 0.01,
+          "fire_recall": 0.481481,
+          "smoke_recall": 0.428571
+        },
+        {
+          "threshold": 0.5,
+          "combined_accuracy": 0.846667,
+          "combined_recall": 0.494118,
+          "combined_fpr": 0.01,
+          "fire_recall": 0.444444,
+          "smoke_recall": 0.428571
+        },
+        {
+          "threshold": 0.55,
+          "combined_accuracy": 0.836667,
+          "combined_recall": 0.458824,
+          "combined_fpr": 0.01,
+          "fire_recall": 0.388889,
+          "smoke_recall": 0.392857
+        },
+        {
+          "threshold": 0.6,
+          "combined_accuracy": 0.823333,
+          "combined_recall": 0.411765,
+          "combined_fpr": 0.01,
+          "fire_recall": 0.351852,
+          "smoke_recall": 0.303571
+        },
+        {
+          "threshold": 0.65,
+          "combined_accuracy": 0.816667,
+          "combined_recall": 0.364706,
+          "combined_fpr": 0.003333,
+          "fire_recall": 0.314815,
+          "smoke_recall": 0.25
+        },
+        {
+          "threshold": 0.7,
+          "combined_accuracy": 0.8,
+          "combined_recall": 0.305882,
+          "combined_fpr": 0.003333,
+          "fire_recall": 0.259259,
+          "smoke_recall": 0.214286
+        },
+        {
+          "threshold": 0.75,
+          "combined_accuracy": 0.78,
+          "combined_recall": 0.235294,
+          "combined_fpr": 0.003333,
+          "fire_recall": 0.203704,
+          "smoke_recall": 0.160714
+        },
+        {
+          "threshold": 0.8,
+          "combined_accuracy": 0.743333,
+          "combined_recall": 0.105882,
+          "combined_fpr": 0.003333,
+          "fire_recall": 0.12963,
+          "smoke_recall": 0.035714
+        },
+        {
+          "threshold": 0.85,
+          "combined_accuracy": 0.726667,
+          "combined_recall": 0.035294,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.037037,
+          "smoke_recall": 0.017857
+        },
+        {
+          "threshold": 0.9,
+          "combined_accuracy": 0.723333,
+          "combined_recall": 0.023529,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.037037,
+          "smoke_recall": 0.0
+        },
+        {
+          "threshold": 0.95,
+          "combined_accuracy": 0.716667,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        }
+      ]
+    },
+    "sealed": {
+      "split": "sealed",
+      "n": 700,
+      "positives": 199,
+      "fire": {
+        "n": 700,
+        "tp": 71,
+        "fp": 11,
+        "tn": 565,
+        "fn": 53,
+        "accuracy": 0.908571,
+        "accuracy_95ci": [
+          0.8849318619612057,
+          0.927750991680864
+        ],
+        "precision": 0.865854,
+        "precision_95ci": [
+          0.7755479364150434,
+          0.9234138723117279
+        ],
+        "recall": 0.572581,
+        "recall_95ci": [
+          0.4846157151701788,
+          0.656183523888156
+        ],
+        "specificity": 0.980903,
+        "specificity_95ci": [
+          0.9661296533190519,
+          0.9893036926154241
+        ],
+        "f1": 0.68932,
+        "zero_event_upper_95": null
+      },
+      "smoke": {
+        "n": 700,
+        "tp": 65,
+        "fp": 11,
+        "tn": 557,
+        "fn": 67,
+        "accuracy": 0.888571,
+        "accuracy_95ci": [
+          0.8631072508591645,
+          0.909793924632594
+        ],
+        "precision": 0.855263,
+        "precision_95ci": [
+          0.7591234649192224,
+          0.9172156866007872
+        ],
+        "recall": 0.492424,
+        "recall_95ci": [
+          0.4085645767019153,
+          0.5767123929450853
+        ],
+        "specificity": 0.980634,
+        "specificity_95ci": [
+          0.9656572902618757,
+          0.9891525731688363
+        ],
+        "f1": 0.625,
+        "zero_event_upper_95": null
+      },
+      "combined": {
+        "n": 700,
+        "tp": 110,
+        "fp": 15,
+        "tn": 486,
+        "fn": 89,
+        "accuracy": 0.851429,
+        "accuracy_95ci": [
+          0.8231644740949591,
+          0.875856441974793
+        ],
+        "precision": 0.88,
+        "precision_95ci": [
+          0.8114247249397563,
+          0.9259147678948562
+        ],
+        "recall": 0.552764,
+        "recall_95ci": [
+          0.48333207221887897,
+          0.6201969869090316
+        ],
+        "specificity": 0.97006,
+        "specificity_95ci": [
+          0.9511923352673856,
+          0.9817735692856465
+        ],
+        "f1": 0.679012,
+        "zero_event_upper_95": null
+      },
+      "box_ap": {
+        "fire": {
+          "gt_boxes": 210,
+          "ap50": 0.276966,
+          "ap75": 0.167851,
+          "ap50_95": 0.14785
+        },
+        "smoke": {
+          "gt_boxes": 177,
+          "ap50": 0.425007,
+          "ap75": 0.215916,
+          "ap50_95": 0.23686
+        }
+      },
+      "mean_iou": {
+        "fire": {
+          "gt_boxes": 210,
+          "matched_iou50": 59,
+          "recall_iou50": 0.280952,
+          "mean_iou_all_gt": 0.262646,
+          "mean_iou_matched": 0.766642
+        },
+        "smoke": {
+          "gt_boxes": 177,
+          "matched_iou50": 56,
+          "recall_iou50": 0.316384,
+          "mean_iou_all_gt": 0.282995,
+          "mean_iou_matched": 0.779042
+        }
+      },
+      "by_group": {
+        "both": {
+          "n": 18,
+          "correct": 14,
+          "accuracy": 0.777778
+        },
+        "camera_artifacts": {
+          "n": 29,
+          "correct": 29,
+          "accuracy": 1.0
+        },
+        "chandelier_stage_lights": {
+          "n": 17,
+          "correct": 17,
+          "accuracy": 1.0
+        },
+        "clouds": {
+          "n": 21,
+          "correct": 19,
+          "accuracy": 0.904762
+        },
+        "controlled_fire": {
+          "n": 22,
+          "correct": 22,
+          "accuracy": 1.0
+        },
+        "dust_construction_plaster": {
+          "n": 17,
+          "correct": 17,
+          "accuracy": 1.0
+        },
+        "exhaust": {
+          "n": 10,
+          "correct": 10,
+          "accuracy": 1.0
+        },
+        "flowers_autumn_leaves": {
+          "n": 17,
+          "correct": 16,
+          "accuracy": 0.941176
+        },
+        "fog_haze_mist": {
+          "n": 21,
+          "correct": 18,
+          "accuracy": 0.857143
+        },
+        "orange_ppe_vests_cones": {
+          "n": 21,
+          "correct": 21,
+          "accuracy": 1.0
+        },
+        "ordinary_indoor": {
+          "n": 26,
+          "correct": 26,
+          "accuracy": 1.0
+        },
+        "ordinary_other": {
+          "n": 13,
+          "correct": 13,
+          "accuracy": 1.0
+        },
+        "ordinary_streets_warehouses_offices": {
+          "n": 23,
+          "correct": 23,
+          "accuracy": 1.0
+        },
+        "overexposed_white": {
+          "n": 13,
+          "correct": 13,
+          "accuracy": 1.0
+        },
+        "positive:medium": {
+          "n": 199,
+          "correct": 110,
+          "accuracy": 0.552764
+        },
+        "red_orange_neon_lights": {
+          "n": 21,
+          "correct": 21,
+          "accuracy": 1.0
+        },
+        "reflections_lens_flare_glare": {
+          "n": 18,
+          "correct": 18,
+          "accuracy": 1.0
+        },
+        "smoke_only": {
+          "n": 51,
+          "correct": 50,
+          "accuracy": 0.980392
+        },
+        "snow": {
+          "n": 14,
+          "correct": 13,
+          "accuracy": 0.928571
+        },
+        "spark_screen": {
+          "n": 2,
+          "correct": 2,
+          "accuracy": 1.0
+        },
+        "steam": {
+          "n": 16,
+          "correct": 16,
+          "accuracy": 1.0
+        },
+        "sunset_orange_sky": {
+          "n": 21,
+          "correct": 21,
+          "accuracy": 1.0
+        },
+        "uncontrolled_fire": {
+          "n": 69,
+          "correct": 68,
+          "accuracy": 0.985507
+        },
+        "vehicle_lights_streetlights": {
+          "n": 21,
+          "correct": 19,
+          "accuracy": 0.904762
+        }
+      },
+      "by_flame_type": {
+        "controlled": {
+          "n": 57,
+          "detected": 32,
+          "recall": 0.561404,
+          "recall_95ci": [
+            0.43277781142939187,
+            0.6822750471410599
+          ]
+        },
+        "smoke_only": {
+          "n": 75,
+          "detected": 37,
+          "recall": 0.493333,
+          "recall_95ci": [
+            0.3832981847341953,
+            0.6040181558778673
+          ]
+        },
+        "spark_benign": {
+          "n": 27,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.12455903714463581
+          ]
+        },
+        "uncontrolled": {
+          "n": 110,
+          "detected": 78,
+          "recall": 0.709091,
+          "recall_95ci": [
+            0.6183048036071215,
+            0.7857654132556071
+          ]
+        },
+        "unknown": {
+          "n": 5,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.43449149475208104
+          ]
+        }
+      },
+      "policy_uncontrolled_plus_smoke": {
+        "n": 616,
+        "tp": 78,
+        "fp": 15,
+        "tn": 486,
+        "fn": 37,
+        "accuracy": 0.915584,
+        "accuracy_95ci": [
+          0.8909712120336197,
+          0.9350462737240319
+        ],
+        "recall": 0.678261,
+        "recall_95ci": [
+          0.588312128684693,
+          0.7566849093895166
+        ],
+        "specificity": 0.97006,
+        "specificity_95ci": [
+          0.9511923352673856,
+          0.9817735692856465
+        ],
+        "suppressed_controlled_or_spark": 84,
+        "suppressed_images_that_alarmed": 32
+      },
+      "policy_strict": {
+        "n": 611,
+        "tp": 78,
+        "fp": 15,
+        "tn": 486,
+        "fn": 32,
+        "accuracy": 0.923077,
+        "accuracy_95ci": [
+          0.8992051897413663,
+          0.9416617912826893
+        ],
+        "recall": 0.709091,
+        "recall_95ci": [
+          0.6183048036071215,
+          0.7857654132556071
+        ],
+        "specificity": 0.97006,
+        "specificity_95ci": [
+          0.9511923352673856,
+          0.9817735692856465
+        ],
+        "suppressed_non_uncontrolled": 89,
+        "suppressed_images_that_alarmed": 32
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.05,
+          "combined_accuracy": 0.858571,
+          "combined_recall": 0.678392,
+          "combined_fpr": 0.05,
+          "fire_recall": 0.604839,
+          "smoke_recall": 0.727273
+        },
+        {
+          "threshold": 0.1,
+          "combined_accuracy": 0.857143,
+          "combined_recall": 0.623116,
+          "combined_fpr": 0.035714,
+          "fire_recall": 0.572581,
+          "smoke_recall": 0.681818
+        },
+        {
+          "threshold": 0.15,
+          "combined_accuracy": 0.858571,
+          "combined_recall": 0.603015,
+          "combined_fpr": 0.028571,
+          "fire_recall": 0.564516,
+          "smoke_recall": 0.651515
+        },
+        {
+          "threshold": 0.2,
+          "combined_accuracy": 0.854286,
+          "combined_recall": 0.582915,
+          "combined_fpr": 0.027143,
+          "fire_recall": 0.548387,
+          "smoke_recall": 0.621212
+        },
+        {
+          "threshold": 0.25,
+          "combined_accuracy": 0.852857,
+          "combined_recall": 0.567839,
+          "combined_fpr": 0.024286,
+          "fire_recall": 0.532258,
+          "smoke_recall": 0.575758
+        },
+        {
+          "threshold": 0.3,
+          "combined_accuracy": 0.857143,
+          "combined_recall": 0.567839,
+          "combined_fpr": 0.02,
+          "fire_recall": 0.532258,
+          "smoke_recall": 0.568182
+        },
+        {
+          "threshold": 0.35,
+          "combined_accuracy": 0.854286,
+          "combined_recall": 0.552764,
+          "combined_fpr": 0.018571,
+          "fire_recall": 0.5,
+          "smoke_recall": 0.515152
+        },
+        {
+          "threshold": 0.4,
+          "combined_accuracy": 0.845714,
+          "combined_recall": 0.517588,
+          "combined_fpr": 0.017143,
+          "fire_recall": 0.475806,
+          "smoke_recall": 0.484848
+        },
+        {
+          "threshold": 0.45,
+          "combined_accuracy": 0.84,
+          "combined_recall": 0.492462,
+          "combined_fpr": 0.015714,
+          "fire_recall": 0.427419,
+          "smoke_recall": 0.44697
+        },
+        {
+          "threshold": 0.5,
+          "combined_accuracy": 0.834286,
+          "combined_recall": 0.462312,
+          "combined_fpr": 0.012857,
+          "fire_recall": 0.387097,
+          "smoke_recall": 0.424242
+        },
+        {
+          "threshold": 0.55,
+          "combined_accuracy": 0.822857,
+          "combined_recall": 0.417085,
+          "combined_fpr": 0.011429,
+          "fire_recall": 0.33871,
+          "smoke_recall": 0.378788
+        },
+        {
+          "threshold": 0.6,
+          "combined_accuracy": 0.812857,
+          "combined_recall": 0.376884,
+          "combined_fpr": 0.01,
+          "fire_recall": 0.282258,
+          "smoke_recall": 0.348485
+        },
+        {
+          "threshold": 0.65,
+          "combined_accuracy": 0.8,
+          "combined_recall": 0.326633,
+          "combined_fpr": 0.008571,
+          "fire_recall": 0.217742,
+          "smoke_recall": 0.30303
+        },
+        {
+          "threshold": 0.7,
+          "combined_accuracy": 0.79,
+          "combined_recall": 0.286432,
+          "combined_fpr": 0.007143,
+          "fire_recall": 0.201613,
+          "smoke_recall": 0.242424
+        },
+        {
+          "threshold": 0.75,
+          "combined_accuracy": 0.765714,
+          "combined_recall": 0.19598,
+          "combined_fpr": 0.005714,
+          "fire_recall": 0.129032,
+          "smoke_recall": 0.174242
+        },
+        {
+          "threshold": 0.8,
+          "combined_accuracy": 0.745714,
+          "combined_recall": 0.115578,
+          "combined_fpr": 0.002857,
+          "fire_recall": 0.096774,
+          "smoke_recall": 0.083333
+        },
+        {
+          "threshold": 0.85,
+          "combined_accuracy": 0.725714,
+          "combined_recall": 0.040201,
+          "combined_fpr": 0.001429,
+          "fire_recall": 0.016129,
+          "smoke_recall": 0.045455
+        },
+        {
+          "threshold": 0.9,
+          "combined_accuracy": 0.715714,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        },
+        {
+          "threshold": 0.95,
+          "combined_accuracy": 0.715714,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        }
+      ]
+    },
+    "all": {
+      "split": "all",
+      "n": 1000,
+      "positives": 284,
+      "fire": {
+        "n": 1000,
+        "tp": 107,
+        "fp": 18,
+        "tn": 804,
+        "fn": 71,
+        "accuracy": 0.911,
+        "accuracy_95ci": [
+          0.891742264575647,
+          0.9271120247863402
+        ],
+        "precision": 0.856,
+        "precision_95ci": [
+          0.783838881626985,
+          0.9069318011338623
+        ],
+        "recall": 0.601124,
+        "recall_95ci": [
+          0.5277829751742322,
+          0.6701915257100539
+        ],
+        "specificity": 0.978102,
+        "specificity_95ci": [
+          0.9656518179507384,
+          0.9861045479189393
+        ],
+        "f1": 0.706271,
+        "zero_event_upper_95": null
+      },
+      "smoke": {
+        "n": 1000,
+        "tp": 90,
+        "fp": 14,
+        "tn": 798,
+        "fn": 98,
+        "accuracy": 0.888,
+        "accuracy_95ci": [
+          0.8669495617556403,
+          0.9060807649413208
+        ],
+        "precision": 0.865385,
+        "precision_95ci": [
+          0.7866477402039114,
+          0.9180895782335006
+        ],
+        "recall": 0.478723,
+        "recall_95ci": [
+          0.4084576700802953,
+          0.5498412598702472
+        ],
+        "specificity": 0.982759,
+        "specificity_95ci": [
+          0.971268425538734,
+          0.9897024295880454
+        ],
+        "f1": 0.616438,
+        "zero_event_upper_95": null
+      },
+      "combined": {
+        "n": 1000,
+        "tp": 160,
+        "fp": 21,
+        "tn": 695,
+        "fn": 124,
+        "accuracy": 0.855,
+        "accuracy_95ci": [
+          0.831817486934133,
+          0.8754654150695298
+        ],
+        "precision": 0.883978,
+        "precision_95ci": [
+          0.829144326665809,
+          0.9228508951890115
+        ],
+        "recall": 0.56338,
+        "recall_95ci": [
+          0.505231163209158,
+          0.6198376246241504
+        ],
+        "specificity": 0.97067,
+        "specificity_95ci": [
+          0.9555790932470828,
+          0.9807380076262203
+        ],
+        "f1": 0.688172,
+        "zero_event_upper_95": null
+      },
+      "box_ap": {
+        "fire": {
+          "gt_boxes": 527,
+          "ap50": 0.181227,
+          "ap75": 0.101139,
+          "ap50_95": 0.095015
+        },
+        "smoke": {
+          "gt_boxes": 294,
+          "ap50": 0.371937,
+          "ap75": 0.177664,
+          "ap50_95": 0.202143
+        }
+      },
+      "mean_iou": {
+        "fire": {
+          "gt_boxes": 527,
+          "matched_iou50": 81,
+          "recall_iou50": 0.1537,
+          "mean_iou_all_gt": 0.143397,
+          "mean_iou_matched": 0.750768
+        },
+        "smoke": {
+          "gt_boxes": 294,
+          "matched_iou50": 73,
+          "recall_iou50": 0.248299,
+          "mean_iou_all_gt": 0.230361,
+          "mean_iou_matched": 0.770375
+        }
+      },
+      "by_group": {
+        "both": {
+          "n": 26,
+          "correct": 22,
+          "accuracy": 0.846154
+        },
+        "camera_artifacts": {
+          "n": 40,
+          "correct": 40,
+          "accuracy": 1.0
+        },
+        "chandelier_stage_lights": {
+          "n": 25,
+          "correct": 24,
+          "accuracy": 0.96
+        },
+        "clouds": {
+          "n": 30,
+          "correct": 27,
+          "accuracy": 0.9
+        },
+        "controlled_fire": {
+          "n": 31,
+          "correct": 31,
+          "accuracy": 1.0
+        },
+        "dust_construction_plaster": {
+          "n": 25,
+          "correct": 24,
+          "accuracy": 0.96
+        },
+        "exhaust": {
+          "n": 14,
+          "correct": 14,
+          "accuracy": 1.0
+        },
+        "flowers_autumn_leaves": {
+          "n": 25,
+          "correct": 24,
+          "accuracy": 0.96
+        },
+        "fog_haze_mist": {
+          "n": 30,
+          "correct": 27,
+          "accuracy": 0.9
+        },
+        "orange_ppe_vests_cones": {
+          "n": 30,
+          "correct": 29,
+          "accuracy": 0.966667
+        },
+        "ordinary_indoor": {
+          "n": 37,
+          "correct": 36,
+          "accuracy": 0.972973
+        },
+        "ordinary_other": {
+          "n": 19,
+          "correct": 19,
+          "accuracy": 1.0
+        },
+        "ordinary_streets_warehouses_offices": {
+          "n": 33,
+          "correct": 33,
+          "accuracy": 1.0
+        },
+        "overexposed_white": {
+          "n": 19,
+          "correct": 19,
+          "accuracy": 1.0
+        },
+        "positive:medium": {
+          "n": 284,
+          "correct": 160,
+          "accuracy": 0.56338
+        },
+        "red_orange_neon_lights": {
+          "n": 30,
+          "correct": 30,
+          "accuracy": 1.0
+        },
+        "reflections_lens_flare_glare": {
+          "n": 25,
+          "correct": 25,
+          "accuracy": 1.0
+        },
+        "smoke_only": {
+          "n": 72,
+          "correct": 70,
+          "accuracy": 0.972222
+        },
+        "snow": {
+          "n": 20,
+          "correct": 19,
+          "accuracy": 0.95
+        },
+        "spark_screen": {
+          "n": 3,
+          "correct": 3,
+          "accuracy": 1.0
+        },
+        "steam": {
+          "n": 23,
+          "correct": 23,
+          "accuracy": 1.0
+        },
+        "sunset_orange_sky": {
+          "n": 30,
+          "correct": 30,
+          "accuracy": 1.0
+        },
+        "uncontrolled_fire": {
+          "n": 99,
+          "correct": 98,
+          "accuracy": 0.989899
+        },
+        "vehicle_lights_streetlights": {
+          "n": 30,
+          "correct": 28,
+          "accuracy": 0.933333
+        }
+      },
+      "by_flame_type": {
+        "controlled": {
+          "n": 85,
+          "detected": 49,
+          "recall": 0.576471,
+          "recall_95ci": [
+            0.47036157660275524,
+            0.6759662698115371
+          ]
+        },
+        "smoke_only": {
+          "n": 106,
+          "detected": 48,
+          "recall": 0.45283,
+          "recall_95ci": [
+            0.3613756390040924,
+            0.5475841722149721
+          ]
+        },
+        "spark_benign": {
+          "n": 37,
+          "detected": 2,
+          "recall": 0.054054,
+          "recall_95ci": [
+            0.01495066277053994,
+            0.1770496506353991
+          ]
+        },
+        "uncontrolled": {
+          "n": 156,
+          "detected": 109,
+          "recall": 0.698718,
+          "recall_95ci": [
+            0.6226525096249272,
+            0.7652314955401861
+          ]
+        },
+        "unknown": {
+          "n": 6,
+          "detected": 0,
+          "recall": 0.0,
+          "recall_95ci": [
+            0.0,
+            0.3903430336530645
+          ]
+        }
+      },
+      "policy_uncontrolled_plus_smoke": {
+        "n": 878,
+        "tp": 109,
+        "fp": 21,
+        "tn": 695,
+        "fn": 53,
+        "accuracy": 0.915718,
+        "accuracy_95ci": [
+          0.8954810831915159,
+          0.9323319843707312
+        ],
+        "recall": 0.67284,
+        "recall_95ci": [
+          0.5973158777909593,
+          0.740355731744887
+        ],
+        "specificity": 0.97067,
+        "specificity_95ci": [
+          0.9555790932470828,
+          0.9807380076262203
+        ],
+        "suppressed_controlled_or_spark": 122,
+        "suppressed_images_that_alarmed": 51
+      },
+      "policy_strict": {
+        "n": 872,
+        "tp": 109,
+        "fp": 21,
+        "tn": 695,
+        "fn": 47,
+        "accuracy": 0.922018,
+        "accuracy_95ci": [
+          0.902312466536118,
+          0.9380221327795573
+        ],
+        "recall": 0.698718,
+        "recall_95ci": [
+          0.6226525096249272,
+          0.7652314955401861
+        ],
+        "specificity": 0.97067,
+        "specificity_95ci": [
+          0.9555790932470828,
+          0.9807380076262203
+        ],
+        "suppressed_non_uncontrolled": 128,
+        "suppressed_images_that_alarmed": 51
+      },
+      "threshold_sweep": [
+        {
+          "threshold": 0.05,
+          "combined_accuracy": 0.863,
+          "combined_recall": 0.690141,
+          "combined_fpr": 0.049,
+          "fire_recall": 0.634831,
+          "smoke_recall": 0.744681
+        },
+        {
+          "threshold": 0.1,
+          "combined_accuracy": 0.862,
+          "combined_recall": 0.637324,
+          "combined_fpr": 0.035,
+          "fire_recall": 0.601124,
+          "smoke_recall": 0.696809
+        },
+        {
+          "threshold": 0.15,
+          "combined_accuracy": 0.865,
+          "combined_recall": 0.619718,
+          "combined_fpr": 0.027,
+          "fire_recall": 0.595506,
+          "smoke_recall": 0.664894
+        },
+        {
+          "threshold": 0.2,
+          "combined_accuracy": 0.86,
+          "combined_recall": 0.59507,
+          "combined_fpr": 0.025,
+          "fire_recall": 0.567416,
+          "smoke_recall": 0.632979
+        },
+        {
+          "threshold": 0.25,
+          "combined_accuracy": 0.857,
+          "combined_recall": 0.573944,
+          "combined_fpr": 0.022,
+          "fire_recall": 0.544944,
+          "smoke_recall": 0.590426
+        },
+        {
+          "threshold": 0.3,
+          "combined_accuracy": 0.858,
+          "combined_recall": 0.566901,
+          "combined_fpr": 0.019,
+          "fire_recall": 0.539326,
+          "smoke_recall": 0.558511
+        },
+        {
+          "threshold": 0.35,
+          "combined_accuracy": 0.855,
+          "combined_recall": 0.552817,
+          "combined_fpr": 0.018,
+          "fire_recall": 0.511236,
+          "smoke_recall": 0.510638
+        },
+        {
+          "threshold": 0.4,
+          "combined_accuracy": 0.845,
+          "combined_recall": 0.514085,
+          "combined_fpr": 0.017,
+          "fire_recall": 0.483146,
+          "smoke_recall": 0.468085
+        },
+        {
+          "threshold": 0.45,
+          "combined_accuracy": 0.842,
+          "combined_recall": 0.492958,
+          "combined_fpr": 0.014,
+          "fire_recall": 0.44382,
+          "smoke_recall": 0.441489
+        },
+        {
+          "threshold": 0.5,
+          "combined_accuracy": 0.838,
+          "combined_recall": 0.471831,
+          "combined_fpr": 0.012,
+          "fire_recall": 0.404494,
+          "smoke_recall": 0.425532
+        },
+        {
+          "threshold": 0.55,
+          "combined_accuracy": 0.827,
+          "combined_recall": 0.429577,
+          "combined_fpr": 0.011,
+          "fire_recall": 0.353933,
+          "smoke_recall": 0.382979
+        },
+        {
+          "threshold": 0.6,
+          "combined_accuracy": 0.816,
+          "combined_recall": 0.387324,
+          "combined_fpr": 0.01,
+          "fire_recall": 0.303371,
+          "smoke_recall": 0.335106
+        },
+        {
+          "threshold": 0.65,
+          "combined_accuracy": 0.805,
+          "combined_recall": 0.338028,
+          "combined_fpr": 0.007,
+          "fire_recall": 0.247191,
+          "smoke_recall": 0.287234
+        },
+        {
+          "threshold": 0.7,
+          "combined_accuracy": 0.793,
+          "combined_recall": 0.292254,
+          "combined_fpr": 0.006,
+          "fire_recall": 0.219101,
+          "smoke_recall": 0.234043
+        },
+        {
+          "threshold": 0.75,
+          "combined_accuracy": 0.77,
+          "combined_recall": 0.207746,
+          "combined_fpr": 0.005,
+          "fire_recall": 0.151685,
+          "smoke_recall": 0.170213
+        },
+        {
+          "threshold": 0.8,
+          "combined_accuracy": 0.745,
+          "combined_recall": 0.112676,
+          "combined_fpr": 0.003,
+          "fire_recall": 0.106742,
+          "smoke_recall": 0.069149
+        },
+        {
+          "threshold": 0.85,
+          "combined_accuracy": 0.726,
+          "combined_recall": 0.038732,
+          "combined_fpr": 0.001,
+          "fire_recall": 0.022472,
+          "smoke_recall": 0.037234
+        },
+        {
+          "threshold": 0.9,
+          "combined_accuracy": 0.718,
+          "combined_recall": 0.007042,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.011236,
+          "smoke_recall": 0.0
+        },
+        {
+          "threshold": 0.95,
+          "combined_accuracy": 0.716,
+          "combined_recall": 0.0,
+          "combined_fpr": 0.0,
+          "fire_recall": 0.0,
+          "smoke_recall": 0.0
+        }
+      ]
+    }
+  },
+  "generated_utc": "2026-11-01T06:52:32Z",
+  "notes": {
+    "threshold_policy": "thresholds selected on val_mini + val_flames only; bench_R was not used for tuning",
+    "sealed_warning": "SEALED metrics are reported for transparency; do not tune against them"
+  },
+  "run_dir": "bench_results\\benchR\\20261101_122232_P50",
+  "errors": [
+    {
+      "kind": "false_negative",
+      "id": "benchR:22d22d22:The_burning_of_Columbia_South_Carolina_February_17_1865",
+      "bench_split": "dev",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            19.71746946543883,
+            19.431422836821774,
+            1261.0829381698259,
+            556.6750281496033
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_22d22d22_The_burning_of_Columbia_South_Carolina_February_17_1865.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:13f03bb2:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+      "bench_split": "dev",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            336.68661024913405,
+            200.81853143468697,
+            376.19281378764526,
+            257.6100136616349
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            568.7855560378874,
+            509.46789136375196,
+            598.415208691771,
+            524.2830606403471
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_13f03bb2_The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:f04a0a22:Structure_Fire_in_Union_Mississippi_03",
+      "bench_split": "dev",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            10.356124119324981,
+            18.830471225374446,
+            720.9193961327593,
+            399.0980479735771
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_f04a0a22_Structure_Fire_in_Union_Mississippi_03.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:3cd5c8ff:Sparks_will_fly_130117-F-RB551-110",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            175.73844770815623,
+            297.51311715043863,
+            673.2162486618621,
+            593.5389351080723
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            15.394363103242732,
+            19.365975218643072,
+            251.7991032258716,
+            599.0832020523424
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            669.1048618771208,
+            31.70038430021114,
+            1263.2002522722491,
+            551.801300572998
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_3cd5c8ff_Sparks_will_fly_130117-F-RB551-110.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:63d7bd8d:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_",
+      "bench_split": "dev",
+      "family": "ordinary_indoor",
+      "category": "ordinary_indoor",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_63d7bd8d_Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:c1de0bfd:Candle_lit_parvise_during_lent",
+      "bench_split": "dev",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            517.3937233570742,
+            1284.856074845871,
+            1257.7157818845226,
+            1704.3734413930156
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_c1de0bfd_Candle_lit_parvise_during_lent.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:20272b3d:Smoke_from_Dava_Wildfire",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            3.3237093541067813,
+            2.326220924245824,
+            910.9526389443388,
+            420.7593391344031
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            913.0343566727568,
+            289.6086602924135,
+            1264.8446527753927,
+            406.18704148529315
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_20272b3d_Smoke_from_Dava_Wildfire.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:2fcf8fd5:Rotary_Plow_2013_Spring_Road_Opening_38204348-1dd8-b71c-0716",
+      "bench_split": "dev",
+      "family": "orange_ppe_vests_cones",
+      "category": "snow",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.4177,
+          "box": [
+            462.48,
+            373.59,
+            1278.16,
+            630.62
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_2fcf8fd5_Rotary_Plow_2013_Spring_Road_Opening_38204348-1dd8-b71c-0716.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:bbe901a8:House_chimney_with_smoke_-_This_photo_has_been_released_into",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            626.58,
+            412.99,
+            749.8,
+            509.06
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_bbe901a8_House_chimney_with_smoke_-_This_photo_has_been_released_into.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:da3623ec:500px_photo_68194077_.jpeg",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            654.2261780312334,
+            398.0408791976351,
+            1252.549795275868,
+            795.390427078961
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            187.57995917634474,
+            273.29160253721875,
+            626.5046204754975,
+            707.6038990586682
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_da3623ec_500px_photo_68194077_.jpeg.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:b0cf947b:130926-N-JO908-044_10155529675_",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            3.1176280178233973,
+            16.841536395246635,
+            1262.8748212421729,
+            634.4322804721386
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_b0cf947b_130926-N-JO908-044_10155529675_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:d635e565:Smoke_plume_-_geograph.org.uk_-_6725947",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            680.85,
+            133.96,
+            1270.24,
+            341.66
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.2857,
+          "box": [
+            658.14,
+            118.12,
+            1273.15,
+            345.61
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_d635e565_Smoke_plume_-_geograph.org.uk_-_6725947.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:3b80c6c6:Smoke_plume_from_SoCal_wildfire_October_2007",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            351.7595712195298,
+            467.6488020105889,
+            723.6950339140618,
+            562.0217772619676
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_3b80c6c6_Smoke_plume_from_SoCal_wildfire_October_2007.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:cff275e1:US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            6.499571451253319,
+            413.0197754437693,
+            1266.9828465851074,
+            818.6153933439964
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            23.50030926616079,
+            4.995441268690556,
+            1257.2681392623033,
+            396.0187615198077
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_cff275e1_US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:87700ce8:House_Fire_in_Hickory_Mississippi",
+      "bench_split": "dev",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            96.4008953397018,
+            12.858539386547326,
+            751.4514117270867,
+            537.4612547545057
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.2622,
+          "box": [
+            0.86,
+            2.33,
+            1017.81,
+            628.33
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_87700ce8_House_Fire_in_Hickory_Mississippi.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:857c64ea:Burning_oil_fields",
+      "bench_split": "dev",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            7.080940920405457,
+            15.884758069589719,
+            1276.5653664552642,
+            470.67633718005607
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_857c64ea_Burning_oil_fields.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:52df8746:Steamed_Rice_How_to_07",
+      "bench_split": "dev",
+      "family": "steam",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            715.3681205701544,
+            29.512593842672988,
+            1256.6174879241375,
+            418.10719781893846
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_52df8746_Steamed_Rice_How_to_07.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:86921f48:Nustar_Fire_smoke_plume_from_San_Francisco",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            437.0644473154464,
+            279.7525619315538,
+            843.5786708898178,
+            428.13266968049703
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_86921f48_Nustar_Fire_smoke_plume_from_San_Francisco.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:a8fc85a1:Ca_da_de_rayo_en_tronco_provoca_incendio_forestal",
+      "bench_split": "dev",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            23.845684338775342,
+            1289.4924430304177,
+            517.3937233570742,
+            1704.0743111475958
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            749.3613016956748,
+            1284.556944600451,
+            1257.7157818845226,
+            1664.5903237078646
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            902.3611937913473,
+            948.9430513627356,
+            1277.4577034452545,
+            1245.07295716072
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            18.910203948592354,
+            958.8140482226684,
+            226.2003803362779,
+            1175.9759791411902
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_a8fc85a1_Ca_da_de_rayo_en_tronco_provoca_incendio_forestal.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:909d286f:Adams_Fire_Smoke_Plume_2024_04",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            3.681057468593531,
+            9.560074884430229,
+            1277.1312181912883,
+            366.4425835004898
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.3279,
+          "box": [
+            292.03,
+            6.87,
+            1280.0,
+            374.6
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_909d286f_Adams_Fire_Smoke_Plume_2024_04.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:f37bf91d:Smoke_1166374_.jpeg",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            4.030357064234399,
+            6.714730047813092,
+            1051.3566895048461,
+            965.2218682178429
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.3775,
+          "box": [
+            11.55,
+            2.24,
+            810.25,
+            887.52
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.3663,
+          "box": [
+            629.57,
+            2.5,
+            804.03,
+            330.69
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_f37bf91d_Smoke_1166374_.jpeg.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:510d8795:Chandelier_1030220_",
+      "bench_split": "dev",
+      "family": "chandelier_stage_lights",
+      "category": "chandelier_stage_lights",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.6419,
+          "box": [
+            823.53,
+            267.72,
+            877.2,
+            365.34
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_510d8795_Chandelier_1030220_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:3e265fff:Windsong_fire",
+      "bench_split": "dev",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            185.92122100991537,
+            203.35493843881827,
+            1179.8237516963711,
+            540.1398198804803
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_3e265fff_Windsong_fire.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:a19a74de:2012-03-26_Nordlandfahrt_TRANSTIMBER_Auslaufen_Port_of_Oulu_",
+      "bench_split": "dev",
+      "family": "exhaust",
+      "category": "exhaust",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            770.880876196204,
+            295.8092319404666,
+            845.8230962913708,
+            381.8551799637825
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            1012.3613631695194,
+            337.44436808078075,
+            1056.7715676703592,
+            420.71464036140907
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            695.938656101037,
+            370.752476993032,
+            745.9001361644816,
+            398.5092344199081
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_a19a74de_2012-03-26_Nordlandfahrt_TRANSTIMBER_Auslaufen_Port_of_Oulu_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:edbe3d30:Centre_Of_Attention_-_Flickr_-_ARG_Flickr",
+      "bench_split": "dev",
+      "family": "exhaust",
+      "category": "exhaust",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            490.1326317556789,
+            158.03376743561415,
+            969.467472773156,
+            323.7069133272809
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.1894,
+          "box": [
+            346.74,
+            1.87,
+            1240.56,
+            471.3
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_edbe3d30_Centre_Of_Attention_-_Flickr_-_ARG_Flickr.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:6eb71bd8:MGM_Grand_Detroit_Hotel_Living_Room_Christmas",
+      "bench_split": "dev",
+      "family": "ordinary_indoor",
+      "category": "ordinary_indoor",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.1451,
+          "box": [
+            315.82,
+            912.21,
+            1181.67,
+            1006.43
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_6eb71bd8_MGM_Grand_Detroit_Hotel_Living_Room_Christmas.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:8046408a:Wang_Fuk_Court_fire_2025_night_view_am370_",
+      "bench_split": "dev",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            147.28901860221038,
+            47.71586411142417,
+            543.6974205492779,
+            673.7579625590203
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            693.5591334804865,
+            112.97894001136662,
+            1085.1332866233215,
+            739.0210384589627
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            582.3714109831382,
+            400.6199041629648,
+            688.7248846762539,
+            555.317565555421
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_8046408a_Wang_Fuk_Court_fire_2025_night_view_am370_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:d85f8876:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+      "bench_split": "dev",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            630.5139990668113,
+            376.8795797756802,
+            665.0819271630087,
+            423.79428248489813
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_d85f8876_The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:88deedb6:Partial_solar_eclipse_with_some_clouds_in_Tuntorp_43",
+      "bench_split": "dev",
+      "family": "clouds",
+      "category": "clouds",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.8131,
+          "box": [
+            633.92,
+            373.92,
+            790.26,
+            512.45
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.7334,
+          "box": [
+            0.58,
+            7.92,
+            1266.88,
+            854.0
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_88deedb6_Partial_solar_eclipse_with_some_clouds_in_Tuntorp_43.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:432c72f1:Park_Fire_smoke_plume_at_sunset",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            304.0,
+            108.04,
+            1248.6,
+            617.54
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.2044,
+          "box": [
+            24.18,
+            113.99,
+            1274.26,
+            736.9
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_432c72f1_Park_Fire_smoke_plume_at_sunset.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:fdec1b07:Smoke_plume_from_the_Gifford_Fire_on_August_7_2025",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            6.06,
+            138.01,
+            1225.3,
+            671.67
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_fdec1b07_Smoke_plume_from_the_Gifford_Fire_on_August_7_2025.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:5f88a5aa:Liat_Portal_for_Foodie_Disorder_-_Lamb_chops_cooking_with_pi",
+      "bench_split": "dev",
+      "family": "steam",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            389.07123321231654,
+            1.4769367593274874,
+            1262.6512622747057,
+            332.1553315670768
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_5f88a5aa_Liat_Portal_for_Foodie_Disorder_-_Lamb_chops_cooking_with_pi.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:16d2c442:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+      "bench_split": "dev",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            578.6621069225154,
+            364.3839667659532,
+            600.8843464129278,
+            391.54511043971087
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_16d2c442_The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:29e726a7:Welding_Sparks_3843951412_",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            517.101110061991,
+            65.66469876064097,
+            1043.0156601762649,
+            1241.0188093439124
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            58.917979280615995,
+            436.2000624360452,
+            469.2906964152388,
+            1352.5778435687653
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_29e726a7_Welding_Sparks_3843951412_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:9770f245:Balhennie_s_ghostly_chimney_smoke_A_wispy_contrail_adds_to_t",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            5.83,
+            -2.5,
+            1005.39,
+            985.53
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_9770f245_Balhennie_s_ghostly_chimney_smoke_A_wispy_contrail_adds_to_t.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:2d86c91a:Sparks_110718-N-LL945-105",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            286.48268619072996,
+            103.28561746522186,
+            814.8667068307307,
+            474.38768160475814
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_2d86c91a_Sparks_110718-N-LL945-105.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:69934efc:MPR_T5_Construction_2025-08-26_048",
+      "bench_split": "dev",
+      "family": "dust_construction_plaster",
+      "category": "dust_construction_plaster",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.647,
+          "box": [
+            327.03,
+            177.83,
+            542.77,
+            289.87
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_69934efc_MPR_T5_Construction_2025-08-26_048.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:d2c2d5a8:US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_C",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            868.39,
+            779.49,
+            911.95,
+            995.53
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            16.83122538921946,
+            749.9693697781395,
+            1276.0220782521035,
+            1641.4483593311977
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            880.4355713792505,
+            241.5900444070469,
+            1086.5862862284837,
+            626.0403586518032
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            0.0,
+            1695.815146115473,
+            1242.5922326008763,
+            1874.1109440260848
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_d2c2d5a8_US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_C.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:af18a0ae:Grinding_the_sparks",
+      "bench_split": "dev",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            391.01071040705324,
+            201.41009569056285,
+            1257.1384731986273,
+            938.733660788743
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_af18a0ae_Grinding_the_sparks.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:0c6363b0:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070734",
+      "bench_split": "dev",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            635.845252721466,
+            536.4550761360629,
+            670.3936154527469,
+            566.0680667158614
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            621.038811550917,
+            471.09715087455027,
+            749.3613016956748,
+            648.7750943533409
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_0c6363b0_Vehicle_fire_on_South_East_Freeway_Brisbane_P1070734.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:73181771:Sunset_in_Thick_Smoke_Reno_Nevada_50425355538_",
+      "bench_split": "dev",
+      "family": "smoke_only",
+      "category": "sunset_orange_sky",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.408,
+          "box": [
+            608.21,
+            435.35,
+            690.32,
+            517.35
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_73181771_Sunset_in_Thick_Smoke_Reno_Nevada_50425355538_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:56c91a50:Elongated_smoke_plume_from_the_oil_refinary_crossing_clouds_",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            718.29,
+            9.48,
+            1044.29,
+            706.25
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_56c91a50_Elongated_smoke_plume_from_the_oil_refinary_crossing_clouds_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:c8c9f316:2020_East_Troublesome_Fire_smoke_plume",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            32.982670546829034,
+            18.397415839502305,
+            1272.4898065676186,
+            615.9425766621722
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_c8c9f316_2020_East_Troublesome_Fire_smoke_plume.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:a2d91609:Jenners_fire_jan_23rd_2023",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            412.8236024081843,
+            42.88634177981729,
+            726.4706716953642,
+            314.9025645632031
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            743.1244983831791,
+            22.110788332718474,
+            1276.046952393255,
+            366.2945804259822
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.2315,
+          "box": [
+            423.53,
+            161.02,
+            621.03,
+            346.04
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_a2d91609_Jenners_fire_jan_23rd_2023.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:013f0cdf:Smoke_rises_above_homes_after_MOVE_bombing",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            332.7440355696459,
+            40.893430379794864,
+            1276.168225107584,
+            505.3565046561884
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_013f0cdf_Smoke_rises_above_homes_after_MOVE_bombing.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:69ab05b0:The_Black_Fire_in_the_Gila_National_Forest_viewed_at_sunset_",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            13.961492294425199,
+            225.99376632207137,
+            1269.284949800603,
+            445.49478231958733
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_69ab05b0_The_Black_Fire_in_the_Gila_National_Forest_viewed_at_sunset_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:405dae6f:Structure_Fire_in_Union_Mississippi_02",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            18.683037463232413,
+            21.737548548745778,
+            1259.39312570544,
+            937.7105436356572
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_405dae6f_Structure_Fire_in_Union_Mississippi_02.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:ab5dd5f0:Firefighter_stirring_doused_dumpster_fire_as_unhoused_commun",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            505.66,
+            238.47,
+            755.62,
+            482.5
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.3769,
+          "box": [
+            226.94,
+            0.0,
+            1274.65,
+            609.43
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.1633,
+          "box": [
+            738.39,
+            442.69,
+            993.29,
+            602.27
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_ab5dd5f0_Firefighter_stirring_doused_dumpster_fire_as_unhoused_commun.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:8753cbfb:48305_leaving_Rothley",
+      "bench_split": "sealed",
+      "family": "overexposed_white",
+      "category": "exhaust",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            524.4761400425172,
+            128.6868842039894,
+            736.5740130199854,
+            256.93466883175154
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            697.1139436288285,
+            545.4921842442163,
+            956.0706490082954,
+            621.9475943107668
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.3407,
+          "box": [
+            707.2,
+            514.5,
+            891.06,
+            651.07
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_8753cbfb_48305_leaving_Rothley.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:8fd6cc17:Burning_of_the_Delaware_20106802_",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            16.17602647195012,
+            14.687310209113987,
+            1042.991635725318,
+            450.6765774917704
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_8fd6cc17_Burning_of_the_Delaware_20106802_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:96b0f89f:Smoke_from_a_chimney_in_Hima_town_in_Kasese_district",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            897.7226742989467,
+            72.96394534569549,
+            1044.119486265386,
+            357.349273157433
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_96b0f89f_Smoke_from_a_chimney_in_Hima_town_in_Kasese_district.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:61fb34bc:Structure_Fire_in_Union_Mississippi_01",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            13.13176190062746,
+            20.680935838316408,
+            1259.39312570544,
+            684.0674383406553
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_61fb34bc_Structure_Fire_in_Union_Mississippi_01.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:b7bf33fd:Heavy_smoke_from_several_wildfires_over_Alaska_west_of_Fairb",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            5.900135189856268,
+            20.047891252574185,
+            1260.012380259085,
+            709.2915480953874
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_b7bf33fd_Heavy_smoke_from_several_wildfires_over_Alaska_west_of_Fairb.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:6d25e33d:Two_fire_fighters_looking_into_car_while_another_New_York_Ci",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "both",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            192.04,
+            35.7,
+            411.98,
+            336.45
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            448.0222555971508,
+            42.14204367929015,
+            623.1263135204093,
+            421.9527904615088
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            21.36025530526711,
+            7.613793971815719,
+            171.80176985905265,
+            207.3843815650606
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_6d25e33d_Two_fire_fighters_looking_into_car_while_another_New_York_Ci.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:aca0c63e:Santa_Monica_San_Simon_Pampanga_12",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            196.323855466591,
+            5.5408690063359884,
+            912.4384030426303,
+            655.0489927952369
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_aca0c63e_Santa_Monica_San_Simon_Pampanga_12.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:ae91c4d2:Adams_Fire_Smoke_Plume_2024_03",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            1.9597110782871097,
+            305.3040314882023,
+            965.6983378883633,
+            493.6509786029485
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            968.1443750122468,
+            420.2690511556448,
+            1269.0069412499101,
+            503.4352355959223
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_ae91c4d2_Adams_Fire_Smoke_Plume_2024_03.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:63680ffa:Photograph_-_Fire_in_Schenkers_Shipping_And_Forwarding_Agent",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            120.95,
+            40.22,
+            898.83,
+            838.93
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.3545,
+          "box": [
+            86.51,
+            19.01,
+            1005.09,
+            925.65
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_63680ffa_Photograph_-_Fire_in_Schenkers_Shipping_And_Forwarding_Agent.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:157f29be:Forest_Fire_8045036104_",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            201.89,
+            38.39,
+            1114.61,
+            433.02
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_157f29be_Forest_Fire_8045036104_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:5733d44f:Lyle_Hill_viewpoint_car_park_view_south_to_hills_and_IRH",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            734.7975850392718,
+            296.48213827042804,
+            1037.3421032012418,
+            407.5091679779324
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_5733d44f_Lyle_Hill_viewpoint_car_park_view_south_to_hills_and_IRH.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:90a461a7:Forest_fire_smoke_cloud",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            595.8743891012729,
+            137.2590214132307,
+            792.0167764488078,
+            318.59820971566876
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_90a461a7_Forest_fire_smoke_cloud.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:0d2678b5:Kushiro_on_Hokkaido_burning_after_carrier_raid",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            -4.92,
+            10.92,
+            1256.69,
+            963.13
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_0d2678b5_Kushiro_on_Hokkaido_burning_after_carrier_raid.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:c8bcdafb:Smoke_From_New_South_Wales_Fires_MODIS_2019-11-15_",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            171.9579718418369,
+            0.0,
+            734.7057090423034,
+            967.175846034442
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.1316,
+          "box": [
+            0.0,
+            5.91,
+            758.18,
+            988.0
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_c8bcdafb_Smoke_From_New_South_Wales_Fires_MODIS_2019-11-15_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:f7c772bf:Factory_Chimney_Smoke_Unsplash_",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            588.5386578071432,
+            292.7024888917046,
+            1274.9589442887757,
+            502.58405364346885
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.1929,
+          "box": [
+            626.45,
+            149.03,
+            1279.39,
+            853.91
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_f7c772bf_Factory_Chimney_Smoke_Unsplash_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:fe8f4798:Durkee_Fire_smoke_seen_from_Bald_Mountain.jpeg",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            2.0292107754175466,
+            238.44528953304174,
+            1262.1687634867426,
+            946.2426039183824
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_fe8f4798_Durkee_Fire_smoke_seen_from_Bald_Mountain.jpeg.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:a1847137:Santa_Monica_San_Simon_Pampanga_10",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            915.2140408239327,
+            17.40057637752172,
+            1273.2713146119524,
+            436.5276135233509
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_a1847137_Santa_Monica_San_Simon_Pampanga_10.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:80306aa8:Abgase_Dieselgenerator_in_Addis_Abeba_thiopien",
+      "bench_split": "sealed",
+      "family": "exhaust",
+      "category": "exhaust",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            124.15727315272656,
+            398.5092317728175,
+            1012.3613631695194,
+            642.7686971293273
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.2095,
+          "box": [
+            601.57,
+            547.3,
+            900.07,
+            638.09
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_80306aa8_Abgase_Dieselgenerator_in_Addis_Abeba_thiopien.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:f15ec9ed:Chimney_on_the_roof_of_a_wooden_house2",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            748.675773945784,
+            381.09819144589125,
+            1209.4316456419954,
+            511.55495135220895
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_f15ec9ed_Chimney_on_the_roof_of_a_wooden_house2.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:bd732535:Silver_King_Wildfire_Utah_-_July_2024",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            48.89307855374744,
+            558.7216437802149,
+            847.6534455937809,
+            921.1265905926633
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            348.42821619376,
+            351.85724548862953,
+            1243.3356644515752,
+            644.0000087353992
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            880.9351275537824,
+            30.130404951047794,
+            1265.5234524249095,
+            359.2532648113326
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            855.0493749182258,
+            644.0000087353992,
+            1051.0415020160117,
+            769.7323372213507
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.353,
+          "box": [
+            143.95,
+            50.9,
+            1279.37,
+            940.25
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_bd732535_Silver_King_Wildfire_Utah_-_July_2024.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:0da07dfb:1880-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Granada_Incen",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            35.345435961899796,
+            32.63835153928763,
+            1064.2000419624014,
+            318.5792142984896
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_0da07dfb_1880-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Granada_Incen.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:5e9515cc:Wildfire_in_Sinthonia_Greece_MODIS_2018-11-01_",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            548.9555513541434,
+            377.2374172199601,
+            741.8892025221467,
+            1070.4971299029744
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_5e9515cc_Wildfire_in_Sinthonia_Greece_MODIS_2018-11-01_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:365d13ba:Wildfire_near_Ob_in_Bystroistokskiy_district",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            451.68253134641895,
+            406.7521635774972,
+            648.752813818895,
+            512.2278417996264
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_365d13ba_Wildfire_near_Ob_in_Bystroistokskiy_district.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:8ab8c895:Naval_Base_Ventura_County_Point_Mugu_wildfires_Image_12_of_1",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            90.75048786553214,
+            502.9790744394542,
+            394.6532168063525,
+            711.7503688941434
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_8ab8c895_Naval_Base_Ventura_County_Point_Mugu_wildfires_Image_12_of_1.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:b839fbcb:Forest_fire_near_Knaziy_Tribe_on_29_October_2009",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            591.0650071400944,
+            287.12822145419335,
+            850.0217125195613,
+            457.3031664410316
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.1379,
+          "box": [
+            587.02,
+            319.04,
+            800.05,
+            425.09
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_b839fbcb_Forest_fire_near_Knaziy_Tribe_on_29_October_2009.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:1929fa6d:Firefighters2",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            18.21,
+            0.94,
+            905.71,
+            684.25
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.202,
+          "box": [
+            386.67,
+            12.98,
+            1025.31,
+            493.92
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_1929fa6d_Firefighters2.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:83aa1bab:Santa_Monica_San_Simon_Pampanga_11",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            290.69554003087524,
+            14.456672728798415,
+            1276.046952393255,
+            308.67830145368515
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            573.810593723728,
+            325.3323559098108,
+            845.8230962913708,
+            597.3485786931966
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_83aa1bab_Santa_Monica_San_Simon_Pampanga_11.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:a8b76844:1908-04-25_Blanco_y_Negro_Madrid_a_vista_de_p_jaro_Un_incend",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            19.0731191425035,
+            32.197606377088476,
+            1220.0941621327538,
+            600.8236955556318
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_a8b76844_1908-04-25_Blanco_y_Negro_Madrid_a_vista_de_p_jaro_Un_incend.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:7bda70a3:Elongated_smoke_plume_from_the_oil_refinary_crossing_clouds_",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            155.69,
+            14.8,
+            1079.3,
+            1702.01
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            712.61,
+            9.96,
+            1045.39,
+            697.28
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_7bda70a3_Elongated_smoke_plume_from_the_oil_refinary_crossing_clouds_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:2e824459:Smoke_from_a_small_chimney_in_fog",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            492.2986103101547,
+            207.87858745859617,
+            1225.9962807476002,
+            599.7693063793032
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.1585,
+          "box": [
+            869.07,
+            290.79,
+            1168.06,
+            532.08
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.1354,
+          "box": [
+            575.86,
+            178.8,
+            1163.88,
+            534.02
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_2e824459_Smoke_from_a_small_chimney_in_fog.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:0081f647:Burned_down_house_in_Wolf_Point-_front_door",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "ordinary_other",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.3732,
+          "box": [
+            803.85,
+            358.79,
+            854.2,
+            407.04
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "fire",
+          "confidence": 0.353,
+          "box": [
+            805.64,
+            571.45,
+            893.34,
+            648.16
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_0081f647_Burned_down_house_in_Wolf_Point-_front_door.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:72a28c84:US_Navy_101210-N-7422B-128_Aviation_Structural_Mechanic_2nd_",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            708.44,
+            447.36,
+            1246.85,
+            839.84
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            583.8522978067303,
+            409.0743084232984,
+            701.8171024147306,
+            632.7185987325554
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            561.7338969427303,
+            173.1418702948515,
+            883.6795095187308,
+            441.0234927531922
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_72a28c84_US_Navy_101210-N-7422B-128_Aviation_Structural_Mechanic_2nd_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:255ef4e5:Halbrohrschlange",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            665.4066405067097,
+            379.5000686920028,
+            865.2525607604882,
+            543.2649375105718
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            648.752813818895,
+            52.97967731435358,
+            1059.5472054516615,
+            372.1823877234288
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_255ef4e5_Halbrohrschlange.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:64fd8514:1872-07-24_La_Ilustraci_n_Espa_ola_y_Americana_Madrid_Incend",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            70.07628695787983,
+            53.28126017751214,
+            1241.5361165035729,
+            573.3214585434279
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            142.76830502038106,
+            95.55889498788383,
+            1168.8440984410718,
+            383.53814462062206
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_64fd8514_1872-07-24_La_Ilustraci_n_Espa_ola_y_Americana_Madrid_Incend.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:6ef90d97:Airport_Fire_smoke_plume_1",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            276.02873177686,
+            315.8514036242377,
+            623.6755924226599,
+            555.2534364310441
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            3.3237093541067813,
+            9.83315299292865,
+            811.0301879802767,
+            544.8446523959656
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_6ef90d97_Airport_Fire_smoke_plume_1.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:2f08098e:US_Navy_040225-N-8213G-058_Hull_Technician_3rd_Class_Casey_C",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            64.32416360980864,
+            97.28847954376863,
+            1256.151387542939,
+            871.592141255464
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            595.4932811498511,
+            224.61734177919965,
+            872.969685834948,
+            769.0083121294017
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_2f08098e_US_Navy_040225-N-8213G-058_Hull_Technician_3rd_Class_Casey_C.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:3436c211:Throwing_sparks_DVIDS205814",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            214.2054782381638,
+            8.250211392248806,
+            1274.7159376487978,
+            471.6116893582631
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            521.4561720861045,
+            482.87470473909525,
+            1254.8933122392532,
+            852.0771657922296
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            11.02356779033209,
+            46.54454497702634,
+            184.47154012384698,
+            452.915039022087
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            0.0,
+            646.1888105801037,
+            248.89507270486678,
+            817.1617623429647
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            243.93941635248066,
+            31.67733178025583,
+            1242.5041713582877,
+            435.5699569591881
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            201.81633735719845,
+            485.1273342817565,
+            385.1756223954857,
+            646.1888105801037
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_3436c211_Throwing_sparks_DVIDS205814.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:2c925460:Charles_Brooking_-_Ship_on_fire_at_night_-_Google_Art_Projec",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            457.40766234345404,
+            581.1417020942987,
+            825.913681814392,
+            753.9622130233861
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            587.0201243642667,
+            320.90974588856085,
+            1110.5528140953925,
+            735.1706764979908
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.1698,
+          "box": [
+            456.03,
+            325.26,
+            1091.93,
+            689.93
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_2c925460_Charles_Brooking_-_Ship_on_fire_at_night_-_Google_Art_Projec.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:db3b26f3:1872-02-16_La_Ilustraci_n_Espa_ola_y_Americana_Barcelona_Tum",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            282.8011424109098,
+            38.740129550381944,
+            867.6877786557409,
+            474.45182925876964
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            874.7916649259209,
+            269.22529198954186,
+            912.6790583668817,
+            404.2011989644229
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_db3b26f3_1872-02-16_La_Ilustraci_n_Espa_ola_y_Americana_Barcelona_Tum.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:f3c6d185:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070731",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            537.1356449178062,
+            629.8649719051032,
+            685.2000566232958,
+            743.3814357943306
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            453.2324782846954,
+            28.182858817331066,
+            769.1032232564066,
+            654.9911594230648
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_f3c6d185_Vehicle_fire_on_South_East_Freeway_Brisbane_P1070731.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:8755b8a8:1887-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Incendio_del_",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            564.1341863510631,
+            1020.0821459514027,
+            1177.7871048016536,
+            1551.5517674536145
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            262.78677104050524,
+            1256.6783476895355,
+            1018.8948312742687,
+            1432.008532102636
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_8755b8a8_1887-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Incendio_del_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:0d14561a:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070729",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            468.03891945524435,
+            475.58395393638705,
+            601.296889990185,
+            584.164919395648
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            33.71664511914132,
+            250.794390033986,
+            675.32909584293,
+            660.4407597211979
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_0d14561a_Vehicle_fire_on_South_East_Freeway_Brisbane_P1070729.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:e31a36d8:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070735",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            582.1375070676354,
+            383.5374113765074,
+            704.2655694449445,
+            464.0320079144481
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            640.4259004749874,
+            27.241591229729792,
+            1251.0662123615325,
+            238.19294767398821
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_e31a36d8_Vehicle_fire_on_South_East_Freeway_Brisbane_P1070735.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:789c955d:Phoenix_Fire_Show_Night_Festival_2014",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            282.9,
+            595.29,
+            332.2,
+            673.46
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            756.91,
+            661.48,
+            944.83,
+            852.29
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            0.0,
+            680.0178029476149,
+            124.94293745705389,
+            850.1927479344531
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            149.60548082652693,
+            467.9156976017005,
+            253.18816297831373,
+            702.2145349024198
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            931.4081056388225,
+            305.139663266464,
+            1239.6898977572355,
+            522.1743757134461
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            899.3467992585074,
+            507.37655441024276,
+            1274.2174584744978,
+            665.2199816444115
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            603.3962788248309,
+            342.1342165244723,
+            773.567828074195,
+            638.0906425885388
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            499.8135966730441,
+            107.83537922375301,
+            788.3653540958787,
+            253.34728870525234
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            243.3231456305245,
+            167.0266644365663,
+            452.9547642710453,
+            312.53857391806565
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            198.93056756547304,
+            369.2635555803451,
+            467.7522902927291,
+            539.4385005671833
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_789c955d_Phoenix_Fire_Show_Night_Festival_2014.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:2f15f038:US_Navy_070125-N-1625W-003_Steelworker_1st_Class_Brian_Hunt_",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            23.88,
+            1004.2,
+            1119.1,
+            1910.24
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            729.9049113331589,
+            40.96354442175495,
+            1219.6843983540912,
+            1460.2446175381933
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_2f15f038_US_Navy_070125-N-1625W-003_Steelworker_1st_Class_Brian_Hunt_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:6ca32169:Silver_King_Wildfire_-_July_2024",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            115.31,
+            201.63,
+            1264.59,
+            837.88
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            257.02,
+            203.41,
+            1276.32,
+            686.33
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_6ca32169_Silver_King_Wildfire_-_July_2024.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:0be89eff:Fire_breathing_2026_Kupala_Night_in_Ustka_Poland_June_2026",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "uncontrolled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            532.1760270041908,
+            58.27868694067526,
+            901.3358519174204,
+            552.3489691390699
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_0be89eff_Fire_breathing_2026_Kupala_Night_in_Ustka_Poland_June_2026.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:2573816d:Candle_Burning",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            728.34,
+            383.34,
+            777.05,
+            429.99
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_2573816d_Candle_Burning.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:7e33740a:Lit_paschal_candle-front",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            389.1,
+            582.42,
+            691.11,
+            809.34
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_7e33740a_Lit_paschal_candle-front.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:1d76439a:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            351.5014365760758,
+            310.06166999920674,
+            371.2545383453314,
+            344.630398311262
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_1d76439a_The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:949febb8:2006-02-25_candle-flame_with_colour-shift_A",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            533.8268542420703,
+            131.83246292948053,
+            780.3413474776657,
+            756.3363744030039
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_949febb8_2006-02-25_candle-flame_with_colour-shift_A.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:b536431b:1887-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Incendio_del_",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            41.703890995744935,
+            68.9506082881997,
+            1274.3460030184228,
+            537.6379140854959
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_b536431b_1887-01-15_La_Ilustraci_n_Espa_ola_y_Americana_Incendio_del_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:1fdc867b:Candle-lit_framed_Socorro_Cavite_Antes_Left_and_Federico_Abd",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            559.9324048172156,
+            400.35971491539414,
+            662.6310027254073,
+            525.2651233363366
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_1fdc867b_Candle-lit_framed_Socorro_Cavite_Antes_Left_and_Federico_Abd.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:6f90c603:Incendi_del_palau_de_Moss_n_Sorell_1878_dibuixat_per_Asenjo",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            10.347071345910209,
+            14.310065200490207,
+            648.2911408211437,
+            557.7526796719408
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_6f90c603_Incendi_del_palau_de_Moss_n_Sorell_1878_dibuixat_per_Asenjo.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:b0e3094c:Candle-lit_shrine_-_geograph.org.uk_-_3458471",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            670.8212296772446,
+            874.7992067675877,
+            700.850779146727,
+            904.8293727817875
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_b0e3094c_Candle-lit_shrine_-_geograph.org.uk_-_3458471.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:3e6601c9:Candle-lit_framed_Socorro_Cavite_Antes_Left_and_Federico_Abd",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            573.810593723728,
+            424.8361128814756,
+            665.4066405067097,
+            519.2090881328543
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_3e6601c9_Candle-lit_framed_Socorro_Cavite_Antes_Left_and_Federico_Abd.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:21043a67:Candle_17023053629_",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            752.36,
+            322.46,
+            878.22,
+            562.87
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            444.6839529059832,
+            197.7422697231858,
+            571.416462253404,
+            320.03102549086543
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            984.9646506502509,
+            2.0802604948983063,
+            1142.824442995284,
+            73.23008203245739
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            104.50721728922198,
+            215.52972510757556,
+            162.31502857050168,
+            237.76404433806277
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            602.5437452510162,
+            2.0802604948983063,
+            724.8294998844924,
+            37.65517126367785
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            753.7334055251323,
+            4.303692417947028,
+            824.8814809482457,
+            57.66605857111634
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_21043a67_Candle_17023053629_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:8bb85099:Modified_car_exhaust_at_4th_International_Auto_Show_Bangalor",
+      "bench_split": "sealed",
+      "family": "exhaust",
+      "category": "exhaust",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            334.7417609578565,
+            374.27711870489856,
+            487.5387158453218,
+            482.5111246963235
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_8bb85099_Modified_car_exhaust_at_4th_International_Auto_Show_Bangalor.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:e7aad5da:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            72.48887408534026,
+            301.681389637893,
+            97.18025129690977,
+            326.3733384322182
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_e7aad5da_The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:770a2e92:Candle_Lit_Vigil_23137130700_",
+      "bench_split": "sealed",
+      "family": "controlled_fire",
+      "category": "controlled_fire",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            117.54417444621197,
+            668.2094329384727,
+            174.26802419599997,
+            737.2659323534216
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            549.1386834119902,
+            700.2713790954133,
+            640.3900938790405,
+            759.4626643082265
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            901.8130535954548,
+            700.2713790954133,
+            968.4019206930318,
+            756.9963607576926
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            948.6718859974535,
+            739.7322359039554,
+            1005.3957357472415,
+            821.1202530715738
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            1104.0459092251335,
+            747.131146555557,
+            1175.5672849966054,
+            835.9180743747771
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_770a2e92_Candle_Lit_Vigil_23137130700_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:0bbe6255:US_Navy_120209-N-SK590-014_ull_Maintenance_Technician_2nd_Cl",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            313.79686551164804,
+            153.1611519017979,
+            1256.7437216350281,
+            882.7793254851213
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_0bbe6255_US_Navy_120209-N-SK590-014_ull_Maintenance_Technician_2nd_Cl.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:156a12b7:Man_Welding_a_Metal_Gate",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            236.07134111664385,
+            704.4115878776307,
+            359.45835087121856,
+            862.3475376365557
+          ]
+        },
+        {
+          "label": "smoke",
+          "box": [
+            231.1358607264609,
+            361.4692295563203,
+            394.00671360249953,
+            687.2121259341031
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_156a12b7_Man_Welding_a_Metal_Gate.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:62394644:Flickr_-_DVIDSHUB_-_USS_John_C._Stennis_conducts_maritime_se",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            11.471515098361618,
+            18.969222894475408,
+            1277.2924469475176,
+            764.2034638593152
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_62394644_Flickr_-_DVIDSHUB_-_USS_John_C._Stennis_conducts_maritime_se.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:7c2c3d9d:US_Navy_071209-N-2838W-117_Damage_Controlman_3rd_Class_Kiel_",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            298.83356093776734,
+            22.432539026719468,
+            1257.3616736368595,
+            1001.6909410469084
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            495.72041651920244,
+            1032.9355220773095,
+            1272.9053727617095,
+            1639.1431042802838
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_7c2c3d9d_US_Navy_071209-N-2838W-117_Damage_Controlman_3rd_Class_Kiel_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:8f8be60c:Blast_Off_-_liber",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            98.30190018606366,
+            0.5333026506112971,
+            954.9709935216937,
+            1003.9979102101552
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_8f8be60c_Blast_Off_-_liber.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:3c32348b:Defense.gov_News_Photo_101220-N-8040H-059_-_U.S._Navy_Seaman",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            65.7528333703186,
+            7.389577715802522,
+            507.21235968388606,
+            804.0056245382481
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_3c32348b_Defense.gov_News_Photo_101220-N-8040H-059_-_U.S._Navy_Seaman.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:c0fc1dce:Defense.gov_News_Photo_071114-N-7367K-005",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            10.000057076329698,
+            14.740568828342365,
+            717.5466919256907,
+            796.7658183826065
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_c0fc1dce_Defense.gov_News_Photo_071114-N-7367K-005.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:6c7bce70:Members_of_the_Women_s_Royal_Naval_Service_WRNS_practice_wel",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            520.8668469934843,
+            541.5989497050126,
+            860.7858316204557,
+            1008.9996141424173
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_6c7bce70_Members_of_the_Women_s_Royal_Naval_Service_WRNS_practice_wel.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:1d9534bb:US_Navy_101006-N-6427M-078_Hull_Maintenance_Technician_Firem",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            14.114147523933969,
+            394.1489193759713,
+            870.3270534093757,
+            912.1131435926685
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            209.66894701628792,
+            61.171918093808834,
+            830.6875670257904,
+            375.6501970825178
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_1d9534bb_US_Navy_101006-N-6427M-078_Hull_Maintenance_Technician_Firem.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:17c4e484:Let_the_sparks_fly_13313009905_",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            692.2424420957351,
+            612.7999444463906,
+            803.3536395477979,
+            785.643586006667
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_17c4e484_Let_the_sparks_fly_13313009905_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:ac6aa5f3:Sparks_fly_140528-A-CA521-020",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            576.4794975187303,
+            131.88349898091423,
+            1264.6075243987316,
+            788.0705925256572
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_ac6aa5f3_Sparks_fly_140528-A-CA521-020.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:25763c78:Grinding_With_Angle_Grinder",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            412.92150158478313,
+            59.62286561770699,
+            941.1170015442531,
+            721.2658967941702
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            1.4850068795118732,
+            977.0270685094418,
+            385.12173842902155,
+            1293.9485204174957
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            913.3172383884914,
+            999.2671703977262,
+            1258.034301519935,
+            1277.2684440012822
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            146.04377528947205,
+            1610.8699723255495,
+            657.559417355485,
+            1905.5513223453188
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            651.9994647243327,
+            1477.4293609958427,
+            1119.035485741127,
+            1783.2307619597543
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_25763c78_Grinding_With_Angle_Grinder.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:d9dc9f47:220328-F-EM877-1068M",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            275.3844520108395,
+            42.29152118329894,
+            1259.4199324528138,
+            772.3173721413295
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_d9dc9f47_220328-F-EM877-1068M.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:49c0ed1a:Magnificent_manual_labour_2",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            252.45330986145743,
+            144.3112984800317,
+            1274.8149497974591,
+            557.1930652048137
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            306.5205119734575,
+            601.4303973538975,
+            861.9381336694584,
+            891.4306858867801
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            945.4965369334584,
+            16.51456116045631,
+            1274.8149497974591,
+            134.48078022467976
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_49c0ed1a_Magnificent_manual_labour_2.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:94984bef:Magnificent_manual_labour",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            2.159126634594714,
+            32.42281467444712,
+            1119.825959542026,
+            918.7654712081684
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_94984bef_Magnificent_manual_labour.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:f9e1535a:AngleGrinder_Hydraulophone_EndCap0",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            446.131255783814,
+            18.91456400166696,
+            1151.1432522346433,
+            501.8821432293112
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            435.0287046586041,
+            527.0314739962607,
+            1256.6174879241375,
+            954.4855383701528
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_f9e1535a_AngleGrinder_Hydraulophone_EndCap0.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:6cf12414:US_Navy_090206-N-6597H-070_Hull_Maintenance_Technician_3rd_C",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            2.2446591882674265,
+            166.79156918387636,
+            930.9684864919785,
+            1627.6239299025685
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_6cf12414_US_Navy_090206-N-6597H-070_Hull_Maintenance_Technician_3rd_C.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:1ec10f6b:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Bulk_Chemi",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            601.0554984787304,
+            488.3142616333238,
+            728.8507034707305,
+            566.9584076761394
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_1ec10f6b_Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Bulk_Chemi.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:98e7c157:Making_sparks_for_parts_8625884_",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            334.5745560975747,
+            339.2195039824156,
+            1207.6285913769204,
+            844.8117318418624
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_98e7c157_Making_sparks_for_parts_8625884_.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:04f79375:Shower_of_sparks_110524-N-TC501-018",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            774.5743934836983,
+            24.292040703488944,
+            1276.0220782521035,
+            1567.6650413672212
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            780.1460344255695,
+            1605.9917999153083,
+            1270.4504373102322,
+            1895.7224715200525
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_04f79375_Shower_of_sparks_110524-N-TC501-018.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:4e012c1c:A_song_of_fire_and_metal",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            20.24012865104141,
+            135.28255663428422,
+            1263.1229780173694,
+            848.0818700142598
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.1422,
+          "box": [
+            701.05,
+            656.22,
+            1067.17,
+            887.41
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_4e012c1c_A_song_of_fire_and_metal.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:f0365ea7:Flickr_-_DVIDSHUB_-_Sparks_fly_in_19th_Civil_Engineer_Squadr",
+      "bench_split": "sealed",
+      "family": "spark_screen",
+      "category": "spark_screen",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            337.3942239676704,
+            22.53464366674293,
+            1234.063804500196,
+            850.2411501361884
+          ]
+        },
+        {
+          "label": "fire",
+          "box": [
+            41.78886774815648,
+            266.41245360863314,
+            322.6139561566947,
+            663.0218212919091
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_f0365ea7_Flickr_-_DVIDSHUB_-_Sparks_fly_in_19th_Civil_Engineer_Squadr.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:772e778d:White_smoke_from_Oji_Paper_Tomakomai_Mill_chimney",
+      "bench_split": "sealed",
+      "family": "smoke_only",
+      "category": "smoke_only",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            37.33755491570261,
+            51.797192166555334,
+            1036.5534904597491,
+            862.2723398856152
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.5007,
+          "box": [
+            41.08,
+            4.0,
+            967.6,
+            870.51
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_772e778d_White_smoke_from_Oji_Paper_Tomakomai_Mill_chimney.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:267e2f4d:Borneo_fires_and_smoke_2002",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "clouds",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.4947,
+          "box": [
+            6.47,
+            12.24,
+            1280.0,
+            1480.46
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_267e2f4d_Borneo_fires_and_smoke_2002.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:60fefd9e:Smoke_Shrouds_the_Sawtooth_Range_and_Salmon_River_Mountains_",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "clouds",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "fire",
+          "box": [
+            180.6,
+            114.46,
+            966.97,
+            824.39
+          ]
+        }
+      ],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.8142,
+          "box": [
+            253.2,
+            0.0,
+            1265.12,
+            875.99
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.359,
+          "box": [
+            37.97,
+            10.81,
+            268.76,
+            431.19
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_60fefd9e_Smoke_Shrouds_the_Sawtooth_Range_and_Salmon_River_Mountains_.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:a92ceb85:Wildfire_in_Alaska_Swan_Lake_Fire_MODIS_2019-09-01_",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "clouds",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.4793,
+          "box": [
+            236.85,
+            61.27,
+            970.59,
+            889.98
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.1344,
+          "box": [
+            902.74,
+            720.49,
+            1274.54,
+            1038.74
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_a92ceb85_Wildfire_in_Alaska_Swan_Lake_Fire_MODIS_2019-09-01_.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:11b907fa:Fires_and_Smoke_over_Siberia_MODIS_2022-06-26_",
+      "bench_split": "sealed",
+      "family": "both",
+      "category": "clouds",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.6553,
+          "box": [
+            208.02,
+            214.19,
+            1080.96,
+            799.77
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "fire",
+          "confidence": 0.1662,
+          "box": [
+            1059.05,
+            769.14,
+            1076.82,
+            801.77
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_11b907fa_Fires_and_Smoke_over_Siberia_MODIS_2022-06-26_.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:56a43bcf:Excelsior_Geyser_at_night_Yellowstone",
+      "bench_split": "sealed",
+      "family": "vehicle_lights_streetlights",
+      "category": "ordinary_other",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.648,
+          "box": [
+            67.57,
+            205.78,
+            852.42,
+            644.17
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "fire",
+          "confidence": 0.2425,
+          "box": [
+            460.42,
+            521.52,
+            588.41,
+            623.08
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_56a43bcf_Excelsior_Geyser_at_night_Yellowstone.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:c04303bc:Lexus_night_vision_HUD_full",
+      "bench_split": "sealed",
+      "family": "vehicle_lights_streetlights",
+      "category": "vehicle_lights_streetlights",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.2273,
+          "box": [
+            1061.27,
+            207.36,
+            1102.13,
+            223.96
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_c04303bc_Lexus_night_vision_HUD_full.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:c8a046cc:Orange_Marigold_Flowers",
+      "bench_split": "sealed",
+      "family": "flowers_autumn_leaves",
+      "category": "flowers_autumn_leaves",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.5503,
+          "box": [
+            244.49,
+            2.85,
+            498.02,
+            130.22
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "fire",
+          "confidence": 0.2764,
+          "box": [
+            671.91,
+            335.82,
+            1031.67,
+            638.62
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_c8a046cc_Orange_Marigold_Flowers.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:7f94ff09:Clouds_and_blue_sky_in_Russia._IMG_100",
+      "bench_split": "sealed",
+      "family": "clouds",
+      "category": "clouds",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.8634,
+          "box": [
+            0.0,
+            2.58,
+            1280.0,
+            849.98
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_7f94ff09_Clouds_and_blue_sky_in_Russia._IMG_100.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:ad4e314d:Karst_peaks_mist_and_colorful_clouds_at_sunrise_seen_from_Mo",
+      "bench_split": "sealed",
+      "family": "clouds",
+      "category": "clouds",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.4102,
+          "box": [
+            753.11,
+            547.58,
+            1069.57,
+            660.06
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.3662,
+          "box": [
+            1145.65,
+            511.6,
+            1280.0,
+            576.05
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.3468,
+          "box": [
+            418.99,
+            490.75,
+            701.8,
+            691.87
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_ad4e314d_Karst_peaks_mist_and_colorful_clouds_at_sunrise_seen_from_Mo.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:a33f6c05:Boquete_Cloud_Forest_2",
+      "bench_split": "sealed",
+      "family": "fog_haze_mist",
+      "category": "ordinary_other",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.7566,
+          "box": [
+            0.0,
+            35.25,
+            1277.64,
+            617.76
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_a33f6c05_Boquete_Cloud_Forest_2.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:c587be25:Ella_Valley_Sri_Lanka_Cloud_forest_on_the_slopes_in_clouds",
+      "bench_split": "sealed",
+      "family": "fog_haze_mist",
+      "category": "fog_haze_mist",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.7732,
+          "box": [
+            131.91,
+            0.88,
+            1276.67,
+            838.65
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_c587be25_Ella_Valley_Sri_Lanka_Cloud_forest_on_the_slopes_in_clouds.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:a8f1af41:Ella_Valley_Sri_Lanka_Forest_in_clouds",
+      "bench_split": "sealed",
+      "family": "fog_haze_mist",
+      "category": "fog_haze_mist",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "smoke",
+          "confidence": 0.7227,
+          "box": [
+            105.37,
+            5.09,
+            1277.12,
+            815.26
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_a8f1af41_Ella_Valley_Sri_Lanka_Forest_in_clouds.jpg"
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "id": "benchR:b75e0fa5:Kolomenskoe_in_white_-_Dec12_-_03_snow",
+      "bench_split": "sealed",
+      "family": "snow",
+      "category": "snow",
+      "difficulty": "medium",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "label": "fire",
+          "confidence": 0.3123,
+          "box": [
+            340.18,
+            1495.31,
+            406.54,
+            1537.55
+          ],
+          "track_id": null,
+          "source": "model"
+        },
+        {
+          "label": "smoke",
+          "confidence": 0.162,
+          "box": [
+            0.0,
+            1239.5,
+            543.25,
+            1524.77
+          ],
+          "track_id": null,
+          "source": "model"
+        }
+      ],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_positive\\benchR_b75e0fa5_Kolomenskoe_in_white_-_Dec12_-_03_snow.jpg"
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "id": "benchR:4e244117:Firefighters_during_service_in_Botevgrad_Bulgaria_02",
+      "bench_split": "sealed",
+      "family": "uncontrolled_fire",
+      "category": "ordinary_other",
+      "difficulty": "medium",
+      "ground_truth": [
+        {
+          "label": "smoke",
+          "box": [
+            3.1176280178233973,
+            34.214309673607545,
+            1277.6376008502707,
+            272.8848362690598
+          ]
+        }
+      ],
+      "predictions": [],
+      "files": [
+        "bench_results\\benchR\\20261101_122232_P50\\errors\\false_negative\\benchR_4e244117_Firefighters_during_service_in_Botevgrad_Bulgaria_02.jpg"
+      ]
+    }
+  ]
+}
