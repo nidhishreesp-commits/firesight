@@ -1,0 +1,93 @@
+{
+  "n": 42,
+  "positives": 20,
+  "negatives": 22,
+  "metrics": {
+    "raw_alert": {
+      "tp": 18,
+      "fp": 13,
+      "tn": 9,
+      "fn": 2,
+      "precision": 0.5806,
+      "recall": 0.9,
+      "recall_ci": [
+        0.699,
+        0.9721
+      ],
+      "specificity": 0.4091,
+      "fpr": 0.5909,
+      "fpr_ci": [
+        0.3873,
+        0.7674
+      ],
+      "accuracy": 0.6429
+    },
+    "temporal_alert": {
+      "tp": 10,
+      "fp": 6,
+      "tn": 16,
+      "fn": 10,
+      "precision": 0.625,
+      "recall": 0.5,
+      "recall_ci": [
+        0.2993,
+        0.7007
+      ],
+      "specificity": 0.7273,
+      "fpr": 0.2727,
+      "fpr_ci": [
+        0.1315,
+        0.4815
+      ],
+      "accuracy": 0.619
+    },
+    "layer_alert": {
+      "tp": 10,
+      "fp": 6,
+      "tn": 16,
+      "fn": 10,
+      "precision": 0.625,
+      "recall": 0.5,
+      "recall_ci": [
+        0.2993,
+        0.7007
+      ],
+      "specificity": 0.7273,
+      "fpr": 0.2727,
+      "fpr_ci": [
+        0.1315,
+        0.4815
+      ],
+      "accuracy": 0.619
+    }
+  },
+  "per_category": {
+    "cloud": {
+      "n": 10,
+      "positives": 0,
+      "layer_alerts": 4,
+      "raw_alerts": 7
+    },
+    "fire": {
+      "n": 15,
+      "positives": 15,
+      "layer_alerts": 10,
+      "raw_alerts": 14
+    },
+    "nonfire": {
+      "n": 12,
+      "positives": 0,
+      "layer_alerts": 2,
+      "raw_alerts": 6
+    },
+    "smoke": {
+      "n": 5,
+      "positives": 5,
+      "layer_alerts": 0,
+      "raw_alerts": 4
+    }
+  },
+  "nonfire_hours_evaluated": 0.342,
+  "layer_fa_per_hour": 17.557,
+  "note": "2 fps; nonfire clips capped at 120 s; fire/smoke full clip"
+}
