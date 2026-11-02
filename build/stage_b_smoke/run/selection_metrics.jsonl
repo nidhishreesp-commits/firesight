@@ -1,0 +1,2 @@
+{"epoch": 1, "recall_at_fpr": 0.3, "fpr": 0.0, "threshold": 0.438924, "n_pos": 10, "n_neg": 10, "ts": "2026-10-29T13:31:29Z"}
+{"epoch": 2, "recall_at_fpr": 0.3, "fpr": 0.0, "threshold": 0.438924, "n_pos": 10, "n_neg": 10, "ts": "2026-10-29T13:31:34Z"}

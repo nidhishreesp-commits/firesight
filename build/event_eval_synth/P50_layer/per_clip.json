@@ -1,0 +1,40 @@
+[
+  {
+    "id": "synth_fire",
+    "path": "build\\event_eval_synth\\fire_synth.mp4",
+    "label": "fire",
+    "onset_s": 2.0,
+    "camera_id": "synth",
+    "source": "synthetic from DEV",
+    "licence": "internal test",
+    "duration_s": 10.0,
+    "sampled_frames": 50,
+    "raw_frames_with_det": 40,
+    "alarm_times": [
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2
+    ],
+    "alarm_episodes": 1,
+    "first_alarm_s": 2.4,
+    "ttd_s": 0.4,
+    "alarm_after_onset": true
+  },
+  {
+    "id": "synth_nonfire",
+    "path": "build\\event_eval_synth\\nonfire_synth.mp4",
+    "label": "nonfire",
+    "onset_s": null,
+    "camera_id": "synth",
+    "source": "synthetic from DEV",
+    "licence": "internal test",
+    "duration_s": 10.0,
+    "sampled_frames": 50,
+    "raw_frames_with_det": 0,
+    "alarm_times": [],
+    "alarm_episodes": 0,
+    "first_alarm_s": null
+  }
+]

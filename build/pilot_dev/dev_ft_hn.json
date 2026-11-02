@@ -1,0 +1,29 @@
+{
+  "bench": "bench_R",
+  "split": "dev",
+  "sealed_untouched": true,
+  "calibrated_on": "val_mini + val_flames",
+  "target_fpr": 0.02,
+  "models": {
+    "FT_HN": {
+      "thresholds": {
+        "fire": 0.41,
+        "smoke": 0.43
+      },
+      "recall": 0.494118,
+      "recall_95ci": [
+        0.39040653316034707,
+        0.5983374786539382
+      ],
+      "precision": 0.857143,
+      "accuracy": 0.833333,
+      "fpr_per_negative": 0.032558,
+      "fpr_95ci": [
+        0.015858764177717522,
+        0.0656686967803453
+      ],
+      "n": 300,
+      "negatives": 215
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "video": "C:\\Users\\Nidhi\\My projects\\Sample_videos\\ppe_3.mp4",
+  "sampled": 178,
+  "frames_with_det": 2,
+  "max_conf": {
+    "fire": 0.0,
+    "smoke": 0.1292
+  },
+  "rows": [
+    {
+      "frame": 15,
+      "t_s": 0.5,
+      "dets": [
+        {
+          "label": "smoke",
+          "conf": 0.0518,
+          "box": [
+            533.7,
+            2.9,
+            666.5,
+            51.1
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 141,
+      "t_s": 4.7,
+      "dets": [
+        {
+          "label": "smoke",
+          "conf": 0.1292,
+          "box": [
+            536.1,
+            5.6,
+            764.0,
+            305.7
+          ]
+        }
+      ]
+    }
+  ]
+}

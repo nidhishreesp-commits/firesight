@@ -1,0 +1,16 @@
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00000.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00006.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00007.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00010.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00012.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00013.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00021.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF03663.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00026.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00027.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00028.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00030.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00035.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00036.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00038.jpg
+C:\Users\Nidhi\My projects\firesight\data\processed\images\dfire\train\AoF00039.jpg

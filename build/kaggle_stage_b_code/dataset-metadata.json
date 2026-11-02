@@ -1,0 +1,11 @@
+{
+  "title": "firesight stage b code (private)",
+  "id": "nidhishreesp/firesight-stage-b-code",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "isPrivate": true,
+  "description": "Private E0/E1 training code. Contains stage_b_train.py, stage_b_predict.py, pilot_eval.py, run_bench.py, firesight package and yolo11s.pt (AGPL-3.0, Ultralytics)."
+}

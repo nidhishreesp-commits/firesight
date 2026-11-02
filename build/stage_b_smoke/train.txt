@@ -1,0 +1,16 @@
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\dfire_val_AoF04532.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_fire_CV001083_jpg.rf.ee72e31dd113fe81c6fb4517ebeb928a.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_fire_CV006702_jpg.rf.65dc1afea16a4dcde8682cc27856ea71.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_fire_CV011752_jpg.rf.203c573e03cf1ae48dbd66ed2e40d135.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\dfire_train_PublicDataset00383.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_bothFireAndSmoke_CV014940_jpg.rf.1644428016532311c92d5b64f0c85a99.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_smoke_CV003068_jpg.rf.63715dbb5435675f5c5bdabbe9dd096d.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_smoke_CV004718_jpg.rf.f00ca430639482c4041eb62a7778b7ad.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV018499_jpg.rf.a449760000e4663e2290d0ec6ce5897a.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV008717_jpg.rf.0c28b737f57dfcf234efdc77aeb53093.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV006364_jpg.rf.c6287b73122f74615a37b9cca9860206.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV031797_jpg.rf.ac2190f43e7be737fa6d3e099cf554e8.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV004414_jpg.rf.aace3c58951ecc7360be592bf7ccc16c.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV004716_jpg.rf.bcd634b849259b9bc80d02ddb9ea5d5c.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV004235_jpg.rf.9522fa1b82f769c3dd5f00e2e8018216.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_train_neitherFireNorSmoke_CV027275_jpg.rf.a71a5ecc66f275a19861437b256dc3dc.jpg

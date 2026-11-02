@@ -1,0 +1,7 @@
+# Relative paths: ultralytics resolves them against this file's directory.
+train: lists/train_10.txt
+val: lists/val_early.txt
+names:
+  0: fire
+  1: smoke
+nc: 2

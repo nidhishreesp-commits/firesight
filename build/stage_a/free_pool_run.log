@@ -1,0 +1,89 @@
+out-of-sample rows: 16430 (negatives=16430, positives=0)
+cached=0 todo=16430
+Loading C:\Users\Nidhi\My projects\firesight\build\kaggle_weights\runs\P50\weights\best.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.30.0 with CPUExecutionProvider
+  250/16430 6.07 img/s eta 44.4 min
+  500/16430 8.14 img/s eta 32.6 min
+  750/16430 9.46 img/s eta 27.6 min
+  1000/16430 9.83 img/s eta 26.2 min
+  1250/16430 9.15 img/s eta 27.6 min
+  1500/16430 9.04 img/s eta 27.5 min
+  1750/16430 8.93 img/s eta 27.4 min
+  2000/16430 8.81 img/s eta 27.3 min
+  2250/16430 8.71 img/s eta 27.1 min
+  2500/16430 8.66 img/s eta 26.8 min
+  2750/16430 8.62 img/s eta 26.4 min
+  3000/16430 8.59 img/s eta 26.1 min
+  3250/16430 8.51 img/s eta 25.8 min
+  3500/16430 8.48 img/s eta 25.4 min
+  3750/16430 8.44 img/s eta 25.0 min
+  4000/16430 8.41 img/s eta 24.6 min
+  4250/16430 8.37 img/s eta 24.3 min
+  4500/16430 8.34 img/s eta 23.8 min
+  4750/16430 8.33 img/s eta 23.4 min
+  5000/16430 8.32 img/s eta 22.9 min
+  5250/16430 8.29 img/s eta 22.5 min
+  5500/16430 8.27 img/s eta 22.0 min
+  5750/16430 8.26 img/s eta 21.5 min
+  6000/16430 8.25 img/s eta 21.1 min
+  6250/16430 8.22 img/s eta 20.6 min
+  6500/16430 8.21 img/s eta 20.2 min
+  6750/16430 8.19 img/s eta 19.7 min
+  7000/16430 8.17 img/s eta 19.2 min
+  7250/16430 8.16 img/s eta 18.8 min
+  7500/16430 8.15 img/s eta 18.3 min
+  7750/16430 8.15 img/s eta 17.7 min
+  8000/16430 8.15 img/s eta 17.2 min
+  8250/16430 8.14 img/s eta 16.7 min
+  8500/16430 8.14 img/s eta 16.2 min
+  8750/16430 8.13 img/s eta 15.7 min
+  9000/16430 8.13 img/s eta 15.2 min
+  9250/16430 8.12 img/s eta 14.7 min
+  9500/16430 8.11 img/s eta 14.2 min
+  9750/16430 8.11 img/s eta 13.7 min
+  10000/16430 8.11 img/s eta 13.2 min
+  10250/16430 8.10 img/s eta 12.7 min
+  10500/16430 8.10 img/s eta 12.2 min
+  10750/16430 8.10 img/s eta 11.7 min
+  11000/16430 8.09 img/s eta 11.2 min
+  11250/16430 8.09 img/s eta 10.7 min
+  11500/16430 8.06 img/s eta 10.2 min
+  11750/16430 8.01 img/s eta 9.7 min
+  12000/16430 7.98 img/s eta 9.3 min
+  12250/16430 7.94 img/s eta 8.8 min
+  12500/16430 7.89 img/s eta 8.3 min
+  12750/16430 7.84 img/s eta 7.8 min
+  13000/16430 7.80 img/s eta 7.3 min
+  13250/16430 7.79 img/s eta 6.8 min
+  13500/16430 7.80 img/s eta 6.3 min
+  13750/16430 7.81 img/s eta 5.7 min
+  14000/16430 7.82 img/s eta 5.2 min
+  14250/16430 7.83 img/s eta 4.6 min
+  14500/16430 7.85 img/s eta 4.1 min
+  14750/16430 7.86 img/s eta 3.6 min
+  15000/16430 7.87 img/s eta 3.0 min
+  15250/16430 7.87 img/s eta 2.5 min
+  15500/16430 7.87 img/s eta 2.0 min
+  15750/16430 7.87 img/s eta 1.4 min
+  16000/16430 7.86 img/s eta 0.9 min
+  16250/16430 7.86 img/s eta 0.4 min
+inference done in 34.8 min
+{
+  "out_of_sample_rows": 16430,
+  "cached_rows": 16430,
+  "negatives_scored": 16430,
+  "positives_scored": 0,
+  "false_detections_conf_ge_0.05": 1091,
+  "hard_conf_ge_0.10": 703,
+  "very_hard_conf_ge_0.30": 229,
+  "quarantine_conf_ge_0.50": 100,
+  "by_source": {
+    "dfire": 275,
+    "fasdd": 816
+  },
+  "by_source_all_negatives": {
+    "dfire": 1682,
+    "fasdd": 14748
+  },
+  "measured": "P50 ONNX CPU inference at conf=0.01; false = empty-label image with max_conf>=0.05"
+}

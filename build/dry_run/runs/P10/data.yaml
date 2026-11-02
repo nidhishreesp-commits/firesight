@@ -1,0 +1,7 @@
+train: lists/train_10.txt
+val: lists/val_early.txt
+names:
+  0: fire
+  1: smoke
+nc: 2
+path: C:/Users/Nidhi/My projects/firesight/build/dry_run/dataset
