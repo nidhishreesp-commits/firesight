@@ -1,0 +1,35 @@
+{
+  "name": "P50_synth_layer",
+  "n_clips": 2,
+  "fire_clips": 1,
+  "nonfire_clips": 1,
+  "nonfire_hours": 0.0028,
+  "recall_within_5s": 1.0,
+  "recall_within_5s_ci": [
+    0.2065,
+    1
+  ],
+  "recall_within_10s": 1.0,
+  "recall_within_10s_ci": [
+    0.2065,
+    1
+  ],
+  "recall_within_30s": 1.0,
+  "recall_within_30s_ci": [
+    0.2065,
+    1
+  ],
+  "ttd_mean_s": 0.4,
+  "ttd_median_s": 0.4,
+  "ttd_p90_s": 0.4,
+  "ttd_median_ci": [
+    0.4,
+    0.4
+  ],
+  "nonfire_alarm_episodes": 0,
+  "fa_per_camera_hour": 0.0,
+  "fa_per_camera_hour_ci": [
+    0.0,
+    0.0
+  ]
+}
