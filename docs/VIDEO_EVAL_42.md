@@ -34,3 +34,10 @@ detector.
 
 Artifacts: `build/video_eval/results/summary.json`, `per_clip.csv`, `contact_sheet.jpg`,
 `annotated/`. Curated manifest: `data/video_eval/public/curated_manifest.jsonl`.
+
+## Extra: three Downloads stock clips (proprietary, test-only)
+
+The three supplied stock clips (industrial interior, street waste collection, city crowd) are
+**non-fire** and were run separately. P50 produced **0 raw alarms, 0 temporal alarms, 0 layer
+alarms** on all three. They are **not** used for training or in the public benchmark; licence is
+proprietary stock, test-only.

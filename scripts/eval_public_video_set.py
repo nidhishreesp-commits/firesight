@@ -19,8 +19,10 @@ def font(sz=10):
         try: return ImageFont.load_default(size=sz)
         except Exception: return ImageFont.load_default()
 def main():
-    rows=[json.loads(l) for l in open('data/video_eval/public/curated_manifest.jsonl',encoding='utf-8')]
-    out=PROJECT_ROOT/'build/video_eval/results'; (out/'annotated').mkdir(parents=True,exist_ok=True)
+    import argparse
+    ap=argparse.ArgumentParser(); ap.add_argument('--manifest',default='data/video_eval/public/curated_manifest.jsonl'); ap.add_argument('--out',default='build/video_eval/results'); args=ap.parse_args()
+    rows=[json.loads(l) for l in open(args.manifest,encoding='utf-8') if l.strip()]
+    out=PROJECT_ROOT/args.out; (out/'annotated').mkdir(parents=True,exist_ok=True)
     from ultralytics import YOLO
     model=YOLO(str(PROJECT_ROOT/'build/kaggle_weights/runs/P50/weights/best.onnx'),task='detect')
     cfg=load_config(); cfg.temporal.tracker='iou'
@@ -74,7 +76,7 @@ def main():
         tp=sum(1 for r in pos if r[mode]); fn=len(pos)-tp; fp=sum(1 for r in neg if r[mode]); tn=len(neg)-fp
         prec=tp/(tp+fp) if tp+fp else None; rec=tp/len(pos) if pos else None; spec=tn/len(neg) if neg else None
         metrics[mode]={'tp':tp,'fp':fp,'tn':tn,'fn':fn,'precision':None if prec is None else round(prec,4),
-                       'recall':round(rec,4),'recall_ci':WIL(tp,len(pos)),'specificity':round(spec,4),'fpr':round(fp/len(neg),4),'fpr_ci':WIL(fp,len(neg)),
+                       'recall':None if rec is None else round(rec,4),'recall_ci':WIL(tp,len(pos)) if pos else [None,None],'specificity':None if spec is None else round(spec,4),'fpr':round(fp/len(neg),4) if neg else None,'fpr_ci':WIL(fp,len(neg)) if neg else [None,None],
                        'accuracy':round((tp+tn)/(len(pos)+len(neg)),4)}
     percat={}
     for cat in sorted({r['category'] for r in results}):
