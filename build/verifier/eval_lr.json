@@ -1,0 +1,182 @@
+{
+  "0.015": {
+    "p50_threshold": 0.15,
+    "verifier_threshold": 0.006178000112995506,
+    "val_cal_fpr": 0.01452081316553727,
+    "recall": 0.8165656565656566,
+    "recall_95ci": [
+      0.8008312796218655,
+      0.8313188343668623
+    ],
+    "fpr": 0.011724659606656581,
+    "fpr_95ci": [
+      0.00827217696936777,
+      0.016593963059552387
+    ],
+    "accuracy": 0.9052549326040242,
+    "tp": 2021,
+    "fp": 31,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 71,
+        "p50_only": 351,
+        "p": 1.3128531553044907e-45
+      },
+      "negatives": {
+        "cascade_only": 10,
+        "p50_only": 62,
+        "p": 2.6890686575861277e-10
+      }
+    }
+  },
+  "0.02": {
+    "p50_threshold": 0.15,
+    "verifier_threshold": 0.002026000050827861,
+    "val_cal_fpr": 0.017424975798644726,
+    "recall": 0.8533333333333334,
+    "recall_95ci": [
+      0.8388480185940212,
+      0.8667234870641056
+    ],
+    "fpr": 0.015506807866868382,
+    "fpr_95ci": [
+      0.01145124811537894,
+      0.020968213834308677
+    ],
+    "accuracy": 0.9210783356124242,
+    "tp": 2112,
+    "fp": 41,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 79,
+        "p50_only": 268,
+        "p": 3.4897215501768834e-25
+      },
+      "negatives": {
+        "cascade_only": 15,
+        "p50_only": 57,
+        "p": 6.539968221733264e-07
+      }
+    }
+  },
+  "dev_sanity": {
+    "p50_threshold": 0.15,
+    "verifier_threshold": 0.006178000112995506,
+    "recall": 0.5280898876404494,
+    "recall_95ci": [
+      0.4253736442483641,
+      0.6284815241244343
+    ],
+    "fpr": 0.02843601895734597,
+    "fpr_95ci": [
+      0.013096095468480774,
+      0.06064008970236136
+    ],
+    "tp": 47,
+    "fp": 6,
+    "n_pos": 89,
+    "n_neg": 211
+  },
+  "per_cause_val_report": {
+    "cave_rock": {
+      "neg_images": 10,
+      "p50_fa": 10,
+      "cascade_fa": 3,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3,
+      "too_few": true
+    },
+    "construction_dust": {
+      "neg_images": 12,
+      "p50_fa": 12,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "haze_cloud": {
+      "neg_images": 21,
+      "p50_fa": 21,
+      "cascade_fa": 10,
+      "fpr_before": 1.0,
+      "fpr_after": 0.47619047619047616,
+      "too_few": true
+    },
+    "orange_ppe": {
+      "neg_images": 7,
+      "p50_fa": 7,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "other": {
+      "neg_images": 14,
+      "p50_fa": 14,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.07142857142857142,
+      "too_few": true
+    },
+    "reflection": {
+      "neg_images": 13,
+      "p50_fa": 13,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3076923076923077,
+      "too_few": true
+    },
+    "screen": {
+      "neg_images": 8,
+      "p50_fa": 8,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.125,
+      "too_few": true
+    },
+    "skin": {
+      "neg_images": 8,
+      "p50_fa": 8,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "smoke_steam": {
+      "neg_images": 13,
+      "p50_fa": 13,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3076923076923077,
+      "too_few": true
+    },
+    "sun_bright": {
+      "neg_images": 21,
+      "p50_fa": 21,
+      "cascade_fa": 7,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3333333333333333,
+      "too_few": true
+    },
+    "sunset": {
+      "neg_images": 3,
+      "p50_fa": 3,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3333333333333333,
+      "too_few": true
+    },
+    "warm_light": {
+      "neg_images": 7,
+      "p50_fa": 7,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+path: C:/Users/Nidhi/My projects/firesight/build/kaggle_dataset
+train: C:/Users/Nidhi/My projects/firesight/build/stage_b_smoke/run2/lists/train.txt
+val: C:/Users/Nidhi/My projects/firesight/build/stage_b_smoke/run2/lists/val.txt
+names:
+  0: fire
+  1: smoke
+nc: 2

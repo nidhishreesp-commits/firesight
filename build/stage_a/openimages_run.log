@@ -1,0 +1,33 @@
+existing manifest rows: 2000
+validation ids: 41620 available: 39620 picked: 3000
+downloaded 100 / 3000 ok 100 fail 0
+downloaded 200 / 3000 ok 200 fail 0
+downloaded 300 / 3000 ok 300 fail 0
+downloaded 400 / 3000 ok 400 fail 0
+downloaded 500 / 3000 ok 500 fail 0
+downloaded 600 / 3000 ok 600 fail 0
+downloaded 700 / 3000 ok 700 fail 0
+downloaded 800 / 3000 ok 800 fail 0
+downloaded 900 / 3000 ok 900 fail 0
+downloaded 1000 / 3000 ok 1000 fail 0
+downloaded 1100 / 3000 ok 1100 fail 0
+downloaded 1200 / 3000 ok 1200 fail 0
+downloaded 1300 / 3000 ok 1300 fail 0
+downloaded 1400 / 3000 ok 1400 fail 0
+downloaded 1500 / 3000 ok 1500 fail 0
+downloaded 1600 / 3000 ok 1600 fail 0
+downloaded 1700 / 3000 ok 1700 fail 0
+downloaded 1800 / 3000 ok 1800 fail 0
+downloaded 1900 / 3000 ok 1900 fail 0
+downloaded 2000 / 3000 ok 2000 fail 0
+downloaded 2100 / 3000 ok 2100 fail 0
+downloaded 2200 / 3000 ok 2200 fail 0
+downloaded 2300 / 3000 ok 2300 fail 0
+downloaded 2400 / 3000 ok 2400 fail 0
+downloaded 2500 / 3000 ok 2500 fail 0
+downloaded 2600 / 3000 ok 2600 fail 0
+downloaded 2700 / 3000 ok 2700 fail 0
+downloaded 2800 / 3000 ok 2800 fail 0
+downloaded 2900 / 3000 ok 2900 fail 0
+downloaded 3000 / 3000 ok 3000 fail 0
+{"picked": 3000, "ok": 3000, "fail": 0, "manifest_rows": 5000}

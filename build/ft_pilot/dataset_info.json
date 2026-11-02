@@ -1,0 +1,25 @@
+{
+  "positives": 14747,
+  "negatives_unique": 205,
+  "negative_lines": 274,
+  "neg_share_of_train": 0.0182,
+  "val": 1000,
+  "by_category": {
+    "sunset_orange_sky": 6,
+    "clouds": 14,
+    "fog_haze_mist": 17,
+    "reflections_lens_flare_glare": 16,
+    "vehicle_lights_streetlights": 16,
+    "red_orange_neon_lights": 8,
+    "chandelier_stage_lights": 12,
+    "dust_construction_plaster": 16,
+    "orange_ppe_vests_cones": 17,
+    "exhaust": 12,
+    "steam": 14,
+    "cave_warm_rock": 18,
+    "person_portrait": 20,
+    "screen_fire": 19
+  },
+  "max_neg": 3000,
+  "oversample_tier1": 2
+}

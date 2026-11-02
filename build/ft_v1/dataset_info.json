@@ -1,0 +1,32 @@
+{
+  "positives": 14747,
+  "negatives_unique": 2000,
+  "negative_lines": 3416,
+  "neg_share_of_train": 0.1881,
+  "val": 1000,
+  "by_category": {
+    "cave_warm_rock": 62,
+    "clouds": 137,
+    "red_orange_neon_lights": 423,
+    "reflections_lens_flare_glare": 119,
+    "vehicle_lights_streetlights": 82,
+    "chandelier_stage_lights": 179,
+    "dust_construction_plaster": 882,
+    "camera_artifacts": 563,
+    "snow": 35,
+    "person_portrait": 199,
+    "ordinary_indoor": 100,
+    "sunset_orange_sky": 209,
+    "fog_haze_mist": 69,
+    "orange_ppe_vests_cones": 288,
+    "exhaust": 75,
+    "ordinary_other": 252,
+    "flowers_autumn_leaves": 158,
+    "ordinary_streets_warehouses_offices": 59,
+    "overexposed_white": 43,
+    "steam": 47,
+    "screen_fire": 19
+  },
+  "max_neg": 2000,
+  "oversample_tier1": 2
+}

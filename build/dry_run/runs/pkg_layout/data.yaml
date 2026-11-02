@@ -1,0 +1,7 @@
+train: C:\Users\Nidhi\My projects\firesight\build\dry_run\runs\pkg_layout\lists\train_10.txt
+val: C:\Users\Nidhi\My projects\firesight\build\dry_run\runs\pkg_layout\lists\val_early.txt
+names:
+  0: fire
+  1: smoke
+nc: 2
+path: C:/Users/Nidhi/My projects/firesight/build/dry_run/pkg_layout

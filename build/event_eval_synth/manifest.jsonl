@@ -1,0 +1,2 @@
+{"id": "synth_fire", "path": "build\\event_eval_synth\\fire_synth.mp4", "label": "fire", "onset_s": 2.0, "camera_id": "synth", "source": "synthetic from DEV", "licence": "internal test"}
+{"id": "synth_nonfire", "path": "build\\event_eval_synth\\nonfire_synth.mp4", "label": "nonfire", "onset_s": null, "camera_id": "synth", "source": "synthetic from DEV", "licence": "internal test"}

@@ -1,0 +1,395 @@
+{
+  "bench_R_DEV": {
+    "0.009": {
+      "P50": {
+        "recall": 0.3647,
+        "fpr": 0.0047,
+        "threshold": 0.6505908966064453,
+        "tp": 31,
+        "fp": 1
+      },
+      "E1": {
+        "recall": 0.2824,
+        "fpr": 0.0047,
+        "threshold": 0.702892,
+        "tp": 24,
+        "fp": 1
+      },
+      "SalahYOLOv26": {
+        "recall": 0.2235,
+        "fpr": 0.0047,
+        "threshold": 0.7946864366531372,
+        "tp": 19,
+        "fp": 1
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 17,
+        "b_only": 5,
+        "p": 0.01690053939819336
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 1,
+        "b_only": 1,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 11,
+        "b_only": 6,
+        "p": 0.332305908203125
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 1,
+        "b_only": 1,
+        "p": 1.0
+      }
+    },
+    "0.015": {
+      "P50": {
+        "recall": 0.4941,
+        "fpr": 0.014,
+        "threshold": 0.5094792246818542,
+        "tp": 42,
+        "fp": 3
+      },
+      "E1": {
+        "recall": 0.4941,
+        "fpr": 0.014,
+        "threshold": 0.373844,
+        "tp": 42,
+        "fp": 3
+      },
+      "SalahYOLOv26": {
+        "recall": 0.3294,
+        "fpr": 0.014,
+        "threshold": 0.7394449710845947,
+        "tp": 28,
+        "fp": 3
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 20,
+        "b_only": 6,
+        "p": 0.009355306625366211
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 2,
+        "b_only": 2,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 20,
+        "b_only": 6,
+        "p": 0.009355306625366211
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 3,
+        "b_only": 3,
+        "p": 1.0
+      }
+    },
+    "0.02": {
+      "P50": {
+        "recall": 0.4941,
+        "fpr": 0.014,
+        "threshold": 0.5094792246818542,
+        "tp": 42,
+        "fp": 3
+      },
+      "E1": {
+        "recall": 0.5294,
+        "fpr": 0.0186,
+        "threshold": 0.255177,
+        "tp": 45,
+        "fp": 4
+      },
+      "SalahYOLOv26": {
+        "recall": 0.4235,
+        "fpr": 0.0186,
+        "threshold": 0.6614503264427185,
+        "tp": 36,
+        "fp": 4
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 12,
+        "b_only": 6,
+        "p": 0.237884521484375
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 2,
+        "b_only": 3,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 16,
+        "b_only": 7,
+        "p": 0.0931396484375
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 4,
+        "b_only": 4,
+        "p": 1.0
+      }
+    }
+  },
+  "val_report": {
+    "0.009": {
+      "P50": {
+        "recall": 0.7176,
+        "fpr": 0.0087,
+        "threshold": 0.598772,
+        "tp": 1776,
+        "fp": 23
+      },
+      "E1": {
+        "recall": 0.8473,
+        "fpr": 0.0083,
+        "threshold": 0.360601,
+        "tp": 2097,
+        "fp": 22
+      },
+      "SalahYOLOv26": {
+        "recall": 0.4747,
+        "fpr": 0.0087,
+        "threshold": 0.756463,
+        "tp": 1175,
+        "fp": 23
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 780,
+        "b_only": 179,
+        "p": 5.185054843372227e-90
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 20,
+        "b_only": 20,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 975,
+        "b_only": 53,
+        "p": 1.90018673841009e-220
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 20,
+        "b_only": 21,
+        "p": 1.0
+      }
+    },
+    "0.015": {
+      "P50": {
+        "recall": 0.8501,
+        "fpr": 0.0148,
+        "threshold": 0.472866,
+        "tp": 2104,
+        "fp": 39
+      },
+      "E1": {
+        "recall": 0.8917,
+        "fpr": 0.0148,
+        "threshold": 0.258737,
+        "tp": 2207,
+        "fp": 39
+      },
+      "SalahYOLOv26": {
+        "recall": 0.5515,
+        "fpr": 0.0144,
+        "threshold": 0.708215,
+        "tp": 1365,
+        "fp": 38
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 819,
+        "b_only": 80,
+        "p": 3.908154633421101e-155
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 30,
+        "b_only": 29,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 889,
+        "b_only": 47,
+        "p": 1.9395102551707149e-202
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 30,
+        "b_only": 29,
+        "p": 1.0
+      }
+    },
+    "0.02": {
+      "P50": {
+        "recall": 0.8954,
+        "fpr": 0.0197,
+        "threshold": 0.405241,
+        "tp": 2216,
+        "fp": 52
+      },
+      "E1": {
+        "recall": 0.9063,
+        "fpr": 0.0197,
+        "threshold": 0.217589,
+        "tp": 2243,
+        "fp": 52
+      },
+      "SalahYOLOv26": {
+        "recall": 0.6194,
+        "fpr": 0.0197,
+        "threshold": 0.661147,
+        "tp": 1533,
+        "fp": 52
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 739,
+        "b_only": 56,
+        "p": 5.289673940801653e-153
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 40,
+        "b_only": 40,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 764,
+        "b_only": 54,
+        "p": 1.7326833409272864e-161
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 39,
+        "b_only": 39,
+        "p": 1.0
+      }
+    }
+  },
+  "independent_neg": {
+    "0.009": {
+      "P50": {
+        "recall": 0.0,
+        "fpr": 0.0089,
+        "threshold": 0.170056,
+        "tp": 0,
+        "fp": 47
+      },
+      "E1": {
+        "recall": 0.0,
+        "fpr": 0.0089,
+        "threshold": 0.205327,
+        "tp": 0,
+        "fp": 47
+      },
+      "SalahYOLOv26": {
+        "recall": 0.0,
+        "fpr": 0.0089,
+        "threshold": 0.762604,
+        "tp": 0,
+        "fp": 47
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 44,
+        "b_only": 44,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 45,
+        "b_only": 45,
+        "p": 1.0
+      }
+    },
+    "0.015": {
+      "P50": {
+        "recall": 0.0,
+        "fpr": 0.0149,
+        "threshold": 0.124786,
+        "tp": 0,
+        "fp": 79
+      },
+      "E1": {
+        "recall": 0.0,
+        "fpr": 0.0149,
+        "threshold": 0.117528,
+        "tp": 0,
+        "fp": 79
+      },
+      "SalahYOLOv26": {
+        "recall": 0.0,
+        "fpr": 0.0149,
+        "threshold": 0.700467,
+        "tp": 0,
+        "fp": 79
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 73,
+        "b_only": 73,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 76,
+        "b_only": 76,
+        "p": 1.0
+      }
+    },
+    "0.02": {
+      "P50": {
+        "recall": 0.0,
+        "fpr": 0.02,
+        "threshold": 0.091896,
+        "tp": 0,
+        "fp": 106
+      },
+      "E1": {
+        "recall": 0.0,
+        "fpr": 0.02,
+        "threshold": 0.078545,
+        "tp": 0,
+        "fp": 106
+      },
+      "SalahYOLOv26": {
+        "recall": 0.0,
+        "fpr": 0.02,
+        "threshold": 0.632656,
+        "tp": 0,
+        "fp": 106
+      },
+      "mcn_P50_vs_Salah_pos": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      },
+      "mcn_P50_vs_Salah_neg": {
+        "a_only": 97,
+        "b_only": 97,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_pos": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      },
+      "mcn_E1_vs_Salah_neg": {
+        "a_only": 97,
+        "b_only": 97,
+        "p": 1.0
+      }
+    }
+  }
+}

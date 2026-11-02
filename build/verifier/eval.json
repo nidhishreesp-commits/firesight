@@ -1,0 +1,182 @@
+{
+  "0.015": {
+    "p50_threshold": 0.1,
+    "verifier_threshold": 0.0018129999772645532,
+    "val_cal_fpr": 0.012584704743465635,
+    "recall": 0.8480808080808081,
+    "recall_95ci": [
+      0.8334006042329367,
+      0.8616821311867044
+    ],
+    "fpr": 0.009077155824508321,
+    "fpr_95ci": [
+      0.006107386153988545,
+      0.013471428530394387
+    ],
+    "accuracy": 0.921859738230123,
+    "tp": 2099,
+    "fp": 24,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 92,
+        "p50_only": 294,
+        "p": 1.0054396480326642e-25
+      },
+      "negatives": {
+        "cascade_only": 15,
+        "p50_only": 74,
+        "p": 1.5342060632791784e-10
+      }
+    }
+  },
+  "0.02": {
+    "p50_threshold": 0.1,
+    "verifier_threshold": 0.0018129999772645532,
+    "val_cal_fpr": 0.012584704743465635,
+    "recall": 0.8480808080808081,
+    "recall_95ci": [
+      0.8334006042329367,
+      0.8616821311867044
+    ],
+    "fpr": 0.009077155824508321,
+    "fpr_95ci": [
+      0.006107386153988545,
+      0.013471428530394387
+    ],
+    "accuracy": 0.921859738230123,
+    "tp": 2099,
+    "fp": 24,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 92,
+        "p50_only": 294,
+        "p": 1.0054396480326642e-25
+      },
+      "negatives": {
+        "cascade_only": 15,
+        "p50_only": 74,
+        "p": 1.5342060632791784e-10
+      }
+    }
+  },
+  "dev_sanity": {
+    "p50_threshold": 0.1,
+    "verifier_threshold": 0.0018129999772645532,
+    "recall": 0.5393258426966292,
+    "recall_95ci": [
+      0.436292717570131,
+      0.6391045181517867
+    ],
+    "fpr": 0.04265402843601896,
+    "fpr_95ci": [
+      0.022599883893756834,
+      0.07906385348298957
+    ],
+    "tp": 48,
+    "fp": 9,
+    "n_pos": 89,
+    "n_neg": 211
+  },
+  "per_cause_val_report": {
+    "cave_rock": {
+      "neg_images": 11,
+      "p50_fa": 11,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "construction_dust": {
+      "neg_images": 19,
+      "p50_fa": 19,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "haze_cloud": {
+      "neg_images": 28,
+      "p50_fa": 28,
+      "cascade_fa": 9,
+      "fpr_before": 1.0,
+      "fpr_after": 0.32142857142857145,
+      "too_few": true
+    },
+    "orange_ppe": {
+      "neg_images": 8,
+      "p50_fa": 8,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "other": {
+      "neg_images": 21,
+      "p50_fa": 21,
+      "cascade_fa": 3,
+      "fpr_before": 1.0,
+      "fpr_after": 0.14285714285714285,
+      "too_few": true
+    },
+    "reflection": {
+      "neg_images": 15,
+      "p50_fa": 15,
+      "cascade_fa": 2,
+      "fpr_before": 1.0,
+      "fpr_after": 0.13333333333333333,
+      "too_few": true
+    },
+    "screen": {
+      "neg_images": 9,
+      "p50_fa": 9,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "skin": {
+      "neg_images": 10,
+      "p50_fa": 10,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "smoke_steam": {
+      "neg_images": 13,
+      "p50_fa": 13,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3076923076923077,
+      "too_few": true
+    },
+    "sun_bright": {
+      "neg_images": 29,
+      "p50_fa": 29,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.13793103448275862,
+      "too_few": true
+    },
+    "sunset": {
+      "neg_images": 6,
+      "p50_fa": 6,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.16666666666666666,
+      "too_few": true
+    },
+    "warm_light": {
+      "neg_images": 7,
+      "p50_fa": 7,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.14285714285714285,
+      "too_few": true
+    }
+  }
+}

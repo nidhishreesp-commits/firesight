@@ -1,0 +1,44 @@
+{
+  "P50": {
+    "auc": 0.8526,
+    "ap": 0.7896,
+    "n_pos": 85,
+    "n_neg": 215,
+    "recall_at_fpr_0.015": {
+      "recall": 0.4824,
+      "fpr": 0.014,
+      "threshold": 0.549197
+    },
+    "recall_at_fpr_0.02": {
+      "recall": 0.5059,
+      "fpr": 0.0186,
+      "threshold": 0.533281
+    },
+    "recall_at_fpr_0.03": {
+      "recall": 0.6235,
+      "fpr": 0.0279,
+      "threshold": 0.330068
+    }
+  },
+  "rabah_yolov8n": {
+    "auc": 0.8663,
+    "ap": 0.7861,
+    "n_pos": 85,
+    "n_neg": 215,
+    "recall_at_fpr_0.015": {
+      "recall": 0.4471,
+      "fpr": 0.014,
+      "threshold": 0.580092
+    },
+    "recall_at_fpr_0.02": {
+      "recall": 0.4588,
+      "fpr": 0.0186,
+      "threshold": 0.553095
+    },
+    "recall_at_fpr_0.03": {
+      "recall": 0.5529,
+      "fpr": 0.0279,
+      "threshold": 0.459334
+    }
+  }
+}

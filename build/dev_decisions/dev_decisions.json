@@ -1,0 +1,5426 @@
+{
+  "P50": {
+    "thresholds": {
+      "fire": 0.35,
+      "smoke": 0.41
+    },
+    "rows": [
+      {
+        "id": "benchR:5601eeff:2010s_Jeep_Patriot_Fire_Prevention_vehicle_of_Jersey_City_Fi",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1d7c1475:Candle_flame_-_Macro_photography",
+        "positive": true,
+        "max_conf": 0.283001,
+        "alarm": false
+      },
+      {
+        "id": "benchR:22d22d22:The_burning_of_Columbia_South_Carolina_February_17_1865",
+        "positive": true,
+        "max_conf": 0.02236,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3b9f0513:Los_Lomadas_orange_flowers_against_sea_Faro_de_Punta_Cumplid",
+        "positive": false,
+        "max_conf": 0.013124,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0e5e3fc9:Red_candle_flame",
+        "positive": true,
+        "max_conf": 0.895494,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b7af6c4e:Escalier_monumental_Neue_Burg_Vienne",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8add5839:Thick_black_smoke_over_Sydney_and_NSW_due_to_bushfires_Decem",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7e93e3cf:Smoke_from_the_Bear_Fire_along_Highway_70_southbound_outside",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6e949ed6:California_Lighthouse_x_Star_filled_sky",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ece13c6a:Clouds_and_blue_sky_in_Russia._IMG_109",
+        "positive": false,
+        "max_conf": 0.011155,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b4467718:Parkhotel_Schoenbrunn_Ballsaal_DSC_5115w",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:be739801:Playboy_lighter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:13f03bb2:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4a2ac876:Balloon_Street_Manchester_An_Interior_View_of_the_Drapery_Wa",
+        "positive": false,
+        "max_conf": 0.012908,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e181a008:23_0066309_Convair_Negative_Image_-_Warehouse_interior_54157",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:56f18cda:McEwen_fire_-_Car_sheds_on_fire_LCCN2012646418",
+        "positive": true,
+        "max_conf": 0.897425,
+        "alarm": true
+      },
+      {
+        "id": "benchR:22026cb1:Hortus_Haren._Bloemenzuil_02",
+        "positive": false,
+        "max_conf": 0.079733,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f04a0a22:Structure_Fire_in_Union_Mississippi_03",
+        "positive": true,
+        "max_conf": 0.062217,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3cd5c8ff:Sparks_will_fly_130117-F-RB551-110",
+        "positive": true,
+        "max_conf": 0.015026,
+        "alarm": false
+      },
+      {
+        "id": "benchR:71793825:Orange_flowers_052708",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:63d7bd8d:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a45cac15:A_large_fire_in_tropical_forest_trees_in_the_fire",
+        "positive": true,
+        "max_conf": 0.775136,
+        "alarm": true
+      },
+      {
+        "id": "benchR:dc23fd93:Forest_Fire_Junga",
+        "positive": true,
+        "max_conf": 0.609541,
+        "alarm": true
+      },
+      {
+        "id": "benchR:732d0710:Cobham_Drive_Hillcrest_Hamilton_Traffic_Light_Construction_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e7d5dae7:Vintage_Bakelite_Cigarette_Lighter_Not_Marked_15021365061_",
+        "positive": false,
+        "max_conf": 0.013161,
+        "alarm": false
+      },
+      {
+        "id": "benchR:929ee382:Making_sparks_for_parts_8625882_",
+        "positive": false,
+        "max_conf": 0.060337,
+        "alarm": false
+      },
+      {
+        "id": "benchR:da69a31a:ConchasFire_flame_smoke_across_upper_Frijoles_IMG_0740_cda",
+        "positive": true,
+        "max_conf": 0.402006,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6fe77d9f:Santa_Catalina_mountains_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:02b750ea:Circa_1990_Orflam_Plast_SA_camouflage_patterned_gas_lighter_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c1de0bfd:Candle_lit_parvise_during_lent",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6360c41e:Dark_light_from_thick_smoke_BW-1_26701815270_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c9bd09d4:Brand_Rh_nsprudel_2",
+        "positive": true,
+        "max_conf": 0.775865,
+        "alarm": true
+      },
+      {
+        "id": "benchR:5e52a5fd:Wildfire_smoke_in_Saskatoon",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f2694070:Steam_cooker",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:38dda85f:Candle_flame_in_concave_mirror_with_interference_rings",
+        "positive": true,
+        "max_conf": 0.838183,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3981eacf:BrockenSnowedTreesInSun",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ab64feeb:Ausgebrannte_Autowracks_F_rstenried_West_Munich_04",
+        "positive": false,
+        "max_conf": 0.02894,
+        "alarm": false
+      },
+      {
+        "id": "benchR:68ca6106:Smoke_from_California_wildfires_MODIS_2017-12-12_",
+        "positive": false,
+        "max_conf": 0.295584,
+        "alarm": false
+      },
+      {
+        "id": "benchR:afbc7b84:Karst_peaks_and_green_paddy_fields_under_a_stormy_sky_South_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:662224d9:Blurry_Boss_3577755487_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e8ce2e73:July_21_2018_train_fire_from_Cape_Town_station_upper_deck",
+        "positive": true,
+        "max_conf": 0.839755,
+        "alarm": true
+      },
+      {
+        "id": "benchR:dd49b1df:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_6",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:91de037f:Blurry_buses",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:20272b3d:Smoke_from_Dava_Wildfire",
+        "positive": true,
+        "max_conf": 0.195785,
+        "alarm": false
+      },
+      {
+        "id": "benchR:624d6dee:_jpest_Market_07",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7251fb6c:Chimney_Rock_Trail_Point_Reyes_December_2016_panorama_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2fcf8fd5:Rotary_Plow_2013_Spring_Road_Opening_38204348-1dd8-b71c-0716",
+        "positive": false,
+        "max_conf": 0.51162,
+        "alarm": true
+      },
+      {
+        "id": "benchR:376cf89d:Fog_over_the_forest_in_Tuntorp_-_bw",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:25383297:Daewoo_Nubira_II_fire_car_front",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a599b7aa:Cloud_of_emissions_from_passenger_ship_Midnatsol",
+        "positive": true,
+        "max_conf": 0.764086,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b6918ac5:Basin_Fire_2024_01",
+        "positive": true,
+        "max_conf": 0.584008,
+        "alarm": true
+      },
+      {
+        "id": "benchR:bbe901a8:House_chimney_with_smoke_-_This_photo_has_been_released_into",
+        "positive": true,
+        "max_conf": 0.103828,
+        "alarm": false
+      },
+      {
+        "id": "benchR:da3623ec:500px_photo_68194077_.jpeg",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2ba12cda:Clouds_over_the_Xe_Don_River_with_boats_at_sunset_in_Pakse_L",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2240e650:Border_Fire_Burned_Landscape",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5a610a8e:Jarrad_Seng_cropped_",
+        "positive": false,
+        "max_conf": 0.059222,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5ba42244:5_grams_of_cannabis_buds_and_green_lighter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:45e21afc:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_5484915",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:68e1878a:093_Wild_Mute_swan_at_Lake_Geneva_during_sunset_Photo_by_Gil",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e900d7cc:Sunset_at_Noronhas_beach",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:366cbcc9:Sunset_Kuta_Bali_Indonesia_20220825_1755_0879",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9322e7fd:Snow_in_the_Landscape_-_geograph.org.uk_-_1655896",
+        "positive": false,
+        "max_conf": 0.051453,
+        "alarm": false
+      },
+      {
+        "id": "benchR:318b7aee:MPR_T5_Construction_2025-08-27_002",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdb8c2e6:On_fire_3056183075_",
+        "positive": true,
+        "max_conf": 0.621751,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6bf5b999:Blackbird-sunset-03",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b0cf947b:130926-N-JO908-044_10155529675_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b1ebd37d:Burning_truck_bishkek_protests",
+        "positive": true,
+        "max_conf": 0.669965,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cc61175a:Fire_Show_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland",
+        "positive": true,
+        "max_conf": 0.539772,
+        "alarm": true
+      },
+      {
+        "id": "benchR:69b3c9b7:USFWS_Prescribed_Fire_Used_as_a_Tool_16786166092_",
+        "positive": true,
+        "max_conf": 0.735318,
+        "alarm": true
+      },
+      {
+        "id": "benchR:2a0c8ace:Castle_Ward_Interior_-_Basement_-_Kitchen_-_geograph.org.uk_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9ccac821:Firefighter_Ashton_Bay_March_2017",
+        "positive": true,
+        "max_conf": 0.407067,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7786303d:Cirrus_uncinus_clouds_in_the_morning_sky",
+        "positive": false,
+        "max_conf": 0.017392,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d51adf38:Blurry_33238647538_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ceb47502:NASA_Partners_Prepare_EXCITE_for_Antarctic_Flight_SVS15098_-",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3a3b6a85:Waterbeds_n_Stuff_Corporate_Office_Furniture_Warehouse_Inter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c07f0c44:Energy-Ladder-1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d635e565:Smoke_plume_-_geograph.org.uk_-_6725947",
+        "positive": true,
+        "max_conf": 0.162131,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f119f446:A_toppled_orange_traffic_cone_at_Huntington_station",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d58de863:Smoke_on_the_water_ESA388242",
+        "positive": false,
+        "max_conf": 0.029675,
+        "alarm": false
+      },
+      {
+        "id": "benchR:62d24f87:Black_smoke_emissions_from_a_vehicle_s_exhaust_are_a_key_con",
+        "positive": false,
+        "max_conf": 0.370916,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52c8e3c8:Ella_Valley_Sri_Lanka_Cloud_forest_in_the_mountains",
+        "positive": false,
+        "max_conf": 0.037877,
+        "alarm": false
+      },
+      {
+        "id": "benchR:96cc5175:Fire_Canyon_at_Valley_Of_Fire_in_NV_3",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bfb0abf0:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuri",
+        "positive": false,
+        "max_conf": 0.051584,
+        "alarm": false
+      },
+      {
+        "id": "benchR:49c4c41f:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:72b0ab3e:-TravelTuesday_with_My_Public_Lands_-_25198255249",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9f0cc033:Sir_Gerald_Bruce_Senior_Regional_Commissioner_for_the_Fire_S",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6d3558d5:Lactarius_indigo_48568_edit",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:afc3f262:Nepal_-_Sagamartha_Trek_-_023_500758629_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8a83a145:House_fire_with_smoke",
+        "positive": true,
+        "max_conf": 0.573042,
+        "alarm": true
+      },
+      {
+        "id": "benchR:78ed1019:Bad_Kissingen_Regentenbau_Foyer_0417RM0625_-HDR",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b7ee4a9b:Interior_of_a_warehouse_in_Riga",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:44f1124d:Fire-candle-flame-hearts_24029345460_",
+        "positive": true,
+        "max_conf": 0.797221,
+        "alarm": true
+      },
+      {
+        "id": "benchR:ec2b9160:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3b80c6c6:Smoke_plume_from_SoCal_wildfire_October_2007",
+        "positive": true,
+        "max_conf": 0.010854,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0067cb3d:The_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland_June_",
+        "positive": true,
+        "max_conf": 0.621474,
+        "alarm": true
+      },
+      {
+        "id": "benchR:f7deacf1:The_spectre_of_Death_in_the_form_of_a_large_skeleton_rises_w",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:595e576d:Apartment_Fire_High_Point_NC_Feb28_2022_Rear",
+        "positive": true,
+        "max_conf": 0.71883,
+        "alarm": true
+      },
+      {
+        "id": "benchR:70de601d:Carrollton_New_Orleans_Living_Room_-_Dana_Corner",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bd830320:Sunset_in_The_Trossachs_Scotland",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:61c85543:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.668833,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cff275e1:US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5c49cadc:Wildfire_Smoke_-_52959112245",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:87700ce8:House_Fire_in_Hickory_Mississippi",
+        "positive": true,
+        "max_conf": 0.510721,
+        "alarm": true
+      },
+      {
+        "id": "benchR:4e915524:Clouds_and_blue_sky_in_Russia._IMG_013",
+        "positive": false,
+        "max_conf": 0.023174,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e01de195:Firefighters_from_the_628th_Air_Base_Wing_conduct_a_live_fir",
+        "positive": true,
+        "max_conf": 0.909313,
+        "alarm": true
+      },
+      {
+        "id": "benchR:50769433:Smoke_from_the_2020_California_wildfires_tinting_the_sunset_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:54896665:Big_Dipper_over_Sandvik_-_in_headlights",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:220406d2:6060_smoke_plume_3767722804_",
+        "positive": true,
+        "max_conf": 0.617089,
+        "alarm": true
+      },
+      {
+        "id": "benchR:857c64ea:Burning_oil_fields",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f8ed95b7:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_7",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4f68ed78:Orange_Solar_Disk_Descending_Into_Forest_Fire_Smoke_-_503324",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52df8746:Steamed_Rice_How_to_07",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a1e8d709:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_no_s",
+        "positive": true,
+        "max_conf": 0.790998,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6807ad8b:1960s_or_1970s_Dutch_Poppell_butane_lighter_with_replaceable",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cc6c6c93:Coughton_Court_living_room_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:91578399:LOC_Precision_8564855807_",
+        "positive": true,
+        "max_conf": 0.549197,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3801cc9a:Consequences_of_a_meadow_fire_in_the_Deimanivskyi_Landscape_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c8683a25:Orange_Flowers_66803269_.jpeg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:85c5700f:Smoke_on_the_Chimney_because_of_Persephone",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:93d85311:Bideford_fire_station_vehicles_02",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35cc2a65:IKEA_Anderlecht_self-serve_warehouse_DSCF3734_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d8cea0fc:African_Fish_Drying_Process_2_",
+        "positive": false,
+        "max_conf": 0.215541,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f0004bbe:Interior_of_The_Warehouse_16_ceiling",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5a15932c:D_024854_new",
+        "positive": true,
+        "max_conf": 0.764161,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6cb5da62:Vehicle_on_fire_outside_the_Brisbane_Airport_Domestic_Termin",
+        "positive": true,
+        "max_conf": 0.740892,
+        "alarm": true
+      },
+      {
+        "id": "benchR:60c97e63:Ausgebrannte_Autowracks_F_rstenried_West_Munich_05",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4373b26a:Beech_forest_in_fog_Ehrenbach",
+        "positive": false,
+        "max_conf": 0.033677,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b1958682:Dwyer_s_Cafe_-_Neon_sign_-_Lafayette_Louisiana",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:85aa6153:Baufortschritt_Sana_Klinikum_Hof_20231015_HOF00784-HDR_RAW-E",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4581785e:NYC_Public_Library_Research_Room_Jan_2006-1-_3",
+        "positive": false,
+        "max_conf": 0.059773,
+        "alarm": false
+      },
+      {
+        "id": "benchR:86921f48:Nustar_Fire_smoke_plume_from_San_Francisco",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1aead1fc:Luton_Airport_Terminal_Car_Park_2_after_the_fire_-_geograph.",
+        "positive": false,
+        "max_conf": 0.027595,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a8fc85a1:Ca_da_de_rayo_en_tronco_provoca_incendio_forestal",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:97a36ee3:DFC_2474_Busy_night_scene_outside_a_brightly_lit_corner_rest",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:909d286f:Adams_Fire_Smoke_Plume_2024_04",
+        "positive": true,
+        "max_conf": 0.33451,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f37bf91d:Smoke_1166374_.jpeg",
+        "positive": true,
+        "max_conf": 0.377544,
+        "alarm": false
+      },
+      {
+        "id": "benchR:50f32cb5:Colorful_illuminated_facades_of_buildings_at_night_with_gree",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e219b9c2:Steam_cooker_working",
+        "positive": false,
+        "max_conf": 0.059113,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9c17650c:Candle_flame_closeup",
+        "positive": true,
+        "max_conf": 0.804282,
+        "alarm": true
+      },
+      {
+        "id": "benchR:43eaf05f:Visitors_at_the_2024_Easter_fire_in_Rottorf_2024_03_30",
+        "positive": true,
+        "max_conf": 0.577104,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d3fec4b9:Automobile_exhaust_gas",
+        "positive": true,
+        "max_conf": 0.499077,
+        "alarm": true
+      },
+      {
+        "id": "benchR:a54211c8:Fire_vehicle_at_the_CMP_Post_Office",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:33bcc1db:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_5",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:191e412d:Lightening_smoke_plume_at_July_21_2018_Cape_Town_train_fire",
+        "positive": true,
+        "max_conf": 0.818219,
+        "alarm": true
+      },
+      {
+        "id": "benchR:33023879:Den_Haag_-_Mauritshuis_-_David_Teniers_the_Younger_1610-1690",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3d91a34e:FEMA_-_4108_-_Photograph_by_Michael_Rieger_taken_on_09-21-20",
+        "positive": true,
+        "max_conf": 0.366439,
+        "alarm": true
+      },
+      {
+        "id": "benchR:19640c0a:-TravelTuesday_with_My_Public_Lands_-_25539666096",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:84b163f9:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.689744,
+        "alarm": true
+      },
+      {
+        "id": "benchR:83124ca5:Juan_Griego_Sunset",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cf1b8ba2:MPR_T5_Construction_2025-10-13_014",
+        "positive": false,
+        "max_conf": 0.055195,
+        "alarm": false
+      },
+      {
+        "id": "benchR:510d8795:Chandelier_1030220_",
+        "positive": false,
+        "max_conf": 0.712029,
+        "alarm": true
+      },
+      {
+        "id": "benchR:7e7e09f2:June_2026_Wildfire_Smoke_in_Salt_Lake",
+        "positive": false,
+        "max_conf": 0.010114,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e9618be0:Wildfire_Smoke_52958907984_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b35661f7:Ausgebrannte_Autowracks_F_rstenried_West_Munich_12",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d8546b88:Flying_squirrel_--_blurry_9642152296_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:57b5c0c2:-TravelTuesday_with_My_Public_Lands_-_25473070771",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3f4c5a1a:Corpus_Christi_College_Chapel_1_Cambridge_UK_-_Diliff",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c1a72a0f:A_blurry_thingy_from_space_-_panoramio",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dcedf938:Bolu_Keju_Kukus",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ffda5871:PikiWiki_Israel_32267_The_candle_monument_in_Ashdod",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b55ce6da:Louisiana_National_Guard_-_Wildfire_response_August_2023_05",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:eb0765cb:Big_dark_smoke_rising_from_fire_flames_in_forest",
+        "positive": true,
+        "max_conf": 0.664175,
+        "alarm": true
+      },
+      {
+        "id": "benchR:af23dd3f:Haze_from_Wildfire_smoke_Vancouver_2021_51378633336_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:84191316:Burned_down_house_in_Wolf_Point_Montana",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:486750cd:Candle_light_projected_through_a_glass_orb",
+        "positive": true,
+        "max_conf": 0.754041,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3c56f8ed:Jones_Farm_Fire_Station_at_night_bays_angle_-_Hillsboro_Oreg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6b580447:Incarcerated_firefighters_clear_a_fire_line",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a4a4eaef:Pompiers_ste-anne-de-beaupr_2012",
+        "positive": true,
+        "max_conf": 0.408111,
+        "alarm": true
+      },
+      {
+        "id": "benchR:63cacca7:Neon_sign_from_Midtowne_Spa_Los_Angeles_California_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4c70ae57:Chemical_Transformations_Involved_in_the_Generation_of_Third",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3e265fff:Windsong_fire",
+        "positive": true,
+        "max_conf": 0.066637,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ebc5b8d1:J_kuls_rl_n_myrkri_3172843656_",
+        "positive": false,
+        "max_conf": 0.010842,
+        "alarm": false
+      },
+      {
+        "id": "benchR:626d46a2:Mid-City_New_Orleans_living_room_May_2018",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dcf07ab6:DSCF1058_Nighttime_long-exposure_captures_streaking_headligh",
+        "positive": false,
+        "max_conf": 0.030088,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d93f2bd2:Hope_Valley_fire_brigade_vehicle_near_Henderson_Cliffs_looko",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7d6ea3b8:Interior_of_converted_warehouse_-_geograph.org.uk_-_7186753",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:eef16fac:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.678314,
+        "alarm": true
+      },
+      {
+        "id": "benchR:a19a74de:2012-03-26_Nordlandfahrt_TRANSTIMBER_Auslaufen_Port_of_Oulu_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b3d8a28a:Headlight.._15231656888_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f1432851:Northern_Cyprus_fire_vehicle_Chevrolet_Suburban",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fb4b2d0d:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a2e71c3d:Interior_of_living_room_01",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:64b297d6:Spacious_Living_Room_Interior_Design_in_Kolkata_by_Estate_Lo",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:19b35195:Wildfire_track",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:23972fcf:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_5484890",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7e6d0a38:MPR_T5_Construction_2025-10-13_015",
+        "positive": false,
+        "max_conf": 0.088234,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e9a6181e:Blurry_photo",
+        "positive": false,
+        "max_conf": 0.037099,
+        "alarm": false
+      },
+      {
+        "id": "benchR:335898eb:Blue_stormy_clouds_at_sunset_with_water_reflection_and_a_pir",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:468b1cba:Coffee_Pot_fire_in_Sequoia_NP_01",
+        "positive": false,
+        "max_conf": 0.210006,
+        "alarm": false
+      },
+      {
+        "id": "benchR:edbe3d30:Centre_Of_Attention_-_Flickr_-_ARG_Flickr",
+        "positive": true,
+        "max_conf": 0.21627,
+        "alarm": false
+      },
+      {
+        "id": "benchR:07f20886:DSC_9020_A_motorbike_rider_in_an_orange_safety_vest_relaxes_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4caa35d2:039_Northern_lights_over_M_vatn_Iceland_Photo_by_Giles_Laure",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:25ea1ca0:Multiple_Canadian_Wildfires_Produce_Thick_Smoke_CIRA_2026-07",
+        "positive": false,
+        "max_conf": 0.03432,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35416653:Wildfire_Smoke",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35b2a1f3:Four_men_at_night",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:81e272e0:Candle_wick_and_flame_closeup",
+        "positive": true,
+        "max_conf": 0.119273,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a0c43edc:Robert_Street_Living_Room_New_Orleans_Feb_2008",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4fbd8f34:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.533281,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6eb71bd8:MGM_Grand_Detroit_Hotel_Living_Room_Christmas",
+        "positive": false,
+        "max_conf": 0.247805,
+        "alarm": false
+      },
+      {
+        "id": "benchR:89afab9c:Firefighters_of_the_Paris_Fire_Brigade_Montrouge_July_2026_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f18833ab:Golden_Nugget_sign_at_the_Neon_Boneyard_-_Jesse_James",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:971ed4e2:M_nster_Schlossplatz_Fr_hjahrssend_--_2019_--_4208",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7df36099:The_colour_lit_candles",
+        "positive": false,
+        "max_conf": 0.0538,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2e5be1d2:Bles_Landscape_with_Sodom_on_fire",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cba1fa07:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuri",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:69bc571e:Park_Fire_Burn_Scar_MODIS_2024-08-02_",
+        "positive": false,
+        "max_conf": 0.030434,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b4e25203:002_Wild_Alpine_Ibex_Swiss_Alps_and_Creux_du_Van_Photo_by_Gi",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35cd577c:Cloud_Forest_I_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8046408a:Wang_Fuk_Court_fire_2025_night_view_am370_",
+        "positive": true,
+        "max_conf": 0.215806,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d85f8876:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:64080c02:The_Verrazano-Narrows_bridge_barely_visible_through_heavy_wi",
+        "positive": false,
+        "max_conf": 0.076031,
+        "alarm": false
+      },
+      {
+        "id": "benchR:88deedb6:Partial_solar_eclipse_with_some_clouds_in_Tuntorp_43",
+        "positive": false,
+        "max_conf": 0.823523,
+        "alarm": true
+      },
+      {
+        "id": "benchR:c5192b05:Red_neon_coin_sign_Unsplash_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8747fe78:Blurry_eye_chart",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3049d2a3:The_Denali-Susitna_Exploration_Camp_is_a_chance_for_youth_li",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:57905af8:Museo_de_la_Catedral_de_Quito_Quito_Ecuador_2015-07-22_DD_94",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:505d487b:House_chimney_with_dark_smoke_pollution_-_This_photo_has_bee",
+        "positive": true,
+        "max_conf": 0.799067,
+        "alarm": true
+      },
+      {
+        "id": "benchR:432c72f1:Park_Fire_smoke_plume_at_sunset",
+        "positive": true,
+        "max_conf": 0.396095,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dfae4dc7:River_Road_East_Fire-_Smoke_Column_53796692377_",
+        "positive": true,
+        "max_conf": 0.744999,
+        "alarm": true
+      },
+      {
+        "id": "benchR:172482c5:GrayGradientFilterEffect",
+        "positive": false,
+        "max_conf": 0.022689,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8d6974a7:Cloud_forest_canopy_in_hakgala_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c83dfae7:P_ij_nne_and_p_ij_tsalo",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:14d1bab9:Ausgebrannte_Autowracks_F_rstenried_West_Munich_08",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdec1b07:Smoke_plume_from_the_Gifford_Fire_on_August_7_2025",
+        "positive": true,
+        "max_conf": 0.330068,
+        "alarm": false
+      },
+      {
+        "id": "benchR:144d16e4:Honeymoon_Bay_Sunset_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f285199d:Poor_Air_Quality_Plagues_Midwest_as_Thick_Wildfire_Smoke_Div",
+        "positive": false,
+        "max_conf": 0.176386,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e37994ff:Bay_of_Fires_Tasmania_landscape_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0ee71f12:20181208_Mitsubishi_F-15J_takeoff_Naha_Air_Show_2018-4",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e5a1d2be:The_smoke_goes_up_the_chimney_just_the_same_NYPL_Hades-19432",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c02c0987:Catedral_Presbiteriana_do_Rio_de_Janeiro",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9d65fc16:Forest_Fire_Smoke_22663469594_",
+        "positive": false,
+        "max_conf": 0.015365,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3e27821b:Blasting_of_a_chimney_at_the_former_Henninger_Brewery_in_Fra",
+        "positive": false,
+        "max_conf": 0.304256,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cdb2f776:Teatro_Eslava_neon_sign_September_2022",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e14ff194:-TravelTuesday_with_My_Public_Lands_23823349114_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5f88a5aa:Liat_Portal_for_Foodie_Disorder_-_Lamb_chops_cooking_with_pi",
+        "positive": true,
+        "max_conf": 0.022534,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9b468cdf:Auto_fire_Vallejo_1",
+        "positive": true,
+        "max_conf": 0.862976,
+        "alarm": true
+      },
+      {
+        "id": "benchR:70fa8e32:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fba3bb92:Night-time_road_resurfacing_operation_during_Chatham_Waterfr",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5636211c:Cooking_red_beans_in_the_steam-jacketed_kombi_kettle",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fe5ad328:DFC_5876_A_weathered_military_loudspeaker_mounted_on_equipme",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ad23eb98:John_Morris_s_steam_vessel_for_cooking_-_DPLA_-_50b4231bafd1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:db8b39c2:Chimney_smoke_rising_over_the_village_of_Deiniolen_at_a_Febr",
+        "positive": false,
+        "max_conf": 0.024167,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5fe176ff:Daylily_Hemerocallis_fulva_v2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7731cc37:Orange_daylily_Hemerocallis_fulva_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:16d2c442:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bfb045d6:East_Attica_Wildfire_Greece_MODIS_2024-08-15_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d68c7e29:A_group_of_Cal_Fire_wildland_firefighters_at_the_western_fla",
+        "positive": true,
+        "max_conf": 0.732122,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d0ac1535:Ausgebrannte_Autowracks_F_rstenried_West_Munich_14",
+        "positive": false,
+        "max_conf": 0.034363,
+        "alarm": false
+      },
+      {
+        "id": "benchR:88fd274c:After_the_Snow_Landscape_Circleville_UT",
+        "positive": false,
+        "max_conf": 0.032993,
+        "alarm": false
+      },
+      {
+        "id": "benchR:29e726a7:Welding_Sparks_3843951412_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f5e3c977:An_orange_flower_in_Amsterdam",
+        "positive": false,
+        "max_conf": 0.137645,
+        "alarm": false
+      },
+      {
+        "id": "benchR:94d0c27a:-TravelTuesday_with_My_Public_Lands_-_25473082031",
+        "positive": false,
+        "max_conf": 0.01891,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52c59d25:Lahori_Charga_during_steam_cooking",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:93cfc753:02026_0100_Easter_Sunday_at_a_traditional_wooden_P_czkarnia_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1fd70ac9:Brandschaden_Fahrzeugbrand_Drygalski-Allee_Munich_06",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f4be7c72:Edmonton_neon_sign_museum_east",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8c8b5328:Fog_in_forest_and_creek_at_Kent_Washington",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6d2057b5:Candle_-_Vela_-_01",
+        "positive": true,
+        "max_conf": 0.86588,
+        "alarm": true
+      },
+      {
+        "id": "benchR:736a8f16:Europa_Clipper_s_Dust_Analyzer_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8dcb64b4:Black_Forest_fire_near_8pm_Tuesday",
+        "positive": true,
+        "max_conf": 0.718059,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b8d598d5:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6b9ea74b:A_Pair_of_Candle_Flames_1793613381_",
+        "positive": true,
+        "max_conf": 0.848786,
+        "alarm": true
+      },
+      {
+        "id": "benchR:9770f245:Balhennie_s_ghostly_chimney_smoke_A_wispy_contrail_adds_to_t",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1b9e3af8:Neon_sunset_sign_hanging_over_a_river_in_Katowice",
+        "positive": false,
+        "max_conf": 0.010334,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2d86c91a:Sparks_110718-N-LL945-105",
+        "positive": true,
+        "max_conf": 0.019568,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdd7e40d:Snow_and_fog_in_Jinlanshan_National_Forest_Park",
+        "positive": false,
+        "max_conf": 0.091816,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4244a7c4:-TravelTuesday_with_My_Public_Lands_-_25565805255",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:49df0403:Fog_in_forest_at_Kent_Washington_-_2",
+        "positive": false,
+        "max_conf": 0.014396,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c5863b1d:Interior_of_the_Hsinchu_City_Art_Site_of_Railway_Warehouse_0",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:98158aac:Dredge_ship_Obskaya-103",
+        "positive": true,
+        "max_conf": 0.704588,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3c8e4d60:MPR_T5_Construction_2025-08-27_003",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0ff14561:Toronto_wildfire_smoke_July_15_2026_18599_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fcab22f0:Rescue_workers_near_the_semi-collapsed_ten-story_Uranus_Buil",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2ed010ba:_Barcelona_Dining_Room_by_Pere_Torn_Esquius_-_Museu_Nacional",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:69934efc:MPR_T5_Construction_2025-08-26_048",
+        "positive": false,
+        "max_conf": 0.655183,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d2c2d5a8:US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_C",
+        "positive": true,
+        "max_conf": 0.183779,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d64950bd:PMG-1_fire_engine",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9a4b95ef:Exhaust_emissions_1",
+        "positive": false,
+        "max_conf": 0.080221,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d861be2f:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_prop",
+        "positive": true,
+        "max_conf": 0.803213,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cf409c96:Clouds_and_blue_sky_in_Russia._IMG_026",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:af18a0ae:Grinding_the_sparks",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d2c73eb0:Orange_flowers_2014",
+        "positive": false,
+        "max_conf": 0.025714,
+        "alarm": false
+      },
+      {
+        "id": "benchR:128fa628:Bles_Landscape_with_Sodom_on_fire_detail_",
+        "positive": false,
+        "max_conf": 0.091183,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a507145b:Interior_Albert_D._German_Warehouse_Church_Street_and_Haselt",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:070fbdb0:Ocean_Floor_V_33712023355_",
+        "positive": false,
+        "max_conf": 0.023411,
+        "alarm": false
+      },
+      {
+        "id": "benchR:41d41839:Lighter_-_Flickr_-_pyntofmyld",
+        "positive": true,
+        "max_conf": 0.775462,
+        "alarm": true
+      },
+      {
+        "id": "benchR:89085d38:WildfireKolm_rden2020",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:336056aa:Rwenzori_tropical_montane_forest",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdbc3c64:MPR_T5_Construction_2025-08-27_007",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:605606b0:Speeding_on_the_Expressway_Unsplash_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0c6363b0:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070734",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0fe4fd9f:Firefighters_2020_El_Dorado_Fire_Sep10",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d3faac95:MAN_TGM_fire_engine_at_night_Warsaw_Poland",
+        "positive": false,
+        "max_conf": 0.112729,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cf26172b:Li_Phi_falls_at_sunrise_with_white_and_grey_clouds_in_Don_Kh",
+        "positive": false,
+        "max_conf": 0.048212,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ce34f58e:Soothing_Lights_199918569_.jpeg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:317ce385:Orange_flowers_1359256859_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:87390897:MPR_T5_Construction_2025-08-27_004",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:020caf6b:Wildfire_in_Whitireia_Park_Porirua_New_Zealand_in_2010",
+        "positive": true,
+        "max_conf": 0.76359,
+        "alarm": true
+      },
+      {
+        "id": "benchR:8d1fbfd1:Clouds_and_blue_sky_in_Russia._IMG_115",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:73181771:Sunset_in_Thick_Smoke_Reno_Nevada_50425355538_",
+        "positive": false,
+        "max_conf": 0.546494,
+        "alarm": true
+      }
+    ]
+  },
+  "FT25": {
+    "thresholds": {
+      "fire": 0.31,
+      "smoke": 0.57
+    },
+    "rows": [
+      {
+        "id": "benchR:5601eeff:2010s_Jeep_Patriot_Fire_Prevention_vehicle_of_Jersey_City_Fi",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1d7c1475:Candle_flame_-_Macro_photography",
+        "positive": true,
+        "max_conf": 0.454689,
+        "alarm": true
+      },
+      {
+        "id": "benchR:22d22d22:The_burning_of_Columbia_South_Carolina_February_17_1865",
+        "positive": true,
+        "max_conf": 0.039295,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3b9f0513:Los_Lomadas_orange_flowers_against_sea_Faro_de_Punta_Cumplid",
+        "positive": false,
+        "max_conf": 0.012417,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0e5e3fc9:Red_candle_flame",
+        "positive": true,
+        "max_conf": 0.91184,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b7af6c4e:Escalier_monumental_Neue_Burg_Vienne",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8add5839:Thick_black_smoke_over_Sydney_and_NSW_due_to_bushfires_Decem",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7e93e3cf:Smoke_from_the_Bear_Fire_along_Highway_70_southbound_outside",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6e949ed6:California_Lighthouse_x_Star_filled_sky",
+        "positive": false,
+        "max_conf": 0.340231,
+        "alarm": true
+      },
+      {
+        "id": "benchR:ece13c6a:Clouds_and_blue_sky_in_Russia._IMG_109",
+        "positive": false,
+        "max_conf": 0.023847,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b4467718:Parkhotel_Schoenbrunn_Ballsaal_DSC_5115w",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:be739801:Playboy_lighter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:13f03bb2:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4a2ac876:Balloon_Street_Manchester_An_Interior_View_of_the_Drapery_Wa",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e181a008:23_0066309_Convair_Negative_Image_-_Warehouse_interior_54157",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:56f18cda:McEwen_fire_-_Car_sheds_on_fire_LCCN2012646418",
+        "positive": true,
+        "max_conf": 0.862797,
+        "alarm": true
+      },
+      {
+        "id": "benchR:22026cb1:Hortus_Haren._Bloemenzuil_02",
+        "positive": false,
+        "max_conf": 0.119791,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f04a0a22:Structure_Fire_in_Union_Mississippi_03",
+        "positive": true,
+        "max_conf": 0.115252,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3cd5c8ff:Sparks_will_fly_130117-F-RB551-110",
+        "positive": true,
+        "max_conf": 0.056841,
+        "alarm": false
+      },
+      {
+        "id": "benchR:71793825:Orange_flowers_052708",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:63d7bd8d:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a45cac15:A_large_fire_in_tropical_forest_trees_in_the_fire",
+        "positive": true,
+        "max_conf": 0.860077,
+        "alarm": true
+      },
+      {
+        "id": "benchR:dc23fd93:Forest_Fire_Junga",
+        "positive": true,
+        "max_conf": 0.426164,
+        "alarm": true
+      },
+      {
+        "id": "benchR:732d0710:Cobham_Drive_Hillcrest_Hamilton_Traffic_Light_Construction_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e7d5dae7:Vintage_Bakelite_Cigarette_Lighter_Not_Marked_15021365061_",
+        "positive": false,
+        "max_conf": 0.01042,
+        "alarm": false
+      },
+      {
+        "id": "benchR:929ee382:Making_sparks_for_parts_8625882_",
+        "positive": false,
+        "max_conf": 0.029535,
+        "alarm": false
+      },
+      {
+        "id": "benchR:da69a31a:ConchasFire_flame_smoke_across_upper_Frijoles_IMG_0740_cda",
+        "positive": true,
+        "max_conf": 0.392299,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6fe77d9f:Santa_Catalina_mountains_1",
+        "positive": false,
+        "max_conf": 0.048539,
+        "alarm": false
+      },
+      {
+        "id": "benchR:02b750ea:Circa_1990_Orflam_Plast_SA_camouflage_patterned_gas_lighter_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c1de0bfd:Candle_lit_parvise_during_lent",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6360c41e:Dark_light_from_thick_smoke_BW-1_26701815270_",
+        "positive": false,
+        "max_conf": 0.010395,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c9bd09d4:Brand_Rh_nsprudel_2",
+        "positive": true,
+        "max_conf": 0.772518,
+        "alarm": true
+      },
+      {
+        "id": "benchR:5e52a5fd:Wildfire_smoke_in_Saskatoon",
+        "positive": false,
+        "max_conf": 0.011473,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f2694070:Steam_cooker",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:38dda85f:Candle_flame_in_concave_mirror_with_interference_rings",
+        "positive": true,
+        "max_conf": 0.826009,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3981eacf:BrockenSnowedTreesInSun",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ab64feeb:Ausgebrannte_Autowracks_F_rstenried_West_Munich_04",
+        "positive": false,
+        "max_conf": 0.119477,
+        "alarm": false
+      },
+      {
+        "id": "benchR:68ca6106:Smoke_from_California_wildfires_MODIS_2017-12-12_",
+        "positive": false,
+        "max_conf": 0.075768,
+        "alarm": false
+      },
+      {
+        "id": "benchR:afbc7b84:Karst_peaks_and_green_paddy_fields_under_a_stormy_sky_South_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:662224d9:Blurry_Boss_3577755487_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e8ce2e73:July_21_2018_train_fire_from_Cape_Town_station_upper_deck",
+        "positive": true,
+        "max_conf": 0.771234,
+        "alarm": true
+      },
+      {
+        "id": "benchR:dd49b1df:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_6",
+        "positive": false,
+        "max_conf": 0.046211,
+        "alarm": false
+      },
+      {
+        "id": "benchR:91de037f:Blurry_buses",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:20272b3d:Smoke_from_Dava_Wildfire",
+        "positive": true,
+        "max_conf": 0.075497,
+        "alarm": false
+      },
+      {
+        "id": "benchR:624d6dee:_jpest_Market_07",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7251fb6c:Chimney_Rock_Trail_Point_Reyes_December_2016_panorama_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2fcf8fd5:Rotary_Plow_2013_Spring_Road_Opening_38204348-1dd8-b71c-0716",
+        "positive": false,
+        "max_conf": 0.342913,
+        "alarm": false
+      },
+      {
+        "id": "benchR:376cf89d:Fog_over_the_forest_in_Tuntorp_-_bw",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:25383297:Daewoo_Nubira_II_fire_car_front",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a599b7aa:Cloud_of_emissions_from_passenger_ship_Midnatsol",
+        "positive": true,
+        "max_conf": 0.853051,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b6918ac5:Basin_Fire_2024_01",
+        "positive": true,
+        "max_conf": 0.617771,
+        "alarm": true
+      },
+      {
+        "id": "benchR:bbe901a8:House_chimney_with_smoke_-_This_photo_has_been_released_into",
+        "positive": true,
+        "max_conf": 0.082333,
+        "alarm": false
+      },
+      {
+        "id": "benchR:da3623ec:500px_photo_68194077_.jpeg",
+        "positive": true,
+        "max_conf": 0.017363,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2ba12cda:Clouds_over_the_Xe_Don_River_with_boats_at_sunset_in_Pakse_L",
+        "positive": false,
+        "max_conf": 0.022087,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2240e650:Border_Fire_Burned_Landscape",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5a610a8e:Jarrad_Seng_cropped_",
+        "positive": false,
+        "max_conf": 0.332365,
+        "alarm": true
+      },
+      {
+        "id": "benchR:5ba42244:5_grams_of_cannabis_buds_and_green_lighter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:45e21afc:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_5484915",
+        "positive": false,
+        "max_conf": 0.020442,
+        "alarm": false
+      },
+      {
+        "id": "benchR:68e1878a:093_Wild_Mute_swan_at_Lake_Geneva_during_sunset_Photo_by_Gil",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e900d7cc:Sunset_at_Noronhas_beach",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:366cbcc9:Sunset_Kuta_Bali_Indonesia_20220825_1755_0879",
+        "positive": false,
+        "max_conf": 0.156986,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9322e7fd:Snow_in_the_Landscape_-_geograph.org.uk_-_1655896",
+        "positive": false,
+        "max_conf": 0.258148,
+        "alarm": false
+      },
+      {
+        "id": "benchR:318b7aee:MPR_T5_Construction_2025-08-27_002",
+        "positive": false,
+        "max_conf": 0.062557,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdb8c2e6:On_fire_3056183075_",
+        "positive": true,
+        "max_conf": 0.437041,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6bf5b999:Blackbird-sunset-03",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b0cf947b:130926-N-JO908-044_10155529675_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b1ebd37d:Burning_truck_bishkek_protests",
+        "positive": true,
+        "max_conf": 0.664299,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cc61175a:Fire_Show_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland",
+        "positive": true,
+        "max_conf": 0.535151,
+        "alarm": true
+      },
+      {
+        "id": "benchR:69b3c9b7:USFWS_Prescribed_Fire_Used_as_a_Tool_16786166092_",
+        "positive": true,
+        "max_conf": 0.695443,
+        "alarm": true
+      },
+      {
+        "id": "benchR:2a0c8ace:Castle_Ward_Interior_-_Basement_-_Kitchen_-_geograph.org.uk_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9ccac821:Firefighter_Ashton_Bay_March_2017",
+        "positive": true,
+        "max_conf": 0.337443,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7786303d:Cirrus_uncinus_clouds_in_the_morning_sky",
+        "positive": false,
+        "max_conf": 0.07598,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d51adf38:Blurry_33238647538_",
+        "positive": false,
+        "max_conf": 0.026226,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ceb47502:NASA_Partners_Prepare_EXCITE_for_Antarctic_Flight_SVS15098_-",
+        "positive": false,
+        "max_conf": 0.022677,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3a3b6a85:Waterbeds_n_Stuff_Corporate_Office_Furniture_Warehouse_Inter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c07f0c44:Energy-Ladder-1",
+        "positive": false,
+        "max_conf": 0.01517,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d635e565:Smoke_plume_-_geograph.org.uk_-_6725947",
+        "positive": true,
+        "max_conf": 0.162013,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f119f446:A_toppled_orange_traffic_cone_at_Huntington_station",
+        "positive": false,
+        "max_conf": 0.01161,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d58de863:Smoke_on_the_water_ESA388242",
+        "positive": false,
+        "max_conf": 0.011239,
+        "alarm": false
+      },
+      {
+        "id": "benchR:62d24f87:Black_smoke_emissions_from_a_vehicle_s_exhaust_are_a_key_con",
+        "positive": false,
+        "max_conf": 0.040272,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52c8e3c8:Ella_Valley_Sri_Lanka_Cloud_forest_in_the_mountains",
+        "positive": false,
+        "max_conf": 0.094549,
+        "alarm": false
+      },
+      {
+        "id": "benchR:96cc5175:Fire_Canyon_at_Valley_Of_Fire_in_NV_3",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bfb0abf0:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuri",
+        "positive": false,
+        "max_conf": 0.10646,
+        "alarm": false
+      },
+      {
+        "id": "benchR:49c4c41f:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:72b0ab3e:-TravelTuesday_with_My_Public_Lands_-_25198255249",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9f0cc033:Sir_Gerald_Bruce_Senior_Regional_Commissioner_for_the_Fire_S",
+        "positive": false,
+        "max_conf": 0.029423,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6d3558d5:Lactarius_indigo_48568_edit",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:afc3f262:Nepal_-_Sagamartha_Trek_-_023_500758629_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8a83a145:House_fire_with_smoke",
+        "positive": true,
+        "max_conf": 0.65651,
+        "alarm": true
+      },
+      {
+        "id": "benchR:78ed1019:Bad_Kissingen_Regentenbau_Foyer_0417RM0625_-HDR",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b7ee4a9b:Interior_of_a_warehouse_in_Riga",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:44f1124d:Fire-candle-flame-hearts_24029345460_",
+        "positive": true,
+        "max_conf": 0.830534,
+        "alarm": true
+      },
+      {
+        "id": "benchR:ec2b9160:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3b80c6c6:Smoke_plume_from_SoCal_wildfire_October_2007",
+        "positive": true,
+        "max_conf": 0.081562,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0067cb3d:The_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland_June_",
+        "positive": true,
+        "max_conf": 0.548211,
+        "alarm": true
+      },
+      {
+        "id": "benchR:f7deacf1:The_spectre_of_Death_in_the_form_of_a_large_skeleton_rises_w",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:595e576d:Apartment_Fire_High_Point_NC_Feb28_2022_Rear",
+        "positive": true,
+        "max_conf": 0.65796,
+        "alarm": true
+      },
+      {
+        "id": "benchR:70de601d:Carrollton_New_Orleans_Living_Room_-_Dana_Corner",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bd830320:Sunset_in_The_Trossachs_Scotland",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:61c85543:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.605087,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cff275e1:US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd",
+        "positive": true,
+        "max_conf": 0.051106,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5c49cadc:Wildfire_Smoke_-_52959112245",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:87700ce8:House_Fire_in_Hickory_Mississippi",
+        "positive": true,
+        "max_conf": 0.137785,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4e915524:Clouds_and_blue_sky_in_Russia._IMG_013",
+        "positive": false,
+        "max_conf": 0.051806,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e01de195:Firefighters_from_the_628th_Air_Base_Wing_conduct_a_live_fir",
+        "positive": true,
+        "max_conf": 0.92127,
+        "alarm": true
+      },
+      {
+        "id": "benchR:50769433:Smoke_from_the_2020_California_wildfires_tinting_the_sunset_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:54896665:Big_Dipper_over_Sandvik_-_in_headlights",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:220406d2:6060_smoke_plume_3767722804_",
+        "positive": true,
+        "max_conf": 0.455568,
+        "alarm": false
+      },
+      {
+        "id": "benchR:857c64ea:Burning_oil_fields",
+        "positive": true,
+        "max_conf": 0.097932,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f8ed95b7:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_7",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4f68ed78:Orange_Solar_Disk_Descending_Into_Forest_Fire_Smoke_-_503324",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52df8746:Steamed_Rice_How_to_07",
+        "positive": true,
+        "max_conf": 0.013899,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a1e8d709:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_no_s",
+        "positive": true,
+        "max_conf": 0.723877,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6807ad8b:1960s_or_1970s_Dutch_Poppell_butane_lighter_with_replaceable",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cc6c6c93:Coughton_Court_living_room_2",
+        "positive": false,
+        "max_conf": 0.010979,
+        "alarm": false
+      },
+      {
+        "id": "benchR:91578399:LOC_Precision_8564855807_",
+        "positive": true,
+        "max_conf": 0.315376,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3801cc9a:Consequences_of_a_meadow_fire_in_the_Deimanivskyi_Landscape_",
+        "positive": false,
+        "max_conf": 0.01492,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c8683a25:Orange_Flowers_66803269_.jpeg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:85c5700f:Smoke_on_the_Chimney_because_of_Persephone",
+        "positive": false,
+        "max_conf": 0.014262,
+        "alarm": false
+      },
+      {
+        "id": "benchR:93d85311:Bideford_fire_station_vehicles_02",
+        "positive": false,
+        "max_conf": 0.013588,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35cc2a65:IKEA_Anderlecht_self-serve_warehouse_DSCF3734_",
+        "positive": false,
+        "max_conf": 0.033032,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d8cea0fc:African_Fish_Drying_Process_2_",
+        "positive": false,
+        "max_conf": 0.092176,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f0004bbe:Interior_of_The_Warehouse_16_ceiling",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5a15932c:D_024854_new",
+        "positive": true,
+        "max_conf": 0.717013,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6cb5da62:Vehicle_on_fire_outside_the_Brisbane_Airport_Domestic_Termin",
+        "positive": true,
+        "max_conf": 0.69999,
+        "alarm": true
+      },
+      {
+        "id": "benchR:60c97e63:Ausgebrannte_Autowracks_F_rstenried_West_Munich_05",
+        "positive": false,
+        "max_conf": 0.011346,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4373b26a:Beech_forest_in_fog_Ehrenbach",
+        "positive": false,
+        "max_conf": 0.02416,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b1958682:Dwyer_s_Cafe_-_Neon_sign_-_Lafayette_Louisiana",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:85aa6153:Baufortschritt_Sana_Klinikum_Hof_20231015_HOF00784-HDR_RAW-E",
+        "positive": false,
+        "max_conf": 0.014232,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4581785e:NYC_Public_Library_Research_Room_Jan_2006-1-_3",
+        "positive": false,
+        "max_conf": 0.027955,
+        "alarm": false
+      },
+      {
+        "id": "benchR:86921f48:Nustar_Fire_smoke_plume_from_San_Francisco",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1aead1fc:Luton_Airport_Terminal_Car_Park_2_after_the_fire_-_geograph.",
+        "positive": false,
+        "max_conf": 0.012818,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a8fc85a1:Ca_da_de_rayo_en_tronco_provoca_incendio_forestal",
+        "positive": true,
+        "max_conf": 0.118417,
+        "alarm": false
+      },
+      {
+        "id": "benchR:97a36ee3:DFC_2474_Busy_night_scene_outside_a_brightly_lit_corner_rest",
+        "positive": false,
+        "max_conf": 0.048399,
+        "alarm": false
+      },
+      {
+        "id": "benchR:909d286f:Adams_Fire_Smoke_Plume_2024_04",
+        "positive": true,
+        "max_conf": 0.035511,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f37bf91d:Smoke_1166374_.jpeg",
+        "positive": true,
+        "max_conf": 0.631627,
+        "alarm": true
+      },
+      {
+        "id": "benchR:50f32cb5:Colorful_illuminated_facades_of_buildings_at_night_with_gree",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e219b9c2:Steam_cooker_working",
+        "positive": false,
+        "max_conf": 0.402495,
+        "alarm": true
+      },
+      {
+        "id": "benchR:9c17650c:Candle_flame_closeup",
+        "positive": true,
+        "max_conf": 0.767433,
+        "alarm": true
+      },
+      {
+        "id": "benchR:43eaf05f:Visitors_at_the_2024_Easter_fire_in_Rottorf_2024_03_30",
+        "positive": true,
+        "max_conf": 0.298794,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d3fec4b9:Automobile_exhaust_gas",
+        "positive": true,
+        "max_conf": 0.149936,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a54211c8:Fire_vehicle_at_the_CMP_Post_Office",
+        "positive": false,
+        "max_conf": 0.015873,
+        "alarm": false
+      },
+      {
+        "id": "benchR:33bcc1db:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_5",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:191e412d:Lightening_smoke_plume_at_July_21_2018_Cape_Town_train_fire",
+        "positive": true,
+        "max_conf": 0.821351,
+        "alarm": true
+      },
+      {
+        "id": "benchR:33023879:Den_Haag_-_Mauritshuis_-_David_Teniers_the_Younger_1610-1690",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3d91a34e:FEMA_-_4108_-_Photograph_by_Michael_Rieger_taken_on_09-21-20",
+        "positive": true,
+        "max_conf": 0.076788,
+        "alarm": false
+      },
+      {
+        "id": "benchR:19640c0a:-TravelTuesday_with_My_Public_Lands_-_25539666096",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:84b163f9:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.669237,
+        "alarm": true
+      },
+      {
+        "id": "benchR:83124ca5:Juan_Griego_Sunset",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cf1b8ba2:MPR_T5_Construction_2025-10-13_014",
+        "positive": false,
+        "max_conf": 0.051207,
+        "alarm": false
+      },
+      {
+        "id": "benchR:510d8795:Chandelier_1030220_",
+        "positive": false,
+        "max_conf": 0.839176,
+        "alarm": true
+      },
+      {
+        "id": "benchR:7e7e09f2:June_2026_Wildfire_Smoke_in_Salt_Lake",
+        "positive": false,
+        "max_conf": 0.070929,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e9618be0:Wildfire_Smoke_52958907984_",
+        "positive": false,
+        "max_conf": 0.118654,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b35661f7:Ausgebrannte_Autowracks_F_rstenried_West_Munich_12",
+        "positive": false,
+        "max_conf": 0.055507,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d8546b88:Flying_squirrel_--_blurry_9642152296_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:57b5c0c2:-TravelTuesday_with_My_Public_Lands_-_25473070771",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3f4c5a1a:Corpus_Christi_College_Chapel_1_Cambridge_UK_-_Diliff",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c1a72a0f:A_blurry_thingy_from_space_-_panoramio",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dcedf938:Bolu_Keju_Kukus",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ffda5871:PikiWiki_Israel_32267_The_candle_monument_in_Ashdod",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b55ce6da:Louisiana_National_Guard_-_Wildfire_response_August_2023_05",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:eb0765cb:Big_dark_smoke_rising_from_fire_flames_in_forest",
+        "positive": true,
+        "max_conf": 0.5092,
+        "alarm": true
+      },
+      {
+        "id": "benchR:af23dd3f:Haze_from_Wildfire_smoke_Vancouver_2021_51378633336_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:84191316:Burned_down_house_in_Wolf_Point_Montana",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:486750cd:Candle_light_projected_through_a_glass_orb",
+        "positive": true,
+        "max_conf": 0.817788,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3c56f8ed:Jones_Farm_Fire_Station_at_night_bays_angle_-_Hillsboro_Oreg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6b580447:Incarcerated_firefighters_clear_a_fire_line",
+        "positive": false,
+        "max_conf": 0.016831,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a4a4eaef:Pompiers_ste-anne-de-beaupr_2012",
+        "positive": true,
+        "max_conf": 0.406877,
+        "alarm": true
+      },
+      {
+        "id": "benchR:63cacca7:Neon_sign_from_Midtowne_Spa_Los_Angeles_California_",
+        "positive": false,
+        "max_conf": 0.010384,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4c70ae57:Chemical_Transformations_Involved_in_the_Generation_of_Third",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3e265fff:Windsong_fire",
+        "positive": true,
+        "max_conf": 0.023083,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ebc5b8d1:J_kuls_rl_n_myrkri_3172843656_",
+        "positive": false,
+        "max_conf": 0.026373,
+        "alarm": false
+      },
+      {
+        "id": "benchR:626d46a2:Mid-City_New_Orleans_living_room_May_2018",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dcf07ab6:DSCF1058_Nighttime_long-exposure_captures_streaking_headligh",
+        "positive": false,
+        "max_conf": 0.307129,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d93f2bd2:Hope_Valley_fire_brigade_vehicle_near_Henderson_Cliffs_looko",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7d6ea3b8:Interior_of_converted_warehouse_-_geograph.org.uk_-_7186753",
+        "positive": false,
+        "max_conf": 0.04094,
+        "alarm": false
+      },
+      {
+        "id": "benchR:eef16fac:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.554844,
+        "alarm": true
+      },
+      {
+        "id": "benchR:a19a74de:2012-03-26_Nordlandfahrt_TRANSTIMBER_Auslaufen_Port_of_Oulu_",
+        "positive": true,
+        "max_conf": 0.023467,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b3d8a28a:Headlight.._15231656888_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f1432851:Northern_Cyprus_fire_vehicle_Chevrolet_Suburban",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fb4b2d0d:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a2e71c3d:Interior_of_living_room_01",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:64b297d6:Spacious_Living_Room_Interior_Design_in_Kolkata_by_Estate_Lo",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:19b35195:Wildfire_track",
+        "positive": false,
+        "max_conf": 0.152741,
+        "alarm": false
+      },
+      {
+        "id": "benchR:23972fcf:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_5484890",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7e6d0a38:MPR_T5_Construction_2025-10-13_015",
+        "positive": false,
+        "max_conf": 0.134935,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e9a6181e:Blurry_photo",
+        "positive": false,
+        "max_conf": 0.054132,
+        "alarm": false
+      },
+      {
+        "id": "benchR:335898eb:Blue_stormy_clouds_at_sunset_with_water_reflection_and_a_pir",
+        "positive": false,
+        "max_conf": 0.026293,
+        "alarm": false
+      },
+      {
+        "id": "benchR:468b1cba:Coffee_Pot_fire_in_Sequoia_NP_01",
+        "positive": false,
+        "max_conf": 0.061656,
+        "alarm": false
+      },
+      {
+        "id": "benchR:edbe3d30:Centre_Of_Attention_-_Flickr_-_ARG_Flickr",
+        "positive": true,
+        "max_conf": 0.266401,
+        "alarm": false
+      },
+      {
+        "id": "benchR:07f20886:DSC_9020_A_motorbike_rider_in_an_orange_safety_vest_relaxes_",
+        "positive": false,
+        "max_conf": 0.016636,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4caa35d2:039_Northern_lights_over_M_vatn_Iceland_Photo_by_Giles_Laure",
+        "positive": false,
+        "max_conf": 0.364444,
+        "alarm": false
+      },
+      {
+        "id": "benchR:25ea1ca0:Multiple_Canadian_Wildfires_Produce_Thick_Smoke_CIRA_2026-07",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35416653:Wildfire_Smoke",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35b2a1f3:Four_men_at_night",
+        "positive": false,
+        "max_conf": 0.104183,
+        "alarm": false
+      },
+      {
+        "id": "benchR:81e272e0:Candle_wick_and_flame_closeup",
+        "positive": true,
+        "max_conf": 0.061641,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a0c43edc:Robert_Street_Living_Room_New_Orleans_Feb_2008",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4fbd8f34:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.486336,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6eb71bd8:MGM_Grand_Detroit_Hotel_Living_Room_Christmas",
+        "positive": false,
+        "max_conf": 0.324065,
+        "alarm": true
+      },
+      {
+        "id": "benchR:89afab9c:Firefighters_of_the_Paris_Fire_Brigade_Montrouge_July_2026_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f18833ab:Golden_Nugget_sign_at_the_Neon_Boneyard_-_Jesse_James",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:971ed4e2:M_nster_Schlossplatz_Fr_hjahrssend_--_2019_--_4208",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7df36099:The_colour_lit_candles",
+        "positive": false,
+        "max_conf": 0.043175,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2e5be1d2:Bles_Landscape_with_Sodom_on_fire",
+        "positive": false,
+        "max_conf": 0.019067,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cba1fa07:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuri",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:69bc571e:Park_Fire_Burn_Scar_MODIS_2024-08-02_",
+        "positive": false,
+        "max_conf": 0.295142,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b4e25203:002_Wild_Alpine_Ibex_Swiss_Alps_and_Creux_du_Van_Photo_by_Gi",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35cd577c:Cloud_Forest_I_",
+        "positive": false,
+        "max_conf": 0.01418,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8046408a:Wang_Fuk_Court_fire_2025_night_view_am370_",
+        "positive": true,
+        "max_conf": 0.44809,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d85f8876:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:64080c02:The_Verrazano-Narrows_bridge_barely_visible_through_heavy_wi",
+        "positive": false,
+        "max_conf": 0.012556,
+        "alarm": false
+      },
+      {
+        "id": "benchR:88deedb6:Partial_solar_eclipse_with_some_clouds_in_Tuntorp_43",
+        "positive": false,
+        "max_conf": 0.661224,
+        "alarm": true
+      },
+      {
+        "id": "benchR:c5192b05:Red_neon_coin_sign_Unsplash_",
+        "positive": false,
+        "max_conf": 0.027531,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8747fe78:Blurry_eye_chart",
+        "positive": false,
+        "max_conf": 0.040516,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3049d2a3:The_Denali-Susitna_Exploration_Camp_is_a_chance_for_youth_li",
+        "positive": false,
+        "max_conf": 0.020349,
+        "alarm": false
+      },
+      {
+        "id": "benchR:57905af8:Museo_de_la_Catedral_de_Quito_Quito_Ecuador_2015-07-22_DD_94",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:505d487b:House_chimney_with_dark_smoke_pollution_-_This_photo_has_bee",
+        "positive": true,
+        "max_conf": 0.737786,
+        "alarm": true
+      },
+      {
+        "id": "benchR:432c72f1:Park_Fire_smoke_plume_at_sunset",
+        "positive": true,
+        "max_conf": 0.598608,
+        "alarm": true
+      },
+      {
+        "id": "benchR:dfae4dc7:River_Road_East_Fire-_Smoke_Column_53796692377_",
+        "positive": true,
+        "max_conf": 0.701013,
+        "alarm": true
+      },
+      {
+        "id": "benchR:172482c5:GrayGradientFilterEffect",
+        "positive": false,
+        "max_conf": 0.091217,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8d6974a7:Cloud_forest_canopy_in_hakgala_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c83dfae7:P_ij_nne_and_p_ij_tsalo",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:14d1bab9:Ausgebrannte_Autowracks_F_rstenried_West_Munich_08",
+        "positive": false,
+        "max_conf": 0.011461,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdec1b07:Smoke_plume_from_the_Gifford_Fire_on_August_7_2025",
+        "positive": true,
+        "max_conf": 0.324761,
+        "alarm": false
+      },
+      {
+        "id": "benchR:144d16e4:Honeymoon_Bay_Sunset_2",
+        "positive": false,
+        "max_conf": 0.011869,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f285199d:Poor_Air_Quality_Plagues_Midwest_as_Thick_Wildfire_Smoke_Div",
+        "positive": false,
+        "max_conf": 0.107348,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e37994ff:Bay_of_Fires_Tasmania_landscape_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0ee71f12:20181208_Mitsubishi_F-15J_takeoff_Naha_Air_Show_2018-4",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e5a1d2be:The_smoke_goes_up_the_chimney_just_the_same_NYPL_Hades-19432",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c02c0987:Catedral_Presbiteriana_do_Rio_de_Janeiro",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9d65fc16:Forest_Fire_Smoke_22663469594_",
+        "positive": false,
+        "max_conf": 0.049926,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3e27821b:Blasting_of_a_chimney_at_the_former_Henninger_Brewery_in_Fra",
+        "positive": false,
+        "max_conf": 0.246674,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cdb2f776:Teatro_Eslava_neon_sign_September_2022",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e14ff194:-TravelTuesday_with_My_Public_Lands_23823349114_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5f88a5aa:Liat_Portal_for_Foodie_Disorder_-_Lamb_chops_cooking_with_pi",
+        "positive": true,
+        "max_conf": 0.105494,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9b468cdf:Auto_fire_Vallejo_1",
+        "positive": true,
+        "max_conf": 0.849566,
+        "alarm": true
+      },
+      {
+        "id": "benchR:70fa8e32:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fba3bb92:Night-time_road_resurfacing_operation_during_Chatham_Waterfr",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5636211c:Cooking_red_beans_in_the_steam-jacketed_kombi_kettle",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fe5ad328:DFC_5876_A_weathered_military_loudspeaker_mounted_on_equipme",
+        "positive": false,
+        "max_conf": 0.014379,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ad23eb98:John_Morris_s_steam_vessel_for_cooking_-_DPLA_-_50b4231bafd1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:db8b39c2:Chimney_smoke_rising_over_the_village_of_Deiniolen_at_a_Febr",
+        "positive": false,
+        "max_conf": 0.011413,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5fe176ff:Daylily_Hemerocallis_fulva_v2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7731cc37:Orange_daylily_Hemerocallis_fulva_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:16d2c442:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.012735,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bfb045d6:East_Attica_Wildfire_Greece_MODIS_2024-08-15_",
+        "positive": false,
+        "max_conf": 0.020518,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d68c7e29:A_group_of_Cal_Fire_wildland_firefighters_at_the_western_fla",
+        "positive": true,
+        "max_conf": 0.759851,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d0ac1535:Ausgebrannte_Autowracks_F_rstenried_West_Munich_14",
+        "positive": false,
+        "max_conf": 0.195668,
+        "alarm": false
+      },
+      {
+        "id": "benchR:88fd274c:After_the_Snow_Landscape_Circleville_UT",
+        "positive": false,
+        "max_conf": 0.048041,
+        "alarm": false
+      },
+      {
+        "id": "benchR:29e726a7:Welding_Sparks_3843951412_",
+        "positive": true,
+        "max_conf": 0.035266,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f5e3c977:An_orange_flower_in_Amsterdam",
+        "positive": false,
+        "max_conf": 0.38836,
+        "alarm": true
+      },
+      {
+        "id": "benchR:94d0c27a:-TravelTuesday_with_My_Public_Lands_-_25473082031",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52c59d25:Lahori_Charga_during_steam_cooking",
+        "positive": false,
+        "max_conf": 0.019353,
+        "alarm": false
+      },
+      {
+        "id": "benchR:93cfc753:02026_0100_Easter_Sunday_at_a_traditional_wooden_P_czkarnia_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1fd70ac9:Brandschaden_Fahrzeugbrand_Drygalski-Allee_Munich_06",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f4be7c72:Edmonton_neon_sign_museum_east",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8c8b5328:Fog_in_forest_and_creek_at_Kent_Washington",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6d2057b5:Candle_-_Vela_-_01",
+        "positive": true,
+        "max_conf": 0.777004,
+        "alarm": true
+      },
+      {
+        "id": "benchR:736a8f16:Europa_Clipper_s_Dust_Analyzer_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8dcb64b4:Black_Forest_fire_near_8pm_Tuesday",
+        "positive": true,
+        "max_conf": 0.563496,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b8d598d5:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6b9ea74b:A_Pair_of_Candle_Flames_1793613381_",
+        "positive": true,
+        "max_conf": 0.859745,
+        "alarm": true
+      },
+      {
+        "id": "benchR:9770f245:Balhennie_s_ghostly_chimney_smoke_A_wispy_contrail_adds_to_t",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1b9e3af8:Neon_sunset_sign_hanging_over_a_river_in_Katowice",
+        "positive": false,
+        "max_conf": 0.01626,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2d86c91a:Sparks_110718-N-LL945-105",
+        "positive": true,
+        "max_conf": 0.12638,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdd7e40d:Snow_and_fog_in_Jinlanshan_National_Forest_Park",
+        "positive": false,
+        "max_conf": 0.051283,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4244a7c4:-TravelTuesday_with_My_Public_Lands_-_25565805255",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:49df0403:Fog_in_forest_at_Kent_Washington_-_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c5863b1d:Interior_of_the_Hsinchu_City_Art_Site_of_Railway_Warehouse_0",
+        "positive": false,
+        "max_conf": 0.022808,
+        "alarm": false
+      },
+      {
+        "id": "benchR:98158aac:Dredge_ship_Obskaya-103",
+        "positive": true,
+        "max_conf": 0.673582,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3c8e4d60:MPR_T5_Construction_2025-08-27_003",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0ff14561:Toronto_wildfire_smoke_July_15_2026_18599_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fcab22f0:Rescue_workers_near_the_semi-collapsed_ten-story_Uranus_Buil",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2ed010ba:_Barcelona_Dining_Room_by_Pere_Torn_Esquius_-_Museu_Nacional",
+        "positive": false,
+        "max_conf": 0.052188,
+        "alarm": false
+      },
+      {
+        "id": "benchR:69934efc:MPR_T5_Construction_2025-08-26_048",
+        "positive": false,
+        "max_conf": 0.542599,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d2c2d5a8:US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_C",
+        "positive": true,
+        "max_conf": 0.55129,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d64950bd:PMG-1_fire_engine",
+        "positive": false,
+        "max_conf": 0.027927,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9a4b95ef:Exhaust_emissions_1",
+        "positive": false,
+        "max_conf": 0.015207,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d861be2f:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_prop",
+        "positive": true,
+        "max_conf": 0.700615,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cf409c96:Clouds_and_blue_sky_in_Russia._IMG_026",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:af18a0ae:Grinding_the_sparks",
+        "positive": true,
+        "max_conf": 0.010718,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d2c73eb0:Orange_flowers_2014",
+        "positive": false,
+        "max_conf": 0.014794,
+        "alarm": false
+      },
+      {
+        "id": "benchR:128fa628:Bles_Landscape_with_Sodom_on_fire_detail_",
+        "positive": false,
+        "max_conf": 0.231296,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a507145b:Interior_Albert_D._German_Warehouse_Church_Street_and_Haselt",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:070fbdb0:Ocean_Floor_V_33712023355_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:41d41839:Lighter_-_Flickr_-_pyntofmyld",
+        "positive": true,
+        "max_conf": 0.856266,
+        "alarm": true
+      },
+      {
+        "id": "benchR:89085d38:WildfireKolm_rden2020",
+        "positive": false,
+        "max_conf": 0.027766,
+        "alarm": false
+      },
+      {
+        "id": "benchR:336056aa:Rwenzori_tropical_montane_forest",
+        "positive": false,
+        "max_conf": 0.022911,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdbc3c64:MPR_T5_Construction_2025-08-27_007",
+        "positive": false,
+        "max_conf": 0.011506,
+        "alarm": false
+      },
+      {
+        "id": "benchR:605606b0:Speeding_on_the_Expressway_Unsplash_",
+        "positive": false,
+        "max_conf": 0.013813,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0c6363b0:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070734",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0fe4fd9f:Firefighters_2020_El_Dorado_Fire_Sep10",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d3faac95:MAN_TGM_fire_engine_at_night_Warsaw_Poland",
+        "positive": false,
+        "max_conf": 0.033116,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cf26172b:Li_Phi_falls_at_sunrise_with_white_and_grey_clouds_in_Don_Kh",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ce34f58e:Soothing_Lights_199918569_.jpeg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:317ce385:Orange_flowers_1359256859_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:87390897:MPR_T5_Construction_2025-08-27_004",
+        "positive": false,
+        "max_conf": 0.188421,
+        "alarm": false
+      },
+      {
+        "id": "benchR:020caf6b:Wildfire_in_Whitireia_Park_Porirua_New_Zealand_in_2010",
+        "positive": true,
+        "max_conf": 0.623111,
+        "alarm": true
+      },
+      {
+        "id": "benchR:8d1fbfd1:Clouds_and_blue_sky_in_Russia._IMG_115",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:73181771:Sunset_in_Thick_Smoke_Reno_Nevada_50425355538_",
+        "positive": false,
+        "max_conf": 0.236087,
+        "alarm": false
+      }
+    ]
+  },
+  "FT_HN": {
+    "thresholds": {
+      "fire": 0.41,
+      "smoke": 0.43
+    },
+    "rows": [
+      {
+        "id": "benchR:5601eeff:2010s_Jeep_Patriot_Fire_Prevention_vehicle_of_Jersey_City_Fi",
+        "positive": false,
+        "max_conf": 0.025577,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1d7c1475:Candle_flame_-_Macro_photography",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:22d22d22:The_burning_of_Columbia_South_Carolina_February_17_1865",
+        "positive": true,
+        "max_conf": 0.069304,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3b9f0513:Los_Lomadas_orange_flowers_against_sea_Faro_de_Punta_Cumplid",
+        "positive": false,
+        "max_conf": 0.037817,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0e5e3fc9:Red_candle_flame",
+        "positive": true,
+        "max_conf": 0.801482,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b7af6c4e:Escalier_monumental_Neue_Burg_Vienne",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8add5839:Thick_black_smoke_over_Sydney_and_NSW_due_to_bushfires_Decem",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7e93e3cf:Smoke_from_the_Bear_Fire_along_Highway_70_southbound_outside",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6e949ed6:California_Lighthouse_x_Star_filled_sky",
+        "positive": false,
+        "max_conf": 0.033607,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ece13c6a:Clouds_and_blue_sky_in_Russia._IMG_109",
+        "positive": false,
+        "max_conf": 0.529471,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b4467718:Parkhotel_Schoenbrunn_Ballsaal_DSC_5115w",
+        "positive": false,
+        "max_conf": 0.014725,
+        "alarm": false
+      },
+      {
+        "id": "benchR:be739801:Playboy_lighter",
+        "positive": false,
+        "max_conf": 0.031063,
+        "alarm": false
+      },
+      {
+        "id": "benchR:13f03bb2:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.01188,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4a2ac876:Balloon_Street_Manchester_An_Interior_View_of_the_Drapery_Wa",
+        "positive": false,
+        "max_conf": 0.048348,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e181a008:23_0066309_Convair_Negative_Image_-_Warehouse_interior_54157",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:56f18cda:McEwen_fire_-_Car_sheds_on_fire_LCCN2012646418",
+        "positive": true,
+        "max_conf": 0.896374,
+        "alarm": true
+      },
+      {
+        "id": "benchR:22026cb1:Hortus_Haren._Bloemenzuil_02",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f04a0a22:Structure_Fire_in_Union_Mississippi_03",
+        "positive": true,
+        "max_conf": 0.119018,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3cd5c8ff:Sparks_will_fly_130117-F-RB551-110",
+        "positive": true,
+        "max_conf": 0.202874,
+        "alarm": false
+      },
+      {
+        "id": "benchR:71793825:Orange_flowers_052708",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:63d7bd8d:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a45cac15:A_large_fire_in_tropical_forest_trees_in_the_fire",
+        "positive": true,
+        "max_conf": 0.751859,
+        "alarm": true
+      },
+      {
+        "id": "benchR:dc23fd93:Forest_Fire_Junga",
+        "positive": true,
+        "max_conf": 0.4184,
+        "alarm": false
+      },
+      {
+        "id": "benchR:732d0710:Cobham_Drive_Hillcrest_Hamilton_Traffic_Light_Construction_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e7d5dae7:Vintage_Bakelite_Cigarette_Lighter_Not_Marked_15021365061_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:929ee382:Making_sparks_for_parts_8625882_",
+        "positive": false,
+        "max_conf": 0.020034,
+        "alarm": false
+      },
+      {
+        "id": "benchR:da69a31a:ConchasFire_flame_smoke_across_upper_Frijoles_IMG_0740_cda",
+        "positive": true,
+        "max_conf": 0.373502,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6fe77d9f:Santa_Catalina_mountains_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:02b750ea:Circa_1990_Orflam_Plast_SA_camouflage_patterned_gas_lighter_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c1de0bfd:Candle_lit_parvise_during_lent",
+        "positive": true,
+        "max_conf": 0.023195,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6360c41e:Dark_light_from_thick_smoke_BW-1_26701815270_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c9bd09d4:Brand_Rh_nsprudel_2",
+        "positive": true,
+        "max_conf": 0.52271,
+        "alarm": true
+      },
+      {
+        "id": "benchR:5e52a5fd:Wildfire_smoke_in_Saskatoon",
+        "positive": false,
+        "max_conf": 0.051438,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f2694070:Steam_cooker",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:38dda85f:Candle_flame_in_concave_mirror_with_interference_rings",
+        "positive": true,
+        "max_conf": 0.848602,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3981eacf:BrockenSnowedTreesInSun",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ab64feeb:Ausgebrannte_Autowracks_F_rstenried_West_Munich_04",
+        "positive": false,
+        "max_conf": 0.098349,
+        "alarm": false
+      },
+      {
+        "id": "benchR:68ca6106:Smoke_from_California_wildfires_MODIS_2017-12-12_",
+        "positive": false,
+        "max_conf": 0.187997,
+        "alarm": false
+      },
+      {
+        "id": "benchR:afbc7b84:Karst_peaks_and_green_paddy_fields_under_a_stormy_sky_South_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:662224d9:Blurry_Boss_3577755487_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e8ce2e73:July_21_2018_train_fire_from_Cape_Town_station_upper_deck",
+        "positive": true,
+        "max_conf": 0.824092,
+        "alarm": true
+      },
+      {
+        "id": "benchR:dd49b1df:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_6",
+        "positive": false,
+        "max_conf": 0.024314,
+        "alarm": false
+      },
+      {
+        "id": "benchR:91de037f:Blurry_buses",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:20272b3d:Smoke_from_Dava_Wildfire",
+        "positive": true,
+        "max_conf": 0.064278,
+        "alarm": false
+      },
+      {
+        "id": "benchR:624d6dee:_jpest_Market_07",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7251fb6c:Chimney_Rock_Trail_Point_Reyes_December_2016_panorama_1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2fcf8fd5:Rotary_Plow_2013_Spring_Road_Opening_38204348-1dd8-b71c-0716",
+        "positive": false,
+        "max_conf": 0.564865,
+        "alarm": true
+      },
+      {
+        "id": "benchR:376cf89d:Fog_over_the_forest_in_Tuntorp_-_bw",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:25383297:Daewoo_Nubira_II_fire_car_front",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a599b7aa:Cloud_of_emissions_from_passenger_ship_Midnatsol",
+        "positive": true,
+        "max_conf": 0.665019,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b6918ac5:Basin_Fire_2024_01",
+        "positive": true,
+        "max_conf": 0.613741,
+        "alarm": true
+      },
+      {
+        "id": "benchR:bbe901a8:House_chimney_with_smoke_-_This_photo_has_been_released_into",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:da3623ec:500px_photo_68194077_.jpeg",
+        "positive": true,
+        "max_conf": 0.028484,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2ba12cda:Clouds_over_the_Xe_Don_River_with_boats_at_sunset_in_Pakse_L",
+        "positive": false,
+        "max_conf": 0.014674,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2240e650:Border_Fire_Burned_Landscape",
+        "positive": false,
+        "max_conf": 0.013436,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5a610a8e:Jarrad_Seng_cropped_",
+        "positive": false,
+        "max_conf": 0.077425,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5ba42244:5_grams_of_cannabis_buds_and_green_lighter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:45e21afc:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_5484915",
+        "positive": false,
+        "max_conf": 0.038118,
+        "alarm": false
+      },
+      {
+        "id": "benchR:68e1878a:093_Wild_Mute_swan_at_Lake_Geneva_during_sunset_Photo_by_Gil",
+        "positive": false,
+        "max_conf": 0.011411,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e900d7cc:Sunset_at_Noronhas_beach",
+        "positive": false,
+        "max_conf": 0.032139,
+        "alarm": false
+      },
+      {
+        "id": "benchR:366cbcc9:Sunset_Kuta_Bali_Indonesia_20220825_1755_0879",
+        "positive": false,
+        "max_conf": 0.247105,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9322e7fd:Snow_in_the_Landscape_-_geograph.org.uk_-_1655896",
+        "positive": false,
+        "max_conf": 0.077642,
+        "alarm": false
+      },
+      {
+        "id": "benchR:318b7aee:MPR_T5_Construction_2025-08-27_002",
+        "positive": false,
+        "max_conf": 0.039238,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdb8c2e6:On_fire_3056183075_",
+        "positive": true,
+        "max_conf": 0.481813,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6bf5b999:Blackbird-sunset-03",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b0cf947b:130926-N-JO908-044_10155529675_",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b1ebd37d:Burning_truck_bishkek_protests",
+        "positive": true,
+        "max_conf": 0.689967,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cc61175a:Fire_Show_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland",
+        "positive": true,
+        "max_conf": 0.735913,
+        "alarm": true
+      },
+      {
+        "id": "benchR:69b3c9b7:USFWS_Prescribed_Fire_Used_as_a_Tool_16786166092_",
+        "positive": true,
+        "max_conf": 0.636885,
+        "alarm": true
+      },
+      {
+        "id": "benchR:2a0c8ace:Castle_Ward_Interior_-_Basement_-_Kitchen_-_geograph.org.uk_",
+        "positive": false,
+        "max_conf": 0.022715,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9ccac821:Firefighter_Ashton_Bay_March_2017",
+        "positive": true,
+        "max_conf": 0.27798,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7786303d:Cirrus_uncinus_clouds_in_the_morning_sky",
+        "positive": false,
+        "max_conf": 0.054018,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d51adf38:Blurry_33238647538_",
+        "positive": false,
+        "max_conf": 0.017747,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ceb47502:NASA_Partners_Prepare_EXCITE_for_Antarctic_Flight_SVS15098_-",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3a3b6a85:Waterbeds_n_Stuff_Corporate_Office_Furniture_Warehouse_Inter",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c07f0c44:Energy-Ladder-1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d635e565:Smoke_plume_-_geograph.org.uk_-_6725947",
+        "positive": true,
+        "max_conf": 0.047256,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f119f446:A_toppled_orange_traffic_cone_at_Huntington_station",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d58de863:Smoke_on_the_water_ESA388242",
+        "positive": false,
+        "max_conf": 0.165304,
+        "alarm": false
+      },
+      {
+        "id": "benchR:62d24f87:Black_smoke_emissions_from_a_vehicle_s_exhaust_are_a_key_con",
+        "positive": false,
+        "max_conf": 0.21788,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52c8e3c8:Ella_Valley_Sri_Lanka_Cloud_forest_in_the_mountains",
+        "positive": false,
+        "max_conf": 0.078055,
+        "alarm": false
+      },
+      {
+        "id": "benchR:96cc5175:Fire_Canyon_at_Valley_Of_Fire_in_NV_3",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bfb0abf0:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuri",
+        "positive": false,
+        "max_conf": 0.038331,
+        "alarm": false
+      },
+      {
+        "id": "benchR:49c4c41f:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_1",
+        "positive": false,
+        "max_conf": 0.012599,
+        "alarm": false
+      },
+      {
+        "id": "benchR:72b0ab3e:-TravelTuesday_with_My_Public_Lands_-_25198255249",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9f0cc033:Sir_Gerald_Bruce_Senior_Regional_Commissioner_for_the_Fire_S",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6d3558d5:Lactarius_indigo_48568_edit",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:afc3f262:Nepal_-_Sagamartha_Trek_-_023_500758629_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8a83a145:House_fire_with_smoke",
+        "positive": true,
+        "max_conf": 0.488193,
+        "alarm": true
+      },
+      {
+        "id": "benchR:78ed1019:Bad_Kissingen_Regentenbau_Foyer_0417RM0625_-HDR",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b7ee4a9b:Interior_of_a_warehouse_in_Riga",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:44f1124d:Fire-candle-flame-hearts_24029345460_",
+        "positive": true,
+        "max_conf": 0.857324,
+        "alarm": true
+      },
+      {
+        "id": "benchR:ec2b9160:Indicator_Exhaust_Gas_Temperature_Dual_-_DPLA_-_b56484ac3f2f",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3b80c6c6:Smoke_plume_from_SoCal_wildfire_October_2007",
+        "positive": true,
+        "max_conf": 0.077162,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0067cb3d:The_Hatter_with_Fire_2026_Kupala_Night_in_Ustka_Poland_June_",
+        "positive": true,
+        "max_conf": 0.586385,
+        "alarm": true
+      },
+      {
+        "id": "benchR:f7deacf1:The_spectre_of_Death_in_the_form_of_a_large_skeleton_rises_w",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:595e576d:Apartment_Fire_High_Point_NC_Feb28_2022_Rear",
+        "positive": true,
+        "max_conf": 0.550632,
+        "alarm": true
+      },
+      {
+        "id": "benchR:70de601d:Carrollton_New_Orleans_Living_Room_-_Dana_Corner",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bd830320:Sunset_in_The_Trossachs_Scotland",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:61c85543:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.667713,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cff275e1:US_Navy_050723-N-5549O-099_Sparks_fly_as_Hull_Technician_3rd",
+        "positive": true,
+        "max_conf": 0.396572,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5c49cadc:Wildfire_Smoke_-_52959112245",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:87700ce8:House_Fire_in_Hickory_Mississippi",
+        "positive": true,
+        "max_conf": 0.057687,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4e915524:Clouds_and_blue_sky_in_Russia._IMG_013",
+        "positive": false,
+        "max_conf": 0.013706,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e01de195:Firefighters_from_the_628th_Air_Base_Wing_conduct_a_live_fir",
+        "positive": true,
+        "max_conf": 0.872218,
+        "alarm": true
+      },
+      {
+        "id": "benchR:50769433:Smoke_from_the_2020_California_wildfires_tinting_the_sunset_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:54896665:Big_Dipper_over_Sandvik_-_in_headlights",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:220406d2:6060_smoke_plume_3767722804_",
+        "positive": true,
+        "max_conf": 0.295823,
+        "alarm": false
+      },
+      {
+        "id": "benchR:857c64ea:Burning_oil_fields",
+        "positive": true,
+        "max_conf": 0.146584,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f8ed95b7:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_7",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4f68ed78:Orange_Solar_Disk_Descending_Into_Forest_Fire_Smoke_-_503324",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52df8746:Steamed_Rice_How_to_07",
+        "positive": true,
+        "max_conf": 0.033399,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a1e8d709:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_no_s",
+        "positive": true,
+        "max_conf": 0.845495,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6807ad8b:1960s_or_1970s_Dutch_Poppell_butane_lighter_with_replaceable",
+        "positive": false,
+        "max_conf": 0.012432,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cc6c6c93:Coughton_Court_living_room_2",
+        "positive": false,
+        "max_conf": 0.049011,
+        "alarm": false
+      },
+      {
+        "id": "benchR:91578399:LOC_Precision_8564855807_",
+        "positive": true,
+        "max_conf": 0.270181,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3801cc9a:Consequences_of_a_meadow_fire_in_the_Deimanivskyi_Landscape_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c8683a25:Orange_Flowers_66803269_.jpeg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:85c5700f:Smoke_on_the_Chimney_because_of_Persephone",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:93d85311:Bideford_fire_station_vehicles_02",
+        "positive": false,
+        "max_conf": 0.105499,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35cc2a65:IKEA_Anderlecht_self-serve_warehouse_DSCF3734_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d8cea0fc:African_Fish_Drying_Process_2_",
+        "positive": false,
+        "max_conf": 0.186611,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f0004bbe:Interior_of_The_Warehouse_16_ceiling",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5a15932c:D_024854_new",
+        "positive": true,
+        "max_conf": 0.81416,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6cb5da62:Vehicle_on_fire_outside_the_Brisbane_Airport_Domestic_Termin",
+        "positive": true,
+        "max_conf": 0.650575,
+        "alarm": true
+      },
+      {
+        "id": "benchR:60c97e63:Ausgebrannte_Autowracks_F_rstenried_West_Munich_05",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4373b26a:Beech_forest_in_fog_Ehrenbach",
+        "positive": false,
+        "max_conf": 0.01437,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b1958682:Dwyer_s_Cafe_-_Neon_sign_-_Lafayette_Louisiana",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:85aa6153:Baufortschritt_Sana_Klinikum_Hof_20231015_HOF00784-HDR_RAW-E",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4581785e:NYC_Public_Library_Research_Room_Jan_2006-1-_3",
+        "positive": false,
+        "max_conf": 0.045327,
+        "alarm": false
+      },
+      {
+        "id": "benchR:86921f48:Nustar_Fire_smoke_plume_from_San_Francisco",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1aead1fc:Luton_Airport_Terminal_Car_Park_2_after_the_fire_-_geograph.",
+        "positive": false,
+        "max_conf": 0.016519,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a8fc85a1:Ca_da_de_rayo_en_tronco_provoca_incendio_forestal",
+        "positive": true,
+        "max_conf": 0.055845,
+        "alarm": false
+      },
+      {
+        "id": "benchR:97a36ee3:DFC_2474_Busy_night_scene_outside_a_brightly_lit_corner_rest",
+        "positive": false,
+        "max_conf": 0.085629,
+        "alarm": false
+      },
+      {
+        "id": "benchR:909d286f:Adams_Fire_Smoke_Plume_2024_04",
+        "positive": true,
+        "max_conf": 0.165535,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f37bf91d:Smoke_1166374_.jpeg",
+        "positive": true,
+        "max_conf": 0.428483,
+        "alarm": true
+      },
+      {
+        "id": "benchR:50f32cb5:Colorful_illuminated_facades_of_buildings_at_night_with_gree",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e219b9c2:Steam_cooker_working",
+        "positive": false,
+        "max_conf": 0.139661,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9c17650c:Candle_flame_closeup",
+        "positive": true,
+        "max_conf": 0.792323,
+        "alarm": true
+      },
+      {
+        "id": "benchR:43eaf05f:Visitors_at_the_2024_Easter_fire_in_Rottorf_2024_03_30",
+        "positive": true,
+        "max_conf": 0.403415,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d3fec4b9:Automobile_exhaust_gas",
+        "positive": true,
+        "max_conf": 0.418566,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a54211c8:Fire_vehicle_at_the_CMP_Post_Office",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:33bcc1db:Chantier_Gare_Noisy_Champs_M_tro_lignes_15_16_Noisy_Grand_5",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:191e412d:Lightening_smoke_plume_at_July_21_2018_Cape_Town_train_fire",
+        "positive": true,
+        "max_conf": 0.723889,
+        "alarm": true
+      },
+      {
+        "id": "benchR:33023879:Den_Haag_-_Mauritshuis_-_David_Teniers_the_Younger_1610-1690",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3d91a34e:FEMA_-_4108_-_Photograph_by_Michael_Rieger_taken_on_09-21-20",
+        "positive": true,
+        "max_conf": 0.211391,
+        "alarm": false
+      },
+      {
+        "id": "benchR:19640c0a:-TravelTuesday_with_My_Public_Lands_-_25539666096",
+        "positive": false,
+        "max_conf": 0.010518,
+        "alarm": false
+      },
+      {
+        "id": "benchR:84b163f9:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.503491,
+        "alarm": true
+      },
+      {
+        "id": "benchR:83124ca5:Juan_Griego_Sunset",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cf1b8ba2:MPR_T5_Construction_2025-10-13_014",
+        "positive": false,
+        "max_conf": 0.169326,
+        "alarm": false
+      },
+      {
+        "id": "benchR:510d8795:Chandelier_1030220_",
+        "positive": false,
+        "max_conf": 0.813965,
+        "alarm": true
+      },
+      {
+        "id": "benchR:7e7e09f2:June_2026_Wildfire_Smoke_in_Salt_Lake",
+        "positive": false,
+        "max_conf": 0.015233,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e9618be0:Wildfire_Smoke_52958907984_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b35661f7:Ausgebrannte_Autowracks_F_rstenried_West_Munich_12",
+        "positive": false,
+        "max_conf": 0.012563,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d8546b88:Flying_squirrel_--_blurry_9642152296_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:57b5c0c2:-TravelTuesday_with_My_Public_Lands_-_25473070771",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3f4c5a1a:Corpus_Christi_College_Chapel_1_Cambridge_UK_-_Diliff",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c1a72a0f:A_blurry_thingy_from_space_-_panoramio",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dcedf938:Bolu_Keju_Kukus",
+        "positive": false,
+        "max_conf": 0.012825,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ffda5871:PikiWiki_Israel_32267_The_candle_monument_in_Ashdod",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b55ce6da:Louisiana_National_Guard_-_Wildfire_response_August_2023_05",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:eb0765cb:Big_dark_smoke_rising_from_fire_flames_in_forest",
+        "positive": true,
+        "max_conf": 0.561748,
+        "alarm": true
+      },
+      {
+        "id": "benchR:af23dd3f:Haze_from_Wildfire_smoke_Vancouver_2021_51378633336_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:84191316:Burned_down_house_in_Wolf_Point_Montana",
+        "positive": false,
+        "max_conf": 0.026095,
+        "alarm": false
+      },
+      {
+        "id": "benchR:486750cd:Candle_light_projected_through_a_glass_orb",
+        "positive": true,
+        "max_conf": 0.792517,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3c56f8ed:Jones_Farm_Fire_Station_at_night_bays_angle_-_Hillsboro_Oreg",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6b580447:Incarcerated_firefighters_clear_a_fire_line",
+        "positive": false,
+        "max_conf": 0.018595,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a4a4eaef:Pompiers_ste-anne-de-beaupr_2012",
+        "positive": true,
+        "max_conf": 0.564867,
+        "alarm": true
+      },
+      {
+        "id": "benchR:63cacca7:Neon_sign_from_Midtowne_Spa_Los_Angeles_California_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4c70ae57:Chemical_Transformations_Involved_in_the_Generation_of_Third",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3e265fff:Windsong_fire",
+        "positive": true,
+        "max_conf": 0.013243,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ebc5b8d1:J_kuls_rl_n_myrkri_3172843656_",
+        "positive": false,
+        "max_conf": 0.082741,
+        "alarm": false
+      },
+      {
+        "id": "benchR:626d46a2:Mid-City_New_Orleans_living_room_May_2018",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dcf07ab6:DSCF1058_Nighttime_long-exposure_captures_streaking_headligh",
+        "positive": false,
+        "max_conf": 0.236296,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d93f2bd2:Hope_Valley_fire_brigade_vehicle_near_Henderson_Cliffs_looko",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7d6ea3b8:Interior_of_converted_warehouse_-_geograph.org.uk_-_7186753",
+        "positive": false,
+        "max_conf": 0.013193,
+        "alarm": false
+      },
+      {
+        "id": "benchR:eef16fac:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.572989,
+        "alarm": true
+      },
+      {
+        "id": "benchR:a19a74de:2012-03-26_Nordlandfahrt_TRANSTIMBER_Auslaufen_Port_of_Oulu_",
+        "positive": true,
+        "max_conf": 0.030662,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b3d8a28a:Headlight.._15231656888_",
+        "positive": false,
+        "max_conf": 0.013623,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f1432851:Northern_Cyprus_fire_vehicle_Chevrolet_Suburban",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fb4b2d0d:Interior_of_a_house_showing_a_kitchen_and_a_woman_seated_in_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a2e71c3d:Interior_of_living_room_01",
+        "positive": false,
+        "max_conf": 0.032895,
+        "alarm": false
+      },
+      {
+        "id": "benchR:64b297d6:Spacious_Living_Room_Interior_Design_in_Kolkata_by_Estate_Lo",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:19b35195:Wildfire_track",
+        "positive": false,
+        "max_conf": 0.184355,
+        "alarm": false
+      },
+      {
+        "id": "benchR:23972fcf:Candle_and_Flame_at_St_Peter_s_Gardens_Wolverhampton_5484890",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7e6d0a38:MPR_T5_Construction_2025-10-13_015",
+        "positive": false,
+        "max_conf": 0.160454,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e9a6181e:Blurry_photo",
+        "positive": false,
+        "max_conf": 0.061134,
+        "alarm": false
+      },
+      {
+        "id": "benchR:335898eb:Blue_stormy_clouds_at_sunset_with_water_reflection_and_a_pir",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:468b1cba:Coffee_Pot_fire_in_Sequoia_NP_01",
+        "positive": false,
+        "max_conf": 0.128155,
+        "alarm": false
+      },
+      {
+        "id": "benchR:edbe3d30:Centre_Of_Attention_-_Flickr_-_ARG_Flickr",
+        "positive": true,
+        "max_conf": 0.178423,
+        "alarm": false
+      },
+      {
+        "id": "benchR:07f20886:DSC_9020_A_motorbike_rider_in_an_orange_safety_vest_relaxes_",
+        "positive": false,
+        "max_conf": 0.03187,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4caa35d2:039_Northern_lights_over_M_vatn_Iceland_Photo_by_Giles_Laure",
+        "positive": false,
+        "max_conf": 0.020392,
+        "alarm": false
+      },
+      {
+        "id": "benchR:25ea1ca0:Multiple_Canadian_Wildfires_Produce_Thick_Smoke_CIRA_2026-07",
+        "positive": false,
+        "max_conf": 0.05283,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35416653:Wildfire_Smoke",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35b2a1f3:Four_men_at_night",
+        "positive": false,
+        "max_conf": 0.110542,
+        "alarm": false
+      },
+      {
+        "id": "benchR:81e272e0:Candle_wick_and_flame_closeup",
+        "positive": true,
+        "max_conf": 0.054531,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a0c43edc:Robert_Street_Living_Room_New_Orleans_Feb_2008",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4fbd8f34:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_",
+        "positive": true,
+        "max_conf": 0.522564,
+        "alarm": true
+      },
+      {
+        "id": "benchR:6eb71bd8:MGM_Grand_Detroit_Hotel_Living_Room_Christmas",
+        "positive": false,
+        "max_conf": 0.29672,
+        "alarm": false
+      },
+      {
+        "id": "benchR:89afab9c:Firefighters_of_the_Paris_Fire_Brigade_Montrouge_July_2026_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f18833ab:Golden_Nugget_sign_at_the_Neon_Boneyard_-_Jesse_James",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:971ed4e2:M_nster_Schlossplatz_Fr_hjahrssend_--_2019_--_4208",
+        "positive": false,
+        "max_conf": 0.011405,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7df36099:The_colour_lit_candles",
+        "positive": false,
+        "max_conf": 0.042859,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2e5be1d2:Bles_Landscape_with_Sodom_on_fire",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cba1fa07:Old_snow_in_agricultural_landscape_North_of_Possendorf_Thuri",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:69bc571e:Park_Fire_Burn_Scar_MODIS_2024-08-02_",
+        "positive": false,
+        "max_conf": 0.215081,
+        "alarm": false
+      },
+      {
+        "id": "benchR:b4e25203:002_Wild_Alpine_Ibex_Swiss_Alps_and_Creux_du_Van_Photo_by_Gi",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:35cd577c:Cloud_Forest_I_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8046408a:Wang_Fuk_Court_fire_2025_night_view_am370_",
+        "positive": true,
+        "max_conf": 0.362276,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d85f8876:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.037545,
+        "alarm": false
+      },
+      {
+        "id": "benchR:64080c02:The_Verrazano-Narrows_bridge_barely_visible_through_heavy_wi",
+        "positive": false,
+        "max_conf": 0.015017,
+        "alarm": false
+      },
+      {
+        "id": "benchR:88deedb6:Partial_solar_eclipse_with_some_clouds_in_Tuntorp_43",
+        "positive": false,
+        "max_conf": 0.810664,
+        "alarm": true
+      },
+      {
+        "id": "benchR:c5192b05:Red_neon_coin_sign_Unsplash_",
+        "positive": false,
+        "max_conf": 0.042869,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8747fe78:Blurry_eye_chart",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3049d2a3:The_Denali-Susitna_Exploration_Camp_is_a_chance_for_youth_li",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:57905af8:Museo_de_la_Catedral_de_Quito_Quito_Ecuador_2015-07-22_DD_94",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:505d487b:House_chimney_with_dark_smoke_pollution_-_This_photo_has_bee",
+        "positive": true,
+        "max_conf": 0.623583,
+        "alarm": true
+      },
+      {
+        "id": "benchR:432c72f1:Park_Fire_smoke_plume_at_sunset",
+        "positive": true,
+        "max_conf": 0.161998,
+        "alarm": false
+      },
+      {
+        "id": "benchR:dfae4dc7:River_Road_East_Fire-_Smoke_Column_53796692377_",
+        "positive": true,
+        "max_conf": 0.618487,
+        "alarm": true
+      },
+      {
+        "id": "benchR:172482c5:GrayGradientFilterEffect",
+        "positive": false,
+        "max_conf": 0.139296,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8d6974a7:Cloud_forest_canopy_in_hakgala_1",
+        "positive": false,
+        "max_conf": 0.012293,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c83dfae7:P_ij_nne_and_p_ij_tsalo",
+        "positive": false,
+        "max_conf": 0.039793,
+        "alarm": false
+      },
+      {
+        "id": "benchR:14d1bab9:Ausgebrannte_Autowracks_F_rstenried_West_Munich_08",
+        "positive": false,
+        "max_conf": 0.019353,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdec1b07:Smoke_plume_from_the_Gifford_Fire_on_August_7_2025",
+        "positive": true,
+        "max_conf": 0.130647,
+        "alarm": false
+      },
+      {
+        "id": "benchR:144d16e4:Honeymoon_Bay_Sunset_2",
+        "positive": false,
+        "max_conf": 0.126012,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f285199d:Poor_Air_Quality_Plagues_Midwest_as_Thick_Wildfire_Smoke_Div",
+        "positive": false,
+        "max_conf": 0.075975,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e37994ff:Bay_of_Fires_Tasmania_landscape_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0ee71f12:20181208_Mitsubishi_F-15J_takeoff_Naha_Air_Show_2018-4",
+        "positive": false,
+        "max_conf": 0.035062,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e5a1d2be:The_smoke_goes_up_the_chimney_just_the_same_NYPL_Hades-19432",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c02c0987:Catedral_Presbiteriana_do_Rio_de_Janeiro",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9d65fc16:Forest_Fire_Smoke_22663469594_",
+        "positive": false,
+        "max_conf": 0.026381,
+        "alarm": false
+      },
+      {
+        "id": "benchR:3e27821b:Blasting_of_a_chimney_at_the_former_Henninger_Brewery_in_Fra",
+        "positive": false,
+        "max_conf": 0.435062,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cdb2f776:Teatro_Eslava_neon_sign_September_2022",
+        "positive": false,
+        "max_conf": 0.011065,
+        "alarm": false
+      },
+      {
+        "id": "benchR:e14ff194:-TravelTuesday_with_My_Public_Lands_23823349114_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5f88a5aa:Liat_Portal_for_Foodie_Disorder_-_Lamb_chops_cooking_with_pi",
+        "positive": true,
+        "max_conf": 0.069025,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9b468cdf:Auto_fire_Vallejo_1",
+        "positive": true,
+        "max_conf": 0.76816,
+        "alarm": true
+      },
+      {
+        "id": "benchR:70fa8e32:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fba3bb92:Night-time_road_resurfacing_operation_during_Chatham_Waterfr",
+        "positive": false,
+        "max_conf": 0.011994,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5636211c:Cooking_red_beans_in_the_steam-jacketed_kombi_kettle",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fe5ad328:DFC_5876_A_weathered_military_loudspeaker_mounted_on_equipme",
+        "positive": false,
+        "max_conf": 0.013122,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ad23eb98:John_Morris_s_steam_vessel_for_cooking_-_DPLA_-_50b4231bafd1",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:db8b39c2:Chimney_smoke_rising_over_the_village_of_Deiniolen_at_a_Febr",
+        "positive": false,
+        "max_conf": 0.033347,
+        "alarm": false
+      },
+      {
+        "id": "benchR:5fe176ff:Daylily_Hemerocallis_fulva_v2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:7731cc37:Orange_daylily_Hemerocallis_fulva_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:16d2c442:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on",
+        "positive": true,
+        "max_conf": 0.025596,
+        "alarm": false
+      },
+      {
+        "id": "benchR:bfb045d6:East_Attica_Wildfire_Greece_MODIS_2024-08-15_",
+        "positive": false,
+        "max_conf": 0.015229,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d68c7e29:A_group_of_Cal_Fire_wildland_firefighters_at_the_western_fla",
+        "positive": true,
+        "max_conf": 0.739434,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d0ac1535:Ausgebrannte_Autowracks_F_rstenried_West_Munich_14",
+        "positive": false,
+        "max_conf": 0.062942,
+        "alarm": false
+      },
+      {
+        "id": "benchR:88fd274c:After_the_Snow_Landscape_Circleville_UT",
+        "positive": false,
+        "max_conf": 0.036723,
+        "alarm": false
+      },
+      {
+        "id": "benchR:29e726a7:Welding_Sparks_3843951412_",
+        "positive": true,
+        "max_conf": 0.061165,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f5e3c977:An_orange_flower_in_Amsterdam",
+        "positive": false,
+        "max_conf": 0.41325,
+        "alarm": true
+      },
+      {
+        "id": "benchR:94d0c27a:-TravelTuesday_with_My_Public_Lands_-_25473082031",
+        "positive": false,
+        "max_conf": 0.045239,
+        "alarm": false
+      },
+      {
+        "id": "benchR:52c59d25:Lahori_Charga_during_steam_cooking",
+        "positive": false,
+        "max_conf": 0.023586,
+        "alarm": false
+      },
+      {
+        "id": "benchR:93cfc753:02026_0100_Easter_Sunday_at_a_traditional_wooden_P_czkarnia_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1fd70ac9:Brandschaden_Fahrzeugbrand_Drygalski-Allee_Munich_06",
+        "positive": false,
+        "max_conf": 0.014076,
+        "alarm": false
+      },
+      {
+        "id": "benchR:f4be7c72:Edmonton_neon_sign_museum_east",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8c8b5328:Fog_in_forest_and_creek_at_Kent_Washington",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6d2057b5:Candle_-_Vela_-_01",
+        "positive": true,
+        "max_conf": 0.788897,
+        "alarm": true
+      },
+      {
+        "id": "benchR:736a8f16:Europa_Clipper_s_Dust_Analyzer_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:8dcb64b4:Black_Forest_fire_near_8pm_Tuesday",
+        "positive": true,
+        "max_conf": 0.623483,
+        "alarm": true
+      },
+      {
+        "id": "benchR:b8d598d5:Aftermath_of_a_House_fire_on_East_Park_Road_Spofforth_North_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:6b9ea74b:A_Pair_of_Candle_Flames_1793613381_",
+        "positive": true,
+        "max_conf": 0.83355,
+        "alarm": true
+      },
+      {
+        "id": "benchR:9770f245:Balhennie_s_ghostly_chimney_smoke_A_wispy_contrail_adds_to_t",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:1b9e3af8:Neon_sunset_sign_hanging_over_a_river_in_Katowice",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2d86c91a:Sparks_110718-N-LL945-105",
+        "positive": true,
+        "max_conf": 0.1909,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdd7e40d:Snow_and_fog_in_Jinlanshan_National_Forest_Park",
+        "positive": false,
+        "max_conf": 0.044419,
+        "alarm": false
+      },
+      {
+        "id": "benchR:4244a7c4:-TravelTuesday_with_My_Public_Lands_-_25565805255",
+        "positive": false,
+        "max_conf": 0.012042,
+        "alarm": false
+      },
+      {
+        "id": "benchR:49df0403:Fog_in_forest_at_Kent_Washington_-_2",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:c5863b1d:Interior_of_the_Hsinchu_City_Art_Site_of_Railway_Warehouse_0",
+        "positive": false,
+        "max_conf": 0.042103,
+        "alarm": false
+      },
+      {
+        "id": "benchR:98158aac:Dredge_ship_Obskaya-103",
+        "positive": true,
+        "max_conf": 0.670459,
+        "alarm": true
+      },
+      {
+        "id": "benchR:3c8e4d60:MPR_T5_Construction_2025-08-27_003",
+        "positive": false,
+        "max_conf": 0.027128,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0ff14561:Toronto_wildfire_smoke_July_15_2026_18599_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fcab22f0:Rescue_workers_near_the_semi-collapsed_ten-story_Uranus_Buil",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:2ed010ba:_Barcelona_Dining_Room_by_Pere_Torn_Esquius_-_Museu_Nacional",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:69934efc:MPR_T5_Construction_2025-08-26_048",
+        "positive": false,
+        "max_conf": 0.574266,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d2c2d5a8:US_Navy_101108-N-9132C-022_Hull_Maintenance_Technician_3rd_C",
+        "positive": true,
+        "max_conf": 0.445044,
+        "alarm": true
+      },
+      {
+        "id": "benchR:d64950bd:PMG-1_fire_engine",
+        "positive": false,
+        "max_conf": 0.011519,
+        "alarm": false
+      },
+      {
+        "id": "benchR:9a4b95ef:Exhaust_emissions_1",
+        "positive": false,
+        "max_conf": 0.029284,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d861be2f:Doctor_Who_The_Giggle_June_2022_filming_-_Car_Fire_with_prop",
+        "positive": true,
+        "max_conf": 0.79384,
+        "alarm": true
+      },
+      {
+        "id": "benchR:cf409c96:Clouds_and_blue_sky_in_Russia._IMG_026",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:af18a0ae:Grinding_the_sparks",
+        "positive": true,
+        "max_conf": 0.153999,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d2c73eb0:Orange_flowers_2014",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:128fa628:Bles_Landscape_with_Sodom_on_fire_detail_",
+        "positive": false,
+        "max_conf": 0.085177,
+        "alarm": false
+      },
+      {
+        "id": "benchR:a507145b:Interior_Albert_D._German_Warehouse_Church_Street_and_Haselt",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:070fbdb0:Ocean_Floor_V_33712023355_",
+        "positive": false,
+        "max_conf": 0.030402,
+        "alarm": false
+      },
+      {
+        "id": "benchR:41d41839:Lighter_-_Flickr_-_pyntofmyld",
+        "positive": true,
+        "max_conf": 0.816295,
+        "alarm": true
+      },
+      {
+        "id": "benchR:89085d38:WildfireKolm_rden2020",
+        "positive": false,
+        "max_conf": 0.011603,
+        "alarm": false
+      },
+      {
+        "id": "benchR:336056aa:Rwenzori_tropical_montane_forest",
+        "positive": false,
+        "max_conf": 0.240026,
+        "alarm": false
+      },
+      {
+        "id": "benchR:fdbc3c64:MPR_T5_Construction_2025-08-27_007",
+        "positive": false,
+        "max_conf": 0.020529,
+        "alarm": false
+      },
+      {
+        "id": "benchR:605606b0:Speeding_on_the_Expressway_Unsplash_",
+        "positive": false,
+        "max_conf": 0.022249,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0c6363b0:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070734",
+        "positive": true,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:0fe4fd9f:Firefighters_2020_El_Dorado_Fire_Sep10",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:d3faac95:MAN_TGM_fire_engine_at_night_Warsaw_Poland",
+        "positive": false,
+        "max_conf": 0.086521,
+        "alarm": false
+      },
+      {
+        "id": "benchR:cf26172b:Li_Phi_falls_at_sunrise_with_white_and_grey_clouds_in_Don_Kh",
+        "positive": false,
+        "max_conf": 0.014956,
+        "alarm": false
+      },
+      {
+        "id": "benchR:ce34f58e:Soothing_Lights_199918569_.jpeg",
+        "positive": false,
+        "max_conf": 0.011284,
+        "alarm": false
+      },
+      {
+        "id": "benchR:317ce385:Orange_flowers_1359256859_",
+        "positive": false,
+        "max_conf": 0.0,
+        "alarm": false
+      },
+      {
+        "id": "benchR:87390897:MPR_T5_Construction_2025-08-27_004",
+        "positive": false,
+        "max_conf": 0.086229,
+        "alarm": false
+      },
+      {
+        "id": "benchR:020caf6b:Wildfire_in_Whitireia_Park_Porirua_New_Zealand_in_2010",
+        "positive": true,
+        "max_conf": 0.840522,
+        "alarm": true
+      },
+      {
+        "id": "benchR:8d1fbfd1:Clouds_and_blue_sky_in_Russia._IMG_115",
+        "positive": false,
+        "max_conf": 0.028435,
+        "alarm": false
+      },
+      {
+        "id": "benchR:73181771:Sunset_in_Thick_Smoke_Reno_Nevada_50425355538_",
+        "positive": false,
+        "max_conf": 0.357632,
+        "alarm": false
+      }
+    ]
+  }
+}

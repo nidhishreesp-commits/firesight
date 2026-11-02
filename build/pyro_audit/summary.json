@@ -1,0 +1,128 @@
+{
+  "n": 100,
+  "with_boxes": 89,
+  "empty": 11,
+  "fog_as_smoke_suspects": 86,
+  "missing_box_suspects": 1,
+  "fog_examples": [
+    {
+      "i": 0,
+      "image": "force-06_courmettes-212_2024-09-17T17-17-35.jpg",
+      "clip": {
+        "a photo of smoke": 0.1486,
+        "a photo of fog or mist": 0.1745,
+        "a photo of clouds": 0.2211,
+        "a photo of fire": 0.1353,
+        "a photo of a clear sky": 0.1621
+      }
+    },
+    {
+      "i": 1,
+      "image": "force-06_cabanelle-125_2024-02-24T11-19-30.jpg",
+      "clip": {
+        "a photo of smoke": 0.1417,
+        "a photo of fog or mist": 0.1638,
+        "a photo of clouds": 0.1762,
+        "a photo of fire": 0.1302,
+        "a photo of a clear sky": 0.1882
+      }
+    },
+    {
+      "i": 2,
+      "image": "force-06_courmettes-212_2024-01-03T13-47-57.jpg",
+      "clip": {
+        "a photo of smoke": 0.1778,
+        "a photo of fog or mist": 0.1907,
+        "a photo of clouds": 0.2213,
+        "a photo of fire": 0.1677,
+        "a photo of a clear sky": 0.2215
+      }
+    },
+    {
+      "i": 3,
+      "image": "force-06_courmettes-275_2024-02-28T13-15-23.jpg",
+      "clip": {
+        "a photo of smoke": 0.1546,
+        "a photo of fog or mist": 0.1889,
+        "a photo of clouds": 0.1982,
+        "a photo of fire": 0.1463,
+        "a photo of a clear sky": 0.2088
+      }
+    },
+    {
+      "i": 4,
+      "image": "force-06_courmettes-275_2024-06-23T19-26-48.jpg",
+      "clip": {
+        "a photo of smoke": 0.1682,
+        "a photo of fog or mist": 0.2311,
+        "a photo of clouds": 0.2226,
+        "a photo of fire": 0.14,
+        "a photo of a clear sky": 0.2022
+      }
+    },
+    {
+      "i": 5,
+      "image": "force-06_cabanelle-327_2024-02-17T09-58-29.jpg",
+      "clip": {
+        "a photo of smoke": 0.1736,
+        "a photo of fog or mist": 0.1918,
+        "a photo of clouds": 0.1724,
+        "a photo of fire": 0.1618,
+        "a photo of a clear sky": 0.2312
+      }
+    },
+    {
+      "i": 6,
+      "image": "force-06_cabanelle-244_2024-04-07T09-33-22.jpg",
+      "clip": {
+        "a photo of smoke": 0.171,
+        "a photo of fog or mist": 0.1862,
+        "a photo of clouds": 0.1832,
+        "a photo of fire": 0.1551,
+        "a photo of a clear sky": 0.2111
+      }
+    },
+    {
+      "i": 7,
+      "image": "force-06_courmettes-212_2024-01-11T14-10-42.jpg",
+      "clip": {
+        "a photo of smoke": 0.1775,
+        "a photo of fog or mist": 0.2052,
+        "a photo of clouds": 0.2231,
+        "a photo of fire": 0.1628,
+        "a photo of a clear sky": 0.2361
+      }
+    },
+    {
+      "i": 8,
+      "image": "force-06_cabanelle-46_2024-02-23T09-53-10.jpg",
+      "clip": {
+        "a photo of smoke": 0.1609,
+        "a photo of fog or mist": 0.1794,
+        "a photo of clouds": 0.1987,
+        "a photo of fire": 0.1415,
+        "a photo of a clear sky": 0.2116
+      }
+    },
+    {
+      "i": 9,
+      "image": "force-06_ferion-142_2024-02-19T11-38-23.jpg",
+      "clip": {
+        "a photo of smoke": 0.2214,
+        "a photo of fog or mist": 0.2447,
+        "a photo of clouds": 0.2165,
+        "a photo of fire": 0.1888,
+        "a photo of a clear sky": 0.2363
+      }
+    }
+  ],
+  "missing_examples": [
+    {
+      "i": 54,
+      "image": "sdis-07_serre-de-barre-310_2024-09-04T20-12-57.jpg",
+      "max_fire": 0.0,
+      "max_smoke": 0.7265031933784485,
+      "n_boxes": 0
+    }
+  ]
+}

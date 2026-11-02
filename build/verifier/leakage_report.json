@@ -1,0 +1,77 @@
+{
+  "training_images": 4942,
+  "training_scenes": 4280,
+  "sets": {
+    "val": {
+      "n": 8252,
+      "exact_sha": 0,
+      "phash_le2": 0,
+      "id_overlap": 0,
+      "scene_overlap": 0,
+      "sample_videos_paths_in_training": 0,
+      "examples": {
+        "exact": [],
+        "phash": [],
+        "ids": [],
+        "scenes": []
+      }
+    },
+    "TEST": {
+      "n": 8113,
+      "exact_sha": 0,
+      "phash_le2": 0,
+      "id_overlap": 0,
+      "scene_overlap": 0,
+      "sample_videos_paths_in_training": 0,
+      "examples": {
+        "exact": [],
+        "phash": [],
+        "ids": [],
+        "scenes": []
+      }
+    },
+    "bench_R_DEV": {
+      "n": 300,
+      "exact_sha": 0,
+      "phash_le2": 0,
+      "id_overlap": 0,
+      "scene_overlap": 0,
+      "sample_videos_paths_in_training": 0,
+      "examples": {
+        "exact": [],
+        "phash": [],
+        "ids": [],
+        "scenes": []
+      }
+    },
+    "independent_neg": {
+      "n": 5535,
+      "exact_sha": 0,
+      "phash_le2": 0,
+      "id_overlap": 0,
+      "scene_overlap": 0,
+      "sample_videos_paths_in_training": 0,
+      "examples": {
+        "exact": [],
+        "phash": [],
+        "ids": [],
+        "scenes": []
+      }
+    },
+    "sample_videos": {
+      "n": 104,
+      "exact_sha": 0,
+      "phash_le2": 0,
+      "id_overlap": 0,
+      "scene_overlap": 0,
+      "sample_videos_paths_in_training": 0,
+      "examples": {
+        "exact": [],
+        "phash": [],
+        "ids": [],
+        "scenes": []
+      }
+    }
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "n_train": 16,
+  "n_val": 20,
+  "n_val_cal": 20,
+  "val_cal_positives": 10,
+  "model": "build\\kaggle_code\\yolo11s.pt",
+  "epochs_requested": 1,
+  "patience": 10,
+  "lr0": 0.01,
+  "lrf": 0.01,
+  "cos_lr": true,
+  "warmup_epochs": 3.0,
+  "seed": 0,
+  "imgsz": 320,
+  "batch": 4,
+  "amp": false,
+  "selection": "max recall at FPR<=2% on val_cal (image-level)",
+  "best": {
+    "recall": 0.3,
+    "fpr": 0.0,
+    "epoch": 1,
+    "threshold": 0.438924
+  },
+  "wall_time_s": 16.4,
+  "throughput": {
+    "epochs_recorded": 1,
+    "median_s_per_epoch": null,
+    "images_per_s": null
+  },
+  "best_recall_pt": "build\\stage_b_smoke\\run\\weights\\best_recall.pt"
+}

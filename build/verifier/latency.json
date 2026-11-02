@@ -1,0 +1,17 @@
+{
+  "rss_start_MB": 487.2,
+  "load_p50_s": 0.0,
+  "rss_p50_MB": 495.5,
+  "load_clip_verifier_s": 2.77,
+  "rss_clip_verifier_MB": 1143.1,
+  "frames": 30,
+  "detections_total": 42,
+  "detections_per_frame_mean": 1.4,
+  "p50_ms_mean": 82.92,
+  "p50_ms_median": 75.9,
+  "verifier_ms_mean": 174.79,
+  "verifier_ms_median": 206.19,
+  "cascade_total_ms_mean": 257.71,
+  "rss_peak_MB": 1391.6,
+  "note": "CPU i7-1165G7, ONNX Runtime, CLIP ViT-B/32; verifier time includes box+context crops and full-image CLIP per frame"
+}
