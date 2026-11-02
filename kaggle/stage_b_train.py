@@ -71,13 +71,14 @@ def load_binary_labels(paths: list[Path]) -> dict[str, int]:
 
 
 def predict_scores(model, paths: list[Path], imgsz: int, batch: int, device: str,
-                   half: bool, tmp_list: Path) -> dict[str, float]:
-    tmp_list.write_text("\n".join(str(p) for p in paths) + "\n", encoding="utf-8")
+                   half: bool, tmp_list: Path, chunk: int = 32) -> dict[str, float]:
     scores: dict[str, float] = {}
-    for result in model.predict(str(tmp_list), imgsz=imgsz, conf=0.001, batch=batch,
-                                device=device, half=half, verbose=False, stream=True):
-        scores[Path(result.path).stem] = max(
-            (float(b.conf.item()) for b in result.boxes), default=0.0)
+    for start in range(0, len(paths), chunk):
+        part = [str(p) for p in paths[start:start + chunk]]
+        for result in model.predict(part, imgsz=imgsz, conf=0.001, batch=batch,
+                                    device=device, half=half, verbose=False, stream=True):
+            scores[Path(result.path).stem] = max(
+                (float(b.conf.item()) for b in result.boxes), default=0.0)
     return scores
 
 
