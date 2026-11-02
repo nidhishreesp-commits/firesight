@@ -1,0 +1,7 @@
+path: /kaggle/input/datasets/nidhishreesp/firesight-pilot
+train: /kaggle/working/runs/E1/lists/train.txt
+val: /kaggle/working/runs/E1/lists/val.txt
+names:
+  0: fire
+  1: smoke
+nc: 2

@@ -1,0 +1,232 @@
+[{"stream_name":"stderr","time":6.942764401,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.942805228,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.93608138,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.936110039,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.936114937,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.9361189450000005,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.567957498,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.567997817,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.568001116,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.568003637,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.632909477,"data":"GPU 0: Tesla T4 (UUID: GPU-ea70b1a8-c754-0b00-6f7f-38270c10c189)\n"}
+,{"stream_name":"stdout","time":17.632938998,"data":"GPU 1: Tesla T4 (UUID: GPU-f2253026-22e6-1859-31e1-4c19b6a4b9a2)\n"}
+,{"stream_name":"stdout","time":17.632943402,"data":"\n"}
+,{"stream_name":"stdout","time":17.632946641,"data":"gpus 2\n"}
+,{"stream_name":"stdout","time":20.403748743,"data":"{'ultralytics': '8.4.147', 'torch': '2.11.0+cu128'}\n"}
+,{"stream_name":"stdout","time":42.738830392,"data":"DATA /kaggle/input/datasets/nidhishreesp/firesight-pilot\n"}
+,{"stream_name":"stdout","time":42.738870076,"data":"CODE /kaggle/input/datasets/nidhishreesp/firesight-stage-b-code\n"}
+,{"stream_name":"stdout","time":42.738876602,"data":"NEG /kaggle/input/datasets/nidhishreesp/firesight-stage-a-negatives\n"}
+,{"stream_name":"stdout","time":42.738881584,"data":"YOLO /kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/yolo11s.pt\n"}
+,{"stream_name":"stdout","time":51.232798872,"data":"e1_train.txt 16074\n"}
+,{"stream_name":"stdout","time":51.232827607,"data":"val.txt 1000\n"}
+,{"stream_name":"stdout","time":51.23283354,"data":"val_cal.txt 2000\n"}
+,{"stream_name":"stdout","time":51.232837811,"data":"val_report.txt 5119\n"}
+,{"stream_name":"stdout","time":51.244562436,"data":"RUN python -u /kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_train.py --dataset /kaggle/input/datasets/nidhishreesp/firesight-pilot --train-list /kaggle/working/lists/e1_train.txt --val-list /kaggle/working/lists/val.txt --val-cal-list /kaggle/working/lists/val_cal.txt --out /kaggle/working/runs/E1 --model /kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/yolo11s.pt --epochs 20 --patience 10 --imgsz 640 --batch 64 --device 0 --workers 4 --lr0 0.01 --lrf 0.01 --seed 0 --amp\n"}
+,{"stream_name":"stdout","time":161.46089398,"data":"{\"n_train\": 16074, \"n_val\": 1000, \"n_val_cal\": 2000, \"val_cal_positives\": 967}\n"}
+,{"stream_name":"stdout","time":161.664794294,"data":"{\"n_train\": 16074, \"n_val\": 1000, \"n_val_cal\": 2000, \"val_cal_positives\": 967}\n"}
+,{"stream_name":"stdout","time":170.883081185,"data":"{\"resumed\": false, \"model\": \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/yolo11s.pt\", \"epochs\": 20, \"patience\": 10, \"device\": \"0\", \"amp\": true}\n"}
+,{"stream_name":"stdout","time":171.086265836,"data":"{\"resumed\": false, \"model\": \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/yolo11s.pt\", \"epochs\": 20, \"patience\": 10, \"device\": \"0\", \"amp\": true}\n"}
+,{"stream_name":"stdout","time":182.324751044,"data":"\r\u001b[KDownloading https://ultralytics.com/assets/Arial.ttf to '/root/.config/Ultralytics/Arial.ttf': 100% ━━━━━━━━━━━━ 755.1KB 7.9MB/s 0.1s\n"}
+,{"stream_name":"stdout","time":182.527058854,"data":"\r\u001b[KDownloading https://ultralytics.com/assets/Arial.ttf to '/root/.config/Ultralytics/Arial.ttf': 100% ━━━━━━━━━━━━ 755.1KB 7.9MB/s 0.1s\n"}
+,{"stream_name":"stdout","time":183.69905841,"data":"\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt to 'weights/yolo26n.pt': 100% ━━━━━━━━━━━━ 5.3MB 54.4MB/s 0.1s\n"}
+,{"stream_name":"stdout","time":183.901341445,"data":"\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt to 'weights/yolo26n.pt': 100% ━━━━━━━━━━━━ 5.3MB 54.4MB/s 0.1s\n"}
+,{"stream_name":"stdout","time":4319.125315975,"data":"{\"epoch\": 1, \"recall_at_fpr\": 0.2834, \"fpr\": 0.0194, \"best_epoch\": 1, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":4319.332515758,"data":"{\"epoch\": 1, \"recall_at_fpr\": 0.2834, \"fpr\": 0.0194, \"best_epoch\": 1, \"stale\": 0}\n"}
+,{"stream_name":"stderr","time":4319.358143037,"data":"/usr/local/lib/python3.13/dist-packages/ray/train/_internal/session.py:683: UserWarning: `get_trial_id` is meant to only be called inside a function that is executed by a Tuner or Trainer. Returning `None`.\n"}
+,{"stream_name":"stderr","time":4319.358164275,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":4319.560846141,"data":"/usr/local/lib/python3.13/dist-packages/ray/train/_internal/session.py:683: UserWarning: `get_trial_id` is meant to only be called inside a function that is executed by a Tuner or Trainer. Returning `None`.\n"}
+,{"stream_name":"stderr","time":4319.560878919,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":4319.56088465,"data":"\n"}
+,{"stream_name":"stderr","time":4319.560889132,"data":"/usr/local/lib/python3.13/dist-packages/ray/train/_internal/session.py:683: UserWarning: `get_trial_id` is meant to only be called inside a function that is executed by a Tuner or Trainer. Returning `None`.\n"}
+,{"stream_name":"stderr","time":4319.560896353,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":4570.173452855,"data":"{\"epoch\": 2, \"recall_at_fpr\": 0.1975, \"fpr\": 0.0194, \"best_epoch\": 1, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":4570.379233134,"data":"{\"epoch\": 2, \"recall_at_fpr\": 0.1975, \"fpr\": 0.0194, \"best_epoch\": 1, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":4821.392591987,"data":"{\"epoch\": 3, \"recall_at_fpr\": 0.2006, \"fpr\": 0.0184, \"best_epoch\": 1, \"stale\": 2}\n"}
+,{"stream_name":"stdout","time":4821.598299249,"data":"{\"epoch\": 3, \"recall_at_fpr\": 0.2006, \"fpr\": 0.0184, \"best_epoch\": 1, \"stale\": 2}\n"}
+,{"stream_name":"stdout","time":5071.556890703,"data":"{\"epoch\": 4, \"recall_at_fpr\": 0.3837, \"fpr\": 0.0194, \"best_epoch\": 4, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":5071.762860968,"data":"{\"epoch\": 4, \"recall_at_fpr\": 0.3837, \"fpr\": 0.0194, \"best_epoch\": 4, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":5318.47077458,"data":"{\"epoch\": 5, \"recall_at_fpr\": 0.3599, \"fpr\": 0.0194, \"best_epoch\": 4, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":5318.675455052,"data":"{\"epoch\": 5, \"recall_at_fpr\": 0.3599, \"fpr\": 0.0194, \"best_epoch\": 4, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":5568.690696969,"data":"{\"epoch\": 6, \"recall_at_fpr\": 0.4654, \"fpr\": 0.0194, \"best_epoch\": 6, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":5568.900012665,"data":"{\"epoch\": 6, \"recall_at_fpr\": 0.4654, \"fpr\": 0.0194, \"best_epoch\": 6, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":5815.475888788,"data":"{\"epoch\": 7, \"recall_at_fpr\": 0.7291, \"fpr\": 0.0194, \"best_epoch\": 7, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":5815.681617691,"data":"{\"epoch\": 7, \"recall_at_fpr\": 0.7291, \"fpr\": 0.0194, \"best_epoch\": 7, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":6060.508186156,"data":"{\"epoch\": 8, \"recall_at_fpr\": 0.7301, \"fpr\": 0.0194, \"best_epoch\": 8, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":6060.723705934,"data":"{\"epoch\": 8, \"recall_at_fpr\": 0.7301, \"fpr\": 0.0194, \"best_epoch\": 8, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":6305.674638139,"data":"{\"epoch\": 9, \"recall_at_fpr\": 0.6649, \"fpr\": 0.0194, \"best_epoch\": 8, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":6305.880907075,"data":"{\"epoch\": 9, \"recall_at_fpr\": 0.6649, \"fpr\": 0.0194, \"best_epoch\": 8, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":6550.217071294,"data":"{\"epoch\": 10, \"recall_at_fpr\": 0.5977, \"fpr\": 0.0194, \"best_epoch\": 8, \"stale\": 2}\n"}
+,{"stream_name":"stdout","time":6550.42360186,"data":"{\"epoch\": 10, \"recall_at_fpr\": 0.5977, \"fpr\": 0.0194, \"best_epoch\": 8, \"stale\": 2}\n"}
+,{"stream_name":"stdout","time":6796.042668044,"data":"{\"epoch\": 11, \"recall_at_fpr\": 0.8345, \"fpr\": 0.0194, \"best_epoch\": 11, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":6796.247559421,"data":"{\"epoch\": 11, \"recall_at_fpr\": 0.8345, \"fpr\": 0.0194, \"best_epoch\": 11, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":7040.517600569,"data":"{\"epoch\": 12, \"recall_at_fpr\": 0.819, \"fpr\": 0.0194, \"best_epoch\": 11, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":7040.72684261,"data":"{\"epoch\": 12, \"recall_at_fpr\": 0.819, \"fpr\": 0.0194, \"best_epoch\": 11, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":7285.597606664,"data":"{\"epoch\": 13, \"recall_at_fpr\": 0.817, \"fpr\": 0.0194, \"best_epoch\": 11, \"stale\": 2}\n"}
+,{"stream_name":"stdout","time":7285.802748634,"data":"{\"epoch\": 13, \"recall_at_fpr\": 0.817, \"fpr\": 0.0194, \"best_epoch\": 11, \"stale\": 2}\n"}
+,{"stream_name":"stdout","time":7529.67314913,"data":"{\"epoch\": 14, \"recall_at_fpr\": 0.8428, \"fpr\": 0.0194, \"best_epoch\": 14, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":7529.881172134,"data":"{\"epoch\": 14, \"recall_at_fpr\": 0.8428, \"fpr\": 0.0194, \"best_epoch\": 14, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":7773.673195874,"data":"{\"epoch\": 15, \"recall_at_fpr\": 0.878, \"fpr\": 0.0194, \"best_epoch\": 15, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":7773.879810273,"data":"{\"epoch\": 15, \"recall_at_fpr\": 0.878, \"fpr\": 0.0194, \"best_epoch\": 15, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":8017.120440354,"data":"{\"epoch\": 16, \"recall_at_fpr\": 0.9028, \"fpr\": 0.0194, \"best_epoch\": 16, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":8017.326974948,"data":"{\"epoch\": 16, \"recall_at_fpr\": 0.9028, \"fpr\": 0.0194, \"best_epoch\": 16, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":8261.3516895,"data":"{\"epoch\": 17, \"recall_at_fpr\": 0.8728, \"fpr\": 0.0194, \"best_epoch\": 16, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":8261.556362432,"data":"{\"epoch\": 17, \"recall_at_fpr\": 0.8728, \"fpr\": 0.0194, \"best_epoch\": 16, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":8505.119406514,"data":"{\"epoch\": 18, \"recall_at_fpr\": 0.9131, \"fpr\": 0.0194, \"best_epoch\": 18, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":8505.326851425,"data":"{\"epoch\": 18, \"recall_at_fpr\": 0.9131, \"fpr\": 0.0194, \"best_epoch\": 18, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":8748.478776927,"data":"{\"epoch\": 19, \"recall_at_fpr\": 0.9193, \"fpr\": 0.0184, \"best_epoch\": 19, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":8748.685956054,"data":"{\"epoch\": 19, \"recall_at_fpr\": 0.9193, \"fpr\": 0.0184, \"best_epoch\": 19, \"stale\": 0}\n"}
+,{"stream_name":"stdout","time":8991.661285203,"data":"{\"epoch\": 20, \"recall_at_fpr\": 0.9193, \"fpr\": 0.0194, \"best_epoch\": 19, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":8991.866097108,"data":"{\"epoch\": 20, \"recall_at_fpr\": 0.9193, \"fpr\": 0.0194, \"best_epoch\": 19, \"stale\": 1}\n"}
+,{"stream_name":"stdout","time":9017.49617793,"data":"{\n"}
+,{"stream_name":"stdout","time":9017.496209755,"data":"  \"n_train\": 16074,\n"}
+,{"stream_name":"stdout","time":9017.496215577,"data":"  \"n_val\": 1000,\n"}
+,{"stream_name":"stdout","time":9017.49621988,"data":"  \"n_val_cal\": 2000,\n"}
+,{"stream_name":"stdout","time":9017.496224353,"data":"  \"val_cal_positives\": 967,\n"}
+,{"stream_name":"stdout","time":9017.496228656,"data":"  \"model\": \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/yolo11s.pt\",\n"}
+,{"stream_name":"stdout","time":9017.496233684,"data":"  \"epochs_requested\": 20,\n"}
+,{"stream_name":"stdout","time":9017.496238373,"data":"  \"patience\": 10,\n"}
+,{"stream_name":"stdout","time":9017.496243087,"data":"  \"lr0\": 0.01,\n"}
+,{"stream_name":"stdout","time":9017.49624851,"data":"  \"lrf\": 0.01,\n"}
+,{"stream_name":"stdout","time":9017.496253603,"data":"  \"cos_lr\": true,\n"}
+,{"stream_name":"stdout","time":9017.496258307,"data":"  \"warmup_epochs\": 3.0,\n"}
+,{"stream_name":"stdout","time":9017.496263263,"data":"  \"seed\": 0,\n"}
+,{"stream_name":"stdout","time":9017.496268098,"data":"  \"imgsz\": 640,\n"}
+,{"stream_name":"stdout","time":9017.496273529,"data":"  \"batch\": 64,\n"}
+,{"stream_name":"stdout","time":9017.496278977,"data":"  \"amp\": true,\n"}
+,{"stream_name":"stdout","time":9017.496284201,"data":"  \"selection\": \"max recall at FPR\u003c=2% on val_cal (image-level)\",\n"}
+,{"stream_name":"stdout","time":9017.496290609,"data":"  \"best\": {\n"}
+,{"stream_name":"stdout","time":9017.496295625,"data":"    \"recall\": 0.919338,\n"}
+,{"stream_name":"stdout","time":9017.49630043,"data":"    \"fpr\": 0.018393,\n"}
+,{"stream_name":"stdout","time":9017.496305003,"data":"    \"epoch\": 19,\n"}
+,{"stream_name":"stdout","time":9017.496310341,"data":"    \"threshold\": 0.24939\n"}
+,{"stream_name":"stdout","time":9017.4963146,"data":"  },\n"}
+,{"stream_name":"stdout","time":9017.496318748,"data":"  \"wall_time_s\": 8846.6,\n"}
+,{"stream_name":"stdout","time":9017.496323582,"data":"  \"throughput\": {\n"}
+,{"stream_name":"stdout","time":9017.496328926,"data":"    \"epochs_recorded\": 20,\n"}
+,{"stream_name":"stdout","time":9017.496334505,"data":"    \"median_s_per_epoch\": 244.94,\n"}
+,{"stream_name":"stdout","time":9017.496339159,"data":"    \"images_per_s\": 65.62\n"}
+,{"stream_name":"stdout","time":9017.496344391,"data":"  },\n"}
+,{"stream_name":"stdout","time":9017.496348773,"data":"  \"best_recall_pt\": \"/kaggle/working/runs/E1/weights/best_recall.pt\"\n"}
+,{"stream_name":"stdout","time":9017.496353807,"data":"}\n"}
+,{"stream_name":"stdout","time":9017.69960358,"data":"{\n"}
+,{"stream_name":"stdout","time":9017.699636922,"data":"  \"n_train\": 16074,\n"}
+,{"stream_name":"stdout","time":9017.699660561,"data":"  \"n_val\": 1000,\n"}
+,{"stream_name":"stdout","time":9017.699685768,"data":"  \"n_val_cal\": 2000,\n"}
+,{"stream_name":"stdout","time":9017.699690841,"data":"  \"val_cal_positives\": 967,\n"}
+,{"stream_name":"stdout","time":9017.699694937,"data":"  \"model\": \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/yolo11s.pt\",\n"}
+,{"stream_name":"stdout","time":9017.699699299,"data":"  \"epochs_requested\": 20,\n"}
+,{"stream_name":"stdout","time":9017.699703376,"data":"  \"patience\": 10,\n"}
+,{"stream_name":"stdout","time":9017.699711972,"data":"  \"lr0\": 0.01,\n"}
+,{"stream_name":"stdout","time":9017.6997149,"data":"  \"lrf\": 0.01,\n"}
+,{"stream_name":"stdout","time":9017.699717497,"data":"  \"cos_lr\": true,\n"}
+,{"stream_name":"stdout","time":9017.699720117,"data":"  \"warmup_epochs\": 3.0,\n"}
+,{"stream_name":"stdout","time":9017.699722869,"data":"  \"seed\": 0,\n"}
+,{"stream_name":"stdout","time":9017.699725509,"data":"  \"imgsz\": 640,\n"}
+,{"stream_name":"stdout","time":9017.699728107,"data":"  \"batch\": 64,\n"}
+,{"stream_name":"stdout","time":9017.69973066,"data":"  \"amp\": true,\n"}
+,{"stream_name":"stdout","time":9017.699733375,"data":"  \"selection\": \"max recall at FPR\u003c=2% on val_cal (image-level)\",\n"}
+,{"stream_name":"stdout","time":9017.699736606,"data":"  \"best\": {\n"}
+,{"stream_name":"stdout","time":9017.699739248,"data":"    \"recall\": 0.919338,\n"}
+,{"stream_name":"stdout","time":9017.699742137,"data":"    \"fpr\": 0.018393,\n"}
+,{"stream_name":"stdout","time":9017.699757794,"data":"    \"epoch\": 19,\n"}
+,{"stream_name":"stdout","time":9017.699762583,"data":"    \"threshold\": 0.24939\n"}
+,{"stream_name":"stdout","time":9017.699767153,"data":"  },\n"}
+,{"stream_name":"stdout","time":9017.699771331,"data":"  \"wall_time_s\": 8846.6,\n"}
+,{"stream_name":"stdout","time":9017.699776073,"data":"  \"throughput\": {\n"}
+,{"stream_name":"stdout","time":9017.699780351,"data":"    \"epochs_recorded\": 20,\n"}
+,{"stream_name":"stdout","time":9017.699784251,"data":"    \"median_s_per_epoch\": 244.94,\n"}
+,{"stream_name":"stdout","time":9017.699788138,"data":"    \"images_per_s\": 65.62\n"}
+,{"stream_name":"stdout","time":9017.699792046,"data":"  },\n"}
+,{"stream_name":"stdout","time":9017.699795753,"data":"  \"best_recall_pt\": \"/kaggle/working/runs/E1/weights/best_recall.pt\"\n"}
+,{"stream_name":"stdout","time":9017.699799901,"data":"}\n"}
+,{"stream_name":"stderr","time":9598.048362766,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9598.050018993,"data":"  File \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_predict.py\", line 49, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":9598.050039896,"data":"    raise SystemExit(main())\n"}
+,{"stream_name":"stderr","time":9598.050045311,"data":"                     ~~~~^^\n"}
+,{"stream_name":"stderr","time":9598.050050009,"data":"  File \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_predict.py\", line 35, in main\n"}
+,{"stream_name":"stderr","time":9598.050054588,"data":"    for result in model.predict(paths, imgsz=args.imgsz, conf=args.conf, batch=args.batch,\n"}
+,{"stream_name":"stderr","time":9598.050059074,"data":"                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9598.050063357,"data":"                                device=args.device, half=args.half, verbose=False, stream=True):\n"}
+,{"stream_name":"stderr","time":9598.050067948,"data":"                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9598.050072684,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 40, in generator_context\n"}
+,{"stream_name":"stderr","time":9598.050089345,"data":"    response = gen.send(None)\n"}
+,{"stream_name":"stderr","time":9598.050093577,"data":"  File \"/usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py\", line 347, in stream_inference\n"}
+,{"stream_name":"stderr","time":9598.050097196,"data":"    im = self.preprocess(im0s)\n"}
+,{"stream_name":"stderr","time":9598.050100688,"data":"  File \"/usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py\", line 181, in preprocess\n"}
+,{"stream_name":"stderr","time":9598.050104353,"data":"    im = (im.half() if self.model.fp16 else im.float()).div_(255)  # uint8 to fp16/32, 0 - 255 to 0.0 - 1.0\n"}
+,{"stream_name":"stderr","time":9598.050108009,"data":"          ~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":9598.050117477,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 11.72 GiB. GPU 0 has a total capacity of 14.56 GiB of which 8.55 GiB is free. Including non-PyTorch memory, this process has 6.01 GiB memory in use. Of the allocated memory 5.88 GiB is allocated by PyTorch, and 19.15 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":9598.256726876,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9598.256751771,"data":"  File \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_predict.py\", line 49, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":9598.256763691,"data":"    raise SystemExit(main())\n"}
+,{"stream_name":"stderr","time":9598.256780288,"data":"                     ~~~~^^\n"}
+,{"stream_name":"stderr","time":9598.256784518,"data":"  File \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_predict.py\", line 35, in main\n"}
+,{"stream_name":"stderr","time":9598.256789278,"data":"    for result in model.predict(paths, imgsz=args.imgsz, conf=args.conf, batch=args.batch,\n"}
+,{"stream_name":"stderr","time":9598.256793538,"data":"                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9598.256797953,"data":"                                device=args.device, half=args.half, verbose=False, stream=True):\n"}
+,{"stream_name":"stderr","time":9598.256802348,"data":"                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9598.256806245,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 40, in generator_context\n"}
+,{"stream_name":"stderr","time":9598.256810012,"data":"    response = gen.send(None)\n"}
+,{"stream_name":"stderr","time":9598.256813444,"data":"  File \"/usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py\", line 347, in stream_inference\n"}
+,{"stream_name":"stderr","time":9598.256817166,"data":"    im = self.preprocess(im0s)\n"}
+,{"stream_name":"stderr","time":9598.256820627,"data":"  File \"/usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py\", line 181, in preprocess\n"}
+,{"stream_name":"stderr","time":9598.256824427,"data":"    im = (im.half() if self.model.fp16 else im.float()).div_(255)  # uint8 to fp16/32, 0 - 255 to 0.0 - 1.0\n"}
+,{"stream_name":"stderr","time":9598.256828154,"data":"          ~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":9598.256835928,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 11.72 GiB. GPU 0 has a total capacity of 14.56 GiB of which 8.55 GiB is free. Including non-PyTorch memory, this process has 6.01 GiB memory in use. Of the allocated memory 5.88 GiB is allocated by PyTorch, and 19.15 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":9598.256852823,"data":"\n"}
+,{"stream_name":"stderr","time":9598.256856393,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9598.256861647,"data":"  File \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_predict.py\", line 49, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":9598.256869037,"data":"    raise SystemExit(main())\n"}
+,{"stream_name":"stderr","time":9598.256884729,"data":"                     ~~~~^^\n"}
+,{"stream_name":"stderr","time":9598.256890086,"data":"  File \"/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_predict.py\", line 35, in main\n"}
+,{"stream_name":"stderr","time":9598.256894446,"data":"    for result in model.predict(paths, imgsz=args.imgsz, conf=args.conf, batch=args.batch,\n"}
+,{"stream_name":"stderr","time":9598.256898874,"data":"                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9598.256902983,"data":"                                device=args.device, half=args.half, verbose=False, stream=True):\n"}
+,{"stream_name":"stderr","time":9598.256906673,"data":"                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9598.256910281,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 40, in generator_context\n"}
+,{"stream_name":"stderr","time":9598.256914009,"data":"    response = gen.send(None)\n"}
+,{"stream_name":"stderr","time":9598.256917493,"data":"  File \"/usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py\", line 347, in stream_inference\n"}
+,{"stream_name":"stderr","time":9598.256921289,"data":"    im = self.preprocess(im0s)\n"}
+,{"stream_name":"stderr","time":9598.256924627,"data":"  File \"/usr/local/lib/python3.13/dist-packages/ultralytics/engine/predictor.py\", line 181, in preprocess\n"}
+,{"stream_name":"stderr","time":9598.256928369,"data":"    im = (im.half() if self.model.fp16 else im.float()).div_(255)  # uint8 to fp16/32, 0 - 255 to 0.0 - 1.0\n"}
+,{"stream_name":"stderr","time":9598.256931973,"data":"          ~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":9598.256935534,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 11.72 GiB. GPU 0 has a total capacity of 14.56 GiB of which 8.55 GiB is free. Including non-PyTorch memory, this process has 6.01 GiB memory in use. Of the allocated memory 5.88 GiB is allocated by PyTorch, and 19.15 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":9601.023784747,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9601.024516885,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":9601.024530982,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":9601.024548989,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9601.024551991,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":9601.024554579,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":9601.024556875,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":9601.02455917,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":9601.024561697,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":9601.02459581,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":9601.024600862,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":9601.024604693,"data":"Exception encountered at \"In [6]\":\n"}
+,{"stream_name":"stderr","time":9601.02460841,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":9601.024612245,"data":"CalledProcessError                        Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":9601.024615718,"data":"/tmp/ipykernel_23/2949430222.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":9601.024619718,"data":"      1 import subprocess, json\n"}
+,{"stream_name":"stderr","time":9601.024622994,"data":"      2 preds=\"/kaggle/working/preds_E1.jsonl\"\n"}
+,{"stream_name":"stderr","time":9601.024626444,"data":"----\u003e 3 subprocess.run([\"python\",str(Path(CODE)/\"stage_b_predict.py\"),\"--model\",\"/kaggle/working/runs/E1/weights/best_recall.pt\",\n"}
+,{"stream_name":"stderr","time":9601.024630594,"data":"      4                 \"--list\",\"/kaggle/working/lists/val_report.txt\",\"--out\",preds,\"--device\",\"0\",\"--half\",\"--batch\",\"1\"],check=True)\n"}
+,{"stream_name":"stderr","time":9601.024634799,"data":"      5 for t in (\"0.009\",\"0.015\",\"0.02\",\"0.03\"):\n"}
+,{"stream_name":"stderr","time":9601.024640057,"data":"\n"}
+,{"stream_name":"stderr","time":9601.024646219,"data":"/usr/lib/python3.13/subprocess.py in run(input, capture_output, timeout, check, *popenargs, **kwargs)\n"}
+,{"stream_name":"stderr","time":9601.024648733,"data":"    575         retcode = process.poll()\n"}
+,{"stream_name":"stderr","time":9601.024650994,"data":"    576         if check and retcode:\n"}
+,{"stream_name":"stderr","time":9601.024653258,"data":"--\u003e 577             raise CalledProcessError(retcode, process.args,\n"}
+,{"stream_name":"stderr","time":9601.024655615,"data":"    578                                      output=stdout, stderr=stderr)\n"}
+,{"stream_name":"stderr","time":9601.024658016,"data":"    579     return CompletedProcess(process.args, retcode, stdout, stderr)\n"}
+,{"stream_name":"stderr","time":9601.024660293,"data":"\n"}
+,{"stream_name":"stderr","time":9601.024662555,"data":"CalledProcessError: Command '['python', '/kaggle/input/datasets/nidhishreesp/firesight-stage-b-code/stage_b_predict.py', '--model', '/kaggle/working/runs/E1/weights/best_recall.pt', '--list', '/kaggle/working/lists/val_report.txt', '--out', '/kaggle/working/preds_E1.jsonl', '--device', '0', '--half', '--batch', '1']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":9601.024665468,"data":"\n"}
+,{"stream_name":"stderr","time":9603.346954043,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9603.347006141,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9603.535368353,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9603.535392483,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9604.326463131,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":9604.410614046,"data":"[NbConvertApp] Writing 22189 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":9606.865954801,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9607.408343419,"data":"[NbConvertApp] Writing 312071 bytes to __results__.html\n"}
+]
