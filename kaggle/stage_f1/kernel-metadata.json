@@ -1,0 +1,19 @@
+{
+  "id": "nidhishreesp/firesight-f1",
+  "title": "firesight F1 full-run candidate",
+  "code_file": "pilot_f1.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "nidhishreesp/firesight-pilot",
+    "nidhishreesp/firesight-f1-pyro",
+    "nidhishreesp/firesight-stage-a-negatives",
+    "nidhishreesp/firesight-stage-b-eval-negatives",
+    "nidhishreesp/firesight-f1-code"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
