@@ -28,6 +28,7 @@ def main() -> int:
 
     paths = [l.strip().lstrip('\ufeff') for l in Path(args.list).read_text(encoding="utf-8").splitlines() if l.strip().lstrip('\ufeff')]
     model = YOLO(args.model, task="detect")
+    names = {int(k): str(v).lower() for k, v in (model.names or {}).items()}
     t0 = time.time()
     n = 0
     out = Path(args.out)
@@ -37,9 +38,14 @@ def main() -> int:
             chunk = paths[start:start + args.chunk]
             for result in model.predict(chunk, imgsz=args.imgsz, conf=args.conf, batch=args.batch,
                                         device=args.device, half=args.half, verbose=False, stream=True):
-                dets = [{"label": "fire" if int(b.cls.item()) == 0 else "smoke",
-                         "confidence": round(float(b.conf.item()), 6),
-                         "box": [float(v) for v in b.xyxy[0].tolist()]} for b in result.boxes]
+                dets = []
+                for b in result.boxes:
+                    name = names.get(int(b.cls.item()), "")
+                    label = "fire" if "fire" in name else "smoke" if "smoke" in name else None
+                    if label is None:
+                        continue
+                    dets.append({"label": label, "confidence": round(float(b.conf.item()), 6),
+                                 "box": [float(v) for v in b.xyxy[0].tolist()]})
                 fh.write(json.dumps({"id": Path(result.path).stem, "detections": dets}) + "\n")
                 n += 1
                 if n % 1000 == 0:
