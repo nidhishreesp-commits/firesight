@@ -4,6 +4,14 @@ Status: **prepared. No GPU launch. SEALED remains unread for F1.** The one-shot 
 P50, TommyNgx and SalahYOLOv26 are already logged; F1 must not use SEALED until it is a final
 candidate.
 
+## 0. Important gap vs the new rebalance request
+
+The new target mix (~60% indoor/industrial, ~25% thin/distant smoke, ~15% controlled flames;
+indoor/industrial lookalikes as hard negatives) is **not yet built**. The composition below is the
+earlier F1 draft (base 50% + Pyro thin smoke + Stage A hard negatives). It is **not** the final
+rebalanced F1 and must not be launched until the positive/hard-negative rebalance is collected and
+approved.
+
 ## 1. Data composition (measured)
 
 | component | images |
@@ -84,3 +92,21 @@ result is borderline, propose a second seed before any conclusion.
   one selection row, `best_recall.pt` saved).
 
 No GPU launch without approval.
+
+## 7. Rebalanced target composition (not built)
+
+Target positive mix: 60% indoor/industrial, 25% thin/distant smoke after the Pyronear filter, 15%
+controlled flames.
+
+| component | target | status |
+|---|---:|---|
+| indoor/industrial fire/smoke positives | 12,000 | **not collected**; licence-clean supply is scarce |
+| filtered Pyro-SDIS thin smoke | 5,000 | filtered count pending user-marked audit |
+| controlled flames | 3,000 | **not collected** |
+| hard negatives (5-10%) | 1,000-2,000 | Stage A + Phase 1 lookalikes; indoor/industrial hard negatives pending |
+
+If built at ~20,000 positives + 1,100-2,000 hard negatives, the GPU estimate is 2.5-2.8 h at
+65-69 img/s for 30 epochs; apply the **2x-low correction** from the E0/E1 experience → **5.0-5.6 h**.
+40 epochs ≈ 6.6-7.4 h corrected. This is an estimate, not a run.
+
+The current draft (base 13,063 + Pyro 7,259 + 1,327 negatives) is **not** the rebalanced F1.
