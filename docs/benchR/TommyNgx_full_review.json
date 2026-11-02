@@ -1,0 +1,48 @@
+{
+  "source_json": "bench_results\\benchR\\20261102_070231_TommyNgx.json",
+  "thresholds": {
+    "fire": 0.67,
+    "smoke": 0.61
+  },
+  "splits": {
+    "dev": {
+      "n": 300,
+      "pos": 85,
+      "neg": 215,
+      "tp": 29,
+      "fp": 6,
+      "tn": 209,
+      "fn": 56,
+      "mcc": 0.4397,
+      "image_auc": 0.8495,
+      "image_ap": 0.676,
+      "brier": 0.1344
+    },
+    "sealed": {
+      "n": 700,
+      "pos": 199,
+      "neg": 501,
+      "tp": 63,
+      "fp": 22,
+      "tn": 479,
+      "fn": 136,
+      "mcc": 0.3766,
+      "image_auc": 0.8289,
+      "image_ap": 0.6653,
+      "brier": 0.1444
+    },
+    "all": {
+      "n": 1000,
+      "pos": 284,
+      "neg": 716,
+      "tp": 92,
+      "fp": 28,
+      "tn": 688,
+      "fn": 192,
+      "mcc": 0.3953,
+      "image_auc": 0.8351,
+      "image_ap": 0.6673,
+      "brier": 0.1414
+    }
+  }
+}
