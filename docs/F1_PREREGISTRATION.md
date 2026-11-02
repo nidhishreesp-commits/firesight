@@ -4,6 +4,14 @@ Status: **prepared. No GPU launch. SEALED remains unread for F1.** The one-shot 
 P50, TommyNgx and SalahYOLOv26 are already logged; F1 must not use SEALED until it is a final
 candidate.
 
+## 0. Important gap vs the new rebalance request
+
+The new target mix (~60% indoor/industrial, ~25% thin/distant smoke, ~15% controlled flames;
+indoor/industrial lookalikes as hard negatives) is **not yet built**. The composition below is the
+earlier F1 draft (base 50% + Pyro thin smoke + Stage A hard negatives). It is **not** the final
+rebalanced F1 and must not be launched until the positive/hard-negative rebalance is collected and
+approved.
+
 ## 1. Data composition (measured)
 
 | component | images |
