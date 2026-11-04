@@ -46,6 +46,17 @@ and its errors differ from P50: it catches more fire, has fewer cloud/non-fire l
 alarms, but still misses every smoke-only clip. A P50+Salah ensemble is worth testing before
 discarding either model.
 
+## Ensemble result
+
+P50+Salah was tested on the same 42 clips with several fusion rules. Full results:
+`docs/ENSEMBLE_VIDEO_EVAL.md`.
+
+- **Salah alone remains the best single model**: 73.8% clip accuracy, 55% recall, 9.1% FPR.
+- **Intersect** is the low-false-alarm option: 90.9% precision, 4.6% FPR, but 50% recall.
+- **Every ensemble still has 0/5 smoke recall.** The ensemble does not fix the smoke blocker.
+- Counsel: keep Salah as the leading single candidate, but do not deploy it autonomously until
+  smoke recall is fixed.
+
 ## Annotated videos for review
 
 Open this gallery in a browser:
