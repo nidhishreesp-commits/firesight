@@ -1,5 +1,8 @@
 # P50 on the supplied clips + fresh fire/smoke
 
+> The smoke weakness below was addressed by the smoke policy fix in `docs/SMOKE_POLICY_FIX.md`:
+> smoke-only layer recall improved from 1/6 to 5/6 with 0 false alarms on 17 hard negatives.
+
 Thresholds: P50 fire 0.29 / smoke 0.33, 2 fps, temporal + video layer. Videos are evaluated at
 clip level. `Sample_videos` was not used here.
 

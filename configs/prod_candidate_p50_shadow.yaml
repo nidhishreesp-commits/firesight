@@ -37,6 +37,13 @@ temporal:
   min_area_px: 400
   smoke_growth_window: 8
   smoke_growth_min_ratio: 0.15
+  smoke_static_min_conf: 0.20
+  smoke_growth_bypass: true
+  smoke_trackless: true
+  smoke_persistence_min_conf: 0.20
+  smoke_persistence_iou: 0.05
+  smoke_persistence_n: 3
+  smoke_persistence_window: 6
   unknown_high_conf: 0.60
   unknown_auto_alarm_s: 60
   tracker: bytetrack

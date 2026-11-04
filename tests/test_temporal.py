@@ -19,7 +19,8 @@ def test_n_of_m_confirmation():
 
 
 def test_smoke_requires_growth_or_confidence():
-    cfg = TemporalConfig(enabled=True, n_of_m={"fire": [3, 5], "smoke": [3, 5]}, max_gap_s=2.0, smoke_growth_min_ratio=0.5)
+    cfg = TemporalConfig(enabled=True, n_of_m={"fire": [3, 5], "smoke": [3, 5]}, max_gap_s=2.0,
+                         smoke_growth_min_ratio=0.5, smoke_trackless=False)
     confirmer = TemporalConfirmer(cfg)
     confirmed = 0
     for i in range(5):
@@ -32,6 +33,20 @@ def test_smoke_requires_growth_or_confidence():
         result = confirmer2.update(i, i * 0.2, [det("smoke", conf=0.75)], size=(400, 400))
         confirmed2 += len(result.confirmed)
     assert confirmed2 >= 1
+
+
+def test_trackless_smoke_confirms_static_plume():
+    cfg = TemporalConfig(enabled=True, n_of_m={"fire": [3, 5], "smoke": [4, 6]},
+                         max_gap_s=2.0, smoke_growth_min_ratio=0.5,
+                         smoke_trackless=True, smoke_persistence_n=3,
+                         smoke_persistence_window=6, smoke_persistence_min_conf=0.2)
+    confirmer = TemporalConfirmer(cfg)
+    confirmed = 0
+    for i in range(5):
+        result = confirmer.update(i, i * 0.5, [det("smoke", conf=0.3)], size=(200, 200))
+        confirmed += len(result.confirmed)
+    assert confirmed >= 1
+    assert result.confirmed[0].meta["smoke_trackless"] is True
 
 
 def test_alarm_manager_cooldown_and_escalation():

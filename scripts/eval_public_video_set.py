@@ -20,12 +20,21 @@ def font(sz=10):
         except Exception: return ImageFont.load_default()
 def main():
     import argparse
-    ap=argparse.ArgumentParser(); ap.add_argument('--manifest',default='data/video_eval/public/curated_manifest.jsonl'); ap.add_argument('--out',default='build/video_eval/results'); args=ap.parse_args()
+    ap=argparse.ArgumentParser(); ap.add_argument('--manifest',default='data/video_eval/public/curated_manifest.jsonl'); ap.add_argument('--out',default='build/video_eval/results'); ap.add_argument('--model',default='build/kaggle_weights/runs/P50/weights/best.onnx'); ap.add_argument('--name',default='P50'); ap.add_argument('--fire-thr',type=float,default=0.29); ap.add_argument('--smoke-thr',type=float,default=0.33); ap.add_argument('--smoke-static-min-conf',type=float,default=None); ap.add_argument('--imgsz',type=int,default=640); ap.add_argument('--assume-smoke',action='store_true'); args=ap.parse_args()
     rows=[json.loads(l) for l in open(args.manifest,encoding='utf-8') if l.strip()]
     out=PROJECT_ROOT/args.out; (out/'annotated').mkdir(parents=True,exist_ok=True)
     from ultralytics import YOLO
-    model=YOLO(str(PROJECT_ROOT/'build/kaggle_weights/runs/P50/weights/best.onnx'),task='detect')
+    model=YOLO(str(PROJECT_ROOT/args.model),task='detect')
+    names={int(k):str(v).lower() for k,v in (model.names or {}).items()}
+    if args.assume_smoke:
+        names={k:'smoke' for k in names}
+    THR={'fire':args.fire_thr,'smoke':args.smoke_thr}
     cfg=load_config(); cfg.temporal.tracker='iou'
+    if args.smoke_static_min_conf is not None:
+        cfg.temporal.smoke_static_min_conf=args.smoke_static_min_conf
+    fcfg=FilterConfig()
+    if args.smoke_static_min_conf is not None:
+        fcfg.smoke_static_min_conf=args.smoke_static_min_conf
     results=[]; best_tiles=[]
     for c in rows:
         p=PROJECT_ROOT/c['path']; cap=cv2.VideoCapture(str(p)); fps=cap.get(cv2.CAP_PROP_FPS) or 25
@@ -40,10 +49,12 @@ def main():
             t=idx/fps
             if t>limit: break
             if idx%step: idx+=1; continue
-            r=model.predict(fr,imgsz=640,conf=0.05,device='cpu',verbose=False)[0]
+            r=model.predict(fr,imgsz=args.imgsz,conf=0.05,device='cpu',verbose=False)[0]
             dets=[]
             for b in r.boxes:
-                lab='fire' if int(b.cls.item())==0 else 'smoke'; conf=float(b.conf.item())
+                nm=names.get(int(b.cls.item()),''); lab='fire' if 'fire' in nm else 'smoke' if 'smoke' in nm else None
+                if lab is None: continue
+                conf=float(b.conf.item())
                 if lab=='fire': maxf=max(maxf,conf)
                 else: maxs=max(maxs,conf)
                 dets.append(Detection(lab,conf,Box(*[float(v) for v in b.xyxy[0].tolist()])))
@@ -85,7 +96,7 @@ def main():
     nonfire_hours=sum(r['eval_seconds'] for r in neg)/3600
     summary={'n':len(results),'positives':len(pos),'negatives':len(neg),'metrics':metrics,'per_category':percat,
              'nonfire_hours_evaluated':round(nonfire_hours,3),'layer_fa_per_hour':round(sum(1 for r in neg if r['layer_alert'])/nonfire_hours,3) if nonfire_hours else None,
-             'note':'2 fps; nonfire clips capped at 120 s; fire/smoke full clip'}
+             'note':'2 fps; nonfire clips capped at 120 s; fire/smoke full clip','model':args.name,'thresholds':THR,'smoke_static_min_conf':cfg.temporal.smoke_static_min_conf}
     (out/'summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     with (out/'per_clip.csv').open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=['id','label','category','title','eval_seconds','sampled_frames','max_fire','max_smoke','raw_alert','temporal_alert','layer_alert','annotated']); w.writeheader()
