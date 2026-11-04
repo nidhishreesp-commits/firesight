@@ -34,28 +34,35 @@ So Salah wins on this small video set, but loses to P50 on the 1,000-image bench
 The 71.4% is **clip-level accuracy on 42 deliberately hard clips**, not a general
 real-life accuracy estimate. Its recall CI is wide (55% [34.2%, 74.2%]).
 
-## Decision
+## Decision (updated after Sample_videos + 20 hard clips)
 
-**Do not replace P50 with Salah as the sole production detector.** 71.4% clip accuracy,
-0/5 smoke-only recall after the layer, and 13.6% FPR is not enough for autonomous real-life
-alarm dispatch. A single public model winning by 9.5 points on 37 unique scenes is not a
-production gate.
+**Do not lock Salah as the base model.** Salah wins on the 42 public clips, but **P50 wins on
+the user's real Sample_videos and on the 20 hard real clips**:
 
-**Keep Salah as a candidate / second opinion.** It is small (20 MB), MIT-licensed, CPU-usable,
-and its errors differ from P50: it catches more fire, has fewer cloud/non-fire layer false
-alarms, but still misses every smoke-only clip. A P50+Salah ensemble is worth testing before
-discarding either model.
+| set | P50 accuracy | Salah accuracy | P50 FPR | Salah FPR |
+|---|---:|---:|---:|---:|
+| 42 public clips | 64.3% | **73.8%** | 22.7% | **9.1%** |
+| Sample_videos (11) | **90.9%** | 81.8% | **11.1%** | 22.2% |
+| 20 hard real clips | **85.0%** | 65.0% | **6.3%** | 31.3% |
+
+On `Sample_videos`, P50's only false alarm is the drone/sky clip (which the user says is not a
+real deployment case); Salah false-alarms on construction and grinding sparks. On the 20 hard
+clips, Salah false-alarms on neon, police/vehicle lights, construction and fire aftermath;
+P50 false-alarms only on neon.
+
+**Conclusion: P50 remains the base model. Salah stays as a secondary candidate, not the lock.**
+Salah is small (20 MB), MIT-licensed, CPU-usable and useful as a second opinion, but it is not
+more accurate on the real/industrial negatives that matter.
 
 ## Ensemble result
 
 P50+Salah was tested on the same 42 clips with several fusion rules. Full results:
 `docs/ENSEMBLE_VIDEO_EVAL.md`.
 
-- **Salah alone remains the best single model**: 73.8% clip accuracy, 55% recall, 9.1% FPR.
+- **On the 42 public clips only, Salah alone is the best single model**: 73.8% clip accuracy, 55% recall, 9.1% FPR. It loses to P50 on Sample_videos and the 20 hard clips.
 - **Intersect** is the low-false-alarm option: 90.9% precision, 4.6% FPR, but 50% recall.
 - **Every ensemble still has 0/5 smoke recall.** The ensemble does not fix the smoke blocker.
-- Counsel: keep Salah as the leading single candidate, but do not deploy it autonomously until
-  smoke recall is fixed.
+- Counsel: do not deploy Salah autonomously; P50 remains the base model after the real-video tests.
 
 ## Annotated videos for review
 
@@ -73,5 +80,5 @@ Open this gallery in a browser:
 1. Run a P50+Salah ensemble on the same 42 clips; require better smoke recall without raising
    false alarms.
 2. Expand to 40+ event clips with real onset times.
-3. Do not run/tune on `Sample_videos`; it stays the final held-out check.
+3. `Sample_videos` was used for evaluation at the user's request; it must not be used for training or threshold tuning.
 4. Do not claim 90% from this 42-clip result.
