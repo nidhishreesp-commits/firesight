@@ -63,3 +63,20 @@ Requested link: `https://huggingface.co/TommyNgx/YOLOv10-Fire-and-Smoke-Detectio
 To unblock: accept the gate on the HF page, then either set `HF_TOKEN` locally (do not paste the
 token in chat) or download `best.pt` to `models/external/tommy_yolov10_best.pt`. Then it can be run
 on the same 42 public + 11 Sample_videos + 20 hard clips.
+
+
+## Tommy update after user supplied best.pt
+
+The user supplied `best.pt` (64,111,730 bytes). It loads as YOLOv10x, names `{0: Fire, 1: Smoke}`.
+Checkpoint metadata licence is **AGPL-3.0** (the HF card says Apache-2.0). Recorded validation:
+precision 0.549, recall 0.640, mAP50 0.601, mAP50-95 0.404. The card's `mAP 0.85` is unverified.
+
+Sample_videos, temporal + layer, fire/smoke 0.25:
+
+| model | TP | FP | FN | precision | recall | FPR | accuracy |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| P50 | 2 | 1 | 0 | 66.7% | 100% | 11.1% | **90.9%** |
+| Salah | 2 | 2 | 0 | 50.0% | 100% | 22.2% | 81.8% |
+| Tommy | 2 | 2 | 0 | 50.0% | 100% | 22.2% | 81.8% |
+
+Tommy is not better than P50; it ties Salah. Full details: `docs/TOMMY_VIDEO_EVAL.md`.
