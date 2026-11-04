@@ -82,3 +82,13 @@ Downloaded `pyronear/yolov11s` v8.3.0 and `yolo11s_sensitive-detector` v1.0.0.
 ## Tests
 
 `python -m pytest -q` passes. New tests cover static-smoke keep and trackless smoke confirmation.
+
+
+## New 5 stock clips (edge cases)
+
+- 2 volcano fire clips: both detected.
+- Incense smoke: missed (no detections).
+- Colored smoke flare: raw detected, final layer missed.
+- Mountain clouds: false alarm.
+
+Details and segmentation test: `docs/NEW5B_AND_SEGMENTATION_TEST.md`.
