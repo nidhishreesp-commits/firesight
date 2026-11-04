@@ -8,7 +8,7 @@ four-model selection.
 
 | repo | licence | status | class order |
 |---|---|---|---|
-| `TommyNgx/YOLOv10-Fire-and-Smoke-Detection` | Apache-2.0 (card) | **gated (HTTP 401 without HF token)** | unknown |
+| `TommyNgx/YOLOv10-Fire-and-Smoke-Detection` | Apache-2.0 (card) | **gated (auto); HTTP 401 without accepted access + HF token** | fire/smoke per card |
 | `aryantyagiase/yolov8-fire-smoke-detection` | **no licence** | **corrupt/truncated**: `best.pt` size mismatch (expected 9,437,184, got 10,485,760); `best.onnx` invalid protobuf | unknown |
 | `rabahdev/fire-smoke-yolov8n` | AGPL-3.0 | loads; 3.01 M params | `0=smoke, 1=fire` |
 | **P50 (ours)** | internal | reference | `0=fire, 1=smoke` |
@@ -47,3 +47,19 @@ Options:
    SEALED set then cannot be used as a clean final exam.
 
 No SEALED image has been read in this work.
+
+
+## TommyNgx YOLOv10 check (gated, not measured)
+
+Requested link: `https://huggingface.co/TommyNgx/YOLOv10-Fire-and-Smoke-Detection`
+
+- Model card: YOLOv10 fire/smoke detector, **31.8M parameters**, **mAP 0.85 (unverified)**.
+- The "85% accuracy" claim on the card is **mAP**, not video/clip accuracy. It is not comparable
+  to our 42-clip or Sample_videos percentages.
+- Repository gate: `gated: auto`; `resolve/main/best.pt` returns **HTTP 401**.
+- No `HF_TOKEN` is configured locally, and the model is not in the HF cache.
+- **No download and no test has happened yet.** Do not lock it before measurement.
+
+To unblock: accept the gate on the HF page, then either set `HF_TOKEN` locally (do not paste the
+token in chat) or download `best.pt` to `models/external/tommy_yolov10_best.pt`. Then it can be run
+on the same 42 public + 11 Sample_videos + 20 hard clips.
