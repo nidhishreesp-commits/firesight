@@ -1,0 +1,11 @@
+{
+  "measured_basis": "72.1 images/s, 251.9 s/epoch for 18,154 images (FT_HN Kaggle run)",
+  "epochs": 20,
+  "E0_images": 14747,
+  "E0_gpu_hours_no_overhead": 1.136,
+  "E1_images": 16074,
+  "E1_gpu_hours_no_overhead": 1.239,
+  "E0_E1_total_no_overhead": 2.375,
+  "E0_E1_total_plus_25pct_overhead": 2.969,
+  "note": "ESTIMATE from measured throughput; the E0/E1 runs themselves are not measured."
+}

@@ -114,10 +114,12 @@ class TemporalConfirmer:
         self.cfg = cfg
         self.states: dict[int, deque] = defaultdict(lambda: deque(maxlen=max(cfg.n_of_m.get("fire", [3, 5])[1], cfg.n_of_m.get("smoke", [4, 6])[1], cfg.smoke_growth_window)))
         self.tracker = ByteTrackAdapter(frame_rate=5) if cfg.tracker.lower() == "bytetrack" else IoUTracker(cfg.track_iou)
+        self.smoke_history: deque = deque(maxlen=64)
         self._last_ts = 0.0
 
     def reset(self) -> None:
         self.states.clear()
+        self.smoke_history.clear()
         if self.cfg.tracker.lower() == "bytetrack":
             self.tracker = ByteTrackAdapter(frame_rate=5)
         else:
@@ -127,13 +129,38 @@ class TemporalConfirmer:
                size: tuple[int, int] | None = None) -> TemporalResult:
         if not self.cfg.enabled:
             return TemporalResult(list(detections), list(detections), {d.label for d in detections})
+        trackless: list[Detection] = []
+        diagnostics: dict = {}
+        if self.cfg.smoke_trackless:
+            now = [d for d in detections if d.label == "smoke"
+                   and d.confidence >= self.cfg.smoke_persistence_min_conf]
+            if now:
+                n, window = int(self.cfg.smoke_persistence_n), int(self.cfg.smoke_persistence_window)
+                cutoff = timestamp - self.cfg.max_gap_s * window
+                while self.smoke_history and self.smoke_history[0]["ts"] < cutoff:
+                    self.smoke_history.popleft()
+                best = max(now, key=lambda d: d.confidence)
+                self.smoke_history.append({"ts": timestamp, "box": best.box.to_list(),
+                                           "conf": best.confidence})
+                near = [h for h in self.smoke_history
+                        if _iou(Box(*h["box"]), best.box) >= self.cfg.smoke_persistence_iou]
+                diagnostics["smoke_trackless"] = {"near": len(near), "n": n,
+                                                   "window_s": round(self.cfg.max_gap_s * window, 2)}
+                if len(near) >= n:
+                    for det in now:
+                        det.meta["confirmed"] = True
+                        det.meta["smoke_trackless"] = True
+                        det.meta["confirm_reason"] = f"smoke persistence {len(near)} frames"
+                        trackless.append(det)
         try:
             tracked = self.tracker.update(detections, size=size)
         except TypeError:
             tracked = self.tracker.update(detections)
-        confirmed: list[Detection] = []
-        diagnostics: dict = {}
+        confirmed: list[Detection] = list(trackless)
+        trackless_ids = {id(d) for d in trackless}
         for det in tracked:
+            if id(det) in trackless_ids:
+                continue
             if det.track_id is None:
                 if canonical_flame_type(det.flame_type or det.meta.get("flame_type")) == "unknown" \
                         and det.confidence < self.cfg.unknown_high_conf:
@@ -158,7 +185,11 @@ class TemporalConfirmer:
                     growth = (areas[-1] - areas[0]) / max(areas[0], 1.0)
                     diagnostics[int(det.track_id)]["growth"] = round(growth, 4)
                     if growth < self.cfg.smoke_growth_min_ratio and det.confidence < 0.60:
-                        continue
+                        if not (self.cfg.smoke_growth_bypass
+                                and det.confidence >= self.cfg.smoke_static_min_conf):
+                            continue
+                        det.meta["smoke_static_allowed"] = True
+                        reason += f", static smoke allowed at conf={det.confidence:.2f}"
                     reason += f", growth={growth:.2f}"
             ftype = canonical_flame_type(det.flame_type or det.meta.get("flame_type"))
             if ftype == "unknown":

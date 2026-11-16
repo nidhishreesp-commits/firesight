@@ -1,0 +1,4 @@
+id,label,category,title,eval_seconds,sampled_frames,max_fire,max_smoke,raw_alert,temporal_alert,layer_alert,annotated
+stock:istock_industrial,nonfire,nonfire_stock,istock_industrial,18.6,38,0.0,0.0,False,False,False,build\video_eval\downloads_results\annotated\stock_istock_industrial_annotated.mp4
+stock:preview_waste,nonfire,nonfire_stock,preview_waste,27.0,54,0.0,0.0,False,False,False,build\video_eval\downloads_results\annotated\stock_preview_waste_annotated.mp4
+stock:getty_crowd,nonfire,nonfire_stock,getty_crowd,20.9,44,0.0,0.0,False,False,False,build\video_eval\downloads_results\annotated\stock_getty_crowd_annotated.mp4

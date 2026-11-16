@@ -1,0 +1,188 @@
+{
+  "0.015": {
+    "p50_threshold": 0.100336,
+    "verifier_threshold": 0.002013996010646224,
+    "val_cal_fpr": 0.010648596321393998,
+    "val_cal_recall": 0.9741468459152016,
+    "val_cal_tp": 942,
+    "val_cal_fp": 11,
+    "recall": 0.9765656565656565,
+    "recall_95ci": [
+      0.9698261034074688,
+      0.9818280886151275
+    ],
+    "fpr": 0.01777609682299546,
+    "fpr_95ci": [
+      0.01339425716207266,
+      0.023557197940075443
+    ],
+    "accuracy": 0.9794881812854073,
+    "tp": 2417,
+    "fp": 47,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 119,
+        "p50_only": 3,
+        "p": 1.1387963575850963e-31
+      },
+      "negatives": {
+        "cascade_only": 18,
+        "p50_only": 54,
+        "p": 2.568720337924735e-05
+      }
+    }
+  },
+  "0.02": {
+    "p50_threshold": 0.100336,
+    "verifier_threshold": 0.0006485218764282763,
+    "val_cal_fpr": 0.017424975798644726,
+    "val_cal_recall": 0.9751809720785936,
+    "val_cal_tp": 943,
+    "val_cal_fp": 18,
+    "recall": 0.9769696969696969,
+    "recall_95ci": [
+      0.9702793954028837,
+      0.9821816250995963
+    ],
+    "fpr": 0.02193645990922844,
+    "fpr_95ci": [
+      0.01700784370797774,
+      0.028252265507014568
+    ],
+    "accuracy": 0.9775346747411604,
+    "tp": 2418,
+    "fp": 58,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 119,
+        "p50_only": 2,
+        "p": 5.553599550572881e-33
+      },
+      "negatives": {
+        "cascade_only": 22,
+        "p50_only": 47,
+        "p": 0.0035448128470210523
+      }
+    }
+  },
+  "dev_sanity": {
+    "p50_threshold": 0.100336,
+    "verifier_threshold": 0.002013996010646224,
+    "recall": 0.6853932584269663,
+    "recall_95ci": [
+      0.5829530796367399,
+      0.7724910316237295
+    ],
+    "fpr": 0.037914691943127965,
+    "fpr_95ci": [
+      0.01933474520919086,
+      0.0730198080989208
+    ],
+    "tp": 61,
+    "fp": 8,
+    "n_pos": 89,
+    "n_neg": 211
+  },
+  "per_cause_val_report": {
+    "cave_rock": {
+      "neg_images": 11,
+      "p50_fa": 11,
+      "cascade_fa": 3,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2727272727272727,
+      "too_few": true
+    },
+    "construction_dust": {
+      "neg_images": 19,
+      "p50_fa": 19,
+      "cascade_fa": 5,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2631578947368421,
+      "too_few": true
+    },
+    "haze_cloud": {
+      "neg_images": 28,
+      "p50_fa": 28,
+      "cascade_fa": 8,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2857142857142857,
+      "too_few": true
+    },
+    "orange_ppe": {
+      "neg_images": 8,
+      "p50_fa": 8,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "other": {
+      "neg_images": 21,
+      "p50_fa": 21,
+      "cascade_fa": 6,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2857142857142857,
+      "too_few": true
+    },
+    "reflection": {
+      "neg_images": 15,
+      "p50_fa": 15,
+      "cascade_fa": 3,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2,
+      "too_few": true
+    },
+    "screen": {
+      "neg_images": 9,
+      "p50_fa": 9,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.4444444444444444,
+      "too_few": true
+    },
+    "skin": {
+      "neg_images": 10,
+      "p50_fa": 10,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.1,
+      "too_few": true
+    },
+    "smoke_steam": {
+      "neg_images": 13,
+      "p50_fa": 13,
+      "cascade_fa": 8,
+      "fpr_before": 1.0,
+      "fpr_after": 0.6153846153846154,
+      "too_few": true
+    },
+    "sun_bright": {
+      "neg_images": 28,
+      "p50_fa": 28,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.14285714285714285,
+      "too_few": true
+    },
+    "sunset": {
+      "neg_images": 6,
+      "p50_fa": 6,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.16666666666666666,
+      "too_few": true
+    },
+    "warm_light": {
+      "neg_images": 7,
+      "p50_fa": 7,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.5714285714285714,
+      "too_few": true
+    }
+  }
+}

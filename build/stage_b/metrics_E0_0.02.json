@@ -1,0 +1,143 @@
+{
+  "bench": "val_pilot",
+  "model": "E0",
+  "selection_data": "data/splits/val.jsonl slices (cal + report); bench_R/TEST never present",
+  "calibrated_on": "lists/val_cal.txt (2000 images), target FPR 0.02 per negative image",
+  "target_fpr": 0.02,
+  "thresholds": {
+    "fire": 0.27,
+    "smoke": 0.39
+  },
+  "splits": {
+    "val": {
+      "n": 5119,
+      "positives": 2475,
+      "combined": {
+        "n": 5119,
+        "tp": 2183,
+        "fp": 59,
+        "tn": 2585,
+        "fn": 292,
+        "accuracy": 0.931432,
+        "accuracy_95ci": [
+          0.9241803378105415,
+          0.9380364443753453
+        ],
+        "precision": 0.973684,
+        "precision_95ci": [
+          0.9662041636644445,
+          0.9795437466066985
+        ],
+        "recall": 0.88202,
+        "recall_95ci": [
+          0.86871521733252,
+          0.8941411103973359
+        ],
+        "specificity": 0.977685,
+        "specificity_95ci": [
+          0.9713236866522716,
+          0.9826608719406593
+        ],
+        "f1": 0.925588,
+        "zero_event_upper_95": null
+      },
+      "fire": {
+        "n": 5119,
+        "tp": 1521,
+        "fp": 66,
+        "tn": 3354,
+        "fn": 178,
+        "accuracy": 0.952334,
+        "accuracy_95ci": [
+          0.9461509641628071,
+          0.9578395086247958
+        ],
+        "precision": 0.958412,
+        "precision_95ci": [
+          0.947432108508208,
+          0.9671781204423049
+        ],
+        "recall": 0.895232,
+        "recall_95ci": [
+          0.8797673249522645,
+          0.9089143703974379
+        ],
+        "specificity": 0.980702,
+        "specificity_95ci": [
+          0.9755227931830109,
+          0.9848020068895157
+        ],
+        "f1": 0.925746,
+        "zero_event_upper_95": null
+      },
+      "smoke": {
+        "n": 5119,
+        "tp": 1329,
+        "fp": 40,
+        "tn": 3115,
+        "fn": 635,
+        "accuracy": 0.868138,
+        "accuracy_95ci": [
+          0.8585929395181542,
+          0.8771315458924429
+        ],
+        "precision": 0.970782,
+        "precision_95ci": [
+          0.9604582172926673,
+          0.9784702067877219
+        ],
+        "recall": 0.67668,
+        "recall_95ci": [
+          0.6556658607369782,
+          0.6970048013732241
+        ],
+        "specificity": 0.987322,
+        "specificity_95ci": [
+          0.982782623461253,
+          0.9906754948565507
+        ],
+        "f1": 0.79748,
+        "zero_event_upper_95": null
+      },
+      "box_ap": {
+        "fire": {
+          "gt_boxes": 4462,
+          "ap50": 0.602651,
+          "ap75": 0.324464,
+          "ap50_95": 0.335615
+        },
+        "smoke": {
+          "gt_boxes": 2531,
+          "ap50": 0.648434,
+          "ap75": 0.431992,
+          "ap50_95": 0.411011
+        }
+      },
+      "mean_iou": {
+        "fire": {
+          "gt_boxes": 4462,
+          "matched_iou50": 2320,
+          "recall_iou50": 0.519946,
+          "mean_iou_all_gt": 0.44258,
+          "mean_iou_matched": 0.78767
+        },
+        "smoke": {
+          "gt_boxes": 2531,
+          "matched_iou50": 1211,
+          "recall_iou50": 0.478467,
+          "mean_iou_all_gt": 0.427857,
+          "mean_iou_matched": 0.833057
+        }
+      },
+      "fpr_per_negative_image": {
+        "n_negatives": 2644,
+        "fp": 59,
+        "fpr": 0.022315,
+        "fpr_95ci": [
+          0.01733912805934068,
+          0.028676313347728376
+        ]
+      }
+    }
+  }
+}

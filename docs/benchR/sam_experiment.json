@@ -1,0 +1,232 @@
+{
+  "detection_rows": 1278,
+  "train_val_cal": 500,
+  "auc": {
+    "val_cal": {
+      "conf": 0.7065,
+      "verifier": 0.779,
+      "mask_fill": 0.4594,
+      "mask_area_ratio": 0.6728,
+      "compactness": 0.385,
+      "mask_only": 0.6756,
+      "verifier_plus_mask": 0.7948
+    },
+    "val_report": {
+      "conf": 0.7514,
+      "verifier": 0.8047,
+      "mask_fill": 0.517,
+      "mask_area_ratio": 0.716,
+      "compactness": 0.3514,
+      "mask_only": 0.676,
+      "verifier_plus_mask": 0.8266
+    },
+    "dev": {
+      "conf": 0.699,
+      "verifier": 0.7278,
+      "mask_fill": 0.5373,
+      "mask_area_ratio": 0.8634,
+      "compactness": 0.2557,
+      "mask_only": 0.8083,
+      "verifier_plus_mask": 0.7765
+    }
+  },
+  "detection_matched_fpr": {
+    "0.02": {
+      "val_report": {
+        "verifier": {
+          "recall": 0.2422,
+          "fpr": 0.0169,
+          "tp": 78,
+          "fp": 3,
+          "n_pos": 322,
+          "n_neg": 178,
+          "thr": 0.9992400407791138
+        },
+        "verifier_plus_mask": {
+          "recall": 0.1988,
+          "fpr": 0.0056,
+          "tp": 64,
+          "fp": 1,
+          "n_pos": 322,
+          "n_neg": 178,
+          "thr": 0.8884776888092684
+        },
+        "mcnemar_pos": {
+          "a_only": 38,
+          "b_only": 24,
+          "p": 0.09795444051950736
+        },
+        "mcnemar_neg": {
+          "a_only": 3,
+          "b_only": 1,
+          "p": 0.625
+        }
+      },
+      "dev": {
+        "verifier": {
+          "recall": 0.1111,
+          "fpr": 0.0176,
+          "tp": 12,
+          "fp": 3,
+          "n_pos": 108,
+          "n_neg": 170,
+          "thr": 0.9999028444290161
+        },
+        "verifier_plus_mask": {
+          "recall": 0.25,
+          "fpr": 0.0176,
+          "tp": 27,
+          "fp": 3,
+          "n_pos": 108,
+          "n_neg": 170,
+          "thr": 0.8934017074474119
+        },
+        "mcnemar_pos": {
+          "a_only": 6,
+          "b_only": 21,
+          "p": 0.005924612283706665
+        },
+        "mcnemar_neg": {
+          "a_only": 2,
+          "b_only": 2,
+          "p": 1.0
+        }
+      }
+    },
+    "0.05": {
+      "val_report": {
+        "verifier": {
+          "recall": 0.3665,
+          "fpr": 0.0449,
+          "tp": 118,
+          "fp": 8,
+          "n_pos": 322,
+          "n_neg": 178,
+          "thr": 0.9977473616600037
+        },
+        "verifier_plus_mask": {
+          "recall": 0.4596,
+          "fpr": 0.0393,
+          "tp": 148,
+          "fp": 7,
+          "n_pos": 322,
+          "n_neg": 178,
+          "thr": 0.7046821344230613
+        },
+        "mcnemar_pos": {
+          "a_only": 29,
+          "b_only": 59,
+          "p": 0.0018240286456271994
+        },
+        "mcnemar_neg": {
+          "a_only": 7,
+          "b_only": 6,
+          "p": 1.0
+        }
+      },
+      "dev": {
+        "verifier": {
+          "recall": 0.1759,
+          "fpr": 0.0412,
+          "tp": 19,
+          "fp": 7,
+          "n_pos": 108,
+          "n_neg": 170,
+          "thr": 0.999830961227417
+        },
+        "verifier_plus_mask": {
+          "recall": 0.4074,
+          "fpr": 0.0412,
+          "tp": 44,
+          "fp": 7,
+          "n_pos": 108,
+          "n_neg": 170,
+          "thr": 0.8181860066073262
+        },
+        "mcnemar_pos": {
+          "a_only": 8,
+          "b_only": 33,
+          "p": 0.00011222142620681552
+        },
+        "mcnemar_neg": {
+          "a_only": 5,
+          "b_only": 5,
+          "p": 1.0
+        }
+      }
+    },
+    "0.1": {
+      "val_report": {
+        "verifier": {
+          "recall": 0.528,
+          "fpr": 0.0899,
+          "tp": 170,
+          "fp": 16,
+          "n_pos": 322,
+          "n_neg": 178,
+          "thr": 0.9894841313362122
+        },
+        "verifier_plus_mask": {
+          "recall": 0.5839,
+          "fpr": 0.0899,
+          "tp": 188,
+          "fp": 16,
+          "n_pos": 322,
+          "n_neg": 178,
+          "thr": 0.6167234370038548
+        },
+        "mcnemar_pos": {
+          "a_only": 36,
+          "b_only": 54,
+          "p": 0.07254953219246177
+        },
+        "mcnemar_neg": {
+          "a_only": 10,
+          "b_only": 10,
+          "p": 1.0
+        }
+      },
+      "dev": {
+        "verifier": {
+          "recall": 0.3796,
+          "fpr": 0.0882,
+          "tp": 41,
+          "fp": 15,
+          "n_pos": 108,
+          "n_neg": 170,
+          "thr": 0.9992039799690247
+        },
+        "verifier_plus_mask": {
+          "recall": 0.463,
+          "fpr": 0.0882,
+          "tp": 50,
+          "fp": 15,
+          "n_pos": 108,
+          "n_neg": 170,
+          "thr": 0.741530690849861
+        },
+        "mcnemar_pos": {
+          "a_only": 16,
+          "b_only": 25,
+          "p": 0.21102359760880063
+        },
+        "mcnemar_neg": {
+          "a_only": 9,
+          "b_only": 9,
+          "p": 1.0
+        }
+      }
+    }
+  },
+  "controlled_vs_uncontrolled": {
+    "n_controlled": 20,
+    "n_uncontrolled": 84,
+    "fill_median_controlled": 0.5943,
+    "fill_median_uncontrolled": 0.6137,
+    "area_median_controlled": 0.0715,
+    "area_median_uncontrolled": 0.1263,
+    "auc_fill_controlled_vs_uncontrolled": 0.4696,
+    "auc_area_controlled_vs_uncontrolled": 0.3732,
+    "note": "only detections with P50 conf>=0.10; controlled/uncontrolled labels from bench_R DEV flame_type"
+  }
+}

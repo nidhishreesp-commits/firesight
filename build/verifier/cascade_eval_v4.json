@@ -1,0 +1,617 @@
+{
+  "verifier": "build\\verifier\\model_v4.joblib",
+  "verifier_v": 0.011936064809560776,
+  "thresholds_source": "val_cal only",
+  "p50_thresholds": {
+    "fire": 0.29,
+    "smoke": 0.33
+  },
+  "p50_cascade_conf": 0.1,
+  "sets": {
+    "val_cal": {
+      "p50_calibrated": {
+        "label": "p50_calibrated",
+        "tp": 902,
+        "fp": 23,
+        "n_pos": 967,
+        "n_neg": 1033,
+        "recall": 0.932782,
+        "recall_95ci": [
+          0.9152,
+          0.9469
+        ],
+        "fpr": 0.022265,
+        "fpr_95ci": [
+          0.0149,
+          0.0332
+        ]
+      },
+      "p50_at_0.10": {
+        "label": "p50_at_0.10",
+        "tp": 944,
+        "fp": 62,
+        "n_pos": 967,
+        "n_neg": 1033,
+        "recall": 0.976215,
+        "recall_95ci": [
+          0.9646,
+          0.9841
+        ],
+        "fpr": 0.060019,
+        "fpr_95ci": [
+          0.0471,
+          0.0762
+        ]
+      },
+      "cascade": {
+        "label": "cascade",
+        "tp": 941,
+        "fp": 12,
+        "n_pos": 967,
+        "n_neg": 1033,
+        "recall": 0.973113,
+        "recall_95ci": [
+          0.9609,
+          0.9816
+        ],
+        "fpr": 0.011617,
+        "fpr_95ci": [
+          0.0067,
+          0.0202
+        ]
+      },
+      "p50_matched_fpr": {
+        "label": "p50_matched_fpr",
+        "tp": 842,
+        "fp": 12,
+        "n_pos": 967,
+        "n_neg": 1033,
+        "recall": 0.870734,
+        "recall_95ci": [
+          0.8481,
+          0.8904
+        ],
+        "fpr": 0.011617,
+        "fpr_95ci": [
+          0.0067,
+          0.0202
+        ]
+      },
+      "mcnemar_vs_p50_cal": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 39,
+          "baseline_only": 0,
+          "p": 3.637978807091713e-12
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 6,
+          "baseline_only": 17,
+          "p": 0.03468966484069824
+        }
+      },
+      "mcnemar_vs_p50_matched": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 99,
+          "baseline_only": 0,
+          "p": 3.1554436208840472e-30
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 9,
+          "baseline_only": 9,
+          "p": 1.0
+        }
+      }
+    },
+    "val_report": {
+      "p50_calibrated": {
+        "label": "p50_calibrated",
+        "tp": 2301,
+        "fp": 83,
+        "n_pos": 2475,
+        "n_neg": 2644,
+        "recall": 0.929697,
+        "recall_95ci": [
+          0.9189,
+          0.9391
+        ],
+        "fpr": 0.031392,
+        "fpr_95ci": [
+          0.0254,
+          0.0387
+        ]
+      },
+      "p50_at_0.10": {
+        "label": "p50_at_0.10",
+        "tp": 2422,
+        "fp": 176,
+        "n_pos": 2475,
+        "n_neg": 2644,
+        "recall": 0.978586,
+        "recall_95ci": [
+          0.9721,
+          0.9836
+        ],
+        "fpr": 0.066566,
+        "fpr_95ci": [
+          0.0577,
+          0.0767
+        ]
+      },
+      "cascade": {
+        "label": "cascade",
+        "tp": 2415,
+        "fp": 49,
+        "n_pos": 2475,
+        "n_neg": 2644,
+        "recall": 0.975758,
+        "recall_95ci": [
+          0.9689,
+          0.9811
+        ],
+        "fpr": 0.018533,
+        "fpr_95ci": [
+          0.014,
+          0.0244
+        ]
+      },
+      "p50_matched_fpr": {
+        "label": "p50_matched_fpr",
+        "tp": 2151,
+        "fp": 40,
+        "n_pos": 2475,
+        "n_neg": 2644,
+        "recall": 0.869091,
+        "recall_95ci": [
+          0.8552,
+          0.8818
+        ],
+        "fpr": 0.015129,
+        "fpr_95ci": [
+          0.0111,
+          0.0205
+        ]
+      },
+      "mcnemar_vs_p50_cal": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 118,
+          "baseline_only": 4,
+          "p": 3.4178237401005806e-30
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 17,
+          "baseline_only": 51,
+          "p": 4.453448771493584e-05
+        }
+      },
+      "mcnemar_vs_p50_matched": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 266,
+          "baseline_only": 2,
+          "p": 1.5200584370385227e-76
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 34,
+          "baseline_only": 25,
+          "p": 0.2975952082844287
+        }
+      }
+    },
+    "bench_R_dev": {
+      "p50_calibrated": {
+        "label": "p50_calibrated",
+        "tp": 54,
+        "fp": 6,
+        "n_pos": 89,
+        "n_neg": 211,
+        "recall": 0.606742,
+        "recall_95ci": [
+          0.5029,
+          0.7018
+        ],
+        "fpr": 0.028436,
+        "fpr_95ci": [
+          0.0131,
+          0.0606
+        ]
+      },
+      "p50_at_0.10": {
+        "label": "p50_at_0.10",
+        "tp": 63,
+        "fp": 12,
+        "n_pos": 89,
+        "n_neg": 211,
+        "recall": 0.707865,
+        "recall_95ci": [
+          0.6064,
+          0.7922
+        ],
+        "fpr": 0.056872,
+        "fpr_95ci": [
+          0.0328,
+          0.0968
+        ]
+      },
+      "cascade": {
+        "label": "cascade",
+        "tp": 62,
+        "fp": 9,
+        "n_pos": 89,
+        "n_neg": 211,
+        "recall": 0.696629,
+        "recall_95ci": [
+          0.5946,
+          0.7824
+        ],
+        "fpr": 0.042654,
+        "fpr_95ci": [
+          0.0226,
+          0.0791
+        ]
+      },
+      "p50_matched_fpr": {
+        "label": "p50_matched_fpr",
+        "tp": 45,
+        "fp": 5,
+        "n_pos": 89,
+        "n_neg": 211,
+        "recall": 0.505618,
+        "recall_95ci": [
+          0.4037,
+          0.6071
+        ],
+        "fpr": 0.023697,
+        "fpr_95ci": [
+          0.0102,
+          0.0543
+        ]
+      },
+      "mcnemar_vs_p50_cal": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 9,
+          "baseline_only": 1,
+          "p": 0.021484375
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 4,
+          "baseline_only": 1,
+          "p": 0.375
+        }
+      },
+      "mcnemar_vs_p50_matched": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 17,
+          "baseline_only": 0,
+          "p": 1.52587890625e-05
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 5,
+          "baseline_only": 1,
+          "p": 0.21875
+        }
+      }
+    },
+    "independent_neg": {
+      "p50_calibrated": {
+        "label": "p50_calibrated",
+        "tp": 0,
+        "fp": 31,
+        "n_pos": 0,
+        "n_neg": 5301,
+        "recall": null,
+        "recall_95ci": null,
+        "fpr": 0.005848,
+        "fpr_95ci": [
+          0.0041,
+          0.0083
+        ]
+      },
+      "p50_at_0.10": {
+        "label": "p50_at_0.10",
+        "tp": 0,
+        "fp": 192,
+        "n_pos": 0,
+        "n_neg": 5301,
+        "recall": null,
+        "recall_95ci": null,
+        "fpr": 0.03622,
+        "fpr_95ci": [
+          0.0315,
+          0.0416
+        ]
+      },
+      "cascade": {
+        "label": "cascade",
+        "tp": 0,
+        "fp": 28,
+        "n_pos": 0,
+        "n_neg": 5301,
+        "recall": null,
+        "recall_95ci": null,
+        "fpr": 0.005282,
+        "fpr_95ci": [
+          0.0037,
+          0.0076
+        ]
+      },
+      "p50_matched_fpr": {
+        "label": "p50_matched_fpr",
+        "tp": 0,
+        "fp": 5,
+        "n_pos": 0,
+        "n_neg": 5301,
+        "recall": null,
+        "recall_95ci": null,
+        "fpr": 0.000943,
+        "fpr_95ci": [
+          0.0004,
+          0.0022
+        ]
+      },
+      "mcnemar_vs_p50_cal": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 0,
+          "baseline_only": 0,
+          "p": 1.0
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 22,
+          "baseline_only": 25,
+          "p": 0.7708669945730263
+        }
+      },
+      "mcnemar_vs_p50_matched": {
+        "positives": {
+          "set": "positives",
+          "cascade_only": 0,
+          "baseline_only": 0,
+          "p": 1.0
+        },
+        "negatives": {
+          "set": "negatives",
+          "cascade_only": 27,
+          "baseline_only": 4,
+          "p": 3.39532271027565e-05
+        }
+      }
+    }
+  },
+  "per_cause_independent": {
+    "camera_artifacts": {
+      "n": 1615,
+      "cascade_fp": 5,
+      "p50_fp": 7,
+      "cascade_fpr": 0.0031,
+      "p50_fpr": 0.0043,
+      "hard_holdout_images": 94,
+      "too_few": false
+    },
+    "cave_warm_rock": {
+      "n": 124,
+      "cascade_fp": 1,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0081,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 7,
+      "too_few": false
+    },
+    "dust_plaster": {
+      "n": 941,
+      "cascade_fp": 7,
+      "p50_fp": 6,
+      "cascade_fpr": 0.0074,
+      "p50_fpr": 0.0064,
+      "hard_holdout_images": 50,
+      "too_few": false
+    },
+    "exhaust": {
+      "n": 527,
+      "cascade_fp": 1,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0019,
+      "p50_fpr": 0.0019,
+      "hard_holdout_images": 21,
+      "too_few": false
+    },
+    "haze_cloud_fog_mist": {
+      "n": 54,
+      "cascade_fp": 1,
+      "p50_fp": 2,
+      "cascade_fpr": 0.0185,
+      "p50_fpr": 0.037,
+      "hard_holdout_images": 16,
+      "too_few": false
+    },
+    "neon_lights": {
+      "n": 51,
+      "cascade_fp": 1,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0196,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 2,
+      "too_few": false
+    },
+    "orange_ppe": {
+      "n": 60,
+      "cascade_fp": 1,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0167,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 3,
+      "too_few": false
+    },
+    "orange_vegetation": {
+      "n": 259,
+      "cascade_fp": 0,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 11,
+      "too_few": false
+    },
+    "ordinary_indoor": {
+      "n": 52,
+      "cascade_fp": 0,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 2,
+      "too_few": false
+    },
+    "ordinary_outdoor": {
+      "n": 98,
+      "cascade_fp": 1,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0102,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 7,
+      "too_few": false
+    },
+    "reflection_lens_flare": {
+      "n": 167,
+      "cascade_fp": 0,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.006,
+      "hard_holdout_images": 23,
+      "too_few": false
+    },
+    "screen_fire": {
+      "n": 31,
+      "cascade_fp": 0,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 0,
+      "too_few": false
+    },
+    "skin_person": {
+      "n": 303,
+      "cascade_fp": 0,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0033,
+      "hard_holdout_images": 26,
+      "too_few": false
+    },
+    "smoke_steam_nonfire": {
+      "n": 67,
+      "cascade_fp": 2,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0299,
+      "p50_fpr": 0.0149,
+      "hard_holdout_images": 7,
+      "too_few": false
+    },
+    "snow_white_overexposed": {
+      "n": 121,
+      "cascade_fp": 0,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 8,
+      "too_few": false
+    },
+    "stage_chandelier": {
+      "n": 278,
+      "cascade_fp": 1,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0036,
+      "p50_fpr": 0.0036,
+      "hard_holdout_images": 12,
+      "too_few": false
+    },
+    "sun_glare_sky": {
+      "n": 323,
+      "cascade_fp": 6,
+      "p50_fp": 9,
+      "cascade_fpr": 0.0186,
+      "p50_fpr": 0.0279,
+      "hard_holdout_images": 67,
+      "too_few": false
+    },
+    "sunset_sunrise": {
+      "n": 49,
+      "cascade_fp": 0,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0204,
+      "hard_holdout_images": 5,
+      "too_few": false
+    },
+    "traffic_light": {
+      "n": 92,
+      "cascade_fp": 0,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0109,
+      "hard_holdout_images": 7,
+      "too_few": false
+    },
+    "vehicle_lights": {
+      "n": 73,
+      "cascade_fp": 1,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0137,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 8,
+      "too_few": false
+    },
+    "warm_artificial_light": {
+      "n": 16,
+      "cascade_fp": 0,
+      "p50_fp": 0,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0,
+      "hard_holdout_images": 4,
+      "too_few": true
+    }
+  },
+  "heldout_causes": {
+    "sun_glare_sky": {
+      "n": 323,
+      "cascade_fp": 6,
+      "p50_fp": 9,
+      "cascade_fpr": 0.0186,
+      "p50_fpr": 0.0279,
+      "hard_holdout_images": 67,
+      "too_few": false
+    },
+    "skin_person": {
+      "n": 303,
+      "cascade_fp": 0,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0033,
+      "hard_holdout_images": 26,
+      "too_few": false
+    },
+    "traffic_light": {
+      "n": 92,
+      "cascade_fp": 0,
+      "p50_fp": 1,
+      "cascade_fpr": 0.0,
+      "p50_fpr": 0.0109,
+      "hard_holdout_images": 7,
+      "too_few": false
+    }
+  },
+  "p50_matched_fpr": {
+    "val_cal_recall": 0.8707342295760083,
+    "val_cal_fpr": 0.011616650532429816,
+    "threshold": 0.453152
+  }
+}

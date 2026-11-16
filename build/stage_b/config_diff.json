@@ -1,0 +1,70 @@
+{
+  "common": {
+    "model": "yolo11s.pt (fresh pretrained, not P50)",
+    "epochs": 20,
+    "imgsz": 640,
+    "batch": 64,
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "cos_lr": true,
+    "warmup_epochs": 3.0,
+    "seed": 0,
+    "deterministic": true,
+    "patience": 10,
+    "selection_metric": "image-level recall at FPR<=2% on val_cal (not val loss)",
+    "train_val": "val_early.txt",
+    "selection_data": "val_cal.txt (2,000)",
+    "augmentation": {
+      "mosaic": 1.0,
+      "close_mosaic": 10,
+      "mixup": 0.0,
+      "copy_paste": 0.0,
+      "degrees": 0.0,
+      "translate": 0.1,
+      "scale": 0.5,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "flipud": 0.0,
+      "fliplr": 0.5,
+      "hsv_h": 0.015,
+      "hsv_s": 0.7,
+      "hsv_v": 0.4,
+      "erasing": 0.4
+    }
+  },
+  "E0": {
+    "train": "train_25 as-is (6,532 pos + 8,215 dataset negatives)",
+    "n_train": 14747,
+    "added_negatives": 0
+  },
+  "E1": {
+    "train": "train_25 + hard/easy Stage A negatives",
+    "n_train": 16074,
+    "added_hard": 865,
+    "added_easy": 462,
+    "added_total": 1327,
+    "added_share_of_base": 0.09
+  },
+  "changed": [
+    "train list",
+    "run name/out directory"
+  ],
+  "unchanged": [
+    "model",
+    "epochs",
+    "imgsz",
+    "batch",
+    "lr0",
+    "lrf",
+    "cos_lr",
+    "warmup",
+    "seed",
+    "deterministic",
+    "patience",
+    "selection metric",
+    "augmentation",
+    "val_early",
+    "val_cal"
+  ],
+  "correction": "The 25% list is 14,747 images (6,532 positive, 8,215 negative), not 14,747 positives. The added negatives are 9.0% of the 14,747-image list; total negatives in E1 are 59.4%. If the intent is 8-10% total negatives, E0/E1 must be rebuilt from positives only; that is a different experiment."
+}

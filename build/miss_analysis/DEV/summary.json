@@ -1,0 +1,113 @@
+{
+  "dev_images": 300,
+  "dev_positives": 85,
+  "baseline_thresholds": {
+    "fire": 0.13,
+    "smoke": 0.39
+  },
+  "baseline_missed": 35,
+  "baseline_missed_fire_only": 14,
+  "baseline_missed_smoke_only": 20,
+  "baseline_missed_both": 1,
+  "missed_by_flame_type": {
+    "controlled": 11,
+    "uncontrolled": 15,
+    "spark_benign": 8,
+    "unknown": 1
+  },
+  "missed_by_family": {
+    "uncontrolled_fire": 7,
+    "controlled_fire": 4,
+    "spark_screen": 8,
+    "ordinary_indoor": 1,
+    "smoke_only": 10,
+    "both": 1,
+    "steam": 2,
+    "exhaust": 2
+  },
+  "missed_by_primary_cause": {
+    "thin_smoke": 21,
+    "small_distant": 4,
+    "low_light": 7,
+    "unusual_scene": 3
+  },
+  "recovery_global_threshold": {
+    "0.2": {
+      "recall": 0.6235294117647059,
+      "recall_ci": [
+        0.5173,
+        0.7191
+      ],
+      "fpr": 0.027906976744186046,
+      "fpr_ci": [
+        0.0129,
+        0.0595
+      ],
+      "tp": 53,
+      "fp": 6
+    },
+    "0.15": {
+      "recall": 0.6588235294117647,
+      "recall_ci": [
+        0.5531,
+        0.7508
+      ],
+      "fpr": 0.03255813953488372,
+      "fpr_ci": [
+        0.0159,
+        0.0657
+      ],
+      "tp": 56,
+      "fp": 7
+    },
+    "0.1": {
+      "recall": 0.6705882352941176,
+      "recall_ci": [
+        0.5652,
+        0.7612
+      ],
+      "fpr": 0.046511627906976744,
+      "fpr_ci": [
+        0.0255,
+        0.0835
+      ],
+      "tp": 57,
+      "fp": 10
+    }
+  },
+  "verifier_v4_cascade": {
+    "1.5%": {
+      "recall": 0.7058823529411765,
+      "recall_ci": [
+        0.6018,
+        0.7921
+      ],
+      "fpr": 0.05116279069767442,
+      "fpr_ci": [
+        0.0288,
+        0.0893
+      ],
+      "tp": 60,
+      "fp": 11,
+      "baseline_missed_recovered": 11,
+      "baseline_missed": 35
+    },
+    "2.0%": {
+      "recall": 0.7176470588235294,
+      "recall_ci": [
+        0.6142,
+        0.8023
+      ],
+      "fpr": 0.05116279069767442,
+      "fpr_ci": [
+        0.0288,
+        0.0893
+      ],
+      "tp": 61,
+      "fp": 11,
+      "baseline_missed_recovered": 11,
+      "baseline_missed": 35
+    }
+  },
+  "aerial_high_mounted_dev": 4
+}

@@ -14,7 +14,7 @@ def det(box=(10, 10, 50, 50), conf=0.8, track=1):
 
 
 def test_static_detection_is_routed_to_review():
-    f = VideoFalseAlarmFilter(FilterConfig(min_frames=4, window=10))
+    f = VideoFalseAlarmFilter(FilterConfig(min_frames=4, window=10, smoke_static_keep=False))
     img = frame()
     review_seen = False
     for i in range(6):
@@ -24,6 +24,17 @@ def test_static_detection_is_routed_to_review():
             assert review[0].meta["static_scene"] is True
             assert review[0].meta["review_queue"] is True
     assert review_seen
+
+
+def test_static_smoke_above_floor_is_kept():
+    f = VideoFalseAlarmFilter(FilterConfig(min_frames=4, window=10, smoke_static_min_conf=0.5))
+    img = frame()
+    kept_all = []
+    for i in range(6):
+        kept, review, _ = f.update("cam", i * 0.2, img, [det(conf=0.6)])
+        kept_all += kept
+    assert kept_all
+    assert kept_all[-1].meta["static_smoke_allowed"] is True
 
 
 def test_growing_detection_stays():

@@ -1,0 +1,23 @@
+{
+  "verdict": "PASS",
+  "base_package_leakage": "PASS",
+  "e1_added_checked": 1327,
+  "e1_added_exact_sha_hits": 0,
+  "e1_added_phash_le2_hits": 0,
+  "e1_added_duplicate_sha": 0,
+  "e1_added_quarantine": 0,
+  "e1_added_heldout_cause": 0,
+  "e1_added_openimages": 0,
+  "e1_added_sample_videos": 0,
+  "reference_counts": {
+    "phashes": 24009,
+    "exact_sha": 17381,
+    "ids": 17377,
+    "paths": 23751
+  },
+  "examples": {
+    "exact": [],
+    "phash": []
+  },
+  "measured": "SHA-256 + pHash Hamming<=2 + id/path; added negatives re-checked now"
+}

@@ -1,0 +1,20 @@
+{
+  "fraction": "10",
+  "n_train": 200,
+  "model": "yolo11n.yaml",
+  "epochs_requested": 2,
+  "resumed": false,
+  "run_dir": "C:\\Users\\Nidhi\\My projects\\firesight\\build\\dry_run\\runs\\P10_fresh",
+  "best_pt": "C:\\Users\\Nidhi\\My projects\\firesight\\build\\dry_run\\runs\\P10_fresh\\weights\\best.pt",
+  "last_pt": "C:\\Users\\Nidhi\\My projects\\firesight\\build\\dry_run\\runs\\P10_fresh\\weights\\last.pt",
+  "throughput": {
+    "epochs_recorded": 2,
+    "total_train_s": 32.68,
+    "median_s_per_epoch": 16.33,
+    "images_per_s": 12.25
+  },
+  "last_epoch_time_s": 16.2,
+  "last_epoch_images_per_s": 12.35,
+  "selection_data": "lists/val_early.txt (slice of data/splits/val.jsonl)",
+  "onnx": "C:\\Users\\Nidhi\\My projects\\firesight\\build\\dry_run\\runs\\P10_fresh\\weights\\best.onnx"
+}

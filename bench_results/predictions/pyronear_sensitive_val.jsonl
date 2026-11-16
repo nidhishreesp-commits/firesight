@@ -1,0 +1,241 @@
+{"id": "dfire:val:WEB07725", "latency_ms": 1817.21, "detections": [{"label": "smoke", "confidence": 0.013006366789340973, "box": [245.90151977539062, 132.26712036132812, 439.5290832519531, 226.4202117919922], "track_id": null}]}
+{"id": "fasdd:val:smoke_CV003465_jpg.rf.df01d4292e2a0c92baef922303e62c21", "latency_ms": 318.128, "detections": [{"label": "smoke", "confidence": 0.18727321922779083, "box": [320.4076843261719, 0.0, 561.63818359375, 271.5343322753906], "track_id": null}]}
+{"id": "fasdd:val:fire_CV003538_jpg.rf.fc1f00aa0ded1a69500cd77a48fe6362", "latency_ms": 254.291, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV013688_jpg.rf.a72f97f25588d26718a445a68790ac65", "latency_ms": 227.54, "detections": [{"label": "smoke", "confidence": 0.03247550502419472, "box": [423.0431213378906, 64.03314208984375, 431.68218994140625, 73.28084564208984], "track_id": null}]}
+{"id": "fasdd:val:smoke_CV001091_jpg.rf.c840134ee807251edcaf69e0195f69c7", "latency_ms": 246.748, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV007219_jpg.rf.acdd5411f9028de20657504cdfb85750", "latency_ms": 184.528, "detections": [{"label": "smoke", "confidence": 0.014519925229251385, "box": [48.26689529418945, 270.2561950683594, 100.58316802978516, 283.7456359863281], "track_id": null}, {"label": "smoke", "confidence": 0.014261828735470772, "box": [169.25621032714844, 210.64990234375, 179.78294372558594, 216.54116821289062], "track_id": null}]}
+{"id": "dfire:val:WEB04745", "latency_ms": 142.218, "detections": [{"label": "smoke", "confidence": 0.022794807329773903, "box": [467.65423583984375, 149.5654296875, 489.4198303222656, 167.77566528320312], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV009859_jpg.rf.cbd0b1c28e969d6a4249ba73063c2c6f", "latency_ms": 183.262, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV029388_jpg.rf.a8d3485f7692471a686df93af98c2561", "latency_ms": 174.768, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV004283_jpg.rf.ef950fe4762362c12af0517ba7e8c945", "latency_ms": 169.213, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV004355_jpg.rf.f788b0433b1638535e7c1abd421df9a8", "latency_ms": 192.467, "detections": [{"label": "smoke", "confidence": 0.14812533557415009, "box": [75.91996002197266, 18.181180953979492, 260.28570556640625, 317.47576904296875], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV002138_jpg.rf.a597b479cb75a95d3b2c8584b0729a24", "latency_ms": 147.342, "detections": [{"label": "smoke", "confidence": 0.393608421087265, "box": [106.39070129394531, 202.69908142089844, 170.9640350341797, 229.37281799316406], "track_id": null}, {"label": "smoke", "confidence": 0.028691958636045456, "box": [377.7354736328125, 222.56529235839844, 448.1976623535156, 251.5530548095703], "track_id": null}, {"label": "smoke", "confidence": 0.010517318733036518, "box": [23.713878631591797, 213.79725646972656, 41.816795349121094, 224.97744750976562], "track_id": null}]}
+{"id": "fasdd:val:fire_CV005248_jpg.rf.38468171396cd94036810b01768ad8e7", "latency_ms": 174.715, "detections": []}
+{"id": "fasdd:val:smoke_CV022363_jpg.rf.5dd98f5ecad42433b83279fd61d851f8", "latency_ms": 139.692, "detections": [{"label": "smoke", "confidence": 0.8269814848899841, "box": [40.01802444458008, 133.09634399414062, 155.8959197998047, 272.4529724121094], "track_id": null}]}
+{"id": "fasdd:val:smoke_CV023367_jpg.rf.00102c5be8f36f240837dbf6b4d522a3", "latency_ms": 184.451, "detections": [{"label": "smoke", "confidence": 0.2645207643508911, "box": [332.82568359375, 200.95352172851562, 460.8943786621094, 273.89190673828125], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV011684_jpg.rf.d8b57c9328b9737eb77fe6efb66b8c55", "latency_ms": 265.397, "detections": []}
+{"id": "dfire:val:WEB00016", "latency_ms": 208.137, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV025558_jpg.rf.e8604e9fce19da04bcf916d5f8dad244", "latency_ms": 173.383, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV003218_jpg.rf.77feb30db556263b91fac67498e0c9a8", "latency_ms": 183.023, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV004380_jpg.rf.1c3aac34d03b8ffa15c920af016f8bbc", "latency_ms": 175.209, "detections": [{"label": "smoke", "confidence": 0.014849879778921604, "box": [24.045209884643555, 272.1231689453125, 54.88606262207031, 300.3343811035156], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV032488_jpg.rf.35f50d4697b339636d7a7b6851edd701", "latency_ms": 273.875, "detections": []}
+{"id": "dfire:val:AoF05106", "latency_ms": 158.785, "detections": [{"label": "smoke", "confidence": 0.4909108579158783, "box": [12.393119812011719, 112.13658905029297, 345.9501647949219, 299.9327087402344], "track_id": null}]}
+{"id": "fasdd:val:smoke_CV003165_jpg.rf.ade8144f89a6fc1d15678257d2f3ce0e", "latency_ms": 178.53, "detections": [{"label": "smoke", "confidence": 0.06465422362089157, "box": [315.37884521484375, 0.0, 639.3130493164062, 315.04669189453125], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV027030_jpg.rf.71a483a6ddb2d95ef2bbd8349cc37989", "latency_ms": 256.75, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV001348_jpg.rf.6e2773277e63198eb002a70d21d55523", "latency_ms": 232.183, "detections": [{"label": "smoke", "confidence": 0.01986926980316639, "box": [277.2110595703125, 286.21661376953125, 366.1607971191406, 371.18914794921875], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV006821_jpg.rf.9b8742c7b60a1664da46c37431fe87b0", "latency_ms": 210.1, "detections": []}
+{"id": "dfire:val:WEB04375", "latency_ms": 203.063, "detections": [{"label": "smoke", "confidence": 0.40087807178497314, "box": [85.18584442138672, 341.15460205078125, 129.81028747558594, 376.834228515625], "track_id": null}, {"label": "smoke", "confidence": 0.30403217673301697, "box": [1002.4899291992188, 222.80043029785156, 1036.9541015625, 244.99168395996094], "track_id": null}, {"label": "smoke", "confidence": 0.27177703380584717, "box": [810.265625, 362.64910888671875, 823.6588745117188, 372.3769226074219], "track_id": null}, {"label": "smoke", "confidence": 0.12209313362836838, "box": [908.2801513671875, 382.5583190917969, 975.3076782226562, 403.2833251953125], "track_id": null}, {"label": "smoke", "confidence": 0.032160378992557526, "box": [153.199951171875, 396.377685546875, 204.09706115722656, 415.1669006347656], "track_id": null}, {"label": "smoke", "confidence": 0.019959159195423126, "box": [93.61974334716797, 437.1086120605469, 150.4733428955078, 484.769775390625], "track_id": null}, {"label": "smoke", "confidence": 0.011007958091795444, "box": [991.5240478515625, 399.6466369628906, 1021.4513549804688, 422.711181640625], "track_id": null}]}
+{"id": "dfire:val:AoF01463", "latency_ms": 153.019, "detections": [{"label": "smoke", "confidence": 0.3489260673522949, "box": [330.1592102050781, 393.88934326171875, 396.1326599121094, 446.3390808105469], "track_id": null}]}
+{"id": "dfire:val:WEB05222", "latency_ms": 144.433, "detections": [{"label": "smoke", "confidence": 0.027064066380262375, "box": [0.0, 140.41986083984375, 31.518518447875977, 164.02769470214844], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV004218_jpg.rf.482ac58df5998a14eb22a6301932651b", "latency_ms": 201.769, "detections": [{"label": "smoke", "confidence": 0.03473002091050148, "box": [437.6213073730469, 193.5833740234375, 627.1356201171875, 299.65899658203125], "track_id": null}]}
+{"id": "fasdd:val:fire_CV004687_jpg.rf.cb75155aab587714992f1cd88ccb5c17", "latency_ms": 188.175, "detections": [{"label": "smoke", "confidence": 0.01858414150774479, "box": [398.2548522949219, 61.472557067871094, 430.0175476074219, 77.70397186279297], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV031334_jpg.rf.12dd98c4528457a47ab6240182642c6b", "latency_ms": 178.374, "detections": []}
+{"id": "dfire:val:WEB00963", "latency_ms": 146.962, "detections": []}
+{"id": "dfire:val:WEB03579", "latency_ms": 315.972, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV007158_jpg.rf.ae68d59ce57e937aef001cef60003968", "latency_ms": 180.345, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV006851_jpg.rf.cbb40cd11232e7e45113c0c551cd7a44", "latency_ms": 181.972, "detections": []}
+{"id": "fasdd:val:fire_CV011036_jpg.rf.3467c04026a40532dde5839fc8c5b4ff", "latency_ms": 192.842, "detections": []}
+{"id": "fasdd:val:fire_CV003260_jpg.rf.176f64430b402f0c890b0b9d22e87100", "latency_ms": 228.253, "detections": [{"label": "smoke", "confidence": 0.013002792373299599, "box": [286.3091735839844, 234.2582244873047, 371.2049865722656, 250.22303771972656], "track_id": null}]}
+{"id": "dfire:val:WEB09193", "latency_ms": 165.515, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV018114_jpg.rf.c8c875652e1271894a0a9dc9f4389faa", "latency_ms": 204.274, "detections": [{"label": "smoke", "confidence": 0.20890189707279205, "box": [30.45806121826172, 230.84678649902344, 50.50022888183594, 248.76510620117188], "track_id": null}, {"label": "smoke", "confidence": 0.06028318032622337, "box": [179.1295166015625, 84.89871978759766, 403.8905334472656, 180.11756896972656], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV009354_jpg.rf.3e694ab0ea2bae29a59a7ce19b3f157d", "latency_ms": 204.285, "detections": [{"label": "smoke", "confidence": 0.01565326377749443, "box": [227.61703491210938, 275.6534118652344, 261.4665832519531, 288.3343200683594], "track_id": null}, {"label": "smoke", "confidence": 0.012786521576344967, "box": [475.9942321777344, 345.2824401855469, 484.5791931152344, 350.30914306640625], "track_id": null}]}
+{"id": "fasdd:val:smoke_CV001750_jpg.rf.a5c3b10aac7389ea1b4ca528c5e830c9", "latency_ms": 188.331, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV019750_jpg.rf.8d08a821c500fc6c98483445ac57480e", "latency_ms": 186.685, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV012739_jpg.rf.425aeeccf26328ec34b5b84ac66088e9", "latency_ms": 218.407, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV011025_jpg.rf.0c62b824db4391f49f7d0002eb102771", "latency_ms": 317.949, "detections": []}
+{"id": "dfire:val:WEB01710", "latency_ms": 166.562, "detections": []}
+{"id": "dfire:val:AoF04570", "latency_ms": 148.572, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV030016_jpg.rf.ed44fc3bc66e91a06a67fb628a37339b", "latency_ms": 201.028, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV038586_jpg.rf.a85fa3938a1167da838b9b16e71ac16f", "latency_ms": 184.124, "detections": []}
+{"id": "fasdd:val:fire_CV007519_jpg.rf.963e4229c7a4b569fc5bb7f4980a44a4", "latency_ms": 186.189, "detections": []}
+{"id": "fasdd:val:fire_CV000245_jpg.rf.caed7ab7efbb7acd58505cced78edc12", "latency_ms": 206.531, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV006135_jpg.rf.75687471512291a630177431deef2a4f", "latency_ms": 196.03, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV037127_jpg.rf.5b97db5fdd62fefeb276561e93fbd756", "latency_ms": 200.109, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV006988_jpg.rf.9782a772d23a9e7f02af78ace19ac4e3", "latency_ms": 172.818, "detections": [{"label": "smoke", "confidence": 0.1811654269695282, "box": [607.804931640625, 0.7488203048706055, 640.0, 35.18183135986328], "track_id": null}, {"label": "smoke", "confidence": 0.07176856696605682, "box": [400.3502197265625, 0.0, 483.07177734375, 33.54400634765625], "track_id": null}]}
+{"id": "dfire:val:WEB05063", "latency_ms": 157.566, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV017384_jpg.rf.db2800f688a3f4383e8fc0c8e08e32dd", "latency_ms": 219.858, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV023703_jpg.rf.f921eb556d4bcd4b591d0ecf7d369fdc", "latency_ms": 311.208, "detections": [{"label": "smoke", "confidence": 0.13740332424640656, "box": [105.17204284667969, 336.1720275878906, 230.32569885253906, 436.6133117675781], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV016718_jpg.rf.5a9f936b43a4d052808b7a0e210ca04e", "latency_ms": 195.611, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV028067_jpg.rf.ee03a29977ad689cba5f7f9ad0d6c95d", "latency_ms": 269.207, "detections": []}
+{"id": "dfire:val:WEB08593", "latency_ms": 163.199, "detections": [{"label": "smoke", "confidence": 0.18535208702087402, "box": [85.32308197021484, 308.8139343261719, 228.31729125976562, 366.9606018066406], "track_id": null}, {"label": "smoke", "confidence": 0.04340067878365517, "box": [562.4092407226562, 0.0, 1227.8465576171875, 378.89013671875], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV015663_jpg.rf.93b088caf3b54d69bbf60b3f6a7b245e", "latency_ms": 204.178, "detections": [{"label": "smoke", "confidence": 0.3476138710975647, "box": [90.14636993408203, 2.3791122436523438, 110.66123962402344, 17.682079315185547], "track_id": null}, {"label": "smoke", "confidence": 0.18018977344036102, "box": [528.6849975585938, 192.6305389404297, 550.262451171875, 220.5046844482422], "track_id": null}, {"label": "smoke", "confidence": 0.043384652584791183, "box": [45.13773727416992, 11.790996551513672, 55.960445404052734, 18.470853805541992], "track_id": null}, {"label": "smoke", "confidence": 0.015280510298907757, "box": [284.4468688964844, 26.08323097229004, 304.45440673828125, 34.97819900512695], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV034504_jpg.rf.1cd50fc8429cfc26a2e724157bccda20", "latency_ms": 155.354, "detections": []}
+{"id": "fasdd:val:fire_CV000280_jpg.rf.2a916940a3addc174da7db359c09bcca", "latency_ms": 200.237, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV002868_jpg.rf.3d5d7c32146451f4344c75391df6ee8c", "latency_ms": 224.305, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV018568_jpg.rf.f3cd4f9b83e0e8e6bd386712d73eed95", "latency_ms": 193.528, "detections": [{"label": "smoke", "confidence": 0.017813414335250854, "box": [496.3525390625, 44.914424896240234, 502.1055603027344, 49.136016845703125], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV012002_jpg.rf.12bdb43912c2c177be50bf3d1168a5c7", "latency_ms": 152.349, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV009684_jpg.rf.a6a820d896ec75e0af5355cde7cea5af", "latency_ms": 176.635, "detections": [{"label": "smoke", "confidence": 0.021992111578583717, "box": [159.8290252685547, 20.04159927368164, 267.4176025390625, 130.51034545898438], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV011583_jpg.rf.2ea1175ed63e6081cb55773513709ee9", "latency_ms": 205.821, "detections": [{"label": "smoke", "confidence": 0.06908820569515228, "box": [265.5258483886719, 250.11581420898438, 271.5823974609375, 254.65553283691406], "track_id": null}, {"label": "smoke", "confidence": 0.04662125185132027, "box": [0.22515296936035156, 255.95703125, 50.14972686767578, 269.4478454589844], "track_id": null}, {"label": "smoke", "confidence": 0.0156478863209486, "box": [542.427001953125, 222.13453674316406, 549.800048828125, 235.0998077392578], "track_id": null}, {"label": "smoke", "confidence": 0.011154401116073132, "box": [0.09854555130004883, 275.9978332519531, 37.35670852661133, 373.436279296875], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV020382_jpg.rf.9fcccc868b1373af5131cbfa935eb303", "latency_ms": 271.241, "detections": [{"label": "smoke", "confidence": 0.017365043982863426, "box": [72.41244506835938, 563.1122436523438, 112.57953643798828, 586.3912353515625], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV016316_jpg.rf.d8b5c1d172352a91cf29abe3a19825a2", "latency_ms": 157.056, "detections": []}
+{"id": "fasdd:val:fire_CV005666_jpg.rf.b8b3ca5bc3688367e2c2bd9c55fe2a81", "latency_ms": 181.213, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV003845_jpg.rf.14e147a5c086291610d2f93414568be1", "latency_ms": 235.159, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV029603_jpg.rf.c8d8c001c0732529ea86182a89b6547e", "latency_ms": 193.141, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV028291_jpg.rf.cb8d935a00437ee7355992bc7ae781be", "latency_ms": 195.05, "detections": [{"label": "smoke", "confidence": 0.1624424308538437, "box": [217.78086853027344, 8.221302032470703, 582.3374633789062, 291.4903259277344], "track_id": null}, {"label": "smoke", "confidence": 0.12664750218391418, "box": [0.0, 133.1279754638672, 159.04029846191406, 298.6642761230469], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV004473_jpg.rf.eff9acf0d9e24c9bcf6a9813ae6d192a", "latency_ms": 226.023, "detections": [{"label": "smoke", "confidence": 0.013089102692902088, "box": [621.3843994140625, 205.73695373535156, 640.0, 254.04940795898438], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV010738_jpg.rf.da44d74c29688a04d539c8c70dddda83", "latency_ms": 267.795, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV001846_jpg.rf.d114aefd05b37d7aaaa2a9782e27538c", "latency_ms": 203.024, "detections": []}
+{"id": "dfire:val:WEB04975", "latency_ms": 152.027, "detections": []}
+{"id": "fasdd:val:smoke_CV006331_jpg.rf.fc17359ae2a684a0b5065a6a3da2ccf4", "latency_ms": 156.58, "detections": [{"label": "smoke", "confidence": 0.014044770039618015, "box": [277.111083984375, 225.5886993408203, 300.3265686035156, 256.8373107910156], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV012184_jpg.rf.212cf4d2257eb56c4992243aca1db8cd", "latency_ms": 268.003, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV006251_jpg.rf.b4d2c1a6c74f3de58bf9c4ec352e909d", "latency_ms": 211.856, "detections": []}
+{"id": "fasdd:val:smoke_CV006941_jpg.rf.7640ba87b2f89c18fdba13ab1789b224", "latency_ms": 197.901, "detections": [{"label": "smoke", "confidence": 0.013918010517954826, "box": [40.401878356933594, 43.170509338378906, 515.65673828125, 388.4302062988281], "track_id": null}]}
+{"id": "dfire:val:WEB07248", "latency_ms": 155.106, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV004097_jpg.rf.e98cf74fe3467cb51b6741285564a14e", "latency_ms": 218.162, "detections": [{"label": "smoke", "confidence": 0.2857186794281006, "box": [464.403076171875, 205.06910705566406, 479.85107421875, 218.8670196533203], "track_id": null}, {"label": "smoke", "confidence": 0.01273492630571127, "box": [150.4929656982422, 299.5377197265625, 169.6575469970703, 314.8338317871094], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV016707_jpg.rf.9ffc792f175bdb330f5230201352c2d0", "latency_ms": 141.931, "detections": []}
+{"id": "fasdd:val:fire_CV006577_jpg.rf.65955ef85dea8e2092c1c875cedddb6b", "latency_ms": 261.833, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV015872_jpg.rf.fe982f614367c7362377f12d63392610", "latency_ms": 178.287, "detections": []}
+{"id": "fasdd:val:fire_CV002898_jpg.rf.f1588d3a786bc6644be79c585f359f5d", "latency_ms": 262.168, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV002765_jpg.rf.a80ae6efe79e046b8cb782bb1d601400", "latency_ms": 180.382, "detections": [{"label": "smoke", "confidence": 0.011081724427640438, "box": [608.7066650390625, 90.37427520751953, 627.1285400390625, 98.05599212646484], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV007511_jpg.rf.f1f7ff123d8af687e855f114a651ed99", "latency_ms": 206.654, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV001674_jpg.rf.185bb5a5e00ec751b445efe2615fd515", "latency_ms": 224.384, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV002204_jpg.rf.5e6a93aa97e48ebd4642b0939db7fb06", "latency_ms": 272.52, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV013760_jpg.rf.89681d3f1dbda3843c8c65e3e2a20332", "latency_ms": 143.777, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV017397_jpg.rf.d3c55ee7eacfe096bcc5977576b89500", "latency_ms": 155.659, "detections": [{"label": "smoke", "confidence": 0.06506999582052231, "box": [409.4197082519531, 271.9447937011719, 442.6921691894531, 290.6322326660156], "track_id": null}, {"label": "smoke", "confidence": 0.043691396713256836, "box": [608.3860473632812, 103.64949798583984, 616.0496215820312, 114.92925262451172], "track_id": null}]}
+{"id": "dfire:val:WEB06675", "latency_ms": 179.364, "detections": [{"label": "smoke", "confidence": 0.01944730244576931, "box": [0.0, 138.82919311523438, 26.715373992919922, 216.93870544433594], "track_id": null}]}
+{"id": "dfire:val:WEB02813", "latency_ms": 211.428, "detections": []}
+{"id": "dfire:val:PublicDataset01007", "latency_ms": 280.72, "detections": []}
+{"id": "dfire:val:WEB04323", "latency_ms": 200.362, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV009520_jpg.rf.2e0bd62a549b49c3de9eb27e859e32b0", "latency_ms": 179.86, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV016017_jpg.rf.463846ab628823914a6b27f953db0bf8", "latency_ms": 147.131, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV030636_jpg.rf.3c9b505b9342b6009d0c697851b12dbc", "latency_ms": 277.076, "detections": [{"label": "smoke", "confidence": 0.01692214608192444, "box": [0.0, 0.0, 463.49151611328125, 314.3251647949219], "track_id": null}]}
+{"id": "local:val:drone_000132:hard_negative_video", "latency_ms": 176.455, "detections": [{"label": "smoke", "confidence": 0.04508020728826523, "box": [1302.9903564453125, 106.19807434082031, 1919.00927734375, 1033.762451171875], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV035915_jpg.rf.05a8adaae963b59cb056ab1048d9f601", "latency_ms": 271.507, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV037510_jpg.rf.30ce5bf8e6e55468a06057c9a8f19224", "latency_ms": 270.957, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV033889_jpg.rf.a44feea89833ed59be84618f94ee7b28", "latency_ms": 242.1, "detections": []}
+{"id": "fasdd:val:smoke_CV003149_jpg.rf.747d0b15dd3644a68c0be20fc4a489e0", "latency_ms": 292.592, "detections": [{"label": "smoke", "confidence": 0.031011566519737244, "box": [163.316650390625, 4.7626495361328125, 564.0167236328125, 357.2408142089844], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV029121_jpg.rf.207940e2f655ee56b01bf4a75ea1551b", "latency_ms": 276.264, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV015521_jpg.rf.beebfd7b84d4b82a0b6a416b8f933ca9", "latency_ms": 207.743, "detections": []}
+{"id": "dfire:val:WEB07971", "latency_ms": 194.445, "detections": []}
+{"id": "fasdd:val:smoke_CV010512_jpg.rf.a46d9268d7c9729ebe4c5d70dbfa54fc", "latency_ms": 146.123, "detections": [{"label": "smoke", "confidence": 0.4842505156993866, "box": [160.5743408203125, 235.2086639404297, 224.7431182861328, 327.1962585449219], "track_id": null}, {"label": "smoke", "confidence": 0.011783493682742119, "box": [99.02008056640625, 180.62315368652344, 164.08294677734375, 225.07325744628906], "track_id": null}, {"label": "smoke", "confidence": 0.010161444544792175, "box": [537.621826171875, 165.52696228027344, 560.6417236328125, 184.11834716796875], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV006023_jpg.rf.8d37d98a720ec4b7abe69bd1919bb0d9", "latency_ms": 193.06, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV008439_jpg.rf.549e119218bd9271c09a8b0585efa8b6", "latency_ms": 183.673, "detections": []}
+{"id": "fasdd:val:fire_CV001933_jpg.rf.314fa6ef50ec734b3483ce3fceae559e", "latency_ms": 193.606, "detections": [{"label": "smoke", "confidence": 0.037464823573827744, "box": [0.06664514541625977, 445.2407531738281, 16.96261978149414, 462.1560363769531], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV002726_jpg.rf.120e0774ae1a6b37f1e02c984e8a69dc", "latency_ms": 172.972, "detections": []}
+{"id": "dfire:val:WEB05590", "latency_ms": 149.311, "detections": [{"label": "smoke", "confidence": 0.13288702070713043, "box": [341.85028076171875, 327.0075378417969, 444.4895935058594, 399.0274658203125], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV020279_jpg.rf.886dfbfb6b7bccfb3489df4761740add", "latency_ms": 257.334, "detections": []}
+{"id": "dfire:val:AoF01562", "latency_ms": 149.95, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV019968_jpg.rf.b911f47b3f59463449cf3d0f3a92f9d9", "latency_ms": 184.364, "detections": []}
+{"id": "local:val:pos_fire_2_001524:pos", "latency_ms": 144.809, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV010237_jpg.rf.631c91e66497a86d5074ec66a64f26b2", "latency_ms": 205.221, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV003241_jpg.rf.720a5724ee1a4f948fe15cbde34cc061", "latency_ms": 206.166, "detections": [{"label": "smoke", "confidence": 0.012318793684244156, "box": [596.736083984375, 273.2906188964844, 601.9310913085938, 278.90057373046875], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV035873_jpg.rf.2c2a8ea39db3131d8d39e9c14292b0e5", "latency_ms": 155.255, "detections": [{"label": "smoke", "confidence": 0.05687301605939865, "box": [352.1315612792969, 33.221702575683594, 565.1778564453125, 298.13092041015625], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV034404_jpg.rf.45aaf0a2573592bc0da26d4bd44e722a", "latency_ms": 221.691, "detections": [{"label": "smoke", "confidence": 0.07320094108581543, "box": [0.0, 35.18238830566406, 51.83024215698242, 101.81877136230469], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV007927_jpg.rf.2d69e50a2fb9d66c1fd46b5a10b8ac73", "latency_ms": 191.772, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV002679_jpg.rf.bde3f61e9be5f22c188d26a74cb8fb34", "latency_ms": 277.556, "detections": []}
+{"id": "local:val:pos_fire_2_001260:pos", "latency_ms": 162.833, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV001745_jpg.rf.8032fc6aece89f8bb4dd747ef4f51d88", "latency_ms": 211.453, "detections": [{"label": "smoke", "confidence": 0.08286066353321075, "box": [297.15521240234375, 326.5712585449219, 314.424072265625, 356.684326171875], "track_id": null}, {"label": "smoke", "confidence": 0.01866157166659832, "box": [356.1238708496094, 189.32923889160156, 383.2265319824219, 214.1990509033203], "track_id": null}]}
+{"id": "fasdd:val:fire_CV008964_jpg.rf.9d3bec84c5a0cd9be6308745aca0c069", "latency_ms": 190.945, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV017409_jpg.rf.8bc3ce2f41bf5c5058b0f6cf3b3511e4", "latency_ms": 188.489, "detections": []}
+{"id": "dfire:val:WEB06946", "latency_ms": 153.468, "detections": [{"label": "smoke", "confidence": 0.29722046852111816, "box": [837.847412109375, 528.2431030273438, 893.8187866210938, 578.2562255859375], "track_id": null}, {"label": "smoke", "confidence": 0.021427465602755547, "box": [383.42352294921875, 556.2263793945312, 510.0484313964844, 622.4174194335938], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV014979_jpg.rf.468aa98f4fd2367a8674249e75152375", "latency_ms": 226.783, "detections": [{"label": "smoke", "confidence": 0.015633614733815193, "box": [34.38845443725586, 168.36546325683594, 129.94566345214844, 250.95140075683594], "track_id": null}]}
+{"id": "dfire:val:WEB08238", "latency_ms": 148.821, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV028776_jpg.rf.3a060c5adf2560c8ed2c32b410c5d36f", "latency_ms": 233.487, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV017021_jpg.rf.ec02c48e719447a4bc7bc3d698f364a3", "latency_ms": 155.405, "detections": [{"label": "smoke", "confidence": 0.029127735644578934, "box": [562.5232543945312, 270.1681213378906, 571.9259033203125, 276.9507141113281], "track_id": null}, {"label": "smoke", "confidence": 0.011510124430060387, "box": [542.285888671875, 256.6108703613281, 552.7667846679688, 263.0130615234375], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV014694_jpg.rf.41b37efa3516330911265acdf98b9ca1", "latency_ms": 187.423, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV006707_jpg.rf.28f3932a4f6c4bd12b5e026d0276a454", "latency_ms": 201.8, "detections": [{"label": "smoke", "confidence": 0.1597536951303482, "box": [0.0003552436828613281, 270.93170166015625, 39.13576126098633, 299.3702697753906], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV021959_jpg.rf.2b97c53c522763b64e95d8ba490f2c13", "latency_ms": 278.422, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV025120_jpg.rf.47d9785ad9da4a5609c56bc1938e509f", "latency_ms": 217.306, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV018453_jpg.rf.d5de6db5d038680edc3f151dcd177014", "latency_ms": 249.276, "detections": [{"label": "smoke", "confidence": 0.2415129691362381, "box": [116.73379516601562, 403.0364074707031, 180.3669891357422, 463.2640686035156], "track_id": null}, {"label": "smoke", "confidence": 0.21505986154079437, "box": [169.78179931640625, 165.06614685058594, 530.0353393554688, 464.2878723144531], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV009429_jpg.rf.452f735d74f9903127ed48ea67ba0bab", "latency_ms": 188.167, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV028324_jpg.rf.cdb66ef286bbec40a0b7ff552309e980", "latency_ms": 183.91, "detections": [{"label": "smoke", "confidence": 0.023705745115876198, "box": [0.0, 175.70648193359375, 43.21571350097656, 275.3983154296875], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV010030_jpg.rf.75fb8a060014f7c4f372172c5262a781", "latency_ms": 151.023, "detections": []}
+{"id": "fasdd:val:smoke_CV000923_jpg.rf.8c2430583895226dbe6ae5780852f3f2", "latency_ms": 210.175, "detections": [{"label": "smoke", "confidence": 0.040747664868831635, "box": [440.9740905761719, 467.02520751953125, 469.4727783203125, 479.9980773925781], "track_id": null}, {"label": "smoke", "confidence": 0.011391200125217438, "box": [0.0, 450.0321044921875, 27.103961944580078, 475.9667053222656], "track_id": null}]}
+{"id": "dfire:val:WEB00992", "latency_ms": 160.868, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV005534_jpg.rf.d3646d642bc59f46247b0c71febba76f", "latency_ms": 198.686, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV037992_jpg.rf.e2ffd0e7475e3238f1f97f0939fa25e1", "latency_ms": 184.48, "detections": []}
+{"id": "fasdd:val:fire_CV011461_jpg.rf.5e564debf5891c3cefc8d069ec937d55", "latency_ms": 157.771, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV034055_jpg.rf.61a4dad83e32aaed5fb4f46daa9bb470", "latency_ms": 178.735, "detections": [{"label": "smoke", "confidence": 0.05912050977349281, "box": [81.85020446777344, 246.24404907226562, 88.6370849609375, 251.1913299560547], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV015211_jpg.rf.aca4c331b00dc69f22a7c605f6e3c68b", "latency_ms": 142.536, "detections": [{"label": "smoke", "confidence": 0.03315383568406105, "box": [24.13818359375, 0.0, 417.5056457519531, 86.7340087890625], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV010371_jpg.rf.d3b7d017cfc2887e1d35dd6e5b45ad6a", "latency_ms": 150.877, "detections": [{"label": "smoke", "confidence": 0.05844426527619362, "box": [292.0323181152344, 0.0, 394.81842041015625, 85.86956024169922], "track_id": null}]}
+{"id": "fasdd:val:fire_CV008526_jpg.rf.380c68ca23bd89294986028979105b89", "latency_ms": 142.323, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV012640_jpg.rf.698e37718e995a916de2ff7ebfdf9878", "latency_ms": 272.654, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV035856_jpg.rf.866d31672872b247170b2da765b82637", "latency_ms": 194.001, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV031435_jpg.rf.ae5c8fbe3861e4ce7274bb78ebf157dd", "latency_ms": 204.139, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV007196_jpg.rf.ef67fee739f9570a2113ce254f47a119", "latency_ms": 130.93, "detections": []}
+{"id": "dfire:val:WEB00133", "latency_ms": 162.47, "detections": [{"label": "smoke", "confidence": 0.017462272197008133, "box": [235.9346923828125, 174.70054626464844, 247.11770629882812, 181.3379669189453], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV032469_jpg.rf.2e74dfdf9d66cb056dfd11179eabbb2e", "latency_ms": 262.45, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV016080_jpg.rf.c38e180f9522ae330001c78cf3e5ae54", "latency_ms": 191.756, "detections": []}
+{"id": "fasdd:val:fire_CV003028_jpg.rf.40757a3090eac1ecce93a163a3178ec6", "latency_ms": 222.666, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV011782_jpg.rf.afbe0e57bce34c0eb61b0b036c5e4dd7", "latency_ms": 221.469, "detections": []}
+{"id": "fasdd:val:smoke_CV007587_jpg.rf.64fb769d5e8ac22884ce3f39ff35a51d", "latency_ms": 197.151, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV038953_jpg.rf.75c4ed849d1e56bd9096bbc7ac58cef3", "latency_ms": 161.923, "detections": []}
+{"id": "fasdd:val:smoke_CV002345_jpg.rf.7abf831871d0d5532cdc702aef08386b", "latency_ms": 160.634, "detections": []}
+{"id": "fasdd:val:smoke_CV019328_jpg.rf.002cf770c082c65cd97f3c8c661fea5e", "latency_ms": 158.884, "detections": [{"label": "smoke", "confidence": 0.7961603403091431, "box": [311.75543212890625, 246.00677490234375, 352.5953674316406, 327.6518249511719], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV003803_jpg.rf.49ae5343e2f186c9ec00872801f09bad", "latency_ms": 234.191, "detections": []}
+{"id": "fasdd:val:smoke_CV008436_jpg.rf.29aa7842e038d13cd0a5082490ce6025", "latency_ms": 295.834, "detections": [{"label": "smoke", "confidence": 0.02937130816280842, "box": [347.6762390136719, 198.68113708496094, 380.6474304199219, 219.61749267578125], "track_id": null}, {"label": "smoke", "confidence": 0.022139763459563255, "box": [414.4306945800781, 45.10934829711914, 435.18707275390625, 62.04008102416992], "track_id": null}, {"label": "smoke", "confidence": 0.013529571704566479, "box": [475.5281066894531, 157.8223419189453, 573.6538696289062, 215.2165985107422], "track_id": null}]}
+{"id": "dfire:val:WEB07220", "latency_ms": 195.008, "detections": [{"label": "smoke", "confidence": 0.016450822353363037, "box": [134.6776885986328, 290.9134216308594, 168.42391967773438, 308.52154541015625], "track_id": null}]}
+{"id": "dfire:val:WEB01049", "latency_ms": 157.095, "detections": []}
+{"id": "fasdd:val:smoke_CV006832_jpg.rf.0ef73ba95c71329fbac6a77a7f6ea1a6", "latency_ms": 157.193, "detections": [{"label": "smoke", "confidence": 0.457312673330307, "box": [367.79296875, 117.8609848022461, 442.7895202636719, 221.52015686035156], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV003360_jpg.rf.4d34a443a5e89eefb71963017634a1a3", "latency_ms": 179.091, "detections": []}
+{"id": "dfire:val:PublicDataset00945", "latency_ms": 217.184, "detections": [{"label": "smoke", "confidence": 0.01377183385193348, "box": [227.06747436523438, 40.60375213623047, 267.186279296875, 74.69715881347656], "track_id": null}]}
+{"id": "fasdd:val:fire_CV009286_jpg.rf.d7fef6d312e1ce5bb0303125d3e69615", "latency_ms": 303.541, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV011423_jpg.rf.6b8bb35569914a1d74d3569caf3feb70", "latency_ms": 290.468, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV010025_jpg.rf.3219256e32786e6da1475f3d6189d9af", "latency_ms": 299.186, "detections": []}
+{"id": "dfire:val:WEB08626", "latency_ms": 173.152, "detections": []}
+{"id": "fasdd:val:smoke_CV001825_jpg.rf.cd443b9a42b16d7b30eb07eb6137b63d", "latency_ms": 210.108, "detections": [{"label": "smoke", "confidence": 0.14214546978473663, "box": [162.23464965820312, 116.93832397460938, 355.424072265625, 269.0050964355469], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV017672_jpg.rf.b1686fc15abc78db8ff449c85d5bc79d", "latency_ms": 201.061, "detections": []}
+{"id": "dfire:val:WEB07530", "latency_ms": 328.278, "detections": [{"label": "smoke", "confidence": 0.03446095809340477, "box": [399.354736328125, 1.56796395778656, 715.4915771484375, 375.4555969238281], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV037676_jpg.rf.60d1617d71e45c4b2de7b20d8637968c", "latency_ms": 304.683, "detections": []}
+{"id": "dfire:val:WEB04362", "latency_ms": 226.508, "detections": [{"label": "smoke", "confidence": 0.43401437997817993, "box": [207.27159118652344, 148.10667419433594, 249.2899932861328, 169.6794891357422], "track_id": null}, {"label": "smoke", "confidence": 0.02712235599756241, "box": [226.5199432373047, 210.89654541015625, 255.96044921875, 257.2289123535156], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV014867_jpg.rf.47941b555e4ec82a1da5bd596e3eac4e", "latency_ms": 215.022, "detections": [{"label": "smoke", "confidence": 0.01099210511893034, "box": [0.0, 0.0, 401.8644714355469, 333.543701171875], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV036489_jpg.rf.56e5a3bad98e7c8373fc3f397edb587c", "latency_ms": 226.689, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV015489_jpg.rf.1c1d1bf45736d96a7fc56feb253ae38a", "latency_ms": 201.549, "detections": []}
+{"id": "fasdd:val:smoke_CV001212_jpg.rf.b265ab15ade98d6098bb9a1b9762c99e", "latency_ms": 198.305, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV011580_jpg.rf.83e5e6979811955a3554ea88ea62d99e", "latency_ms": 208.16, "detections": [{"label": "smoke", "confidence": 0.02813878282904625, "box": [152.8875732421875, 4.4979119300842285, 167.1855926513672, 27.376968383789062], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV038365_jpg.rf.93029df38e268b4e88b84f593634d007", "latency_ms": 305.115, "detections": []}
+{"id": "dfire:val:WEB06375", "latency_ms": 231.21, "detections": []}
+{"id": "local:val:neg_20260714_182725_000060:hard_negative_video", "latency_ms": 179.632, "detections": []}
+{"id": "fasdd:val:fire_CV008314_jpg.rf.86ad6121a24a9847edd8215a518821e6", "latency_ms": 156.912, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV028554_jpg.rf.de99a723d936db031157914ab99f7ae2", "latency_ms": 305.508, "detections": []}
+{"id": "dfire:val:WEB07136", "latency_ms": 184.432, "detections": []}
+{"id": "dfire:val:WEB07364", "latency_ms": 194.005, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV000718_jpg.rf.94b3c2fd0022ed2c34064431e2f8a749", "latency_ms": 234.405, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV019832_jpg.rf.83e42b572686814b97f85603cd2d1990", "latency_ms": 189.856, "detections": [{"label": "smoke", "confidence": 0.09175662696361542, "box": [500.531982421875, 133.6132049560547, 578.9614868164062, 211.85458374023438], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV003308_jpg.rf.0207d98835bd811e149a2e7ac33800bd", "latency_ms": 244.991, "detections": [{"label": "smoke", "confidence": 0.031719181686639786, "box": [209.757080078125, 366.0235595703125, 275.24005126953125, 451.2774658203125], "track_id": null}, {"label": "smoke", "confidence": 0.01438914518803358, "box": [190.31436157226562, 2.965679168701172, 479.44561767578125, 299.2681579589844], "track_id": null}]}
+{"id": "dfire:val:WEB00932", "latency_ms": 178.313, "detections": []}
+{"id": "fasdd:val:fire_CV011139_jpg.rf.f7d66c6783a92497edfa5cb27a042377", "latency_ms": 225.849, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV011712_jpg.rf.03cd8a9e4b6e72e8346b401e58829de3", "latency_ms": 180.548, "detections": [{"label": "smoke", "confidence": 0.03334805369377136, "box": [35.502620697021484, 224.17193603515625, 78.88926696777344, 300.0625915527344], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV024705_jpg.rf.df99d9ae4b2f8d8c9ca0e934e04aced0", "latency_ms": 223.441, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV014144_jpg.rf.25cb7e0226b891183c8183558bac1335", "latency_ms": 227.022, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV030586_jpg.rf.23492824c50ff2ed5ab5774eb5bf8dce", "latency_ms": 229.05, "detections": [{"label": "smoke", "confidence": 0.03672068938612938, "box": [4.082279205322266, 494.6467590332031, 85.40204620361328, 557.7256469726562], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV034246_jpg.rf.58fda1a815850c2eb81bac65c7ca7846", "latency_ms": 211.007, "detections": [{"label": "smoke", "confidence": 0.02173515409231186, "box": [84.43124389648438, 177.82786560058594, 94.5934829711914, 185.74839782714844], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV015404_jpg.rf.1cd73b4716bcafa01f0317beb7cbe063", "latency_ms": 172.853, "detections": []}
+{"id": "fasdd:val:smoke_CV007901_jpg.rf.35833d786e0f5aeb02318a27b9b163e5", "latency_ms": 226.923, "detections": [{"label": "smoke", "confidence": 0.01751118153333664, "box": [71.0073471069336, 0.0, 528.7509155273438, 288.2545166015625], "track_id": null}]}
+{"id": "dfire:val:WEB06108", "latency_ms": 220.401, "detections": [{"label": "smoke", "confidence": 0.1067657396197319, "box": [154.20285034179688, 0.0, 769.7163696289062, 393.19403076171875], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV026841_jpg.rf.5bbbdb1675ac13bedf0ab48753d66725", "latency_ms": 266.706, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV030763_jpg.rf.33f5a0fee5bcba3b0b343a3e4b177286", "latency_ms": 209.851, "detections": []}
+{"id": "fasdd:val:smoke_CV001322_jpg.rf.505104b2fc3f9f2b8eed0bbe19b0e01e", "latency_ms": 227.001, "detections": []}
+{"id": "fasdd:val:smoke_CV007346_jpg.rf.9d0906ecda568af1e104654b598c9d30", "latency_ms": 235.216, "detections": [{"label": "smoke", "confidence": 0.11944244056940079, "box": [602.144775390625, 349.6055603027344, 619.3770751953125, 367.09503173828125], "track_id": null}, {"label": "smoke", "confidence": 0.07335254549980164, "box": [75.55071258544922, 344.41748046875, 107.15119934082031, 372.3286437988281], "track_id": null}, {"label": "smoke", "confidence": 0.023484336212277412, "box": [487.78076171875, 30.439720153808594, 639.8576049804688, 294.7356872558594], "track_id": null}]}
+{"id": "fasdd:val:smoke_CV004243_jpg.rf.8a927fa8b6f16679e59bef2a8b83d97d", "latency_ms": 191.812, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV027596_jpg.rf.aadeb1f8a1f07191936fcdb9617721a3", "latency_ms": 224.269, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV009310_jpg.rf.59858c13352a13f2d1067edbca7ff928", "latency_ms": 220.232, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV014147_jpg.rf.8a2038253af3f400e9f21f91504e1e2d", "latency_ms": 220.611, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV014517_jpg.rf.e34afef300de2b8465c18adf85ed48ca", "latency_ms": 208.516, "detections": [{"label": "smoke", "confidence": 0.01744670234620571, "box": [413.7868347167969, 417.6377868652344, 424.14556884765625, 426.0], "track_id": null}]}
+{"id": "fasdd:val:fire_CV011699_jpg.rf.ea2ae4e42c62bcfc2da441c971c81f43", "latency_ms": 225.793, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV031187_jpg.rf.253b5206b2e416171f25851d1f3ab2ba", "latency_ms": 192.903, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV007139_jpg.rf.17d4d875d750eb61b08bbe0a1d76f782", "latency_ms": 225.651, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV023789_jpg.rf.f56f7ea637ea384bd78f95895efbe9e8", "latency_ms": 301.902, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV032059_jpg.rf.0e1727d9af0ade2a4fa0023f91876f42", "latency_ms": 294.622, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV008929_jpg.rf.e3610ebaa9f43d8015af9b31069bc612", "latency_ms": 199.633, "detections": [{"label": "smoke", "confidence": 0.13120023906230927, "box": [35.69457244873047, 162.41744995117188, 47.4677734375, 170.6432342529297], "track_id": null}, {"label": "smoke", "confidence": 0.07071366906166077, "box": [0.4186248779296875, 0.5817794799804688, 350.4825439453125, 240.3763885498047], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV009971_jpg.rf.2411584ceaca551d55a65f4347143e66", "latency_ms": 166.152, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV036876_jpg.rf.b2b0197f88008debcc05cc9a771dca2e", "latency_ms": 293.293, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV020250_jpg.rf.7d4b0c5839d35a897ae9ab0e96ff087a", "latency_ms": 287.795, "detections": []}
+{"id": "dfire:val:WEB06765", "latency_ms": 156.083, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV016238_jpg.rf.07f7dbec484a30a24b2ae815a7601ce5", "latency_ms": 210.533, "detections": []}
+{"id": "fasdd:val:smoke_CV007324_jpg.rf.821a00a8c888595cc573fc389e7b3043", "latency_ms": 152.646, "detections": []}
+{"id": "dfire:val:PublicDataset00915", "latency_ms": 203.297, "detections": []}
+{"id": "dfire:val:WEB07782", "latency_ms": 156.49, "detections": [{"label": "smoke", "confidence": 0.20152010023593903, "box": [365.4917907714844, 158.38821411132812, 497.654052734375, 316.91204833984375], "track_id": null}]}
+{"id": "dfire:val:WEB09170", "latency_ms": 187.232, "detections": [{"label": "smoke", "confidence": 0.5209882855415344, "box": [0.28456732630729675, 475.5968322753906, 43.35695266723633, 507.0420837402344], "track_id": null}, {"label": "smoke", "confidence": 0.02679791860282421, "box": [551.5772705078125, 146.43017578125, 779.0, 412.92694091796875], "track_id": null}]}
+{"id": "dfire:val:WEB03339", "latency_ms": 197.913, "detections": [{"label": "smoke", "confidence": 0.01836428977549076, "box": [606.28662109375, 305.8546142578125, 674.3158569335938, 328.62713623046875], "track_id": null}, {"label": "smoke", "confidence": 0.010070236399769783, "box": [0.17171430587768555, 469.107177734375, 76.6130142211914, 493.4460144042969], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV013524_jpg.rf.424c361610305b0f7e2711bfd61d8dd0", "latency_ms": 155.95, "detections": [{"label": "smoke", "confidence": 0.16690310835838318, "box": [0.20292282104492188, 84.77517700195312, 47.78029251098633, 151.94984436035156], "track_id": null}]}
+{"id": "fasdd:val:fire_CV008569_jpg.rf.6b53bace82d6ac7467de3e8c36a8069a", "latency_ms": 159.081, "detections": []}
+{"id": "dfire:val:WEB05662", "latency_ms": 182.258, "detections": [{"label": "smoke", "confidence": 0.1302381455898285, "box": [0.0, 0.0, 61.82117462158203, 40.14140319824219], "track_id": null}, {"label": "smoke", "confidence": 0.11647076159715652, "box": [175.6887969970703, 6.22723913192749, 631.184814453125, 341.937744140625], "track_id": null}]}
+{"id": "dfire:val:AoF01305", "latency_ms": 164.456, "detections": [{"label": "smoke", "confidence": 0.09344208240509033, "box": [983.826904296875, 183.8579559326172, 1028.5238037109375, 225.0171661376953], "track_id": null}]}
+{"id": "fasdd:val:neitherFireNorSmoke_CV016637_jpg.rf.3350dbf1d6c732a229de262e2ac581fb", "latency_ms": 278.027, "detections": []}
+{"id": "local:val:pos_fire_2_001632:pos", "latency_ms": 160.121, "detections": []}
+{"id": "fasdd:val:neitherFireNorSmoke_CV024478_jpg.rf.348d803060f4510cee9b3ef28d765153", "latency_ms": 189.242, "detections": []}
+{"id": "fasdd:val:bothFireAndSmoke_CV017009_jpg.rf.5229372c46608400f33de33ed25c8420", "latency_ms": 158.483, "detections": [{"label": "smoke", "confidence": 0.043806061148643494, "box": [239.92111206054688, 222.76499938964844, 286.9328918457031, 238.98379516601562], "track_id": null}, {"label": "smoke", "confidence": 0.020558403804898262, "box": [321.9921569824219, 220.9784698486328, 403.37725830078125, 246.10366821289062], "track_id": null}]}
+{"id": "fasdd:val:bothFireAndSmoke_CV003269_jpg.rf.876aac084275bce06229b268f69c5850", "latency_ms": 161.031, "detections": [{"label": "smoke", "confidence": 0.28548476099967957, "box": [302.11553955078125, 272.9676818847656, 318.18096923828125, 297.833251953125], "track_id": null}, {"label": "smoke", "confidence": 0.05462371185421944, "box": [313.9140930175781, 0.0, 624.4793090820312, 248.18690490722656], "track_id": null}]}
+{"id": "dfire:val:WEB00349", "latency_ms": 156.934, "detections": []}
+{"id": "__meta__", "model": "pyronear_sensitive", "model_path": "C:\\Users\\Nidhi\\.cache\\huggingface\\hub\\models--pyronear--yolo11s_sensitive-detector\\snapshots\\56d67d6f4d7eab7feed1bebf656f8f73de26ff03\\best.pt", "model_size_mb": 18.335, "license": "Apache-2.0", "family": "YOLO11s (Pyronear)", "device": "cpu", "images": 240, "inference_seconds": 50.683, "ms_per_image": 211.181, "fps": 4.735, "wall_seconds": 50.695}

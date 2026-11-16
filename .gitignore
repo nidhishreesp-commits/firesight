@@ -61,3 +61,5 @@ build/
 data/hard_negatives*/
 data/mined_pools/
 data/pilot_mined/
+
+data/video_eval/

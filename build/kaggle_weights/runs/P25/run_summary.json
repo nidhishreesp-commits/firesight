@@ -1,0 +1,19 @@
+{
+  "fraction": "25",
+  "n_train": 14747,
+  "model": "/kaggle/input/firesight-pilot-code/yolo11s.pt",
+  "epochs_requested": 15,
+  "resumed": false,
+  "run_dir": "/kaggle/working/runs/P25",
+  "best_pt": "/kaggle/working/runs/P25/weights/best.pt",
+  "last_pt": "/kaggle/working/runs/P25/weights/last.pt",
+  "throughput": {
+    "epochs_recorded": 15,
+    "total_train_s": 4077.94,
+    "median_s_per_epoch": 205.67,
+    "images_per_s": 71.7
+  },
+  "last_epoch_time_s": 205.63,
+  "last_epoch_images_per_s": 71.72,
+  "selection_data": "lists/val_early.txt (slice of data/splits/val.jsonl)"
+}

@@ -1,0 +1,188 @@
+{
+  "0.015": {
+    "p50_threshold": 0.199311,
+    "verifier_threshold": 1.2837105714424979e-05,
+    "val_cal_fpr": 0.01452081316553727,
+    "val_cal_recall": 0.9245087900723888,
+    "val_cal_tp": 894,
+    "val_cal_fp": 15,
+    "recall": 0.9212121212121213,
+    "recall_95ci": [
+      0.9099335294848206,
+      0.9311851607937355
+    ],
+    "fpr": 0.024205748865355523,
+    "fpr_95ci": [
+      0.019001548549896982,
+      0.030790553817555813
+    ],
+    "accuracy": 0.9494041805040047,
+    "tp": 2280,
+    "fp": 64,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 74,
+        "p50_only": 95,
+        "p": 0.12368263020457389
+      },
+      "negatives": {
+        "cascade_only": 19,
+        "p50_only": 38,
+        "p": 0.016348103897376145
+      }
+    }
+  },
+  "0.02": {
+    "p50_threshold": 0.199311,
+    "verifier_threshold": 5.68811174161965e-06,
+    "val_cal_fpr": 0.01936108422071636,
+    "val_cal_recall": 0.9358841778697001,
+    "val_cal_tp": 905,
+    "val_cal_fp": 20,
+    "recall": 0.9309090909090909,
+    "recall_95ci": [
+      0.9202351798196439,
+      0.9402473939761163
+    ],
+    "fpr": 0.029122541603630862,
+    "fpr_95ci": [
+      0.023364558623777766,
+      0.03624686224067273
+    ],
+    "accuracy": 0.9515530377026763,
+    "tp": 2304,
+    "fp": 77,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 74,
+        "p50_only": 71,
+        "p": 0.8681591543092659
+      },
+      "negatives": {
+        "cascade_only": 21,
+        "p50_only": 27,
+        "p": 0.470879013621712
+      }
+    }
+  },
+  "dev_sanity": {
+    "p50_threshold": 0.199311,
+    "verifier_threshold": 1.2837105714424979e-05,
+    "recall": 0.5955056179775281,
+    "recall_95ci": [
+      0.491640345784806,
+      0.6914672266827087
+    ],
+    "fpr": 0.03317535545023697,
+    "fpr_95ci": [
+      0.016161116814690984,
+      0.06688425242478592
+    ],
+    "tp": 53,
+    "fp": 7,
+    "n_pos": 89,
+    "n_neg": 211
+  },
+  "per_cause_val_report": {
+    "cave_rock": {
+      "neg_images": 10,
+      "p50_fa": 10,
+      "cascade_fa": 5,
+      "fpr_before": 1.0,
+      "fpr_after": 0.5,
+      "too_few": true
+    },
+    "construction_dust": {
+      "neg_images": 10,
+      "p50_fa": 10,
+      "cascade_fa": 3,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3,
+      "too_few": true
+    },
+    "haze_cloud": {
+      "neg_images": 19,
+      "p50_fa": 19,
+      "cascade_fa": 15,
+      "fpr_before": 1.0,
+      "fpr_after": 0.7894736842105263,
+      "too_few": true
+    },
+    "orange_ppe": {
+      "neg_images": 5,
+      "p50_fa": 5,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2,
+      "too_few": true
+    },
+    "other": {
+      "neg_images": 10,
+      "p50_fa": 10,
+      "cascade_fa": 6,
+      "fpr_before": 1.0,
+      "fpr_after": 0.6,
+      "too_few": true
+    },
+    "reflection": {
+      "neg_images": 11,
+      "p50_fa": 11,
+      "cascade_fa": 6,
+      "fpr_before": 1.0,
+      "fpr_after": 0.5454545454545454,
+      "too_few": true
+    },
+    "screen": {
+      "neg_images": 5,
+      "p50_fa": 5,
+      "cascade_fa": 4,
+      "fpr_before": 1.0,
+      "fpr_after": 0.8,
+      "too_few": true
+    },
+    "skin": {
+      "neg_images": 5,
+      "p50_fa": 5,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    },
+    "smoke_steam": {
+      "neg_images": 12,
+      "p50_fa": 12,
+      "cascade_fa": 9,
+      "fpr_before": 1.0,
+      "fpr_after": 0.75,
+      "too_few": true
+    },
+    "sun_bright": {
+      "neg_images": 21,
+      "p50_fa": 21,
+      "cascade_fa": 13,
+      "fpr_before": 1.0,
+      "fpr_after": 0.6190476190476191,
+      "too_few": true
+    },
+    "sunset": {
+      "neg_images": 3,
+      "p50_fa": 3,
+      "cascade_fa": 2,
+      "fpr_before": 1.0,
+      "fpr_after": 0.6666666666666666,
+      "too_few": true
+    },
+    "warm_light": {
+      "neg_images": 6,
+      "p50_fa": 6,
+      "cascade_fa": 0,
+      "fpr_before": 1.0,
+      "fpr_after": 0.0,
+      "too_few": true
+    }
+  }
+}

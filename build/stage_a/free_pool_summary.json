@@ -1,0 +1,19 @@
+{
+  "out_of_sample_rows": 16430,
+  "cached_rows": 16430,
+  "negatives_scored": 16430,
+  "positives_scored": 0,
+  "false_detections_conf_ge_0.05": 1091,
+  "hard_conf_ge_0.10": 703,
+  "very_hard_conf_ge_0.30": 229,
+  "quarantine_conf_ge_0.50": 100,
+  "by_source": {
+    "dfire": 275,
+    "fasdd": 816
+  },
+  "by_source_all_negatives": {
+    "dfire": 1682,
+    "fasdd": 14748
+  },
+  "measured": "P50 ONNX CPU inference at conf=0.01; false = empty-label image with max_conf>=0.05"
+}

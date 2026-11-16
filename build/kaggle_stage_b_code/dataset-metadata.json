@@ -1,0 +1,11 @@
+{
+  "title": "firesight F1 code (private)",
+  "id": "nidhishreesp/firesight-f1-code",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "isPrivate": true,
+  "description": "F1 training/eval code: fresh yolo11s, chunked selection/eval, pilot_eval, run_bench. AGPL-3.0 Ultralytics."
+}

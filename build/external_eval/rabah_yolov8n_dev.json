@@ -1,0 +1,33 @@
+{
+  "model": "rabah_yolov8n",
+  "path": "models\\external\\fire-smoke-yolov8n_best.pt",
+  "class_map": {
+    "0": "smoke",
+    "1": "fire"
+  },
+  "calibrated_on": "val_cal (2,000), image-level max confidence",
+  "target_val_cal_fpr": 0.02,
+  "threshold": 0.5984026193618774,
+  "val_cal": {
+    "recall": 0.7135470527404343,
+    "fpr": 0.01936108422071636
+  },
+  "bench_R_DEV": {
+    "tp": 36,
+    "fp": 3,
+    "n_pos": 85,
+    "n_neg": 215,
+    "recall": 0.4235294117647059,
+    "recall_95ci": [
+      0.324,
+      0.5296
+    ],
+    "fpr": 0.013953488372093023,
+    "fpr_95ci": [
+      0.0048,
+      0.0402
+    ]
+  },
+  "bench_R_DEV_n": 300,
+  "note": "DEV only; SEALED not read. One DEV run per candidate."
+}

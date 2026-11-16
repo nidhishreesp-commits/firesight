@@ -1,0 +1,5 @@
+﻿C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_val_neitherFireNorSmoke_CV004283_jpg.rf.ef950fe4762362c12af0517ba7e8c945.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\dfire_val_WEB08455.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\fasdd_val_fire_CV006976_jpg.rf.73ef7fad8046ce2629c33c819efc3254.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\dfire_val_WEB01320.jpg
+C:\Users\Nidhi\My projects\firesight\build\kaggle_dataset\images\dfire_val_WEB07388.jpg

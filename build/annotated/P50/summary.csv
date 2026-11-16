@@ -1,0 +1,12 @@
+video,actual_label,alert,max_fire,max_smoke,first_fire_s,first_smoke_s,annotated_video
+Attendance.MOV,nonfire,False,0.0,0.0,,,build\annotated\P50\Attendance_annotated.mp4
+Car.mp4,nonfire,False,0.0,0.0,,,build\annotated\P50\Car_annotated.mp4
+drone.mp4,nonfire,True,0.0,0.634,,3.8,build\annotated\P50\drone_annotated.mp4
+fire.mp4,fire,True,0.8645,0.6544,42.33,1.67,build\annotated\P50\fire_annotated.mp4
+fire_2.mp4,fire,True,0.8791,0.8673,7.4,7.2,build\annotated\P50\fire_2_annotated.mp4
+number_plate.mp4,nonfire,False,0.0,0.0,,,build\annotated\P50\number_plate_annotated.mp4
+ppe_1.mp4,nonfire,False,0.0,0.0,,,build\annotated\P50\ppe_1_annotated.mp4
+ppe_2.mp4,nonfire,False,0.0,0.0,,,build\annotated\P50\ppe_2_annotated.mp4
+ppe_3.mp4,nonfire,False,0.0,0.0,,,build\annotated\P50\ppe_3_annotated.mp4
+ppe_4.mp4,nonfire,False,0.0775,0.0,,,build\annotated\P50\ppe_4_annotated.mp4
+theft.mp4,nonfire,False,0.0,0.2074,,2.0,build\annotated\P50\theft_annotated.mp4

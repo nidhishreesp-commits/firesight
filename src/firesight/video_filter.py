@@ -50,6 +50,8 @@ class FilterConfig:
     flicker_min_std: float = 0.04    # confidence std that counts as flicker
     static_conf_penalty: float = 0.5 # multiply confidence for static detections
     static_route_review: bool = True # static detections go to review, not alarm
+    smoke_static_min_conf: float = 0.50 # static smoke above this is kept, not suppressed
+    smoke_static_keep: bool = True
     suppression_iou: float = 0.6
     suppression_cos: float = 0.90
     suppression_ttl_s: float = 3600.0
@@ -121,8 +123,15 @@ class VideoFalseAlarmFilter:
                 det.meta["video_growth"] = round(growth, 4)
                 det.meta["video_flicker"] = round(flicker, 4)
             if static:
-                det.confidence = det.confidence * self.cfg.static_conf_penalty
                 det.meta["static_scene"] = True
+                if (det.label == "smoke" and self.cfg.smoke_static_keep
+                        and det.confidence >= self.cfg.smoke_static_min_conf):
+                    det.meta["static_smoke_allowed"] = True
+                    kept.append(det)
+                    self._log({"event": "static_smoke_allowed", "camera_id": camera_id,
+                               "track": det.track_id, "conf": det.confidence})
+                    continue
+                det.confidence = det.confidence * self.cfg.static_conf_penalty
                 if self.cfg.static_route_review:
                     det.meta["review_queue"] = True
                     review.append(det)

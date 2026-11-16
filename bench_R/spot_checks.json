@@ -1,0 +1,1402 @@
+{
+  "benchR:98158aac:Dredge_ship_Obskaya-103": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:04.321415+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:3942b7b3:Toronto_wildfire_smoke_July_15_2026": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:10.389779+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:814c6eed:Night-time_road_resurfacing_works_during_Chatham_Waterfront_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:16.355389+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:e5a1d2be:The_smoke_goes_up_the_chimney_just_the_same_NYPL_Hades-19432": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:18.739125+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:9c6e2428:Birdwatching_tower_in_the_Deimanivskyi_Landscape_Reserve_aft": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:20.904191+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:b0e3094c:Candle-lit_shrine_-_geograph.org.uk_-_3458471": {
+    "has_fire": 1,
+    "has_smoke": 0,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:24.596107+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 0,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:111fa0d8:Car_on_Fire": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:27.338251+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:71ef8c8f:Interior_Albert_D._German_Warehouse_Church_Street_and_Haselt": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:30.056956+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:2d86c91a:Sparks_110718-N-LL945-105": {
+    "has_fire": 1,
+    "has_smoke": 0,
+    "flame_type": "spark",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:32.479946+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 0,
+      "flame_type": "spark"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:9a8f1b0a:Candle_House_lit_up_-_geograph.org.uk_-_7699674": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:36.547361+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:e8c08e14:Candle_Flames_5261895585_": {
+    "has_fire": 1,
+    "has_smoke": 0,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:39.672101+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 0,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:b6918ac5:Basin_Fire_2024_01": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:42.994662+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:6a4c0e84:Emerald_Bay_under_construction_in_June_2019": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:45.439196+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:e7af40dd:Warehouse_Interior_Storing_Batteries_in_Indonesia": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:47.489000+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:4244a7c4:-TravelTuesday_with_My_Public_Lands_-_25565805255": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:50.633176+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:ad4e1af1:Fire_department_vehicle_of_Cape_May_Point": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:53.518372+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:3e265fff:Windsong_fire": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:57.547973+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:3b068bba:Ikea_halogen_candle-flame_light_bulb_with_E14_Edison_screw-9": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:52:59.549409+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:235273e5:Lit_white_candle": {
+    "has_fire": 1,
+    "has_smoke": 0,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:01.225522+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 0,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:67263cda:July_2026_Canadian_Wildfire_Smoke_in_Massachusetts": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:03.163194+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:376cf89d:Fog_over_the_forest_in_Tuntorp_-_bw": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:04.863518+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:e760ad3f:Car_exhaust_pipe_is_visible_on_a_vehicle_in_a_junkyard": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:06.531054+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:f0004bbe:Interior_of_The_Warehouse_16_ceiling": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:08.251363+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:cf6f7f50:Steam-Cooking_Apparatus._-_DPLA_-_49b76fd73012d9434b08066e97": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:09.442079+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:3466f994:Samanea_saman_on_an_island_with_orange_clouds_and_blue_sky_a": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:10.852465+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:a403af58:Shedhorn_Fire_at_night_51974557572_": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:12.146334+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:bfa82629:Musea_Brugge_HUB_2014_GRO0766_III": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:13.268921+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:935fbb22:Kerstiaen_de_Keuninck_-_Figures_around_a_fire_before_an_exte": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:14.314127+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:afc3f262:Nepal_-_Sagamartha_Trek_-_023_500758629_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:15.168467+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:4434f157:Fire_Hydrants_of_Minquan_Car_Park_20150724": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:15.947449+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:868afc1c:Skyscrapers_busy_road_night_Unsplash_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:17.364019+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:64fd8514:1872-07-24_La_Ilustraci_n_Espa_ola_y_Americana_Madrid_Incend": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:18.669156+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:42b2c070:Small_candle_flame": {
+    "has_fire": 1,
+    "has_smoke": 0,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:20.136118+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 0,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:3b9f0513:Los_Lomadas_orange_flowers_against_sea_Faro_de_Punta_Cumplid": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:22.919470+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:788e0274:View_of_sunset_over_Eyjafj_r_ur_in_Svalbar_sstrandarhreppur_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:23.857048+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:51ccd630:Singapore_SG_Central_Fire_Station_--_2019_--_220324": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:24.657571+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:71793825:Orange_flowers_052708": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:25.346868+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:48cf41e0:Ausgebrannte_Autowracks_F_rstenried_West_Munich_03": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:26.180354+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:73a98436:California_Brush_Fire_day": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:28.044678+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:6ff997d6:Apartment_Fire_High_Point_NC_Feb28_2022": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:29.249740+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:24e585bc:La_Sabina_La_Palma_PR-LP_16.1_orange_flowers_against_wall": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:30.013936+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:667c1c69:EPA_wildfire_smoke_respirator_guide": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:30.993827+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:cdb2f776:Teatro_Eslava_neon_sign_September_2022": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:31.762330+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:db3b26f3:1872-02-16_La_Ilustraci_n_Espa_ola_y_Americana_Barcelona_Tum": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:34.058781+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:c375a425:Louisiana_National_Guard_-_Wildfire_response_August_2023_01": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:35.097743+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:e181a008:23_0066309_Convair_Negative_Image_-_Warehouse_interior_54157": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:36.183670+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:528c8586:Bideford_fire_station_vehicles_03": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:36.917438+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:a45cac15:A_large_fire_in_tropical_forest_trees_in_the_fire": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:37.832609+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:dd121710:Dotonbori_Neon_Sign_Osaka_20190415_1": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:38.437522+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:87ad97a1:California_Brush_Fire_night": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:39.462212+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:63680ffa:Photograph_-_Fire_in_Schenkers_Shipping_And_Forwarding_Agent": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:40.281983+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:2fcf8fd5:Rotary_Plow_2013_Spring_Road_Opening_38204348-1dd8-b71c-0716": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:41.003887+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:2536fcf6:Butane_lighter_piezo_3_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:43.436902+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:cfe5afcf:0119_GER_Kiel_St_Nikolai_church_chandelier_underneath": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:51.520745+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:b7ee4a9b:Interior_of_a_warehouse_in_Riga": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:52.146336+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:0bd44acb:Wildfire_Smoke_-_52958128937": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:52.854596+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:e65b850d:FEMA_-_42314_-_Firefighters_at_the_Puerto_Rico_Gas_Fire": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:53.650285+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:214f13f6:Lead_heated_in_a_candle_flame": {
+    "has_fire": 1,
+    "has_smoke": 0,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:56.932047+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 0,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:9aaeb0c4:Tad_Hang_waterfalls_at_sunset_Tad_Lo_village_Bolaven_Plateau": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:58.076986+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:7ff9b074:Colorful_sky_with_pink_and_blue_clouds_reflecting_in_the_wat": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:58.801300+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:9c6e1908:Cathedral_de_Barcelona_-_Plaza_3396166769_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:53:59.473186+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:5733d44f:Lyle_Hill_viewpoint_car_park_view_south_to_hills_and_IRH": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:00.101580+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:a698d3ed:Pontefract_Fire_station_at_night_geograph_5703284_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:01.046917+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:647e97c5:Red_fire_flames_in_dark_smoke_of_forest_fire": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:01.853607+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:3eb71750:Neon_sign_at_entrance_of_Grundy_Art_Gallery_-_geograph.org.u": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:02.326131+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:69934efc:MPR_T5_Construction_2025-08-26_048": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:02.561388+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:50d1d642:Blurry_broms_449372028_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:02.738454+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:8783184b:Blurry-view_262073545_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:02.964297+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:84b46e6b:Wildfire_in_Kyiv": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:03.178665+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:827ab742:1919_Chalmers_Street_fire_-_Lincoln_Motor_Car_Co_-_A-0003692": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:03.405079+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:d58de863:Smoke_on_the_water_ESA388242": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:03.612544+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:6407fa54:Chandelier_of_the_nineteenth_century_in_the_Museo_di_Capodim": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:03.921501+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:811ac244:Buddha_Lighter_From_Japan": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:04.146421+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:22026cb1:Hortus_Haren._Bloemenzuil_02": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:04.368470+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:a3c1c96c:Wildfire_zone_in_winter": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:04.595267+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:bd732535:Silver_King_Wildfire_Utah_-_July_2024": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:04.802255+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:a0c085e7:Santa_Monica_San_Simon_Pampanga_05": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:05.069978+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:b4d660b3:Firefighters_of_the_Paris_Fire_Brigade_Montrouge_July_2026_3": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:05.382278+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:86921f48:Nustar_Fire_smoke_plume_from_San_Francisco": {
+    "has_fire": 0,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:05.619278+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:64c1f1d1:D_lmen_Kirchspiel_B_rnste_BMW_Mini_--_2019_--_7207-13_cinema": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:05.746146+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:d85f8876:The_President_Lit_Hanukkah_Candles_with_Rabbis_in_Ukraine_on": {
+    "has_fire": 1,
+    "has_smoke": 0,
+    "flame_type": "controlled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:05.969204+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 0,
+      "flame_type": "controlled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:7b7130ab:Interior_of_the_Hsinchu_City_Art_Site_of_Railway_Warehouse_0": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:06.172755+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:23045961:Bear_River_Lake_Resort_lodge_after_2023_fire": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:06.389762+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:aace9c07:Braunton_Devon_UK_Fire_Station_--_2013_--_00156": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:06.647780+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:61c85543:Paris_riots_17_October_2026_-_Firefighters_at_a_smouldering_": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:07.189558+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:02b750ea:Circa_1990_Orflam_Plast_SA_camouflage_patterned_gas_lighter_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:07.540578+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:d5d0b3eb:Orange_safety_vest_31899942864_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:07.695911+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:27204bb8:DSCF0599_A_small_lighthouse_monument_brightly_lit_at_dusk_st": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:07.900156+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:6c0fdece:Night_in_Shinjuku_3": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:08.110676+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:ad4e314d:Karst_peaks_mist_and_colorful_clouds_at_sunrise_seen_from_Mo": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:08.269076+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:43e85168:IKEA_store_Interior_design_Living_room_Rostov-on-Don_Russia": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:08.502437+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:06fdde4c:Gustaf_Fj_stad_-_Winter_road_in_a_snow-laden_landscape_1896": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:08.669602+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:a50e1c3d:-TravelTuesday_with_My_Public_Lands_24343236212_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:08.908622+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:172482c5:GrayGradientFilterEffect": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:09.019818+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:0d14561a:Vehicle_fire_on_South_East_Freeway_Brisbane_P1070729": {
+    "has_fire": 1,
+    "has_smoke": 1,
+    "flame_type": "uncontrolled",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:09.249298+00:00",
+    "first_pass": {
+      "has_fire": 1,
+      "has_smoke": 1,
+      "flame_type": "uncontrolled"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:9d65fc16:Forest_Fire_Smoke_22663469594_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:09.489194+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:30d149f9:Northern_Cyprus_fire_vehicle_Renault_Symbol": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:09.875332+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:9bc3aca3:Blurry_Boston_28630221_.jpeg": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:10.047997+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:c1114ebe:Iceland_Poppy_Papaver_nudicaule_Champagne_Bubbles_Orange_Cen": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:10.240160+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  },
+  "benchR:a92ceb85:Wildfire_in_Alaska_Swan_Lake_Fire_MODIS_2019-09-01_": {
+    "has_fire": 0,
+    "has_smoke": 0,
+    "flame_type": "unknown",
+    "reviewer": "Nidhishree S P",
+    "reviewed_at": "2026-10-27T01:54:16.358350+00:00",
+    "first_pass": {
+      "has_fire": 0,
+      "has_smoke": 0,
+      "flame_type": "unknown"
+    },
+    "agrees": true,
+    "notes": ""
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "0.015": {
+    "p50_threshold": 0.10267,
+    "verifier_threshold": 0.011936064809560776,
+    "val_cal_fpr": 0.011616650532429816,
+    "val_cal_recall": 0.9731127197518097,
+    "val_cal_tp": 941,
+    "val_cal_fp": 12,
+    "recall": 0.9753535353535353,
+    "recall_95ci": [
+      0.9684689012855026,
+      0.9807648052974431
+    ],
+    "fpr": 0.018532526475037822,
+    "fpr_95ci": [
+      0.01404671604404827,
+      0.02441540344225333
+    ],
+    "accuracy": 0.9785114280132838,
+    "tp": 2414,
+    "fp": 49,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 117,
+        "p50_only": 4,
+        "p": 6.613441808234715e-30
+      },
+      "negatives": {
+        "cascade_only": 17,
+        "p50_only": 51,
+        "p": 4.453448771493584e-05
+      }
+    }
+  },
+  "0.02": {
+    "p50_threshold": 0.100336,
+    "verifier_threshold": 0.004953139461576939,
+    "val_cal_fpr": 0.01936108422071636,
+    "val_cal_recall": 0.9751809720785936,
+    "val_cal_tp": 943,
+    "val_cal_fp": 20,
+    "recall": 0.9769696969696969,
+    "recall_95ci": [
+      0.9702793954028837,
+      0.9821816250995963
+    ],
+    "fpr": 0.023449319213313162,
+    "fpr_95ci": [
+      0.01833541820472061,
+      0.02994601977857869
+    ],
+    "accuracy": 0.9767532721234616,
+    "tp": 2418,
+    "fp": 62,
+    "n_pos": 2475,
+    "n_neg": 2644,
+    "mcnemar": {
+      "positives": {
+        "cascade_only": 119,
+        "p50_only": 2,
+        "p": 5.553599550572881e-33
+      },
+      "negatives": {
+        "cascade_only": 23,
+        "p50_only": 44,
+        "p": 0.013933875024287785
+      }
+    }
+  },
+  "dev_sanity": {
+    "p50_threshold": 0.10267,
+    "verifier_threshold": 0.011936064809560776,
+    "recall": 0.6966292134831461,
+    "recall_95ci": [
+      0.5946267078910946,
+      0.7823594707184943
+    ],
+    "fpr": 0.04265402843601896,
+    "fpr_95ci": [
+      0.022599883893756834,
+      0.07906385348298957
+    ],
+    "tp": 62,
+    "fp": 9,
+    "n_pos": 89,
+    "n_neg": 211
+  },
+  "per_cause_val_report": {
+    "cave_rock": {
+      "neg_images": 11,
+      "p50_fa": 11,
+      "cascade_fa": 3,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2727272727272727,
+      "too_few": true
+    },
+    "construction_dust": {
+      "neg_images": 19,
+      "p50_fa": 19,
+      "cascade_fa": 5,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2631578947368421,
+      "too_few": true
+    },
+    "haze_cloud": {
+      "neg_images": 28,
+      "p50_fa": 28,
+      "cascade_fa": 8,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2857142857142857,
+      "too_few": true
+    },
+    "orange_ppe": {
+      "neg_images": 8,
+      "p50_fa": 8,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.125,
+      "too_few": true
+    },
+    "other": {
+      "neg_images": 21,
+      "p50_fa": 21,
+      "cascade_fa": 7,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3333333333333333,
+      "too_few": true
+    },
+    "reflection": {
+      "neg_images": 15,
+      "p50_fa": 15,
+      "cascade_fa": 2,
+      "fpr_before": 1.0,
+      "fpr_after": 0.13333333333333333,
+      "too_few": true
+    },
+    "screen": {
+      "neg_images": 9,
+      "p50_fa": 9,
+      "cascade_fa": 5,
+      "fpr_before": 1.0,
+      "fpr_after": 0.5555555555555556,
+      "too_few": true
+    },
+    "skin": {
+      "neg_images": 9,
+      "p50_fa": 9,
+      "cascade_fa": 1,
+      "fpr_before": 1.0,
+      "fpr_after": 0.1111111111111111,
+      "too_few": true
+    },
+    "smoke_steam": {
+      "neg_images": 13,
+      "p50_fa": 13,
+      "cascade_fa": 7,
+      "fpr_before": 1.0,
+      "fpr_after": 0.5384615384615384,
+      "too_few": true
+    },
+    "sun_bright": {
+      "neg_images": 27,
+      "p50_fa": 27,
+      "cascade_fa": 6,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2222222222222222,
+      "too_few": true
+    },
+    "sunset": {
+      "neg_images": 6,
+      "p50_fa": 6,
+      "cascade_fa": 2,
+      "fpr_before": 1.0,
+      "fpr_after": 0.3333333333333333,
+      "too_few": true
+    },
+    "warm_light": {
+      "neg_images": 7,
+      "p50_fa": 7,
+      "cascade_fa": 2,
+      "fpr_before": 1.0,
+      "fpr_after": 0.2857142857142857,
+      "too_few": true
+    }
+  }
+}

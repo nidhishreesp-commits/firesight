@@ -1,0 +1,89 @@
+{
+  "bench": "bench_R",
+  "split": "dev",
+  "sealed_untouched": true,
+  "calibrated_on": "val_mini + val_flames",
+  "target_fpr": 0.02,
+  "models": {
+    "P10": {
+      "thresholds": {
+        "fire": 0.33,
+        "smoke": 0.47
+      },
+      "recall": 0.482353,
+      "recall_95ci": [
+        0.379205636706352,
+        0.5870263987365038
+      ],
+      "precision": 0.931818,
+      "accuracy": 0.843333,
+      "fpr_per_negative": 0.013953,
+      "fpr_95ci": [
+        0.004756503998982024,
+        0.040214836002187775
+      ],
+      "n": 300,
+      "negatives": 215
+    },
+    "P25": {
+      "thresholds": {
+        "fire": 0.21,
+        "smoke": 0.37
+      },
+      "recall": 0.505882,
+      "recall_95ci": [
+        0.40166252134606184,
+        0.609593466839653
+      ],
+      "precision": 0.86,
+      "accuracy": 0.836667,
+      "fpr_per_negative": 0.032558,
+      "fpr_95ci": [
+        0.015858764177717522,
+        0.0656686967803453
+      ],
+      "n": 300,
+      "negatives": 215
+    },
+    "P50": {
+      "thresholds": {
+        "fire": 0.35,
+        "smoke": 0.41
+      },
+      "recall": 0.564706,
+      "recall_95ci": [
+        0.4587719281568645,
+        0.6650439418859984
+      ],
+      "precision": 0.90566,
+      "accuracy": 0.86,
+      "fpr_per_negative": 0.023256,
+      "fpr_95ci": [
+        0.009973310033610745,
+        0.05327609044600556
+      ],
+      "n": 300,
+      "negatives": 215
+    },
+    "BASE": {
+      "thresholds": {
+        "fire": 0.63,
+        "smoke": 0.39
+      },
+      "recall": 0.4,
+      "recall_95ci": [
+        0.30236068121692405,
+        0.5062875196259243
+      ],
+      "precision": 0.809524,
+      "accuracy": 0.803333,
+      "fpr_per_negative": 0.037209,
+      "fpr_95ci": [
+        0.018972756225884155,
+        0.07169373497140191
+      ],
+      "n": 300,
+      "negatives": 215
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "firesight pilot weights (private)",
+  "id": "nidhishreesp/firesight-pilot-weights",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "isPrivate": true,
+  "description": "Private Phase 3b pilot checkpoints (P10/P25/P50 best.pt, yolo11s, 15 epochs each) + run_summary.json. Derived from D-Fire (CC0) and FASDD (CC BY 4.0). Ultralytics YOLO11 weights are AGPL-3.0."
+}

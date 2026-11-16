@@ -1,0 +1,296 @@
+{
+  "nonfire_minutes": 2.9,
+  "per_video": {
+    "Attendance.MOV": {
+      "group": "nonfire",
+      "duration_s": 29.3,
+      "sampled_frames": 147,
+      "raw_frames_with_det": 0,
+      "raw_detections": 0,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.0
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "Car.mp4": {
+      "group": "nonfire",
+      "duration_s": 32.6,
+      "sampled_frames": 163,
+      "raw_frames_with_det": 0,
+      "raw_detections": 0,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.0
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "drone.mp4": {
+      "group": "nonfire",
+      "duration_s": 13.6,
+      "sampled_frames": 69,
+      "raw_frames_with_det": 19,
+      "raw_detections": 38,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.634
+      },
+      "p50": {
+        "confirmed_episodes": 1,
+        "first_confirmed_s": 4.4,
+        "layer_episodes": 1,
+        "first_layer_s": 4.4
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "number_plate.mp4": {
+      "group": "nonfire",
+      "duration_s": 22.5,
+      "sampled_frames": 108,
+      "raw_frames_with_det": 0,
+      "raw_detections": 0,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.0
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "ppe_1.mp4": {
+      "group": "nonfire",
+      "duration_s": 8.3,
+      "sampled_frames": 40,
+      "raw_frames_with_det": 0,
+      "raw_detections": 0,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.0
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "ppe_2.mp4": {
+      "group": "nonfire",
+      "duration_s": 14.6,
+      "sampled_frames": 70,
+      "raw_frames_with_det": 0,
+      "raw_detections": 0,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.0
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "ppe_3.mp4": {
+      "group": "nonfire",
+      "duration_s": 17.8,
+      "sampled_frames": 89,
+      "raw_frames_with_det": 0,
+      "raw_detections": 0,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.0
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "ppe_4.mp4": {
+      "group": "nonfire",
+      "duration_s": 15.8,
+      "sampled_frames": 79,
+      "raw_frames_with_det": 2,
+      "raw_detections": 2,
+      "max_conf": {
+        "fire": 0.0775,
+        "smoke": 0.0
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "theft.mp4": {
+      "group": "nonfire",
+      "duration_s": 19.5,
+      "sampled_frames": 98,
+      "raw_frames_with_det": 6,
+      "raw_detections": 7,
+      "max_conf": {
+        "fire": 0.0,
+        "smoke": 0.2074
+      },
+      "p50": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      },
+      "cascade": {
+        "confirmed_episodes": 0,
+        "first_confirmed_s": null,
+        "layer_episodes": 0,
+        "first_layer_s": null
+      }
+    },
+    "fire.mp4": {
+      "group": "fire",
+      "duration_s": 246.6,
+      "sampled_frames": 1183,
+      "raw_frames_with_det": 447,
+      "raw_detections": 769,
+      "max_conf": {
+        "fire": 0.8645,
+        "smoke": 0.6544
+      },
+      "p50": {
+        "confirmed_episodes": 12,
+        "first_confirmed_s": 45.67,
+        "layer_episodes": 12,
+        "first_layer_s": 45.67
+      },
+      "cascade": {
+        "confirmed_episodes": 14,
+        "first_confirmed_s": 45.67,
+        "layer_episodes": 14,
+        "first_layer_s": 45.67
+      }
+    },
+    "fire_2.mp4": {
+      "group": "fire",
+      "duration_s": 77.2,
+      "sampled_frames": 386,
+      "raw_frames_with_det": 310,
+      "raw_detections": 1325,
+      "max_conf": {
+        "fire": 0.8791,
+        "smoke": 0.8673
+      },
+      "p50": {
+        "confirmed_episodes": 9,
+        "first_confirmed_s": 10.2,
+        "layer_episodes": 9,
+        "first_layer_s": 10.2
+      },
+      "cascade": {
+        "confirmed_episodes": 9,
+        "first_confirmed_s": 10.2,
+        "layer_episodes": 9,
+        "first_layer_s": 10.2
+      }
+    }
+  },
+  "p50": {
+    "layer_alarms": 1,
+    "layer_fa_per_cam_min": 0.3448,
+    "layer_fa_per_cam_min_ci": [
+      0.0615,
+      0.7923
+    ]
+  },
+  "cascade": {
+    "layer_alarms": 0,
+    "layer_fa_per_cam_min": 0.0,
+    "layer_fa_per_cam_min_ci": [
+      0.0,
+      0.5615
+    ]
+  },
+  "fire": {
+    "p50": {
+      "clips": 2,
+      "clips_detected": 2,
+      "clip_recall": 1.0,
+      "clip_recall_ci": [
+        0.3424,
+        1.0
+      ],
+      "detected_after_onset": 2
+    },
+    "cascade": {
+      "clips": 2,
+      "clips_detected": 2,
+      "clip_recall": 1.0,
+      "clip_recall_ci": [
+        0.3424,
+        1.0
+      ],
+      "detected_after_onset": 2
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "subset": "high_mounted_aerial_keyword_proxy",
+  "n": 31,
+  "pos": 4,
+  "neg": 27,
+  "results": {
+    "640": {
+      "n": 31,
+      "pos": 4,
+      "neg": 27,
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "tn": 27,
+      "recall": 0.5,
+      "recall_ci": [
+        0.15,
+        0.85
+      ],
+      "fpr": 0.0,
+      "fpr_ci": [
+        0,
+        0.1246
+      ],
+      "mean_ms": 137.8,
+      "median_ms": 89.48
+    },
+    "960": {
+      "n": 31,
+      "pos": 4,
+      "neg": 27,
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "tn": 27,
+      "recall": 0.5,
+      "recall_ci": [
+        0.15,
+        0.85
+      ],
+      "fpr": 0.0,
+      "fpr_ci": [
+        0,
+        0.1246
+      ],
+      "mean_ms": 197.27,
+      "median_ms": 199.28
+    },
+    "1280": {
+      "n": 31,
+      "pos": 4,
+      "neg": 27,
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "tn": 27,
+      "recall": 0.5,
+      "recall_ci": [
+        0.15,
+        0.85
+      ],
+      "fpr": 0.0,
+      "fpr_ci": [
+        0,
+        0.1246
+      ],
+      "mean_ms": 313.94,
+      "median_ms": 324.33
+    }
+  }
+}
