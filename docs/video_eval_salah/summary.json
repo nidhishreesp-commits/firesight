@@ -1,0 +1,98 @@
+{
+  "n": 42,
+  "positives": 20,
+  "negatives": 22,
+  "metrics": {
+    "raw_alert": {
+      "tp": 11,
+      "fp": 9,
+      "tn": 13,
+      "fn": 9,
+      "precision": 0.55,
+      "recall": 0.55,
+      "recall_ci": [
+        0.3421,
+        0.7418
+      ],
+      "specificity": 0.5909,
+      "fpr": 0.4091,
+      "fpr_ci": [
+        0.2326,
+        0.6127
+      ],
+      "accuracy": 0.5714
+    },
+    "temporal_alert": {
+      "tp": 11,
+      "fp": 3,
+      "tn": 19,
+      "fn": 9,
+      "precision": 0.7857,
+      "recall": 0.55,
+      "recall_ci": [
+        0.3421,
+        0.7418
+      ],
+      "specificity": 0.8636,
+      "fpr": 0.1364,
+      "fpr_ci": [
+        0.0475,
+        0.3334
+      ],
+      "accuracy": 0.7143
+    },
+    "layer_alert": {
+      "tp": 11,
+      "fp": 3,
+      "tn": 19,
+      "fn": 9,
+      "precision": 0.7857,
+      "recall": 0.55,
+      "recall_ci": [
+        0.3421,
+        0.7418
+      ],
+      "specificity": 0.8636,
+      "fpr": 0.1364,
+      "fpr_ci": [
+        0.0475,
+        0.3334
+      ],
+      "accuracy": 0.7143
+    }
+  },
+  "per_category": {
+    "cloud": {
+      "n": 10,
+      "positives": 0,
+      "layer_alerts": 3,
+      "raw_alerts": 4
+    },
+    "fire": {
+      "n": 15,
+      "positives": 15,
+      "layer_alerts": 11,
+      "raw_alerts": 11
+    },
+    "nonfire": {
+      "n": 12,
+      "positives": 0,
+      "layer_alerts": 0,
+      "raw_alerts": 5
+    },
+    "smoke": {
+      "n": 5,
+      "positives": 5,
+      "layer_alerts": 0,
+      "raw_alerts": 0
+    }
+  },
+  "nonfire_hours_evaluated": 0.342,
+  "layer_fa_per_hour": 8.778,
+  "note": "2 fps; nonfire clips capped at 120 s; fire/smoke full clip",
+  "model": "SalahYOLOv26",
+  "thresholds": {
+    "fire": 0.51,
+    "smoke": 0.57
+  }
+}
